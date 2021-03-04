@@ -14,28 +14,45 @@
 }
 
 .navbar{
-    background-color: rgba(255, 204, 0, 1);
-    padding: 0rem 1rem !important;
-}
-.nav_item{
-    background-color: #ffcc00;
-    border-radius:20px;
+    /* background-color: rgba(255,255,255, .1); */
+    background-color:rgba(255, 204, 0,1);
+    box-shadow: 2px 2px 5px black;
+    
    
+    /* background-color: white; */
 }
 
 .nav-link {
     display: block;
-    padding: 2px 0px;
+    padding: 6px 0px;
+    
+    margin-left: 15px;
+    border-radius:8px;
+    color: white !important;
+
 }
+.nav-link.active {
+    display: block;
+    padding: 6px 0px;
+    
+    margin-left: 15px;
+    border-radius:8px;
+    color:black !important;
+    background-color: #ffcc00;
+
+}
+
+.language{
+    border: none;
+    color: black !important;
+}
+
 .logo{
     font-family: ghuri;
     font-size:30px;
 }
 .ghuri_logo{
-    width: 20px;
+    width:50%;
     margin-left:10px;
     
-}
-.logo_combination{
-    display: flex;
 }

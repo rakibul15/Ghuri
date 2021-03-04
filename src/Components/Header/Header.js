@@ -13,14 +13,17 @@ const Header = () => {
                 <source src={video} type="video/mp4" />
             </video>
             <div className="content overlay">
-                <div className="row center d-flex align-items-center text-center">
-                    <div className="col-sm-6 f-size">
+                <div className="row center d-flex align-items-center">
+                   
+                    <div className="col-sm-6 ghuri-button align-items-center">
+                        <button className="btn  btn-lg mt-4 ghuriapp"><span><i class="fa fa-mobile mobile"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download Ghuri App&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i class="fa fa-chevron-right"></i></span></button> <br />
+                        <button className="btn earnwith btn-lg mt-4"><span><i class="fa fa-money"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earn With Ghuri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i class="fa fa-chevron-right"></i></span></button>
+
+                    </div>
+
+                    <div className="col-sm-6 f-size text-center">
                         <h1 className="motto">Ghuri Express Limited</h1>
                         <h3 className="motto">Ride | Food |Percel | Ticket |Truck |Bazar</h3>
-                    </div>
-                        <div className="col-sm-6">
-                    <button className="btn  btn-lg mt-4 playstore">GHURI <span>PERCEL</span></button> <br/>
-                     <button className="btn appStore btn-lg mt-3">GHURI <span>TRUCK</span></button>
                     </div>
                 </div>
             </div>
