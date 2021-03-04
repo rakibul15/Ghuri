@@ -16,8 +16,8 @@ const Header = () => {
                 <div className="row center d-flex align-items-center">
                    
                     <div className="col-sm-6 ghuri-button align-items-center">
-                        <button className="btn  btn-lg mt-4 ghuriapp"><span><i class="fa fa-mobile mobile"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download Ghuri App&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i class="fa fa-chevron-right"></i></span></button> <br />
-                        <button className="btn earnwith btn-lg mt-4"><span><i class="fa fa-money"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earn With Ghuri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><i class="fa fa-chevron-right"></i></span></button>
+                        <a href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"  target="_blank" className="btn  btn-lg mt-4 ghuriapp"><span><i class="fa fa-mobile mobile"></i></span><span className="space_app">Download Ghuri App</span><span><i class="fa fa-chevron-right"></i></span></a> <br />
+                        <a href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuridrive"  target="_blank" className="btn earnwith btn-lg mt-4"><span><i class="fa fa-money"></i></span><span className="space_fixed">Earn With Ghuri</span><span><i class="fa fa-chevron-right"></i></span></a>
 
                     </div>
 
