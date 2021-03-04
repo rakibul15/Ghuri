@@ -4,6 +4,8 @@ import Topnav from './Components/Topnav/Topnav';
 import { Route, Router, Switch } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Header from './Components/Header/Header';
+import '../node_modules/font-awesome/css/font-awesome.min.css'
+
 
 function App() {
   return (

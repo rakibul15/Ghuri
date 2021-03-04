@@ -18,24 +18,24 @@
     z-index:-1;
 
 }
-  .playstore{
+  .ghuriapp{
     background-color:#ffdf00;
+    padding: 0.8rem 2rem;
+    
    
 }
-.playstore span{
-    color: red;
-}
 
-.appStore{
+
+.earnwith{
     background-color: white;
     border: 1px solid black;
-}
-.appStore span{
-    color: red;
+    padding: 1rem 2rem;
+
 }
 
+
 .btn-lg {
-    padding: 0.8rem 4rem;
+    
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.5;
@@ -44,6 +44,7 @@
      border: none;
      box-shadow:2px 2px 10px black;
      font-weight:800;
+     margin-left: 10%;
 }
 .center {
     margin: auto;
@@ -56,12 +57,11 @@
       color: white;
       font-family:Abel;
      
-     
+      text-shadow: 2px 2px 10px black;
   }
 
   .f-size h1{
       font-size: 4rem;
-      color: black;
   }
 .f-size h3{
     color:white;
@@ -75,3 +75,23 @@
     height: 100%;
     
   }
+
+  .ghuri-button i{
+    font-size:30px;
+    left:0;
+  }
+  .mobile{
+    font-size: 40px !important;
+  }
+  .fa-chevron-right{
+    font-size:15px !important;
+  }
+  
+  .ghuri-button span{
+  vertical-align: middle;
+  display: inline-block;
+  }
+  .earnwith span{
+    vertical-align: middle;
+    display: inline-block;
+    }
