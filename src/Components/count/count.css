@@ -1,0 +1,22 @@
+.Count{
+    text-align: center;
+    background-color:#ffffff;
+    padding: 15px 2px;
+    font-family: roboto;
+    border-radius: 17px;
+    color: black;
+    margin-top: -60px;
+    position:sticky;
+    box-shadow: 1px 1px 10px black;
+    
+}
+.info p{
+    color: #707070;
+    text-align: center;
+    margin-top: -10px;
+}
+.info h2{
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 10px;
+}
