@@ -371,7 +371,7 @@ const Signup = () => {
 
                 <div className="row mt-4 text-right">
                   <div className="col-sm-12 sign-submit-btn">
-                    <input type="submit" value="Comming Soon" />
+                    <input type="submit" value="Comming Soon" disabled />
                   </div>
                 </div>
               </form>

@@ -16,32 +16,32 @@ const Ticket = () => {
       <div className="d-flex justify-content-center platform_wrapper">
         <div className="col-sm-9 ">
           <div className="row justify-content-center text-center product_row">
-            <div className="col-sm-2 padding_reduce product first_product">
+            <div className="col-sm-2 col-2  padding_reduce product first_product">
               <Link to="/parcel">
                 <h4>Parcel</h4>
               </Link>
             </div>
-            <div className="col-sm-2 padding_reduce  product ">
+            <div className="col-sm-2 col-2  padding_reduce  product ">
               <Link to="/ride">
                 <h4>Ride</h4>
               </Link>
             </div>
-            <div className="col-sm-2 padding_reduce  product ">
+            <div className="col-sm-2 col-2  padding_reduce  product ">
               <Link to="/food">
                 <h4>Food</h4>
               </Link>
             </div>
-            <div className="col-sm-2 padding_reduce  product">
+            <div className="col-sm-2 col-2  padding_reduce  product">
               <Link to="/truck">
                 <h4>Truck</h4>
               </Link>
             </div>
-            <div className="col-sm-2 padding_reduce  product">
+            <div className="col-sm-2 col-2  padding_reduce  product">
               <Link to="/bazar">
                 <h4>Bazar</h4>
               </Link>
             </div>
-            <div className="col-sm-2 padding_reduce  product active_product last_product">
+            <div className="col-sm-2 col-2  padding_reduce  product active_product last_product">
               <Link to="/ticket">
                 <h4>Ticket</h4>
               </Link>

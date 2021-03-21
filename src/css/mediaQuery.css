@@ -1,0 +1,210 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+/* Ghuri Header */
+
+.ghuri-button{
+    text-align: center;
+}
+.f-size h1{
+    margin-top: 10px;
+    font-size:2.5rem;
+}
+
+.f-size h3{
+    margin-top: 10px;
+    font-size:1.75rem;
+    margin-bottom: 20px;
+}
+
+.btn-lg{
+    margin-left:0px;
+    font-weight: 500;
+}
+
+.earnwith {
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.75rem 1rem;
+}
+.ghuriapp {
+    background-color: #ffdf00;
+    padding: 0.6rem 1.1rem;
+}
+.appear_small{
+    display: block !important;
+}
+.remove_small{
+    display: none !important;
+}
+
+.sm_liline{
+    flex-wrap: nowrap;
+}
+.info h2{
+    font-size:12px;
+}
+.info p{
+    font-size: 8px;
+    margin-top: 10px !important;
+}
+.Count{
+    padding: 10px;
+}
+.parcel_bg {
+    margin-top: -20% !important;
+    height: 260px !important;
+  
+  
+}
+.platform_bg {
+    margin-top: -20% !important;
+    height: 260px !important;
+  
+}
+.truck_bg {
+    margin-top: -20% !important;
+    height: 260px !important;
+  
+}
+.bazar_bg {
+    margin-top: -20% !important;
+    height: 260px !important;
+  
+}
+.ticket_bg {
+    margin-top: -20% !important;
+    height: 260px !important;
+  
+}
+.food_bg {
+    margin-top: -20% !important;
+    height: 260px !important;
+  
+}
+.product_text h1 {
+    font-size:1.75rem !important;
+}
+
+.product_info {
+  
+    padding-top: 40px !important;
+     margin-top: 0px !important;     
+    height:80vh !important;
+    padding-left: 0px !important;
+}
+
+.product_info p{
+    text-align: justify;
+}
+.product{
+    padding: 5px 10px !important;
+}
+.product h4{
+    font-size: 12px !important;
+}
+.product_row{
+    /* flex-wrap: nowrap !important; */
+    position: sticky;
+}
+p{
+    font-size: 12px !important;
+}
+h4{
+    font-size: 14px !important;
+}
+.ticket_bg{
+    height: 260px !important;
+}
+.platform .center{
+    top: 70%;
+}
+.platform_wrapper {
+    border-radius: 30px !important;
+    margin-top: -8% !important;
+}
+
+/* Footer */
+
+/* .store img{
+    width: 60% !important;
+    text-align: left !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 0px !important;
+} */
+.our_app{
+    margin-top: 0px !important;
+}
+
+.form-control .email{
+    width: 34% !important;
+}
+.input-group>.form-control{
+    width: 34% !important;
+}
+
+.ssl img{
+    width: 100% !important;
+}
+
+.csv img {
+    width: 38% !important;
+}
+ 
+.linklogo img {
+    width: 10% !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+}
+
+.footer-logo img {
+    width: 100% !important;
+}
+.Footer_fix{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_small_app{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin-top: 20px;
+    /* justify-content: space-between; */
+}
+.csv p{
+    margin-top: 8px;
+}
+.appstore_footer{
+    text-align: right;
+}
+.marchant_small{
+    margin-top: 20px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+}

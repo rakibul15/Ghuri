@@ -46,11 +46,15 @@
     background-repeat: no-repeat;
     padding-top: 120px;
     margin-top: -35px;
-    z-index: -1;
+    /* z-index: -1; */
     padding-bottom: 55px;
     padding-left: 15px;
    height: 100vh;
 
+}
+
+.product_info p{
+    text-align: justify;
 }
 .product_img img{
     width: 100%;
