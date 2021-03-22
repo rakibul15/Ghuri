@@ -14,7 +14,7 @@ const Truck = () => {
         </div>
       </div>
       <div className="d-flex justify-content-center platform_wrapper">
-        <div className="col-sm-9 ">
+        <div className="col-sm-9 col-11 ">
           <div className="row justify-content-center text-center product_row">
             <div className="col-sm-2 col-2  padding_reduce product first_product">
               <Link to="/parcel">

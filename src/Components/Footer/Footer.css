@@ -21,7 +21,7 @@
         border-right-style: dotted;
     }
     .store img{
-        width: 70%;
+        width: 50%;
     }
     .newsletter-btn{
         background-color: white !important;
@@ -73,4 +73,11 @@
     }
     .linklogo a{
         text-decoration: none;
+    }
+    .app_store_img{
+        margin-top: 10px;
+    }
+    .footer_store_img img{
+        width: 70%;
+        margin-left:25px;
     }

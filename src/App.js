@@ -18,6 +18,10 @@ import Food from "./Components/food/Food";
 import Truck from "./Components/truck/Truck";
 import Bazar from "./Components/bazar/Bazar";
 import Ticket from "./Components/ticket/Ticket";
+import Partners from "./Components/partners/Partners";
+import Headline from "./Components/haedline/Headline";
+import Gallery from "./Components/gallery/Gallery";
+
 
 function App() {
   return (
@@ -44,6 +48,7 @@ function App() {
           <Route path="/marchent">
             {/* <MarchentLogIn /> */}
             <Signup></Signup>
+          
           </Route>
 
           {/* Parcel */}
@@ -97,6 +102,9 @@ function App() {
             <Notmatch />
           </Route>
         </Switch>
+        <Gallery></Gallery>
+        <Headline></Headline>
+        <Partners></Partners>
         <Footer />
       </Router>
     </div>

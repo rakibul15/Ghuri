@@ -119,8 +119,8 @@ const Footer = () => {
         <div className="col-sm-4">
           <div className="row ">
             <div className="col-lg-6 our_app mb-4">
-            <div className="row mt-3 align-items-center justify-content-between">
-            <div className="col-sm-12 col-6">
+            <div className="row mt-3 align-items-center">
+            <div className="col-sm-12 col-6 footer_store_img">
 
             <a
                 href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
@@ -130,7 +130,7 @@ const Footer = () => {
               </a>
             </div>
              
-             <div className="col-sm-12 col-6">
+             <div className="col-sm-12 col-6 app_store_img footer_store_img">
              <a href="">
            
            <img src={appstore} className="img-fluid   text-right" alt="" />

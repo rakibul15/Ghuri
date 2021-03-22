@@ -78,7 +78,7 @@ const Header = () => {
                 <span>
                   <i class="fa fa-chevron-right"></i>
                 </span>
-              </a>{" "}
+              </a>
               <br />
               <a
                 href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuridrive"
