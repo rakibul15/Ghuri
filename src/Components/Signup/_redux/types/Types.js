@@ -1,0 +1,1 @@
+export const INPUT_SIGNUP_TEXT = "INPUT_SIGNUP_TEXT"
