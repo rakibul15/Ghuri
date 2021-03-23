@@ -9,12 +9,14 @@
 
 .headline_content{  border-radius: 10px;
     box-shadow: 1px 1px 10px grey;
-    padding: 20px;
+    padding:5%;
     /* text-align: center; */
     /* padding: 20px; */
-    min-height: 200px;
+ 
     align-items: center;
-    position: relative;
+  
+    height: 200px;
+    margin: 5%;
     
 }
 .vertical-center {
@@ -34,11 +36,11 @@
 
 .headline_img{
     text-align: center !important;
+    height: 200px;
+    object-fit: cover;
 }
 
-.headline_text{
-    overflow:hidden;
-}
+
 .headline_arrow{
     font-weight: 400;
     font-size: 12px;
@@ -48,4 +50,30 @@
 .headline_text a{
     text-decoration: none;
     color: #ffcc00;
+    text-align: left !important;
 }
+.headline_box{
+    box-shadow: 1px 1px 10px gray;
+    padding: 5%;
+    border-radius: 20px;
+    /* overflow-y: scroll; */
+    height: 200px;
+    
+}
+.headline_text h5 {
+    display: block;
+    white-space: nowrap;
+    height:20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .headline_box::-webkit-scrollbar {
+    display: none;
+}
+
+
+.headline_box {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+} */

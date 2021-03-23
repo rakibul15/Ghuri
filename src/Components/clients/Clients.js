@@ -31,7 +31,7 @@ const Clients = () => {
         loop
         margin={10}
         items={6}
-        nav
+        dots={false}
         autoplay
         className="row justify-content-center align-items-center owl-theme"
       >

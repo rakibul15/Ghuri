@@ -199,13 +199,36 @@ h4{
     font-size: 14px !important;
     
 }
+.gallery_bg{
 
+  height:200px !important;
+ 
+   
+}
+
+.gallery_cover_img img {
+    min-height: 90px !important;
+    max-height: 90px !important;
+  
+}
+.gallery_cover_img p {
+ 
+    margin-top: -45px !important;
+
+}
+
+.partners_logo img {
+  
+    border-radius: 10% !important;
+    padding: 10% !important;
+   
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-
+   
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -225,7 +248,7 @@ h4{
 
     .footer_store_img img{
         width: 70%;
-        margin-left:35px;
+        margin-left:35px !important;
     }
 
 }

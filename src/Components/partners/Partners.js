@@ -29,42 +29,47 @@ const Partners = () => {
         loop
         margin={10}
         items={6}
-        nav
         autoplay
+        dots={false}
       
         className="row justify-content-center align-items-center owl-theme"
       >
         <div className="item">
-          <div className=" fasal partners_logo ">
-            <img src={nuraniInterior} alt="" />
+          <div className=" nuraniInterior partners_logo ">
+            <img src={nuraniInterior} alt="nurani Interior" />
           </div>
         </div>
         <div className="item">
           <div className=" brothers  partners_logo">
-            <img src={biddanondo} alt="" />
+            <img src={biddanondo} alt="biddanondo" />
           </div>
         </div>
 
         <div className="item">
           <div className="robi partners_logo">
-            <img src={robi} alt="" />
+            <img src={robi} alt="robi" />
           </div>
         </div>
 
         <div className=" item">
           <div className="airtel partners_logo">
-            <img src={airtel} alt="" />
+            <img src={airtel} alt="airtel" />
           </div>
         </div>
 
         <div className=" item">
-          <div className="swan  partners_logo ">
-            <img src={a2i} alt="" />
+          <div className="a2i  partners_logo ">
+            <img src={a2i} alt="a2i" />
           </div>
         </div>
         <div className=" item ">
-          <div className="swan  partners_logo">
-            <img src={nayabari} alt="" />
+          <div className="nayavari  partners_logo">
+            <img src={nayabari} alt="nayabari logo" />
+          </div>
+        </div>
+        <div className=" item ">
+          <div className="lodigreen  partners_logo">
+            <img src={lodigreen} alt="lodigreen photo" />
           </div>
         </div>
       </OwlCarousel>
