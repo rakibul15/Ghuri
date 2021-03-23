@@ -12,8 +12,11 @@ import robi from "../../images/partners/robi_logo.png";
 import brothers from "../../images/partners/brothers_logo.png";
 import fasal from "../../images/partners/fasal_logo.png";
 import swan from "../../images/partners/swan_logo.png";
-import nayabari from "../../images/partners/noyabari_logo.png";
+
+import lilistar from "../../images/partners/lilstar.png"
 import lodigreen from "../../images/partners/Lodi green_logo.png";
+import id from "../../images/partners/id.png"
+import iz from "../../images/partners/izone.png"
 import "./clients.css"
 
 const Clients = () => {
@@ -44,14 +47,14 @@ const Clients = () => {
         </div>
 
         <div className="item">
-          <div className="robi partners_logo">
-            <img src={robi} alt="" />
+          <div className="lilistar partners_logo">
+            <img src={lilistar} alt="" />
           </div>
         </div>
 
         <div className=" item">
-          <div className="airtel partners_logo">
-            <img src={airtel} alt="" />
+          <div className="partners_logo">
+            <img src={id} alt="inovetive decore" />
           </div>
         </div>
 
@@ -62,7 +65,7 @@ const Clients = () => {
         </div>
         <div className=" item ">
           <div className="swan  partners_logo">
-            <img src={lodigreen} alt="" />
+            <img src={iz} alt="" />
           </div>
         </div>
       </OwlCarousel>

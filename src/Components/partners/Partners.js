@@ -11,11 +11,11 @@ import OwlCarousel from "react-owl-carousel";
 // images of all partners
 import airtel from "../../images/partners/airtel_logo.png";
 import robi from "../../images/partners/robi_logo.png";
-import brothers from "../../images/partners/brothers_logo.png";
-import fasal from "../../images/partners/fasal_logo.png";
-import swan from "../../images/partners/swan_logo.png";
-import nayabari from "../../images/partners/noyabari_logo.png";
 import lodigreen from "../../images/partners/Lodi green_logo.png";
+import nuraniInterior from "../../images/partners/Nurani_Interior.png"
+import biddanondo from "../../images/partners/bidyanondo_foundation.png"
+import a2i from "../../images/partners/a2i.png"
+import nayabari from "../../images/partners/noyabari_logo.png";
 
 const Partners = () => {
   return (
@@ -36,12 +36,12 @@ const Partners = () => {
       >
         <div className="item">
           <div className=" fasal partners_logo ">
-            <img src={fasal} alt="" />
+            <img src={nuraniInterior} alt="" />
           </div>
         </div>
         <div className="item">
           <div className=" brothers  partners_logo">
-            <img src={brothers} alt="" />
+            <img src={biddanondo} alt="" />
           </div>
         </div>
 
@@ -59,12 +59,12 @@ const Partners = () => {
 
         <div className=" item">
           <div className="swan  partners_logo ">
-            <img src={swan} alt="" />
+            <img src={a2i} alt="" />
           </div>
         </div>
         <div className=" item ">
           <div className="swan  partners_logo">
-            <img src={lodigreen} alt="" />
+            <img src={nayabari} alt="" />
           </div>
         </div>
       </OwlCarousel>
