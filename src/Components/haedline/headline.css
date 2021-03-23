@@ -1,0 +1,51 @@
+.headline{
+    margin-bottom: 40px;
+    margin-top: 60px;
+    font-family: abel;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.headline_content{  border-radius: 10px;
+    box-shadow: 1px 1px 10px grey;
+    padding: 20px;
+    /* text-align: center; */
+    /* padding: 20px; */
+    min-height: 200px;
+    align-items: center;
+    position: relative;
+    
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .headline_text p{
+      text-align: start !important;
+   
+  }
+  .headline_text h5{
+    text-align: start !important;
+}
+
+.headline_img{
+    text-align: center !important;
+}
+
+.headline_text{
+    overflow:hidden;
+}
+.headline_arrow{
+    font-weight: 400;
+    font-size: 12px;
+
+}
+
+.headline_text a{
+    text-decoration: none;
+    color: #ffcc00;
+}

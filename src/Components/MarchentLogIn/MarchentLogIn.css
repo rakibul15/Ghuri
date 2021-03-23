@@ -1,0 +1,67 @@
+
+.fullwidth input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 15%);
+    background-color: transparent;
+    padding: 5px 10px;
+    color: white;
+}
+
+.fullwidth input:focus {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    outline: none;
+}
+
+
+
+.mt-form {
+    background-color:rgba(0, 0, 0, 15%);
+    padding: 15px;
+    color: white;
+    font-family: abel;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */
+    font-size: 14px;
+}
+
+.mt-submit-btn input {
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.mt-signup a {
+    color: black;
+    font-weight: bold !important;
+}
+
+
+.mt-forgetpass a{
+    color: white;
+}
+.mt-form h4{
+    color: black;
+}
+.m-center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    margin-top:11%;
+  }
+.bg_marchent{
+    background-image: url(./parcel.png);
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    height:110vh;
+    position: relative;
+}

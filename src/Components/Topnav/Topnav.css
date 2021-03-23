@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'ghuri';
-    src: local('ghuri'), url(./Font/ghuri_font_italic.otf) format('opentype');
+    font-family: 'abel';
+    src: local('abel'), url(../../font/Abel-Regular.ttf) format('truetype');
   }
 .logo{
     margin-left: 25px;
@@ -15,44 +15,64 @@
 
 .navbar{
     /* background-color: rgba(255,255,255, .1); */
-    background-color:rgba(255, 204, 0,1);
+    background-color:#ffcc00;
     box-shadow: 2px 2px 5px black;
-    
+    height:64px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
    
     /* background-color: white; */
 }
 
-.nav-link {
+.nav-link a{
     display: block;
     padding: 6px 0px;
-    
-    margin-left: 15px;
-    border-radius:8px;
     color: white !important;
+    text-decoration: none;
+    font-family: abel;
+
 
 }
-.nav-link.active {
+.nav-link.active a{
     display: block;
-    padding: 6px 0px;
-    
+    padding: 6px 0px; 
     margin-left: 15px;
     border-radius:8px;
     color:black !important;
-    background-color: #ffcc00;
-
+    font-family: abel;
+    font-weight:600;
 }
 
 .language{
     border: none;
     color: black !important;
+    display: flex;
 }
 
-.logo{
-    font-family: ghuri;
-    font-size:30px;
-}
 .ghuri_logo{
-    width:50%;
+    width:90px;
     margin-left:10px;
+    height:45px;
     
 }
+
+@media only screen and (max-width: 600px) {
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+
+        .nav-link{
+            border-bottom: 2px solid white;
+        }
+
+  }

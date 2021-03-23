@@ -1,0 +1,61 @@
+.fullwidth select{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 15%);
+    background-color: transparent;
+    padding: 5px 10px;
+    color:white;
+}
+
+.fullwidth select option{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 15%);
+    background-color: transparent;
+    padding: 5px 10px;
+    color:white;
+    background-color:rgba(255, 204, 0,1);
+   
+}
+.sign-top{
+
+    z-index: -1;
+    height: 600px;
+   
+
+}
+
+.signup_bg{
+    background: url("../../images/others/register.png") no-repeat center;
+    width: 100%;
+    background-size: cover;
+    background-position:top;
+    height: 100vh;
+    z-index: -1;
+}
+
+.sign-form{
+ background-color:black;
+    padding: 20px 40px;
+    color:white;
+    font-family: abel;
+    margin-top:10%;
+    opacity:54%;
+   
+}
+.sign-submit-btn input {
+    padding: 7px 60px;
+    background-color: white;
+    color:black;
+    border: none;
+    border-radius: 20px;
+    z-index:999;
+    font-weight: bold;
+}
+
+.is-danger{
+    border-bottom: 2px solid red;
+}
+.help{
+    color: red;
+}

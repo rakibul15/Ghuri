@@ -1,0 +1,95 @@
+.platform_bg{
+    background-image: url("../../images/others/ride\ .png");
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    height: 600px;
+    margin-top: -6%;
+    top: -12px;
+}
+.platform{
+    position: relative;
+    z-index: -1;
+}
+.platform h2{
+    color: white;
+    text-align: center;
+}
+.product{
+    padding:20px 30px;
+   
+}
+.padding_reduce{
+    
+    border: 2px solid #F5F5F5;
+    border-right: 1px;
+    /* border-bottom: 2px solid #F5F5F5; */
+    padding-left: 30px;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+
+}
+.platform_wrapper{
+    border-radius: 30px !important;
+    margin-top:-5%;
+}
+
+.product_info{
+    background-color:white;
+    background-image: url("../../images/others/background.png");
+    /* width: 100%; */
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    margin-top: -35px;
+    /* z-index: -1; */
+    padding-bottom: 55px;
+    padding-left: 15px;
+   height: 100vh;
+
+}
+
+.product_info p{
+    text-align: justify;
+}
+.product_img img{
+    width: 100%;
+}
+.learn_more{
+    background-color: #ffcc00;
+}
+.learn_more .fa-chevron-right {
+    margin-left:9px;
+    font-size: 13px !important;
+}
+.product h4{
+    color:black;
+    font-weight: 400;
+  
+}
+
+
+.active_product h4{
+    color: #ffcc00;
+    font-weight:bold;
+  
+  
+}
+.product h4 :hover{
+    text-decoration: none;
+    font-weight:bold;
+   
+  
+}
+ a:hover{
+     text-decoration: none;
+ }
+
+.active_product {
+    border-bottom: 2px solid #ffcc00;
+   
+}

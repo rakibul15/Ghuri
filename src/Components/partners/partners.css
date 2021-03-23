@@ -1,0 +1,28 @@
+.partners{
+    margin-top: 50px;
+    /* padding-bottom: 60px; */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.partners h1{
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-family: abel;
+    margin-top: 20px;
+}
+.partners_logo img{
+    /* width:80% !important;  */
+    border-radius: 20px;
+    padding: 30%;
+    box-shadow: 1px 1px 5px grey;
+    width:100% !important;
+
+}
+.partners_logo{
+    /* border-radius: 10px;
+    box-shadow: 1px 1px 10px grey; */
+    padding: 2%;
+    text-align: center;
+}

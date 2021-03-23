@@ -7,19 +7,22 @@
     font-family: 'Abel';
     src: local('Abel'), url(./font/Abel-Regular.ttf) format('truetype');
   }
-.videostyle{
+  /* .header{
+    height: 600px;
+  } */
+
+/* .videostyle{
     position: absolute;
     width: 100%;
-    height: 100%;
     left:50%;
     top:50%;
     object-fit: cover;
     transform: translate(-50%,-50%);
     z-index:-1;
 
-}
+} */
   .ghuriapp{
-    background-color:#ffdf00;
+    background-color:#ffcc00;
     padding: 0.8rem 2rem;
     
    
@@ -30,7 +33,7 @@
     background-color: white;
     border: 1px solid black;
     padding: 1rem 2rem;
-
+   
 }
 
 
@@ -46,12 +49,12 @@
      font-weight:800;
      margin-left: 10%;
 }
-.center {
+/* .center {
     margin: auto;
     width: 100%;
     padding: 10px;
-    margin-top:10%;
-  }
+    margin-top:15%;
+  } */
 
   .motto{
       color: white;
@@ -65,16 +68,17 @@
   }
 .f-size h3{
     color:white;
+    font-size: 2.1rem;
 }
  
-
+/* 
   .overlay{
     background-color: rgba(255, 204, 0, 0.2);
-    position:fixed;
+    position:absolute;
     width: 100%;
-    height: 100%;
+    height:600px;
     
-  }
+  } */
 
   .ghuri-button i{
     font-size:30px;
@@ -95,3 +99,51 @@
     vertical-align: middle;
     display: inline-block;
     }
+  .space_fixed{
+    margin-left: 25px;
+    margin-right:36px;
+  }
+  .space_app{
+    margin-left: 16px;
+    margin-right:28px;
+  }
+/* .banner{
+  width: 100%;
+  height:100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+} */
+/* .banner video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height:88vh;
+} */
+
+.banner .content{
+  position: relative;
+  z-index:1;
+  margin:0 auto;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.video{
+     object-fit: cover;
+    width: 100%;
+    height:110vh;
+
+}
