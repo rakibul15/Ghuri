@@ -3,6 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Topnav from "./Components/Topnav/Topnav";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
+
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 import Home from "./Components/Home/Home";
 import Header from "./Components/Header/Header";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
@@ -21,6 +25,7 @@ import Ticket from "./Components/ticket/Ticket";
 import Partners from "./Components/partners/Partners";
 import Headline from "./Components/haedline/Headline";
 import Gallery from "./Components/gallery/Gallery";
+import Clients from "./Components/clients/Clients";
 
 
 function App() {
@@ -105,6 +110,7 @@ function App() {
         <Gallery></Gallery>
         <Headline></Headline>
         <Partners></Partners>
+        <Clients></Clients>
         <Footer />
       </Router>
     </div>

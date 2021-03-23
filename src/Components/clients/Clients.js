@@ -1,12 +1,10 @@
-import React from "react";
-//Partners css
-import "./partners.css";
-
+import React from 'react'
 //Media Query Css for Responsive
 import "../../css/mediaQuery.css";
 
 //Owl Carousel
 import OwlCarousel from "react-owl-carousel";
+
 
 // images of all partners
 import airtel from "../../images/partners/airtel_logo.png";
@@ -16,13 +14,14 @@ import fasal from "../../images/partners/fasal_logo.png";
 import swan from "../../images/partners/swan_logo.png";
 import nayabari from "../../images/partners/noyabari_logo.png";
 import lodigreen from "../../images/partners/Lodi green_logo.png";
+import "./clients.css"
 
-const Partners = () => {
-  return (
-    <div className="partners ">
+const Clients = () => {
+    return (
+        <div className="partners clients ">
       <div className="row">
         <div className="col-sm-12 col-12">
-          <h1>GHURI PARTNERS</h1>
+          <h1>GHURI CLIENTS</h1>
         </div>
       </div>
       <OwlCarousel
@@ -31,7 +30,6 @@ const Partners = () => {
         items={6}
         nav
         autoplay
-      
         className="row justify-content-center align-items-center owl-theme"
       >
         <div className="item">
@@ -69,7 +67,7 @@ const Partners = () => {
         </div>
       </OwlCarousel>
     </div>
-  );
-};
+    )
+}
 
-export default Partners;
+export default Clients;
