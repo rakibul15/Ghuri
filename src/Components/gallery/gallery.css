@@ -68,7 +68,7 @@
     object-fit: cover;
 }
 .fixing{
-    padding: 0px !important;
+    padding: 0px;
 }
 .middle_fix{
     padding-left: 10px !important;
@@ -78,3 +78,4 @@
 .second_fix{
     padding-right: 0px;
 }
+

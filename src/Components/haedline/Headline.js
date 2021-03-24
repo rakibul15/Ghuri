@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "./headline.css";
-import newsdata from "../news/news";
+
 
 //Media Query Css for Responsive
 import "../../css/mediaQuery.css";
+
+
+import newsdata from "../news/news";
 
 //Owl Carousel
 import OwlCarousel from "react-owl-carousel";

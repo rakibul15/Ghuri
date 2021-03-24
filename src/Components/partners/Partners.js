@@ -18,6 +18,21 @@ import a2i from "../../images/partners/a2i.png"
 import nayabari from "../../images/partners/noyabari_logo.png";
 
 const Partners = () => {
+  let option= {
+    responsive:{
+        0: {
+            items: 3,
+        },
+        450: {
+            items: 3,
+        },
+        600: {
+            items: 4,
+        },
+        1000: {
+            items: 6,
+        },
+    }}
   return (
     <div className="partners ">
       <div className="row">
@@ -31,8 +46,9 @@ const Partners = () => {
         items={6}
         autoplay
         dots={false}
+        {...option}
       
-        className="row justify-content-center align-items-center owl-theme"
+        className=" d-flex  align-items-center owl-theme"
       >
         <div className="item">
           <div className=" nuraniInterior partners_logo ">

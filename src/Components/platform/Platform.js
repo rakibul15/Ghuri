@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./platform.css";
+import "../../css/mediaQuery.css"
 import ride from "../../images/others/ride.png";
 import { Link } from "react-router-dom";
 

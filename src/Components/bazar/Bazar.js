@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Bazar.css";
+
 import bazarimg from "../../images/others/bazar.png";
+import "../../css/mediaQuery.css"
 
 const Bazar = () => {
   return (

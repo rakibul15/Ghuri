@@ -1,5 +1,11 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 575.98px) {
+/* topNav Collapse */
+.nav-link.active a {
+
+    margin-left: 0px !important;
+ 
+}
 
 /* Ghuri Header */
 
@@ -42,15 +48,26 @@
     flex-wrap: nowrap;
 }
 .info h2{
-    font-size:12px;
+    font-size:20px;
+    font-weight: bold;
 }
 .info p{
     font-size: 8px;
     margin-top: 10px !important;
 }
+
+/* Count */
 .Count{
     padding: 10px;
 }
+
+/* Platform */
+.product_row {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+    background-color: white;
+}
+
 .parcel_bg {
     margin-top: -20% !important;
     height: 260px !important;
@@ -98,7 +115,7 @@
     text-align: justify;
 }
 .product{
-    padding: 12px 10px !important;
+    padding: 15px 10px !important;
 }
 .product h4{
     font-size: 12px !important;
@@ -108,6 +125,10 @@
     /* flex-wrap: nowrap !important; */
     position: sticky;
 }
+.bazar_bg {
+    top: 0px !important;
+}
+
 p{
     font-size: 12px !important;
 }
@@ -129,8 +150,18 @@ h4{
     border: none !important;
 }
 
+/* Gallery */
 
-  
+.small_size_fix_right{
+    padding-right: 0px !important;
+}
+.small_size_fix{
+    padding: 0px !important;
+}
+.small_size_fourth{
+padding:0px 0px 0px 15px !important;
+
+}
 /* Footer */
 
 /* .store img{
@@ -201,16 +232,12 @@ h4{
 }
 .gallery_bg{
 
-  height:200px !important;
+  height:160px !important;
  
    
 }
 
-.gallery_cover_img img {
-    min-height: 90px !important;
-    max-height: 90px !important;
-  
-}
+
 .gallery_cover_img p {
  
     margin-top: -45px !important;
@@ -223,10 +250,17 @@ h4{
     padding: 10% !important;
    
 }
+.headline_img {
+   
+    margin-top: 0px !important;
+}
+
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
 
    
 }
@@ -238,17 +272,32 @@ h4{
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 991.98px){
 
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
     .footer_store_img img{
         width: 70%;
         margin-left:35px !important;
     }
 
+
+
+}
+
+@media (min-width: 1200px) { 
+    .footer_store_img img{
+        width: 70%;
+        margin-left:35px !important;
+    }
+
+    .gallery_bg {
+       
+        height:500px !important;
+       
+    }
 }

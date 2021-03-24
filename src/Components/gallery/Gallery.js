@@ -23,28 +23,28 @@ const Gallery = () => {
                 </div>
             </div>
             <div className="row mt-3">
-                <div className="col-sm-3 col-3 fixing">
+                <div className="col-sm-3 col-6 small_size_fix fixing">
                        <div className="gallery_cover_img">
                        <img src={image1} className="img-fluid" alt=""/>
                         <p>Ghuri Parcel</p>
                        
                        </div>
                 </div>
-                <div className="col-sm-3 col-3 second_fix">
+                <div className="col-sm-3 col-6 small_size_fix_right second_fix">
                        <div className="gallery_cover_img">
                        <img src={ghuri_ride} className="img-fluid" alt=""/>
                         <p>Ghuri Ride</p>
                        
                        </div>
                 </div>
-                <div className="col-sm-3 col-3 third_fix">
+                <div className="col-sm-3 col-6 small_size_fix third_fix">
                       <div className="gallery_cover_img">
                       <img src={parcel2} className="img-fluid" alt=""/>
                         <p>Ghuri Food</p>
                      
                       </div>
                 </div>
-                <div className="col-sm-3 col-3 fixing  ">
+                <div className="col-sm-3 col-6 small_size_fix_right fixing small_size_fourth ">
                       <div className="gallery_cover_img">
                       <img src={image2} className="img-fluid" alt=""/>
                         <p>Ghuri Truck</p>
@@ -53,26 +53,26 @@ const Gallery = () => {
                 
             </div>
             <div className="row mt-1">
-                <div className="col-sm-3 col-3 fixing">
+                <div className="col-sm-3 col-6 small_size_fix fixing">
                        <div className="gallery_cover_img">
                        <img src={mobile} className="img-fluid" alt=""/>
                         <p>Ghuri Bazar</p>
                        
                        </div>
                 </div>
-                <div className="col-sm-3 col-3 second_fix">
+                <div className="col-sm-3 col-6 small_size_fix_right second_fix">
                        <div className="gallery_cover_img">
                        <img src={ghuri_ticket} className="img-fluid" alt=""/>
                         <p>Ghuri Ticket</p>
                        </div>
                 </div>
-                <div className="col-sm-3 col-3 third_fix">
+                <div className="col-sm-3 col-6 small_size_fix third_fix">
                       <div className="gallery_cover_img">
                       <img src={news} className="img-fluid" alt=""/>
                         <p>Ghuri News</p>
                       </div>
                 </div>
-                <div className="col-sm-3 col-3 fixing  ">
+                <div className="col-sm-3 col-6 small_size_fix_right fixing small_size_fourth ">
                       <div className="gallery_cover_img">
                       <img src={interior} className="img-fluid" alt=""/>
                         <p>Ghuri Interior</p>
