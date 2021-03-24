@@ -20,6 +20,9 @@ const Topnav = () => {
             <Nav.Link className="active">
               <Link to="/home"> Home</Link>
             </Nav.Link>
+            <Nav.Link className="px-4 active">
+              <Link to="/marchent"> Merchant</Link>
+            </Nav.Link>
             <Nav.Link className="language">
              <Link> <i class="fa fa-globe"></i> EN</Link>
             </Nav.Link>
