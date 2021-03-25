@@ -18,16 +18,17 @@
 }
 .sign-top {
   z-index: -1;
-  height: 600px;
+ 
 }
 
 .signup_bg {
-  background: url("../../images/others/register.png") no-repeat center;
+  background: url("../../images/others/register.png") no-repeat;
   width: 100%;
   background-size: cover;
   background-position: top;
-  height: 100vh;
   z-index: -1;
+  min-height: 110vh;
+  height: 100%;
 }
 
 .sign-form {
@@ -37,6 +38,7 @@
   font-family: abel;
   margin-top: 10%;
   opacity: 54%;
+  margin-bottom: 5%;
 }
 .sign-submit-btn input {
   padding: 7px 60px;

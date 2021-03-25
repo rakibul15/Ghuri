@@ -105,10 +105,11 @@
 
 .product_info {
   
-    padding-top: 40px !important;
-     margin-top: 0px !important;     
-    height:80vh !important;
+    margin-top: 40px !important;
+     /* margin-top: 0px !important;      */
+    height:100% !important;
     padding-left: 0px !important;
+    padding-top: 0px !important;
 }
 
 .product_info p{
@@ -154,14 +155,33 @@ h4{
 
 .small_size_fix_right{
     padding-right: 0px !important;
+    padding-left: 1% !important;
 }
 .small_size_fix{
-    padding: 0px !important;
+    padding: 0px 1% 0px 0px!important;
 }
 .small_size_fourth{
-padding:0px 0px 0px 15px !important;
+padding:0px 0px 0px 1% !important;
 
 }
+
+
+.gallery_cover_img p {
+ 
+    margin-top: -45px !important;
+    margin-bottom: 3.6%;
+
+}
+
+.gallery_cover_img img {
+ 
+  min-height: 150px !important;
+  max-height: 150px !important;
+
+}
+
+
+
 /* Footer */
 
 /* .store img{
@@ -238,11 +258,6 @@ padding:0px 0px 0px 15px !important;
 }
 
 
-.gallery_cover_img p {
- 
-    margin-top: -45px !important;
-
-}
 
 .partners_logo img {
   
@@ -254,15 +269,164 @@ padding:0px 0px 0px 15px !important;
    
     margin-top: 0px !important;
 }
+.headline_box img{
+width: 80% !important;
+height:80px !important;
+object-fit: scale-down;
+height:80px !important;
+}
+
+.headline_box{
+
+    height: auto !important;
+    }
+    .headline_box h5{
+
+       font-size: 1rem;
+       display: block;
+    white-space: nowrap;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+        }
+    
+    /* SingleNews */
+    .single_news{
+        display: inline!important;
+        width: 100%;
+    }
+/*Marchent Sign In from */
+
+.sign-form {
+    /* background-color: black;
+    padding: 20px 40px;
+    color: white;
+    font-family: abel;
+    margin-top: 10%;
+    opacity: 54%;
+    margin-bottom: 5%; */
 
 
+margin-top: 100px !important;
+ 
+       
+  
+
+  }
+  .sm_center_fix{
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%, -0%);
+    width: 100%;
+  }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+    /* Product Info Starts*/
+    .product_info {
+  
+        margin-top: 40px !important;
+         /* margin-top: 0px !important;      */
+        height:100% !important;
+        padding-left: 0px !important;
+        padding-top: 0px !important;
+    }
 
-   
+    .sm_center_fix{
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0%, -0%);
+        width: 100%;
+      }
+
+      .product{
+        padding: 15px 10px !important;
+    }
+    .product h4{
+        font-size: 12px !important;
+        margin: 0px;
+    }
+
+    p{
+        font-size: 12px !important;
+    }
+
+    /*Product info Ends*/
+
+
+    /*Header Starts*/
+    .ghuri-button{
+        text-align: center;
+    }
+    .f-size h1{
+        margin-top: 10px;
+        font-size:1.5rem;
+    }
+    
+    .f-size h3{
+        margin-top: 10px;
+        font-size:0.9rem;
+        margin-bottom: 20px;
+    }
+    
+    .btn-lg{
+        margin-left:0px;
+        font-weight: 500;
+        font-size:1rem;
+    }
+    
+    .earnwith {
+        background-color: white;
+        border: 1px solid black;
+        padding: 0.5rem 0.2rem;
+    }
+    .ghuriapp {
+        background-color: #ffdf00;
+        padding: 0.3rem 0.4rem;
+    }
+    /*Haeder Ends*/
+
+
+
+    /* Gallery  Starts*/
+
+/* .small_size_fix_right{
+    padding-right: 0px !important;
+    padding-left: 1% !important;
+}
+.small_size_fix{
+    padding: 0px 1% 0px 0px!important;
+}
+.small_size_fourth{
+padding:0px 0px 0px 1% !important;
+
+} */
+
+
+.gallery_cover_img p {
+ 
+    margin-top: -45px !important;
+    margin-bottom: 3.6%;
+
+}
+
+.gallery_cover_img img {
+ 
+  min-height: 150px !important;
+  max-height: 150px !important;
+
+}
+
+/* Gallery Ends*/
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -297,7 +461,7 @@ padding:0px 0px 0px 15px !important;
 
     .gallery_bg {
        
-        height:500px !important;
+        height:60vh !important;
        
     }
 }

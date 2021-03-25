@@ -62,8 +62,8 @@ const parcel = () => {
         </div>
       </div>
       <div className="d-flex justify-content-center product_info">
-        <div className="col-sm-10 col-10">
-          <div className="row justify-content-center align-items-center center">
+        <div className="col-sm-10">
+          <div className="row justify-content-center align-items-center center sm_center_fix ">
             <div className="col-sm-6">
               <h4 className="mb-4">GHURI PARCEL</h4>
               {/* <h4 className="mb-4">Open ghuri App, choose ghuri parcel</h4> */}

@@ -95,3 +95,7 @@
   -ms-overflow-style: none;  
   scrollbar-width: none; 
 } */
+
+.appear_small{
+    display: none;
+}
