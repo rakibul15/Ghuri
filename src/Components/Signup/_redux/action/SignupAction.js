@@ -82,9 +82,9 @@ const url = `https://dev.api.ghuriparcel.com/v1/merchant/register`;
 
 
 const headersData= {
-    'Content-Type': 'application/json',
+    // 'Content-Type': 'application/json',
     'Authorization': 'Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ==',
-    'Access-Control-Allow-Origin':'*',
+    // 'Access-Control-Allow-Origin':'*',
   } 
  Axios.post(url,submitData,{
       headers: headersData
