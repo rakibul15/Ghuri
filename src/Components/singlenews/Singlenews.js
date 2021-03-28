@@ -20,7 +20,7 @@ const Singlenews = (props) => {
         </div>
       </div> */}
        
-      <div className="row justify-content-center d-flex align-items-center">
+      {/* <div className="row justify-content-center d-flex align-items-center">
         <div className="col-sm-4 col-6">
           <div className="">
            
@@ -44,9 +44,9 @@ const Singlenews = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      {/* <div className="single_grid">
+      <div className="single_grid">
         <div className="gird_news headline_content headline_img">
           <img src={props.snews.image} className="img-fluid mt-5" alt="" />
         </div>
@@ -56,7 +56,7 @@ const Singlenews = (props) => {
             View Article <i className="ml-4" class="fa fa-chevron-right"></i>
           </a>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
