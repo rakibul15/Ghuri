@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../css/mediaQuery.css"
+import "../../css/mediaQuery.css";
 import "./parcel.css";
 
 import parcelimg from "../../images/others/Parcel.png";
-
 
 const parcel = () => {
   return (
@@ -24,37 +23,31 @@ const parcel = () => {
           <div className="row justify-content-center text-center product_row">
             <div className="col-sm-2 col-2 padding_reduce product active_product first_product ">
               <Link to="/parcel">
-            
                 <h4>Parcel</h4>
               </Link>
             </div>
             <div className="col-sm-2 col-2 padding_reduce  product ">
               <Link to="/ride">
-             
                 <h4>Ride</h4>
               </Link>
             </div>
             <div className="col-sm-2 col-2 padding_reduce  product">
               <Link to="/food">
-               
                 <h4>Food</h4>
               </Link>
             </div>
             <div className="col-sm-2 col-2 padding_reduce  product">
               <Link to="/truck">
-               
                 <h4>Truck</h4>
               </Link>
             </div>
             <div className="col-sm-2 col-2 padding_reduce  product">
               <Link to="/bazar">
-              
                 <h4>Bazar</h4>
               </Link>
             </div>
             <div className="col-sm-2 col-2 padding_reduce  product last_product">
               <Link to="/ticket">
-               
                 <h4>Ticket</h4>
               </Link>
             </div>
@@ -78,7 +71,7 @@ const parcel = () => {
                 to your Customer. GHURI Parcel Delivery is the one-stop solution
                 for all of your delivery problems. GHURI Parcel enables you to
                 offer home delivery service to your business's customers all
-                over Dhaka City.
+                over Dhaka city.
               </p>
               {/* <button className="btn  mt-3 learn_more">
                 Learn More

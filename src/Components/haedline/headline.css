@@ -19,13 +19,13 @@
     margin: 1%;
     
 }
-.vertical-center {
+/* .vertical-center {
     margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
+  } */
   .headline_text p{
       text-align: start !important;
    
@@ -59,19 +59,18 @@
 
 }
 
-.headline_text a{
+/* .headline_text a{
     text-decoration: none;
     color: #ffcc00;
     text-align: left !important;
-}
-.headline_box{
+} */
+/* .headline_box{
     box-shadow: 1px 1px 10px gray;
     padding: 5%;
     border-radius: 20px;
-    /* overflow-y: scroll; */
     height: 200px;
     
-}
+} */
 /* .headline_content h5 {
     white-space: nowrap;
     width: 100%;
