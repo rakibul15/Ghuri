@@ -23,7 +23,8 @@
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-   
+   padding-top:0px;
+   padding-bottom: 0px;
     /* background-color: white; */
 }
 
@@ -58,6 +59,14 @@
     height:45px;
     
 }
+.navbar-nav .nav-link {
+   
+    padding-left: 10px !important;
+
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -68,11 +77,11 @@
             margin-bottom: 0;
             list-style: none;
             background-color: #ffcc00;
-            padding: 20px;
+            /* padding: 20px; */
         }
 
-        .nav-link{
+        /* .nav-link{
             border-bottom: 2px solid white;
-        }
+        } */
 
   }
