@@ -13,7 +13,11 @@ const initialState = {
         area:"",
         address:""
     },
-    
+    addStatus: false,
+    addMessage: '',
+    isLoading: false,
+    errors: [],
+    redirectToLogin:false
 };
 const SignupReducer = (state = initialState, action) => {
     const newState = { ...state };
@@ -25,6 +29,24 @@ const SignupReducer = (state = initialState, action) => {
                 ...state,
                 signupTextInput: signupTextInput
             };
+            case Types.CREATE_SUBMIT:
+                return {
+                    ...state,
+                    addMessage: action.payload.message,
+                    addStatus: action.payload.status,
+                    isLoading: action.payload.isLoading,
+                    errors: action.payload.errors,
+                };
+            case Types.REDIRECT_TO_LOGIN:
+                return {
+                ...state,
+                redirectToLogin:action.payload
+            }
+        case Types.SET_EMPTY_SIGNUP_FIELD:
+            return{
+                ...state,
+                signupTextInput:initialState.signupTextInput
+            }
         default:
             break;
     }

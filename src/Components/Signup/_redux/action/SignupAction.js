@@ -1,6 +1,8 @@
 import * as Types from '../types/Types'
+
 import Axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
+import { useHistory } from 'react-router';
 export const InputSignupText=(name,value)=>(dispatch)=>{
     const formData={
         name:name,
@@ -9,9 +11,7 @@ export const InputSignupText=(name,value)=>(dispatch)=>{
     dispatch({type:Types.INPUT_SIGNUP_TEXT,payload:formData})
 }
 
-export const SubmitSignupData=(data)=>(dispatch)=>{
-// console.log(`data`, data)
-
+export const SubmitSignupData=(data)=>async(dispatch)=>{
 
    if(data && data.firstName.length === 0){
     toast.error("First Name Should Not Be Empty");
@@ -77,24 +77,47 @@ export const SubmitSignupData=(data)=>(dispatch)=>{
     password: data.password
    }
 
-// const url = `http://34.117.240.175/v1/merchant/register`;
 const url = `https://dev.api.ghuriparcel.com/v1/merchant/register`;
-
-
 const headersData= {
-    // 'Content-Type': 'application/json',
-    'Authorization': 'Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ==',
-    // 'Access-Control-Allow-Origin':'*',
+    'Authorization': 'Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ=='
   } 
- Axios.post(url,submitData,{
-      headers: headersData
-      }).then(
-          (res)=>{
-              console.log(`res`, res)
-              if(res.data.message){
-                  toast.success(res.data.message)
-              }
-          }
-      )
 
+  let response = {
+    products: [],
+    status: false,
+    message: "",
+    isLoading: true,
+    errors: []
+};
+dispatch({ type: Types.CREATE_SUBMIT, payload: response });
+
+ try{
+    await Axios.post(url,submitData,{
+        headers: headersData
+        }).then(
+            (res)=>{
+                console.log(`res`, res)
+                if(typeof res !== 'undefined'){
+                    toast.success(res.data.message)
+                    if(res.status === 200){
+                        dispatch({type:Types.REDIRECT_TO_LOGIN,payload:true})
+                    }
+                }else{
+                    toast.error('Please check the file inputs and try again !');
+                }
+            }
+        )
+    }catch (error) {
+        response.message = 'Something Went Wrong !';
+        toast.error(error);
+    }
+
+    response.isLoading = false;
+    dispatch({ type: Types.CREATE_SUBMIT, payload: response });
+
+}
+
+export const SetRiderectMessage=()=>(dispatch)=>{
+    dispatch({type:Types.REDIRECT_TO_LOGIN,payload:false})
+    dispatch({type:Types.SET_EMPTY_SIGNUP_FIELD,payload:false})
 }

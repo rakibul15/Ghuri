@@ -8,7 +8,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 // import { icons } from './assets/icons'
 import { Provider } from 'react-redux'
 import Store from "./redux/store/Store";
-
+require('dotenv').config();
 // React.icons = icons
 let store = Store();
 const rootElement = document.getElementById("root");
