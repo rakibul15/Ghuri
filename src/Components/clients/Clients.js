@@ -20,10 +20,27 @@ import iz from "../../images/partners/izone.png"
 import "./clients.css"
 
 const Clients = () => {
+
+ let option= {
+    responsive:{
+        0: {
+            items: 3,
+        },
+        450: {
+            items: 3,
+        },
+        600: {
+            items: 4,
+        },
+        1000: {
+            items: 6,
+        },
+    }}
+  
     return (
         <div className="partners clients ">
       <div className="row">
-        <div className="col-sm-12 col-12">
+        <div className="col-sm-12">
           <h1>GHURI CLIENTS</h1>
         </div>
       </div>
@@ -31,9 +48,10 @@ const Clients = () => {
         loop
         margin={10}
         items={6}
-        nav
+        dots={false}
         autoplay
-        className="row justify-content-center align-items-center owl-theme"
+        {...option}
+        className=" justify-content-center align-items-center owl-theme"
       >
         <div className="item">
           <div className=" fasal partners_logo ">

@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Bazar.css";
+
 import bazarimg from "../../images/others/bazar.png";
+import "../../css/mediaQuery.css"
 
 const Bazar = () => {
   return (
@@ -51,7 +53,7 @@ const Bazar = () => {
       </div>
       <div className="d-flex justify-content-center product_info">
         <div className="col-sm-10 ">
-          <div className="row justify-content-center align-items-center center">
+          <div className="row justify-content-center align-items-center center center sm_center_fix">
             <div className="col-sm-6">
               <h4 className="mb-4">GHURI BAZAR</h4>
               {/* <h4 className="mb-4">Open GHURI App. Choose GHURI Bazar.</h4> */}

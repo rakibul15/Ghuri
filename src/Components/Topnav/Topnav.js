@@ -17,7 +17,7 @@ const Topnav = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="px-4 active">
+            <Nav.Link className="active">
               <Link to="/home"> Home</Link>
             </Nav.Link>
             <Nav.Link className="px-4 active">

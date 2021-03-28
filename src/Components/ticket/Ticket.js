@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Ticket.css";
+import "../../css/mediaQuery.css"
 import ticketimg from "../../images/others/ticket.png";
 
 const Ticket = () => {
@@ -51,7 +52,7 @@ const Ticket = () => {
       </div>
       <div className="d-flex justify-content-center product_info">
         <div className="col-sm-10 ">
-          <div className="row justify-content-center align-items-center center">
+          <div className="row justify-content-center align-items-center center sm_center_fix">
             <div className="col-sm-6">
               <h4 className="mb-4">GHURI TICKET</h4>
               {/* <h4 className="mb-4">Open GHURI App. Choose GHURI Ticket..</h4> */}
