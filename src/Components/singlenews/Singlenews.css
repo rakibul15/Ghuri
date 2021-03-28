@@ -1,0 +1,12 @@
+.single_grid{
+    display: grid;
+    grid-template-columns:6fr 6fr;
+    grid-column-gap: 50px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid_news{
+justify-self: center;
+}

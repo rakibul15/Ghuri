@@ -1,4 +1,5 @@
 import React from "react";
+import "./Singlenews.css";
 
 const Singlenews = (props) => {
   // console.log(props.snews.image);
@@ -18,7 +19,7 @@ const Singlenews = (props) => {
           </a>
         </div>
       </div> */}
- 
+       
       <div className="row justify-content-center d-flex align-items-center">
         <div className="col-sm-4 col-6">
           <div className="">
@@ -44,6 +45,18 @@ const Singlenews = (props) => {
           </div>
         </div>
       </div>
+
+      {/* <div className="single_grid">
+        <div className="gird_news headline_content headline_img">
+          <img src={props.snews.image} className="img-fluid mt-5" alt="" />
+        </div>
+        <div className="grid_news headline_content headline_text  haedline_atag">
+          <h5 className="">{props.snews.description}</h5>
+          <a target="_blank" href={props.snews.link}>
+            View Article <i className="ml-4" class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+      </div> */}
     </>
   );
 };

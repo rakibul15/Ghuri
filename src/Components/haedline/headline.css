@@ -72,15 +72,12 @@
     height: 200px;
     
 }
-.headline_text h5 {
-    display: block;
+/* .headline_content h5 {
     white-space: nowrap;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    /* width:100%; */
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+} */
 
 .haedline_atag a{
     color: #ffcc00;

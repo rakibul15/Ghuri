@@ -12,6 +12,7 @@ export const InputSignupText=(name,value)=>(dispatch)=>{
 export const SubmitSignupData=(data)=>(dispatch)=>{
 // console.log(`data`, data)
 
+
    if(data && data.firstName.length === 0){
     toast.error("First Name Should Not Be Empty");
     return false
@@ -75,14 +76,15 @@ export const SubmitSignupData=(data)=>(dispatch)=>{
     phone: data.phone,
     password: data.password
    }
-// console.log(`submitData`, submitData)
 
-const url = `http://34.117.240.175/v1/merchant/register`;
+// const url = `http://34.117.240.175/v1/merchant/register`;
+const url = `https://dev.api.ghuriparcel.com/v1/merchant/register`;
+
 
 const headersData= {
-    'Content-Type': 'application/json',
+    // 'Content-Type': 'application/json',
     'Authorization': 'Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ==',
-    'Access-Control-Allow-Origin':'*',
+    // 'Access-Control-Allow-Origin':'*',
   } 
  Axios.post(url,submitData,{
       headers: headersData
