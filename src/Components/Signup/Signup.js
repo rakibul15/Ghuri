@@ -22,7 +22,7 @@ const Signup = () => {
     login,
     validate
   );
-
+console.log(`test`)
 useEffect(() => {
  if(redirectToLogin){
   window.location.assign(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`)
