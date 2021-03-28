@@ -1,321 +1,338 @@
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 575.98px) {
-/* topNav Collapse */
-.nav-link.active a {
-
+  /* topNav Collapse */
+  .nav-link.active a {
     margin-left: 0px !important;
- 
-}
+  }
 
-/* Ghuri Header */
+  /* Ghuri Header */
 
-.ghuri-button{
+  .ghuri-button {
     text-align: center;
-}
-.f-size h1{
+  }
+  .f-size h1 {
     margin-top: 10px;
-    font-size:2.5rem;
-}
+    font-size: 2.5rem;
+  }
 
-.f-size h3{
+  .f-size h3 {
     margin-top: 10px;
-    font-size:1.75rem;
+    font-size: 1.75rem;
     margin-bottom: 20px;
-}
+  }
 
-.btn-lg{
-    margin-left:0px;
+  .btn-lg {
+    margin-left: 0px;
     font-weight: 500;
-}
+  }
 
-.earnwith {
+  .earnwith {
     background-color: white;
     border: 1px solid black;
     padding: 0.75rem 1rem;
-}
-.ghuriapp {
+  }
+  .ghuriapp {
     background-color: #ffdf00;
     padding: 0.6rem 1.1rem;
-}
-.appear_small{
+  }
+  .appear_small {
     display: block !important;
-}
-.remove_small{
+  }
+  .remove_small {
     display: none !important;
-}
+  }
 
-.sm_liline{
+  .sm_liline {
     flex-wrap: nowrap;
-}
-.info h2{
-    font-size:20px;
+  }
+  .info h2 {
+    font-size: 20px;
     font-weight: bold;
-}
-.info p{
+  }
+  .info p {
     font-size: 8px;
     margin-top: 10px !important;
-}
+  }
 
-/* Count */
-.Count{
+  /* Count */
+  .Count {
     padding: 10px;
-}
+  }
 
-/* Platform */
-.product_row {
+  /* Platform */
+  .product_row {
     box-shadow: 1px 1px 10px black;
     border-radius: 10px;
     background-color: white;
-}
+  }
 
-.parcel_bg {
+  .parcel_bg {
     margin-top: -20% !important;
     height: 260px !important;
-  
-  
-}
-.platform_bg {
+  }
+  .platform_bg {
     margin-top: -20% !important;
     height: 260px !important;
-  
-}
-.truck_bg {
+  }
+  .truck_bg {
     margin-top: -20% !important;
     height: 260px !important;
-  
-}
-.bazar_bg {
+  }
+  .bazar_bg {
     margin-top: -20% !important;
     height: 260px !important;
-  
-}
-.ticket_bg {
+  }
+  .ticket_bg {
     margin-top: -20% !important;
     height: 260px !important;
-  
-}
-.food_bg {
+  }
+  .food_bg {
     margin-top: -20% !important;
     height: 260px !important;
-  
-}
-.product_text h1 {
-    font-size:1.75rem !important;
-}
+  }
+  .product_text h1 {
+    font-size: 1.75rem !important;
+  }
 
-.product_info {
-  
+  .product_info {
     margin-top: 40px !important;
-     /* margin-top: 0px !important;      */
-    height:100% !important;
+    height: 100% !important;
     padding-left: 0px !important;
     padding-top: 0px !important;
-}
+  }
 
-.product_info p{
+  .product_info p {
     text-align: justify;
-}
-.product{
+  }
+  .product {
     padding: 15px 10px !important;
-}
-.product h4{
+  }
+  .product h4 {
     font-size: 12px !important;
     margin: 0px;
-}
-.product_row{
-    /* flex-wrap: nowrap !important; */
+  }
+  .product_row {
     position: sticky;
-}
-.bazar_bg {
+  }
+  .bazar_bg {
     top: 0px !important;
-}
+  }
 
-p{
+  p {
     font-size: 12px !important;
-}
-h4{
+  }
+  h4 {
     font-size: 14px !important;
-}
-.ticket_bg{
+  }
+  .ticket_bg {
     height: 260px !important;
-}
-.platform .center{
+  }
+  .platform .center {
     top: 70%;
-}
-.platform_wrapper {
+  }
+  .platform_wrapper {
     border-radius: 30px !important;
-    /* margin-top: -8% !important; */
-}
+    
+  }
 
-.padding_reduce{
+  .padding_reduce {
     border: none !important;
-}
+  }
 
-/* Gallery */
-
-.small_size_fix_right{
+  /* Gallery */
+  .small_size_fix_right {
     padding-right: 0px !important;
     padding-left: 1% !important;
-}
-.small_size_fix{
-    padding: 0px 1% 0px 0px!important;
-}
-.small_size_fourth{
-padding:0px 0px 0px 1% !important;
+  }
+  .small_size_fix {
+    padding: 0px 1% 0px 0px !important;
+  }
+  .small_size_fourth {
+    padding: 0px 0px 0px 1% !important;
+  }
 
-}
-
-
-.gallery_cover_img p {
- 
+  .gallery_cover_img p {
     margin-top: -45px !important;
     margin-bottom: 3.6%;
+  }
 
-}
-
-.gallery_cover_img img {
- 
-  min-height: 150px !important;
-  max-height: 150px !important;
-
-}
+  .gallery_cover_img img {
+    min-height: 150px !important;
+    max-height: 150px !important;
+  }
 
 
 
-/* Footer */
-
-/* .store img{
-    width: 60% !important;
-    text-align: left !important;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  /* Footer */
+  .our_app {
     margin-top: 0px !important;
-} */
-.our_app{
-    margin-top: 0px !important;
-}
+  }
 
-.form-control .email{
+  .form-control .email {
     width: 34% !important;
-}
-.input-group>.form-control{
+  }
+  .input-group > .form-control {
     width: 34% !important;
-}
+  }
 
-.ssl img{
+  .ssl img {
     width: 100% !important;
-}
+  }
 
-.csv img {
+  .csv img {
     width: 38% !important;
-}
- 
-.linklogo img {
+  }
+
+  .linklogo img {
     width: 10% !important;
     margin-top: 20px;
     margin-bottom: 20px;
-  
-}
+  }
 
-.footer-logo img {
+  .footer-logo img {
     width: 100% !important;
-}
-.Footer_fix{
+  }
+  .Footer_fix {
     display: flex;
     flex-wrap: wrap;
-}
-.footer_small_app{
+  }
+  .footer_small_app {
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
     margin-top: 20px;
     /* justify-content: space-between; */
-}
-.csv p{
+  }
+  .csv p {
     margin-top: 8px;
-}
-.appstore_footer{
+  }
+  .appstore_footer {
     text-align: right;
-}
-.marchant_small{
+  }
+  .marchant_small {
     margin-top: 20px;
-}
+  }
 
-/* Partners */
-.partners_logo{
+  /* Partners */
+  .partners_logo {
     padding: 4px !important;
-}
-.partners h1{
-  
+  }
+  .partners h1 {
     font-size: 14px !important;
-    
-}
-.gallery_bg{
+  }
+  .gallery_bg {
+    height: 160px !important;
+  }
 
-  height:160px !important;
- 
-   
-}
-
-
-
-.partners_logo img {
-  
+  .partners_logo img {
     border-radius: 10% !important;
     padding: 10% !important;
-   
-}
-.headline_img {
-   
+  }
+
+   /* Headline */
+  /* .headline_img {
     margin-top: 0px !important;
-}
-.headline_box img{
-width: 80% !important;
-height:80px !important;
-object-fit: scale-down;
-height:80px !important;
-}
+  }
+  .headline_box img {
+    width: 80% !important;
+    height: 80px !important;
+    object-fit: scale-down;
+    height: 80px !important;
+  }
 
-.headline_box{
-
+  .headline_box {
     height: auto !important;
-    }
-    .headline_box h5{
-
-       font-size: 1rem;
-       display: block;
+  }
+  .headline_box h5 {
+    font-size: 1rem;
+    display: block;
     white-space: nowrap;
     -webkit-line-clamp: 3;
     line-clamp: 3;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-        }
-    
-    /* SingleNews */
-    .single_news{
-        display: inline!important;
-        width: 100%;
-    }
-/*Marchent Sign In from */
+  } */
 
-.sign-form {
-    /* background-color: black;
-    padding: 20px 40px;
-    color: white;
-    font-family: abel;
-    margin-top: 10%;
-    opacity: 54%;
-    margin-bottom: 5%; */
+  /* SingleNews */
+  /* .single_news {
+    display: inline !important;
+    width: 100%;
+  } */
 
 
-margin-top: 100px !important;
+  .single_grid {
  
-       
-  
-
+    grid-template-columns:11fr !important;
+ 
   }
-  .sm_center_fix{
+  .headline_content{
+    box-shadow: none !important;
+    height: 100% !important;
+    padding:2% 5% !important;
+
+}
+
+.headline_img{
+    height: fit-content;
+}
+
+.single_grid {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-column-gap: 1fr;
+    grid-row-gap: 0px !important;
+  }
+
+  .headline_img img{
+  width: 70% !important;
+  justify-self: left;
+
+}
+
+.grid_warp{
+    
+    padding:2%;
+}
+.single_grid{
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 20px;
+}
+.headline_img .mt-5{
+    margin-top: 1rem !important;
+}
+
+
+
+
+
+  /*Marchent Sign In from */
+
+  .sign-form {
+    margin-top: 100px !important;
+  }
+  .sm_center_fix {
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%, -0%);
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Product Info Starts*/
+  .product_info {
+    margin-top: 40px !important;
+    /* margin-top: 0px !important;      */
+    height: 100% !important;
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+  }
+
+  .sm_center_fix {
     margin: 0;
     position: relative;
     top: 0;
@@ -324,144 +341,92 @@ margin-top: 100px !important;
     width: 100%;
   }
 
-}
+  .product {
+    padding: 15px 10px !important;
+  }
+  .product h4 {
+    font-size: 12px !important;
+    margin: 0px;
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    /* Product Info Starts*/
-    .product_info {
-  
-        margin-top: 40px !important;
-         /* margin-top: 0px !important;      */
-        height:100% !important;
-        padding-left: 0px !important;
-        padding-top: 0px !important;
-    }
+  p {
+    font-size: 12px !important;
+  }
 
-    .sm_center_fix{
-        margin: 0;
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0%, -0%);
-        width: 100%;
-      }
+  /*Product info Ends*/
 
-      .product{
-        padding: 15px 10px !important;
-    }
-    .product h4{
-        font-size: 12px !important;
-        margin: 0px;
-    }
+  /*Header Starts*/
+  .ghuri-button {
+    text-align: center;
+  }
+  .f-size h1 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
 
-    p{
-        font-size: 12px !important;
-    }
+  .f-size h3 {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
 
-    /*Product info Ends*/
+  .btn-lg {
+    margin-left: 0px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
 
+  .earnwith {
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.5rem 0.2rem;
+  }
+  .ghuriapp {
+    background-color: #ffdf00;
+    padding: 0.3rem 0.4rem;
+  }
 
-    /*Header Starts*/
-    .ghuri-button{
-        text-align: center;
-    }
-    .f-size h1{
-        margin-top: 10px;
-        font-size:1.5rem;
-    }
-    
-    .f-size h3{
-        margin-top: 10px;
-        font-size:0.9rem;
-        margin-bottom: 20px;
-    }
-    
-    .btn-lg{
-        margin-left:0px;
-        font-weight: 500;
-        font-size:1rem;
-    }
-    
-    .earnwith {
-        background-color: white;
-        border: 1px solid black;
-        padding: 0.5rem 0.2rem;
-    }
-    .ghuriapp {
-        background-color: #ffdf00;
-        padding: 0.3rem 0.4rem;
-    }
-    /*Haeder Ends*/
-
-
-
-    /* Gallery  Starts*/
-
-/* .small_size_fix_right{
-    padding-right: 0px !important;
-    padding-left: 1% !important;
-}
-.small_size_fix{
-    padding: 0px 1% 0px 0px!important;
-}
-.small_size_fourth{
-padding:0px 0px 0px 1% !important;
-
-} */
-
-
-.gallery_cover_img p {
- 
+  .gallery_cover_img p {
     margin-top: -45px !important;
     margin-bottom: 3.6%;
+  }
 
-}
+  .gallery_cover_img img {
+    min-height: 150px !important;
+    max-height: 150px !important;
+  }
 
-.gallery_cover_img img {
- 
-  min-height: 150px !important;
-  max-height: 150px !important;
-
-}
-
-/* Gallery Ends*/
-
+  /* Gallery Ends*/
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 768px) and (max-width: 991.98px){
-
-
+@media (min-width: 768px) and (max-width: 991.98px) {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
-    .footer_store_img img{
-        width: 70%;
-        margin-left:35px !important;
-    }
-
-
-
+  .footer_store_img img {
+    width: 70%;
+    margin-left: 35px !important;
+  }
 }
 
-@media (min-width: 1200px) { 
-    .footer_store_img img{
-        width: 70%;
-        margin-left:35px !important;
-    }
+@media (min-width: 1200px) {
+  .footer_store_img img {
+    width: 70%;
+    margin-left: 35px !important;
+  }
 
-    .gallery_bg {
-       
-        height:60vh !important;
-       
-    }
+  .gallery_bg {
+    height: 60vh !important;
+  }
+
+  .product_info {
+    
+    height:70vh !important;
+}
 }

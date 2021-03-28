@@ -13,7 +13,7 @@ import news from "../../images/gallery/news.png"
 
 const Gallery = () => {
     return (
-        <div className="ghuri_gallery mt-5 ">
+        <div className="ghuri_gallery">
             <div className="row text-center gallery_bg_caontainer">
                 <div className="col-sm-12  gallery_bg">
                         <div className="gallery_head center text-center">
