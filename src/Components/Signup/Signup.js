@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
 import {useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import video from "../Header/ghuri_percel.mp4";
 import validate from "./FormValidationRules";
 import "./Signup.css";
@@ -11,13 +11,22 @@ import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const Signup = () => {
+  const history = useHistory()
   const dispatch = useDispatch()
   const signupTextInput = useSelector(state => state.signupInfo.signupTextInput)
+  const isLoading = useSelector((state) => state.signupInfo.isLoading);
+  const redirectToLogin = useSelector((state) => state.signupInfo.redirectToLogin);
   // console.log(`signupTextInput`, signupTextInput)
   const { values, errors, handleChange, handleSubmit } = useForm(
     login,
     validate
   );
+
+useEffect(() => {
+ if(redirectToLogin){
+  window.location.assign(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`)
+ }
+}, [redirectToLogin])
 
   function login(e) {
     e.preventDefault();
@@ -264,12 +273,20 @@ return (
 
                 <div className="row mt-4 text-right">
                   <div className="col-sm-12 sign-submit-btn">
+                    {!isLoading && (
                     <a
-                    // className="btn btn-outline-success d-block"
                     onClick={()=>submitSignup(signupTextInput)}
                     >
-                      Submit
+                    Submit
                     </a>
+                    )}
+                     {isLoading && (
+                    <a
+                    disabled
+                    >
+                    Submitting...{"  "}<span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    </a>
+                    )}
                   </div>
                 </div>
               </form>
