@@ -4,6 +4,7 @@ import { Link, useHistory } from "react-router-dom";
 import video from "../Header/ghuri_percel.mp4";
 import validate from "./FormValidationRules";
 import "./Signup.css";
+import "../../css/mediaQuery.css"
 import useForm from "./useForm";
 import { InputSignupText, SubmitSignupData } from "./_redux/action/SignupAction";
 
@@ -47,7 +48,7 @@ return (
         <div>
         <div className="sign-top  signup_bg">
           <div className="row d-flex align-items-center">
-            <div className="col-sm-12   ">
+            <div className="col-sm-12 sm_center_fix center">
               <form className="sign-form container">
                 <div className="row">
                   <div className="col-sm-12 ">

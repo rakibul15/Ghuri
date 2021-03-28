@@ -1,5 +1,11 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 575.98px) {
+/* topNav Collapse */
+.nav-link.active a {
+
+    margin-left: 0px !important;
+ 
+}
 
 /* Ghuri Header */
 
@@ -42,15 +48,26 @@
     flex-wrap: nowrap;
 }
 .info h2{
-    font-size:12px;
+    font-size:20px;
+    font-weight: bold;
 }
 .info p{
     font-size: 8px;
     margin-top: 10px !important;
 }
+
+/* Count */
 .Count{
     padding: 10px;
 }
+
+/* Platform */
+.product_row {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+    background-color: white;
+}
+
 .parcel_bg {
     margin-top: -20% !important;
     height: 260px !important;
@@ -88,17 +105,18 @@
 
 .product_info {
   
-    padding-top: 40px !important;
-     margin-top: 0px !important;     
-    height:80vh !important;
+    margin-top: 40px !important;
+     /* margin-top: 0px !important;      */
+    height:100% !important;
     padding-left: 0px !important;
+    padding-top: 0px !important;
 }
 
 .product_info p{
     text-align: justify;
 }
 .product{
-    padding: 12px 10px !important;
+    padding: 15px 10px !important;
 }
 .product h4{
     font-size: 12px !important;
@@ -108,6 +126,10 @@
     /* flex-wrap: nowrap !important; */
     position: sticky;
 }
+.bazar_bg {
+    top: 0px !important;
+}
+
 p{
     font-size: 12px !important;
 }
@@ -129,8 +151,37 @@ h4{
     border: none !important;
 }
 
+/* Gallery */
 
-  
+.small_size_fix_right{
+    padding-right: 0px !important;
+    padding-left: 1% !important;
+}
+.small_size_fix{
+    padding: 0px 1% 0px 0px!important;
+}
+.small_size_fourth{
+padding:0px 0px 0px 1% !important;
+
+}
+
+
+.gallery_cover_img p {
+ 
+    margin-top: -45px !important;
+    margin-bottom: 3.6%;
+
+}
+
+.gallery_cover_img img {
+ 
+  min-height: 150px !important;
+  max-height: 150px !important;
+
+}
+
+
+
 /* Footer */
 
 /* .store img{
@@ -199,12 +250,182 @@ h4{
     font-size: 14px !important;
     
 }
+.gallery_bg{
+
+  height:160px !important;
+ 
+   
+}
+
+
+
+.partners_logo img {
+  
+    border-radius: 10% !important;
+    padding: 10% !important;
+   
+}
+.headline_img {
+   
+    margin-top: 0px !important;
+}
+.headline_box img{
+width: 80% !important;
+height:80px !important;
+object-fit: scale-down;
+height:80px !important;
+}
+
+.headline_box{
+
+    height: auto !important;
+    }
+    .headline_box h5{
+
+       font-size: 1rem;
+       display: block;
+    white-space: nowrap;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+        }
+    
+    /* SingleNews */
+    .single_news{
+        display: inline!important;
+        width: 100%;
+    }
+/*Marchent Sign In from */
+
+.sign-form {
+    /* background-color: black;
+    padding: 20px 40px;
+    color: white;
+    font-family: abel;
+    margin-top: 10%;
+    opacity: 54%;
+    margin-bottom: 5%; */
+
+
+margin-top: 100px !important;
+ 
+       
+  
+
+  }
+  .sm_center_fix{
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%, -0%);
+    width: 100%;
+  }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Product Info Starts*/
+    .product_info {
+  
+        margin-top: 40px !important;
+         /* margin-top: 0px !important;      */
+        height:100% !important;
+        padding-left: 0px !important;
+        padding-top: 0px !important;
+    }
 
+    .sm_center_fix{
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0%, -0%);
+        width: 100%;
+      }
+
+      .product{
+        padding: 15px 10px !important;
+    }
+    .product h4{
+        font-size: 12px !important;
+        margin: 0px;
+    }
+
+    p{
+        font-size: 12px !important;
+    }
+
+    /*Product info Ends*/
+
+
+    /*Header Starts*/
+    .ghuri-button{
+        text-align: center;
+    }
+    .f-size h1{
+        margin-top: 10px;
+        font-size:1.5rem;
+    }
+    
+    .f-size h3{
+        margin-top: 10px;
+        font-size:0.9rem;
+        margin-bottom: 20px;
+    }
+    
+    .btn-lg{
+        margin-left:0px;
+        font-weight: 500;
+        font-size:1rem;
+    }
+    
+    .earnwith {
+        background-color: white;
+        border: 1px solid black;
+        padding: 0.5rem 0.2rem;
+    }
+    .ghuriapp {
+        background-color: #ffdf00;
+        padding: 0.3rem 0.4rem;
+    }
+    /*Haeder Ends*/
+
+
+
+    /* Gallery  Starts*/
+
+/* .small_size_fix_right{
+    padding-right: 0px !important;
+    padding-left: 1% !important;
+}
+.small_size_fix{
+    padding: 0px 1% 0px 0px!important;
+}
+.small_size_fourth{
+padding:0px 0px 0px 1% !important;
+
+} */
+
+
+.gallery_cover_img p {
+ 
+    margin-top: -45px !important;
+    margin-bottom: 3.6%;
+
+}
+
+.gallery_cover_img img {
+ 
+  min-height: 150px !important;
+  max-height: 150px !important;
+
+}
+
+/* Gallery Ends*/
 
 }
 
@@ -215,17 +436,32 @@ h4{
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 991.98px){
 
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
     .footer_store_img img{
         width: 70%;
-        margin-left:35px;
+        margin-left:35px !important;
     }
 
+
+
+}
+
+@media (min-width: 1200px) { 
+    .footer_store_img img{
+        width: 70%;
+        margin-left:35px !important;
+    }
+
+    .gallery_bg {
+       
+        height:60vh !important;
+       
+    }
 }
