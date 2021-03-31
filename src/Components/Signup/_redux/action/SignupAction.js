@@ -65,6 +65,7 @@ export const SubmitSignupData=(data)=>async(dispatch)=>{
     toast.error("Address Should Not Be Empty");
     return false
    }
+   console.log(`data`, data)
    const submitData = {
     userType: 1,
     companyName: data.businessName,
@@ -74,7 +75,9 @@ export const SubmitSignupData=(data)=>async(dispatch)=>{
     address: data.address,
     email: data.email,
     phone: data.phone,
-    password: data.password
+    password: data.password,
+    businessName:data.businessName,
+    businessUrl:data.businessUrl
    }
 
 const url = `https://dev.api.ghuriparcel.com/v1/merchant/register`;

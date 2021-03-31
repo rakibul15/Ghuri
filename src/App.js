@@ -26,11 +26,8 @@ import Partners from "./Components/partners/Partners";
 import Headline from "./Components/haedline/Headline";
 import Gallery from "./Components/gallery/Gallery";
 import Clients from "./Components/clients/Clients";
-<<<<<<< HEAD
-=======
 // require('dotenv').config()
 
->>>>>>> f62ba77ba40db203f36856a1d2d35038090d09a3
 function App() {
   return (
     <div>
