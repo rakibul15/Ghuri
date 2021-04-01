@@ -8,8 +8,6 @@ import "../../css/mediaQuery.css"
 import useForm from "./useForm";
 import { InputSignupText, SubmitSignupData } from "./_redux/action/SignupAction";
 
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
 
 const Signup = () => {
   const history = useHistory()
@@ -295,7 +293,7 @@ return (
             </div>
           </div>
         </div>
-        <ToastContainer />
+        
       </div>
   );
 };

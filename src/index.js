@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-
+//Import Toast
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import { icons } from './assets/icons'
 import { Provider } from 'react-redux'
 import Store from "./redux/store/Store";
@@ -17,7 +19,7 @@ ReactDOM.render(
   <StrictMode>
     <Provider store={store}>
       <App />
-    </Provider>
+    </Provider><ToastContainer />
   </StrictMode>,
   rootElement
 );
