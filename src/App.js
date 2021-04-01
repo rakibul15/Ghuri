@@ -4,8 +4,8 @@ import Topnav from "./Components/Topnav/Topnav";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
 
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import Home from "./Components/Home/Home";
 import Header from "./Components/Header/Header";
@@ -26,7 +26,7 @@ import Partners from "./Components/partners/Partners";
 import Headline from "./Components/haedline/Headline";
 import Gallery from "./Components/gallery/Gallery";
 import Clients from "./Components/clients/Clients";
-
+// require('dotenv').config()
 
 function App() {
   return (
@@ -35,13 +35,13 @@ function App() {
         <Topnav></Topnav>
         <Switch>
           <Route exact path="/">
-          <Header></Header>
+            <Header></Header>
             <Count />
             <Parcel></Parcel>
-          </Route>
-          <Route path="/marchent">
-            {/* <MarchentLogIn /> */}
-            <Signup></Signup>
+            <Gallery></Gallery>
+            <Headline></Headline>
+            <Partners></Partners>
+            <Clients></Clients>
           </Route>
 
           {/* Home */}
@@ -49,11 +49,14 @@ function App() {
             <Header></Header>
             <Count />
             <Parcel></Parcel>
+            <Gallery></Gallery>
+            <Headline></Headline>
+            <Partners></Partners>
+            <Clients></Clients>
           </Route>
           <Route path="/marchent">
             {/* <MarchentLogIn /> */}
             <Signup></Signup>
-          
           </Route>
 
           {/* Parcel */}
@@ -61,6 +64,10 @@ function App() {
             <Header></Header>
             <Count />
             <Parcel></Parcel>
+            <Gallery></Gallery>
+            <Headline></Headline>
+            <Partners></Partners>
+            <Clients></Clients>
           </Route>
 
           {/* Ride */}
@@ -68,6 +75,10 @@ function App() {
             <Header></Header>
             <Count />
             <Platform></Platform>
+            <Gallery></Gallery>
+            <Headline></Headline>
+            <Partners></Partners>
+            <Clients></Clients>
           </Route>
 
           {/* Food */}
@@ -75,6 +86,10 @@ function App() {
             <Header></Header>
             <Count />
             <Food></Food>
+            <Gallery></Gallery>
+            <Headline></Headline>
+            <Partners></Partners>
+            <Clients></Clients>
           </Route>
 
           {/* Truck */}
@@ -83,20 +98,32 @@ function App() {
             <Header></Header>
             <Count />
             <Truck></Truck>
+            <Gallery></Gallery>
+            <Headline></Headline>
+            <Partners></Partners>
+            <Clients></Clients>
           </Route>
 
-        {/* Bazar */}
+          {/* Bazar */}
           <Route path="/bazar">
             <Header></Header>
             <Count />
             <Bazar></Bazar>
+            <Gallery></Gallery>
+            <Headline></Headline>
+            <Partners></Partners>
+            <Clients></Clients>
           </Route>
 
-         {/* Ticket */}
-         <Route path="/ticket">
+          {/* Ticket */}
+          <Route path="/ticket">
             <Header></Header>
             <Count />
             <Ticket></Ticket>
+            <Gallery></Gallery>
+            <Headline></Headline>
+            <Partners></Partners>
+            <Clients></Clients>
           </Route>
 
           {/* sign up */}
@@ -107,10 +134,7 @@ function App() {
             <Notmatch />
           </Route>
         </Switch>
-        <Gallery></Gallery>
-        <Headline></Headline>
-        <Partners></Partners>
-        <Clients></Clients>
+
         <Footer />
       </Router>
     </div>

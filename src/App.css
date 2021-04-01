@@ -4,3 +4,7 @@ body{
     box-sizing: border-box;
     padding: 0px !important;
 }
+
+html,body{
+    overflow-x: hidden;
+}
