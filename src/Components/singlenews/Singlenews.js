@@ -52,7 +52,7 @@ const Singlenews = (props) => {
         </div>
         <div className="grid_news headline_content headline_text  haedline_atag">
           <h5 className="">{props.snews.description}</h5>
-          <a target="_blank" href={props.snews.link}>
+          <a target="_blank" href={props.snews.link}  rel="noreferrer">
             View Article <i className="ml-4" class="fa fa-chevron-right"></i>
           </a>
         </div>

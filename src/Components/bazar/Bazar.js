@@ -56,20 +56,17 @@ const Bazar = () => {
           <div className="row justify-content-center align-items-center center center sm_center_fix">
             <div className="col-sm-6">
               <h4 className="mb-4">GHURI BAZAR</h4>
-              {/* <h4 className="mb-4">Open GHURI App. Choose GHURI Bazar.</h4> */}
+         
               <p>
                 GHURI Bazar is an on-demand everyday goods delivery service. Now
                 you can order groceries, packaged food, healthcare products,
                 beauty products, gifts and many more using the GHURI app and
                 have it delivered to you.
               </p>
-              {/* <button className="btn  mt-3 learn_more">
-                  Learn More
-                  <i class="fa fa-chevron-right"></i>
-                </button> */}
+            
             </div>
             <div className="col-sm-6 product_img">
-              <img src={bazarimg} alt="Ride Image" />
+              <img src={bazarimg} alt="Ride " />
             </div>
           </div>
         </div>

@@ -6,17 +6,11 @@ const SmsVerification = () => {
 
     const {
         seconds,
-        minutes,
-        hours,
-        days,
-        isRunning,
-        start,
-        pause,
         reset,
       } = useStopwatch({ autoStart: true });
       const [resend, setResend] = useState(false)
  useEffect(() => {
-    if(30-seconds == 0){
+    if(30-seconds === 0){
         setResend(true)
     }
  }, [seconds])
@@ -39,8 +33,8 @@ const SmsVerification = () => {
       placeholder="Enter verification code"
       />
     </Card.Text>
-    <Card.Link ><a className="btn btn-success mr-3">Submit</a></Card.Link>
-    <Card.Link ><a style={{cursor:"pointer"}} 
+    <Card.Link ><a href className="btn btn-success mr-3">Submit</a></Card.Link>
+    <Card.Link ><a href style={{cursor:"pointer"}} 
     onClick={()=>{
         reset();
         setResend(false)

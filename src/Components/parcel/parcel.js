@@ -82,11 +82,11 @@ const parcel = () => {
               </p>
               {/* <button className="btn  mt-3 learn_more">
                 Learn More
-                <i class="fa fa-chevron-right"></i>
-              </button> */}
+                <i class="fa fa-chevron-right"></i> 
+              </button> */}   
             </div>
             <div className="col-sm-6 product_img">
-              <img src={parcelimg} alt="Ride Image" />
+              <img src={parcelimg} alt="Ride " />
             </div>
           </div>
         </div>
