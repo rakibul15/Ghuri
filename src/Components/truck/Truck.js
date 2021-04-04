@@ -56,14 +56,17 @@ const Truck = () => {
               <h4 className="mb-4">GHURI TRUCK</h4>
               {/* <h4 className="mb-4">Open GHURI App. Choose GHURI Truck.</h4> */}
               <p>
-                GHURI trucks offers safe transportation, packer’s movers, and
-                logistics services, catering to all your goods movement needs,
-                both in full load and part load capacity all over Bangladesh.
-                Just use GHURI App & get a pickup or a truck right away. You can
-                also place an order directly, our service is available 24/7! We
-                make sure, all of our customers and clients are receiving the
-                best rate in the market based on vehicle type and shipping
-                distance.
+                GHURI trucks offer safest and finest transportation for packer’s
+                movers, and logistics services, catering to all your goods
+                movement needs, both in full load and part load capacity all
+                over Bangladesh. Just use GHURI App & get a pickup or a truck
+                right away to your loading location. You can also place an order
+                directly; our service is available 24/7! We make sure all of our
+                customers and clients are receiving the best rate in the market
+                based on vehicle type and shipping distance. We also tried to
+                give the security to your products so they don't get hampered.
+                We also deal corporately to expand your business all over the
+                country.
               </p>
               {/* <button className="btn  mt-3 learn_more">
                   Learn More

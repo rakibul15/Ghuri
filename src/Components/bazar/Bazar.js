@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Bazar.css";
 
 import bazarimg from "../../images/others/bazar.png";
-import "../../css/mediaQuery.css"
+import "../../css/mediaQuery.css";
 
 const Bazar = () => {
   return (
@@ -58,10 +58,17 @@ const Bazar = () => {
               <h4 className="mb-4">GHURI BAZAR</h4>
          
               <p>
-                GHURI Bazar is an on-demand everyday goods delivery service. Now
-                you can order groceries, packaged food, healthcare products,
-                beauty products, gifts and many more using the GHURI app and
-                have it delivered to you.
+                GHURI Bazar is an on-demand everyday goods delivery service.
+                GHURI Bazar is an internet-based shop which will be equipped for
+                giving each sort of merchandise and items from each area to each
+                shopper situated in Bangladesh. The world's commercial center
+                will be just fingertips away for any client possessing a cell
+                phone/PC through an app and website. Whoever wants to buy
+                anything from a multi-store can order groceries, packaged food,
+                healthcare products, beauty products, gifts and many more using
+                the GHURI app and have it delivered to you. We are working on
+                the business system to the next level for enhancing Bangladesh's
+                financial condition.
               </p>
             
             </div>

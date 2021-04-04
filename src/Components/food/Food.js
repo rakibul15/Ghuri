@@ -59,7 +59,14 @@ const Food = () => {
                 GHURI Food is a convenient online food ordering platform that
                 connects users with thousands of local restaurants. Customers
                 can browse through numerous menus and place orders for delivery
-                or take-away at the best price.
+                or take-away at the best price. Hungry customers can get their
+                food as soon as possible. GHURI Food also helps you to make your
+                own home kitchen to a restaurant and become to help you earn
+                money from home. We deliver every kind of food by GHURI Food to
+                the customer's doorstep from every listed restaurant all over
+                Dhaka city. Just click and order in our GHURI app and website.
+                Our concern is giving you the fastest food delivery at lowest
+                price.
               </p>
               {/* <button className="btn  mt-3 learn_more">
                 Learn More

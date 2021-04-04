@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Ticket.css";
-import "../../css/mediaQuery.css"
+import "../../css/mediaQuery.css";
 import ticketimg from "../../images/others/ticket.png";
 
 const Ticket = () => {
@@ -57,15 +57,17 @@ const Ticket = () => {
               <h4 className="mb-4">GHURI TICKET</h4>
               {/* <h4 className="mb-4">Open GHURI App. Choose GHURI Ticket..</h4> */}
               <p>
-                Ghuri Ticket is a premium online booking portal which allows to
-                purchase tickets for various bus services, launch services,
-                movies and events across the country. Everyone get purchase
-                travel tickets in the simplest, easiest, smartest and most
-                convenient way. GHURI Ticket simplifies your ticket booking
-                experience. Just select your desired trip and choose your seats.
-                We enables consumers to purchase tickets from any location at
-                any time, just by using your mobile phone. Customers can also
-                purchase tickets through the Website.
+                GHURI Ticket is a premium online booking portal which allows
+                users to purchase tickets for various services like bus
+                services, launch services, movies and events across all over
+                Bangladesh. Everyone gets purchase travel tickets in the
+                simplest, easiest, smartest and most convenient way. GHURI
+                Ticket simplifies your ticket booking experiences. Just select
+                your desired trip and choose your seats, you will get the online
+                ticket otherwise you can get the ticket by hand to hand. We
+                enable consumers to purchase tickets from any location at any
+                time, just by using your mobile phone. Customers can also
+                purchase tickets through the website.
               </p>
               {/* <button className="btn  mt-3 learn_more">
                 Learn More
