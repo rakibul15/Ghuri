@@ -26,6 +26,7 @@ import Partners from "./Components/partners/Partners";
 import Headline from "./Components/haedline/Headline";
 import Gallery from "./Components/gallery/Gallery";
 import Clients from "./Components/clients/Clients";
+import Health from "./Components/health/Health";
 
 function App() {
   return (
@@ -102,6 +103,7 @@ function App() {
             <Partners></Partners>
             <Clients></Clients>
           </Route>
+          
 
           {/* Bazar */}
           <Route path="/bazar">
@@ -128,6 +130,10 @@ function App() {
           {/* sign up */}
           <Route path="/signup">
             <Signup></Signup>
+          </Route>
+
+          <Route path="/health">
+            <Health></Health>
           </Route>
           <Route path="*">
             <Notmatch />
