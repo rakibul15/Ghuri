@@ -55,15 +55,15 @@ function App() {
             <Partners></Partners>
             <Clients></Clients>
           </Route>
-          <Route path="/marchent">
+          {/* <Route path="/marchent">
           
             <Signup></Signup>
-          </Route>
+          </Route> */}
 
           {/* <Sms Verifiaction /> */}
-          <Route path="/verification">
+          {/* <Route path="/verification">
             <SmsVerification></SmsVerification>
-          </Route>
+          </Route> */}
 
           {/* Parcel */}
           <Route path="/parcel">
@@ -138,9 +138,9 @@ function App() {
             <Signup></Signup>
           </Route>
 
-          <Route path="/health">
+          {/* <Route path="/health">
             <Health></Health>
-          </Route>
+          </Route> */}
           <Route path="*">
             <Notmatch />
           </Route>
