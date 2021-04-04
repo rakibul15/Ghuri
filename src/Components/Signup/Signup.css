@@ -18,6 +18,12 @@
   border-bottom: 2px solid rgb(255, 255, 255);
   outline: none;
 }
+.fullwidth input::placeholder {
+color:white;
+font-size:smaller;
+opacity: 60%;
+}
+
 
 
 

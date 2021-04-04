@@ -1,0 +1,21 @@
+.not_found{
+    text-align: center;
+    justify-content: center;
+    margin-top:15%;
+    height: 70vh;
+}
+.not_found h1{
+    font-size: 28px;
+}
+.not_found p{
+    font-size: 12px;
+}
+
+/* 
+.not_found {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    height: 70vh;
+  } */

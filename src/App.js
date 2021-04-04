@@ -55,10 +55,10 @@ function App() {
             <Partners></Partners>
             <Clients></Clients>
           </Route>
-          {/* <Route path="/marchent">
+          <Route path="/marchent">
           
             <Signup></Signup>
-          </Route> */}
+          </Route>
 
           {/* <Sms Verifiaction /> */}
           <Route path="/verification">
