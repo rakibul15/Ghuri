@@ -85,7 +85,7 @@ const Partners = () => {
         </div>
         <div className=" item ">
           <div className="lodigreen  partners_logo">
-            <img src={lodigreen} alt="lodigreen photo" />
+            <img src={lodigreen} alt="lodigreen" />
           </div>
         </div>
       </OwlCarousel>

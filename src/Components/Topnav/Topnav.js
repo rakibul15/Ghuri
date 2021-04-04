@@ -1,4 +1,4 @@
-import { logDOM } from "@testing-library/react";
+// import { logDOM } from "@testing-library/react";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -14,6 +14,7 @@ import logo from "../../images/logo/logo.svg";
 import { Link } from "react-router-dom";
 import { SetRiderectMessage } from "../Signup/_redux/action/SignupAction";
 
+
 const Topnav = () => {
   const dispatch = useDispatch();
   const riderectMessage = () => {
@@ -27,8 +28,8 @@ const Topnav = () => {
     <div>
       <Navbar collapseOnSelect expand="sm" navbar-dark mb-5>
         <Navbar.Brand>
-          <Link to="/home">
-            <img className="ghuri_logo img-fluid" src={logo} fluid />
+          <Link to="/">
+            <img className="ghuri_logo img-fluid" src={logo} fluid alt=""/>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -57,7 +58,7 @@ const Topnav = () => {
                     <a
                       // href="https://ocean.ghuriexpress.com/#/login"
 
-                      
+                      onClick={() => handleRedirect()}
                     >
                       Login
                     </a>

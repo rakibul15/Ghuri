@@ -6,6 +6,20 @@
   padding: 5px 10px;
   color: white;
 }
+.fullwidth input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 15%);
+  background-color: transparent;
+  padding: 5px 10px;
+  color: white;
+}
+.fullwidth input:focus {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  outline: none;
+}
+
+
 
 .fullwidth select option {
   width: 100%;

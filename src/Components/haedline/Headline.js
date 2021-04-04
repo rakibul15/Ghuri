@@ -12,11 +12,11 @@ import newsdata from "../news/news";
 import OwlCarousel from "react-owl-carousel";
 
 //Images
-import headline from "../../images/others/headline.png";
+
 import Singlenews from "../singlenews/Singlenews";
 
 export default function Headline() {
-  const [news, setNews] = useState(newsdata);
+  const [news] = useState(newsdata);
   // console.log(newsdata);
 
   return (

@@ -74,7 +74,7 @@ const Food = () => {
               </button> */}
             </div>
             <div className="col-sm-6 product_img">
-              <img src={food_img} alt="food Image" />
+              <img src={food_img} alt="food " />
             </div>
           </div>
         </div>

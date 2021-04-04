@@ -1,5 +1,5 @@
 import React from 'react'
-//Media Query Css for Responsive
+
 import "../../css/mediaQuery.css";
 
 //Owl Carousel
@@ -7,14 +7,14 @@ import OwlCarousel from "react-owl-carousel";
 
 
 // images of all partners
-import airtel from "../../images/partners/airtel_logo.png";
-import robi from "../../images/partners/robi_logo.png";
+// import airtel from "../../images/partners/airtel_logo.png";
+// import robi from "../../images/partners/robi_logo.png";
 import brothers from "../../images/partners/brothers_logo.png";
 import fasal from "../../images/partners/fasal_logo.png";
 import swan from "../../images/partners/swan_logo.png";
 
 import lilistar from "../../images/partners/lilstar.png"
-import lodigreen from "../../images/partners/Lodi green_logo.png";
+// import lodigreen from "../../images/partners/Lodi green_logo.png";
 import id from "../../images/partners/id.png"
 import iz from "../../images/partners/izone.png"
 import "./clients.css"

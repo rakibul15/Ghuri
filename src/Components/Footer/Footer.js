@@ -21,86 +21,86 @@ const Footer = () => {
             <div className="col-sm-3 col-6">
               <p>Platform</p>
               <small>
-                <a href="#">GHURI Ride </a>
+                <span>GHURI Ride</span>
               </small>
               <br />
               <small>
-                <a href="#">GHURI Food</a>
+              <span>GHURI Food</span>
               </small>
               <br />
               <small>
-                <a href="#">GHURI Percel </a>
+                <span>GHURI Percel</span>
               </small>
               <br />
               <small>
-                <a href="#">GHURI Ticket </a>
+                <span>GHURI Ticket </span>
               </small>
               <br />
               <small>
-                <a href="#">GHURI Truck </a>
+                <span>GHURI Truck </span>
               </small>
               <br />
               <small>
-                <a href="#">GHURI Bazar</a>
+                <span>GHURI Bazar</span>
               </small>
             </div>
             <div className="col-sm-3 col-6">
               <p>Earn With Ghuri</p>
               <small>
               
-                <a href="#">Earn With Bike</a>
+                <span>Earn With Bike</span>
               </small>
               <br />
               <small>
-                <a href="#">Earn With Car</a>
+                <span>Earn With Car</span>
               </small>
               <br />
               <small>
-                <a href="#">Earn With Cycle</a>
+                <span>Earn With Cycle</span>
               </small>
             </div>
             <div className="col-sm-3 col-6">
               <p className="marchant_small">Marchant</p>
               <small>
-                <a href="#">Parcel Marchant Sign Up</a>
+                <span>Parcel Marchant Sign Up</span>
               </small>
               <br />
               <small>
-                <a href="#">Parcel Marchant Log In</a>
+                <span>Parcel Marchant Log In</span>
               </small>
               <br />
               <small>
-                <a href="#">Restaurant Marchant Sign Up </a>
+                <span>Restaurant Marchant Sign Up </span>
               </small>
               <br />
               <small>
-                <a href="#">Restaurant Marchant Sign Up </a>
+                <span>Restaurant Marchant Sign Up </span>
               </small>
               <br />
               <small>
-                <a href="#">Restaurant Marchant Log In </a>
+                <span>Restaurant Marchant Log In </span>
               </small>
             </div>
             <div className="col-sm-3 col-6">
               <p className="marchant_small">Help</p>
               <small>
-                <a href="#">Work in Support Center</a>
+                <span>Work in Support Center</span>
               </small>
               <br />
               <small>
-                <a href="#">User Help Center</a>
+                <span>User Help Center</span>
               </small>
               <br />
               <small>
-                <a href="#">Rider Help Center </a>
+                <span>Rider Help Center </span>
               </small>
               <br />
               <small>
-                <a href="#">Marchant Help Center </a>
+                <span>Marchant Help Center </span>
               </small>
               <br />
               <small>
-                <a href="#">Helpline </a>
+                <span>Helpline </span>
               </small>
             </div>
           </div>
@@ -125,16 +125,17 @@ const Footer = () => {
             <a
                 href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={playstore} className="img-fluid" alt="" />
               </a>
             </div>
              
              <div className="col-sm-12 col-6 app_store_img footer_store_img">
-             <a href="">
+            
            
            <img src={appstore} className="img-fluid   text-right" alt="" />
-         </a>
+       
              </div>
             </div>
             </div>
@@ -155,7 +156,7 @@ const Footer = () => {
                 </div>
                 <small className="mt-2">
                   Subscribe with email address for our monthly newletter
-                </small>
+                </small> 
               </div>
             </div>
           </div>
@@ -207,21 +208,21 @@ const Footer = () => {
         <div className="col-sm-7">
           <div className="row text-center">
             <div className="col-sm-12 linklogo">
-              <a href="">
+            
                 <img src={facebook} alt="" className="img-fluid" />
-              </a>
-              <a href="">
+              
+            
                 <img src={twitter} alt="" className="img-fluid" />
-              </a>
-              <a href="">
+             
+          
                 <img src={instagram} alt="" className="img-fluid" />
-              </a>
-              <a href="">
+              
+              
                 <img src={youtube} alt="" className="img-fluid" />
-              </a>
-              <a href="">
+         
+             
                 <img src={linkedin} alt="" className="img-fluid" />
-              </a>
+         
             </div>
           </div>
         </div>
@@ -254,26 +255,26 @@ const Footer = () => {
         <div className="col-sm-7 col-12">
           <div className="row text-center">
             <div className="col-sm-12 linklogo">
-              <a href="">
+              
                
                 <img src={facebook} alt="" className="img-fluid" />
-              </a>
-              <a href="">
+          
+              
               
                 <img src={twitter} alt="" className="img-fluid" />
-              </a>
-              <a href="">
+            
+              
              
                 <img src={instagram} alt="" className="img-fluid" />
-              </a>
-              <a href="">
+            
+              
               
                 <img src={youtube} alt="" className="img-fluid" />
-              </a>
-              <a href="">
+            
+              
              
                 <img src={linkedin} alt="" className="img-fluid" />
-              </a>
+           
             </div>
           </div>
         </div>

@@ -1,16 +1,15 @@
 @font-face {
-    font-family: 'abel';
-    src: local('abel'), url(../../font/Abel-Regular.ttf) format('truetype');
-  }
-.logo{
-    margin-left: 25px;
+  font-family: "abel";
+  src: local("abel"), url(../../font/Abel-Regular.ttf) format("truetype");
+}
+.logo {
+  margin-left: 25px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgb(0,0,0);
-    font-weight:500;
-    font-family:Abel;
-    
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-family: Abel;
 }
 
 .navbar{
@@ -28,14 +27,12 @@
     /* background-color: white; */
 }
 
-.nav-link a{
-    display: block;
-    padding: 6px 0px;
-    color: white !important;
-    text-decoration: none;
-    font-family: abel;
-
-
+.nav-link a {
+  display: block;
+  padding: 6px 0px;
+  color: white !important;
+  text-decoration: none;
+  font-family: abel;
 }
 .nav-link.active a{
     display: block;
@@ -47,22 +44,19 @@
     font-weight:400;
 }
 
-.language{
-    border: none;
-    color: black !important;
-    display: flex;
+.language {
+  border: none;
+  color: black !important;
+  display: flex;
 }
 
-.ghuri_logo{
-    width:90px;
-    margin-left:10px;
-    height:45px;
-    
+.ghuri_logo {
+  width: 90px;
+  margin-left: 10px;
+  height: 45px;
 }
 .navbar-nav .nav-link {
-   
-    padding-left: 10px !important;
-
+  padding-left: 10px !important;
 }
 .dropdown-menu {
     position: static;
@@ -94,6 +88,7 @@
     margin-left: 10px !important;
     font-family: abel;
     font-weight: 300 !important;
+    color: black !important;
    }
 .nav_color a{
     color: black !important;
@@ -101,19 +96,17 @@
 
 
 @media only screen and (max-width: 600px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: #ffcc00;
+    /* padding: 20px; */
+  }
 
-        .navbar-nav {
-            display: flex;
-            flex-direction: column;
-            padding-left: 0;
-            margin-bottom: 0;
-            list-style: none;
-            background-color: #ffcc00;
-            /* padding: 20px; */
-        }
-
-        /* .nav-link{
+  /* .nav-link{
             border-bottom: 2px solid white;
         } */
-
-  }
+}

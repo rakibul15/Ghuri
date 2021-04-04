@@ -75,7 +75,7 @@ const Ticket = () => {
               </button> */}
             </div>
             <div className="col-sm-6 product_img">
-              <img src={ticketimg} alt="food Image" />
+              <img src={ticketimg} alt="Food" />
             </div>
           </div>
         </div>
