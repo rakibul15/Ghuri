@@ -28,7 +28,7 @@ useEffect(() => {
   window.location.assign(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`)
  }
 }, [redirectToLogin])
-
+//test
   function login(e) {
     e.preventDefault();
     console.log(values.lname);
