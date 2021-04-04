@@ -19,6 +19,7 @@ const Header = () => {
                 href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
                 target="_blank"
                 className="btn  btn-lg mt-4 ghuriapp"
+                rel="noreferrer"
               >
                 <span>
                   <i class="fa fa-mobile mobile"></i>
@@ -33,6 +34,7 @@ const Header = () => {
                 href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuridrive"
                 target="_blank"
                 className="btn earnwith btn-lg mt-4"
+                rel="noreferrer"
               >
                 <span>
                   <i class="fa fa-money"></i>
@@ -70,6 +72,7 @@ const Header = () => {
                 href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
                 target="_blank"
                 className="btn  btn-lg mt-4 ghuriapp"
+                rel="noreferrer"
               >
                 <span>
                   <i class="fa fa-mobile mobile"></i>
@@ -84,6 +87,7 @@ const Header = () => {
                 href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuridrive"
                 target="_blank"
                 className="btn earnwith btn-lg mt-4"
+                rel="noreferrer"
               >
                 <span>
                   <i class="fa fa-money"></i>

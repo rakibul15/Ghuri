@@ -1,8 +1,8 @@
 import * as Types from '../types/Types'
 
 import Axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify';
-import { useHistory } from 'react-router';
+import { toast } from 'react-toastify';
+import { showToast } from '../../../../utils/ToastHelper';
 export const InputSignupText=(name,value)=>(dispatch)=>{
     const formData={
         name:name,
@@ -14,11 +14,11 @@ export const InputSignupText=(name,value)=>(dispatch)=>{
 export const SubmitSignupData=(data)=>async(dispatch)=>{
 
    if(data && data.firstName.length === 0){
-    toast.error("First Name Should Not Be Empty");
+    showToast('error', "First Name Should Not Be Empty")
     return false
    }
    else if(data && data.lastName.length === 0){
-    toast.error("Last Name Should Not Be Empty");
+    showToast('error', "Last Name Should Not Be Empty");
     return false
    }
    else if(data && data.email.length === 0){
@@ -65,6 +65,7 @@ export const SubmitSignupData=(data)=>async(dispatch)=>{
     toast.error("Address Should Not Be Empty");
     return false
    }
+   console.log(`data`, data)
    const submitData = {
     userType: 1,
     companyName: data.businessName,
@@ -74,10 +75,12 @@ export const SubmitSignupData=(data)=>async(dispatch)=>{
     address: data.address,
     email: data.email,
     phone: data.phone,
-    password: data.password
+    password: data.password,
+    businessName:data.businessName,
+    businessUrl:data.businessUrl
    }
 
-const url = `https://dev.api.ghuriparcel.com/v1/merchant/register`;
+const url = `${process.env.REACT_APP_API_URL}merchant/register`;
 const headersData= {
     'Authorization': 'Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ=='
   } 

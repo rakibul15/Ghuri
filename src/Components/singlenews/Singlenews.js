@@ -16,13 +16,9 @@ const Singlenews = (props) => {
        <div className="gird_news headline_content headline_img">
           <img src={props.snews.image} className="img-fluid mt-5" alt="" />
         </div>
-        <div className="grid_news headline_content   haedline_atag">
-        <p className=""><b>{props.snews.haedline}</b></p>
-          <h5 className="">{
-
-         (description.length> 100) ? `${description.substring(0, 100)}...` : description
-          }</h5>
-          <a target="_blank" href={props.snews.link}>
+        <div className="grid_news headline_content headline_text  haedline_atag">
+          <h5 className="">{props.snews.description}</h5>
+          <a target="_blank" href={props.snews.link}  rel="noreferrer">
             View Article <i className="ml-4" class="fa fa-chevron-right"></i>
           </a>
         </div>

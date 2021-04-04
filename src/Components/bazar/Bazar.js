@@ -56,7 +56,7 @@ const Bazar = () => {
           <div className="row justify-content-center align-items-center center center sm_center_fix">
             <div className="col-sm-6">
               <h4 className="mb-4">GHURI BAZAR</h4>
-              {/* <h4 className="mb-4">Open GHURI App. Choose GHURI Bazar.</h4> */}
+         
               <p>
                 GHURI Bazar is an on-demand everyday goods delivery service.
                 GHURI Bazar is an internet-based shop which will be equipped for
@@ -70,13 +70,10 @@ const Bazar = () => {
                 the business system to the next level for enhancing Bangladesh's
                 financial condition.
               </p>
-              {/* <button className="btn  mt-3 learn_more">
-                  Learn More
-                  <i class="fa fa-chevron-right"></i>
-                </button> */}
+            
             </div>
             <div className="col-sm-6 product_img">
-              <img src={bazarimg} alt="Ride Image" />
+              <img src={bazarimg} alt="Ride " />
             </div>
           </div>
         </div>
