@@ -3,7 +3,7 @@ import "../../css/main.css"
 import {Card} from 'react-bootstrap'
 import { useStopwatch } from 'react-timer-hook';
 const SmsVerification = () => {
-
+console.log(`test`)
     const {
         seconds,
         reset,
