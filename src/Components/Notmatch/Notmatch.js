@@ -1,12 +1,20 @@
-import React from 'react'
+import React from "react";
+import "../../css/main.css";
 
 const Notmatch = () => {
-    return (
-        <div>
-            <h1>Not Match web page</h1>
-            <h1>Comming Soon</h1>
+  return (
+    <div>
+      <div className="row not_found">
+        <div className="col-sm-12">
+          <h1>Page Not Found</h1>
+          <p>
+            The Page you are loking for could not be found. It might be
+            remove, renamed or doesn't exists.
+          </p>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Notmatch
+export default Notmatch;
