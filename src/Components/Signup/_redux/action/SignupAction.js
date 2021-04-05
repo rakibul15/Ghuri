@@ -84,7 +84,7 @@ export const SubmitSignupData=(data)=>async(dispatch)=>{
     "msisdn": `88${data.phone}`
    }
 
-const url = `https://dev.api.ghuriparcel.com/v1/merchant/send_otp`;
+const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
 
 // const url = `${process.env.REACT_APP_API_URL}merchant/register`;
 // const headersData= {
@@ -166,7 +166,7 @@ export const SubmitSmsCode=(code)=>async(dispatch)=>{
             csms_id: otp_id,
             otp: code
         }
-    const url = `https://dev.api.ghuriparcel.com/v1/merchant/otp_check`
+    const url = `${process.env.REACT_APP_API_URL}merchant/otp_check`
     const urlReg = `${process.env.REACT_APP_API_URL}merchant/register`;
     const headersData= {
          'Authorization': 'Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ=='
@@ -214,7 +214,7 @@ export const ResendOtp=()=>async(dispatch)=>{
         "msisdn": `88${signupData.phone}`
        }
     
-    const url = `https://dev.api.ghuriparcel.com/v1/merchant/send_otp`;
+    const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
 
     try{
         await Axios.post(url,smsNumber).then(
