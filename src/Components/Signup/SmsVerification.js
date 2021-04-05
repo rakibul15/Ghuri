@@ -1,21 +1,40 @@
 import React, { useState, useEffect } from 'react'
+import {useSelector, useDispatch } from 'react-redux'
 import "../../css/main.css"
 import {Card} from 'react-bootstrap'
 import { useStopwatch } from 'react-timer-hook';
+import { ResendOtp, RiderectVerifiCatioFalse, SubmitSmsCode } from './_redux/action/SignupAction';
 const SmsVerification = () => {
-console.log(`test`)
+  const dispatch = useDispatch()
+  const redirectToLogin = useSelector((state) => state.signupInfo.redirectToLogin);
+  const [smsCode, setSmsCode] = useState("")
     const {
         seconds,
         reset,
       } = useStopwatch({ autoStart: true });
       const [resend, setResend] = useState(false)
  useEffect(() => {
-    if(30-seconds === 0){
+    if(10-seconds === 0){
         setResend(true)
     }
  }, [seconds])
 
+ useEffect(() => {
+  if(redirectToLogin){
+    window.location.assign(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`)
+  }
+ }, [redirectToLogin])
 
+useEffect(() => {
+  dispatch(RiderectVerifiCatioFalse())
+}, [])
+const handleSubmit=(code)=>{
+  dispatch(SubmitSmsCode(code))
+}
+const handleResend=()=>{
+ 
+  dispatch(ResendOtp())
+}
     return ( 
         <>
        <div className="sms">
@@ -28,19 +47,31 @@ console.log(`test`)
         
       <input
       className="mt-3 mb-1"
-      type="text"
+      type="number"
       name="smsVerification"
       placeholder="Enter verification code"
+      value={smsCode}
+      onChange={(e)=>setSmsCode(e.target.value)}
       />
     </Card.Text>
-    <Card.Link ><a href className="btn btn-success mr-3">Submit</a></Card.Link>
+    <Card.Link >
+      <a href 
+      className="btn btn-success mr-3"
+      onClick={()=>handleSubmit(smsCode)}  
+      >
+        Submit
+      </a>
+    </Card.Link>
     <Card.Link ><a href style={{cursor:"pointer"}} 
     onClick={()=>{
         reset();
-        setResend(false)
+        setResend(false);
+        handleResend();
     }}>
-        {resend &&("Resend?")}
-        {!resend &&(<><span style={{fontSize:"20px"}} className="badge badge-secondary">00 : {30-seconds} Seconds</span></>)}
+        {resend &&(
+          'resend'
+        )}
+        {!resend &&(<><span style={{fontSize:"20px"}} className="badge badge-secondary">00 : {10-seconds} Seconds</span></>)}
         </a>
     </Card.Link>   
   </Card.Body>

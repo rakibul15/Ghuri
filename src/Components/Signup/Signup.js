@@ -4,19 +4,22 @@ import {useDispatch, useSelector } from "react-redux";
 import "./Signup.css";
 import "../../css/mediaQuery.css"
 import { InputSignupText, SubmitSignupData } from "./_redux/action/SignupAction";
+import { useHistory } from "react-router";
 
 
 const Signup = () => {
+  const history = useHistory()
   const dispatch = useDispatch()
   const signupTextInput = useSelector(state => state.signupInfo.signupTextInput)
   const isLoading = useSelector((state) => state.signupInfo.isLoading);
-  const redirectToLogin = useSelector((state) => state.signupInfo.redirectToLogin);
+
+  const redirectToVerification = useSelector((state) => state.signupInfo.redirectToVerification);
   
 useEffect(() => {
- if(redirectToLogin){
-  window.location.assign(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`)
+ if(redirectToVerification){
+  history.push('/verification')
  }
-}, [redirectToLogin])
+}, [redirectToVerification])
 
   const handleChangeTextInput=(name,value)=>{
     dispatch(InputSignupText(name,value))
