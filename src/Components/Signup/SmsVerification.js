@@ -48,7 +48,7 @@ const handleResend=()=>{
   }
  
 }
-const userData =JSON.parse(localStorage.getItem("userData")) 
+const userData =JSON.parse(localStorage.getItem("signupData")) 
   const mobile = userData.phone
   const lastTwo = mobile.slice(-2)
 
