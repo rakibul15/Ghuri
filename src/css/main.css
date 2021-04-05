@@ -1,0 +1,145 @@
+.not_found {
+  text-align: center;
+  justify-content: center;
+  margin-top: 15%;
+  height: 70vh;
+}
+.not_found h1 {
+  font-size: 28px;
+}
+.not_found p {
+  font-size: 12px;
+}
+
+/* Heath Care */
+.dot_circle {
+  margin: 0px 10px;
+  font-size: 10px;
+  color: #ffcc00;
+  margin-top: -10px;
+}
+
+.package_price {
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: white !important;
+  font-family: abel;
+}
+.img_users {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+  margin-top: 20px;
+
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #ffcc00;
+}
+.img_comunication {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+  margin-top: 20px;
+
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #ffcc00;
+  object-fit: cover;
+}
+.body_text_info {
+  font-weight: 400;
+  color: white !important;
+  font-family: abel;
+}
+.card_footer_health {
+  background-color: black !important;
+  cursor: pointer;
+  color: #ffcc00 !important;
+  border-top: 1px solid white;
+}
+.m_color {
+  background-color: #ffcc00;
+}
+.card_color {
+  background-color: black;
+  border: none;
+  box-shadow: 2px 2px 6px grey;
+}
+.card_title {
+  color: white !important;
+  text-transform: uppercase;
+  font-family: abel;
+}
+.health_headline {
+  text-transform: uppercase;
+  font-family: abel;
+}
+.dg_health {
+  height: 200px;
+  width: 200px;
+  
+
+}
+.powered_by h6 {
+  color: white;
+  font-family: abel;
+  font-size: 18px;
+  margin-top: -4%;
+  margin-bottom: 0px !important;
+  padding-bottom: 20px;
+
+ 
+}
+
+
+/* End Health */
+
+/* Start sns Verifications*/
+.sms{
+    background-color: #ffcc00;
+}
+.verification_box{
+    background-color: black !important;
+    border: none !important;
+    outline: none !important;
+    color: white;
+    font-family: abel;
+    border: none !important;
+    box-shadow: 2px 2px 6px grey;
+}
+.btn-verification{
+    background-color: #ffcc00;
+    color:black;
+    font-weight: 600;
+}
+.resend a{
+    color: #cc0000 !important;
+}
+
+.resend span{
+    color: #cc0000 !important;
+  
+}
+.verification_input input{
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.verification_input input::placeholder{
+   
+    color: white;
+    opacity: 50%;
+    font-family: abel;
+}
+
+.verification_input input:focus{
+   outline: none;
+}
+.verification_subtitle{
+    opacity: 70%;
+}
+.card{
+    border: none !important;
+}

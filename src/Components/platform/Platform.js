@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./platform.css";
 import "../../css/mediaQuery.css";
 import ride from "../../images/others/ride.png";
@@ -73,7 +73,7 @@ const Platform = () => {
               </button> */}
             </div>
             <div className="col-sm-6 product_img">
-              <img src={ride} alt="Ride Image" />
+              <img src={ride} alt="Ride" />
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import image1 from "../../images/news/1.png"
+
 
 
 const news = [

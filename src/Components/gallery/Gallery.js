@@ -4,7 +4,7 @@ import "../../css/mediaQuery.css"
 import ghuri_ticket from "../../images/gallery/ticket.png"
 import image1 from "../../images/gallery/ghuri_ride_news.png"
 import image2 from "../../images/gallery/truck.png"
-import image3 from "../../images/gallery/gallery_bg.png"
+
 import ghuri_ride from "../../images/gallery/ride.png"
 import mobile from "../../images/gallery/bazar.png"
 import parcel2 from "../../images/gallery/parcel_2.png"

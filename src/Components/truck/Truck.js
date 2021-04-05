@@ -70,11 +70,11 @@ const Truck = () => {
               </p>
               {/* <button className="btn  mt-3 learn_more">
                   Learn More
-                  <i class="fa fa-chevron-right"></i>
+                  <i class="fa   fa-chevron-right"></i>
                 </button> */}
             </div>
             <div className="col-sm-6 product_img">
-              <img src={truck_img} alt="Ride Image" />
+              <img src={truck_img} alt="Ride" />
             </div>
           </div>
         </div>

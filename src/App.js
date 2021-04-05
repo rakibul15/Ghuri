@@ -7,14 +7,15 @@ import { Route, Switch } from "react-router-dom";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-import Home from "./Components/Home/Home";
+
 import Header from "./Components/Header/Header";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import Notmatch from "./Components/Notmatch/Notmatch";
-import MarchentLogIn from "./Components/MarchentLogIn/MarchentLogIn";
+
 import Signup from "./Components/Signup/Signup";
+import SmsVerification from "./Components/Signup/SmsVerification";
 import Footer from "./Components/Footer/Footer";
-import Blog from "./Components/Blog/Blog";
+
 import Count from "./Components/count/count";
 import Platform from "./Components/platform/Platform";
 import Parcel from "./Components/parcel/parcel";
@@ -26,6 +27,7 @@ import Partners from "./Components/partners/Partners";
 import Headline from "./Components/haedline/Headline";
 import Gallery from "./Components/gallery/Gallery";
 import Clients from "./Components/clients/Clients";
+import Health from "./Components/health/Health";
 
 function App() {
   return (
@@ -54,8 +56,13 @@ function App() {
             <Clients></Clients>
           </Route>
           <Route path="/marchent">
-            {/* <MarchentLogIn /> */}
+          
             <Signup></Signup>
+          </Route>
+
+          {/* <Sms Verifiaction /> */}
+          <Route path="/verification">
+            <SmsVerification></SmsVerification>
           </Route>
 
           {/* Parcel */}
@@ -102,6 +109,7 @@ function App() {
             <Partners></Partners>
             <Clients></Clients>
           </Route>
+          
 
           {/* Bazar */}
           <Route path="/bazar">
@@ -128,6 +136,10 @@ function App() {
           {/* sign up */}
           <Route path="/signup">
             <Signup></Signup>
+          </Route>
+
+          <Route path="/health">
+            <Health></Health>
           </Route>
           <Route path="*">
             <Notmatch />
