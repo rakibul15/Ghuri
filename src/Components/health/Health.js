@@ -1,8 +1,8 @@
 import React from "react";
 import { Card, CardDeck, Container } from "react-bootstrap";
-import bronze from "../../images/Health/bronze.jpg";
-import gold from "../../images/Health/Gold.jpg";
-import platinum from "../../images/Health/Platinum.jpg";
+import bronze from "../../images/Health/dh1.png";
+import gold from "../../images/Health/dh2.png";
+import platinum from "../../images/Health/dh3.png";
 import users from "../../images/Health/users.png";
 import money from "../../images/Health/money.png";
 import video from "../../images/Health/video.png";
@@ -25,7 +25,7 @@ const Health = () => {
             <Card.Body>
               <Card.Title className="card_title">ghuri health Bronze </Card.Title>
               <h6 class="card-subtitle mb-2 text-muted package_price">
-                948 TK
+                1000 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>{" "}
@@ -65,7 +65,7 @@ const Health = () => {
             <Card.Body>
               <Card.Title className="card_title">ghuri health Silver </Card.Title>
               <h6 class="card-subtitle mb-2 text-muted package_price">
-                1788 TK{" "}
+                1800 TK{" "}
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>{" "}
@@ -105,10 +105,10 @@ const Health = () => {
             <Card.Body>
               <Card.Title className="card_title">ghuri health Gold</Card.Title>
               <h6 class="card-subtitle mb-2 text-muted package_price">
-                2748 TK{" "}
+                2800 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
-                </span>{" "}
+                </span>
                 12 Months Validity
               </h6>
               <Card.Text>

@@ -136,7 +136,7 @@ function App() {
           {/* sign up */}
           <Route path="/signup">
             <Signup></Signup>
-          </Route>}
+          </Route>
 
           <Route path="/health">
             <Health></Health>

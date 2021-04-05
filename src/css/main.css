@@ -91,3 +91,55 @@
 
  
 }
+
+
+/* End Health */
+
+/* Start sns Verifications*/
+.sms{
+    background-color: #ffcc00;
+}
+.verification_box{
+    background-color: black !important;
+    border: none !important;
+    outline: none !important;
+    color: white;
+    font-family: abel;
+    border: none !important;
+    box-shadow: 2px 2px 6px grey;
+}
+.btn-verification{
+    background-color: #ffcc00;
+    color:black;
+    font-weight: 600;
+}
+.resend a{
+    color: #cc0000 !important;
+}
+
+.resend span{
+    color: #cc0000 !important;
+  
+}
+.verification_input input{
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.verification_input input::placeholder{
+   
+    color: white;
+    opacity: 50%;
+    font-family: abel;
+}
+
+.verification_input input:focus{
+   outline: none;
+}
+.verification_subtitle{
+    opacity: 70%;
+}
+.card{
+    border: none !important;
+}
