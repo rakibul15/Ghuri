@@ -6,6 +6,7 @@ import { useStopwatch } from 'react-timer-hook';
 import { ResendOtp, RiderectVerifiCatioFalse, SubmitSmsCode } from './_redux/action/SignupAction';
 import { showToast } from '../../utils/ToastHelper';
 import { useHistory } from 'react-router';
+
 const SmsVerification = () => {
   const history = useHistory()
   const dispatch = useDispatch()
@@ -56,12 +57,12 @@ const userData =JSON.parse(localStorage.getItem("signupData"))
     return ( 
         <>
        <div className="sms">
-       <div style={{minHeight:"600px"}} className="d-flex align-items-center justify-content-center">
-       <Card style={{ width: '40rem' }} className="mt-5 ml-5 bg-light">
-  <Card.Body>
+       <div  style={{minHeight:"600px"}} className="d-flex align-items-center justify-content-center">
+       <Card  style={{ width: '40rem' }} className="mt-4 ml-5 bg-light">
+  <Card.Body className="verification_box">
     <Card.Title>SMS VERIFICATION</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Please enter the GHURI PARCEL registration verification code send to 01XXXXXXX{lastTwo}</Card.Subtitle>
-    <Card.Text>
+    <Card.Subtitle className="mb-2 verification_subtitle">Please enter the GHURI PARCEL registration verification code send to 01XXXXXXX{lastTwo}</Card.Subtitle>
+    <Card.Text className="verification_input">
         
      <label>GP-</label> <input
       className="mt-3 mb-1"
@@ -74,14 +75,14 @@ const userData =JSON.parse(localStorage.getItem("signupData"))
     </Card.Text>
     <Card.Link >
       <a href 
-      className="btn btn-success mr-3"
+      className="btn btn-verification mr-3"
       onClick={()=>handleSubmit(smsCode)}  
       >
         Submit
       </a>
     </Card.Link>
-    <Card.Link >
-      <span  style={{marginLeft:"350px"}}>
+    <Card.Link className="resend" >
+      <span className="text-right" style={{marginLeft:"422px"}}>
       <a href 
       style={{cursor:"pointer"}}
       
@@ -96,7 +97,7 @@ const userData =JSON.parse(localStorage.getItem("signupData"))
         )}
        
         </a>
-        {!resend &&(<><span style={{fontSize:"20px"}} >00:00:{30-seconds}</span></>)}
+        {!resend &&(<><span  style={{fontSize:"20px"}} >00:00:{30-seconds}</span></>)}
         </span>
     </Card.Link>   
   </Card.Body>
