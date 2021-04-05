@@ -38,7 +38,7 @@ const Topnav = () => {
             <Nav.Link className="nav_color">
               <Link to="/home"> Home</Link>
             </Nav.Link>
-            {/* <Nav.Link>
+            { <Nav.Link>
               <DropdownButton
                 id="dropdown-basic-button"
                 title="Marchent"
@@ -65,10 +65,10 @@ const Topnav = () => {
                   </Link>
                 </Dropdown.Item>
               </DropdownButton>
-            </Nav.Link> */}
-            {/* <Nav.Link className="nav_color">
+            </Nav.Link>}
+            {<Nav.Link className="nav_color">
             <Link to="/health"> Health</Link>
-            </Nav.Link> */}
+            </Nav.Link>}
             <Nav.Link className="language">
               <Link>
                 <i class="fa fa-globe"></i> EN
