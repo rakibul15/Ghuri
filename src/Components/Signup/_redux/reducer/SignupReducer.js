@@ -17,7 +17,8 @@ const initialState = {
     addMessage: '',
     isLoading: false,
     errors: [],
-    redirectToLogin:false
+    redirectToLogin:false, 
+    redirectToVerification:false, 
 };
 const SignupReducer = (state = initialState, action) => {
     const newState = { ...state };
@@ -41,6 +42,11 @@ const SignupReducer = (state = initialState, action) => {
                 return {
                 ...state,
                 redirectToLogin:action.payload
+            }
+            case Types.REDIRECT_TO_VERIFICATION:
+                return {
+                ...state,
+                redirectToVerification:action.payload
             }
         case Types.SET_EMPTY_SIGNUP_FIELD:
             return{
