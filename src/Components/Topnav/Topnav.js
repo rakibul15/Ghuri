@@ -21,7 +21,8 @@ const Topnav = () => {
     dispatch(SetRiderectMessage());
   };
   const handleRedirect = () => {
-    window.open("https://ocean.ghuriexpress.com/#/login", "_blank");
+    // window.open("https://ocean.ghuriexpress.com/#/login", "_blank");
+    window.open(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`, "_blank");
   };
 
   return (
