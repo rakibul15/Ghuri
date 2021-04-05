@@ -1,4 +1,5 @@
 import "./App.css";
+import "./assets/css/Custom.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Topnav from "./Components/Topnav/Topnav";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -26,6 +27,7 @@ import Partners from "./Components/partners/Partners";
 import Headline from "./Components/haedline/Headline";
 import Gallery from "./Components/gallery/Gallery";
 import Clients from "./Components/clients/Clients";
+import SmsVerificationContainer from "./Components/Signup/views/SmsVerificationContainer";
 
 function App() {
   return (
@@ -57,7 +59,10 @@ function App() {
             {/* <MarchentLogIn /> */}
             <Signup></Signup>
           </Route>
-
+          <Route path="/verification">
+            {/* <MarchentLogIn /> */}
+            <SmsVerificationContainer></SmsVerificationContainer>
+          </Route>
           {/* Parcel */}
           <Route path="/parcel">
             <Header></Header>

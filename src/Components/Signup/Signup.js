@@ -266,13 +266,12 @@ return (
                       onChange={(e)=>handleChangeTextInput("address",e.target.value)}
                       value={signupTextInput.address}
                       placeholder="Enter Address"
-                      required
                     />
                     {/* {errors.address && <p className="help">{errors.address}</p>} */}
                   </div>
                 </div>
 
-                {/* <div className="row mt-4 text-right">
+                <div className="row mt-4 text-right">
                   <div className="col-sm-12 sign-submit-btn">
                     {!isLoading && (
                     <a
@@ -289,7 +288,7 @@ return (
                     </a>
                     )}
                   </div>
-                </div> */}
+                </div>
               </form>
               {/* <a className="btn btn-success" onClick={()=>handleCheck()}>SS</a> */}
             </div>

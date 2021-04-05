@@ -79,11 +79,14 @@ export const SubmitSignupData=(data)=>async(dispatch)=>{
     businessName:data.businessName,
     businessUrl:data.businessUrl
    }
-
-const url = `https://dev.api.ghuriparcel.com/v1/merchant/register`;
-const headersData= {
-    'Authorization': 'Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ=='
-  } 
+const smsNumber = {
+    "msisdn": `88${data.phone}`
+}
+// const url = `https://dev.api.ghuriparcel.com/v1/merchant/register`;
+const url = `https://dev.api.ghuriparcel.com/v1/merchant/send_otp`;
+// const headersData= {
+//     'Authorization': 'Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ=='
+//   } 
 
   let response = {
     products: [],
@@ -95,18 +98,17 @@ const headersData= {
 dispatch({ type: Types.CREATE_SUBMIT, payload: response });
 
  try{
-    await Axios.post(url,submitData,{
-        headers: headersData
-        }).then(
+    await Axios.post(url,smsNumber).then(
             (res)=>{
                 console.log(`res`, res)
-                if(typeof res !== 'undefined'){
+                if(res.data.status){
                     toast.success(res.data.message)
                     if(res.status === 200){
-                        dispatch({type:Types.REDIRECT_TO_LOGIN,payload:true})
+                        console.log(`yes`)
+                        // dispatch({type:Types.REDIRECT_TO_,payload:true})
                     }
                 }else{
-                    toast.error('Please check the file inputs and try again !');
+                    toast.error(res.data.message);
                 }
             }
         )
@@ -114,6 +116,27 @@ dispatch({ type: Types.CREATE_SUBMIT, payload: response });
         response.message = 'Something Went Wrong !';
         toast.error(error);
     }
+
+//  try{
+//     await Axios.post(url,submitData,{
+//         headers: headersData
+//         }).then(
+//             (res)=>{
+//                 console.log(`res`, res)
+//                 if(typeof res !== 'undefined'){
+//                     toast.success(res.data.message)
+//                     if(res.status === 200){
+//                         dispatch({type:Types.REDIRECT_TO_LOGIN,payload:true})
+//                     }
+//                 }else{
+//                     toast.error('Please check the file inputs and try again !');
+//                 }
+//             }
+//         )
+//     }catch (error) {
+//         response.message = 'Something Went Wrong !';
+//         toast.error(error);
+//     }
 
     response.isLoading = false;
     dispatch({ type: Types.CREATE_SUBMIT, payload: response });
