@@ -50,10 +50,10 @@ export const SubmitSignupData=(data)=>async(dispatch)=>{
     toast.error("Business Name Should Not Be Empty");
     return false
    }
-   else if(data && data.businessUrl.length === 0){
-    toast.error("Business Url Should Not Be Empty");
-    return false
-   }
+//    else if(data && data.businessUrl.length === 0){
+//     toast.error("Business Url Should Not Be Empty");
+//     return false
+//    }
    else if(data && data.city.length === 0){
     toast.error("City Name Url Should Not Be Empty");
     return false
