@@ -54,7 +54,7 @@ const Silver = () => {
             <Card.Img variant="top" className="img-fluid" src={platinum} />
             <Card.Body>
               <Card.Title className="card_title">
-                1400 TK
+                1800 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>
