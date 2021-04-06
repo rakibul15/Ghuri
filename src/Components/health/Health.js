@@ -11,8 +11,10 @@ import chat from "../../images/Health/chat.png";
 import dghealth from "../../images/Health/dg_health.png";
 
 import "../../css/main.css";
+import { Link } from "react-router-dom";
 
-const Health = () => {
+const Health = (props) => {
+  console.log(props)
   return (
     <div className="m_color">
       <Container>
@@ -28,7 +30,7 @@ const Health = () => {
                 1000 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
-                </span>{" "}
+                </span>
                 12 Months Validity
               </h6>
               <Card.Text>
@@ -56,7 +58,9 @@ const Health = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
-                Subscribe <i class="fa fa-chevron-right"></i>
+              <Link to="/bronze">
+               Subscribe <i class="fa fa-chevron-right"></i>
+               </Link>
               </h6>
             </Card.Footer>
           </Card>
@@ -65,7 +69,7 @@ const Health = () => {
             <Card.Body>
               <Card.Title className="card_title">ghuri health Silver </Card.Title>
               <h6 class="card-subtitle mb-2 text-muted package_price">
-                1800 TK{" "}
+                1800 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>{" "}
@@ -96,7 +100,9 @@ const Health = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
-                Subscribe <i class="fa fa-chevron-right"></i>
+              <Link to="/silver">
+               Subscribe <i class="fa fa-chevron-right"></i>
+               </Link>
               </h6>
             </Card.Footer>
           </Card>
@@ -136,7 +142,9 @@ const Health = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
-                Subscribe <i class="fa fa-chevron-right"></i>
+               <Link to="/gold">
+               Subscribe <i class="fa fa-chevron-right"></i>
+               </Link>
               </h6>
             </Card.Footer>
           </Card>
