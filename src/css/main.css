@@ -54,9 +54,13 @@
 }
 .card_footer_health {
   background-color: black !important;
-  cursor: pointer;
   color: #ffcc00 !important;
   border-top: 1px solid white;
+}
+.card_footer_health a {
+
+  color: #ffcc00 !important;
+
 }
 .m_color {
   background-color: #ffcc00;
@@ -142,4 +146,36 @@
 }
 .card{
     border: none !important;
+}
+
+/* Silver*/
+.health_headline span{
+  color: #ffcc00;
+  font-weight: bold;
+}
+.package_content_details p{
+  font-family: abel;
+}
+.package_content_details .fa-check{
+ 
+  color: #ffcc00 !important;
+}
+.package_content_details ul li{
+ 
+  font-family: abel;
+}
+.package_content_details h2{
+ 
+  font-family: abel;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.package_content_details h4{
+ 
+  font-family: abel;
+  color:grey;
+  margin-bottom: 15px;
+  font-weight: bold;
 }

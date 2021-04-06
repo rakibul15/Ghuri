@@ -29,6 +29,9 @@ import Gallery from "./Components/gallery/Gallery";
 import Clients from "./Components/clients/Clients";
 import Health from "./Components/health/Health";
 import Terms from "./Components/terms/Terms";
+import Silver from "./Components/health/Silver";
+import Bronze from "./Components/health/Bronze";
+import Gold from "./Components/health/Gold";
 
 function App() {
   return (
@@ -145,6 +148,15 @@ function App() {
           <Route path="/terms">
            <Terms></Terms>
           </Route>
+          <Route path="/silver">
+         <Silver></Silver>
+        </Route>
+        <Route path="/bronze">
+        <Bronze></Bronze>
+        </Route>
+        <Route path="/gold">
+        <Gold></Gold>
+        </Route>
           <Route path="*">
             <Notmatch />
           </Route>
