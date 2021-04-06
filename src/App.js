@@ -28,6 +28,7 @@ import Headline from "./Components/haedline/Headline";
 import Gallery from "./Components/gallery/Gallery";
 import Clients from "./Components/clients/Clients";
 import Health from "./Components/health/Health";
+import Terms from "./Components/terms/Terms";
 
 function App() {
   return (
@@ -140,6 +141,9 @@ function App() {
 
           <Route path="/health">
             <Health></Health>
+          </Route>
+          <Route path="/terms">
+           <Terms></Terms>
           </Route>
           <Route path="*">
             <Notmatch />
