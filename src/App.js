@@ -32,6 +32,7 @@ import Terms from "./Components/terms/Terms";
 import Silver from "./Components/health/Silver";
 import Bronze from "./Components/health/Bronze";
 import Gold from "./Components/health/Gold";
+import Healthform from "./Components/health/Healthform";
 
 function App() {
   return (
@@ -156,6 +157,9 @@ function App() {
         </Route>
         <Route path="/gold">
         <Gold></Gold>
+        </Route>
+        <Route path="/healthform">
+        <Healthform></Healthform>
         </Route>
           <Route path="*">
             <Notmatch />
