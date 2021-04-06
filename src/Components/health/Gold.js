@@ -24,7 +24,7 @@ const Gold = () => {
             <Card.Img variant="top" className="img-fluid" src={bronze} />
             <Card.Body>
               <Card.Title className="card_title">
-                1000 TK
+                 TK700
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>
@@ -42,7 +42,7 @@ const Gold = () => {
             <Card.Img variant="top" className="img-fluid" src={gold} />
             <Card.Body>
               <Card.Title className="card_title">
-                1800 TK
+                1400 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>
