@@ -144,24 +144,24 @@ function App() {
             <Signup></Signup>
           </Route>
 
-          <Route path="/health">
+          {/* <Route path="/health">
             <Health></Health>
-          </Route>
+          </Route> */}
           <Route path="/terms">
            <Terms></Terms>
           </Route>
-          <Route path="/silver">
+          {/* <Route path="/silver">
          <Silver></Silver>
-        </Route>
-        <Route path="/bronze">
+        </Route> */}
+        {/* <Route path="/bronze">
         <Bronze></Bronze>
-        </Route>
-        <Route path="/gold">
+        </Route> */}
+        {/* <Route path="/gold">
         <Gold></Gold>
-        </Route>
-        <Route path="/healthform">
+        </Route> */}
+        {/* <Route path="/healthform">
         <Healthform></Healthform>
-        </Route>
+        </Route> */}
           <Route path="*">
             <Notmatch />
           </Route>
