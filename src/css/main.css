@@ -54,9 +54,11 @@
 }
 .card_footer_health {
   background-color: black !important;
-  cursor: pointer;
   color: #ffcc00 !important;
   border-top: 1px solid white;
+}
+.card_footer_health a {
+  color: #ffcc00 !important;
 }
 .m_color {
   background-color: #ffcc00;
@@ -76,70 +78,139 @@
   font-family: abel;
 }
 .dg_health {
-  height: 200px;
-  width: 200px;
-  
-
+  width: 5%;
 }
-.powered_by h6 {
-  color: white;
+/* .powered_by h6 {
+  color:black;
   font-family: abel;
   font-size: 18px;
-  margin-top: -4%;
   margin-bottom: 0px !important;
   padding-bottom: 20px;
-
+margin-left:2%;
  
+} */
+
+.powered_by h6 {
+  color: black;
+  font-family: abel;
+  font-size: 12px;
+  margin-bottom: 0px !important;
+  padding-bottom: 20px;
+  margin-left: 11%;
 }
 
+.ghuri_health {
+  width: 10%;
+}
 
 /* End Health */
 
 /* Start sns Verifications*/
-.sms{
-    background-color: #ffcc00;
+.sms {
+  background-color: #ffcc00;
 }
-.verification_box{
-    background-color: black !important;
-    border: none !important;
-    outline: none !important;
-    color: white;
-    font-family: abel;
-    border: none !important;
-    box-shadow: 2px 2px 6px grey;
+.verification_box {
+  background-color: black !important;
+  border: none !important;
+  outline: none !important;
+  color: white;
+  font-family: abel;
+  border: none !important;
+  box-shadow: 2px 2px 6px grey;
 }
-.btn-verification{
-    background-color: #ffcc00;
-    color:black;
-    font-weight: 600;
+.btn-verification {
+  background-color: #ffcc00;
+  color: black;
+  font-weight: 600;
 }
-.resend a{
-    color: #cc0000 !important;
-}
-
-.resend span{
-    color: #cc0000 !important;
-  
-}
-.verification_input input{
-    border: none;
-    background-color: black;
-    border-bottom: 2px solid white;
-    color: white;
-}
-.verification_input input::placeholder{
-   
-    color: white;
-    opacity: 50%;
-    font-family: abel;
+.resend a {
+  color: #cc0000 !important;
 }
 
-.verification_input input:focus{
-   outline: none;
+.resend span {
+  color: #cc0000 !important;
 }
-.verification_subtitle{
-    opacity: 70%;
+.verification_input input {
+  border: none;
+  background-color: black;
+  border-bottom: 2px solid white;
+  color: white;
 }
-.card{
-    border: none !important;
+.verification_input input::placeholder {
+  color: white;
+  opacity: 50%;
+  font-family: abel;
 }
+
+.verification_input input:focus {
+  outline: none;
+}
+.verification_subtitle {
+  opacity: 70%;
+}
+.card {
+  border: none !important;
+}
+
+/* Silver*/
+.health_headline span {
+  color: #ffcc00;
+  font-weight: bold;
+}
+.package_content_details p {
+  font-family: abel;
+}
+.package_content_details .fa-check {
+  color: #ffcc00 !important;
+}
+.package_content_details ul li {
+  font-family: abel;
+}
+.package_content_details h2 {
+  font-family: abel;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.package_content_details h4 {
+  font-family: abel;
+  color: grey;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/**/
+
+/* .form_applicant{
+  background-color: #ffcc00 !important;
+  width: 50%;
+  justify-content: center;
+} */
+
+/*Health Form */
+.confirm_package_details h5 {
+  color: #cc0000;
+  font-family: abel;
+  font-weight: 600;
+}
+.confirm_package_details h4 {
+  color: #ffcc00;
+  font-family: abel;
+  font-weight: 600;
+}
+.form_applicant label {
+  font-family: abel;
+  font-weight: 500;
+}
+.form_applicant input {
+  font-family: abel;
+}
+.form_applicant input::placeholder {
+  font-family: abel;
+}
+.ghuri_btn{
+  background-color: #ffcc00;
+  color: black;
+}
+

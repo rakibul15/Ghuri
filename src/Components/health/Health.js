@@ -9,10 +9,12 @@ import video from "../../images/Health/video.png";
 import call from "../../images/Health/call.png";
 import chat from "../../images/Health/chat.png";
 import dghealth from "../../images/Health/dg_health.png";
+import ghurihealth from "../../images/logo/ghuri_health.png";
 
-import "../../css/main.css";
+import { Link } from "react-router-dom";
 
-const Health = () => {
+const Health = (props) => {
+  console.log(props);
   return (
     <div className="m_color">
       <Container>
@@ -23,12 +25,14 @@ const Health = () => {
           <Card className="card_color">
             <Card.Img variant="top" className="img-fluid" src={bronze} />
             <Card.Body>
-              <Card.Title className="card_title">ghuri health Bronze </Card.Title>
+              <Card.Title className="card_title">
+                ghuri health Bronze{" "}
+              </Card.Title>
               <h6 class="card-subtitle mb-2 text-muted package_price">
                 1000 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
-                </span>{" "}
+                </span>
                 12 Months Validity
               </h6>
               <Card.Text>
@@ -56,16 +60,20 @@ const Health = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
-                Subscribe <i class="fa fa-chevron-right"></i>
+                <Link to="/bronze">
+                  Subscribe <i class="fa fa-chevron-right"></i>
+                </Link>
               </h6>
             </Card.Footer>
           </Card>
           <Card className="card_color">
             <Card.Img variant="top" className="img-fluid" src={gold} />
             <Card.Body>
-              <Card.Title className="card_title">ghuri health Silver </Card.Title>
+              <Card.Title className="card_title">
+                ghuri health Silver{" "}
+              </Card.Title>
               <h6 class="card-subtitle mb-2 text-muted package_price">
-                1800 TK{" "}
+                1800 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>{" "}
@@ -96,7 +104,9 @@ const Health = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
-                Subscribe <i class="fa fa-chevron-right"></i>
+                <Link to="/silver">
+                  Subscribe <i class="fa fa-chevron-right"></i>
+                </Link>
               </h6>
             </Card.Footer>
           </Card>
@@ -136,17 +146,17 @@ const Health = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
-                Subscribe <i class="fa fa-chevron-right"></i>
+                <Link to="/gold">
+                  Subscribe <i class="fa fa-chevron-right"></i>
+                </Link>
               </h6>
             </Card.Footer>
           </Card>
         </CardDeck>
         <div className="powered_by text-center">
-            
-            <img src={dghealth} className="img-fluid dg_health" alt=""/>
-           
-
-            <h6>Powered By</h6>            
+          <img src={ghurihealth} className="img-fluid ghuri_health mr-3" alt="" />
+          <img src={dghealth} className="img-fluid dg_health" alt="" />
+          <h6>Powered By</h6>
         </div>
       </Container>
     </div>

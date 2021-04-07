@@ -86,3 +86,10 @@ opacity: 60%;
 .help {
   color: red;
 }
+/**/
+.terms_condition input:disabled{
+  background-color: #ffcc00;
+}
+.terms a{
+  color: #ffcc00 !important;
+}

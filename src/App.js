@@ -1,3 +1,4 @@
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Topnav from "./Components/Topnav/Topnav";
@@ -28,6 +29,11 @@ import Headline from "./Components/haedline/Headline";
 import Gallery from "./Components/gallery/Gallery";
 import Clients from "./Components/clients/Clients";
 import Health from "./Components/health/Health";
+import Terms from "./Components/terms/Terms";
+import Silver from "./Components/health/views/SilverContainer";
+import Bronze from "./Components/health/views/BronzeContainer";
+import Gold from "./Components/health/views/GoldContainer";
+import Healthform from "./Components/health/Healthform";
 
 function App() {
   return (
@@ -138,9 +144,24 @@ function App() {
             <Signup></Signup>
           </Route>
 
-          <Route path="/health">
+          {/* <Route path="/health">
             <Health></Health>
+          </Route> */}
+          <Route path="/terms">
+           <Terms></Terms>
           </Route>
+          {/* <Route path="/silver">
+         <Silver></Silver>
+        </Route> */}
+        {/* <Route path="/bronze">
+        <Bronze></Bronze>
+        </Route> */}
+        {/* <Route path="/gold">
+        <Gold></Gold>
+        </Route> */}
+        {/* <Route path="/healthform">
+        <Healthform></Healthform>
+        </Route> */}
           <Route path="*">
             <Notmatch />
           </Route>
