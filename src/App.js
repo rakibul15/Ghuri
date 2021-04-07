@@ -1,3 +1,4 @@
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Topnav from "./Components/Topnav/Topnav";
@@ -29,9 +30,9 @@ import Gallery from "./Components/gallery/Gallery";
 import Clients from "./Components/clients/Clients";
 import Health from "./Components/health/Health";
 import Terms from "./Components/terms/Terms";
-import Silver from "./Components/health/Silver";
-import Bronze from "./Components/health/Bronze";
-import Gold from "./Components/health/Gold";
+import Silver from "./Components/health/views/SilverContainer";
+import Bronze from "./Components/health/views/BronzeContainer";
+import Gold from "./Components/health/views/GoldContainer";
 import Healthform from "./Components/health/Healthform";
 
 function App() {

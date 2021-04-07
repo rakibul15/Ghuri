@@ -9,7 +9,7 @@ import {
   SubmitSignupData,
 } from "./_redux/action/SignupAction";
 import { useHistory } from "react-router";
-import { Form } from "react-bootstrap";
+
 
 const Signup = () => {
   const history = useHistory();

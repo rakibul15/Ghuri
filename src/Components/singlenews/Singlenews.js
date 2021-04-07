@@ -6,8 +6,8 @@ const Singlenews = (props) => {
   const headline= props.snews.haedline;
   
   const des = (description) => description.length > 5 ? `${description.substring(0, 5)}...` : description;
-  // console.log(props.snews.image);
-  console.log(description.length);
+
+
   return (
     <>
 
