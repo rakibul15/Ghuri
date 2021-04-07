@@ -2,7 +2,7 @@ import React,{StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import './css/main.css'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 //Import Toast
 import { ToastContainer } from 'react-toastify';

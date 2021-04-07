@@ -3,7 +3,6 @@ import * as Types from '../types/Types'
 import Axios from 'axios'
 import { toast } from 'react-toastify';
 import { showToast } from '../../../../utils/ToastHelper';
-import axios from 'axios';
 export const InputSignupText=(name,value)=>(dispatch)=>{
     const formData={
         name:name,
