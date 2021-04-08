@@ -1,7 +1,10 @@
-import React from "react";
-import "./terms.css"
+import React, { useEffect } from "react";
+
 
 const Terms = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <div className="container pt-5 pb-5 terms_content">
