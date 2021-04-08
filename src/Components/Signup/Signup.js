@@ -35,6 +35,9 @@ const Signup = () => {
   const submitSignup = (data) => {
     dispatch(SubmitSignupData(data));
   };
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div>
