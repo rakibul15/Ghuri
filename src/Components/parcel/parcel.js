@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../css/mediaQuery.css";
 import "./parcel.css";
 
 import parcelimg from "../../images/others/Parcel.png";
 
-const parcel = () => {
+const Parcel = () => {
+  // useEffect(() => {
+  //   window.scrollTo(0, 900);
+  // }, []);
+ 
+
   return (
     <div>
       <div className="parcel_bg platform">
@@ -88,4 +93,4 @@ const parcel = () => {
   );
 };
 
-export default parcel;
+export default Parcel;

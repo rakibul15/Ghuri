@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./platform.css";
 import "../../css/mediaQuery.css";
 import ride from "../../images/others/ride.png";
 import { Link } from "react-router-dom";
 
 const Platform = () => {
+  // useEffect(() => {
+  //   window.scrollTo(0, 900);
+  // }, []);
   return (
     <div>
       <div className="platform_bg platform">

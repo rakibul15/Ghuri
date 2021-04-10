@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Bazar.css";
 
@@ -6,6 +6,9 @@ import bazarimg from "../../images/others/bazar.png";
 import "../../css/mediaQuery.css";
 
 const Bazar = () => {
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 900);
+  // }, []);
   return (
     <div>
       <div className="bazar_bg platform">

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Food.css";
 import food_img from "../../images/others/food.png";
 import { Link } from "react-router-dom";
 
 const Food = () => {
+  // useEffect(() => {
+  //   window.scrollTo(0, 900);
+  // }, []);
   return (
     <div>
       <div className="food_bg platform">

@@ -4,6 +4,7 @@ import "../../css/mediaQuery.css"
 import video from "./ghuri_percel.mp4"
 
 const Header = () => {
+
   return (
     <>
 

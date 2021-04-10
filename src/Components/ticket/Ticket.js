@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Ticket.css";
 import "../../css/mediaQuery.css";
 import ticketimg from "../../images/others/ticket.png";
 
 const Ticket = () => {
+  // useEffect(() => {
+  //   window.scrollTo(0, 900);
+  // }, []);
   return (
     <div>
       <div className="ticket_bg platform">
