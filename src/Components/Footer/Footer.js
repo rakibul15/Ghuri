@@ -14,9 +14,17 @@ import ssl from "../../images/footer/SSL-Commerz-Pay-With-logo-All-Size.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const handleParcel = () => {
+    
+    window.scrollTo(0,900);
+  
+
+  };
   const handleRedirect = () => {
     // window.open("https://ocean.ghuriexpress.com/#/login", "_blank");
     window.open(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`, "_blank");
+
+   
   };
 
   return (
@@ -43,7 +51,9 @@ const Footer = () => {
 
               <br />
               <small>
-                <Link to="/parcel">
+                <Link to="/parcel"
+                  onClick={() => handleParcel()}
+                >
                   <a>GHURI Percel</a>
                 </Link>
               </small>

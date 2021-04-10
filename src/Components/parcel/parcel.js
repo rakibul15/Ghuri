@@ -6,11 +6,6 @@ import "./parcel.css";
 import parcelimg from "../../images/others/Parcel.png";
 
 const Parcel = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 900);
-  // }, []);
- 
-
   return (
     <div>
       <div className="parcel_bg platform">
@@ -81,7 +76,7 @@ const Parcel = () => {
               {/* <button className="btn  mt-3 learn_more">
                 Learn More
                 <i class="fa fa-chevron-right"></i> 
-              </button> */}   
+              </button> */}
             </div>
             <div className="col-sm-6 product_img">
               <img src={parcelimg} alt="Ride " />
