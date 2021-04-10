@@ -111,8 +111,13 @@ try{
                         dispatch({type:Types.REDIRECT_TO_VERIFICATION,payload:true})
                     }
                 }else{
-                    toast.error('Please check the file inputs and try again !');
+                    toast.error(res,data.message);
                 }
+            }
+        ).catch(
+            (err)=>{
+                const message = JSON.parse(err.request.response).message
+                showToast('error',message)
             }
         )
     }catch (error) {
