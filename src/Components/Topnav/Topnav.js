@@ -95,9 +95,9 @@ const Topnav = () => {
                 </Dropdown.Item>
               </DropdownButton>
             </Nav.Link>
-            <Nav.Link className="nav_color">
+            {/* <Nav.Link className="nav_color">
             <Link to="/health"> Health</Link>
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link className="language">
               <Link>
                 <i class="fa fa-globe"></i> EN
