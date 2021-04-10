@@ -4,9 +4,9 @@ import truck_img from "../../images/others/truck.png";
 import { Link } from "react-router-dom";
 
 const Truck = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 900);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 900);
+  }, []);
   return (
     <div>
       <div className="truck_bg platform">

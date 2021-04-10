@@ -6,9 +6,9 @@ import bazarimg from "../../images/others/bazar.png";
 import "../../css/mediaQuery.css";
 
 const Bazar = () => {
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 900);
-  // }, []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 900);
+  }, []);
   return (
     <div>
       <div className="bazar_bg platform">

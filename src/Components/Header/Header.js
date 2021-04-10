@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
 import "../../css/mediaQuery.css"
 import video from "./ghuri_percel.mp4"
 
 const Header = () => {
+
+    useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
   return (
     <>

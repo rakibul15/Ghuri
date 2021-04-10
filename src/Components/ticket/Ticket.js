@@ -5,9 +5,9 @@ import "../../css/mediaQuery.css";
 import ticketimg from "../../images/others/ticket.png";
 
 const Ticket = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 900);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 900);
+  }, []);
   return (
     <div>
       <div className="ticket_bg platform">
