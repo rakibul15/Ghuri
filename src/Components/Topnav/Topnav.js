@@ -51,14 +51,14 @@ const Topnav = () => {
             <Nav.Link>
               <DropdownButton title="Services" variant="none">
                 <Dropdown.Item className="hover_color">
-                  <Link className="drop_down_menu">
+                  <Link to="#" className="drop_down_menu">
                     <a href onClick={() => riderectNuraniInterior()}>
                       Nurani Interior
                     </a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item className="hover_color">
-                  <Link className="drop_down_menu">
+                  <Link to="#" className="drop_down_menu">
                     <a href onClick={() => riderectNuraniRadio()}>
                       Nurani Radio
                     </a>
@@ -79,12 +79,14 @@ const Topnav = () => {
                     to="/merchnat"
                     onClick={() => riderectMessage()}
                   >
-                    <a> Signup</a>
+                    <a href
+                    
+                    > Signup</a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item className="hover_color">
-                  <Link className="drop_down_menu">
-                    <a
+                  <Link  to="#" className="drop_down_menu">
+                    <a href
                     
 
                       onClick={() => handleRedirect()}
@@ -99,8 +101,8 @@ const Topnav = () => {
             <Link to="/health"> Health</Link>
             </Nav.Link> */}
             <Nav.Link className="language">
-              <Link>
-                <i class="fa fa-globe"></i> EN
+              <Link to="#">
+                <i className="fa fa-globe"></i> EN
               </Link>
             </Nav.Link>
           </Nav>
