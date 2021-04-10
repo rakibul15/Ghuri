@@ -214,3 +214,47 @@ margin-left:2%;
   color: black;
 }
 
+
+
+/*Terms*/
+.terms_content h1 {
+  font-family: abel;
+  font-size: 2rem;
+  margin-top:25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+.terms_content p {
+  font-family: abel;
+  font-size: 1rem;
+  text-align: justify;
+}
+.terms_content h2 {
+  font-family: abel;
+  font-size: 1.5rem;
+  margin-top:25px;
+  margin-bottom: 25px;
+  color: #ffcc00;
+}
+.terms_content ul li {
+    font-family: abel;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .terms_content ol li {
+    font-family: abel;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .refund_table {
+   margin-top: 30px;
+   margin-bottom: 30px;
+  }
+  .refund_table th{
+    font-family: abel;
+  }
+  .refund_table td{
+    font-family: abel;
+  }
+  /* End Terms*/

@@ -34,8 +34,16 @@ import Silver from "./Components/health/views/SilverContainer";
 import Bronze from "./Components/health/views/BronzeContainer";
 import Gold from "./Components/health/views/GoldContainer";
 import Healthform from "./Components/health/Healthform";
+import Privacy from "./Components/privacy/Privacy";
+import Refund from "./Components/refund/Refund";
+import "../src/css/main.css"
+
+
+
+
 
 function App() {
+
   return (
     <div>
       <Router>
@@ -61,7 +69,7 @@ function App() {
             <Partners></Partners>
             <Clients></Clients>
           </Route>
-          <Route path="/marchent">
+          <Route path="/merchnat">
           
             <Signup></Signup>
           </Route>
@@ -144,12 +152,22 @@ function App() {
             <Signup></Signup>
           </Route>
 
-          {/* <Route path="/health">
-            <Health></Health>
-          </Route> */}
           <Route path="/terms">
            <Terms></Terms>
           </Route>
+
+          <Route path="/privacy">
+           <Privacy></Privacy>
+          </Route>
+
+          <Route path="/refund">
+           <Refund></Refund>
+          </Route>
+
+          {/* <Route path="/health">
+            <Health></Health>
+          </Route> */}
+         
           {/* <Route path="/silver">
          <Silver></Silver>
         </Route> */}

@@ -111,7 +111,7 @@ const duration= localStorage.getItem('duration');
         </Form.Row>
         <Form.Row className="justify-content-center mt-3">
           <Form.Group className="col-sm-6">
-            <Button className="ghuri_btn" variant="primary" type="submit">
+            <Button className="ghuri_btn" variant="primary" type="submit" disabled>
               Submit
             </Button>
           </Form.Group>

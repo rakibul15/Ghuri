@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./terms.css"
+
 
 const Terms = () => {
   useEffect(() => {

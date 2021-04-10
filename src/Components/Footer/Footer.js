@@ -11,8 +11,22 @@ import linkedin from "../../images/footer/linkedin.png";
 import ghurilogo from "../../images/logo/logo.svg";
 import csv from "../../images/footer/csa.png";
 import ssl from "../../images/footer/SSL-Commerz-Pay-With-logo-All-Size.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const handleParcel = () => {
+    
+    window.scrollTo(0,900);
+  
+
+  };
+  const handleRedirect = () => {
+    // window.open("https://ocean.ghuriexpress.com/#/login", "_blank");
+    window.open(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`, "_blank");
+
+   
+  };
+
   return (
     <div className="footer_div">
       <div className="row footer">
@@ -20,34 +34,57 @@ const Footer = () => {
           <div className="row">
             <div className="col-sm-3 col-6">
               <p>Platform</p>
+            
+                <small>
+                  <Link to="/ride">
+                    <a>GHURI Ride</a>
+                  </Link>
+                </small>
+            
+              <br />
+
               <small>
-                <span>GHURI Ride</span>
+                <Link to="/food">
+                  <a>GHURI Food</a>
+                </Link>
+              </small>
+
+              <br />
+              <small>
+                <Link to="/parcel"
+                  onClick={() => handleParcel()}
+                >
+                  <a>GHURI Percel</a>
+                </Link>
               </small>
               <br />
               <small>
-              <span>GHURI Food</span>
+                <span>
+                  <Link to="/ticket">
+                    <a>GHURI Ticket</a>
+                  </Link>
+                </span>
               </small>
               <br />
               <small>
-                <span>GHURI Percel</span>
+                <span>
+                  <Link to="/truck">
+                    <a>GHURI Truck</a>
+                  </Link>
+                </span>
               </small>
               <br />
               <small>
-                <span>GHURI Ticket </span>
-              </small>
-              <br />
-              <small>
-                <span>GHURI Truck </span>
-              </small>
-              <br />
-              <small>
-                <span>GHURI Bazar</span>
+                <span>
+                  <Link to="/bazar">
+                    <a>GHURI Bazar</a>
+                  </Link>
+                </span>
               </small>
             </div>
             <div className="col-sm-3 col-6">
               <p>Earn With Ghuri</p>
               <small>
-              
                 <span>Earn With Bike</span>
               </small>
               <br />
@@ -62,11 +99,19 @@ const Footer = () => {
             <div className="col-sm-3 col-6">
               <p className="marchant_small">Marchant</p>
               <small>
-                <span>Parcel Marchant Sign Up</span>
+                <span>
+                  <Link to="/merchnat">Parcel Marchant Sign Up</Link>
+                </span>
               </small>
               <br />
               <small>
-                <span>Parcel Marchant Log In</span>
+                <span>
+                  <Link>
+                    <a onClick={() => handleRedirect()}>
+                      Parcel Marchant Log In
+                    </a>
+                  </Link>
+                </span>
               </small>
               <br />
               <small>
@@ -119,25 +164,25 @@ const Footer = () => {
         <div className="col-sm-4">
           <div className="row ">
             <div className="col-lg-6 our_app mb-4">
-            <div className="row mt-3 align-items-center">
-            <div className="col-sm-12 col-6 footer_store_img">
+              <div className="row mt-3 align-items-center">
+                <div className="col-sm-12 col-6 footer_store_img">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={playstore} className="img-fluid" alt="" />
+                  </a>
+                </div>
 
-            <a
-                href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={playstore} className="img-fluid" alt="" />
-              </a>
-            </div>
-             
-             <div className="col-sm-12 col-6 app_store_img footer_store_img">
-            
-           
-           <img src={appstore} className="img-fluid   text-right" alt="" />
-       
-             </div>
-            </div>
+                <div className="col-sm-12 col-6 app_store_img footer_store_img">
+                  <img
+                    src={appstore}
+                    className="img-fluid   text-right"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
             <div className="col-lg-6">
               <p>News Letter</p>
@@ -156,7 +201,7 @@ const Footer = () => {
                 </div>
                 <small className="mt-2">
                   Subscribe with email address for our monthly newletter
-                </small> 
+                </small>
               </div>
             </div>
           </div>
@@ -164,7 +209,6 @@ const Footer = () => {
             <div className="col-sm-1"></div>
             <div className="col-sm-11 footer-address">
               <small>
-            
                 <p> GHURI Express LTD</p>
               </small>
               <p className="mt-2 address">
@@ -190,13 +234,19 @@ const Footer = () => {
         <div className="col-sm-3">
           <div className="row">
             <div className="col-sm-3 col-3">
-              <small>Privacy</small>
+            <small>
+                  <Link to="/privacy">Privacy</Link>
+            </small>
             </div>
             <div className="col-sm-3 col-3">
-              <small>Terms</small>
+              <small>
+                <Link to="/terms">Terms</Link>
+              </small>
             </div>
             <div className="col-sm-3 col-3">
-              <small>Refund</small>
+            <small>
+                  <Link to="/refund">Refund</Link>
+              </small>
             </div>
           </div>
           <div className="row mt-2">
@@ -208,21 +258,28 @@ const Footer = () => {
         <div className="col-sm-7">
           <div className="row text-center">
             <div className="col-sm-12 linklogo">
-            
+              <a href="https://www.facebook.com/ghuriApp" target="_blank">
                 <img src={facebook} alt="" className="img-fluid" />
-              
-            
+              </a>
+
+              <a href="https://twitter.com/GHURI67793705" target="_blank">
                 <img src={twitter} alt="" className="img-fluid" />
-             
-          
+              </a>
+
+              <a href="https://www.instagram.com/ghuri_app/" target="_blank">
                 <img src={instagram} alt="" className="img-fluid" />
-              
-              
+              </a>
+
+              <a
+                href="https://www.youtube.com/channel/UCLVDbjelUC0_zV6gTLF-JYQ/featured"
+                target="_blank"
+              >
                 <img src={youtube} alt="" className="img-fluid" />
-         
-             
+              </a>
+
+              <a href="https://www.linkedin.com/company/ghuri/" target="_blank">
                 <img src={linkedin} alt="" className="img-fluid" />
-         
+              </a>
             </div>
           </div>
         </div>
@@ -235,17 +292,24 @@ const Footer = () => {
           <div className="col-8">
             <div className="row">
               <div className=" col-3">
-                <small>Privacy</small>
+              <small>
+                  <Link to="/privacy">Privacy</Link>
+              </small>
               </div>
               <div className="col-3">
-                <small>Terms</small>
+                <small>
+                  <Link to="/terms">Terms</Link>
+                </small>
               </div>
               <div className="col-3">
-                <small>Refund</small>
+              <small>
+                  <Link to="/refund">Refund</Link>
+              </small>
               </div>
-              
             </div>
-            <small>© 2021 GHURI Express Ltd. <br/> All rights reserved.</small>
+            <small>
+              © 2021 GHURI Express Ltd. <br /> All rights reserved.
+            </small>
           </div>
           <div className="col-4 footer-logo">
             <img src={ghurilogo} alt="" className="img-fluid" />
@@ -255,26 +319,28 @@ const Footer = () => {
         <div className="col-sm-7 col-12">
           <div className="row text-center">
             <div className="col-sm-12 linklogo">
-              
-               
+              <a href="https://www.facebook.com/ghuriApp" target="_blank">
                 <img src={facebook} alt="" className="img-fluid" />
-          
-              
-              
+              </a>
+
+              <a href="https://twitter.com/GHURI67793705" target="_blank">
                 <img src={twitter} alt="" className="img-fluid" />
-            
-              
-             
+              </a>
+
+              <a href="https://www.instagram.com/ghuri_app/" target="_blank">
                 <img src={instagram} alt="" className="img-fluid" />
-            
-              
-              
+              </a>
+
+              <a
+                href="https://www.youtube.com/channel/UCLVDbjelUC0_zV6gTLF-JYQ/featured"
+                target="_blank"
+              >
                 <img src={youtube} alt="" className="img-fluid" />
-            
-              
-             
+              </a>
+
+              <a href="https://www.linkedin.com/company/ghuri/" target="_blank">
                 <img src={linkedin} alt="" className="img-fluid" />
-           
+              </a>
             </div>
           </div>
         </div>
