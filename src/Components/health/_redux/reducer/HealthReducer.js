@@ -1,6 +1,16 @@
 import * as Types from "../type/Types";
 const initialState = {
   bronzePackage1: null,
+  healthFormInput:{
+        name:"",
+        dateOfBirth:"",
+        applicantPhone:"",
+        address:"",
+        email:"",
+        gender:"",
+        nominee:"",
+        nomineeRelation:""
+  }
 };
 const HealthReducer = (state = initialState, action) => {
   const newState = { ...state };
@@ -45,6 +55,14 @@ const HealthReducer = (state = initialState, action) => {
           ...state,
           packageValue: action.payload,
         };
+      //Health form
+      case Types.INPUT_HEALTH_FORM:
+        const healthFormInput={...state.healthFormInput}
+        healthFormInput[action.payload.name] = action.payload.value
+        return {
+          ...state,
+          healthFormInput:healthFormInput
+        }
     default:
       break;
   }

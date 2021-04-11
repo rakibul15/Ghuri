@@ -10,6 +10,8 @@ export const GOLD_PACKAGE_1 = "GOLD_PACKAGE_1";
 export const GOLD_PACKAGE_2 = "GOLD_PACKAGE_2";
 export const GOLD_PACKAGE_3 = "GOLD_PACKAGE_3";
 
+//Health FOrm
+export const INPUT_HEALTH_FORM="INPUT_HEALTH_FORM"
 
 
 
