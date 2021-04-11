@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../css/mediaQuery.css";
 import "./parcel.css";
 
 import parcelimg from "../../images/others/Parcel.png";
 
-const parcel = () => {
+const Parcel = () => {
   return (
     <div>
       <div className="parcel_bg platform">
@@ -76,7 +76,7 @@ const parcel = () => {
               {/* <button className="btn  mt-3 learn_more">
                 Learn More
                 <i class="fa fa-chevron-right"></i> 
-              </button> */}   
+              </button> */}
             </div>
             <div className="col-sm-6 product_img">
               <img src={parcelimg} alt="Ride " />
@@ -88,4 +88,4 @@ const parcel = () => {
   );
 };
 
-export default parcel;
+export default Parcel;

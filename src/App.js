@@ -40,8 +40,8 @@ import "../src/css/main.css"
 
 
 
-
 function App() {
+
   return (
     <div>
       <Router>
@@ -164,7 +164,7 @@ function App() {
 
           <Route path="/health">
             <Health></Health>
-          </Route>
+          </Route> 
          
           <Route path="/silver">
          <Silver></Silver>
