@@ -28,7 +28,7 @@ const Bronze = () => {
   }
 
   const handleBronze = (packgeType, packageValue)=>{
-    history.push('/healthform')
+    history.push(`/healthform:1`)
     
    dispatch(SendPackage(packgeType, packageValue))
   }
@@ -50,18 +50,18 @@ const Bronze = () => {
             <Card.Body>
               <Card.Title className="card_title">
               
-                {bronzePackage1.price} TK
+                300 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>
-               {bronzePackage1.duration} Months Validity
+               3 Months Validity
               </Card.Title>
             </Card.Body>
 
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
               <a href
-              onClick={()=>handleBronze(Types.BRONGE_PACKAGE_1, bronzePackage1)}
+              onClick={()=>history.push('/healthform:1')}
               >
                 Buy Now <i class="fa fa-chevron-right"></i> 
               </a>  
@@ -73,17 +73,17 @@ const Bronze = () => {
             <Card.Body>
               <Card.Title className="card_title">
                
-                {bronzePackage2.price} TK
+                500 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>
-                {bronzePackage2.duration} Months Validity
+                6 Months Validity
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
               <a href
-              onClick={()=>handleBronze(Types.BRONGE_PACKAGE_2, bronzePackage2)}
+               onClick={()=>history.push('/healthform:2')}
               >
                 Buy Now <i class="fa fa-chevron-right"></i> 
               </a>
@@ -94,17 +94,17 @@ const Bronze = () => {
             <Card.Img variant="top" className="img-fluid" src={platinum} />
             <Card.Body>
               <Card.Title className="card_title">
-                {bronzePackage3.price} TK
+                1000 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>
-                {bronzePackage3.duration} Months Validity
+                12 Months Validity
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
               <a href
-              onClick={()=>handleBronze(Types.BRONGE_PACKAGE_3, bronzePackage3)}
+              onClick={()=>history.push('/healthform:3')}
               >
                 Buy Now <i class="fa fa-chevron-right"></i> 
               </a>

@@ -1,44 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Button, Col, Form } from "react-bootstrap";
-
-import "../../css/main.css";
 import { useHistory } from "react-router";
+import { useParams } from 'react-router-dom';
 
-const Healthform = () => {
+const HealthForm = () => {
   const history = useHistory();
-
+  const {id}  = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+//   const packageValue = useSelector((state) => state.healthInfo.packageValue);
 
-
-  const packageValue = useSelector((state) => state.healthInfo.packageValue);
-  console.log(`packageValue`, packageValue);
-
-  // const [price, setPrice] = useState('');
-  // const [duration, setDuration] = useState('');
-
-  // if (typeof packageValue !== undefined) {
-  //   history.push("/healthform");
-  //  }
-  //  else  {
-  //   history.push("/health");
-  //  }
-localStorage.setItem('price',packageValue.price);
-localStorage.setItem('duration',packageValue.duration);
-
-  
-const price= localStorage.getItem('price');
-const duration= localStorage.getItem('duration');
-
-
-
+let price = 0
+let duration = 0
+if(id === ":1"){
+   price = 300
+   duration= 3
+}
+else if(id === ":2"){
+   price = 500
+   duration= 6
+}
+else{
+    price = 1000
+   duration= 12
+}
   return (
     <div className="container confirm_package_details pt-5 pb-5">
-      <h5 className="text-center">Package Price : {packageValue.price} TK</h5>
-      <h5 className="text-center mb-4">Validity : {packageValue.duration} Months</h5>
+      <h5 className="text-center">Package Price :{price} TK</h5>
+      <h5 className="text-center mb-4">Validity : {duration} Months</h5>
       <h4 className="text-center mb-4">Applicant Info</h4>
 
       <Form className="form_applicant">
@@ -121,4 +113,4 @@ const duration= localStorage.getItem('duration');
   );
 };
 
-export default Healthform;
+export default HealthForm;

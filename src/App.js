@@ -33,7 +33,7 @@ import Terms from "./Components/terms/Terms";
 import Silver from "./Components/health/views/SilverContainer";
 import Bronze from "./Components/health/views/BronzeContainer";
 import Gold from "./Components/health/views/GoldContainer";
-import Healthform from "./Components/health/Healthform";
+import Healthform from "./Components/health/views/HealthFormContainer";
 import Privacy from "./Components/privacy/Privacy";
 import Refund from "./Components/refund/Refund";
 import "../src/css/main.css"
@@ -175,7 +175,7 @@ function App() {
         <Route path="/gold">
         <Gold></Gold>
         </Route>
-        <Route path="/healthform">
+        <Route path="/healthform:id">
         <Healthform></Healthform>
         </Route>
           <Route path="*">
