@@ -11,9 +11,6 @@ export const GOLD_PACKAGE_2 = "GOLD_PACKAGE_2";
 export const GOLD_PACKAGE_3 = "GOLD_PACKAGE_3";
 
 //Health FOrm
-export const INPUT_HEALTH_FORM="INPUT_HEALTH_FORM"
-
-
-
-
-
+export const INPUT_HEALTH_FORM = "INPUT_HEALTH_FORM";
+export const HEALTH_OTP_ID = "HEALTH_OTP_ID";
+export const IS_SUBMITED_HEALTH = "IS_SUBMITED_HEALTH";
