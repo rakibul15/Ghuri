@@ -338,3 +338,6 @@ margin-left:2%;
   text-align: justify;
 }
 /* Blogs Ends */
+.page-link:focus{
+  background-color: #ffcc00 !important;
+}
