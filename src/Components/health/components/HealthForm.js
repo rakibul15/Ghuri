@@ -15,6 +15,10 @@ const HealthForm = () => {
     (state) => state.healthInfo.healthFormInput
   );
   const healthOtpId = useSelector((state) => state.healthInfo.healthOtpId);
+  const isHealthSubmitting = useSelector(
+    (state) => state.healthInfo.isHealthSubmitting
+  );
+  console.log(`isHealthSubmitting`, isHealthSubmitting);
   const dispatch = useDispatch();
   const history = useHistory();
   const [show, setShow] = useState(false);
@@ -178,15 +182,24 @@ const HealthForm = () => {
           </Form.Row>
           <Form.Row className="justify-content-center mt-3">
             <Form.Group className="col-sm-6">
-              <Button
-                className="ghuri_btn"
-                variant="primary"
-                onClick={() => {
-                  handleSubmit(healthFormInput);
-                }}
-              >
-                Submit
-              </Button>
+              {!isHealthSubmitting && (
+                <Button
+                  className="ghuri_btn"
+                  onClick={() => {
+                    handleSubmit(healthFormInput);
+                  }}
+                >
+                  Submit
+                </Button>
+              )}
+              {isHealthSubmitting && (
+                <Button className="btn btn-danger">
+                  Submitting{" "}
+                  <span class="spinner-border spinner-border-sm" role="">
+                    {" "}
+                  </span>
+                </Button>
+              )}
             </Form.Group>
           </Form.Row>
         </Form>

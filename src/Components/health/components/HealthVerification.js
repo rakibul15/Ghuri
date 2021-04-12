@@ -5,15 +5,18 @@ import { Button, InputGroup, FormControl } from "react-bootstrap";
 import { showToast } from "../../../utils/ToastHelper";
 import { useStopwatch } from "react-timer-hook";
 import {
+  EmptyHealthOtp,
   ResendHealthOtp,
   SubmitHealthOtp,
 } from "../_redux/action/HealthAction";
+import { useHistory } from "react-router";
+import { confirmAlert } from "react-confirm-alert";
+import "react-confirm-alert/src/react-confirm-alert.css";
 
 const HealthVerification = (props) => {
   const { handleClose } = props;
-  // const history = useHistory()
+  const history = useHistory();
   const dispatch = useDispatch();
-  //   const redirectToLogin = useSelector((state) => state.signupInfo.redirectToLogin);
   const healthFormInput = useSelector(
     (state) => state.healthInfo.healthFormInput
   );
@@ -26,7 +29,7 @@ const HealthVerification = (props) => {
   const [count, setCount] = useState(0);
   const { seconds, reset } = useStopwatch({ autoStart: true });
   const [resend, setResend] = useState(false);
-  const duration = 5 - seconds;
+  const duration = 59 - seconds;
   const mobile = healthFormInput.applicantPhone;
   const lastTwo = mobile.slice(-2);
   useEffect(() => {
@@ -34,18 +37,10 @@ const HealthVerification = (props) => {
       setResend(true);
     }
   }, [seconds]);
-  // useEffect(() => {
-
-  // }, [healthOtpId])
-
-  //  useEffect(() => {
-  //   if(redirectToLogin){
-  //     window.location.assign(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`)
-  //   }
-  //  }, [redirectToLogin])
 
   useEffect(() => {
     if (count === 3) {
+      dispatch(EmptyHealthOtp());
       showToast("error", "Please Give Correct Phone Number");
       handleClose();
     }
@@ -53,17 +48,24 @@ const HealthVerification = (props) => {
   useEffect(() => {
     if (isSubmittedHealth) {
       handleClose();
+      //alert to user
+      confirmAlert({
+        title: "Welcome",
+        message: `We receive your application for ghuri health purchase. Ghuri health team will contact with you shortly.`,
+        buttons: [
+          {
+            label: "Ok",
+          },
+          // {
+          //   label: "No",
+          // },
+        ],
+      });
+
+      history.push("/health");
     }
   }, [isSubmittedHealth]);
 
-  // useEffect(() => {
-  //   dispatch(RiderectVerifiCatioFalse())
-
-  //   }, [])
-
-  // const handleSubmit=(code)=>{
-  //   dispatch(SubmitSmsCode(code))
-  // }
   const handleResend = () => {
     if (count < 3) {
       dispatch(ResendHealthOtp(mobile));
@@ -122,10 +124,9 @@ const HealthVerification = (props) => {
       <Modal.Footer>
         <Button
           variant="primary"
-          onClick={() => {
-            handleSubmitVerification(healthFormInput, smsCode, healthOtpId);
-            // handleClose();
-          }}
+          onClick={() =>
+            handleSubmitVerification(healthFormInput, smsCode, healthOtpId)
+          }
         >
           Save
         </Button>

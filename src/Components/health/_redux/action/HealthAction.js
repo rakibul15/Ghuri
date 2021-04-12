@@ -39,6 +39,7 @@ export const SubmitHealthForm = (data) => async (dispatch) => {
     showToast("error", "Relation of nominee can`t be empty");
     return false;
   }
+  dispatch({ type: Types.IS_HEALTH_SUBMITTING, payload: true });
   const url = `${process.env.REACT_APP_API_URL}admin/health_otp`;
   const phoneNumber = {
     msisdn: "88" + data.applicantPhone,
@@ -51,6 +52,7 @@ export const SubmitHealthForm = (data) => async (dispatch) => {
           showToast("success", res.data.message);
           dispatch({ type: Types.HEALTH_OTP_ID, payload: res.data.otp_id });
           dispatch({ type: Types.IS_SUBMITED_HEALTH, payload: false });
+          dispatch({ type: Types.IS_HEALTH_SUBMITTING, payload: false });
         } else {
           showToast("error", res.data.message);
         }
@@ -62,6 +64,7 @@ export const SubmitHealthForm = (data) => async (dispatch) => {
   } catch (error) {
     showToast("error", "Something Went Wrong !");
   }
+  dispatch({ type: Types.IS_HEALTH_SUBMITTING, payload: false });
 };
 
 export const SubmitHealthOtp = (
@@ -87,8 +90,8 @@ export const SubmitHealthOtp = (
             if (typeof res !== "undefined") {
               showToast("success", res.data.message);
               if (res.status === 200) {
-                console.log(`Sumitted`);
                 dispatch({ type: Types.IS_SUBMITED_HEALTH, payload: true });
+                dispatch({ type: Types.EMPTY_HEALTH_INPUT, payload: "" });
               }
             } else {
               showToast(
@@ -134,4 +137,7 @@ export const ResendHealthOtp = (mobile) => async (dispatch) => {
   } catch (error) {
     showToast("error", "Something went wrong");
   }
+};
+export const EmptyHealthOtp = () => (dispatch) => {
+  dispatch({ type: Types.HEALTH_OTP_ID, payload: null });
 };

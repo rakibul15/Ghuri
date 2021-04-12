@@ -13,6 +13,7 @@ const initialState = {
   },
   healthOtpId: null,
   isSubmittedHealth: false,
+  isHealthSubmitting: false,
 };
 const HealthReducer = (state = initialState, action) => {
   const newState = { ...state };
@@ -74,6 +75,15 @@ const HealthReducer = (state = initialState, action) => {
       return {
         ...state,
         isSubmittedHealth: action.payload,
+      };
+    case Types.EMPTY_HEALTH_INPUT:
+      return {
+        healthFormInput: initialState.healthFormInput,
+      };
+    case Types.IS_HEALTH_SUBMITTING:
+      return {
+        ...state,
+        isHealthSubmitting: action.payload,
       };
     default:
       break;
