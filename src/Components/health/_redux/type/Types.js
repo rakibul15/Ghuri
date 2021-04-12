@@ -10,8 +10,9 @@ export const GOLD_PACKAGE_1 = "GOLD_PACKAGE_1";
 export const GOLD_PACKAGE_2 = "GOLD_PACKAGE_2";
 export const GOLD_PACKAGE_3 = "GOLD_PACKAGE_3";
 
-
-
-
-
-
+//Health FOrm
+export const INPUT_HEALTH_FORM = "INPUT_HEALTH_FORM";
+export const HEALTH_OTP_ID = "HEALTH_OTP_ID";
+export const IS_SUBMITED_HEALTH = "IS_SUBMITED_HEALTH";
+export const EMPTY_HEALTH_INPUT = "EMPTY_HEALTH_INPUT";
+export const IS_HEALTH_SUBMITTING = "IS_HEALTH_SUBMITTING";
