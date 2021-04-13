@@ -45,13 +45,13 @@ const HealthForm = () => {
   let price = 0;
   let duration = 0;
   if (id === ":1") {
-    price = 300;
+    price = 237;
     duration = 3;
   } else if (id === ":2") {
-    price = 500;
+    price = 474;
     duration = 6;
   } else {
-    price = 1000;
+    price = 948;
     duration = 12;
   }
   return (

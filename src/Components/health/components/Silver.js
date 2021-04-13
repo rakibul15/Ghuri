@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Card, CardDeck, Container } from "react-bootstrap";
-import bronze from "../../../images/Health/dh1.png";
-import gold from "../../../images/Health/dh2.png";
-import platinum from "../../../images/Health/dh3.png";
+import Silver_3 from "../../../images/Health/Silver_3.png";
+import Silver_6 from "../../../images/Health/Silver_6.png";
+import  Silver_12 from "../../../images/Health/Silver_12.png";
 import dghealth from "../../../images/Health/dg_health.png";
 import ghurihealth from "../../../images/logo/ghuri_health.png";
 import * as Types from "../../health/_redux/type/Types";
@@ -15,15 +15,15 @@ const Silver = () => {
   const dispatch = useDispatch();
 
   const silverPackage1 = {
-    price: "500",
+    price: "447",
     duration: "3",
   };
   const silverPackage2 = {
-    price: "900",
+    price: "894",
     duration: "6",
   };
   const silverPackage3 = {
-    price: "1800",
+    price: "1788",
     duration: "12",
   };
 
@@ -44,7 +44,7 @@ const Silver = () => {
         </h1>
         <CardDeck className="pb-5">
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={bronze} />
+            <Card.Img variant="top" className="img-fluid" src={Silver_3} />
             <Card.Body>
               <Card.Title className="card_title">
                 {silverPackage1.price} TK
@@ -69,7 +69,7 @@ const Silver = () => {
             </Card.Footer>
           </Card>
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={gold} />
+            <Card.Img variant="top" className="img-fluid" src={Silver_6} />
             <Card.Body>
               <Card.Title className="card_title">
                 {silverPackage2.price} TK
@@ -93,7 +93,7 @@ const Silver = () => {
             </Card.Footer>
           </Card>
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={platinum} />
+            <Card.Img variant="top" className="img-fluid" src={Silver_12} />
             <Card.Body>
               <Card.Title className="card_title">
                 {silverPackage3.price} TK

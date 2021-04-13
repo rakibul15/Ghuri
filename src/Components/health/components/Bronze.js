@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Card, CardDeck, Container } from "react-bootstrap";
-import bronze from "../../../images/Health/dh1.png";
-import gold from "../../../images/Health/dh2.png";
-import platinum from "../../../images/Health/dh3.png";
+import Bronze_3 from "../../../images/Health/Bronze_3.png";
+import Bronze_6 from "../../../images/Health/Bronze_6.png";
+import  Bronze_12 from "../../../images/Health/Bronze_12.png";
 import dghealth from "../../../images/Health/dg_health.png";
 import ghurihealth from "../../../images/logo/ghuri_health.png"
 import * as Types from '../../health/_redux/type/Types'
@@ -15,15 +15,15 @@ const Bronze = () => {
   const dispatch = useDispatch();
 
   const bronzePackage1 = {
-    price:"300",
+    price:"237",
     duration:"3"
   }
   const bronzePackage2 = {
-    price:"500",
+    price:"474",
     duration:"6"
   }
   const bronzePackage3 = {
-    price:"1000",
+    price:"948",
     duration:"12"
   }
 
@@ -46,15 +46,15 @@ const Bronze = () => {
         </h1>
         <CardDeck className="pb-5">
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={bronze} />
+            <Card.Img variant="top" className="img-fluid" src={Bronze_3} />
             <Card.Body>
               <Card.Title className="card_title">
               
-                300 TK
+                {bronzePackage1.price} TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
-               3 Months Validity
+                {bronzePackage1.duration} Months
               </Card.Title>
             </Card.Body>
 
@@ -69,15 +69,15 @@ const Bronze = () => {
             </Card.Footer>
           </Card>
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={gold} />
+            <Card.Img variant="top" className="img-fluid" src={Bronze_6} />
             <Card.Body>
               <Card.Title className="card_title">
                
-                500 TK
+              {bronzePackage2.price} TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
-                6 Months Validity
+                {bronzePackage2.duration} Months
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">
@@ -91,14 +91,14 @@ const Bronze = () => {
             </Card.Footer>
           </Card>
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={platinum} />
+            <Card.Img variant="top" className="img-fluid" src={Bronze_12} />
             <Card.Body>
               <Card.Title className="card_title">
-                1000 TK
+              {bronzePackage3.price} TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
-                12 Months Validity
+                {bronzePackage3.duration} Months
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">

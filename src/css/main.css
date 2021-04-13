@@ -71,9 +71,7 @@
 .card_footer_health a {
   color: #ffcc00 !important;
 }
-.m_color {
-  background-color: #ffcc00;
-}
+
 .card_color {
   background-color: black;
   border: none;
@@ -223,6 +221,10 @@ margin-left:2%;
 .ghuri_btn {
   background-color: #ffcc00;
   color: black;
+}
+
+.card_footer_health a{
+  cursor: pointer;
 }
 
 /*Terms*/

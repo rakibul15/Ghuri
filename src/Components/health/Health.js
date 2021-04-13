@@ -29,7 +29,7 @@ const Health = (props) => {
                 ghuri health Bronze{" "}
               </Card.Title>
               <h6 className="card-subtitle mb-2 text-muted package_price">
-                1000 TK
+                948 TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
@@ -73,7 +73,7 @@ const Health = (props) => {
                 ghuri health Silver{" "}
               </Card.Title>
               <h6 className="card-subtitle mb-2 text-muted package_price">
-                1800 TK
+                1788 TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>{" "}
@@ -115,7 +115,7 @@ const Health = (props) => {
             <Card.Body>
               <Card.Title className="card_title">ghuri health Gold</Card.Title>
               <h6 className="card-subtitle mb-2 text-muted package_price">
-                2800 TK
+                2748 TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>

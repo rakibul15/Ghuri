@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Card, CardDeck, Container } from "react-bootstrap";
-import bronze from "../../../images/Health/dh1.png";
-import gold from "../../../images/Health/dh2.png";
-import platinum from "../../../images/Health/dh3.png";
+import Gold_3 from "../../../images/Health/Gold_3.png";
+import Gold_6 from "../../../images/Health/Gold_6.png";
+import Gold_12 from "../../../images/Health/Gold_12.png";
 import dghealth from "../../../images/Health/dg_health.png";
 import ghurihealth from "../../../images/logo/ghuri_health.png"
 import { useHistory } from "react-router";
@@ -15,15 +15,15 @@ const Gold = () => {
   const dispatch = useDispatch();
 
   const goldPackage1 = {
-    price:"700",
+    price:"687",
     duration:"3"
   }
   const goldPackage2 = {
-    price:"1400",
+    price:"1374",
     duration:"6"
   }
   const goldPackage3 = {
-    price:"2800",
+    price:"2748",
     duration:"12"
   }
 
@@ -44,7 +44,7 @@ const Gold = () => {
         </h1>
         <CardDeck className="pb-5">
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={bronze} />
+            <Card.Img variant="top" className="img-fluid" src={Gold_3} />
             <Card.Body>
               <Card.Title className="card_title">
                  {goldPackage1.price} TK
@@ -66,7 +66,7 @@ const Gold = () => {
             </Card.Footer>
           </Card>
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={gold} />
+            <Card.Img variant="top" className="img-fluid" src={Gold_6} />
             <Card.Body>
               <Card.Title className="card_title">
                 {goldPackage2.price} TK
@@ -87,7 +87,7 @@ const Gold = () => {
             </Card.Footer>
           </Card>
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={platinum} />
+            <Card.Img variant="top" className="img-fluid" src={Gold_12} />
             <Card.Body>
               <Card.Title className="card_title">
                 {goldPackage3.price} TK
