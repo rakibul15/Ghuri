@@ -31,7 +31,7 @@ import Terms from "./Components/terms/Terms";
 import Silver from "./Components/health/views/SilverContainer";
 import Bronze from "./Components/health/views/BronzeContainer";
 import Gold from "./Components/health/views/GoldContainer";
-import Healthform from "./Components/health/Healthform";
+import Healthform from "./Components/health/views/HealthFormContainer";
 import Privacy from "./Components/privacy/Privacy";
 import Refund from "./Components/refund/Refund";
 import "../src/css/main.css";
@@ -164,23 +164,22 @@ function App() {
             <Blogdetails></Blogdetails>
           </Route>
 
-          {/* <Route path="/health">
+          <Route path="/health">
             <Health></Health>
-          </Route> */}
-
-          {/* <Route path="/silver">
+          </Route> 
+         
+          <Route path="/silver">
          <Silver></Silver>
-        </Route> */}
-          {/* <Route path="/bronze">
+        </Route>
+        <Route path="/bronze">
         <Bronze></Bronze>
-        </Route> */}
-          {/* <Route path="/gold">
+        </Route>
+        <Route path="/gold">
         <Gold></Gold>
-        </Route> */}
-          {/* <Route path="/healthform">
+        </Route>
+        <Route path="/healthform:id">
         <Healthform></Healthform>
-        </Route> */}
-
+        </Route>
           <Route path="*">
             <Notmatch />
           </Route>

@@ -6,8 +6,6 @@ import {
   DropdownButton,
   Nav,
   Navbar,
-  NavbarBrand,
-  NavDropdown,
 } from "react-bootstrap";
 import "./Topnav.css";
 import logo from "../../images/logo/logo.svg";
@@ -97,15 +95,9 @@ const Topnav = () => {
                 </Dropdown.Item>
               </DropdownButton>
             </Nav.Link>
-            {/* <Nav.Link className="nav_color">
+            <Nav.Link className="nav_color">
             <Link to="/health"> Health</Link>
-            </Nav.Link> */}
-
-
-             <Nav.Link className="nav_color">
-            <Link to="/blog"> Blog</Link>
             </Nav.Link>
-
             <Nav.Link className="language">
               <Link to="#">
                 <i className="fa fa-globe"></i> EN
