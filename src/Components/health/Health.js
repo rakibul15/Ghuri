@@ -28,10 +28,10 @@ const Health = (props) => {
               <Card.Title className="card_title">
                 ghuri health Bronze{" "}
               </Card.Title>
-              <h6 class="card-subtitle mb-2 text-muted package_price">
-                1000 TK
+              <h6 className="card-subtitle mb-2 text-muted package_price">
+                948 TK
                 <span>
-                  <i class="fa fa-circle dot_circle"></i>
+                  <i className="fa fa-circle dot_circle"></i>
                 </span>
                 12 Months Validity
               </h6>
@@ -41,7 +41,7 @@ const Health = (props) => {
                 <br />
                 <br />
 
-                <h6 class="card-subtitle mb-2 text-muted body_text_info">
+                <h6 className="card-subtitle mb-2 text-muted body_text_info">
                   Up to BDT 40,000 Health Cashback for Primary Member
                 </h6>
                 <img
@@ -53,15 +53,15 @@ const Health = (props) => {
                 <img src={chat} className="img-fluid img_comunication" alt="" />
                 <br />
                 <br />
-                <h6 class="card-subtitle mb-2 text-muted body_text_info">
+                <h6 className="card-subtitle mb-2 text-muted body_text_info">
                   Unlimited Doctor Call, Video Call & Chat
                 </h6>
               </Card.Text>
             </Card.Body>
             <Card.Footer className="card_footer_health">
-              <h6 class="card-subtitltext-muted text-center">
+              <h6 className="card-subtitltext-muted text-center">
                 <Link to="/bronze">
-                  Subscribe <i class="fa fa-chevron-right"></i>
+                  Subscribe <i className="fa fa-chevron-right"></i>
                 </Link>
               </h6>
             </Card.Footer>
@@ -72,10 +72,10 @@ const Health = (props) => {
               <Card.Title className="card_title">
                 ghuri health Silver{" "}
               </Card.Title>
-              <h6 class="card-subtitle mb-2 text-muted package_price">
-                1800 TK
+              <h6 className="card-subtitle mb-2 text-muted package_price">
+                1788 TK
                 <span>
-                  <i class="fa fa-circle dot_circle"></i>
+                  <i className="fa fa-circle dot_circle"></i>
                 </span>{" "}
                 12 Months Validity
               </h6>
@@ -85,7 +85,7 @@ const Health = (props) => {
                 <br />
                 <br />
 
-                <h6 class="card-subtitle mb-2 text-muted body_text_info">
+                <h6 className="card-subtitle mb-2 text-muted body_text_info">
                   Up to BDT 100,000 Health Cashback for Primary Member
                 </h6>
                 <img
@@ -97,15 +97,15 @@ const Health = (props) => {
                 <img src={chat} className="img-fluid img_comunication" alt="" />
                 <br />
                 <br />
-                <h6 class="card-subtitle mb-2 text-muted body_text_info">
+                <h6 className="card-subtitle mb-2 text-muted body_text_info">
                   Unlimited Doctor Call, Video Call & Chat
                 </h6>
               </Card.Text>
             </Card.Body>
             <Card.Footer className="card_footer_health">
-              <h6 class="card-subtitltext-muted text-center">
+              <h6 className="card-subtitltext-muted text-center">
                 <Link to="/silver">
-                  Subscribe <i class="fa fa-chevron-right"></i>
+                  Subscribe <i className="fa fa-chevron-right"></i>
                 </Link>
               </h6>
             </Card.Footer>
@@ -114,10 +114,10 @@ const Health = (props) => {
             <Card.Img variant="top" className="img-fluid" src={platinum} />
             <Card.Body>
               <Card.Title className="card_title">ghuri health Gold</Card.Title>
-              <h6 class="card-subtitle mb-2 text-muted package_price">
-                2800 TK
+              <h6 className="card-subtitle mb-2 text-muted package_price">
+                2748 TK
                 <span>
-                  <i class="fa fa-circle dot_circle"></i>
+                  <i className="fa fa-circle dot_circle"></i>
                 </span>
                 12 Months Validity
               </h6>
@@ -127,7 +127,7 @@ const Health = (props) => {
                 <br />
                 <br />
 
-                <h6 class="card-subtitle mb-2 text-muted body_text_info">
+                <h6 className="card-subtitle mb-2 text-muted body_text_info">
                   Up to BDT 200,000 Health Cashback for Primary Member
                 </h6>
                 <img
@@ -139,15 +139,15 @@ const Health = (props) => {
                 <img src={chat} className="img-fluid img_comunication" alt="" />
                 <br />
                 <br />
-                <h6 class="card-subtitle mb-2 text-muted body_text_info">
+                <h6 className="card-subtitle mb-2 text-muted body_text_info">
                   Unlimited Doctor Call, Video Call & Chat
                 </h6>
               </Card.Text>
             </Card.Body>
             <Card.Footer className="card_footer_health">
-              <h6 class="card-subtitltext-muted text-center">
+              <h6 className="card-subtitltext-muted text-center">
                 <Link to="/gold">
-                  Subscribe <i class="fa fa-chevron-right"></i>
+                  Subscribe <i className="fa fa-chevron-right"></i>
                 </Link>
               </h6>
             </Card.Footer>

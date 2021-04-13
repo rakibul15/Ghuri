@@ -292,7 +292,7 @@ const Signup = () => {
                   )}
                   {isLoading && (
                     <a href disabled>
-                      Submitting...{"  "}
+                      Submitting...
                       <span
                         className="spinner-border spinner-border-sm"
                         role="status"
