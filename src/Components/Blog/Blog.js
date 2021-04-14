@@ -26,9 +26,9 @@ const Blog = () => {
   
 
   return (
-    <div className="ghuri_blog container">
+    <div className="ghuri_blog container Nav_overflow">
       <div className="row mt-2 mb-5">
-        <div className="col-sm-12">
+        <div className="col-sm-12 mt-5">
           <h1 className="text-center">Ghuri Blogs</h1>
         </div>
       </div>

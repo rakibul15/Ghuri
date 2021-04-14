@@ -343,3 +343,12 @@ margin-left:2%;
 .page-link:focus{
   background-color: #ffcc00 !important;
 }
+
+.fixed {
+ position: fixed;
+ top:0;
+
+}
+.Nav_overflow{
+  margin-top: 62px;
+}

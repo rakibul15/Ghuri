@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 const Health = (props) => {
   console.log(props);
   return (
-    <div className="m_color">
+    <div className="m_color Nav_overflow">
       <Container>
         <h1 className="text-center health_headline pt-5 pb-5">
           GHURI Health Membership Packages

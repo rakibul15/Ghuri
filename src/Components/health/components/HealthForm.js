@@ -56,7 +56,7 @@ const HealthForm = () => {
   }
   return (
     <>
-      <div className="container confirm_package_details pt-5 pb-5">
+      <div className="container confirm_package_details pt-5 pb-5 Nav_overflow">
         <h5 className="text-center">Package Price :{price} TK</h5>
         <h5 className="text-center mb-4">Validity : {duration} Months</h5>
         <h4 className="text-center mb-4">Applicant Info</h4>
