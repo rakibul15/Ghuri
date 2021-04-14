@@ -74,7 +74,7 @@ const userData =JSON.parse(localStorage.getItem("signupData"))
       />
     </Card.Text>
     <Card.Link >
-      <a href 
+      <a
       className="btn btn-verification mr-3"
       onClick={()=>handleSubmit(smsCode)}  
       >
@@ -83,7 +83,7 @@ const userData =JSON.parse(localStorage.getItem("signupData"))
     </Card.Link>
     <Card.Link className="resend" >
       <span className="text-right" style={{marginLeft:"422px"}}>
-      <a href 
+      <a
       style={{cursor:"pointer"}}
       
       onClick={()=>{

@@ -42,7 +42,7 @@ const MarchentLogIn = () => {
 
                             <div className="row mt-3">
                                 <div className="col-sm-12 text-right mt-forgetpass">
-                                    <a href><small>Forget Password</small></a>
+                                    <a><small>Forget Password</small></a>
                                 </div>
                             </div>
 
@@ -53,7 +53,7 @@ const MarchentLogIn = () => {
                             </div>
                             <div className="row mt-3">
                                 <div className="col-sm-12  mt-signup text-center">
-                                <small>Not A Member yet!  &nbsp;</small> <span><a href><Link to="/signup" href="/signup"><small><strong>Sign Up</strong></small></Link></a></span>
+                                <small>Not A Member yet!  &nbsp;</small> <span><a><Link to="/signup" href="/signup"><small><strong>Sign Up</strong></small></Link></a></span>
                                     
                                 </div>
                             </div>
