@@ -16,7 +16,7 @@ const Header = () => {
     <source src={video} type='video/mp4' />
     </video>
 
-    <div className=" row d-flex align-items-center justify-content-center remove_small">
+    <div className=" row d-flex align-items-center justify-content-center remove_small Nav_overflow">
         <div className="content col-sm-10 center">
           <div className="row d-flex align-items-center">
             <div className="col-sm-6 ghuri-button">

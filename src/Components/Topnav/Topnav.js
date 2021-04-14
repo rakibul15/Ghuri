@@ -33,7 +33,7 @@ const Topnav = () => {
 
   return (
     <div>
-      <Navbar collapseOnSelect expand="sm"  mb-5>
+      <Navbar collapseOnSelect expand="sm" className="fixed"   mb-5>
         <Navbar.Brand>
           <Link to="/">
             <img className="ghuri_logo img-fluid" src={logo} fluid alt="" />

@@ -7,7 +7,7 @@ const Terms = () => {
   }, [])
   return (
     <div>
-      <div className="container pt-5 pb-5 terms_content">
+      <div className="container pt-5 pb-5 terms_content Nav_overflow">
         <h1>USER Terms & Conditions - GHURI Parcel</h1>
         <p>
           We are GHURI Express Limited, a brand of www.ghuriexpress.com , unless

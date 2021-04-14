@@ -77,7 +77,7 @@ const HealthVerification = (props) => {
 
   return (
     <>
-      <Modal.Header closeButton>
+      <Modal.Header closeButton className="Nav_overflow">
         <Modal.Title>SMS VERIFICATION</Modal.Title>
       </Modal.Header>
       <Modal.Body>

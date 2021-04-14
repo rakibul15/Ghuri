@@ -37,7 +37,7 @@ const Gold = () => {
   }, [])
   
   return (
-    <div className="silver_package">
+    <div className="silver_package Nav_overflow">
       <Container>
         <h1 className="text-center health_headline pt-5 pb-5">
           GHURI Health <span>Gold</span> Membership Packages
