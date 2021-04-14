@@ -99,7 +99,7 @@ const Topnav = () => {
             <Link to="/health"> Health</Link>
             </Nav.Link>
             <Nav.Link className="nav_color">
-            <Link to="/blog"> Blog</Link>
+            <Link to="/blog">Blog</Link>
             </Nav.Link>
             <Nav.Link className="language">
               <Link to="#">
