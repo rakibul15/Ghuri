@@ -16,7 +16,7 @@ const Header = () => {
     <source src={video} type='video/mp4' />
     </video>
 
-    <div className=" row d-flex align-items-center justify-content-center remove_small">
+    <div className=" row d-flex align-items-center justify-content-center remove_small Nav_overflow">
         <div className="content col-sm-10 center">
           <div className="row d-flex align-items-center">
             <div className="col-sm-6 ghuri-button">
@@ -27,11 +27,11 @@ const Header = () => {
                 rel="noreferrer"
               >
                 <span>
-                  <i class="fa fa-mobile mobile"></i>
+                  <i className="fa fa-mobile mobile"></i>
                 </span>
                 <span className="space_app">Download Ghuri App</span>
                 <span>
-                  <i class="fa fa-chevron-right"></i>
+                  <i className="fa fa-chevron-right"></i>
                 </span>
               </a>{" "}
               <br />
@@ -42,11 +42,11 @@ const Header = () => {
                 rel="noreferrer"
               >
                 <span>
-                  <i class="fa fa-money"></i>
+                  <i className="fa fa-money"></i>
                 </span>
                 <span className="space_fixed">Earn With Ghuri</span>
                 <span>
-                  <i class="fa fa-chevron-right"></i>
+                  <i className="fa fa-chevron-right"></i>
                 </span>
               </a>
             </div>
@@ -80,11 +80,11 @@ const Header = () => {
                 rel="noreferrer"
               >
                 <span>
-                  <i class="fa fa-mobile mobile"></i>
+                  <i className="fa fa-mobile mobile"></i>
                 </span>
                 <span className="space_app">Download Ghuri App</span>
                 <span>
-                  <i class="fa fa-chevron-right"></i>
+                  <i className="fa fa-chevron-right"></i>
                 </span>
               </a>
               <br />
@@ -95,11 +95,11 @@ const Header = () => {
                 rel="noreferrer"
               >
                 <span>
-                  <i class="fa fa-money"></i>
+                  <i className="fa fa-money"></i>
                 </span>
                 <span className="space_fixed">Earn With Ghuri</span>
                 <span>
-                  <i class="fa fa-chevron-right"></i>
+                  <i className="fa fa-chevron-right"></i>
                 </span>
               </a>
             </div>

@@ -1,4 +1,3 @@
-
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Topnav from "./Components/Topnav/Topnav";
@@ -7,7 +6,6 @@ import { Route, Switch } from "react-router-dom";
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-
 
 import Header from "./Components/Header/Header";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
@@ -33,17 +31,14 @@ import Terms from "./Components/terms/Terms";
 import Silver from "./Components/health/views/SilverContainer";
 import Bronze from "./Components/health/views/BronzeContainer";
 import Gold from "./Components/health/views/GoldContainer";
-import Healthform from "./Components/health/Healthform";
+import Healthform from "./Components/health/views/HealthFormContainer";
 import Privacy from "./Components/privacy/Privacy";
 import Refund from "./Components/refund/Refund";
-import "../src/css/main.css"
-
-
-
-
+import "../src/css/main.css";
+import Blog from "./Components/blog/Blog";
+import Blogdetails from "./Components/blog/Blogdetails";
 
 function App() {
-
   return (
     <div>
       <Router>
@@ -70,7 +65,6 @@ function App() {
             <Clients></Clients>
           </Route>
           <Route path="/merchnat">
-          
             <Signup></Signup>
           </Route>
 
@@ -123,7 +117,6 @@ function App() {
             <Partners></Partners>
             <Clients></Clients>
           </Route>
-          
 
           {/* Bazar */}
           <Route path="/bazar">
@@ -153,33 +146,40 @@ function App() {
           </Route>
 
           <Route path="/terms">
-           <Terms></Terms>
+            <Terms></Terms>
           </Route>
 
           <Route path="/privacy">
-           <Privacy></Privacy>
+            <Privacy></Privacy>
           </Route>
 
           <Route path="/refund">
-           <Refund></Refund>
+            <Refund></Refund>
+          </Route>
+          <Route exact path="/blog">
+            <Blog></Blog>
           </Route>
 
-          {/* <Route path="/health">
+          <Route exact  path="/blog/:id">
+            <Blogdetails></Blogdetails>
+          </Route>
+
+          <Route path="/health">
             <Health></Health>
-          </Route> */}
+          </Route> 
          
-          {/* <Route path="/silver">
+          <Route path="/silver">
          <Silver></Silver>
-        </Route> */}
-        {/* <Route path="/bronze">
+        </Route>
+        <Route path="/bronze">
         <Bronze></Bronze>
-        </Route> */}
-        {/* <Route path="/gold">
+        </Route>
+        <Route path="/gold">
         <Gold></Gold>
-        </Route> */}
-        {/* <Route path="/healthform">
+        </Route>
+        <Route path="/healthform:id">
         <Healthform></Healthform>
-        </Route> */}
+        </Route>
           <Route path="*">
             <Notmatch />
           </Route>
