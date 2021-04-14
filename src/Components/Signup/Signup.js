@@ -286,12 +286,12 @@ const Signup = () => {
               <div className="row mt-4 text-right">
                 <div className="col-sm-12 sign-submit-btn">
                   {!isLoading && (
-                    <a href onClick={() => submitSignup(signupTextInput)}>
+                    <a onClick={() => submitSignup(signupTextInput)}>
                       Submit
                     </a>
                   )}
                   {isLoading && (
-                    <a href disabled>
+                    <a disabled>
                       Submitting...
                       <span
                         className="spinner-border spinner-border-sm"

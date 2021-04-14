@@ -57,7 +57,7 @@ const Gold = () => {
 
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
-              <a href
+              <a 
               onClick={()=>handleGold(Types.GOLD_PACKAGE_1, goldPackage1)}
               >
                 Buy Now <i className="fa fa-chevron-right"></i> 
@@ -78,7 +78,7 @@ const Gold = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a href
+              <a 
               onClick={()=>handleGold(Types.GOLD_PACKAGE_2, goldPackage2)}
               >
                 Buy Now <i className="fa fa-chevron-right"></i> 
@@ -99,7 +99,7 @@ const Gold = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a href
+              <a
               onClick={()=>handleGold(Types.GOLD_PACKAGE_3, goldPackage3)}
               >
                 Buy Now <i className="fa fa-chevron-right"></i> 

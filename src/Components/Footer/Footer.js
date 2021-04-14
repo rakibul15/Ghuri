@@ -61,7 +61,7 @@ const Footer = () => {
               <small>
                 <span>
                   <Link to="/ticket">
-                    <a href>GHURI Ticket</a>
+                    <a >GHURI Ticket</a>
                   </Link>
                 </span>
               </small>
@@ -69,7 +69,7 @@ const Footer = () => {
               <small>
                 <span>
                   <Link to="/truck">
-                    <a href>GHURI Truck</a>
+                    <a >GHURI Truck</a>
                   </Link>
                 </span>
               </small>
@@ -77,7 +77,7 @@ const Footer = () => {
               <small>
                 <span>
                   <Link to="/bazar">
-                    <a href>GHURI Bazar</a>
+                    <a>GHURI Bazar</a>
                   </Link>
                 </span>
               </small>
@@ -107,7 +107,7 @@ const Footer = () => {
               <small>
                 <span>
                   <Link>
-                    <a href onClick={() => handleRedirect()}>
+                    <a  onClick={() => handleRedirect()}>
                       Parcel Marchant Log In
                     </a>
                   </Link>
