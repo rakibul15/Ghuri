@@ -25,7 +25,6 @@ export default function Headline() {
       <OwlCarousel loop margin={10} items={1} autoplay={true} dots={false} lazyLoad={true}>
         {news.map((snews) => (
           <Singlenews
-          key={newsdata.id}
             // handleEnroll={handleEnroll}
             snews={snews}
           ></Singlenews>

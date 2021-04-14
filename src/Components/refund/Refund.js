@@ -8,7 +8,7 @@ const Refund = () => {
 
   return (
     <div>
-      <div className="container pt-5 pb-5 terms_content Nav_overflow">
+      <div className="container pt-5 pb-5 terms_content">
         <h1>GHURI RETURN AND REFUND POLICY</h1>
         <h2>Return & Refund Policy (GHURI PARCEL & BAZAR)</h2>
         <p>

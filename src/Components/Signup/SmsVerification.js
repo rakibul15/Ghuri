@@ -56,7 +56,7 @@ const userData =JSON.parse(localStorage.getItem("signupData"))
 
     return ( 
         <>
-       <div className="sms Nav_overflow">
+       <div className="sms">
        <div  style={{minHeight:"600px"}} className="d-flex align-items-center justify-content-center">
        <Card  style={{ width: '40rem' }} className="mt-4 ml-5 bg-light">
   <Card.Body className="verification_box">

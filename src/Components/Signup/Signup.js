@@ -41,7 +41,7 @@ const Signup = () => {
 
   return (
     <div>
-      <div className="sign-top  signup_bg Nav_overflow">
+      <div className="sign-top  signup_bg">
         <div className="row d-flex align-items-center">
           <div className="col-sm-12 sm_center_fix center">
             <form className="sign-form container">
@@ -292,7 +292,7 @@ const Signup = () => {
                   )}
                   {isLoading && (
                     <a href disabled>
-                      Submitting...
+                      Submitting...{"  "}
                       <span
                         className="spinner-border spinner-border-sm"
                         role="status"

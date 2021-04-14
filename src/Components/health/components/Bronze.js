@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Card, CardDeck, Container } from "react-bootstrap";
-import Bronze_3 from "../../../images/Health/Bronze_3.png";
-import Bronze_6 from "../../../images/Health/Bronze_6.png";
-import  Bronze_12 from "../../../images/Health/Bronze_12.png";
+import bronze from "../../../images/Health/dh1.png";
+import gold from "../../../images/Health/dh2.png";
+import platinum from "../../../images/Health/dh3.png";
 import dghealth from "../../../images/Health/dg_health.png";
 import ghurihealth from "../../../images/logo/ghuri_health.png"
 import * as Types from '../../health/_redux/type/Types'
@@ -15,20 +15,20 @@ const Bronze = () => {
   const dispatch = useDispatch();
 
   const bronzePackage1 = {
-    price:"237",
+    price:"300",
     duration:"3"
   }
   const bronzePackage2 = {
-    price:"474",
+    price:"500",
     duration:"6"
   }
   const bronzePackage3 = {
-    price:"948",
+    price:"1000",
     duration:"12"
   }
 
   const handleBronze = (packgeType, packageValue)=>{
-    history.push(`/healthform:1`)
+    history.push('/healthform')
     
    dispatch(SendPackage(packgeType, packageValue))
   }
@@ -39,74 +39,74 @@ const Bronze = () => {
   
 
   return (
-    <div className="silver_package Nav_overflow">
+    <div className="silver_package">
       <Container>
         <h1 className="text-center health_headline pt-5 pb-5">
           GHURI Health <span>bronze</span> Membership Packages
         </h1>
         <CardDeck className="pb-5">
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={Bronze_3} />
+            <Card.Img variant="top" className="img-fluid" src={bronze} />
             <Card.Body>
               <Card.Title className="card_title">
               
                 {bronzePackage1.price} TK
                 <span>
-                  <i className="fa fa-circle dot_circle"></i>
+                  <i class="fa fa-circle dot_circle"></i>
                 </span>
-                {bronzePackage1.duration} Months
+               {bronzePackage1.duration} Months Validity
               </Card.Title>
             </Card.Body>
 
             <Card.Footer className="card_footer_health">
-              <h6 className="card-subtitltext-muted text-center">
+              <h6 class="card-subtitltext-muted text-center">
               <a href
-              onClick={()=>history.push('/healthform:1')}
+              onClick={()=>handleBronze(Types.BRONGE_PACKAGE_1, bronzePackage1)}
               >
-                Buy Now <i className="fa fa-chevron-right"></i> 
+                Buy Now <i class="fa fa-chevron-right"></i> 
               </a>  
               </h6>
             </Card.Footer>
           </Card>
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={Bronze_6} />
+            <Card.Img variant="top" className="img-fluid" src={gold} />
             <Card.Body>
               <Card.Title className="card_title">
                
-              {bronzePackage2.price} TK
+                {bronzePackage2.price} TK
                 <span>
-                  <i className="fa fa-circle dot_circle"></i>
+                  <i class="fa fa-circle dot_circle"></i>
                 </span>
-                {bronzePackage2.duration} Months
+                {bronzePackage2.duration} Months Validity
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">
-              <h6 className="card-subtitltext-muted text-center">
+              <h6 class="card-subtitltext-muted text-center">
               <a href
-               onClick={()=>history.push('/healthform:2')}
+              onClick={()=>handleBronze(Types.BRONGE_PACKAGE_2, bronzePackage2)}
               >
-                Buy Now <i className="fa fa-chevron-right"></i> 
+                Buy Now <i class="fa fa-chevron-right"></i> 
               </a>
               </h6>
             </Card.Footer>
           </Card>
           <Card className="card_color">
-            <Card.Img variant="top" className="img-fluid" src={Bronze_12} />
+            <Card.Img variant="top" className="img-fluid" src={platinum} />
             <Card.Body>
               <Card.Title className="card_title">
-              {bronzePackage3.price} TK
+                {bronzePackage3.price} TK
                 <span>
-                  <i className="fa fa-circle dot_circle"></i>
+                  <i class="fa fa-circle dot_circle"></i>
                 </span>
-                {bronzePackage3.duration} Months
+                {bronzePackage3.duration} Months Validity
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">
-              <h6 className="card-subtitltext-muted text-center">
+              <h6 class="card-subtitltext-muted text-center">
               <a href
-              onClick={()=>history.push('/healthform:3')}
+              onClick={()=>handleBronze(Types.BRONGE_PACKAGE_3, bronzePackage3)}
               >
-                Buy Now <i clasclassNames="fa fa-chevron-right"></i> 
+                Buy Now <i class="fa fa-chevron-right"></i> 
               </a>
               </h6>
             </Card.Footer>
@@ -117,11 +117,11 @@ const Bronze = () => {
           <h4>Plan Includes</h4>
           <p>
            
-            <i className="fa mr-2 fa-check"></i> Free Doctor Call, Video Call & Chat
+            <i class="fa mr-2 fa-check"></i> Free Doctor Call, Video Call & Chat
           </p>
           <p>
       
-            <i className="fa mr-2 fa-check"></i> Maximum Hospitalization Cash
+            <i class="fa mr-2 fa-check"></i> Maximum Hospitalization Cash
             Coverage
           </p>
           <ul>
@@ -130,7 +130,7 @@ const Bronze = () => {
             </li>
           </ul>
           <p>
-            <i className="fa mr-2 fa-check"></i>Hospitalization Cash Coverage
+            <i class="fa mr-2 fa-check"></i>Hospitalization Cash Coverage
             Details
           </p>
           <ul>
@@ -140,42 +140,42 @@ const Bronze = () => {
             <li>No Daycare</li>
           </ul>
           <p>
-        
-            <i className="fa mr-2 fa-check"></i>
+            {" "}
+            <i class="fa mr-2 fa-check"></i>
             Hospitalization Cash Coverage Applicable for Primary Member only
           </p>
           <p>
-            <i className="fa mr-2 fa-check"></i>Isolation Coverage BDT 2,000
+            <i class="fa mr-2 fa-check"></i>Isolation Coverage BDT 2,000
           </p>
           <p>
-          
-            <i className="fa mr-2 fa-check"></i>Isolation Coverage Applicable for
+            {" "}
+            <i class="fa mr-2 fa-check"></i>Isolation Coverage Applicable for
             Primary Member
           </p>
           <p>
-
-            <i className="fa mr-2 fa-check"></i>
+            {" "}
+            <i class="fa mr-2 fa-check"></i>
             OPD Coverage of BDT 1,600 with up to 2 claims(BDT 800 per claim) for
             doctor consultation(minimum MBBS). Applicable for Primary Member
             only.
           </p>
           <p>
-         
-            <i className="fa mr-2 fa-check"></i> Maternity Coverage applicable for
+            {" "}
+            <i class="fa mr-2 fa-check"></i> Maternity Coverage applicable for
             primary member only
           </p>
           <p>
             {" "}
-            <i className="fa mr-2 fa-check"></i>
+            <i class="fa mr-2 fa-check"></i>
             Life Insurance Coverage Amount BDT 10,000. Applicable for Primary
             Member only.
           </p>
           <p>
-            <i className="fa mr-2 fa-check"></i> Up-to 35% Discount at over 1000
+            <i class="fa mr-2 fa-check"></i> Up-to 35% Discount at over 1000
             Partner Outlets
           </p>
           <p>
-            <i className="fa mr-2 fa-check"></i> Appointment Booking Facility with
+            <i class="fa mr-2 fa-check"></i> Appointment Booking Facility with
             1200+ Specialist Doctors
           </p>
         </div>

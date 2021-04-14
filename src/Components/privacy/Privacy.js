@@ -7,7 +7,7 @@ const Privacy = () => {
 
   return (
     <div>
-      <div className="container pt-5 pb-5 terms_content Nav_overflow">
+      <div className="container pt-5 pb-5 terms_content">
         <h1>Privacy</h1>
         <p>
           The following Privacy Policy describes how we, <strong>GHURI</strong>{" "}
