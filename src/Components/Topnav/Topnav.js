@@ -98,6 +98,9 @@ const Topnav = () => {
             <Nav.Link className="nav_color">
             <Link to="/health"> Health</Link>
             </Nav.Link>
+            <Nav.Link className="nav_color">
+            <Link to="/blog"> Blog</Link>
+            </Nav.Link>
             <Nav.Link className="language">
               <Link to="#">
                 <i className="fa fa-globe"></i> EN
