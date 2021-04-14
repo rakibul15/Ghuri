@@ -60,7 +60,8 @@ const Bronze = () => {
 
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a href
+              <a 
+
               onClick={()=>history.push('/healthform:1')}
               >
                 Buy Now <i className="fa fa-chevron-right"></i> 
@@ -82,7 +83,7 @@ const Bronze = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a href
+              <a 
                onClick={()=>history.push('/healthform:2')}
               >
                 Buy Now <i className="fa fa-chevron-right"></i> 
@@ -103,7 +104,7 @@ const Bronze = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a href
+              <a 
               onClick={()=>history.push('/healthform:3')}
               >
                 Buy Now <i clasclassNames="fa fa-chevron-right"></i> 

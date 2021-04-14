@@ -15,16 +15,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const handleParcel = () => {
-    
-    window.scrollTo(0,900);
-  
-
+    window.scrollTo(0, 900);
   };
   const handleRedirect = () => {
     // window.open("https://ocean.ghuriexpress.com/#/login", "_blank");
     window.open(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`, "_blank");
-
-   
   };
 
   return (
@@ -34,13 +29,13 @@ const Footer = () => {
           <div className="row">
             <div className="col-sm-3 col-6">
               <p>Platform</p>
-            
-                <small>
-                  <Link to="/ride">
-                    <a>GHURI Ride</a>
-                  </Link>
-                </small>
-            
+
+              <small>
+                <Link to="/ride">
+                  <a>GHURI Ride</a>
+                </Link>
+              </small>
+
               <br />
 
               <small>
@@ -51,9 +46,7 @@ const Footer = () => {
 
               <br />
               <small>
-                <Link to="/parcel"
-                  onClick={() => handleParcel()}
-                >
+                <Link to="/parcel" onClick={() => handleParcel()}>
                   <a>GHURI Percel</a>
                 </Link>
               </small>
@@ -61,7 +54,7 @@ const Footer = () => {
               <small>
                 <span>
                   <Link to="/ticket">
-                    <a href>GHURI Ticket</a>
+                    <a>GHURI Ticket</a>
                   </Link>
                 </span>
               </small>
@@ -69,7 +62,7 @@ const Footer = () => {
               <small>
                 <span>
                   <Link to="/truck">
-                    <a href>GHURI Truck</a>
+                    <a>GHURI Truck</a>
                   </Link>
                 </span>
               </small>
@@ -77,7 +70,7 @@ const Footer = () => {
               <small>
                 <span>
                   <Link to="/bazar">
-                    <a href>GHURI Bazar</a>
+                    <a>GHURI Bazar</a>
                   </Link>
                 </span>
               </small>
@@ -97,33 +90,33 @@ const Footer = () => {
               </small>
             </div>
             <div className="col-sm-3 col-6">
-              <p className="marchant_small">Marchant</p>
+              <p className="marchant_small">Merchant</p>
               <small>
                 <span>
-                  <Link to="/merchnat">Parcel Marchant Sign Up</Link>
+                  <Link to="/merchant">Parcel Merchant Sign Up</Link>
                 </span>
               </small>
               <br />
               <small>
                 <span>
                   <Link>
-                    <a href onClick={() => handleRedirect()}>
-                      Parcel Marchant Log In
+                    <a onClick={() => handleRedirect()}>
+                      Parcel Merchant Log In
                     </a>
                   </Link>
                 </span>
               </small>
               <br />
               <small>
-                <span>Restaurant Marchant Sign Up </span>
+                <span>Restaurant Merchant Sign Up </span>
               </small>
               <br />
               <small>
-                <span>Restaurant Marchant Sign Up </span>
+                <span>Restaurant Merchant Sign Up </span>
               </small>
               <br />
               <small>
-                <span>Restaurant Marchant Log In </span>
+                <span>Restaurant Merchant Log In </span>
               </small>
             </div>
             <div className="col-sm-3 col-6">
@@ -141,7 +134,7 @@ const Footer = () => {
               </small>
               <br />
               <small>
-                <span>Marchant Help Center </span>
+                <span>Merchant Help Center </span>
               </small>
               <br />
               <small>
@@ -234,9 +227,9 @@ const Footer = () => {
         <div className="col-sm-3">
           <div className="row">
             <div className="col-sm-3 col-3">
-            <small>
-                  <Link to="/privacy">Privacy</Link>
-            </small>
+              <small>
+                <Link to="/privacy">Privacy</Link>
+              </small>
             </div>
             <div className="col-sm-3 col-3">
               <small>
@@ -244,8 +237,8 @@ const Footer = () => {
               </small>
             </div>
             <div className="col-sm-3 col-3">
-            <small>
-                  <Link to="/refund">Refund</Link>
+              <small>
+                <Link to="/refund">Refund</Link>
               </small>
             </div>
           </div>
@@ -292,9 +285,9 @@ const Footer = () => {
           <div className="col-8">
             <div className="row">
               <div className=" col-3">
-              <small>
+                <small>
                   <Link to="/privacy">Privacy</Link>
-              </small>
+                </small>
               </div>
               <div className="col-3">
                 <small>
@@ -302,9 +295,9 @@ const Footer = () => {
                 </small>
               </div>
               <div className="col-3">
-              <small>
+                <small>
                   <Link to="/refund">Refund</Link>
-              </small>
+                </small>
               </div>
             </div>
             <small>

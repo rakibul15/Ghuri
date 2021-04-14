@@ -1,19 +1,13 @@
 // import { logDOM } from "@testing-library/react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  Dropdown,
-  DropdownButton,
-  Nav,
-  Navbar,
-} from "react-bootstrap";
+import { Dropdown, DropdownButton, Nav, Navbar } from "react-bootstrap";
 import "./Topnav.css";
 import logo from "../../images/logo/logo.svg";
 import { Link } from "react-router-dom";
 import { SetRiderectMessage } from "../Signup/_redux/action/SignupAction";
 
 const Topnav = () => {
-
   const dispatch = useDispatch();
   const riderectMessage = () => {
     dispatch(SetRiderectMessage());
@@ -23,17 +17,15 @@ const Topnav = () => {
     window.open(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`, "_blank");
   };
   const riderectNuraniInterior = () => {
-     window.open("https://nuraniinteriorbd.com/", "_blank");
-   
+    window.open("https://nuraniinteriorbd.com/", "_blank");
   };
   const riderectNuraniRadio = () => {
     window.open("https://nuraniradio.com/", "_blank");
-  
- };
+  };
 
   return (
     <div>
-      <Navbar collapseOnSelect expand="sm" className="fixed"   mb-5>
+      <Navbar collapseOnSelect expand="sm" className="fixed" mb-5>
         <Navbar.Brand>
           <Link to="/">
             <img className="ghuri_logo img-fluid" src={logo} fluid alt="" />
@@ -50,16 +42,14 @@ const Topnav = () => {
               <DropdownButton title="Services" variant="none">
                 <Dropdown.Item className="hover_color">
                   <Link to="#" className="drop_down_menu">
-                    <a href onClick={() => riderectNuraniInterior()}>
+                    <a onClick={() => riderectNuraniInterior()}>
                       Nurani Interior
                     </a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item className="hover_color">
                   <Link to="#" className="drop_down_menu">
-                    <a href onClick={() => riderectNuraniRadio()}>
-                      Nurani Radio
-                    </a>
+                    <a onClick={() => riderectNuraniRadio()}>Nurani Radio</a>
                   </Link>
                 </Dropdown.Item>
               </DropdownButton>
@@ -74,32 +64,24 @@ const Topnav = () => {
                 <Dropdown.Item className="hover_color">
                   <Link
                     className="drop_down_menu"
-                    to="/merchnat"
+                    to="/merchant"
                     onClick={() => riderectMessage()}
                   >
-                    <a href
-                    
-                    > Signup</a>
+                    <a href> Signup</a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item className="hover_color">
-                  <Link  to="#" className="drop_down_menu">
-                    <a href
-                    
-
-                      onClick={() => handleRedirect()}
-                    >
-                      Login
-                    </a>
+                  <Link to="#" className="drop_down_menu">
+                    <a onClick={() => handleRedirect()}>Login</a>
                   </Link>
                 </Dropdown.Item>
               </DropdownButton>
             </Nav.Link>
+            {/* <Nav.Link className="nav_color">
+              <Link to="/health"> Health</Link>
+            </Nav.Link> */}
             <Nav.Link className="nav_color">
-            <Link to="/health"> Health</Link>
-            </Nav.Link>
-            <Nav.Link className="nav_color">
-            <Link to="/blog"> Blog</Link>
+              <Link to="/blog">Blog</Link>
             </Nav.Link>
             <Nav.Link className="language">
               <Link to="#">

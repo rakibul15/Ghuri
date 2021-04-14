@@ -58,7 +58,6 @@ const Silver = () => {
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
                 <a
-                  href
                   onClick={() =>
                     handleSilver(Types.SILVER_PACKAGE_1, silverPackage1)
                   }
@@ -82,7 +81,6 @@ const Silver = () => {
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
                 <a
-                  href
                   onClick={() =>
                     handleSilver(Types.SILVER_PACKAGE_2, silverPackage2)
                   }
@@ -106,7 +104,7 @@ const Silver = () => {
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
                 <a
-                  href
+                
                   onClick={() =>
                     handleSilver(Types.SILVER_PACKAGE_3, silverPackage3)
                   }
