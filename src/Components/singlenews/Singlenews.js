@@ -2,8 +2,8 @@ import React from "react";
 import "./Singlenews.css";
 
 const Singlenews = (props) => {
-  const description = props.snews.description;
-  const headline= props.snews.haedline;
+  // const description = props.snews.description;
+  // const headline= props.snews.haedline;
   
   const des = (description) => description.length > 5 ? `${description.substring(0, 5)}...` : description;
 
