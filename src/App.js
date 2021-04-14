@@ -35,8 +35,8 @@ import Healthform from "./Components/health/views/HealthFormContainer";
 import Privacy from "./Components/privacy/Privacy";
 import Refund from "./Components/refund/Refund";
 import "../src/css/main.css";
-import Blog from "./Components/blog/Blog";
-import Blogdetails from "./Components/blog/Blogdetails";
+import Blog from "./Components/Blog/Blog";
+import Blogdetails from "./Components/Blog/Blogdetails";
 
 function App() {
   return (
@@ -64,7 +64,7 @@ function App() {
             <Partners></Partners>
             <Clients></Clients>
           </Route>
-          <Route path="/merchnat">
+          <Route path="/merchant">
             <Signup></Signup>
           </Route>
 
@@ -160,26 +160,26 @@ function App() {
             <Blog></Blog>
           </Route>
 
-          <Route exact  path="/blog/:id">
+          <Route exact path="/blog/:id">
             <Blogdetails></Blogdetails>
           </Route>
 
           <Route path="/health">
             <Health></Health>
-          </Route> 
-         
+          </Route>
+
           <Route path="/silver">
-         <Silver></Silver>
-        </Route>
-        <Route path="/bronze">
-        <Bronze></Bronze>
-        </Route>
-        <Route path="/gold">
-        <Gold></Gold>
-        </Route>
-        <Route path="/healthform:id">
-        <Healthform></Healthform>
-        </Route>
+            <Silver></Silver>
+          </Route>
+          <Route path="/bronze">
+            <Bronze></Bronze>
+          </Route>
+          <Route path="/gold">
+            <Gold></Gold>
+          </Route>
+          <Route path="/healthform:id">
+            <Healthform></Healthform>
+          </Route>
           <Route path="*">
             <Notmatch />
           </Route>

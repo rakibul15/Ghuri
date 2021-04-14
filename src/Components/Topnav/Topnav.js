@@ -64,7 +64,7 @@ const Topnav = () => {
                 <Dropdown.Item className="hover_color">
                   <Link
                     className="drop_down_menu"
-                    to="/merchnat"
+                    to="/merchant"
                     onClick={() => riderectMessage()}
                   >
                     <a href> Signup</a>

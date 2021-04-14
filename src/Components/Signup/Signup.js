@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 import "./Signup.css";
 import "../../css/mediaQuery.css";
@@ -9,7 +9,6 @@ import {
   SubmitSignupData,
 } from "./_redux/action/SignupAction";
 import { useHistory } from "react-router";
-
 
 const Signup = () => {
   const history = useHistory();
@@ -36,8 +35,8 @@ const Signup = () => {
     dispatch(SubmitSignupData(data));
   };
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
@@ -47,7 +46,7 @@ const Signup = () => {
             <form className="sign-form container">
               <div className="row">
                 <div className="col-sm-12 ">
-                  <h4>Marchant Sign Up</h4>
+                  <h4>Merchant Sign Up</h4>
                 </div>
               </div>
               <div mb={4} mt={4} className="row ">
@@ -275,9 +274,10 @@ const Signup = () => {
                     />
                     <label className="form-check-label" for="flexCheckChecked">
                       I agree the
-                       <Link className="terms" to="/terms">
-                       <a> terms and condition </a>
-                      </Link> of GHURI Parcel
+                      <Link className="terms" to="/terms">
+                        <a> terms and condition </a>
+                      </Link>{" "}
+                      of GHURI Parcel
                     </label>
                   </div>
                 </div>
@@ -286,9 +286,7 @@ const Signup = () => {
               <div className="row mt-4 text-right">
                 <div className="col-sm-12 sign-submit-btn">
                   {!isLoading && (
-                    <a onClick={() => submitSignup(signupTextInput)}>
-                      Submit
-                    </a>
+                    <a onClick={() => submitSignup(signupTextInput)}>Submit</a>
                   )}
                   {isLoading && (
                     <a disabled>
