@@ -35,8 +35,8 @@ import Healthform from "./Components/health/views/HealthFormContainer";
 import Privacy from "./Components/privacy/Privacy";
 import Refund from "./Components/refund/Refund";
 import "../src/css/main.css";
-import Blog from "./Components/Blog/Blog";
-import Blogdetails from "./Components/Blog/Blogdetails";
+import Blog from "./Components/blog/Blog";
+import Blogdetails from "./Components/blog/Blogdetails";
 
 function App() {
   return (
