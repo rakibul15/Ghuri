@@ -4,38 +4,37 @@ import Gold_3 from "../../../images/Health/Gold_3.png";
 import Gold_6 from "../../../images/Health/Gold_6.png";
 import Gold_12 from "../../../images/Health/Gold_12.png";
 import dghealth from "../../../images/Health/dg_health.png";
-import ghurihealth from "../../../images/logo/ghuri_health.png"
+import ghurihealth from "../../../images/logo/ghuri_health.png";
 import { useHistory } from "react-router";
 import { useDispatch } from "react-redux";
-import * as Types from '../../health/_redux/type/Types'
+import * as Types from "../../health/_redux/type/Types";
 import { SendPackage } from "../_redux/action/HealthAction";
 const Gold = () => {
-
   const history = useHistory();
   const dispatch = useDispatch();
 
   const goldPackage1 = {
-    price:"687",
-    duration:"3"
-  }
+    price: "687",
+    duration: "3",
+  };
   const goldPackage2 = {
-    price:"1374",
-    duration:"6"
-  }
+    price: "1374",
+    duration: "6",
+  };
   const goldPackage3 = {
-    price:"2748",
-    duration:"12"
-  }
+    price: "2748",
+    duration: "12",
+  };
 
-  const handleGold = (packgeType, packageValue)=>{
-    history.push('/healthform')
-    
-   dispatch(SendPackage(packgeType, packageValue))
-  }
+  const handleGold = (packgeType, packageValue) => {
+    history.push("/healthform");
+
+    dispatch(SendPackage(packgeType, packageValue));
+  };
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="silver_package Nav_overflow">
       <Container>
@@ -47,21 +46,19 @@ const Gold = () => {
             <Card.Img variant="top" className="img-fluid" src={Gold_3} />
             <Card.Body>
               <Card.Title className="card_title">
-                 {goldPackage1.price} TK
+                687 TK
                 <span>
                   <i class="fa fa-circle dot_circle"></i>
                 </span>
-                {goldPackage1.duration} Months Validity
+                3 Months Validity
               </Card.Title>
             </Card.Body>
 
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
-              <a 
-              onClick={()=>handleGold(Types.GOLD_PACKAGE_1, goldPackage1)}
-              >
-                Buy Now <i className="fa fa-chevron-right"></i> 
-              </a>  
+                <a onClick={() => history.push(`/healthform:7`)}>
+                  Buy Now <i className="fa fa-chevron-right"></i>
+                </a>
               </h6>
             </Card.Footer>
           </Card>
@@ -69,20 +66,18 @@ const Gold = () => {
             <Card.Img variant="top" className="img-fluid" src={Gold_6} />
             <Card.Body>
               <Card.Title className="card_title">
-                {goldPackage2.price} TK
+                1374 TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
-                {goldPackage2.duration} Months Validity
+                6 Months Validity
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a 
-              onClick={()=>handleGold(Types.GOLD_PACKAGE_2, goldPackage2)}
-              >
-                Buy Now <i className="fa fa-chevron-right"></i> 
-              </a> 
+                <a onClick={() => history.push(`/healthform:8`)}>
+                  Buy Now <i className="fa fa-chevron-right"></i>
+                </a>
               </h6>
             </Card.Footer>
           </Card>
@@ -90,20 +85,18 @@ const Gold = () => {
             <Card.Img variant="top" className="img-fluid" src={Gold_12} />
             <Card.Body>
               <Card.Title className="card_title">
-                {goldPackage3.price} TK
+                2748 TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
-                {goldPackage3.duration} Months Validity
+                12 Months Validity
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a
-              onClick={()=>handleGold(Types.GOLD_PACKAGE_3, goldPackage3)}
-              >
-                Buy Now <i className="fa fa-chevron-right"></i> 
-              </a> 
+                <a onClick={() => history.push(`/healthform:9`)}>
+                  Buy Now <i className="fa fa-chevron-right"></i>
+                </a>
               </h6>
             </Card.Footer>
           </Card>
@@ -112,7 +105,8 @@ const Gold = () => {
           <h2>Health Cashback </h2>
           <h4>Plan Includes</h4>
           <p>
-            <i className="fa mr-2 fa-check"></i> Free Doctor Call, Video Call & Chat
+            <i className="fa mr-2 fa-check"></i> Free Doctor Call, Video Call &
+            Chat
           </p>
           <p>
             <i className="fa mr-2 fa-check"></i> Maximum Hospitalization Cash
@@ -134,7 +128,6 @@ const Gold = () => {
             <li>BDT 3,000 Daycare</li>
           </ul>
           <p>
-            
             <i className="fa mr-2 fa-check"></i>
             Hospitalization Cash Coverage Applicable for Primary Member only
           </p>
@@ -142,8 +135,8 @@ const Gold = () => {
             <i className="fa mr-2 fa-check"></i>Isolation Coverage BDT 8,000
           </p>
           <p>
-            <i className="fa mr-2 fa-check"></i>Isolation Coverage Applicable for
-            Primary Member
+            <i className="fa mr-2 fa-check"></i>Isolation Coverage Applicable
+            for Primary Member
           </p>
           <p>
             <i className="fa mr-2 fa-check"></i>
@@ -152,8 +145,8 @@ const Gold = () => {
             only.
           </p>
           <p>
-            <i className="fa mr-2 fa-check"></i> Maternity Coverage applicable for
-            primary member only
+            <i className="fa mr-2 fa-check"></i> Maternity Coverage applicable
+            for primary member only
           </p>
           <p>
             <i className="fa mr-2 fa-check"></i>
@@ -164,12 +157,16 @@ const Gold = () => {
             Partner Outlets
           </p>
           <p>
-            <i className="fa mr-2 fa-check"></i> Appointment Booking Facility with
-            1200+ Specialist Doctors
+            <i className="fa mr-2 fa-check"></i> Appointment Booking Facility
+            with 1200+ Specialist Doctors
           </p>
         </div>
         <div className="powered_by text-center mt-5">
-          <img src={ghurihealth} className="img-fluid ghuri_health mr-3" alt="" />
+          <img
+            src={ghurihealth}
+            className="img-fluid ghuri_health mr-3"
+            alt=""
+          />
           <img src={dghealth} className="img-fluid dg_health" alt="" />
           <h6>Powered By</h6>
         </div>

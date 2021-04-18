@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Card, CardDeck, Container } from "react-bootstrap";
 import Silver_3 from "../../../images/Health/Silver_3.png";
 import Silver_6 from "../../../images/Health/Silver_6.png";
-import  Silver_12 from "../../../images/Health/Silver_12.png";
+import Silver_12 from "../../../images/Health/Silver_12.png";
 import dghealth from "../../../images/Health/dg_health.png";
 import ghurihealth from "../../../images/logo/ghuri_health.png";
 import * as Types from "../../health/_redux/type/Types";
@@ -47,21 +47,17 @@ const Silver = () => {
             <Card.Img variant="top" className="img-fluid" src={Silver_3} />
             <Card.Body>
               <Card.Title className="card_title">
-                {silverPackage1.price} TK
+                447 TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
-                {silverPackage1.duration} Months Validity
+                3 Months Validity
               </Card.Title>
             </Card.Body>
 
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a
-                  onClick={() =>
-                    handleSilver(Types.SILVER_PACKAGE_1, silverPackage1)
-                  }
-                >
+                <a onClick={() => history.push(`/healthform:4`)}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>
@@ -71,20 +67,16 @@ const Silver = () => {
             <Card.Img variant="top" className="img-fluid" src={Silver_6} />
             <Card.Body>
               <Card.Title className="card_title">
-                {silverPackage2.price} TK
+                894 TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
-                {silverPackage2.duration} Months Validity
+                6 Months Validity
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a
-                  onClick={() =>
-                    handleSilver(Types.SILVER_PACKAGE_2, silverPackage2)
-                  }
-                >
+                <a onClick={() => history.push(`/healthform:5`)}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>
@@ -94,21 +86,16 @@ const Silver = () => {
             <Card.Img variant="top" className="img-fluid" src={Silver_12} />
             <Card.Body>
               <Card.Title className="card_title">
-                {silverPackage3.price} TK
+                1788 TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
-                {silverPackage3.duration} Months Validity
+                12 Months Validity
               </Card.Title>
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a
-                
-                  onClick={() =>
-                    handleSilver(Types.SILVER_PACKAGE_3, silverPackage3)
-                  }
-                >
+                <a onClick={() => history.push(`/healthform:6`)}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>
