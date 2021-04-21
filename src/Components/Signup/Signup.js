@@ -194,11 +194,11 @@ const Signup = () => {
                     autoComplete="off"
                     className="input"
                     type="text"
-                    name="businessName"
+                    name="shopName"
                     onChange={(e) =>
-                      handleChangeTextInput("businessName", e.target.value)
+                      handleChangeTextInput("shopName", e.target.value)
                     }
-                    value={signupTextInput.businessName}
+                    value={signupTextInput.shopName}
                     placeholder="Enter Business Name"
                   />
                 </div>
@@ -208,11 +208,11 @@ const Signup = () => {
                     autoComplete="off"
                     className="input"
                     type="text"
-                    name="businessUrl"
+                    name="shopUrl"
                     onChange={(e) =>
-                      handleChangeTextInput("businessUrl", e.target.value)
+                      handleChangeTextInput("shopUrl", e.target.value)
                     }
-                    value={signupTextInput.businessUrl}
+                    value={signupTextInput.shopUrl}
                     placeholder="Business  URL"
                   />
                 </div>
