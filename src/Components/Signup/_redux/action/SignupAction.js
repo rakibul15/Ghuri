@@ -157,7 +157,7 @@ export const SubmitSmsCode = (code) => async (dispatch) => {
   };
   const url = `${process.env.REACT_APP_API_URL}merchant/otp_check?status=register`;
   const urlReg = `${process.env.REACT_APP_API_URL}merchant/register`;
-
+  //ghjk
   try {
     await Axios.post(url, verifyData)
       .then((res) => {
