@@ -306,6 +306,10 @@
   .sign-form input{
     margin-top: 20px;
   }
+  .sign-submit-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .sm_center_fix {
     margin: 0;
     position: relative;

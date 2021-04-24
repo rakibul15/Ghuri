@@ -46,7 +46,7 @@ const Signup = () => {
             <form className="sign-form container ">
               <div className="row">
                 <div className="col-sm-12 ">
-                  <h5 className="mb-4">Merchant Sign Up</h5>
+                  <h5>Merchant Sign Up</h5>
                 </div>
               </div>
               <div className="row sign_margin_top d-flex align-items-center ">
@@ -282,7 +282,7 @@ const Signup = () => {
               </div>
 
               <div className="row sign_margin_top text-right">
-                <div className="col-sm-12 sign-submit-btn mb-4 mt-4">
+                <div className="col-sm-12 sign-submit-btn">
                   {!isLoading && (
                     <a onClick={() => submitSignup(signupTextInput)}>Submit</a>
                   )}
