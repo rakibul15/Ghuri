@@ -132,12 +132,19 @@ margin-left:2%;
   color: black;
   font-weight: 600;
 }
+
 .resend a {
   color: #cc0000 !important;
+  text-align: right;
+  right: 20px;
+  position: absolute;
 }
 
 .resend span {
   color: #cc0000 !important;
+  text-align: right;
+  right: 20px;
+  position: absolute;
 }
 .verification_input input {
   border: none;

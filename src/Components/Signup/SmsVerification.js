@@ -60,7 +60,7 @@ const SmsVerification = () => {
           style={{ minHeight: "600px" }}
           className="d-flex align-items-center justify-content-center"
         >
-          <Card style={{ width: "40rem" }} className="mt-4 ml-5 bg-light">
+          <Card className="mt-4  bg-light">
             <Card.Body className="verification_box">
               <Card.Title>SMS VERIFICATION</Card.Title>
               <Card.Subtitle className="mb-2 verification_subtitle">
@@ -80,14 +80,14 @@ const SmsVerification = () => {
               </Card.Text>
               <Card.Link>
                 <a
-                  className="btn btn-verification mr-3"
+                  className="btn btn-verification"
                   onClick={() => handleSubmit(smsCode)}
                 >
                   Submit
                 </a>
               </Card.Link>
               <Card.Link className="resend">
-                <span className="text-right" style={{ marginLeft: "422px" }}>
+                <span className="text-right" >
                   <a
                     style={{ cursor: "pointer" }}
                     onClick={() => {

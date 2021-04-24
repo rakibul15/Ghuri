@@ -41,16 +41,16 @@ const Signup = () => {
   return (
     <div>
       <div className="sign-top  signup_bg Nav_overflow">
-        <div className="row d-flex align-items-center">
-          <div className="col-sm-12 sm_center_fix center">
-            <form className="sign-form container">
+        <div className="row  center sm_center_fix">
+          <div className="col-sm-12  ">
+            <form className="sign-form container ">
               <div className="row">
                 <div className="col-sm-12 ">
-                  <h4>Merchant Sign Up</h4>
+                  <h5>Merchant Sign Up</h5>
                 </div>
               </div>
-              <div mb={4} mt={4} className="row ">
-                <div className="col-sm-2">
+              <div className="row sign_margin_top d-flex align-items-center ">
+                <div className="col-sm-2 col-6">
                   <div className="form-check form-check-inline mr-5">
                     <input
                       className="form-check-input"
@@ -63,7 +63,7 @@ const Signup = () => {
                     </label>
                   </div>
                 </div>
-                <div className="col-sm-2">
+                <div className="col-sm-2 col-6">
                   <div className="form-check form-check-inline mr-5">
                     <input
                       className="form-check-input"
@@ -77,7 +77,7 @@ const Signup = () => {
                   </div>
                 </div>
 
-                <div className="col-sm-2">
+                <div className="col-sm-2 col-6">
                   <div className="form-check form-check-inline mr-5">
                     <input
                       className="form-check-input"
@@ -90,7 +90,7 @@ const Signup = () => {
                     </label>
                   </div>
                 </div>
-                <div className="col-sm-2">
+                <div className="col-sm-2 col-6">
                   <div className="form-check form-check-inline">
                     <input
                       className="form-check-input"
@@ -104,7 +104,7 @@ const Signup = () => {
                   </div>
                 </div>
               </div>
-              <div className="row mt-4">
+              <div className="row sign_margin_top ">
                 <div className="col-sm-4 fullwidth">
                   <input
                     autoComplete="off"
@@ -147,7 +147,7 @@ const Signup = () => {
                 </div>
               </div>
 
-              <div className="row mt-4">
+              <div className="row sign_margin_top">
                 <div className="col-sm-4 fullwidth">
                   <input
                     autoComplete="off"
@@ -188,7 +188,7 @@ const Signup = () => {
                   />
                 </div>
               </div>
-              <div className="row mt-4">
+              <div className="row sign_margin_top">
                 <div className="col-sm-4 fullwidth">
                   <input
                     autoComplete="off"
@@ -230,7 +230,7 @@ const Signup = () => {
                   />
                 </div>
               </div>
-              <div className="row mt-4">
+              <div className="row sign_margin_top">
                 <div className="col-sm-4 fullwidth">
                   <input
                     autoComplete="off"
@@ -258,11 +258,9 @@ const Signup = () => {
                   />
                 </div>
               </div>
-              <div className="row mt-4">
+              <div className="row sign_margin_top ">
                 <div className="col-sm-12">
-                  {/* <Form.Group controlId="formBasicCheckbox" checked>
-    <Form.Check type="checkbox" label="I agree the terms and conditions of GHURI  Parcel" />
-  </Form.Group> */}
+               
 
                   <div className="form-check terms_condition">
                     <input
@@ -283,7 +281,7 @@ const Signup = () => {
                 </div>
               </div>
 
-              <div className="row mt-4 text-right">
+              <div className="row sign_margin_top text-right">
                 <div className="col-sm-12 sign-submit-btn">
                   {!isLoading && (
                     <a onClick={() => submitSignup(signupTextInput)}>Submit</a>
