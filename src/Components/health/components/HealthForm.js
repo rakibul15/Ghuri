@@ -38,7 +38,7 @@ const HealthForm = () => {
 
   const handleChangeTextInput = (name, value) => {
     console.log(`value`, value);
-    // dispatch(InputHealthForm(name, value));
+    dispatch(InputHealthForm(name, value));
   };
   const handleSubmit = (data) => {
     dispatch(SubmitHealthForm(data));
@@ -88,8 +88,8 @@ const HealthForm = () => {
                 type="text"
                 name="name"
                 placeholder="Applicant Name"
-                value={healthFormInput.name}
-                onChange={(e) =>
+                value={healthFormInput.nameShow}
+                onChange={(e) => {
                   handleChangeTextInput(
                     "name",
                     e.target.value +
@@ -98,8 +98,9 @@ const HealthForm = () => {
                       " M, Price: " +
                       price +
                       "Tk)"
-                  )
-                }
+                  );
+                  handleChangeTextInput("nameShow", e.target.value);
+                }}
               />
             </Form.Group>
           </Form.Row>

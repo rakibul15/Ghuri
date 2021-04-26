@@ -3,6 +3,7 @@ const initialState = {
   bronzePackage1: null,
   healthFormInput: {
     name: "",
+    nameShow: "",
     dateOfBirth: "",
     applicantPhone: "",
     address: "",
