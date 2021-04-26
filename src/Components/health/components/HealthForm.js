@@ -124,7 +124,7 @@ const HealthForm = () => {
             <Form.Group className="col-sm-6">
               <label htmlFor="pnum">Applicant Phone Number</label>
               <Form.Control
-                type="number"
+                type="text"
                 name="applicantPhone"
                 placeholder="Applicant Number"
                 value={healthFormInput.applicantPhone}
