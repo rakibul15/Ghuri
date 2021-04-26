@@ -36,7 +36,7 @@ export const SubmitSignupData = (data) => async (dispatch) => {
   } else if (data && data.cpassword !== data.password) {
     toast.error("Password And Confirm Password Should Be Matched");
     return false;
-  } else if (data && data.businessName.length === 0) {
+  } else if (data && data.shopName.length === 0) {
     toast.error("Business Name Should Not Be Empty");
     return false;
   }
@@ -57,7 +57,7 @@ export const SubmitSignupData = (data) => async (dispatch) => {
   console.log(`data`, data);
   const submitData = {
     userType: 1,
-    companyName: data.businessName,
+    userRole: 1,
     ownerName: data.firstName + " " + data.lastName,
     city: data.city,
     area: data.area,
@@ -65,13 +65,14 @@ export const SubmitSignupData = (data) => async (dispatch) => {
     email: data.email,
     phone: data.phone,
     password: data.password,
-    businessName: data.businessName,
-    businessUrl: data.businessUrl,
+    businessName: data.shopName,
+    businessUrl: data.shopUrl,
   };
   const smsNumber = {
     msisdn: `88${data.phone}`,
   };
 
+  // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp?status=register`;
   const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
 
   // const url = `${process.env.REACT_APP_API_URL}merchant/register`;
@@ -155,37 +156,42 @@ export const SubmitSmsCode = (code) => async (dispatch) => {
     csms_id: otp_id,
     otp: code,
   };
+  // const url = `${process.env.REACT_APP_API_URL}merchant/otp_check?status=register`;
   const url = `${process.env.REACT_APP_API_URL}merchant/otp_check`;
   const urlReg = `${process.env.REACT_APP_API_URL}merchant/register`;
-  const headersData = {
-    Authorization:
-      "Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ==",
-  };
-
+  //ghjk
   try {
-    await Axios.post(url, verifyData).then((res) => {
-      console.log(`res`, res);
-      if (res.data.status) {
-        //Hit registration Url
-        try {
-          Axios.post(urlReg, signupData, {
-            headers: headersData,
-          }).then((res) => {
-            console.log(`res`, res);
-            if (typeof res !== "undefined") {
-              toast.success(res.data.message);
-              if (res.status === 200) {
-                dispatch({ type: Types.REDIRECT_TO_LOGIN, payload: true });
-              }
-            } else {
-              toast.error("Please check the file inputs and try again !");
-            }
-          });
-        } catch (error) {
-          toast.error("Something Went Wrong !");
+    await Axios.post(url, verifyData)
+      .then((res) => {
+        console.log(`res`, res);
+        if (res.data.status) {
+          //Hit registration Url
+          try {
+            Axios.post(urlReg, signupData)
+              .then((res) => {
+                console.log(`res`, res);
+                if (typeof res !== "undefined") {
+                  toast.success(res.data.message);
+                  if (res.status === 200) {
+                    dispatch({ type: Types.REDIRECT_TO_LOGIN, payload: true });
+                  }
+                } else {
+                  toast.error("Please check the file inputs and try again !");
+                }
+              })
+              .catch((err) => {
+                const message = JSON.parse(err.request.response).message;
+                showToast("error", message);
+              });
+          } catch (error) {
+            toast.error("Something Went Wrong !");
+          }
         }
-      }
-    });
+      })
+      .catch((err) => {
+        const message = JSON.parse(err.request.response).message;
+        showToast("error", message);
+      });
   } catch (error) {
     toast.error("Something Went Wrong");
   }
@@ -197,6 +203,7 @@ export const ResendOtp = () => async (dispatch) => {
     msisdn: `88${signupData.phone}`,
   };
 
+  // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp?status=register`;
   const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
 
   try {

@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { Card, CardDeck, Container } from "react-bootstrap";
 import Bronze_3 from "../../../images/Health/Bronze_3.png";
 import Bronze_6 from "../../../images/Health/Bronze_6.png";
-import  Bronze_12 from "../../../images/Health/Bronze_12.png";
+import Bronze_12 from "../../../images/Health/Bronze_12.png";
 import dghealth from "../../../images/Health/dg_health.png";
-import ghurihealth from "../../../images/logo/ghuri_health.png"
-import * as Types from '../../health/_redux/type/Types'
+import ghurihealth from "../../../images/logo/ghuri_health.png";
+import * as Types from "../../health/_redux/type/Types";
 import { useHistory } from "react-router-dom";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { SendPackage } from "../_redux/action/HealthAction";
 
 const Bronze = () => {
@@ -15,28 +15,27 @@ const Bronze = () => {
   const dispatch = useDispatch();
 
   const bronzePackage1 = {
-    price:"237",
-    duration:"3"
-  }
+    price: "237",
+    duration: "3",
+  };
   const bronzePackage2 = {
-    price:"474",
-    duration:"6"
-  }
+    price: "474",
+    duration: "6",
+  };
   const bronzePackage3 = {
-    price:"948",
-    duration:"12"
-  }
+    price: "948",
+    duration: "12",
+  };
 
-  const handleBronze = (packgeType, packageValue)=>{
-    history.push(`/healthform:1`)
-    
-   dispatch(SendPackage(packgeType, packageValue))
-  }
+  const handleBronze = (packgeType, packageValue) => {
+    history.push(`/healthform:1`);
+
+    dispatch(SendPackage(packgeType, packageValue));
+  };
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="silver_package Nav_overflow">
@@ -49,7 +48,6 @@ const Bronze = () => {
             <Card.Img variant="top" className="img-fluid" src={Bronze_3} />
             <Card.Body>
               <Card.Title className="card_title">
-              
                 {bronzePackage1.price} TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
@@ -60,12 +58,9 @@ const Bronze = () => {
 
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a 
-
-              onClick={()=>history.push('/healthform:1')}
-              >
-                Buy Now <i className="fa fa-chevron-right"></i> 
-              </a>  
+                <a onClick={() => history.push("/healthform:1")}>
+                  Buy Now <i className="fa fa-chevron-right"></i>
+                </a>
               </h6>
             </Card.Footer>
           </Card>
@@ -73,8 +68,7 @@ const Bronze = () => {
             <Card.Img variant="top" className="img-fluid" src={Bronze_6} />
             <Card.Body>
               <Card.Title className="card_title">
-               
-              {bronzePackage2.price} TK
+                {bronzePackage2.price} TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
@@ -83,11 +77,9 @@ const Bronze = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a 
-               onClick={()=>history.push('/healthform:2')}
-              >
-                Buy Now <i className="fa fa-chevron-right"></i> 
-              </a>
+                <a onClick={() => history.push("/healthform:2")}>
+                  Buy Now <i className="fa fa-chevron-right"></i>
+                </a>
               </h6>
             </Card.Footer>
           </Card>
@@ -95,7 +87,7 @@ const Bronze = () => {
             <Card.Img variant="top" className="img-fluid" src={Bronze_12} />
             <Card.Body>
               <Card.Title className="card_title">
-              {bronzePackage3.price} TK
+                {bronzePackage3.price} TK
                 <span>
                   <i className="fa fa-circle dot_circle"></i>
                 </span>
@@ -104,11 +96,9 @@ const Bronze = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-              <a 
-              onClick={()=>history.push('/healthform:3')}
-              >
-                Buy Now <i clasclassNames="fa fa-chevron-right"></i> 
-              </a>
+                <a onClick={() => history.push("/healthform:3")}>
+                  Buy Now <i clasclassNames="fa fa-chevron-right"></i>
+                </a>
               </h6>
             </Card.Footer>
           </Card>
@@ -117,11 +107,10 @@ const Bronze = () => {
           <h2>Health Cashback </h2>
           <h4>Plan Includes</h4>
           <p>
-           
-            <i className="fa mr-2 fa-check"></i> Free Doctor Call, Video Call & Chat
+            <i className="fa mr-2 fa-check"></i> Free Doctor Call, Video Call &
+            Chat
           </p>
           <p>
-      
             <i className="fa mr-2 fa-check"></i> Maximum Hospitalization Cash
             Coverage
           </p>
@@ -141,7 +130,6 @@ const Bronze = () => {
             <li>No Daycare</li>
           </ul>
           <p>
-        
             <i className="fa mr-2 fa-check"></i>
             Hospitalization Cash Coverage Applicable for Primary Member only
           </p>
@@ -149,21 +137,18 @@ const Bronze = () => {
             <i className="fa mr-2 fa-check"></i>Isolation Coverage BDT 2,000
           </p>
           <p>
-          
-            <i className="fa mr-2 fa-check"></i>Isolation Coverage Applicable for
-            Primary Member
+            <i className="fa mr-2 fa-check"></i>Isolation Coverage Applicable
+            for Primary Member
           </p>
           <p>
-
             <i className="fa mr-2 fa-check"></i>
             OPD Coverage of BDT 1,600 with up to 2 claims(BDT 800 per claim) for
             doctor consultation(minimum MBBS). Applicable for Primary Member
             only.
           </p>
           <p>
-         
-            <i className="fa mr-2 fa-check"></i> Maternity Coverage applicable for
-            primary member only
+            <i className="fa mr-2 fa-check"></i> Maternity Coverage applicable
+            for primary member only
           </p>
           <p>
             {" "}
@@ -176,12 +161,16 @@ const Bronze = () => {
             Partner Outlets
           </p>
           <p>
-            <i className="fa mr-2 fa-check"></i> Appointment Booking Facility with
-            1200+ Specialist Doctors
+            <i className="fa mr-2 fa-check"></i> Appointment Booking Facility
+            with 1200+ Specialist Doctors
           </p>
         </div>
         <div className="powered_by text-center mt-5">
-          <img src={ghurihealth} className="img-fluid ghuri_health mr-3" alt="" />
+          <img
+            src={ghurihealth}
+            className="img-fluid ghuri_health mr-3"
+            alt=""
+          />
           <img src={dghealth} className="img-fluid dg_health" alt="" />
           <h6>Powered By</h6>
         </div>

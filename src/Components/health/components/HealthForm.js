@@ -37,6 +37,7 @@ const HealthForm = () => {
   }, [healthOtpId]);
 
   const handleChangeTextInput = (name, value) => {
+    console.log(`value`, value);
     dispatch(InputHealthForm(name, value));
   };
   const handleSubmit = (data) => {
@@ -50,8 +51,26 @@ const HealthForm = () => {
   } else if (id === ":2") {
     price = 474;
     duration = 6;
-  } else {
+  } else if (id === ":3") {
     price = 948;
+    duration = 12;
+  } else if (id === ":4") {
+    price = 447;
+    duration = 3;
+  } else if (id === ":5") {
+    price = 894;
+    duration = 6;
+  } else if (id === ":6") {
+    price = 1788;
+    duration = 12;
+  } else if (id === ":7") {
+    price = 687;
+    duration = 3;
+  } else if (id === ":8") {
+    price = 1374;
+    duration = 6;
+  } else if (id === ":9") {
+    price = 2748;
     duration = 12;
   }
   return (
@@ -69,8 +88,19 @@ const HealthForm = () => {
                 type="text"
                 name="name"
                 placeholder="Applicant Name"
-                value={healthFormInput.name}
-                onChange={(e) => handleChangeTextInput("name", e.target.value)}
+                value={healthFormInput.nameShow}
+                onChange={(e) => {
+                  handleChangeTextInput(
+                    "name",
+                    e.target.value +
+                      "(Package: " +
+                      duration +
+                      " M, Price: " +
+                      price +
+                      "Tk)"
+                  );
+                  handleChangeTextInput("nameShow", e.target.value);
+                }}
               />
             </Form.Group>
           </Form.Row>
