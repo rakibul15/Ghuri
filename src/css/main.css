@@ -9,6 +9,14 @@
     url(../font/Poppins-Regular.ttf) format("truetype");
 }
 
+
+@font-face {
+  font-family: "NCTTorin";
+  src: local("NCTTorin"),
+    url(../font/NCTTorin-Regular.ttf) format("truetype");
+}
+
+
 .not_found {
   text-align: center;
   justify-content: center;
@@ -196,43 +204,110 @@ margin-left:2%;
   font-weight: bold;
 }
 
-/**/
-
-/* .form_applicant{
-  background-color: #ffcc00 !important;
-  width: 50%;
-  justify-content: center;
-} */
 
 /*Health Form */
 .confirm_package_details h5 {
   color: #cc0000;
-  font-family: abel;
+  /* font-family: abel; */
   font-weight: 600;
 }
 .confirm_package_details h4 {
   color: #ffcc00;
   font-family: abel;
   font-weight: 600;
+  font-family:NCTTorin;
 }
 .form_applicant label {
-  font-family: abel;
+  font-family:NCTTorin;
   font-weight: 500;
+  font-size: 14px;
+  
 }
 .form_applicant input {
-  font-family: abel;
+  font-family:NCTTorin;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.6);
+  padding-left: 0px;
+  font-size: 12px;
+}
+.edit-form-control .form-control{
+  border-radius: 0px !important;
+}
+.form_applicant input:focus {
+  font-family:NCTTorin;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow:none !important;
+  border-bottom: 2px solid rgba(0,0,0,.6);
 }
 .form_applicant input::placeholder {
-  font-family: abel;
+  font-family:NCTTorin;
 }
 .ghuri_btn {
   background-color: #ffcc00;
   color: black;
+  border:none;
+  font-family:NCTTorin;
+  padding: 3px 30px;
+}
+.ghuri_btn:hover{
+  background-color: #ffcc00;
+  color: black;
+  
 }
 
 .card_footer_health a{
   cursor: pointer;
 }
+.cover_healthform{
+  background-color:#DAEBE8 ;
+}
+.form_control_select{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.6);
+  padding-left: 0px;
+  font-size: 12px;
+}
+.form_control_select option{
+  font-family:NCTTorin !important;
+  font-size: 12px;
+}
+.form_control_select:focus{
+  background-color: transparent;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow:none !important;
+  border-bottom: 2px solid rgba(0,0,0,.6);
+
+}
+.input-group .input-group-text{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.6);
+  margin-right: 10px;
+  border-radius:0px;
+ font-weight: 600;
+ font-size: 12px;
+}
+.health_form_row{
+  margin-top:5px;
+}
+
+.package_confirm_details p{
+  font-family:NCTTorin;
+  font-size: 13px;
+}
+.package_confirm_details p span{
+  font-family:NCTTorin;
+  font-size: 13px;
+  font-weight: 600;
+}
+.checkbox a{
+  color:#ffcc00 !important;
+}
+
 
 /*Terms*/
 .terms_content h1 {

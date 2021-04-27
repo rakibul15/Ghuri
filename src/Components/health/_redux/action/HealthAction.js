@@ -58,7 +58,10 @@ export const SubmitHealthForm = (data) => async (dispatch) => {
         }
       })
       .catch((err) => {
-        const message = JSON.parse(err.request.response).message;
+        let message = JSON.parse(err.request.response).message;
+        if (message === "Invalid MSISDN") {
+          message = "Phone Number Invalid";
+        }
         showToast("error", message);
       });
   } catch (error) {
