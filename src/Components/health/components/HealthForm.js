@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button, Col, Form, FormControl, InputGroup } from "react-bootstrap";
 import { useHistory } from "react-router";
@@ -10,8 +10,17 @@ import {
 import Modal from "react-bootstrap/Modal";
 import HealthVerification from "./HealthVerification";
 import healthform from "../../../images/Health/healthFrom.png";
+import DatePicker from "react-datepicker";
 
 const HealthForm = () => {
+  //Date
+  const [date, setDate] = useState(new Date());
+
+  const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
+    <div className="form_applicant" onClick={onClick} ref={ref}>
+      {value}
+    </div>
+  ));
   const healthFormInput = useSelector(
     (state) => state.healthInfo.healthFormInput
   );
@@ -74,6 +83,8 @@ const HealthForm = () => {
     price = 2748;
     duration = 12;
   }
+
+  
   return (
     <div className="cover_healthform">
       <div className="container confirm_package_details pt-4 pb-5 Nav_overflow">
@@ -85,7 +96,6 @@ const HealthForm = () => {
 
         <div className="row d-flex align-items-center edit-form-control">
           <div className="col-sm-6">
-      
             <Form className="form_applicant">
               <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-6 ">
@@ -107,7 +117,6 @@ const HealthForm = () => {
                       );
                       handleChangeTextInput("nameShow", e.target.value);
                     }}
-    
                   />
                 </Form.Group>
 
@@ -115,17 +124,17 @@ const HealthForm = () => {
                   <label htmlFor="pnum">Applicant Phone Number</label>
                   <InputGroup className="mb-2">
                     <InputGroup.Prepend>
-                      <InputGroup.Text>+880</InputGroup.Text>
+                      <InputGroup.Text>+88</InputGroup.Text>
                     </InputGroup.Prepend>
                     <Form.Control
-                    type="number"
-                    name="applicantPhone"
-                    placeholder="1xxxxxxxx"
-                    value={healthFormInput.applicantPhone}
-                    onChange={(e) =>
-                      handleChangeTextInput("applicantPhone", e.target.value)
-                    }
-                  />
+                      type="number"
+                      name="applicantPhone"
+                      placeholder="01xxxxxxxx"
+                      value={healthFormInput.applicantPhone}
+                      onChange={(e) =>
+                        handleChangeTextInput("applicantPhone", e.target.value)
+                      }
+                    />
                   </InputGroup>
                 </Form.Group>
               </Form.Row>
@@ -133,7 +142,7 @@ const HealthForm = () => {
               <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-6">
                   <label htmlFor="dob">Date of Birth</label>
-                  <Form.Control
+                  {/* <Form.Control
                     type="date"
                     name="dateOfBirth"
                     placeholder="date"
@@ -141,7 +150,22 @@ const HealthForm = () => {
                     onChange={(e) =>
                       handleChangeTextInput("dateOfBirth", e.target.value)
                     }
-                  />
+                  /> */}
+
+                  <div className="form_applicant date_applicant">
+                    <DatePicker
+                      className="form-control date_pick"
+                      name="dateOfBirth"
+                      selected={healthFormInput.dateOfBirth}
+                      onChange={(e) =>
+                        handleChangeTextInput("dateOfBirth", e)
+                      }
+                      value={healthFormInput.dateOfBirth}
+                      customInput={<ExampleCustomInput />}
+                      showYearDropdown
+                      showMonthDropdown
+                    />
+                  </div>
                 </Form.Group>
 
                 <Form.Group className="col-sm-6">
@@ -162,10 +186,6 @@ const HealthForm = () => {
                   </Form.Control>
                 </Form.Group>
               </Form.Row>
-
-              {/* <Form.Row className="justify-content-center">
-               
-              </Form.Row> */}
 
               <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-12">
@@ -197,10 +217,6 @@ const HealthForm = () => {
                 </Form.Group>
               </Form.Row>
 
-              {/* <Form.Row className="justify-content-center">
-                
-              </Form.Row> */}
-
               <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-6">
                   <label htmlFor="nominee">Nominee Name</label>
@@ -227,54 +243,54 @@ const HealthForm = () => {
                     className="form_control_select"
                     as="select"
                     defaultValue="Choose..."
-                    name="gender"
-                   
+                    name="nomineeRelation"
+                    placeholder="Relationship with Nominee"
+                    value={healthFormInput.nomineeRelation}
+                    onChange={(e) =>
+                      handleChangeTextInput("nomineeRelation", e.target.value)
+                    }
                   >
                     <option>Please Select</option>
-                    <option value="Male">Parents</option>
-                    <option value="Female">Spouse</option>
+                    <option value="Parents">Parents</option>
+                    <option value="Spouse">Spouse</option>
                   </Form.Control>
                 </Form.Group>
               </Form.Row>
 
               <Form.Row className="health_form_row">
                 <div className="col-sm-12 package_confirm_details">
-                  <p>This Package contains <span> {duration} MONTHS</span> of validity at cost of <span>{price} BDT</span>only</p>
-                  
+                  <p>
+                    This Package contains <span> {duration} MONTHS</span> of
+                    validity at cost of <span>{price} BDT</span>only
+                  </p>
                 </div>
-              </Form.Row >
+              </Form.Row>
 
-              <Form.Row >
-                <div className="col-sm-12">
-                  {/* <Form.Group controlId="formBasicCheckbox">
-                    <Form.Check className="checkbox"
-                      type="checkbox"
-                      label="I agree with all the terms and conditions"
-                    />
-                  </Form.Group> */}
-                  <div className="form-check terms_condition">
+              <Form.Row>
+                <div className="col-sm-12  checkbox">
+                 
+                  <div class="squaredThree mt-1">
                     <input
-                      className="form-check-input checkbox"
                       type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
+                      name="optionsRadios"
+                      id="checkOther"
+                      value="other"
                       checked
                     />
-                    <label className="form-check-label  " for="flexCheckChecked">
-                   
-                     
-                      I agree with all the 
-                      <Link className="checkbox" to="/HealthTerms">
-                        <a> terms and condition </a>
-                      </Link>{" "}
-                   
-                    </label>
+                    <label for="checkOther"></label>
                   </div>
-                  
+                  <label class="label-text ml-4">
+                    {" "}
+                    I agree with all the
+                    <a href="/HealthTerms" target="_blank">
+                      {" "}
+                      terms and condition{" "}
+                    </a>
+                  </label>
                 </div>
-              </Form.Row >
-              <Form.Row className="justify-content-center mt-3 ">
-                <Form.Group className="col-sm-12 text-center">
+              </Form.Row>
+              <Form.Row className="mt-3">
+                <Form.Group className="col-sm-12 text-right">
                   {!isHealthSubmitting && (
                     <Button
                       className="ghuri_btn"
@@ -299,7 +315,11 @@ const HealthForm = () => {
           </div>
 
           <div className="col-sm-6 health_form_image">
-            <img src={healthform} className="img-fluid health_form_image" alt="" />
+            <img
+              src={healthform}
+              className="img-fluid health_form_image"
+              alt=""
+            />
           </div>
         </div>
       </div>

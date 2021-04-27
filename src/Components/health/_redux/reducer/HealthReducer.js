@@ -4,7 +4,7 @@ const initialState = {
   healthFormInput: {
     name: "",
     nameShow: "",
-    dateOfBirth: "",
+    dateOfBirth: new Date(),
     applicantPhone: "",
     address: "",
     email: "",
