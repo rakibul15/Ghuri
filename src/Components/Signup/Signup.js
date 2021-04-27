@@ -262,7 +262,7 @@ const Signup = () => {
                 <div className="col-sm-12">
                
 
-                  <div className="form-check terms_condition">
+                  <div className="form-check terms_condition checkbox">
                     <input
                       className="form-check-input"
                       type="checkbox"
@@ -272,9 +272,9 @@ const Signup = () => {
                     />
                     <label className="form-check-label" for="flexCheckChecked">
                       I agree the
-                      <Link className="terms" to="/terms">
-                        <a> terms and condition </a>
-                      </Link>{" "}
+                     
+                        <a href="/terms" target="_Blank"> terms and condition </a>
+                     
                       of GHURI Parcel
                     </label>
                   </div>
