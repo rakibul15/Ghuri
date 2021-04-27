@@ -77,14 +77,15 @@ const HealthForm = () => {
   return (
     <div className="cover_healthform">
       <div className="container confirm_package_details pt-5 pb-5 Nav_overflow">
-        <div className="row">
+        {/* <div className="row">
           <div className="col-sm-6">
             <h4 className="text-center mb-4">Applicant Info</h4>
           </div>
-        </div>
+        </div> */}
 
         <div className="row d-flex align-items-center edit-form-control">
           <div className="col-sm-6">
+          <h4 className="text-center mb-4">Applicant Info</h4>
             <Form className="form_applicant">
               <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-6 ">
@@ -297,8 +298,8 @@ const HealthForm = () => {
             </Form>
           </div>
 
-          <div className="col-sm-6">
-            <img src={healthform} className="img-fluid" alt="" />
+          <div className="col-sm-6 health_form_image">
+            <img src={healthform} className="img-fluid health_form_image" alt="" />
           </div>
         </div>
       </div>
