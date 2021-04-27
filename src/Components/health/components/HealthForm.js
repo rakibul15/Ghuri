@@ -142,15 +142,6 @@ const HealthForm = () => {
               <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-6">
                   <label htmlFor="dob">Date of Birth</label>
-                  {/* <Form.Control
-                    type="date"
-                    name="dateOfBirth"
-                    placeholder="date"
-                    value={healthFormInput.dateOfBirth}
-                    onChange={(e) =>
-                      handleChangeTextInput("dateOfBirth", e.target.value)
-                    }
-                  /> */}
 
                   <div className="form_applicant date_applicant">
                     <DatePicker
@@ -231,14 +222,7 @@ const HealthForm = () => {
                 </Form.Group>
                 <Form.Group className="col-sm-6">
                   <label htmlFor="nominee_rel">Relationship with Nominee</label>
-                  {/* <Form.Control
-                    name="nomineeRelation"
-                    placeholder="Relationship with Nominee"
-                    value={healthFormInput.nomineeRelation}
-                    onChange={(e) =>
-                      handleChangeTextInput("nomineeRelation", e.target.value)
-                    }
-                  /> */}
+                
                   <Form.Control
                     className="form_control_select"
                     as="select"
