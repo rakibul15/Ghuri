@@ -271,8 +271,8 @@ margin-left:2%;
   font-size: 12px;
 }
 .form_control_select option{
-  
-  font-size: 11px;
+  font-family:NCTTorin !important;
+  font-size: 12px;
 }
 .form_control_select:focus{
   background-color: transparent;
