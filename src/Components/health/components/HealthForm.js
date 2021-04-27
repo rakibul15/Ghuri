@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Col, Form } from "react-bootstrap";
+import { Button, Col, Form, FormControl, InputGroup } from "react-bootstrap";
 import { useHistory } from "react-router";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import {
   InputHealthForm,
   SubmitHealthForm,
@@ -86,15 +86,15 @@ const HealthForm = () => {
         <div className="row d-flex align-items-center edit-form-control">
           <div className="col-sm-6">
             <Form className="form_applicant">
-              <Form.Row>
+              <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-6 ">
                   <label htmlFor="name">Name</label>
-                  <Form.Control 
+                  <Form.Control
                     type="text"
                     name="name"
                     placeholder="Applicant Name"
-                    value={healthFormInput.name}
-                    onChange={(e) =>
+                    value={healthFormInput.nameShow}
+                    onChange={(e) => {
                       handleChangeTextInput(
                         "name",
                         e.target.value +
@@ -103,26 +103,33 @@ const HealthForm = () => {
                           " M, Price: " +
                           price +
                           "Tk)"
-                      )
-                    }
+                      );
+                      handleChangeTextInput("nameShow", e.target.value);
+                    }}
+    
                   />
                 </Form.Group>
 
                 <Form.Group className="col-sm-6">
                   <label htmlFor="pnum">Applicant Phone Number</label>
-                  <Form.Control
+                  <InputGroup className="mb-2">
+                    <InputGroup.Prepend>
+                      <InputGroup.Text>+880</InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <Form.Control
                     type="number"
                     name="applicantPhone"
-                    placeholder="Applicant Number"
+                    placeholder="1xxxxxxxx"
                     value={healthFormInput.applicantPhone}
                     onChange={(e) =>
                       handleChangeTextInput("applicantPhone", e.target.value)
                     }
                   />
+                  </InputGroup>
                 </Form.Group>
               </Form.Row>
 
-              <Form.Row className="justify-content-center">
+              <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-6">
                   <label htmlFor="dob">Date of Birth</label>
                   <Form.Control
@@ -148,7 +155,7 @@ const HealthForm = () => {
                       handleChangeTextInput("gender", e.target.value)
                     }
                   >
-                    <option>Select</option>
+                    <option>Please Select</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                   </Form.Control>
@@ -159,13 +166,13 @@ const HealthForm = () => {
                
               </Form.Row> */}
 
-              <Form.Row className="justify-content-center">
+              <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-12">
                   <label htmlFor="pass">Address</label>
                   <Form.Control
                     type="text"
                     name="address"
-                    placeholder="Address"
+                    placeholder="Enter Applicant Address"
                     value={healthFormInput.address}
                     onChange={(e) =>
                       handleChangeTextInput("address", e.target.value)
@@ -174,13 +181,13 @@ const HealthForm = () => {
                 </Form.Group>
               </Form.Row>
 
-              <Form.Row className="justify-content-center">
+              <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-12">
                   <label htmlFor="email">Email</label>
                   <Form.Control
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="Please enter Email"
                     value={healthFormInput.email}
                     onChange={(e) =>
                       handleChangeTextInput("email", e.target.value)
@@ -193,12 +200,12 @@ const HealthForm = () => {
                 
               </Form.Row> */}
 
-              <Form.Row className="justify-content-center">
+              <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-6">
                   <label htmlFor="nominee">Nominee Name</label>
                   <Form.Control
                     name="nominee"
-                    placeholder="Nominee Name"
+                    placeholder="Enter Nominee Name"
                     value={healthFormInput.nominee}
                     onChange={(e) =>
                       handleChangeTextInput("nominee", e.target.value)
@@ -207,25 +214,65 @@ const HealthForm = () => {
                 </Form.Group>
                 <Form.Group className="col-sm-6">
                   <label htmlFor="nominee_rel">Relationship with Nominee</label>
-                  <Form.Control
+                  {/* <Form.Control
                     name="nomineeRelation"
                     placeholder="Relationship with Nominee"
                     value={healthFormInput.nomineeRelation}
                     onChange={(e) =>
                       handleChangeTextInput("nomineeRelation", e.target.value)
                     }
-                  />
+                  /> */}
+                  <Form.Control
+                    className="form_control_select"
+                    as="select"
+                    defaultValue="Choose..."
+                    name="gender"
+                   
+                  >
+                    <option>Please Select</option>
+                    <option value="Male">Parents</option>
+                    <option value="Female">Spouse</option>
+                  </Form.Control>
                 </Form.Group>
               </Form.Row>
 
-              <Form.Row>
-                <div className="col-sm-12">
-                  <Form.Group controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="I agree with all the terms and conditions" />
-                  </Form.Group>
+              <Form.Row className="health_form_row">
+                <div className="col-sm-12 package_confirm_details">
+                  <p>This Package contains <span> {duration} MONTHS</span> of validity at cost of <span>{price} BDT</span>only</p>
+                  
                 </div>
-              </Form.Row>
-              <Form.Row className="justify-content-center mt-3">
+              </Form.Row >
+
+              <Form.Row className="health_form_row">
+                <div className="col-sm-12">
+                  {/* <Form.Group controlId="formBasicCheckbox">
+                    <Form.Check className="checkbox"
+                      type="checkbox"
+                      label="I agree with all the terms and conditions"
+                    />
+                  </Form.Group> */}
+                  <div className="form-check terms_condition">
+                    <input
+                      className="form-check-input checkbox"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label className="form-check-label  " for="flexCheckChecked">
+                   
+                     
+                      I agree with all the 
+                      <Link className="checkbox" to="/HealthTerms">
+                        <a> terms and condition </a>
+                      </Link>{" "}
+                   
+                    </label>
+                  </div>
+                  
+                </div>
+              </Form.Row >
+              <Form.Row className="justify-content-center mt-5 ">
                 <Form.Group className="col-sm-12 text-center">
                   {!isHealthSubmitting && (
                     <Button
