@@ -76,7 +76,7 @@ const HealthForm = () => {
   }
   return (
     <div className="cover_healthform">
-      <div className="container confirm_package_details pt-5 pb-5 Nav_overflow">
+      <div className="container confirm_package_details pt-4 pb-5 Nav_overflow">
         {/* <div className="row">
           <div className="col-sm-6">
             <h4 className="text-center mb-4">Applicant Info</h4>
@@ -85,7 +85,7 @@ const HealthForm = () => {
 
         <div className="row d-flex align-items-center edit-form-control">
           <div className="col-sm-6">
-          <h4 className="text-center mb-4">Applicant Info</h4>
+      
             <Form className="form_applicant">
               <Form.Row className="health_form_row">
                 <Form.Group className="col-sm-6 ">
@@ -244,7 +244,7 @@ const HealthForm = () => {
                 </div>
               </Form.Row >
 
-              <Form.Row className="health_form_row">
+              <Form.Row >
                 <div className="col-sm-12">
                   {/* <Form.Group controlId="formBasicCheckbox">
                     <Form.Check className="checkbox"
@@ -273,7 +273,7 @@ const HealthForm = () => {
                   
                 </div>
               </Form.Row >
-              <Form.Row className="justify-content-center mt-5 ">
+              <Form.Row className="justify-content-center mt-3 ">
                 <Form.Group className="col-sm-12 text-center">
                   {!isHealthSubmitting && (
                     <Button

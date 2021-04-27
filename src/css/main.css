@@ -220,6 +220,7 @@ margin-left:2%;
 .form_applicant label {
   font-family:NCTTorin;
   font-weight: 500;
+  font-size: 14px;
   
 }
 .form_applicant input {
@@ -228,7 +229,7 @@ margin-left:2%;
   border: none;
   border-bottom: 1px solid rgba(0,0,0,.6);
   padding-left: 0px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .edit-form-control .form-control{
   border-radius: 0px !important;
@@ -248,7 +249,7 @@ margin-left:2%;
   color: black;
   border:none;
   font-family:NCTTorin;
-  padding: 6px 30px;
+  padding: 3px 30px;
 }
 .ghuri_btn:hover{
   background-color: #ffcc00;
@@ -267,11 +268,11 @@ margin-left:2%;
   border: none;
   border-bottom: 1px solid rgba(0,0,0,.6);
   padding-left: 0px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .form_control_select option{
   
-  font-size: 14px;
+  font-size: 11px;
 }
 .form_control_select:focus{
   background-color: transparent;
@@ -288,19 +289,19 @@ margin-left:2%;
   margin-right: 10px;
   border-radius:0px;
  font-weight: 600;
- font-size: 14px;
+ font-size: 12px;
 }
 .health_form_row{
-  margin-top:30px;
+  margin-top:5px;
 }
 
 .package_confirm_details p{
   font-family:NCTTorin;
-  font-size: 15px;
+  font-size: 13px;
 }
 .package_confirm_details p span{
   font-family:NCTTorin;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
 }
 .checkbox a{
