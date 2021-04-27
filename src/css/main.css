@@ -196,13 +196,6 @@ margin-left:2%;
   font-weight: bold;
 }
 
-/**/
-
-/* .form_applicant{
-  background-color: #ffcc00 !important;
-  width: 50%;
-  justify-content: center;
-} */
 
 /*Health Form */
 .confirm_package_details h5 {
@@ -218,9 +211,22 @@ margin-left:2%;
 .form_applicant label {
   font-family: abel;
   font-weight: 500;
+  
 }
 .form_applicant input {
   font-family: abel;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.6);
+z-index: 10000 !important;
+}
+.edit-form-control .form-control{
+  border-radius: 0px !important;
+}
+.form_applicant input:focus {
+  font-family: abel;
+  background-color: transparent;
+  outline: none !important;
 }
 .form_applicant input::placeholder {
   font-family: abel;
@@ -228,10 +234,21 @@ margin-left:2%;
 .ghuri_btn {
   background-color: #ffcc00;
   color: black;
+  border:none;
 }
 
 .card_footer_health a{
   cursor: pointer;
+}
+.cover_healthform{
+  background-color:#DAEBE8 ;
+}
+.form_control_select{
+  background-color: transparent;
+}
+.form_control_select:focus{
+  background-color: transparent;
+
 }
 
 /*Terms*/

@@ -9,6 +9,7 @@ import {
 } from "../_redux/action/HealthAction";
 import Modal from "react-bootstrap/Modal";
 import HealthVerification from "./HealthVerification";
+import healthform from "../../../images/Health/healthFrom.png";
 
 const HealthForm = () => {
   const healthFormInput = useSelector(
@@ -38,7 +39,7 @@ const HealthForm = () => {
 
   const handleChangeTextInput = (name, value) => {
     console.log(`value`, value);
-    // dispatch(InputHealthForm(name, value));
+    dispatch(InputHealthForm(name, value));
   };
   const handleSubmit = (data) => {
     dispatch(SubmitHealthForm(data));
@@ -74,170 +75,191 @@ const HealthForm = () => {
     duration = 12;
   }
   return (
-    <>
+    <div className="cover_healthform">
       <div className="container confirm_package_details pt-5 pb-5 Nav_overflow">
-        <h5 className="text-center">Package Price :{price} TK</h5>
-        <h5 className="text-center mb-4">Validity : {duration} Months</h5>
-        <h4 className="text-center mb-4">Applicant Info</h4>
+        <div className="row">
+          <div className="col-sm-6">
+            <h4 className="text-center mb-4">Applicant Info</h4>
+          </div>
+        </div>
 
-        <Form className="form_applicant">
-          <Form.Row className="justify-content-center">
-            <Form.Group className="col-sm-6">
-              <label htmlFor="name">Name</label>
-              <Form.Control
-                type="text"
-                name="name"
-                placeholder="Applicant Name"
-                value={healthFormInput.name}
-                onChange={(e) =>
-                  handleChangeTextInput(
-                    "name",
-                    e.target.value +
-                      "(Package: " +
-                      duration +
-                      " M, Price: " +
-                      price +
-                      "Tk)"
-                  )
-                }
-              />
-            </Form.Group>
-          </Form.Row>
+        <div className="row d-flex align-items-center edit-form-control">
+          <div className="col-sm-6">
+            <Form className="form_applicant">
+              <Form.Row>
+                <Form.Group className="col-sm-6 ">
+                  <label htmlFor="name">Name</label>
+                  <Form.Control 
+                    type="text"
+                    name="name"
+                    placeholder="Applicant Name"
+                    value={healthFormInput.name}
+                    onChange={(e) =>
+                      handleChangeTextInput(
+                        "name",
+                        e.target.value +
+                          "(Package: " +
+                          duration +
+                          " M, Price: " +
+                          price +
+                          "Tk)"
+                      )
+                    }
+                  />
+                </Form.Group>
 
-          <Form.Row className="justify-content-center">
-            <Form.Group className="col-sm-6">
-              <label htmlFor="dob">Date of Birth</label>
-              <Form.Control
-                type="date"
-                name="dateOfBirth"
-                placeholder="date"
-                value={healthFormInput.dateOfBirth}
-                onChange={(e) =>
-                  handleChangeTextInput("dateOfBirth", e.target.value)
-                }
-              />
-            </Form.Group>
-          </Form.Row>
+                <Form.Group className="col-sm-6">
+                  <label htmlFor="pnum">Applicant Phone Number</label>
+                  <Form.Control
+                    type="number"
+                    name="applicantPhone"
+                    placeholder="Applicant Number"
+                    value={healthFormInput.applicantPhone}
+                    onChange={(e) =>
+                      handleChangeTextInput("applicantPhone", e.target.value)
+                    }
+                  />
+                </Form.Group>
+              </Form.Row>
 
-          <Form.Row className="justify-content-center">
-            <Form.Group className="col-sm-6">
-              <label htmlFor="pnum">Applicant Phone Number</label>
-              <Form.Control
-                type="number"
-                name="applicantPhone"
-                placeholder="Applicant Number"
-                value={healthFormInput.applicantPhone}
-                onChange={(e) =>
-                  handleChangeTextInput("applicantPhone", e.target.value)
-                }
-              />
-            </Form.Group>
-          </Form.Row>
+              <Form.Row className="justify-content-center">
+                <Form.Group className="col-sm-6">
+                  <label htmlFor="dob">Date of Birth</label>
+                  <Form.Control
+                    type="date"
+                    name="dateOfBirth"
+                    placeholder="date"
+                    value={healthFormInput.dateOfBirth}
+                    onChange={(e) =>
+                      handleChangeTextInput("dateOfBirth", e.target.value)
+                    }
+                  />
+                </Form.Group>
 
-          <Form.Row className="justify-content-center">
-            <Form.Group className="col-sm-6">
-              <label htmlFor="pass">Address</label>
-              <Form.Control
-                type="text"
-                name="address"
-                placeholder="Address"
-                value={healthFormInput.address}
-                onChange={(e) =>
-                  handleChangeTextInput("address", e.target.value)
-                }
-              />
-            </Form.Group>
-          </Form.Row>
+                <Form.Group className="col-sm-6">
+                  <label htmlFor="gender">Gender</label>
+                  <Form.Control
+                    className="form_control_select"
+                    as="select"
+                    defaultValue="Choose..."
+                    name="gender"
+                    value={healthFormInput.gender}
+                    onChange={(e) =>
+                      handleChangeTextInput("gender", e.target.value)
+                    }
+                  >
+                    <option>Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </Form.Control>
+                </Form.Group>
+              </Form.Row>
 
-          <Form.Row className="justify-content-center">
-            <Form.Group className="col-sm-6">
-              <label htmlFor="email">Email</label>
-              <Form.Control
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={healthFormInput.email}
-                onChange={(e) => handleChangeTextInput("email", e.target.value)}
-              />
-            </Form.Group>
-          </Form.Row>
+              {/* <Form.Row className="justify-content-center">
+               
+              </Form.Row> */}
 
-          <Form.Row className="justify-content-center">
-            <Form.Group className="col-sm-6">
-              <label htmlFor="gender">Gender</label>
-              <Form.Control
-                className="form_control_select"
-                as="select"
-                defaultValue="Choose..."
-                name="gender"
-                value={healthFormInput.gender}
-                onChange={(e) =>
-                  handleChangeTextInput("gender", e.target.value)
-                }
-              >
-                <option>Select</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-              </Form.Control>
-            </Form.Group>
-          </Form.Row>
+              <Form.Row className="justify-content-center">
+                <Form.Group className="col-sm-12">
+                  <label htmlFor="pass">Address</label>
+                  <Form.Control
+                    type="text"
+                    name="address"
+                    placeholder="Address"
+                    value={healthFormInput.address}
+                    onChange={(e) =>
+                      handleChangeTextInput("address", e.target.value)
+                    }
+                  />
+                </Form.Group>
+              </Form.Row>
 
-          <Form.Row className="justify-content-center">
-            <Form.Group className="col-sm-6">
-              <label htmlFor="nominee">Nominee Name</label>
-              <Form.Control
-                name="nominee"
-                placeholder="Nominee Name"
-                value={healthFormInput.nominee}
-                onChange={(e) =>
-                  handleChangeTextInput("nominee", e.target.value)
-                }
-              />
-            </Form.Group>
-          </Form.Row>
+              <Form.Row className="justify-content-center">
+                <Form.Group className="col-sm-12">
+                  <label htmlFor="email">Email</label>
+                  <Form.Control
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={healthFormInput.email}
+                    onChange={(e) =>
+                      handleChangeTextInput("email", e.target.value)
+                    }
+                  />
+                </Form.Group>
+              </Form.Row>
 
-          <Form.Row className="justify-content-center">
-            <Form.Group className="col-sm-6">
-              <label htmlFor="nominee_rel">Relationship with Nominee</label>
-              <Form.Control
-                name="nomineeRelation"
-                placeholder="Relationship with Nominee"
-                value={healthFormInput.nomineeRelation}
-                onChange={(e) =>
-                  handleChangeTextInput("nomineeRelation", e.target.value)
-                }
-              />
-            </Form.Group>
-          </Form.Row>
-          <Form.Row className="justify-content-center mt-3">
-            <Form.Group className="col-sm-6">
-              {!isHealthSubmitting && (
-                <Button
-                  className="ghuri_btn"
-                  onClick={() => {
-                    handleSubmit(healthFormInput);
-                  }}
-                >
-                  Submit
-                </Button>
-              )}
-              {isHealthSubmitting && (
-                <Button className="btn btn-danger">
-                  Submitting{" "}
-                  <span class="spinner-border spinner-border-sm" role="">
-                    {" "}
-                  </span>
-                </Button>
-              )}
-            </Form.Group>
-          </Form.Row>
-        </Form>
+              {/* <Form.Row className="justify-content-center">
+                
+              </Form.Row> */}
+
+              <Form.Row className="justify-content-center">
+                <Form.Group className="col-sm-6">
+                  <label htmlFor="nominee">Nominee Name</label>
+                  <Form.Control
+                    name="nominee"
+                    placeholder="Nominee Name"
+                    value={healthFormInput.nominee}
+                    onChange={(e) =>
+                      handleChangeTextInput("nominee", e.target.value)
+                    }
+                  />
+                </Form.Group>
+                <Form.Group className="col-sm-6">
+                  <label htmlFor="nominee_rel">Relationship with Nominee</label>
+                  <Form.Control
+                    name="nomineeRelation"
+                    placeholder="Relationship with Nominee"
+                    value={healthFormInput.nomineeRelation}
+                    onChange={(e) =>
+                      handleChangeTextInput("nomineeRelation", e.target.value)
+                    }
+                  />
+                </Form.Group>
+              </Form.Row>
+
+              <Form.Row>
+                <div className="col-sm-12">
+                  <Form.Group controlId="formBasicCheckbox">
+                    <Form.Check type="checkbox" label="I agree with all the terms and conditions" />
+                  </Form.Group>
+                </div>
+              </Form.Row>
+              <Form.Row className="justify-content-center mt-3">
+                <Form.Group className="col-sm-12 text-center">
+                  {!isHealthSubmitting && (
+                    <Button
+                      className="ghuri_btn"
+                      onClick={() => {
+                        handleSubmit(healthFormInput);
+                      }}
+                    >
+                      Submit
+                    </Button>
+                  )}
+                  {isHealthSubmitting && (
+                    <Button className="btn btn-danger">
+                      Submitting{" "}
+                      <span class="spinner-border spinner-border-sm" role="">
+                        {" "}
+                      </span>
+                    </Button>
+                  )}
+                </Form.Group>
+              </Form.Row>
+            </Form>
+          </div>
+
+          <div className="col-sm-6">
+            <img src={healthform} className="img-fluid" alt="" />
+          </div>
+        </div>
       </div>
 
       <Modal show={show} onHide={handleClose}>
         <HealthVerification handleClose={() => handleClose()} />
       </Modal>
-    </>
+    </div>
   );
 };
 
