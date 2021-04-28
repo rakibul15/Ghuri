@@ -103,8 +103,8 @@ const HealthVerification = (props) => {
           </div>
         
         </div>
-        <div className="row mt-2">
-            <div className="col-sm-8">
+        <div className="row d-flex align-items-center mt-2">
+            <div className="col-sm-8 col-6">
             <Button
           className="health_confirm"
           onClick={() =>
@@ -114,7 +114,7 @@ const HealthVerification = (props) => {
           Submit
         </Button>
             </div>
-            <div className="col-sm-4 text-right resend_color">
+            <div className="col-sm-4 col-6 text-right resend_color">
             <span className="">
               <a
                 href
