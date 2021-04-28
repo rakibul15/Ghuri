@@ -10,6 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 // import { icons } from './assets/icons'
 import { Provider } from 'react-redux'
 import Store from "./redux/store/Store";
+import "react-datepicker/dist/react-datepicker.css";
+
 require('dotenv').config();
 // React.icons = icons
 let store = Store();

@@ -37,6 +37,7 @@ import Refund from "./Components/refund/Refund";
 import "../src/css/main.css";
 import Blog from "./Components/Blog/Blog";
 import Blogdetails from "./Components/Blog/Blogdetails";
+import HealthTerms from "./Components/health/components/HealthTerms";
 
 function App() {
   return (
@@ -179,6 +180,9 @@ function App() {
           </Route>
           <Route path="/healthform:id">
             <Healthform></Healthform>
+          </Route>
+          <Route path="/HealthTerms">
+            <HealthTerms></HealthTerms>
           </Route>
           <Route path="*">
             <Notmatch />
