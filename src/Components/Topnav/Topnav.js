@@ -1,7 +1,13 @@
 // import { logDOM } from "@testing-library/react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Dropdown, DropdownButton, Nav, Navbar } from "react-bootstrap";
+import {
+  Dropdown,
+  DropdownButton,
+  Nav,
+  Navbar,
+  NavDropdown,
+} from "react-bootstrap";
 import "./Topnav.css";
 import logo from "../../images/logo/logo.svg";
 import { Link } from "react-router-dom";
@@ -33,60 +39,43 @@ const Topnav = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link className="nav_color">
-              <Link to="/home"> Home</Link>
+          <Nav className="ml-auto ghuri_nav">
+            <Nav.Link href="/home">
+              Home
             </Nav.Link>
-
-            <Nav.Link>
-              <DropdownButton title="Services" variant="none">
-                <Dropdown.Item className="hover_color">
-                  <Link to="#" className="drop_down_menu">
-                    <a onClick={() => riderectNuraniInterior()}>
-                      Nurani Interior
-                    </a>
-                  </Link>
-                </Dropdown.Item>
-                <Dropdown.Item className="hover_color">
-                  <Link to="#" className="drop_down_menu">
-                    <a onClick={() => riderectNuraniRadio()}>Nurani Radio</a>
-                  </Link>
-                </Dropdown.Item>
-              </DropdownButton>
-            </Nav.Link>
-
-            <Nav.Link>
-              <DropdownButton
-                id="dropdown-basic-button"
-                title="Merchant"
-                variant="none"
+            <NavDropdown title="Services" id="collasible-nav-dropdown">
+              <NavDropdown.Item
+                target="_Blank"
+                href="https://nuraniinteriorbd.com/"
               >
-                <Dropdown.Item className="hover_color">
-                  <Link
-                    className="drop_down_menu"
-                    to="/merchant"
-                    onClick={() => riderectMessage()}
-                  >
-                    <a href> Signup</a>
-                  </Link>
-                </Dropdown.Item>
-                <Dropdown.Item className="hover_color">
-                  <Link to="#" className="drop_down_menu">
-                    <a onClick={() => handleRedirect()}>Login</a>
-                  </Link>
-                </Dropdown.Item>
-              </DropdownButton>
-            </Nav.Link>
-            <Nav.Link className="nav_color">
-              <Link to="/health"> Health</Link>
+                Nurani Interior
+              </NavDropdown.Item>
+              <NavDropdown.Item target="_Blank" href="https://nuraniradio.com/">
+                Nurani Radio
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Merchant" id="collasible-nav-dropdown">
+              <NavDropdown.Item
+                href="/merchant"
+                onClick={() => riderectMessage()}
+                className="hover_color"
+              >
+                Signup
+              </NavDropdown.Item>
+              <NavDropdown.Item target="_Blank"
+               className="hover_color"
+               href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}>
+              Login
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/health" className="nav_color">
+              Health
             </Nav.Link>
             {/* <Nav.Link className="nav_color">
               <Link to="/blog">Blog</Link>
             </Nav.Link> */}
-            <Nav.Link className="language">
-              <Link to="#">
-                <i className="fa fa-globe"></i> EN
-              </Link>
+            <Nav.Link className="custom_nav">
+              <i className="fa fa-globe"></i> EN
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
