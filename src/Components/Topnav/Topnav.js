@@ -18,16 +18,6 @@ const Topnav = () => {
   const riderectMessage = () => {
     dispatch(SetRiderectMessage());
   };
-  const handleRedirect = () => {
-    // window.open("https://ocean.ghuriexpress.com/#/login", "_blank");
-    window.open(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`, "_blank");
-  };
-  const riderectNuraniInterior = () => {
-    window.open("https://nuraniinteriorbd.com/", "_blank");
-  };
-  const riderectNuraniRadio = () => {
-    window.open("https://nuraniradio.com/", "_blank");
-  };
 
   return (
     <div>
