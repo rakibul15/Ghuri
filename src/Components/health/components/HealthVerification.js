@@ -76,15 +76,15 @@ const HealthVerification = (props) => {
   };
 
   return (
-    <>
-      <Modal.Header closeButton className="Nav_overflow">
-        <Modal.Title>SMS VERIFICATION</Modal.Title>
+    <div className="health_verification_container">
+      <Modal.Header closeButton>
+        <Modal.Title className="modal_title">SMS VERIFICATION</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="modal_body">
         <h6>Enter verification code send to 01XXXXXXX{lastTwo}</h6>
         <div className="row mt-3">
           <div className="col-sm-9">
-            <InputGroup className="mb-3">
+            <InputGroup className="mb-3 GP">
               <InputGroup.Prepend>
                 <InputGroup.Text id="basic-addon1">GP-</InputGroup.Text>
               </InputGroup.Prepend>
@@ -98,8 +98,24 @@ const HealthVerification = (props) => {
               />
             </InputGroup>
           </div>
-          <div className="col-sm-3">
-            <span className="text-right">
+          <div className="col-sm-3 mb-2">
+            
+          </div>
+        
+        </div>
+        <div className="row mt-2">
+            <div className="col-sm-8">
+            <Button
+          className="health_confirm"
+          onClick={() =>
+            handleSubmitVerification(healthFormInput, smsCode, healthOtpId)
+          }
+        >
+          Submit
+        </Button>
+            </div>
+            <div className="col-sm-4 text-right resend_color">
+            <span className="">
               <a
                 href
                 style={{ cursor: "pointer" }}
@@ -114,24 +130,17 @@ const HealthVerification = (props) => {
               </a>
               {!resend && (
                 <>
-                  <span style={{ fontSize: "20px" }}>00:00:{duration}</span>
+                  <span style={{ fontSize: "16px" }}>00:00:{duration}</span>
                 </>
               )}
             </span>
+            </div>
           </div>
-        </div>
       </Modal.Body>
-      <Modal.Footer>
-        <Button
-          variant="primary"
-          onClick={() =>
-            handleSubmitVerification(healthFormInput, smsCode, healthOtpId)
-          }
-        >
-          Save
-        </Button>
-      </Modal.Footer>
-    </>
+      {/* <Modal.Footer>
+        
+      </Modal.Footer> */}
+    </div>
   );
 };
 

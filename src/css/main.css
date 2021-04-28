@@ -519,3 +519,90 @@ margin-left:2%;
 .Nav_overflow{
   margin-top: 62px;
 }
+/*Health Verifications*/
+
+/*Modal*/
+.modal-content {
+  margin-top: 35%;
+}
+
+.health_confirm {
+  background-color: #ffcc00 !important;
+  color: black !important;
+  border:none !important;
+  font-family:NCTTorin;
+  outline: none !important;
+  box-shadow:none !important;
+  
+}
+.health_confirm:hover{
+  background-color: #ffcc00 !important;
+  color: black !important;
+  border:none !important;
+  font-family:NCTTorin;
+  outline: none !important;
+  box-shadow:none !important;
+  
+}
+.health_confirm:active{
+  background-color: #ffcc00 !important;
+  color: black !important;
+  border:none !important;
+  font-family:NCTTorin;
+  outline: none !important;
+  box-shadow:none !important;
+  
+}
+.health_confirm:checked{
+  background-color: #ffcc00 !important;
+  color: black;
+  border:none;
+  font-family:NCTTorin;
+  outline: none !important;
+  box-shadow:none !important;
+  
+}
+.modal_title{
+font-family: NCTTorin;
+font-size: 20px;
+}
+.modal_body input{
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: transparent;
+}
+.modal_body input:focus{
+  font-family:NCTTorin;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow:none !important;
+  border-bottom: 2px solid white;
+}
+.modal{
+  padding-right: 0px !important;
+}
+.modal_body h6{
+  font-family: NCTTorin;
+}
+.GP .input-group-text{
+  font-size: 16px;
+  color: white;
+ 
+}
+.health_verification_container{
+  background-color: black;
+  color: white;
+}
+
+.resend_color{
+  color: #cc0000;
+}
+.health_verification_container .modal-header {
+  
+  border-bottom:none !important;
+ 
+}
+.health_verification_container .modal-header .close {
+  color:white;
+}
