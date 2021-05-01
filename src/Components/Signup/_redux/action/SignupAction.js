@@ -58,22 +58,22 @@ export const SubmitSignupData = (data) => async (dispatch) => {
   const submitData = {
     userType: 1,
     userRole: 1,
-    ownerName: data.firstName + " " + data.lastName,
+    merchantName: data.firstName + " " + data.lastName,
     city: data.city,
     area: data.area,
     address: data.address,
     email: data.email,
     phone: data.phone,
     password: data.password,
-    businessName: data.shopName,
-    businessUrl: data.shopUrl,
+    shopName: data.shopName,
+    shopUrl: data.shopUrl,
   };
   const smsNumber = {
     msisdn: `88${data.phone}`,
   };
 
-  // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp?status=register`;
-  const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
+  const url = `${process.env.REACT_APP_API_URL}merchant/send_otp?status=register`;
+  // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
 
   // const url = `${process.env.REACT_APP_API_URL}merchant/register`;
   // const headersData= {
@@ -97,7 +97,7 @@ export const SubmitSignupData = (data) => async (dispatch) => {
           toast.success(res.data.message);
           if (res.status === 200) {
             localStorage.setItem("signupData", JSON.stringify(submitData));
-            localStorage.setItem("otp_id", res.data.otp_id);
+            localStorage.setItem("otp_id", res.data.csms_id);
             dispatch({ type: Types.REDIRECT_TO_VERIFICATION, payload: true });
           }
         } else {
@@ -156,8 +156,8 @@ export const SubmitSmsCode = (code) => async (dispatch) => {
     csms_id: otp_id,
     otp: code,
   };
-  // const url = `${process.env.REACT_APP_API_URL}merchant/otp_check?status=register`;
-  const url = `${process.env.REACT_APP_API_URL}merchant/otp_check`;
+  const url = `${process.env.REACT_APP_API_URL}merchant/otp_check?status=register`;
+  // const url = `${process.env.REACT_APP_API_URL}merchant/otp_check`;
   const urlReg = `${process.env.REACT_APP_API_URL}merchant/register`;
   //ghjk
   try {
@@ -203,8 +203,8 @@ export const ResendOtp = () => async (dispatch) => {
     msisdn: `88${signupData.phone}`,
   };
 
-  // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp?status=register`;
-  const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
+  const url = `${process.env.REACT_APP_API_URL}merchant/send_otp?status=register`;
+  // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
 
   try {
     await Axios.post(url, smsNumber).then((res) => {
@@ -212,7 +212,7 @@ export const ResendOtp = () => async (dispatch) => {
       if (res.data.status) {
         toast.success(res.data.message);
         if (res.status === 200) {
-          localStorage.setItem("otp_id", res.data.otp_id);
+          localStorage.setItem("otp_id", res.data.csms_id);
         }
       } else {
         toast.error("Please check the file inputs and try again !");
