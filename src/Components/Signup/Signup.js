@@ -158,7 +158,7 @@ const Signup = () => {
                       handleChangeTextInput("phone", e.target.value)
                     }
                     value={signupTextInput.phone}
-                    placeholder="Enter Mobile Number"
+                    placeholder="Enter Mobile (01XXXXXXXXX)"
                   />
                 </div>
                 <div className="col-sm-4 fullwidth">
