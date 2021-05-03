@@ -24,7 +24,7 @@ const HealthVerification = (props) => {
   const isSubmittedHealth = useSelector(
     (state) => state.healthInfo.isSubmittedHealth
   );
-  console.log(`healthFormInput`, healthFormInput);
+
   const [smsCode, setSmsCode] = useState("");
   const [count, setCount] = useState(0);
   const { seconds, reset } = useStopwatch({ autoStart: true });

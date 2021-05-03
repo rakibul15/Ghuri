@@ -14,7 +14,6 @@ import ghurihealth from "../../images/logo/ghuri_health.png";
 import { Link } from "react-router-dom";
 
 const Health = (props) => {
-  console.log(props);
   return (
     <div className="m_color Nav_overflow">
       <Container>
@@ -154,7 +153,11 @@ const Health = (props) => {
           </Card>
         </CardDeck>
         <div className="powered_by text-center">
-          <img src={ghurihealth} className="img-fluid ghuri_health mr-3" alt="" />
+          <img
+            src={ghurihealth}
+            className="img-fluid ghuri_health mr-3"
+            alt=""
+          />
           <img src={dghealth} className="img-fluid dg_health" alt="" />
           <h6>Powered By</h6>
         </div>
