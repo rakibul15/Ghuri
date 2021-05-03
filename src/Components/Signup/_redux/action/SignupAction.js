@@ -54,7 +54,7 @@ export const SubmitSignupData = (data) => async (dispatch) => {
     toast.error("Address Should Not Be Empty");
     return false;
   }
-  console.log(`data`, data);
+
   const submitData = {
     userType: 1,
     userRole: 1,
@@ -92,7 +92,6 @@ export const SubmitSignupData = (data) => async (dispatch) => {
   try {
     await Axios.post(url, smsNumber)
       .then((res) => {
-        console.log(`res`, res);
         if (res.data.status) {
           toast.success(res.data.message);
           if (res.status === 200) {
@@ -118,7 +117,7 @@ export const SubmitSignupData = (data) => async (dispatch) => {
   //         headers: headersData
   //         }).then(
   //             (res)=>{
-  //                 console.log(`res`, res)
+  //
   //                 if(typeof res !== 'undefined'){
   //                     toast.success(res.data.message)
   //                     if(res.status === 200){
@@ -150,8 +149,9 @@ export const RiderectVerifiCatioFalse = () => (dispatch) => {
 export const SubmitSmsCode = (code) => async (dispatch) => {
   const signupData = JSON.parse(localStorage.getItem("signupData"));
   const otp_id = localStorage.getItem("otp_id");
-  console.log(`code,signupData,otp_id`, code, signupData, otp_id);
 
+  signupData.csms_id = otp_id;
+  signupData.otp = code;
   const verifyData = {
     csms_id: otp_id,
     otp: code,
@@ -160,32 +160,22 @@ export const SubmitSmsCode = (code) => async (dispatch) => {
   // const url = `${process.env.REACT_APP_API_URL}merchant/otp_check`;
   const urlReg = `${process.env.REACT_APP_API_URL}merchant/register`;
   //ghjk
+  // try {
+  // await Axios.post(url, verifyData)
+  //   .then((res) => {
+  //
+  //     if (res.data.status) {
+  //Hit registration Url
   try {
-    await Axios.post(url, verifyData)
+    Axios.post(urlReg, signupData)
       .then((res) => {
-        console.log(`res`, res);
-        if (res.data.status) {
-          //Hit registration Url
-          try {
-            Axios.post(urlReg, signupData)
-              .then((res) => {
-                console.log(`res`, res);
-                if (typeof res !== "undefined") {
-                  toast.success(res.data.message);
-                  if (res.status === 200) {
-                    dispatch({ type: Types.REDIRECT_TO_LOGIN, payload: true });
-                  }
-                } else {
-                  toast.error("Please check the file inputs and try again !");
-                }
-              })
-              .catch((err) => {
-                const message = JSON.parse(err.request.response).message;
-                showToast("error", message);
-              });
-          } catch (error) {
-            toast.error("Something Went Wrong !");
+        if (typeof res !== "undefined") {
+          toast.success(res.data.message);
+          if (res.status === 200) {
+            dispatch({ type: Types.REDIRECT_TO_LOGIN, payload: true });
           }
+        } else {
+          toast.error("Please check the file inputs and try again !");
         }
       })
       .catch((err) => {
@@ -193,8 +183,17 @@ export const SubmitSmsCode = (code) => async (dispatch) => {
         showToast("error", message);
       });
   } catch (error) {
-    toast.error("Something Went Wrong");
+    toast.error("Something Went Wrong !");
   }
+  //   }
+  // })
+  // .catch((err) => {
+  //   const message = JSON.parse(err.request.response).message;
+  //   showToast("error", message);
+  // });
+  // } catch (error) {
+  //   toast.error("Something Went Wrong");
+  // }
 };
 
 export const ResendOtp = () => async (dispatch) => {
@@ -208,7 +207,6 @@ export const ResendOtp = () => async (dispatch) => {
 
   try {
     await Axios.post(url, smsNumber).then((res) => {
-      console.log(`res`, res);
       if (res.data.status) {
         toast.success(res.data.message);
         if (res.status === 200) {
