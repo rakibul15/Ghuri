@@ -26,7 +26,7 @@ const SmsVerification = () => {
       setResend(true);
     }
   }, [seconds]);
-  console.log(`count`, count);
+
   useEffect(() => {
     if (redirectToLogin) {
       window.location.assign(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`);

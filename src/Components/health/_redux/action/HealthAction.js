@@ -47,7 +47,6 @@ export const SubmitHealthForm = (data) => async (dispatch) => {
   try {
     await Axios.post(url, phoneNumber)
       .then((res) => {
-        console.log(`res`, res);
         if (res.data.status) {
           showToast("success", res.data.message);
           dispatch({ type: Types.HEALTH_OTP_ID, payload: res.data.otp_id });
@@ -84,12 +83,10 @@ export const SubmitHealthOtp = (
 
   try {
     await Axios.post(url, verifyData).then((res) => {
-      console.log(`res`, res);
       if (res.data.status) {
         //Hit registration Url
         try {
           Axios.post(urlReg, healthFormInput).then((res) => {
-            console.log(`res`, res);
             if (typeof res !== "undefined") {
               showToast("success", res.data.message);
               if (res.status === 200) {
@@ -123,7 +120,6 @@ export const ResendHealthOtp = (mobile) => async (dispatch) => {
   try {
     await Axios.post(url, smsNumber)
       .then((res) => {
-        console.log(`res`, res);
         if (res.data.status) {
           showToast("success", res.data.message);
           if (res.status === 200) {
