@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./headline.css";
 
-
 //Media Query Css for Responsive
 import "../../css/mediaQuery.css";
-
 
 import newsdata from "../news/news";
 
@@ -17,15 +15,21 @@ import Singlenews from "../singlenews/Singlenews";
 
 export default function Headline() {
   const [news] = useState(newsdata);
-  // console.log(newsdata);
 
   return (
     <div className="headline">
       <h1 className="text-center mt-3 mb-5">GHURI HEADLINES</h1>
-      <OwlCarousel loop margin={10} items={1} autoplay={true} dots={false} lazyLoad={true}>
+      <OwlCarousel
+        loop
+        margin={10}
+        items={1}
+        autoplay={true}
+        dots={false}
+        lazyLoad={true}
+      >
         {news.map((snews) => (
           <Singlenews
-          key={newsdata.id}
+            key={newsdata.id}
             // handleEnroll={handleEnroll}
             snews={snews}
           ></Singlenews>

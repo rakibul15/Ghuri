@@ -16,14 +16,10 @@ const Blog = () => {
   const [state, setstate] = useState(blogdata[indexOfFirstPost]);
 
   const currentPosts = blogdata.slice(indexOfFirstPost, indexOfLastPost);
-  console.log("indexOfFirstPost",indexOfFirstPost)
-  console.log("indexOfLastPost",indexOfLastPost)
-  console.log("currentPage",currentPage)
 
   //Change Page
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
-  
 
   return (
     <div className="ghuri_blog container Nav_overflow">
@@ -79,7 +75,6 @@ const Blog = () => {
         postsPerPage={postsPerPage}
         totalPost={blog.length}
         paginate={paginate}
-      
       ></Pagination>
     </div>
   );

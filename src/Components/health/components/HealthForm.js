@@ -28,7 +28,7 @@ const HealthForm = () => {
   const isHealthSubmitting = useSelector(
     (state) => state.healthInfo.isHealthSubmitting
   );
-  console.log(`isHealthSubmitting`, isHealthSubmitting);
+
   const dispatch = useDispatch();
   const history = useHistory();
   const [show, setShow] = useState(false);
@@ -47,7 +47,6 @@ const HealthForm = () => {
   }, [healthOtpId]);
 
   const handleChangeTextInput = (name, value) => {
-    console.log(`value`, value);
     dispatch(InputHealthForm(name, value));
   };
   const handleSubmit = (data) => {
