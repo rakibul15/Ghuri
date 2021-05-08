@@ -38,6 +38,7 @@ import "../src/css/main.css";
 import Blog from "./Components/Blog/Blog";
 import Blogdetails from "./Components/Blog/Blogdetails";
 import HealthTerms from "./Components/health/components/HealthTerms";
+import ParcelDetails from "./Components/parcelDetails/ParcelDetails";
 
 function App() {
   return (
@@ -184,6 +185,12 @@ function App() {
           <Route path="/HealthTerms">
             <HealthTerms></HealthTerms>
           </Route>
+
+          {/* Parcel Details */}
+          <Route path="/parcelDetails">
+            <ParcelDetails></ParcelDetails>
+          </Route>
+
           <Route path="*">
             <Notmatch />
           </Route>

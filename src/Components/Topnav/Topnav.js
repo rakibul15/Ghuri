@@ -30,9 +30,7 @@ const Topnav = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto ghuri_nav">
-            <Nav.Link href="/home">
-              Home
-            </Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
             <NavDropdown title="Services" id="collasible-nav-dropdown">
               <NavDropdown.Item
                 target="_Blank"
@@ -43,6 +41,8 @@ const Topnav = () => {
               <NavDropdown.Item target="_Blank" href="https://nuraniradio.com/">
                 Nurani Radio
               </NavDropdown.Item>
+
+              <NavDropdown.Item href="/ParcelDetails">Parcel</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Merchant" id="collasible-nav-dropdown">
               <NavDropdown.Item
@@ -52,10 +52,12 @@ const Topnav = () => {
               >
                 Signup
               </NavDropdown.Item>
-              <NavDropdown.Item target="_Blank"
-               className="hover_color"
-               href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}>
-              Login
+              <NavDropdown.Item
+                target="_Blank"
+                className="hover_color"
+                href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
+              >
+                Login
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/health" className="nav_color">
