@@ -329,7 +329,7 @@
    margin-top: 40px;
 }
 .howdeliver img {
-  width: 100%;
+  width: 100% !important;
   margin-top: 20px;
 }
 .left_top{

@@ -14,29 +14,15 @@ import light from "../../images/ParcelDetails/light.png";
 import clock from "../../images/ParcelDetails/clock.png";
 import rider from "../../images/ParcelDetails/rider.png";
 import deliverearn from "../../images/ParcelDetails/deliverEarn.png";
+import parcelbg from "../../images/ParcelDetails/main_content_bg.png"
 import { Accordion, Button, Card, useAccordionToggle } from "react-bootstrap";
+import IamMerchant from "./IamMerchant";
+import IamFighter from "./IamFighter";
 
-function CustomToggle({ children, eventKey, handleClick }) {
-  const decoratedOnClick = useAccordionToggle(eventKey, () => {
-    handleClick();
-    console.log(eventKey);
-  });
-
-  return (
-    <div className="card-header" type="button" onClick={decoratedOnClick}>
-      {children}
-    </div>
-  );
-}
 
 const ParcelDetails = () => {
-  const [activeKey, setActiveKey] = useState();
-
-  const data = [
-    { name: "mike", age: 22 },
-    { name: "clive", age: 25 },
-    { name: "morgan", age: 82 },
-  ];
+  const [show, setShow] = useState(false)
+  const [allFaq, setAllFaq] = useState(false)
 
   return (
     <div>
@@ -45,43 +31,43 @@ const ParcelDetails = () => {
           <div className="row parcel_main_content">
             <div className="col-sm-1"></div>
             <div className="col-sm-7">
-            <div className="parcel_main_content_small">
-            <h5>Ghuri Parcel</h5>
-              <h2>On Demand Delivery at Your Doorstep</h2>
-              <p>
-                Need to send something on an emergency basis? Parcel is what you
-                nedd!
-              </p>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
-                target="_blank"
-                className="btn Parecl_app  parcel_first_app btn_box_shadow"
-                rel="noreferrer"
-              >
-                <span>
-                  <i className="fa fa-mobile mobile"></i>
-                </span>
-                <span className="papp_fixes">Download Ghuri App</span>
-                <span>
-                  <i className="fa fa-chevron-right"></i>
-                </span>
-              </a>{" "}
-              <br />
-              <a
-                href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuridrive"
-                target="_blank"
-                className="btn app_store_btn   mt-4 btn_box_shadow"
-                rel="noreferrer"
-              >
-                <span>
-                  <i className="fa fa-money"></i>
-                </span>
-                <span className="Play_fixed">Earn With Ghuri</span>
-                <span>
-                  <i className="fa fa-chevron-right"></i>
-                </span>
-              </a>
-            </div>
+              <div className="parcel_main_content_small">
+                <h5>Ghuri Parcel</h5>
+                <h2>On Demand Delivery at Your Doorstep</h2>
+                <p>
+                  Need to send something on an emergency basis? Parcel is what
+                  you nedd!
+                </p>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
+                  target="_blank"
+                  className="btn Parecl_app  parcel_first_app btn_box_shadow"
+                  rel="noreferrer"
+                >
+                  <span>
+                    <i className="fa fa-mobile mobile"></i>
+                  </span>
+                  <span className="papp_fixes">Download Ghuri App</span>
+                  <span>
+                    <i className="fa fa-chevron-right"></i>
+                  </span>
+                </a>{" "}
+                <br />
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuridrive"
+                  target="_blank"
+                  className="btn app_store_btn   mt-4 btn_box_shadow"
+                  rel="noreferrer"
+                >
+                  <span>
+                    <i className="fa fa-money"></i>
+                  </span>
+                  <span className="Play_fixed">Earn With Ghuri</span>
+                  <span>
+                    <i className="fa fa-chevron-right"></i>
+                  </span>
+                </a>
+              </div>
             </div>
             <div className="col-sm-3 text-right">
               <img
@@ -92,8 +78,11 @@ const ParcelDetails = () => {
             </div>
             <div className="col-sm-1"></div>
           </div>
+          
         </div>
+        <svg className="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#fff" fill-opacity="1" d="M0,0L450,128L1000,256L1440,128L1440,320L960,320L480,320L0,320Z"></path></svg>
       </div>
+     
       {/* Parcel Details Header End */}
 
       <section className="what_we_deliver">
@@ -266,7 +255,7 @@ const ParcelDetails = () => {
           <div className="left_top">
             <div className="card">
               <div className="card-body card_custom_attach">
-              <i class="fa fa-circle"></i> Work When You Want
+                <i class="fa fa-circle"></i> Work When You Want
               </div>
             </div>
           </div>
@@ -274,7 +263,8 @@ const ParcelDetails = () => {
           <div className="left_bottom">
             <div className="card">
               <div className="card-body card_custom_attach">
-              <i class="fa fa-circle"></i> Less work earn More <br/> within <br/> a short time
+                <i class="fa fa-circle"></i> Less work earn More <br /> within{" "}
+                <br /> a short time
               </div>
             </div>
           </div>
@@ -282,7 +272,8 @@ const ParcelDetails = () => {
           <div className="right_bottom">
             <div className="card">
               <div className="card-body card_custom_attach">
-              <i class="fa fa-circle"></i> Extra earning with extra <br/> keeps you smilling 
+                <i class="fa fa-circle"></i> Extra earning with extra <br />{" "}
+                keeps you smilling
               </div>
             </div>
           </div>
@@ -297,93 +288,50 @@ const ParcelDetails = () => {
         </div>
         <div className="row d-flex justify-content-center mt-5 mb-4">
           <div className="col-sm-4  col-md-2 col-6">
-            <button className="btn  btn_Faq_active">
+            <button
+              className="btn btn_Faq_active"
+              onClick={() =>{setShow(false); setAllFaq(false)}}
+            >
               <strong> I am a Marchent</strong>
             </button>
           </div>
           <div className="col-sm-4 col-md-2 col-6">
-            <button className="btn btn_Faq">
+            <button 
+            className="btn btn_Faq" 
+            onClick={() => {setShow(true); setAllFaq(false)}}
+            >
               <strong> I am a fighter</strong>
             </button>
           </div>
         </div>
         <div className="row  d-flex justify-content-center mt-5 mb-4">
           <div className="col-sm-8">
-            <Accordion defaultActiveKey="0">
-              <div className="accordion_faq">
-                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  <i class="fa fa-plus"></i> How do I contact the deliverer?
-                </Accordion.Toggle>
-
-                <Accordion.Collapse eventKey="0">
-                  <Card.Body className="collapse_body">
-                    Hello! I'm the body
-                  </Card.Body>
-                </Accordion.Collapse>
-              </div>
-
-              <div className="accordion_faq">
-                <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                  <i class="fa fa-plus"></i> How do I cancel request
-                </Accordion.Toggle>
-
-                <Accordion.Collapse eventKey="1">
-                  <Card.Body className="collapse_body">
-                    Hello! I'm another body
-                  </Card.Body>
-                </Accordion.Collapse>
-              </div>
-              <div className="accordion_faq">
-                <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                  <i class="fa fa-plus"></i> How do I track my delivery?
-                </Accordion.Toggle>
-
-                <Accordion.Collapse eventKey="2">
-                  <div className="collapse_body">
-                    <Card.Body>Hello! I'm another body</Card.Body>
-                  </div>
-                </Accordion.Collapse>
-              </div>
-            </Accordion>
-
-            {/* <Accordion defaultActiveKey={activeKey} activeKey={activeKey}>
-        {data.map((item, index) => (
-         
-          <Card key={index}>
-            <CustomToggle
-              as={Card.Header}
-              eventKey={index}
-              handleClick={() => {
-                if (activeKey === index) {
-                  setActiveKey(-1);
-                } else {
-                  setActiveKey(index);
-                }
-                console.log(index)
-              }}
-            >
-              {activeKey === index ? "-" : "+"}
-              {item.name}
-              
-            </CustomToggle>
-            <Accordion.Collapse eventKey={index}>
-              <Card.Body>{item.age}</Card.Body>
-            </Accordion.Collapse>
-          </Card>
-        ))}
-      </Accordion> */}
+            
+            {!allFaq && !show &&(<IamMerchant/>)}
+            {!allFaq && show &&(<IamFighter/>)}
+            {allFaq && (
+            <>
+            <IamMerchant/><IamFighter/>
+            </>
+            )}
+          
           </div>
         </div>
       </section>
       <div className="row d-flex justify-content-center">
         <div className="col-sm-4 col-md-2">
-          <button className="btn btn_Faq btn_outline view_all_btn">
+          <button
+            className="btn btn_Faq btn_outline view_all_btn"
+            onClick={() => setAllFaq(true)}
+          >
             <strong>
               View All FAQ <i class="fa fa-arrow-right"></i>
             </strong>
           </button>
         </div>
       </div>
+
+     
     </div>
   );
 };
