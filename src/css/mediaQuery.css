@@ -318,6 +318,40 @@
     transform: translate(0%, -0%);
     width: 100%;
   }
+  .parcel_main_content_small{
+    padding: 15px;
+  }
+  .parcel_main_content_small a{
+    margin-left: 8%;
+  }
+
+  .content_info_box {
+   margin-top: 40px;
+}
+.howdeliver img {
+  width: 100% !important;
+  margin-top: 20px;
+}
+.left_top{
+  position:relative !important;
+  margin-top: 20px;
+  left:0% !important;
+  bottom:0% !important;
+  
+}
+.left_bottom{
+  position:relative !important;
+  margin-top: 20px;
+  left:0% !important;
+  bottom:0% !important;
+}
+.right_bottom{
+  position:relative !important;
+  margin-top: 20px;
+  right: 0% !important;
+  bottom:0% !important;
+}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
