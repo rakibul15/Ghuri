@@ -582,11 +582,23 @@ margin-left:2%;
 }
 
 /* Parcel Details */
- .parcel_main {
-  background-image: linear-gradient(to left, #FBF7F8, #FCF3D0,#FEEA9A,#FEDF65,#FEDF65);
+.parcel_main {
+  /* background-image: linear-gradient(
+    to left,
+    #fbf7f8,
+    #fcf3d0,
+    #feea9a,
+    #fedf65,
+    #fedf65
+  ); */
 
 }
-
+.bgg{
+  background-image: url(../images/ParcelDetails/bg.png);
+  background-repeat: no-repeat;
+  background-size:100%;
+  height: 115vh;
+}
 .parcel_main_content {
   padding-top: 100px;
 }
@@ -594,22 +606,21 @@ margin-left:2%;
   margin-top: 50px;
 }
 .what_we_deliver {
-  margin-top: 150px;
+  /* margin-top: 150px; */
   margin-bottom: 100px;
 }
-.what_we_deliver h2{
+.what_we_deliver h2 {
   font-family: NCTTorin;
 }
-.what_we_deliver P{
+.what_we_deliver P {
   font-family: NCTTorin;
 }
 
-.how_to_deliver_main h2{
-font-family: NCTTorin;
-}
-.how_to_deliver p{
+.how_to_deliver_main h2 {
   font-family: NCTTorin;
-
+}
+.how_to_deliver p {
+  font-family: NCTTorin;
 }
 
 .how_to_container_bg {
@@ -637,7 +648,6 @@ font-family: NCTTorin;
   padding: 0.6rem 1.5rem;
 }
 
-
 .app_store_btn {
   background-color: white;
   border: 1px solid black;
@@ -658,7 +668,6 @@ font-family: NCTTorin;
 
 .howdeliver img {
   width: 50%;
-
 }
 
 .download_app img {
@@ -689,10 +698,10 @@ font-family: NCTTorin;
   min-height: 200px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
 }
-.content_info_box h2{
+.content_info_box h2 {
   font-family: NCTTorin;
 }
-.content_info_box small{
+.content_info_box small {
   font-family: NCTTorin;
 }
 .rider img {
@@ -711,7 +720,6 @@ font-family: NCTTorin;
   outline: none !important;
 }
 .btn_Faq_active:focus {
-
   box-shadow: 2px 2px 10px black;
   outline: none !important;
 }
@@ -723,24 +731,20 @@ font-family: NCTTorin;
   outline: none !important;
   box-shadow: none;
   background-color: white;
-
 }
-.btn_Faq:focus{
+.btn_Faq:focus {
   width: 100% !important;
   padding: 10px 20px;
   border: 1px solid #ffcc00;
   outline: none !important;
   box-shadow: none;
-
 }
-.btn_Faq:active{
+.btn_Faq:active {
   width: 100% !important;
   padding: 10px 20px;
   border: 1px solid #ffcc00;
   outline: none !important;
   box-shadow: none;
- 
-
 }
 .combained_sec {
   margin-top: 150px;
@@ -751,43 +755,40 @@ font-family: NCTTorin;
   padding-bottom: 10px;
   font-family: NCTTorin;
 }
-.combained_sec h2{
+.combained_sec h2 {
   font-family: NCTTorin;
 }
-.combained_sec h4{
+.combained_sec h4 {
   font-family: NCTTorin;
   margin-top: 35px;
 }
 .deliverearn img {
   width: 73%;
 }
-.delivery_and_earn{
+.delivery_and_earn {
   position: relative;
-
 }
 
-.left_top{
+.left_top {
   position: absolute;
   left: 20%;
   top: 30%;
-  
 }
-.left_bottom{
+.left_bottom {
   position: absolute;
   left: 30%;
-  bottom:-12%;
+  bottom: -12%;
   text-align: center;
 }
-.right_bottom{
+.right_bottom {
   position: absolute;
   right: 15%;
-  bottom:10%;
+  bottom: 10%;
   text-align: center;
 }
 
-.card_custom_attach{
-  padding:35px 30px;
- 
+.card_custom_attach {
+  padding: 35px 30px;
 }
 
 html,
@@ -809,10 +810,10 @@ body {
   padding-bottom: 40px;
   font-family: NCTTorin;
 }
-.Parcel_Faq h2{
-font-family: NCTTorin;
+.Parcel_Faq h2 {
+  font-family: NCTTorin;
 }
-.parcel_Faq .btn{
+.parcel_Faq .btn {
   font-family: NCTTorin;
 }
 .btn-link {
@@ -833,40 +834,102 @@ font-family: NCTTorin;
   box-shadow: none !important;
 }
 
-
-.view_all_btn{
+.view_all_btn {
   margin-top: -100px;
 }
 
-.parcel_view_step:hover{
-background-color: #FEDF65;
-border-radius: 10px;
-transform: scale(1.2);
-transition: all .5s ease-in-out;
+.parcel_view_step:hover {
+  background-color: #fedf65;
+  border-radius: 10px;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
 }
-.collapse_body{
+.collapse_body {
   background-color: grey !important;
   color: white;
 }
-.card_custom_attach .fa-circle{
+.card_custom_attach .fa-circle {
   color: #ffcc00;
   font-size: 10px;
 }
-.parcel_main_content h2{
+.parcel_main_content h2 {
   font-family: NCTTorin;
 }
 
-.parcel_main_content p{
+.parcel_main_content p {
   font-family: NCTTorin;
 }
-.parcel_main_content a{
+.parcel_main_content a {
   font-family: NCTTorin;
 }
 
-.svg{
+.svg {
   margin-top: -200px;
   overflow: hidden;
- 
 }
 
+/* Popup */
+.pop_up .modal-content {
+  margin-top: 0px !important;
+}
+.popup_modal img {
+  width: 50%;
+}
+.popup_modal h2 {
+  font-family: NCTTorin;
+  font-weight: 600;
+  font-size:2vw;
+}
+.google_play_icon img {
+  width: 100%;
+}
+.google_play_icon {
+  display: flex;
+}
+.modal_container {
+  position: relative;
+}
+/* .app_store_popup{
+  position: absolute;
+  left: 38%;
+  bottom: -20px;
+  width: 20%;
+}
+.google_play_popup{
+  position: absolute;
+  left: 5%;
+  bottom: -20px;
+  width: 20%;
+} */
 
+.cross{
+  position: absolute;
+  right:1%;
+  top:2%;
+  cursor: pointer;
+ 
+}
+.modal_custom_body{
+  padding:0px !important;
+}
+.cross .fa-times{
+  color: black;
+  font-size: 20px;
+}
+.curve_img{
+  margin-top: -130px;
+}
+.playstore_popup{
+  position: absolute;
+  left:10%;
+  top:75%;
+  cursor: pointer;
+  width:15%;
+}
+.appstore_popup{
+  position: absolute;
+  left:28%;
+  top:75%;
+  cursor: pointer;
+  width:15%;
+}

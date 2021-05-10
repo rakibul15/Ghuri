@@ -1,43 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Accordion, Button, Card, useAccordionToggle } from "react-bootstrap";
+import data from "./FighterFaQData"
 const IamFighter = () => {
+  const [expanded, setExpanded] = useState(0)
+  const [questions, setQuestions] = useState(data)
     return (
-        <>
-            <Accordion>
-      <div className="accordion_faq">
-        <Accordion.Toggle as={Button} variant="link" eventKey="0">
-          <i class="fa fa-plus"></i> How do I contact the deliverer?
-        </Accordion.Toggle>
-
-        <Accordion.Collapse eventKey="0">
-          <Card.Body className="collapse_body">Hello! I'm the body</Card.Body>
-        </Accordion.Collapse>
-      </div>
-
-      <div className="accordion_faq">
-        <Accordion.Toggle as={Button} variant="link" eventKey="1">
-          <i class="fa fa-plus"></i> How do I cancel request
-        </Accordion.Toggle>
-
-        <Accordion.Collapse eventKey="1">
-          <Card.Body className="collapse_body">
-            Hello! I'm another body
-          </Card.Body>
-        </Accordion.Collapse>
-      </div>
-      <div className="accordion_faq">
-        <Accordion.Toggle as={Button} variant="link" eventKey="2">
-          <i class="fa fa-plus"></i> How do I track my delivery?
-        </Accordion.Toggle>
-
-        <Accordion.Collapse eventKey="2">
-          <div className="collapse_body">
-            <Card.Body>Hello! I'm another body</Card.Body>
+      <>
+      {questions.map((question,index) => (
+             
+           
+        <Accordion>
+          <div className="accordion_faq">
+            <Accordion.Toggle
+              as={Button}
+              variant="link"
+              eventKey="0"
+              onClick={()=>{if(expanded === 0){
+                  setExpanded(question.id)
+              }
+              else{
+                  setExpanded(0)
+              }
+                  
+              }}
+            >
+              {(expanded=== question.id)? (
+                <i class="fa fa-minus"></i>
+              ) : (
+                <i class="fa fa-plus"></i>
+              )}
+              {question.title}
+            
+            </Accordion.Toggle>
+  
+            <Accordion.Collapse eventKey="0">
+              <Card.Body className="collapse_body">{question.info}</Card.Body>
+            </Accordion.Collapse>
           </div>
-        </Accordion.Collapse>
-      </div>
-    </Accordion>
-        </>
+        </Accordion>
+         ))}
+      </>
     )
 }
 

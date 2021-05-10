@@ -39,6 +39,8 @@ import Blog from "./Components/Blog/Blog";
 import Blogdetails from "./Components/Blog/Blogdetails";
 import HealthTerms from "./Components/health/components/HealthTerms";
 import ParcelDetails from "./Components/parcelDetails/ParcelDetails";
+import Popup from "./Components/modal/Popup";
+
 
 function App() {
   return (
@@ -48,6 +50,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Header></Header>
+            <Popup></Popup>
             <Count />
             <Parcel></Parcel>
             <Gallery></Gallery>

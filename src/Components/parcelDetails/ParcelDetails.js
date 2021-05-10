@@ -18,7 +18,7 @@ import parcelbg from "../../images/ParcelDetails/main_content_bg.png"
 import { Accordion, Button, Card, useAccordionToggle } from "react-bootstrap";
 import IamMerchant from "./IamMerchant";
 import IamFighter from "./IamFighter";
-
+import curvelink from "../../images/ParcelDetails/curvelink.png"
 
 const ParcelDetails = () => {
   const [show, setShow] = useState(false)
@@ -26,10 +26,10 @@ const ParcelDetails = () => {
 
   return (
     <div>
-      <div className="parcel_main">
-        <div className="Nav_overflow">
+      <div className="bgg ">
+        <div className="Nav_overflow container">
           <div className="row parcel_main_content">
-            <div className="col-sm-1"></div>
+            {/* <div className="col-sm-1"></div> */}
             <div className="col-sm-7">
               <div className="parcel_main_content_small">
                 <h5>Ghuri Parcel</h5>
@@ -70,17 +70,17 @@ const ParcelDetails = () => {
               </div>
             </div>
             <div className="col-sm-3 text-right">
-              <img
+              {/* <img
                 src={parcelphone}
                 className="img-fluid"
                 alt="Parcel Phone Image"
-              />
+              /> */}
             </div>
-            <div className="col-sm-1"></div>
+            {/* <div className="col-sm-1"></div> */}
           </div>
           
         </div>
-        <svg className="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280"><path fill="#fff" fill-opacity="1" d="M0,0L450,128L1000,256L1440,128L1440,320L960,320L480,320L0,320Z"></path></svg>
+       {/* <img src={curvelink} alt="" className="img-fluid curve_img" /> */}
       </div>
      
       {/* Parcel Details Header End */}
@@ -89,23 +89,23 @@ const ParcelDetails = () => {
         <h2 className="text-center mb-5">What We Deliver</h2>
         <div>
           <div className="row mt-4 mb-5 d-flex justify-content-center deliver">
-            <div className="col-sm-2 text-center">
+            <div className="col-sm-2 col-4 text-center">
               <img src={documents} className="img-fluid" alt="" />
               <p>Documents</p>
             </div>
-            <div className="col-sm-2  text-center">
+            <div className="col-sm-2 col-4 text-center">
               <img src={packages} className="img-fluid" alt="" />
               <p>Packages</p>
             </div>
-            <div className="col-sm-2  text-center">
+            <div className="col-sm-2 col-4  text-center">
               <img src={accessories} className="img-fluid" alt="" />
               <p>Accessories</p>
             </div>
-            <div className="col-sm-2  text-center">
+            <div className="col-sm-2 col-4 text-center">
               <img src={electronics} className="img-fluid" alt="" />
               <p>Electronics</p>
             </div>
-            <div className="col-sm-2  text-center">
+            <div className="col-sm-2 col-4 text-center">
               <img src={giftItems} className="img-fluid" alt="" />
               <p>GiftItems</p>
             </div>

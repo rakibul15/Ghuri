@@ -18,7 +18,8 @@ const IamMerchant = () => {
             eventKey="0"
             onClick={()=>{if(expanded === 0){
                 setExpanded(question.id)
-            }else{
+            }
+            else{
                 setExpanded(0)
             }
                 
