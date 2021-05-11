@@ -211,15 +211,15 @@ margin-left:2%;
   color: #ffcc00;
   font-family: abel;
   font-weight: 600;
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .form_applicant label {
-  font-family: NCTTorin;
+  font-family: Abel;
   font-weight: 500;
   font-size: 14px;
 }
 .form_applicant input {
-  font-family: NCTTorin;
+  font-family: Abel;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
@@ -230,17 +230,17 @@ margin-left:2%;
   border-radius: 0px !important;
 }
 .form_applicant input:focus {
-  font-family: NCTTorin;
+  font-family: Abel;
   background-color: transparent;
   outline: none !important;
   box-shadow: none !important;
   border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 .form_applicant input::placeholder {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .date_applicant {
-  font-family: NCTTorin;
+  font-family: Abel;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
   box-shadow: none !important;
   margin-top: 12px;
@@ -250,7 +250,7 @@ margin-left:2%;
   background-color: #ffcc00 !important;
   color: black !important;
   border: none !important;
-  font-family: NCTTorin;
+  font-family: Abel;
   padding: 3px 30px;
   outline: none !important;
   box-shadow: none !important;
@@ -259,7 +259,7 @@ margin-left:2%;
   background-color: #ffcc00 !important;
   color: black !important;
   border: none !important;
-  font-family: NCTTorin;
+  font-family: Abel;
   padding: 3px 30px;
   outline: none !important;
   box-shadow: none !important;
@@ -268,7 +268,7 @@ margin-left:2%;
   background-color: #ffcc00 !important;
   color: black !important;
   border: none !important;
-  font-family: NCTTorin;
+  font-family: Abel;
   padding: 3px 30px;
   outline: none !important;
   box-shadow: none !important;
@@ -277,7 +277,7 @@ margin-left:2%;
   background-color: #ffcc00 !important;
   color: black;
   border: none;
-  font-family: NCTTorin;
+  font-family: Abel;
   padding: 3px 30px;
   outline: none !important;
   box-shadow: none !important;
@@ -297,7 +297,7 @@ margin-left:2%;
   font-size: 12px;
 }
 .form_control_select option {
-  font-family: NCTTorin !important;
+  font-family: Abel !important;
   font-size: 12px;
 }
 .form_control_select:focus {
@@ -321,11 +321,11 @@ margin-left:2%;
 }
 
 .package_confirm_details p {
-  font-family: NCTTorin;
+  font-family: Abel;
   font-size: 13px;
 }
 .package_confirm_details p span {
-  font-family: NCTTorin;
+  font-family: Abel;
   font-size: 13px;
   font-weight: 600;
 }
@@ -511,7 +511,7 @@ margin-left:2%;
   background-color: #ffcc00 !important;
   color: black !important;
   border: none !important;
-  font-family: NCTTorin;
+  font-family: Abel;
   outline: none !important;
   box-shadow: none !important;
 }
@@ -519,7 +519,7 @@ margin-left:2%;
   background-color: #ffcc00 !important;
   color: black !important;
   border: none !important;
-  font-family: NCTTorin;
+  font-family: Abel;
   outline: none !important;
   box-shadow: none !important;
 }
@@ -527,7 +527,7 @@ margin-left:2%;
   background-color: #ffcc00 !important;
   color: black !important;
   border: none !important;
-  font-family: NCTTorin;
+  font-family: Abel;
   outline: none !important;
   box-shadow: none !important;
 }
@@ -535,12 +535,12 @@ margin-left:2%;
   background-color: #ffcc00 !important;
   color: black;
   border: none;
-  font-family: NCTTorin;
+  font-family: Abel;
   outline: none !important;
   box-shadow: none !important;
 }
 .modal_title {
-  font-family: NCTTorin;
+  font-family: Abel;
   font-size: 20px;
 }
 .modal_body input {
@@ -550,7 +550,7 @@ margin-left:2%;
   background-color: transparent;
 }
 .modal_body input:focus {
-  font-family: NCTTorin;
+  font-family: Abel;
   background-color: transparent;
   outline: none !important;
   box-shadow: none !important;
@@ -560,7 +560,7 @@ margin-left:2%;
   padding-right: 0px !important;
 }
 .modal_body h6 {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .GP .input-group-text {
   font-size: 16px;
@@ -591,13 +591,14 @@ margin-left:2%;
     #fedf65,
     #fedf65
   ); */
-
 }
-.bgg{
+.bgg {
   background-image: url(../images/ParcelDetails/bg.png);
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   height: 115vh;
+
+  margin-top: -60px;
 }
 .parcel_main_content {
   padding-top: 100px;
@@ -610,17 +611,20 @@ margin-left:2%;
   margin-bottom: 100px;
 }
 .what_we_deliver h2 {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .what_we_deliver P {
-  font-family: NCTTorin;
+  font-family: Abel;
+  margin-top: 8px;
 }
-
+.how_to_deliver p span {
+  margin-right: 15px;
+}
 .how_to_deliver_main h2 {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .how_to_deliver p {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 
 .how_to_container_bg {
@@ -640,7 +644,7 @@ margin-left:2%;
 }
 .Play_fixed {
   margin-left: 25px;
-  margin-right: 60px;
+  margin-right: 45px;
 }
 
 .Parecl_app {
@@ -663,7 +667,7 @@ margin-left:2%;
 }
 
 .deliver img {
-  width: 60%;
+  width: 50%;
 }
 
 .howdeliver img {
@@ -699,10 +703,10 @@ margin-left:2%;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
 }
 .content_info_box h2 {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .content_info_box small {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .rider img {
   width: 100%;
@@ -710,17 +714,19 @@ margin-left:2%;
 .btn_Faq_active {
   width: 100% !important;
   padding: 10px 20px;
-  background-color: #ffcc00 !important;
-  border: 2px solid white !important;
-  box-shadow: 2px 2px 10px black;
+  background-color: #ffcc00;
+  /* border: 2px solid white !important; */
+  box-shadow: 2px 2px 10px white;
   outline: none !important;
+  /* opacity: 40%;
+  color: black; */
 }
 .btn_Faq_active:active {
   box-shadow: 2px 2px 10px black;
   outline: none !important;
 }
 .btn_Faq_active:focus {
-  box-shadow: 2px 2px 10px black;
+  box-shadow: none;
   outline: none !important;
 }
 
@@ -753,13 +759,13 @@ margin-left:2%;
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 10px;
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .combained_sec h2 {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .combained_sec h4 {
-  font-family: NCTTorin;
+  font-family: Abel;
   margin-top: 35px;
 }
 .deliverearn img {
@@ -808,13 +814,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 40px;
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .Parcel_Faq h2 {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .parcel_Faq .btn {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 .btn-link {
   color: black !important;
@@ -845,22 +851,22 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .collapse_body {
-  background-color: grey !important;
-  color: white;
+  margin-left: 28px;
 }
 .card_custom_attach .fa-circle {
   color: #ffcc00;
   font-size: 10px;
+  margin-right: 8px;
 }
 .parcel_main_content h2 {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 
-.parcel_main_content p {
-  font-family: NCTTorin;
+.parcel_main_conten tp {
+  font-family: Abel;
 }
 .parcel_main_content a {
-  font-family: NCTTorin;
+  font-family: Abel;
 }
 
 .svg {
@@ -876,9 +882,9 @@ body {
   width: 50%;
 }
 .popup_modal h2 {
-  font-family: NCTTorin;
+  font-family: Abel;
   font-weight: 600;
-  font-size:2vw;
+  font-size: 2vw;
 }
 .google_play_icon img {
   width: 100%;
@@ -902,34 +908,43 @@ body {
   width: 20%;
 } */
 
-.cross{
+.cross {
   position: absolute;
-  right:1%;
-  top:2%;
+  right: 1%;
+  top: 2%;
   cursor: pointer;
- 
 }
-.modal_custom_body{
-  padding:0px !important;
+.modal_custom_body {
+  padding: 0px !important;
 }
-.cross .fa-times{
+.cross .fa-times {
   color: black;
   font-size: 20px;
 }
-.curve_img{
+.curve_img {
   margin-top: -130px;
 }
-.playstore_popup{
+.playstore_popup {
   position: absolute;
-  left:10%;
-  top:75%;
+  left: 10%;
+  top: 75%;
   cursor: pointer;
-  width:15%;
+  width: 15%;
 }
-.appstore_popup{
+.appstore_popup {
   position: absolute;
-  left:28%;
-  top:75%;
+  left: 28%;
+  top: 75%;
   cursor: pointer;
-  width:15%;
+  width: 15%;
+}
+
+.parcel_view_step {
+  cursor: pointer;
+}
+.accordion_faq img {
+  margin-right: 20px;
+}
+.parcel_main_section {
+  margin-top: 100px;
 }

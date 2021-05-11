@@ -42,7 +42,7 @@ const Topnav = () => {
                 Nurani Radio
               </NavDropdown.Item>
 
-              {/* <NavDropdown.Item href="/ParcelDetails">Parcel</NavDropdown.Item> */}
+              <NavDropdown.Item href="/ParcelDetails">Parcel</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Merchant" id="collasible-nav-dropdown">
               <NavDropdown.Item
