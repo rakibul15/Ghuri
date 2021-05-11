@@ -32,17 +32,18 @@ const Topnav = () => {
           <Nav className="ml-auto ghuri_nav">
             <Nav.Link href="/home">Home</Nav.Link>
             <NavDropdown title="Services" id="collasible-nav-dropdown">
+            <NavDropdown.Item href="/ghuriparcel">Parcel</NavDropdown.Item>
               <NavDropdown.Item
                 target="_Blank"
                 href="https://nuraniinteriorbd.com/"
               >
-                Nurani Interior
+              Interior
               </NavDropdown.Item>
               <NavDropdown.Item target="_Blank" href="https://nuraniradio.com/">
-                Nurani Radio
+              News
               </NavDropdown.Item>
 
-              <NavDropdown.Item href="/ghuriparcel">Parcel</NavDropdown.Item>
+            
             </NavDropdown>
             <NavDropdown title="Merchant" id="collasible-nav-dropdown">
               <NavDropdown.Item
