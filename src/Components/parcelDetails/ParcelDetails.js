@@ -61,7 +61,7 @@ const ParcelDetails = () => {
                 </a>{" "}
                 <br />
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuridrive"
+                  href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
                   target="_blank"
                   className="btn app_store_btn   mt-4 btn_box_shadow"
                   rel="noreferrer"
