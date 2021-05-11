@@ -9,15 +9,15 @@ const Count = () => {
                     <div className="total Count ">
                             <div className="row sm_liline">
                                 <div className="col-sm-4 info">
-                                    <h2>500+</h2>
+                                    <h2>1000+</h2>
                                     <p>App Download</p>
                                 </div>
                                 <div className="col-sm-4 info">
-                                    <h2>1000+</h2>
+                                    <h2>10000+</h2>
                                     <p>Parcel Delivered</p>
                                 </div>
                                 <div className="col-sm-4 info">
-                                    <h2>500+</h2>
+                                    <h2>50000+</h2>
                                     <p>Lives Impacted</p>
                                 </div>
                             </div>

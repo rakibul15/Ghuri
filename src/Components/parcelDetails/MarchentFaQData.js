@@ -1,33 +1,45 @@
 const questions = [
     {
       id: 1,
-      title: 'Do I have to allow the use of cookies?',
+      title: 'How can I log in ?',
       info:
-        'Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.',
+      'After successful registration, you have to wait until your ID gets approved by GHURI. After that you can login.',
     },
     {
       id: 2,
-      title: 'How do I change my My Page password?',
+      title: 'How can I recover my password?',
       info:
-        'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+      'You can recover your password by simply using the “Forget Password” feature in Merchant Login Page.',
     },
     {
       id: 3,
-      title: 'What is BankID?',
+      title: 'How can I cancel a request ?',
       info:
-        'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
+      'You can cancel the request until the pick up man picked up the parcel. To do this, you have to go to the "Parcel" section in the Merchant Panel and press the “DELETE” red icon.',
     },
     {
       id: 4,
-      title: 'Whose birth number can I use?',
+      title: 'How do I request for delivery?',
       info:
-        'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
+      'After successful login you can add a parcel in your merchant panel.',
     },
     {
       id: 5,
-      title: 'When do I recieve a password ordered by letter?',
+      title: 'How do I track my delivery?',
       info:
-        'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
+      'After adding a parcel from the merchant panel you will get a 6 digit parcel track ID from GHURI (GP-XXXXXX). With this track ID you can track the parcel anytime from our GHURI App which is available in Google Play Store.'  
     },
+    {
+      id:6,
+      title:'How do I know how much to pay?',
+      info:'For every entry you will get the details in your merchant panel with charges.',
+    },
+    {
+      id:7,
+      title:'How to contact GHURI? ',
+      info:'You can reach GHURI 24/7 help center: 0963822211',
+    },
+    
+    
   ]
   export default questions

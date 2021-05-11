@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Accordion, Button, Card, useAccordionToggle } from "react-bootstrap";
 import data from "./MarchentFaQData"
+import plus from "../../images/ParcelDetails/plus.png"
+import minus from "../../images/ParcelDetails/minus.png"
 const IamMerchant = () => {
     const [expanded, setExpanded] = useState(0)
     const [questions, setQuestions] = useState(data)
@@ -26,9 +28,9 @@ const IamMerchant = () => {
             }}
           >
             {(expanded=== question.id)? (
-              <i class="fa fa-minus"></i>
+                <img src={minus} alt="" />
             ) : (
-              <i class="fa fa-plus"></i>
+              <img src={plus} alt="" />
             )}
             {question.title}
           

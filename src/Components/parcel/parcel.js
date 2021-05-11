@@ -73,10 +73,10 @@ const Parcel = () => {
                 offer home delivery service to your business's customers all
                 over Dhaka city.
               </p>
-              {/* <button className="btn  mt-3 learn_more">
+              <a href="/ghuriparcel" className="btn  mt-2 learn_more">
                 Learn More
                 <i class="fa fa-chevron-right"></i> 
-              </button> */}
+              </a>
             </div>
             <div className="col-sm-6 product_img">
               <img src={parcelimg} alt="Ride " />

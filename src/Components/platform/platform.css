@@ -58,6 +58,7 @@
 }
 .product_img img{
     width: 100%;
+    margin-top: 20px;
 }
 .learn_more{
     background-color: #ffcc00;
