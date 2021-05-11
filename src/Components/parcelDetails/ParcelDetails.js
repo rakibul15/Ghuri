@@ -122,9 +122,9 @@ const ParcelDetails = () => {
       </section>
 
       {/* How to deliver Parcel */}
-      <div className="row mt-5 mb-5 how_to_deliver_main">
+      <div className="row mt-5 how_to_deliver_main">
         <div className="col-sm-12  text-center">
-          <h2 className="mb-4">
+          <h2>
             <strong>How to deliver parcel</strong>
           </h2>
         </div>
@@ -343,7 +343,7 @@ const ParcelDetails = () => {
         <div className="row d-flex justify-content-center mt-5 mb-4">
           <div className="col-sm-4  col-md-2 col-6">
             <button
-              className={"btn " + active1}
+              className={"btn  btn-left " + active1}
               onClick={() => {
                 setShow(false);
                 setAllFaq(false);
@@ -357,7 +357,7 @@ const ParcelDetails = () => {
           </div>
           <div className="col-sm-4 col-md-2 col-6">
             <button
-               className={"btn " + active2}
+               className={"btn  btn-right " + active2}
               onClick={() => {
                 setShow(true);
                 setAllFaq(false);

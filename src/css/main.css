@@ -712,7 +712,7 @@ margin-left:2%;
   width: 100%;
 }
 .btn_Faq_active {
-  width: 100% !important;
+  width: 100%;
   padding: 10px 20px;
   background-color: #ffcc00;
   /* border: 2px solid white !important; */
@@ -731,7 +731,7 @@ margin-left:2%;
 }
 
 .btn_Faq {
-  width: 100% !important;
+  width: 100%;
   padding: 10px 20px;
   border: 1px solid #ffcc00;
   outline: none !important;
@@ -947,4 +947,7 @@ body {
 }
 .parcel_main_section {
   margin-top: 100px;
+}
+.how_to_deliver_main{
+  margin-bottom: 20px;
 }
