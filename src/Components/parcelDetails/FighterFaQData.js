@@ -1,29 +1,30 @@
 const questions = [
    
  
-    {
-      id: 1,
-      title: 'How do I change my My Page password?',
-      info:
-        'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
-    },
-    {
-      id: 2,
-      title: 'What is BankID?',
-      info:
-        'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
-    },
-    {
-      id: 3,
-      title: 'Whose birth number can I use?',
-      info:
-        'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
-    },
-    {
-      id: 4,
-      title: 'When do I recieve a password ordered by letter?',
-      info:
-        'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
-    },
+  {
+    id:1,
+    title:'How can I be a Fighter?',
+    info:'You can be a GHURI Fighter by getting registered with GHURI.',
+  },
+  {
+    id:2,
+    title:'Where to find my pickup and delivery list?',
+    info:'You will get those lists by downloading Ghuri Fighter App.',
+  },
+  {
+    id:3,
+    title:'Where to find my ID and Password?',
+    info:'GHURI will provide you the ID and Password personally after getting registered with us.',
+  },  {
+    id:4,
+    title:'How to change my password?',
+    info:'Fighter can change his or her password anytime from the GHURI Fighter App.',
+  },
+  {
+    id:5,
+    title:'How to contact GHURI?',
+    info:'You can reach GHURI 24/7 help center: 0963822211',
+  },
+
   ]
   export default questions

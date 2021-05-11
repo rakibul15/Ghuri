@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Accordion, Button, Card, useAccordionToggle } from "react-bootstrap";
 import data from "./FighterFaQData"
+import plus from "../../images/ParcelDetails/plus.png"
+import minus from "../../images/ParcelDetails/minus.png"
 const IamFighter = () => {
   const [expanded, setExpanded] = useState(0)
   const [questions, setQuestions] = useState(data)
@@ -25,9 +27,11 @@ const IamFighter = () => {
               }}
             >
               {(expanded=== question.id)? (
-                <i class="fa fa-minus"></i>
+                 <img src={minus} alt="" />
+                // <i class="fa fa-minus"></i>
+               
               ) : (
-                <i class="fa fa-plus"></i>
+                <img src={plus} alt="" />
               )}
               {question.title}
             
