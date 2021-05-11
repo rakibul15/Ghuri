@@ -190,7 +190,7 @@ function App() {
           </Route>
 
           {/* Parcel Details */}
-          <Route path="/parcelDetails">
+          <Route path="/ghuriparcel">
             <ParcelDetails></ParcelDetails>
           </Route>
 
