@@ -26,17 +26,11 @@
   padding-bottom: 0px;
   /* background-color: white; */
 }
-
 .nav-link{
 color: black;
-
 }
-
 .nav-link:hover{
-
- 
   color: black !important;
- 
 }
 .language {
   border: none;
@@ -55,9 +49,13 @@ color: black;
 .dropdown-menu {
   position: static;
   float: none;
-  background-color: #ffcc00 !important;
+  /* background-color: #ffcc00 !important; */
   padding: 0px !important;
   font-family: Abel;
+  width: 700px;
+  margin-left: -70%;
+  border:0px;
+  box-shadow: 0 12px 15px 0 rgb(21 41 52 / 5%);
 }
 .ghuri_nav .dropdown-item.active,
 .dropdown-item:hover {
@@ -90,6 +88,84 @@ color: black;
 
 .custom_nav:hover{
   color: #fff !important;
+}
+
+
+
+.sub {
+  display: block !important;
+  font-size: 12px;
+ 
+  letter-spacing: 0;
+}
+
+.nav-icon a{
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding: 10px 46px 11px 66px;
+  border-radius: 4px;
+  background-position: left 8px center;
+  
+}
+.parcel_icon a{
+  background-image: url(../../images/others/parcel\ \(2\).png);
+  background-size: 28px 28px;
+  border-image: 1px solid red;
+
+}
+.health_icon a{
+background-image: url(../../images/others/Health.png);
+background-size: 32px 32px;
+
+}
+.interior_icon a{
+  background-image: url(../../images/others/Interior-icon.png);
+  background-size: 32px 32px;
+
+
+}
+.news_icon a{
+  background-image: url(../../images/others/news.png);
+  background-size: 32px 32px;
+
+
+}
+
+.topmenu .dropdown-menu .car-icon  a, .topmenu .dropdown-menu .bike-icon > a, .topmenu .dropdown-menu .cycle-icon > a, .topmenu .dropdown-menu .food-icon > a, .topmenu .dropdown-menu .tong-icon > a, .topmenu .dropdown-menu .courier-icon > a, .topmenu .dropdown-menu .parcel-icon > a, .topmenu .dropdown-menu .shop-icon > a, .topmenu .dropdown-menu .health-icon > a {
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding: 8px 8px 8px 68px;
+  /* border: 1px solid transparent; */
+  border-radius: 4px;
+  background-position: left 8px center;
+}
+.topmenu .dropdown-menu .menu-item a {
+  padding: 0;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+ 
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.dropdown-item img{
+  position:absolute;
+}
+.download_app_all img{
+margin-top: 6px;
+}
+.drop_down_content{
+  display: none;
+}
+.nav_dropdown:hover .drop_down_content {
+  display: block;
+
 }
 @media only screen and (max-width: 600px) {
   .navbar-nav {
