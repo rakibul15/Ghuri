@@ -4,7 +4,10 @@
   .nav-link.active a {
     margin-left: 0px !important;
   }
-
+  .download_app_all img{
+    
+    margin-bottom: 20px;
+  }
   /* Ghuri Header */
 
   .ghuri-button {
@@ -226,36 +229,6 @@
     padding: 10% !important;
   }
 
-  /* Headline */
-  /* .headline_img {
-    margin-top: 0px !important;
-  }
-  .headline_box img {
-    width: 80% !important;
-    height: 80px !important;
-    object-fit: scale-down;
-    height: 80px !important;
-  }
-
-  .headline_box {
-    height: auto !important;
-  }
-  .headline_box h5 {
-    font-size: 1rem;
-    display: block;
-    white-space: nowrap;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  } */
-
-  /* SingleNews */
-  /* .single_news {
-    display: inline !important;
-    width: 100%;
-  } */
 
   .single_grid {
     grid-template-columns: 11fr !important;
@@ -409,17 +382,26 @@
   width: 96% !important;
 
 }
-.dropdown-menu {
+.nav_dropdown .dropdown-menu {
    
   width:100%;
-  margin-left:0%;
+  margin-left:0px;
 
 }
 .ghuri_nav {
-  height:300px;
+  max-height:95vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
+.marchent_custom .dropdown-menu{
+  width:100%;
+  margin-left:0px;
+}
+.nav_dropdown .dropdown-item {
+  width: 90%;
+  margin:0px;
+} 
 }
 
 
@@ -506,6 +488,12 @@
     overflow-y: scroll;
  
   }
+  .nav_dropdown .dropdown-menu {
+   
+    width: 300px;
+    margin-left: 0%;
+ 
+  }
 
   /* Gallery Ends*/
 }
@@ -518,7 +506,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
-  .dropdown-menu {
+  .nav_dropdown .dropdown-menu {
    
     width: 600px;
     margin-left: -55%;

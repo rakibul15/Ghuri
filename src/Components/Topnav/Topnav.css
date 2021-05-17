@@ -9,7 +9,8 @@
 .navbar-light .navbar-nav .nav-link {
   color: rgb(0, 0, 0);
   font-weight: 500;
-  font-family:Abel ;
+  font-family:Abel
+   ;
 }
 
 .navbar {
@@ -46,12 +47,12 @@ color: black;
 .navbar-nav .nav-link {
   padding-left:1.4rem !important;
 }
-.dropdown-menu {
+.nav_dropdown .dropdown-menu {
   position: static;
   float: none;
   /* background-color: #ffcc00 !important; */
   padding: 0px !important;
-  font-family: Abel;
+  font-family:Roboto;
   width: 700px;
   margin-left: -70%;
   border:0px;
@@ -59,14 +60,29 @@ color: black;
 }
 .nav_dropdown .dropdown-item {
   width: 90%;
-  margin:4px 20px;
+  margin:10px 20px;
 } 
+/* .merchant_drop{
+  width: 80%;
+  margin:4px 20px;
+  background-color: transparent !important;
+} */
+.marchent_custom .merchant_drop{
+  position: static;
+  float: none;
+  /* background-color: #ffcc00 !important; */
+  padding: 0px !important;
+  font-family: Abel;
+  width:97%;
+  border:0px;
+
+}
 .ghuri_nav .dropdown-item.active,
 .dropdown-item:hover {
   background-color: transparent !important;
   /* color: white !important; */
   transition: 1s;
-  border: 1px solid black;
+  border: 1px solid #ffcc00;
 }
 
 .ghuri_nav .dropdown-item.active,
@@ -102,8 +118,9 @@ color: black;
 .sub {
   display: block !important;
   font-size: 12px;
- 
+ color: black !important;
   letter-spacing: 0;
+  font-family:Roboto;
 }
 
 .nav-icon a{
@@ -167,7 +184,9 @@ background-size: 28px 28px;
   position:absolute;
 }
 .download_app_all img{
-margin-top: 6px;
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 12px;
 }
 .drop_down_content{
   display: none;
@@ -177,28 +196,36 @@ margin-top: 6px;
 
 }
 hr {
-  margin-top:0rem;
-  margin-bottom:0.3rem;
+  margin-top:0.7rem;
+  margin-bottom:0.7rem;
   border: 0;
   border-top: 1px solid rgba(0,0,0,.1);
 }
 .download_app_all h6{
   margin: 0px !important;
+  font-family: Roboto;
 }
-/* .dropdown-menu {
-  max-height:200px;
-  overflow:scroll !important; 
-} */
+.marchent_custom .dropdown-menu{
+  width: 300px;
+  margin-left: -20px;
+}
 
+.marchent_custom_nav{
+  width: 100px !important;
+}
+.nav-item .dropdown{
+  width: 100%;
+}
 
 
 @media only screen and (max-width: 600px) {
   .navbar-nav {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    padding-left:0;
     margin-bottom: 0;
     list-style: none;
     background-color: #ffcc00;
+ 
   }
 }

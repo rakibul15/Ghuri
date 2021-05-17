@@ -36,23 +36,6 @@ const Topnav = () => {
               id="collasible-nav-dropdown"
               className="nav_dropdown"
             >
-              {/* <NavDropdown.Item className="menu-item" href="/ghuriparcel">
-                Parcel
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                className="menu-item item"
-                target="_Blank"
-                href="https://nuraniinteriorbd.com/"
-              >
-                Interior
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                className="menu-item"
-                target="_Blank"
-                href="https://nuraniradio.com/"
-              >
-                News
-              </NavDropdown.Item> */}
               <div
                 class="dropdown-menu  drop_down_custom show drop_down_content"
                 aria-labelledby="menu-item-dropdown-223"
@@ -156,35 +139,9 @@ const Topnav = () => {
                     </li>
                   </div>
                 </div>
-                {/* <div className="row">
-                  <div className="col-sm-6">
-                    <li
-                      id="menu-item-144"
-                      class="
-                      news_icon
-                      nav-icon
-                      menu-item
-                      menu-item-type-post_type
-                      menu-item-object-page menu-item-144
-                      nav-item
-                      "
-                    >
-                      <a
-                        title="News"
-                        target="_Blank"
-                        href="https://nuraniradio.com/"
-                        class="dropdown-item"
-                      >
-                        News
-                        <span class="sub">
-                          Get Your Food in Less Than an Hour
-                        </span>
-                      </a>
-                    </li>
-                  </div>
-                </div> */}
+
                 <hr />
-                <div className="row ml-2 mb-1 download_app_all">
+                <div className="row ml-2 download_app_all">
                   <div className="col-md-6 col-sm-12">
                     <h6>Download User App</h6>
                     <a
@@ -192,20 +149,19 @@ const Topnav = () => {
                       target="_Blank"
                     >
                       <img
-                        width="140"
-                        height="38"
+                        width="146"
+                        height="44"
                         src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
-                        title="Google-Play-nb"
+                        title="Google Play"
                       />
                     </a>
-                    <br />
 
                     <a>
                       <img
-                        width="140"
-                        height="38"
+                        width="146"
+                        height="44"
                         src="https://pathao.com/wp-content/uploads/2018/12/App-Store-nb.png"
-                        title="App-Store-nb"
+                        title="App-Store"
                       />
                     </a>
                   </div>
@@ -216,87 +172,72 @@ const Topnav = () => {
                       target="_Blank"
                     >
                       <img
-                        width="140"
-                        height="38"
+                        width="146"
+                        height="44"
                         src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
-                        title="Google-Play-nb"
+                        title="Google Play"
                       />
                     </a>
                   </div>
                 </div>
               </div>
             </NavDropdown>
-            <NavDropdown title="Merchant" id="collasible-nav-dropdown">
-              {/* <NavDropdown.Item
-                href="/merchant"
-                onClick={() => riderectMessage()}
-                className="hover_color"
-              >
-                Signup
-              </NavDropdown.Item> */}
-              {/* <NavDropdown.Item
-                target="_Blank"
-                className="hover_color"
-                href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
-              >
-                Login
-              </NavDropdown.Item> */}
-
-              <div className="row merchant_drowdown">
-              <div className="col-sm-10">
-                    <li
-                      id="menu-item-144"
-                      class="
-                      parcel_icon
-                      nav-icon
-                      menu-item
-                      menu-item-type-post_type
-                      menu-item-object-page 
-                      nav-item
-                      car
-                      "
-                    >
-                      <a
-                        title="Parcel"
-                        href="/ghuriparcel"
-                        class="dropdown-item"
-                      >
-                        {" "}
-                        Parcel
-                        <span class="sub">
-                          On Demand Delivery at Your Doorstep
-                        </span>
-                      </a>
-                    </li>
-                  </div>
-                  <div className="col-sm-10">
-                    <li
-                      id="menu-item-144"
-                      class="
-                      parcel_icon
+            <NavDropdown
+              className="marchent_custom"
+              title="Merchant"
+              id="collasible-nav-dropdown"
+            >
+              <div className="merchant_drop m-1">
+                <li
+                  id="menu-item-144"
+                  class="
+                      health_icon
                       nav-icon
                       menu-item
                       menu-item-type-post_type
                       menu-item-object-page menu-item-144
                       nav-item
-                      car
                       "
-                    >
-                      <a
-                        title="Parcel"
-                        href="/ghuriparcel"
-                        class="dropdown-item"
-                      >
-                        {" "}
-                        Parcel
-                        <span class="sub">
-                          On Demand Delivery at Your Doorstep
-                        </span>
-                      </a>
-                    </li>
-                  </div>
+                >
+                  <a
+                    title="Health"
+                    href="/merchant"
+                    onClick={() => riderectMessage()}
+                    className="hover_color"
+                    class="dropdown-item"
+                  >
+                    Signup
+                    <span class="sub">Get Your Food in Less Than an Hour</span>
+                  </a>
+                </li>
+              </div>
+
+              <div className="merchant_drop m-1">
+                <li
+                  id="menu-item-144"
+                  class="
+                      health_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                >
+                  <a
+                    title="Health"
+                    target="_Blank"
+                    className="hover_color"
+                    href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
+                    class="dropdown-item"
+                  >
+                    Login
+                    <span class="sub">Get Your Food in Less Than an Hour</span>
+                  </a>
+                </li>
               </div>
             </NavDropdown>
+
             <Nav.Link href="/health" className="nav_color">
               Health
             </Nav.Link>
