@@ -54,23 +54,23 @@ const Topnav = () => {
                 News
               </NavDropdown.Item> */}
               <div
-                class="dropdown-menu show drop_down_content"
+                class="dropdown-menu  drop_down_custom show drop_down_content"
                 aria-labelledby="menu-item-dropdown-223"
                 role="menu"
               >
                 <div className="row">
-                  <div className="col-sm-6  ">
+                  <div className="col-sm-12 col-md-6  ">
                     <li
                       id="menu-item-144"
                       class="
-        parcel_icon
-        nav-icon
-        menu-item
-        menu-item-type-post_type
-        menu-item-object-page menu-item-144
-        nav-item
-        car
-      "
+                      parcel_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      car
+                      "
                     >
                       <a
                         title="Parcel"
@@ -85,17 +85,17 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
-                  <div className="col-sm-6">
+                  <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
                       class="
-        health_icon
-        nav-icon
-        menu-item
-        menu-item-type-post_type
-        menu-item-object-page menu-item-144
-        nav-item
-      "
+                      health_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
                     >
                       <a title="Health" href="/health" class="dropdown-item">
                         Health
@@ -105,17 +105,17 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
-                  <div className="col-sm-6">
+                  <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
                       class="
-        interior_icon
-        nav-icon
-        menu-item
-        menu-item-type-post_type
-        menu-item-object-page menu-item-144
-        nav-item
-      "
+                      interior_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
                     >
                       <a
                         target="_Blank"
@@ -130,7 +130,7 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
-                  <div className="col-sm-6">
+                  <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
                       class="
@@ -184,7 +184,7 @@ const Topnav = () => {
                   </div>
                 </div> */}
                 <hr />
-                <div className="row ml-2 mb-4 download_app_all">
+                <div className="row ml-2 mb-1 download_app_all">
                   <div className="col-md-6 col-sm-12">
                     <h6>Download User App</h6>
                     <a
@@ -192,8 +192,8 @@ const Topnav = () => {
                       target="_Blank"
                     >
                       <img
-                        width="146"
-                        height="44"
+                        width="140"
+                        height="38"
                         src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
                         title="Google-Play-nb"
                       />
@@ -202,8 +202,8 @@ const Topnav = () => {
 
                     <a>
                       <img
-                        width="146"
-                        height="44"
+                        width="140"
+                        height="38"
                         src="https://pathao.com/wp-content/uploads/2018/12/App-Store-nb.png"
                         title="App-Store-nb"
                       />
@@ -216,8 +216,8 @@ const Topnav = () => {
                       target="_Blank"
                     >
                       <img
-                        width="146"
-                        height="44"
+                        width="140"
+                        height="38"
                         src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
                         title="Google-Play-nb"
                       />
@@ -227,20 +227,75 @@ const Topnav = () => {
               </div>
             </NavDropdown>
             <NavDropdown title="Merchant" id="collasible-nav-dropdown">
-              <NavDropdown.Item
+              {/* <NavDropdown.Item
                 href="/merchant"
                 onClick={() => riderectMessage()}
                 className="hover_color"
               >
                 Signup
-              </NavDropdown.Item>
-              <NavDropdown.Item
+              </NavDropdown.Item> */}
+              {/* <NavDropdown.Item
                 target="_Blank"
                 className="hover_color"
                 href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
               >
                 Login
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
+
+              <div className="row merchant_drowdown">
+              <div className="col-sm-10">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      parcel_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page 
+                      nav-item
+                      car
+                      "
+                    >
+                      <a
+                        title="Parcel"
+                        href="/ghuriparcel"
+                        class="dropdown-item"
+                      >
+                        {" "}
+                        Parcel
+                        <span class="sub">
+                          On Demand Delivery at Your Doorstep
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                  <div className="col-sm-10">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      parcel_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      car
+                      "
+                    >
+                      <a
+                        title="Parcel"
+                        href="/ghuriparcel"
+                        class="dropdown-item"
+                      >
+                        {" "}
+                        Parcel
+                        <span class="sub">
+                          On Demand Delivery at Your Doorstep
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+              </div>
             </NavDropdown>
             <Nav.Link href="/health" className="nav_color">
               Health

@@ -57,21 +57,28 @@ color: black;
   border:0px;
   box-shadow: 0 12px 15px 0 rgb(21 41 52 / 5%);
 }
+.nav_dropdown .dropdown-item {
+  width: 90%;
+  margin:4px 20px;
+} 
 .ghuri_nav .dropdown-item.active,
 .dropdown-item:hover {
-  background-color: #cc0000 !important;
-  color: white !important;
+  background-color: transparent !important;
+  /* color: white !important; */
   transition: 1s;
+  border: 1px solid black;
 }
 
 .ghuri_nav .dropdown-item.active,
 .dropdown-item:active {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
-  background-color: #cc0000 !important;
+  background-color:transparent !important;
 }
-
-.drop_down_menu a {
+/* .drop_down_menu a:hover {
+  border: 1px solid black;
+} */
+.drop_down_menu .drop_down_content a {
   margin-left: 0px !important;
   padding: 0px !important;
   margin-left: 10px !important;
@@ -102,9 +109,11 @@ color: black;
 .nav-icon a{
   background-repeat: no-repeat;
   background-position: center left;
-  padding: 10px 46px 11px 66px;
+  padding: 3px 46px 3px 62px;
   border-radius: 4px;
   background-position: left 8px center;
+  
+  border: 1px solid transparent;
   
 }
 .parcel_icon a{
@@ -115,18 +124,18 @@ color: black;
 }
 .health_icon a{
 background-image: url(../../images/others/Health.png);
-background-size: 32px 32px;
+background-size: 28px 28px;
 
 }
 .interior_icon a{
   background-image: url(../../images/others/Interior-icon.png);
-  background-size: 32px 32px;
+  background-size: 28px 28px;
 
 
 }
 .news_icon a{
   background-image: url(../../images/others/news.png);
-  background-size: 32px 32px;
+  background-size: 28px 28px;
 
 
 }
@@ -167,6 +176,22 @@ margin-top: 6px;
   display: block;
 
 }
+hr {
+  margin-top:0rem;
+  margin-bottom:0.3rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+.download_app_all h6{
+  margin: 0px !important;
+}
+/* .dropdown-menu {
+  max-height:200px;
+  overflow:scroll !important; 
+} */
+
+
+
 @media only screen and (max-width: 600px) {
   .navbar-nav {
     display: flex;
