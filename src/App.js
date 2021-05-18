@@ -161,13 +161,13 @@ function App() {
           <Route path="/refund">
             <Refund></Refund>
           </Route>
-          <Route exact path="/blog">
+          {/* <Route exact path="/blog">
             <Blog></Blog>
-          </Route>
+          </Route> */}
 
-          <Route exact path="/blog/:id">
+          {/* <Route exact path="/blog/:id">
             <Blogdetails></Blogdetails>
-          </Route>
+          </Route> */}
 
           <Route path="/health">
             <Health></Health>

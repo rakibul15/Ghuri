@@ -80,7 +80,7 @@ const Topnav = () => {
                       <a title="Health" href="/health" class="dropdown-item">
                         Health
                         <span class="sub">
-                          Get Your Food in Less Than an Hour
+                         Ghuri Health Service
                         </span>
                       </a>
                     </li>
@@ -105,7 +105,7 @@ const Topnav = () => {
                       >
                         Interior
                         <span class="sub">
-                          Get Your Food in Less Than an Hour
+                         Extra Idea Our Asset
                         </span>
                       </a>
                     </li>
@@ -130,7 +130,7 @@ const Topnav = () => {
                       >
                         News
                         <span class="sub">
-                          Get Your Food in Less Than an Hour
+                        Your Right To Know
                         </span>
                       </a>
                     </li>
@@ -196,7 +196,7 @@ const Topnav = () => {
                 role="menu"
                 >
                 <div className="row drop_down_margin">
-                  <div className="col-sm-12 col-md-6  ">
+                  <div className="col-sm-6 col-md-6  ">
                     <li
                       id="menu-item-144"
                       class="
@@ -222,7 +222,7 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
-                  <div className="col-sm-12 col-md-6">
+                  <div className="col-sm-6 col-md-6">
                     <li
                       id="menu-item-144"
                       class="
@@ -242,7 +242,7 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
-                  <div className="col-sm-12 col-md-6">
+                  <div className="col-sm-6 col-md-6">
                     <li
                       id="menu-item-144"
                       class="
@@ -267,7 +267,7 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
-                  <div className="col-sm-12 col-md-6">
+                  <div className="col-sm-6 col-md-6">
                     <li
                       id="menu-item-144"
                       class="
@@ -295,8 +295,8 @@ const Topnav = () => {
                 </div>
 
                 <hr />
-                <div className="row ml-2 download_app_all">
-                  <div className="col-md-6 col-sm-12">
+                <div className="row  download_app_all">
+                  <div className="col-md-6 col-sm-6">
                     <h6>Download User App</h6>
                     <a
                       href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
@@ -319,7 +319,7 @@ const Topnav = () => {
                       />
                     </a>
                   </div>
-                  <div class="col-md-6 col-sm-12">
+                  <div class="col-md-6 col-sm-6">
                     <h6>Download Drive App</h6>
                     <a
                       href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
@@ -345,11 +345,11 @@ const Topnav = () => {
               title="Merchant"
               id="collasible-nav-dropdown"
             >
-              <div className="merchant_drop m-1">
+              <div className="merchant_drop mt-1">
                 <li
                   id="menu-item-144"
                   class="
-                      health_icon
+                  signup_icon
                       nav-icon
                       menu-item
                       menu-item-type-post_type
@@ -358,23 +358,23 @@ const Topnav = () => {
                       "
                 >
                   <a
-                    title="Health"
+                    title="Signup"
                     href="/merchant"
                     onClick={() => riderectMessage()}
                     className="hover_color"
                     class="dropdown-item"
                   >
                     Signup
-                    <span class="sub">Get Your Food in Less Than an Hour</span>
+                    <span class="sub">Signup As a Merchant</span>
                   </a>
                 </li>
               </div>
 
-              <div className="merchant_drop m-1">
+              <div className="merchant_drop mt-1">
                 <li
                   id="menu-item-144"
                   class="
-                      health_icon
+                  login_icon
                       nav-icon
                       menu-item
                       menu-item-type-post_type
@@ -383,14 +383,14 @@ const Topnav = () => {
                       "
                 >
                   <a
-                    title="Health"
+                    title="Login"
                     target="_Blank"
                     className="hover_color"
                     href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
                     class="dropdown-item"
                   >
                     Login
-                    <span class="sub">Get Your Food in Less Than an Hour</span>
+                    <span class="sub">Login Your Merchant Account</span>
                   </a>
                 </li>
               </div>
@@ -399,11 +399,11 @@ const Topnav = () => {
             <div className="merchant_dropdown">
             <Nav.Link className="dropdown">Merchant<i class="fa fa-caret-down"></i></Nav.Link>
             <div className="merchant_content">
-            <div className="merchant_drop m-1">
+            <div className="merchant_drop mt-2 mb-2">
                 <li
                   id="menu-item-144"
                   class="
-                      health_icon
+                  signup_icon
                       nav-icon
                       menu-item
                       menu-item-type-post_type
@@ -419,15 +419,15 @@ const Topnav = () => {
                     class="dropdown-item"
                   >
                     Signup
-                    <span class="sub">Get Your Food in Less Than an Hour</span>
+                    <span class="sub">Signup As a Merchant</span>
                   </a>
                 </li>
               </div>
-              <div className="merchant_drop m-1">
+              <div className="merchant_drop mt-2 mb-2">
                 <li
                   id="menu-item-144"
                   class="
-                      health_icon
+                  login_icon
                       nav-icon
                       menu-item
                       menu-item-type-post_type
@@ -443,7 +443,7 @@ const Topnav = () => {
                     class="dropdown-item"
                   >
                     Login
-                    <span class="sub">Get Your Food in Less Than an Hour</span>
+                    <span class="sub">Login Your Merchant Account</span>
                   </a>
                 </li>
               </div>
@@ -458,9 +458,9 @@ const Topnav = () => {
             {/* <Nav.Link href="/health" className="nav_color">
               Health
             </Nav.Link> */}
-            <Nav.Link className="nav_color">
+            {/* <Nav.Link className="nav_color">
               <Link to="/blog">Blog</Link>
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link className="custom_nav">
               <i className="fa fa-globe"></i> EN
             </Nav.Link>

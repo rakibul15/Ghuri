@@ -506,30 +506,48 @@
     min-height: 150px !important;
     max-height: 150px !important;
   }
-  /* .drop_down_custom {
-   
-    height: 300px;
-    width: 300px;
-    margin-left: 0%;
-    overflow-x: hidden;
-    overflow-y: scroll;
  
-  } */
-  /* .nav_dropdown .dropdown-menu {
+  .nav_dropdown .dropdown-menu {
    
-    width: 300px;
-    margin-left: 0%;
+    width: 600px;
+    margin-left: -50%;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+    /* height: 80vh; */
  
-  } */
-  .dropdown_menu {
+ 
+  }
+  .dropdown-menu .download_app_all{
+    margin-left: 30px ;
+  }
+
+  .marchent_custom .dropdown-menu {
+    position: static;
+    float: none;
+    width: 250px;
+    margin-left: -30px !important;
+}
+  .dropdown_main{
+    display: none;
+  }
+  .nav_dropdown{
+    display: block;
+  }
+  .marchent_custom{
+    display:block;
+  }
+  .merchant_dropdown{
+    display: none;
+  }
+  
+  /* .dropdown_menu {
    
     width: 500px;
     margin-left: -200px;
-    position: static !important;
     float: none;
     
    
-    }
+    } */
   /* Gallery Ends*/
 }
 
