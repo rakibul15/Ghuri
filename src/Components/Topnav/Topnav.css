@@ -52,7 +52,7 @@ color: black;
   float: none;
   /* background-color: #ffcc00 !important; */
   padding: 0px !important;
-  font-family:Roboto;
+  font-family:Abel;
   width: 700px;
   margin-left: -70%;
   border:0px;
@@ -84,6 +84,8 @@ color: black;
   transition: 1s;
   border: 1px solid #ffcc00;
 }
+
+
 
 .ghuri_nav .dropdown-item.active,
 .dropdown-item:active {
@@ -120,7 +122,7 @@ color: black;
   font-size: 12px;
  color: black !important;
   letter-spacing: 0;
-  font-family:Roboto;
+  font-family:Abel;
 }
 
 .nav-icon a{
@@ -184,7 +186,7 @@ background-size: 28px 28px;
   position:absolute;
 }
 .download_app_all img{
-margin-top: 10px;
+margin-top: 12px;
 margin-right: 10px;
 margin-bottom: 12px;
 }
@@ -203,11 +205,13 @@ hr {
 }
 .download_app_all h6{
   margin: 0px !important;
-  font-family: Roboto;
+  font-family:Abel;
 }
 .marchent_custom .dropdown-menu{
-  width: 300px;
-  margin-left: -20px;
+  position: static;
+  float: none;
+  width:250px;
+  margin-left:0px;
 }
 
 .marchent_custom_nav{
@@ -215,6 +219,10 @@ hr {
 }
 .nav-item .dropdown{
   width: 100%;
+}
+.drop_down_margin{
+  margin-top: 15px;
+
 }
 
 

@@ -41,7 +41,7 @@ const Topnav = () => {
                 aria-labelledby="menu-item-dropdown-223"
                 role="menu"
               >
-                <div className="row">
+                <div className="row drop_down_margin">
                   <div className="col-sm-12 col-md-6  ">
                     <li
                       id="menu-item-144"
@@ -238,9 +238,9 @@ const Topnav = () => {
               </div>
             </NavDropdown>
 
-            <Nav.Link href="/health" className="nav_color">
+            {/* <Nav.Link href="/health" className="nav_color">
               Health
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link className="nav_color">
               <Link to="/blog">Blog</Link>
             </Nav.Link>
