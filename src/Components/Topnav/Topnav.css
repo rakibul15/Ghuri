@@ -137,12 +137,12 @@
   background-size: 28px 28px;
 }
 .signup_icon a{
-  background-image: url(../../images/others/rsz_pencil.png);
+  background-image: url(../../images/others/Signup.png);
   background-size: 28px 28px;
 
 }
 .login_icon a{
-  background-image: url(../../images/others/rsz_sign-up.png);
+  background-image: url(../../images/others/login.png);
   background-size: 28px 28px;
 
 }
@@ -238,7 +238,7 @@ hr {
 
   border-radius: 0.25rem;
   width: 750px;
-  margin-left: -500px;
+  margin-left: -600px;
 }
 .dropdown_main {
   position: relative;
@@ -246,6 +246,7 @@ hr {
 
 .dropdown_main:hover .dropdown_menu {
   display: block !important;
+  
 }
 .nav_dropdown {
   display: none;
@@ -274,7 +275,7 @@ hr {
   background-clip: padding-box;
   border-radius: 0.25rem;
   width: 300px;
-  margin-left: -100px;
+  margin-left: -150px;
 }
 .merchant_dropdown:hover .merchant_content {
   display: block !important;
