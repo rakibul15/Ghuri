@@ -427,7 +427,22 @@
 .merchant_dropdown{
   display: none;
 }
-
+.dropdown-menu .download_app_all {
+  margin-left:5px;
+}
+.parcel_tracker {
+  margin-top:90px !important;
+  margin-bottom:10px !important;
+}
+.btn-parcelTrack {
+  margin-top:10px !important;
+}
+.track_search .form-control {
+  width: 100% !important;
+}
+.mr-sm-3{
+  margin-right: 0px !important;
+}
 
 }
 
@@ -539,7 +554,28 @@
   .merchant_dropdown{
     display: none;
   }
-  
+  .btn-parcelTrack {
+    margin-top:10px !important;
+  }
+  .parcel_tracker {
+ 
+    margin-top:0px !important;
+}
+
+.track_search .form-control {
+  width: 100%;
+
+}
+.track_search .form-control {
+  width: 100% !important;
+}
+.mr-sm-3{
+  margin-right: 0px !important;
+}
+.dropdown_menu {
+  width: 300px;
+  margin-left: -600px;
+}
   /* .dropdown_menu {
    
     width: 500px;
@@ -571,6 +607,28 @@
     width:250px;
     margin-left:-50px !important;
   }
+  .parcel_tracker {
+ 
+    margin-top:0px !important;
+}
+.btn-parcelTrack {
+  margin-top:10px !important;
+}
+.track_search .form-control {
+  width: 100% !important;
+}
+.mr-sm-3{
+  margin-right: 0px !important;
+}
+
+.track_search .form-control {
+  width: 100% !important;
+}
+.dropdown_menu {
+
+  width: 500px;
+  margin-left: -300px;
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -585,6 +643,16 @@
     width:250px;
     margin-left:-50px !important;
   }
+  .btn-parcelTrack {
+    margin-top:10px !important;
+  }
+  .mr-sm-3{
+    margin-right: 0px !important;
+  }
+  .track_search .form-control {
+    width: 100% !important;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -605,6 +673,9 @@
     float: none;
     width:250px;
     margin-left:-50px !important;
+  }
+  .btn-parcelTrack {
+    margin-top:10px !important;
   }
   
   

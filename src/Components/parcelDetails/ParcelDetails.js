@@ -20,6 +20,8 @@ import rider from "../../images/ParcelDetails/rider.png";
 import deliverearn from "../../images/ParcelDetails/deliverEarn.png";
 import IamMerchant from "./IamMerchant";
 import IamFighter from "./IamFighter";
+import { Form, FormControl, Jumbotron } from "react-bootstrap";
+import { Button } from "bootstrap";
 
 const ParcelDetails = () => {
   const [show, setShow] = useState(false);
@@ -36,6 +38,19 @@ const ParcelDetails = () => {
       <div className="bgg ">
         <div className="Nav_overflow container">
           <div className="row parcel_main_content">
+            <div className="col-sm-7">
+              <div className="parcel_tracker">
+                <h5>Enter tracking number to track your deliveries</h5>
+                <Form inline className="track_search">
+                  <FormControl
+                    type="text"
+                    placeholder="Enter Tracking Number"
+                    className="mr-sm-3"
+                  />
+                  <button className="btn btn-parcelTrack">Search</button>
+                </Form>
+              </div>
+            </div>
             {/* <div className="col-sm-1"></div> */}
             <div className="col-sm-7 parcel_main_section">
               <div className="parcel_main_content_small">
@@ -43,7 +58,7 @@ const ParcelDetails = () => {
                 <h2>On Demand Delivery at Your Doorstep</h2>
                 <p>
                   Need to send something on an emergency basis? GHURI Parcel is
-                  what you nedd!
+                  what you need!
                 </p>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
@@ -63,7 +78,7 @@ const ParcelDetails = () => {
                 <a
                   href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
                   target="_blank"
-                  className="btn app_store_btn   mt-4 btn_box_shadow"
+                  className="btn app_store_btn  mt-3 btn_box_shadow"
                   rel="noreferrer"
                 >
                   <span>
@@ -324,8 +339,8 @@ const ParcelDetails = () => {
           <div className="right_bottom">
             <div className="card">
               <div className="card-body card_custom_attach">
-                <i class="fa fa-circle"></i> Extra earning {" "}
-                keeps <br /> you smilling
+                <i class="fa fa-circle"></i> Extra earning keeps <br /> you
+                smilling
               </div>
             </div>
           </div>
@@ -357,7 +372,7 @@ const ParcelDetails = () => {
           </div>
           <div className="col-sm-4 col-md-2 col-6">
             <button
-               className={"btn  btn-right " + active2}
+              className={"btn  btn-right " + active2}
               onClick={() => {
                 setShow(true);
                 setAllFaq(false);

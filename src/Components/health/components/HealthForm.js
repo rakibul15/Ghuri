@@ -54,31 +54,31 @@ const HealthForm = () => {
   };
   let price = 0;
   let duration = 0;
-  if (id === ":1") {
+  if (id === ":bronze3") {
     price = 237;
     duration = 3;
-  } else if (id === ":2") {
+  } else if (id === ":bronze6") {
     price = 474;
     duration = 6;
-  } else if (id === ":3") {
+  } else if (id === ":bronze12") {
     price = 948;
     duration = 12;
-  } else if (id === ":4") {
+  } else if (id === ":silver3") {
     price = 447;
     duration = 3;
-  } else if (id === ":5") {
+  } else if (id === ":silver6") {
     price = 894;
     duration = 6;
-  } else if (id === ":6") {
+  } else if (id === ":silver12") {
     price = 1788;
     duration = 12;
-  } else if (id === ":7") {
+  } else if (id === ":gold3") {
     price = 687;
     duration = 3;
-  } else if (id === ":8") {
+  } else if (id === ":gold6") {
     price = 1374;
     duration = 6;
-  } else if (id === ":9") {
+  } else if (id === ":gold12") {
     price = 2748;
     duration = 12;
   }

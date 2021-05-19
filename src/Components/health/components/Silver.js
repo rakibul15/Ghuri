@@ -57,7 +57,7 @@ const Silver = () => {
 
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a onClick={() => history.push(`/healthform:4`)}>
+                <a onClick={() => history.push(`/healthform:silver3`)}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>
@@ -76,7 +76,7 @@ const Silver = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a onClick={() => history.push(`/healthform:5`)}>
+                <a onClick={() => history.push(`/healthform:silver6`)}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>
@@ -95,7 +95,7 @@ const Silver = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a onClick={() => history.push(`/healthform:6`)}>
+                <a onClick={() => history.push(`/healthform:silver12`)}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>

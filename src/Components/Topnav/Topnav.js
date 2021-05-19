@@ -163,7 +163,7 @@ const Topnav = () => {
                     </a>
                   </div>
                   <div class="col-md-6 col-sm-12">
-                    <h6>Download Drive App</h6>
+                    <h6>Download Fighter App</h6>
                     <a
                       href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
                       target="_Blank"
@@ -320,7 +320,7 @@ const Topnav = () => {
                     </a>
                   </div>
                   <div class="col-md-6 col-sm-6">
-                    <h6>Download Drive App</h6>
+                    <h6>Download Fighter App</h6>
                     <a
                       href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
                       target="_Blank"
@@ -397,7 +397,7 @@ const Topnav = () => {
             </NavDropdown>
 
             <div className="merchant_dropdown">
-            <Nav.Link className="dropdown">Merchant<i class="fa fa-caret-down"></i></Nav.Link>
+            <Nav.Link className="dropdown">Merchant <i class="fa fa-caret-down"></i></Nav.Link>
             <div className="merchant_content">
             <div className="merchant_drop mt-2 mb-2">
                 <li
