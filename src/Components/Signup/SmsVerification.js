@@ -60,7 +60,8 @@ const SmsVerification = () => {
           style={{ minHeight: "600px" }}
           className="d-flex align-items-center justify-content-center"
         >
-          <Card className="mt-4  bg-light">
+          <div className="col-sm-6">
+          <Card className="bg-light ">
             <Card.Body className="verification_box">
               <Card.Title>SMS VERIFICATION</Card.Title>
               <Card.Subtitle className="mb-2 verification_subtitle">
@@ -110,6 +111,7 @@ const SmsVerification = () => {
               </Card.Link>
             </Card.Body>
           </Card>
+          </div>
         </div>
       </div>
     </>

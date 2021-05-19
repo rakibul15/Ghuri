@@ -4,7 +4,10 @@
   .nav-link.active a {
     margin-left: 0px !important;
   }
-
+  .download_app_all img{
+    
+    margin-bottom: 20px;
+  }
   /* Ghuri Header */
 
   .ghuri-button {
@@ -226,36 +229,6 @@
     padding: 10% !important;
   }
 
-  /* Headline */
-  /* .headline_img {
-    margin-top: 0px !important;
-  }
-  .headline_box img {
-    width: 80% !important;
-    height: 80px !important;
-    object-fit: scale-down;
-    height: 80px !important;
-  }
-
-  .headline_box {
-    height: auto !important;
-  }
-  .headline_box h5 {
-    font-size: 1rem;
-    display: block;
-    white-space: nowrap;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  } */
-
-  /* SingleNews */
-  /* .single_news {
-    display: inline !important;
-    width: 100%;
-  } */
 
   .single_grid {
     grid-template-columns: 11fr !important;
@@ -409,6 +382,53 @@
   width: 96% !important;
 
 }
+.nav_dropdown .dropdown-menu {
+   
+  width:100%;
+  margin-left:0px;
+
+}
+.ghuri_nav {
+  height:60vh !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}
+
+.marchent_custom .dropdown-menu{
+  width:100%;
+  margin-left:0px;
+}
+.nav_dropdown .dropdown-item {
+  width:100%;
+  margin:0px;
+} 
+
+/* .nav_dropdown .dropdown-menu {
+  width:100%;
+
+}  */
+
+.parcel_icon{
+  margin-top: 10px;
+}
+.dropdown_menu{
+  width:100%;
+  margin: 0px;
+}
+.dropdown_main{
+  display: none;
+}
+.nav_dropdown{
+  display: block;
+}
+.marchent_custom{
+  display:block;
+}
+.merchant_dropdown{
+  display: none;
+}
+
+
 }
 
 
@@ -486,16 +506,71 @@
     min-height: 150px !important;
     max-height: 150px !important;
   }
+ 
+  .nav_dropdown .dropdown-menu {
+   
+    width: 600px;
+    margin-left: -50%;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+    /* height: 80vh; */
+ 
+ 
+  }
+  .dropdown-menu .download_app_all{
+    margin-left: 30px ;
+  }
 
+  .marchent_custom .dropdown-menu {
+    position: static;
+    float: none;
+    width: 250px;
+    margin-left: -30px !important;
+}
+  .dropdown_main{
+    display: none;
+  }
+  .nav_dropdown{
+    display: block;
+  }
+  .marchent_custom{
+    display:block;
+  }
+  .merchant_dropdown{
+    display: none;
+  }
+  
+  /* .dropdown_menu {
+   
+    width: 500px;
+    margin-left: -200px;
+    float: none;
+    
+   
+    } */
   /* Gallery Ends*/
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+/* @media only screen and (min-width: 768px) and (max-width: 767.98px) {
+  
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+.dropdown_menu {
+   
+  width: 700px;
+  margin-left: -400px;
+ 
+  }
+  .marchent_custom .dropdown-menu{
+    position: static;
+    float: none;
+    width:250px;
+    margin-left:-50px !important;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -503,6 +578,12 @@
   .footer_store_img img {
     width: 70%;
     margin-left: 35px !important;
+  }
+  .marchent_custom .dropdown-menu{
+    position: static;
+    float: none;
+    width:250px;
+    margin-left:-50px !important;
   }
 }
 
@@ -519,4 +600,12 @@
   .product_info {
     height: 70vh !important;
   }
+  .marchent_custom .dropdown-menu{
+    position: static;
+    float: none;
+    width:250px;
+    margin-left:-50px !important;
+  }
+  
+  
 }
