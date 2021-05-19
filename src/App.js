@@ -182,7 +182,7 @@ function App() {
           <Route path="/gold">
             <Gold></Gold>
           </Route>
-          <Route path="/healthform:id">
+          <Route path="/health:id">
             <Healthform></Healthform>
           </Route>
           <Route path="/HealthTerms">

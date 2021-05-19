@@ -40,14 +40,14 @@ const ParcelDetails = () => {
           <div className="row parcel_main_content">
             <div className="col-sm-7">
               <div className="parcel_tracker">
-                <h5>Enter tracking number to track your deliveries</h5>
+                <h5>Enter parcel tracking number to track your parcel</h5>
                 <Form inline className="track_search">
                   <FormControl
                     type="text"
-                    placeholder="Enter Tracking Number"
+                    placeholder="parcel tracking number"
                     className="mr-sm-3"
                   />
-                  <button className="btn btn-parcelTrack">Search</button>
+                  <button className="btn btn-parcelTrack">Track</button>
                 </Form>
               </div>
             </div>
