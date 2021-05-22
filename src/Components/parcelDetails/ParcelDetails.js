@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import parcelphone from "../../images/ParcelDetails/parcelMobile.png";
+import { Modal, ProgressBar } from "react-bootstrap";
 import documents from "../../images/ParcelDetails/documents.png";
 import packages from "../../images/ParcelDetails/packages.png";
 import accessories from "../../images/ParcelDetails/accessories.png";
@@ -8,20 +8,18 @@ import giftItems from "../../images/ParcelDetails/giftItems.png";
 import deliver from "../../images/ParcelDetails/deliver.png";
 import deliver4 from "../../images/ParcelDetails/deliver4.png";
 import deliver2 from "../../images/ParcelDetails/deliver2.png";
-import deliver3 from "../../images/ParcelDetails/deliver3.png";
-
-import playstore from "../../images/footer/playstore.png";
-import appstore from "../../images/footer/appstore.png";
 import box from "../../images/ParcelDetails/box.png";
 import thumbsup from "../../images/ParcelDetails/thumbsup.png";
 import light from "../../images/ParcelDetails/light.png";
 import clock from "../../images/ParcelDetails/clock.png";
 import rider from "../../images/ParcelDetails/rider.png";
 import deliverearn from "../../images/ParcelDetails/deliverEarn.png";
+import pending from "../../images/ParcelDetails/pending.png"
 import IamMerchant from "./IamMerchant";
 import IamFighter from "./IamFighter";
-import { Form, FormControl, Jumbotron } from "react-bootstrap";
-import { Button } from "bootstrap";
+import { FormControl} from "react-bootstrap";
+
+import logo from "../../images/logo/onlyGHURI.png";
 
 const ParcelDetails = () => {
   const [show, setShow] = useState(false);
@@ -33,6 +31,10 @@ const ParcelDetails = () => {
   const [active2, setActive2] = useState("btn_Faq");
   const [active3, setActive3] = useState("btn_Faq");
 
+  const [isshow, issetShow] = useState(false);
+  const handleClose = () => issetShow(false);
+  const handleShow = () => issetShow(true);
+
   return (
     <div>
       <div className="bgg ">
@@ -41,14 +43,16 @@ const ParcelDetails = () => {
             <div className="col-sm-7">
               <div className="parcel_tracker">
                 <h5>Enter parcel tracking number to track your parcel</h5>
-                <Form inline className="track_search">
+                <div className="track_search">
                   <FormControl
                     type="text"
                     placeholder="parcel tracking number"
                     className="mr-sm-3"
                   />
-                  <button className="btn btn-parcelTrack">Track</button>
-                </Form>
+                  <button className="btn btn-parcelTrack" onClick={handleShow}>
+                    Track
+                  </button>
+                </div>
               </div>
             </div>
             {/* <div className="col-sm-1"></div> */}
@@ -413,6 +417,114 @@ const ParcelDetails = () => {
           </button>
         </div>
       </div> */}
+
+      <Modal
+        show={isshow}
+        centered
+        onHide={handleClose}
+        size="xl"
+        className="parcel_details_modal"
+      >
+        <Modal.Body className="modal_color">
+          <div className="modal_design">
+            <div className="row mt-2 mb-4 pb-4">
+              <div className="col-sm-12">
+                <h5>
+                  Delivery Status :{" "}
+                  <span className="mother_color"> Ondelivery</span>
+                </h5>
+                <h6 className="mt-2">Order #4353</h6>
+              </div>
+            </div>
+            {/* <div className="row text-center">
+              <div className="col-sm-12">
+                <h5>In Hub</h5>
+              </div>
+            </div> */}
+            <ProgressBar>
+              <ProgressBar className="p_color" now={70} key={1} />
+
+              <img
+                className="p_images"
+                style={{ left: "65%" }}
+                src={logo}
+                alt=""
+              />
+            </ProgressBar>
+
+            <div className="row d-flex justify-content-between mt-4 delivery_progress_status_icon">
+              <div className="col-sm-2 col-2">
+            <img className="img-fluid" src={pending} alt="" />
+                <p>Pending</p>
+                
+              </div>
+              <div className="col-sm-2 col-2">
+                <p>Pickup</p>
+              </div>
+              <div className="col-sm-2 col-2">
+                <p>In hub</p>
+              </div>
+              <div className="col-sm-2 col-2">
+                <p>On delivery</p>
+              </div>
+              <div className="col-sm-2 col-2">
+                <p>Delivered</p>
+              </div>
+            </div>
+
+            <div className="progress_status_info">
+              <div className="row mt-4">
+                <div className="col-sm-3">
+                  <p>15 Dec 2020, 12:32 pm</p>
+                </div>
+                <div className="col-sm-4">
+                  <p>Package is picked up by Ghuri</p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-sm-3">
+                  <p>15 Dec 2020, 12:32 pm</p>
+                </div>
+                <div className="col-sm-4">
+                  <p>Package is picked up by Ghuri</p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-sm-3">
+                  <p>15 Dec 2020, 12:32 pm</p>
+                </div>
+                <div className="col-sm-4">
+                  <p>Package is picked up by Ghuri</p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-sm-3">
+                  <p>15 Dec 2020, 12:32 pm</p>
+                </div>
+                <div className="col-sm-4">
+                  <p>Package is picked up by Ghuri</p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-sm-3">
+                  <p>15 Dec 2020, 12:32 pm</p>
+                </div>
+                <div className="col-sm-4">
+                  <p>Package is picked up by Ghuri</p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-sm-3">
+                  <p>15 Dec 2020, 12:32 pm</p>
+                </div>
+                <div className="col-sm-4">
+                  <p>Package is picked up by Ghuri</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };

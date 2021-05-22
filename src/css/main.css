@@ -505,6 +505,15 @@ margin-left:2%;
 /*Modal*/
 .modal-content {
   margin-top: 35%;
+
+}
+
+.health_verification_container{
+  margin-top: 35%!;
+}
+
+.health_verification_container .modal-content{
+  margin-top: 35% !important;
 }
 
 .health_confirm {
@@ -973,6 +982,7 @@ body {
   border: none;
   font-family: Abel;
   font-size: 15px;
+  display: inline-block;
 
 }
 
@@ -989,7 +999,7 @@ border: none;
   color: white;
   padding: 5px 29px;
   font-family: Abel;
-  margin-top: 5px !important;
+  margin-top: -5px !important;
 }
 .btn-parcelTrack:hover{
   color: white;
@@ -1005,4 +1015,54 @@ border: none;
 }
 .parcel_main_content_small p{
   font-family: Abel;
+}
+/* Progressbar */
+.p_color{
+  background-image: linear-gradient(to right, #FBD05E,#F9C55D,#F5AD63,#F5B162,#EF8D36,#EF8D3C);
+  position: relative;
+}
+.progress {
+
+  border-radius: 2.25rem;
+}
+.progress_status_info p{
+  font-size: 12px;
+  padding-bottom: 0px !important;
+  margin-bottom: 5px !important;
+}
+.parcel_details_modal{
+  margin-top: 0% !important;
+  width: 100%;
+  height: 100vh !important;
+}
+.parcel_details_modal .modal-content{
+  margin-top: 5% !important;
+
+ 
+}
+.modal_color{
+  background-color: #ffcc00;
+  border-radius: 5px;
+}
+.modal_design{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px;
+}
+.p_images{
+  height: 40px !important;
+  width: 40px !important;
+  margin-top: -40px;
+ z-index:99999 !important;
+ position: absolute;
+ 
+}
+.mother_color{
+  color: #ffcc00;
+}
+.delivery_progress_status_icon img{
+  height: 30px;
+  width: 30px;
+  text-align: center;
 }
