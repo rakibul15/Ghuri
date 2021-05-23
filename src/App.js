@@ -40,6 +40,7 @@ import Blogdetails from "./Components/Blog/Blogdetails";
 import HealthTerms from "./Components/health/components/HealthTerms";
 import ParcelDetails from "./Components/parcelDetails/ParcelDetails";
 import Popup from "./Components/modal/Popup";
+import ParcelModal from "./Components/parcelDetails/ParcelModal";
 
 
 function App() {
@@ -193,6 +194,11 @@ function App() {
           <Route path="/ghuriparcel">
             <ParcelDetails></ParcelDetails>
           </Route>
+
+          <Route path="/parcelModal">
+           <ParcelModal></ParcelModal>
+          </Route>
+
 
           <Route path="*">
             <Notmatch />

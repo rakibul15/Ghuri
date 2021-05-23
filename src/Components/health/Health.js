@@ -12,10 +12,15 @@ import dghealth from "../../images/Health/dg_health.png";
 import ghurihealth from "../../images/logo/ghuri_health.png";
 
 import { Link } from "react-router-dom";
+import { useDispatch,useSelector } from "react-redux";
+import { passData } from "./_redux/action/HealthAction";
 
 const Health = (props) => {
+  const dispatch = useDispatch()
+
   return (
     <div className="m_color Nav_overflow">
+    
       <Container>
         <h1 className="text-center health_headline pt-5 pb-5">
           GHURI Health Membership Packages
