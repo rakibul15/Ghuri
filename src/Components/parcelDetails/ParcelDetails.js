@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Axios from "axios";
 import { Modal, ProgressBar } from "react-bootstrap";
 import documents from "../../images/ParcelDetails/documents.png";
 import packages from "../../images/ParcelDetails/packages.png";
@@ -27,7 +28,7 @@ import IamMerchant from "./IamMerchant";
 import IamFighter from "./IamFighter";
 import { FormControl } from "react-bootstrap";
 
-import logo from "../../images/ParcelDetails/logo6.svg";
+import logo from "../../images/ParcelDetails/logo7.svg";
 
 const ParcelDetails = () => {
   const [show, setShow] = useState(false);
@@ -41,7 +42,9 @@ const ParcelDetails = () => {
 
   const [isshow, issetShow] = useState(false);
   const handleClose = () => issetShow(false);
-  const handleShow = () => issetShow(true);
+  const handleShow = () =>{
+    issetShow(true);
+  } 
 
   const returnstatus = (
     <div className="col-sm-2 col-2">
@@ -67,6 +70,8 @@ const ParcelDetails = () => {
     </div>
   );
 
+  const [search, setSearch] = useState("");
+
   return (
     <div>
       <div className="bgg ">
@@ -80,6 +85,9 @@ const ParcelDetails = () => {
                     type="text"
                     placeholder="parcel tracking number"
                     className="mr-sm-3"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                   
                   />
                   <button className="btn btn-parcelTrack" onClick={handleShow}>
                     Track

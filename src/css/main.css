@@ -1016,12 +1016,11 @@ body {
 .p_color {
   background-image: linear-gradient(
     to right,
-    #fbd05e,
-    #f9c55d,
-    #f5ad63,
-    #f5b162,
-    #ef8d36,
-    #ef8d3c
+    #f9fd00dc,
+    #f9c904,
+    #ffcc00,
+    #f9c904,
+    #eca90c
   );
   position: relative;
  
@@ -1096,4 +1095,7 @@ body {
 }
 .status_header {
   text-align: center;
+}
+.delivery_progress_status_icon small p{
+  margin-top: 0px !important;
 }
