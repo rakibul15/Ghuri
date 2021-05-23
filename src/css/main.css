@@ -505,14 +505,13 @@ margin-left:2%;
 /*Modal*/
 .modal-content {
   margin-top: 35%;
-
 }
 
-.health_verification_container{
+.health_verification_container {
   margin-top: 35%!;
 }
 
-.health_verification_container .modal-content{
+.health_verification_container .modal-content {
   margin-top: 35% !important;
 }
 
@@ -591,16 +590,9 @@ margin-left:2%;
 }
 
 /* Parcel Details */
-.parcel_main {
-  /* background-image: linear-gradient(
-    to left,
-    #fbf7f8,
-    #fcf3d0,
-    #feea9a,
-    #fedf65,
-    #fedf65
-  ); */
-}
+/* .parcel_main {
+
+} */
 .bgg {
   background-image: url(../images/ParcelDetails/bg.png);
   background-repeat: no-repeat;
@@ -613,7 +605,7 @@ margin-left:2%;
   padding-top: 100px;
 }
 .parcel_first_app {
-  margin-top:10px;
+  margin-top: 10px;
 }
 .what_we_deliver {
   /* margin-top: 150px; */
@@ -957,112 +949,151 @@ body {
 /* .parcel_main_section {
   margin-top: 100px;
 } */
-.how_to_deliver_main{
+.how_to_deliver_main {
   margin-bottom: 20px;
 }
 
-.parcel_tracker{
+.parcel_tracker {
   /* background-color: #ffcc00; */
-  background-image: linear-gradient(to left, #eca90c,#f9c904,#ffcc00,#f9c904,#eca90c);
-  padding:20px 20px;
+  background-image: linear-gradient(
+    to left,
+    #eca90c,
+    #f9c904,
+    #ffcc00,
+    #f9c904,
+    #eca90c
+  );
+  padding: 20px 20px;
   margin-bottom: 60px;
-  border-radius:5px;
-  margin-top:35px;
+  border-radius: 5px;
+  margin-top: 35px;
 }
-.parcel_tracker h5{
+.parcel_tracker h5 {
   color: black;
   font-family: Abel;
   font-size: 1.1rem;
 }
-.track_search .form-control{
+.track_search .form-control {
   width: 80%;
-  margin-top:10px;
-  margin-bottom:5px;
-  border-radius:5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
   border: none;
   font-family: Abel;
   font-size: 15px;
   display: inline-block;
-
 }
 
-.track_search .form-control:focus{
-box-shadow: none !important;
-outline: none !important;
-border: none;
+.track_search .form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none;
 }
 
-
-
-.btn-parcelTrack{
-  background-color:black;
+.btn-parcelTrack {
+  background-color: black;
   color: white;
   padding: 5px 29px;
   font-family: Abel;
-  margin-top: -5px !important;
+  margin-top: -5px;
 }
-.btn-parcelTrack:hover{
+.btn-parcelTrack:hover {
   color: white;
 }
-.btn-parcelTrack:active{
+.btn-parcelTrack:active {
   color: white;
   outline: none !important;
 }
-.btn-parcelTrack:focus{
+.btn-parcelTrack:focus {
   color: white;
   outline: none !important;
   box-shadow: none !important;
 }
-.parcel_main_content_small p{
+.parcel_main_content_small p {
   font-family: Abel;
 }
 /* Progressbar */
-.p_color{
-  background-image: linear-gradient(to right, #FBD05E,#F9C55D,#F5AD63,#F5B162,#EF8D36,#EF8D3C);
+.p_color {
+  background-image: linear-gradient(
+    to right,
+    #fbd05e,
+    #f9c55d,
+    #f5ad63,
+    #f5b162,
+    #ef8d36,
+    #ef8d3c
+  );
   position: relative;
+ 
 }
 .progress {
-
   border-radius: 2.25rem;
 }
-.progress_status_info p{
+.progress_status_info p {
   font-size: 12px;
   padding-bottom: 0px !important;
   margin-bottom: 5px !important;
 }
-.parcel_details_modal{
+.parcel_details_modal {
   margin-top: 0% !important;
   width: 100%;
   height: 100vh !important;
 }
-.parcel_details_modal .modal-content{
+.parcel_details_modal .modal-content {
   margin-top: 5% !important;
-
- 
+  background-color: transparent;
+  border: none;
 }
-.modal_color{
-  background-color: #ffcc00;
-  border-radius: 5px;
+.modal_color {
+  background-image: linear-gradient(
+    to left,
+    #eca90c,
+    #f9c904,
+    #ffcc00,
+    #f9c904,
+    #eca90c
+  );
+  border-radius: 20px;
 }
-.modal_design{
+.modal_design {
   background-color: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 40px;
 }
-.p_images{
-  height: 40px !important;
-  width: 40px !important;
-  margin-top: -40px;
- z-index:99999 !important;
- position: absolute;
- 
+.p_images {
+  height: 50px !important;
+  width: 50px !important;
+  margin-top: -16px;
+  z-index: 99999 !important;
+  position: absolute;
 }
-.mother_color{
-  color: #ffcc00;
+.black_color {
+  color: black;
 }
-.delivery_progress_status_icon img{
+.delivery_progress_status_icon img {
   height: 30px;
   width: 30px;
+  text-align: center;
+}
+.cross_fa_times img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+}
+.delivery_progress_status_icon {
+  text-align: center;
+  font-family: Abel;
+}
+.delivery_progress_status_icon p {
+  margin-top: 10px;
+}
+.delivery_details_header {
+  font-family: Abel;
+}
+.status_header {
   text-align: center;
 }

@@ -14,12 +14,20 @@ import light from "../../images/ParcelDetails/light.png";
 import clock from "../../images/ParcelDetails/clock.png";
 import rider from "../../images/ParcelDetails/rider.png";
 import deliverearn from "../../images/ParcelDetails/deliverEarn.png";
-import pending from "../../images/ParcelDetails/pending.png"
+import pending from "../../images/ParcelDetails/pending.png";
+import onpickup from "../../images/ParcelDetails/on_pickup.png";
+import pickedup from "../../images/ParcelDetails/Pickedup.png";
+import inhub from "../../images/ParcelDetails/Inhub.png";
+import ondelivery from "../../images/ParcelDetails/Ondelivery.png";
+import delivered from "../../images/ParcelDetails/delivered.png";
+import cancel_icon from "../../images/ParcelDetails/cancel.png";
+import returnparcel from "../../images/ParcelDetails/return.png";
+
 import IamMerchant from "./IamMerchant";
 import IamFighter from "./IamFighter";
-import { FormControl} from "react-bootstrap";
+import { FormControl } from "react-bootstrap";
 
-import logo from "../../images/logo/onlyGHURI.png";
+import logo from "../../images/ParcelDetails/logo6.svg";
 
 const ParcelDetails = () => {
   const [show, setShow] = useState(false);
@@ -34,6 +42,30 @@ const ParcelDetails = () => {
   const [isshow, issetShow] = useState(false);
   const handleClose = () => issetShow(false);
   const handleShow = () => issetShow(true);
+
+  const returnstatus = (
+    <div className="col-sm-2 col-2">
+      <img className="img-fluid" src={returnparcel} alt="" />
+      <p>Return</p>
+      <small>15 Dec 2020, 12:32 pm</small>
+      <small>
+        {" "}
+        <p>Return To Merchant</p>
+      </small>
+    </div>
+  );
+
+  const sucessstatus = (
+    <div className="col-sm-2 col-2">
+      <img className="img-fluid" src={delivered} alt="" />
+      <p>Delivered</p>
+      <small>15 Dec 2020, 12:32 pm</small>
+      <small>
+        {" "}
+        <p>Delivered To Customer</p>
+      </small>
+    </div>
+  );
 
   return (
     <div>
@@ -55,10 +87,9 @@ const ParcelDetails = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="col-sm-1"></div> */}
+
             <div className="col-sm-7 parcel_main_section">
               <div className="parcel_main_content_small">
-                {/* <h5>Ghuri Parcel</h5> */}
                 <h2>On Demand Delivery at Your Doorstep</h2>
                 <p>
                   Need to send something on an emergency basis? GHURI Parcel is
@@ -95,17 +126,9 @@ const ParcelDetails = () => {
                 </a>
               </div>
             </div>
-            <div className="col-sm-3 text-right">
-              {/* <img
-                src={parcelphone}
-                className="img-fluid"
-                alt="Parcel Phone Image"
-              /> */}
-            </div>
-            {/* <div className="col-sm-1"></div> */}
+            <div className="col-sm-3 text-right"></div>
           </div>
         </div>
-        {/* <img src={curvelink} alt="" className="img-fluid curve_img" /> */}
       </div>
 
       {/* Parcel Details Header End */}
@@ -152,22 +175,6 @@ const ParcelDetails = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-sm-5 ">
-              {/* <div className="card  download_app parcel_view_step "  onClick={() => {setchangeImage( <img src={deliver} className="img-fluid" alt="" />)}}>
-                <div className="card-body ">
-                  <div class="card-text how_to_deliver">
-                    <p>
-                      <span>1</span> Download Ghuri App from
-                    </p>
-
-                    <img
-                      src={playstore}
-                      className="img-fluid"
-                      alt="PlayStore store"
-                    />
-                    <img src={appstore} className="img-fluid" alt="App store" />
-                  </div>
-                </div>
-              </div> */}
               <div
                 className="card custom_card  mt-4 parcel_view_step "
                 onClick={() => {
@@ -236,10 +243,7 @@ const ParcelDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 text-right howdeliver">
-              {/* <img src={changeimage} className="img-fluid" alt="" /> */}
-              {changeimage}
-            </div>
+            <div className="col-sm-6 text-right howdeliver">{changeimage}</div>
           </div>
         </div>
       </div>
@@ -418,6 +422,7 @@ const ParcelDetails = () => {
         </div>
       </div> */}
 
+      {/* Modal On click track*/}
       <Modal
         show={isshow}
         centered
@@ -426,101 +431,85 @@ const ParcelDetails = () => {
         className="parcel_details_modal"
       >
         <Modal.Body className="modal_color">
-          <div className="modal_design">
-            <div className="row mt-2 mb-4 pb-4">
+          <div className="modal_design  delivery_details_header">
+            <div className="row mt-2 mb-4 pb-4 status_header ">
               <div className="col-sm-12">
                 <h5>
-                  Delivery Status :{" "}
-                  <span className="mother_color"> Ondelivery</span>
+                  <span className="black_color">
+                    Delivery on Progress by GHURI
+                  </span>
                 </h5>
-                <h6 className="mt-2">Order #4353</h6>
               </div>
             </div>
-            {/* <div className="row text-center">
-              <div className="col-sm-12">
-                <h5>In Hub</h5>
-              </div>
-            </div> */}
-            <ProgressBar>
-              <ProgressBar className="p_color" now={70} key={1} />
-
+            {/* Progressbar */}
+           <div className="row d-flex justify-content-center">
+             <div className="col-sm-11">
+             <ProgressBar>
+              <ProgressBar className="p_color" now={77} key={1} />
+              {/* Ghuri Images */}
               <img
                 className="p_images"
-                style={{ left: "65%" }}
+                style={{ left: "74%" }}
                 src={logo}
                 alt=""
               />
             </ProgressBar>
+             </div>
+           </div>
 
             <div className="row d-flex justify-content-between mt-4 delivery_progress_status_icon">
               <div className="col-sm-2 col-2">
-            <img className="img-fluid" src={pending} alt="" />
+                <img className="img-fluid" src={pending} alt="" />
                 <p>Pending</p>
-                
+                <small>15 Dec 2020, 12:32 pm</small>
+                <small>
+                  {" "}
+                  <p>Parcel Added by Merchant</p>
+                </small>
               </div>
               <div className="col-sm-2 col-2">
-                <p>Pickup</p>
+                <img className="img-fluid" src={onpickup} alt="" />
+                <p>On Pick up</p>
+                <small>15 Dec 2020, 12:32 pm</small>
+                <small>
+                  {" "}
+                  <p>Waiting for pick up by GHURI</p>
+                </small>
               </div>
               <div className="col-sm-2 col-2">
+                <img className="img-fluid" src={pickedup} alt="" />
+                <p>Picked Up</p>
+                <small>15 Dec 2020, 12:32 pm</small>
+                <small>
+                  {" "}
+                  <p>Picked Up by GHURI</p>
+                </small>
+              </div>
+              <div className="col-sm-2 col-2">
+                <img className="img-fluid" src={inhub} alt="" />
                 <p>In hub</p>
+                <small>15 Dec 2020, 12:32 pm</small>
+                <small>
+                  {" "}
+                  <p>Parcel in Ghuri Hub</p>
+                </small>
               </div>
               <div className="col-sm-2 col-2">
+                <img className="img-fluid" src={ondelivery} alt="" />
                 <p>On delivery</p>
+                <small>15 Dec 2020, 12:32 pm</small>
+                <small>
+                  {" "}
+                  <p>Delivery on Progress by GHURI</p>
+                </small>
               </div>
-              <div className="col-sm-2 col-2">
-                <p>Delivered</p>
-              </div>
-            </div>
 
-            <div className="progress_status_info">
-              <div className="row mt-4">
-                <div className="col-sm-3">
-                  <p>15 Dec 2020, 12:32 pm</p>
-                </div>
-                <div className="col-sm-4">
-                  <p>Package is picked up by Ghuri</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-3">
-                  <p>15 Dec 2020, 12:32 pm</p>
-                </div>
-                <div className="col-sm-4">
-                  <p>Package is picked up by Ghuri</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-3">
-                  <p>15 Dec 2020, 12:32 pm</p>
-                </div>
-                <div className="col-sm-4">
-                  <p>Package is picked up by Ghuri</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-3">
-                  <p>15 Dec 2020, 12:32 pm</p>
-                </div>
-                <div className="col-sm-4">
-                  <p>Package is picked up by Ghuri</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-3">
-                  <p>15 Dec 2020, 12:32 pm</p>
-                </div>
-                <div className="col-sm-4">
-                  <p>Package is picked up by Ghuri</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-3">
-                  <p>15 Dec 2020, 12:32 pm</p>
-                </div>
-                <div className="col-sm-4">
-                  <p>Package is picked up by Ghuri</p>
-                </div>
-              </div>
+              {/* {returnstatus} */}
+              {sucessstatus}
+            </div>
+            <div className="cross_fa_times" onClick={handleClose}>
+              {/* <i class="fa fa-times"></i> */}
+              <img src={cancel_icon} alt="" />
             </div>
           </div>
         </Modal.Body>

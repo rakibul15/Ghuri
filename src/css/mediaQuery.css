@@ -440,6 +440,9 @@
 .track_search .form-control {
   width: 100% !important;
 }
+.track_search{
+  vertical-align: center;
+}
 .mr-sm-3{
   margin-right: 0px !important;
 }
@@ -576,21 +579,10 @@
   width: 300px;
   margin-left: -600px;
 }
-  /* .dropdown_menu {
-   
-    width: 500px;
-    margin-left: -200px;
-    float: none;
-    
-   
-    } */
-  /* Gallery Ends*/
+
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) and (max-width: 767.98px) {
-  
-} */
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -631,7 +623,8 @@
 }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/* Large Screen */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .footer_store_img img {
     width: 70%;
@@ -655,6 +648,10 @@
 
 }
 
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .footer_store_img img {
     width: 70%;
@@ -674,9 +671,9 @@
     width:250px;
     margin-left:-50px !important;
   }
-  .btn-parcelTrack {
+  /* .btn-parcelTrack {
     margin-top:10px !important;
-  }
+  } */
   
   
 }
