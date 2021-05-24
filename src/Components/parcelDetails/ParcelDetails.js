@@ -29,11 +29,12 @@ import IamFighter from "./IamFighter";
 import { FormControl } from "react-bootstrap";
 
 import logo from "../../images/ParcelDetails/logo7.svg";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getsearchdata } from "./_redux/action/ParcelAction";
 
 const ParcelDetails = () => {
   const dispatch = useDispatch();
+  const parcelracking = useSelector((state) => state.parcelInfo.parcelracking);
   const [show, setShow] = useState(false);
   const [allFaq, setAllFaq] = useState(false);
   const [changeimage, setchangeImage] = useState(
@@ -45,10 +46,10 @@ const ParcelDetails = () => {
 
   const [isshow, issetShow] = useState(false);
   const handleClose = () => issetShow(false);
-  const handleShow = (data) =>{
-    dispatch(getsearchdata(data))
+  const handleShow = (data) => {
+    dispatch(getsearchdata(data));
     issetShow(true);
-  } 
+  };
 
   const returnstatus = (
     <div className="col-sm-2 col-2">
@@ -75,14 +76,14 @@ const ParcelDetails = () => {
   );
 
   const [search, setSearch] = useState("");
-
+  console.log(`parcelracking`, parcelracking);
   return (
     <div>
       <div className="bgg ">
         <div className="Nav_overflow container">
           <div className="row parcel_main_content">
             <div className="col-sm-7">
-              <div className="parcel_tracker">
+              <div className="parcel_tracker invisible">
                 <h5>Enter parcel tracking number to track your parcel</h5>
                 <div className="track_search">
                   <FormControl
@@ -91,9 +92,11 @@ const ParcelDetails = () => {
                     className="mr-sm-3"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                   
                   />
-                  <button className="btn btn-parcelTrack" onClick={()=>handleShow(search)}>
+                  <button
+                    className="btn btn-parcelTrack"
+                    onClick={() => handleShow(search)}
+                  >
                     Track
                   </button>
                 </div>
@@ -454,20 +457,20 @@ const ParcelDetails = () => {
               </div>
             </div>
             {/* Progressbar */}
-           <div className="row d-flex justify-content-center">
-             <div className="col-sm-11">
-             <ProgressBar>
-              <ProgressBar className="p_color" now={77} key={1} />
-              {/* Ghuri Images */}
-              <img
-                className="p_images"
-                style={{ left: "74%" }}
-                src={logo}
-                alt=""
-              />
-            </ProgressBar>
-             </div>
-           </div>
+            <div className="row d-flex justify-content-center">
+              <div className="col-sm-11">
+                <ProgressBar>
+                  <ProgressBar className="p_color" now={77} key={1} />
+                  {/* Ghuri Images */}
+                  <img
+                    className="p_images"
+                    style={{ left: "74%" }}
+                    src={logo}
+                    alt=""
+                  />
+                </ProgressBar>
+              </div>
+            </div>
 
             <div className="row d-flex justify-content-between mt-4 delivery_progress_status_icon">
               <div className="col-sm-2 col-2">
