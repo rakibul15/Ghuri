@@ -137,4 +137,3 @@ export const ResendHealthOtp = (mobile) => async (dispatch) => {
 export const EmptyHealthOtp = () => (dispatch) => {
   dispatch({ type: Types.HEALTH_OTP_ID, payload: null });
 };
-
