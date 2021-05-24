@@ -9,6 +9,11 @@
     url(../font/Poppins-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "NCTTorin";
+  src: local("NCTTorin"), url(../font/NCTTorin-Regular.ttf) format("truetype");
+}
+
 .not_found {
   text-align: center;
   justify-content: center;
@@ -132,12 +137,19 @@ margin-left:2%;
   color: black;
   font-weight: 600;
 }
+
 .resend a {
   color: #cc0000 !important;
+  text-align: right;
+  right: 20px;
+  position: absolute;
 }
 
 .resend span {
   color: #cc0000 !important;
+  text-align: right;
+  right: 20px;
+  position: absolute;
 }
 .verification_input input {
   border: none;
@@ -189,43 +201,188 @@ margin-left:2%;
   font-weight: bold;
 }
 
-/**/
-
-/* .form_applicant{
-  background-color: #ffcc00 !important;
-  width: 50%;
-  justify-content: center;
-} */
-
 /*Health Form */
 .confirm_package_details h5 {
   color: #cc0000;
-  font-family: abel;
+  /* font-family: abel; */
   font-weight: 600;
 }
 .confirm_package_details h4 {
   color: #ffcc00;
   font-family: abel;
   font-weight: 600;
+  font-family: Abel;
 }
 .form_applicant label {
-  font-family: abel;
+  font-family: Abel;
   font-weight: 500;
+  font-size: 14px;
 }
 .form_applicant input {
-  font-family: abel;
+  font-family: Abel;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  padding-left: 0px;
+  font-size: 12px;
+}
+.edit-form-control .form-control {
+  border-radius: 0px !important;
+}
+.form_applicant input:focus {
+  font-family: Abel;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 .form_applicant input::placeholder {
-  font-family: abel;
+  font-family: Abel;
+}
+.date_applicant {
+  font-family: Abel;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: none !important;
+  margin-top: 12px;
+  font-size: 13px;
 }
 .ghuri_btn {
-  background-color: #ffcc00;
+  background-color: #ffcc00 !important;
+  color: black !important;
+  border: none !important;
+  font-family: Abel;
+  padding: 3px 30px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.ghuri_btn:hover {
+  background-color: #ffcc00 !important;
+  color: black !important;
+  border: none !important;
+  font-family: Abel;
+  padding: 3px 30px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.ghuri_btn:active {
+  background-color: #ffcc00 !important;
+  color: black !important;
+  border: none !important;
+  font-family: Abel;
+  padding: 3px 30px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.ghuri_btn:checked {
+  background-color: #ffcc00 !important;
   color: black;
+  border: none;
+  font-family: Abel;
+  padding: 3px 30px;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-.card_footer_health a{
+.card_footer_health a {
   cursor: pointer;
 }
+.cover_healthform {
+  background-color: #daebe8;
+}
+.form_control_select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  padding-left: 0px;
+  font-size: 12px;
+}
+.form_control_select option {
+  font-family: Abel !important;
+  font-size: 12px;
+}
+.form_control_select:focus {
+  background-color: transparent;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+.input-group .input-group-text {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  margin-right: 10px;
+  border-radius: 0px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.health_form_row {
+  margin-top: 5px;
+}
+
+.package_confirm_details p {
+  font-family: Abel;
+  font-size: 13px;
+}
+.package_confirm_details p span {
+  font-family: Abel;
+  font-size: 13px;
+  font-weight: 600;
+}
+.checkbox a {
+  color: #ffcc00 !important;
+}
+.example-custom-input {
+  cursor: pointer;
+  width: 100%;
+}
+/* Custom Checkbox*/
+/* .squaredThree */
+.squaredThree {
+  position: relative;
+  float: left;
+}
+
+.squaredThree label {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  border-radius: 4px;
+}
+
+.squaredThree label:after {
+  content: "";
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border: 2px solid #fcfff4;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.squaredThree label:hover::after {
+  opacity: 0;
+}
+
+.squaredThree input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.squaredThree input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+/* end .squaredThree *
+
 
 /*Terms*/
 .terms_content h1 {
@@ -297,58 +454,648 @@ margin-left:2%;
 .single_blog h6 {
   padding-bottom: 15px;
 }
-.single_blog_sideNav{
-  
+.single_blog_sideNav {
   box-shadow: 2px 2px 8px grey;
+}
 
-  
- }
-
-.single_blog_sideNav:hover{
+.single_blog_sideNav:hover {
   box-shadow: 2px 2px 15px grey;
- 
 }
-.all_blogs img{
- height: 150px;
- object-fit: cover;
- width: 100%;
-}
-.all_blogs h6{
- font-size: 14px;
- padding: 10px;
- text-align: left;
- }
-.show_image img{
+.all_blogs img {
+  height: 150px;
+  object-fit: cover;
   width: 100%;
-  height:300px;
+}
+.all_blogs h6 {
+  font-size: 14px;
+  padding: 10px;
+  text-align: left;
+}
+.show_image img {
+  width: 100%;
+  height: 300px;
   object-fit: cover;
   box-shadow: 2px 2px 4px grey;
- 
 }
-.show_image img:hover{
+.show_image img:hover {
   box-shadow: 2px 2px 10px grey;
- 
- 
 }
 
-
-.blog_main h1{
+.blog_main h1 {
   font-size: 1.4rem;
 }
-.blog_main p{
-  font-size:14px;
+.blog_main p {
+  font-size: 14px;
   text-align: justify;
 }
 /* Blogs Ends */
-.page-link:focus{
+.page-link:focus {
   background-color: #ffcc00 !important;
 }
 
 .fixed {
- position: fixed;
- top:0;
-
+  position: fixed;
+  top: 0;
 }
-.Nav_overflow{
+.Nav_overflow {
   margin-top: 62px;
+}
+/*Health Verifications*/
+
+/*Modal*/
+.modal-content {
+  margin-top: 35%;
+}
+
+.health_verification_container {
+  margin-top: 35%!;
+}
+
+.health_verification_container .modal-content {
+  margin-top: 35% !important;
+}
+
+.health_confirm {
+  background-color: #ffcc00 !important;
+  color: black !important;
+  border: none !important;
+  font-family: Abel;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.health_confirm:hover {
+  background-color: #ffcc00 !important;
+  color: black !important;
+  border: none !important;
+  font-family: Abel;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.health_confirm:active {
+  background-color: #ffcc00 !important;
+  color: black !important;
+  border: none !important;
+  font-family: Abel;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.health_confirm:checked {
+  background-color: #ffcc00 !important;
+  color: black;
+  border: none;
+  font-family: Abel;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.modal_title {
+  font-family: Abel;
+  font-size: 20px;
+}
+.modal_body input {
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0px;
+  background-color: transparent;
+}
+.modal_body input:focus {
+  font-family: Abel;
+  background-color: transparent;
+  outline: none !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid white;
+}
+.modal {
+  padding-right: 0px !important;
+}
+.modal_body h6 {
+  font-family: Abel;
+}
+.GP .input-group-text {
+  font-size: 16px;
+  color: white;
+}
+.health_verification_container {
+  background-color: black;
+  color: white;
+}
+
+.resend_color {
+  color: #cc0000;
+}
+.health_verification_container .modal-header {
+  border-bottom: none !important;
+}
+.health_verification_container .modal-header .close {
+  color: white;
+}
+
+/* Parcel Details */
+/* .parcel_main {
+
+} */
+.bgg {
+  background-image: url(../images/ParcelDetails/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 115vh;
+
+  margin-top: -60px;
+}
+.parcel_main_content {
+  padding-top: 100px;
+}
+.parcel_first_app {
+  margin-top: 10px;
+}
+.what_we_deliver {
+  /* margin-top: 150px; */
+  margin-bottom: 100px;
+}
+.what_we_deliver h2 {
+  font-family: Abel;
+}
+.what_we_deliver P {
+  font-family: Abel;
+  margin-top: 8px;
+}
+.how_to_deliver p span {
+  margin-right: 15px;
+}
+.how_to_deliver_main h2 {
+  font-family: Abel;
+}
+.how_to_deliver p {
+  font-family: Abel;
+}
+
+.how_to_container_bg {
+  background-image: url(../images/ParcelDetails/howtouse.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.papp_fixes {
+  margin-left: 25px;
+  margin-right: 36px;
+}
+.Parecl_app span {
+  vertical-align: middle;
+  display: inline-block;
+}
+.Play_fixed {
+  margin-left: 25px;
+  margin-right: 45px;
+}
+
+.Parecl_app {
+  background-color: #ffcc00;
+  padding: 0.6rem 1.5rem;
+}
+
+.app_store_btn {
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.7rem 1.5rem;
+}
+.app_store_btn .fa-money {
+  font-size: 30px;
+}
+
+.app_store_btn span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.deliver img {
+  width: 50%;
+}
+
+.howdeliver img {
+  width: 50%;
+}
+
+.download_app img {
+  width: 20%;
+  margin-right: 10px;
+}
+.card {
+  width: 100%;
+
+  box-shadow: 2px 2px 7px black;
+  border-radius: 10px;
+}
+.how_to_deliver span {
+  background-color: #ffcc00;
+  border-radius: 50%;
+  padding: 4px 10px;
+  font-weight: bold;
+}
+.custom_card {
+  padding: 15px 10px;
+}
+.content_info_box img {
+  width: 20%;
+}
+.content_info_box {
+  padding: 20px 20px;
+  border-radius: 10px;
+  min-height: 200px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+}
+.content_info_box h2 {
+  font-family: Abel;
+}
+.content_info_box small {
+  font-family: Abel;
+}
+.rider img {
+  width: 100%;
+}
+.btn_Faq_active {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  /* border: 2px solid white !important; */
+  box-shadow: 2px 2px 10px white;
+  outline: none !important;
+  /* opacity: 40%;
+  color: black; */
+}
+.btn_Faq_active:active {
+  box-shadow: 2px 2px 10px black;
+  outline: none !important;
+}
+.btn_Faq_active:focus {
+  box-shadow: none;
+  outline: none !important;
+}
+
+.btn_Faq {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ffcc00;
+  outline: none !important;
+  box-shadow: none;
+  background-color: white;
+}
+.btn_Faq:focus {
+  width: 100% !important;
+  padding: 10px 20px;
+  border: 1px solid #ffcc00;
+  outline: none !important;
+  box-shadow: none;
+}
+.btn_Faq:active {
+  width: 100% !important;
+  padding: 10px 20px;
+  border: 1px solid #ffcc00;
+  outline: none !important;
+  box-shadow: none;
+}
+.combained_sec {
+  margin-top: 150px;
+  background-image: url(../images/ParcelDetails/combained_sec.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-family: Abel;
+}
+.combained_sec h2 {
+  font-family: Abel;
+}
+.combained_sec h4 {
+  font-family: Abel;
+  margin-top: 35px;
+}
+.deliverearn img {
+  width: 73%;
+}
+.delivery_and_earn {
+  position: relative;
+}
+
+.left_top {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+.left_bottom {
+  position: absolute;
+  left: 30%;
+  bottom: -12%;
+  text-align: center;
+}
+.right_bottom {
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+  text-align: center;
+}
+
+.card_custom_attach {
+  padding: 35px 30px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px !important;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.Parcel_Faq {
+  background-image: url(../images/ParcelDetails/Subtraction\ 16.png);
+  margin-top: 100px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
+  font-family: Abel;
+}
+.Parcel_Faq h2 {
+  font-family: Abel;
+}
+.parcel_Faq .btn {
+  font-family: Abel;
+}
+.btn-link {
+  color: black !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.btn-link .fa-plus {
+  color: #ffcc00;
+}
+.btn-link .fa-minus {
+  color: #ffcc00;
+}
+.btn_box_shadow {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.view_all_btn {
+  margin-top: -100px;
+}
+
+.parcel_view_step:hover {
+  background-color: #fedf65;
+  border-radius: 10px;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.collapse_body {
+  margin-left: 28px;
+}
+.card_custom_attach .fa-circle {
+  color: #ffcc00;
+  font-size: 10px;
+  margin-right: 8px;
+}
+.parcel_main_content h2 {
+  font-family: Abel;
+}
+
+.parcel_main_conten tp {
+  font-family: Abel;
+}
+.parcel_main_content a {
+  font-family: Abel;
+}
+
+.svg {
+  margin-top: -200px;
+  overflow: hidden;
+}
+
+/* Popup */
+.pop_up .modal-content {
+  margin-top: 0px !important;
+}
+.popup_modal img {
+  width: 50%;
+}
+.popup_modal h2 {
+  font-family: Abel;
+  font-weight: 600;
+  font-size: 2vw;
+}
+.google_play_icon img {
+  width: 100%;
+}
+.google_play_icon {
+  display: flex;
+}
+.modal_container {
+  position: relative;
+}
+/* .app_store_popup{
+  position: absolute;
+  left: 38%;
+  bottom: -20px;
+  width: 20%;
+}
+.google_play_popup{
+  position: absolute;
+  left: 5%;
+  bottom: -20px;
+  width: 20%;
+} */
+
+.cross {
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  cursor: pointer;
+}
+.modal_custom_body {
+  padding: 0px !important;
+}
+.cross .fa-times {
+  color: black;
+  font-size: 20px;
+}
+.curve_img {
+  margin-top: -130px;
+}
+.playstore_popup {
+  position: absolute;
+  left: 10%;
+  top: 75%;
+  cursor: pointer;
+  width: 15%;
+}
+.appstore_popup {
+  position: absolute;
+  left: 28%;
+  top: 75%;
+  cursor: pointer;
+  width: 15%;
+}
+
+.parcel_view_step {
+  cursor: pointer;
+}
+.accordion_faq img {
+  margin-right: 20px;
+}
+/* .parcel_main_section {
+  margin-top: 100px;
+} */
+.how_to_deliver_main {
+  margin-bottom: 20px;
+}
+
+.parcel_tracker {
+  /* background-color: #ffcc00; */
+  background-image: linear-gradient(
+    to left,
+    #eca90c,
+    #f9c904,
+    #ffcc00,
+    #f9c904,
+    #eca90c
+  );
+  padding: 20px 20px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  margin-top: 35px;
+}
+.parcel_tracker h5 {
+  color: black;
+  font-family: Abel;
+  font-size: 1.1rem;
+}
+.track_search .form-control {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: none;
+  font-family: Abel;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.track_search .form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none;
+}
+
+.btn-parcelTrack {
+  background-color: black;
+  color: white;
+  padding: 5px 29px;
+  font-family: Abel;
+  margin-top: -5px;
+}
+.btn-parcelTrack:hover {
+  color: white;
+}
+.btn-parcelTrack:active {
+  color: white;
+  outline: none !important;
+}
+.btn-parcelTrack:focus {
+  color: white;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.parcel_main_content_small p {
+  font-family: Abel;
+}
+/* Progressbar */
+.p_color {
+  background-image: linear-gradient(
+    to right,
+    #f9fd00dc,
+    #f9c904,
+    #ffcc00,
+    #f9c904,
+    #eca90c
+  );
+  position: relative;
+ 
+}
+.progress {
+  border-radius: 2.25rem;
+}
+.progress_status_info p {
+  font-size: 12px;
+  padding-bottom: 0px !important;
+  margin-bottom: 5px !important;
+}
+.parcel_details_modal {
+  margin-top: 0% !important;
+  width: 100%;
+  height: 100vh !important;
+}
+.parcel_details_modal .modal-content {
+  margin-top: 5% !important;
+  background-color: transparent;
+  border: none;
+}
+.modal_color {
+  background-image: linear-gradient(
+    to left,
+    #eca90c,
+    #f9c904,
+    #ffcc00,
+    #f9c904,
+    #eca90c
+  );
+  border-radius: 20px;
+}
+.modal_design {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 40px;
+}
+.p_images {
+  height: 50px !important;
+  width: 50px !important;
+  margin-top: -16px;
+  z-index: 99999 !important;
+  position: absolute;
+}
+.black_color {
+  color: black;
+}
+.delivery_progress_status_icon img {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+.cross_fa_times img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+}
+.delivery_progress_status_icon {
+  text-align: center;
+  font-family: Abel;
+}
+.delivery_progress_status_icon p {
+  margin-top: 10px;
+}
+.delivery_details_header {
+  font-family: Abel;
+}
+.status_header {
+  text-align: center;
+}
+.delivery_progress_status_icon small p{
+  margin-top: 0px !important;
 }

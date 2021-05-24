@@ -37,6 +37,11 @@ import Refund from "./Components/refund/Refund";
 import "../src/css/main.css";
 import Blog from "./Components/Blog/Blog";
 import Blogdetails from "./Components/Blog/Blogdetails";
+import HealthTerms from "./Components/health/components/HealthTerms";
+import ParcelDetails from "./Components/parcelDetails/ParcelDetails";
+import Popup from "./Components/modal/Popup";
+import ParcelModal from "./Components/parcelDetails/ParcelModal";
+
 
 function App() {
   return (
@@ -46,6 +51,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Header></Header>
+            <Popup></Popup>
             <Count />
             <Parcel></Parcel>
             <Gallery></Gallery>
@@ -156,13 +162,13 @@ function App() {
           <Route path="/refund">
             <Refund></Refund>
           </Route>
-          <Route exact path="/blog">
+          {/* <Route exact path="/blog">
             <Blog></Blog>
-          </Route>
+          </Route> */}
 
-          <Route exact path="/blog/:id">
+          {/* <Route exact path="/blog/:id">
             <Blogdetails></Blogdetails>
-          </Route>
+          </Route> */}
 
           <Route path="/health">
             <Health></Health>
@@ -177,9 +183,23 @@ function App() {
           <Route path="/gold">
             <Gold></Gold>
           </Route>
-          <Route path="/healthform:id">
+          <Route path="/health:id">
             <Healthform></Healthform>
           </Route>
+          <Route path="/HealthTerms">
+            <HealthTerms></HealthTerms>
+          </Route>
+
+          {/* Parcel Details */}
+          <Route path="/ghuriparcel">
+            <ParcelDetails></ParcelDetails>
+          </Route>
+
+          <Route path="/parcelModal">
+           <ParcelModal></ParcelModal>
+          </Route>
+
+
           <Route path="*">
             <Notmatch />
           </Route>

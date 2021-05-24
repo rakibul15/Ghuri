@@ -1,7 +1,13 @@
 // import { logDOM } from "@testing-library/react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Dropdown, DropdownButton, Nav, Navbar } from "react-bootstrap";
+import {
+  Dropdown,
+  DropdownButton,
+  Nav,
+  Navbar,
+  NavDropdown,
+} from "react-bootstrap";
 import "./Topnav.css";
 import logo from "../../images/logo/logo.svg";
 import { Link } from "react-router-dom";
@@ -11,16 +17,6 @@ const Topnav = () => {
   const dispatch = useDispatch();
   const riderectMessage = () => {
     dispatch(SetRiderectMessage());
-  };
-  const handleRedirect = () => {
-    // window.open("https://ocean.ghuriexpress.com/#/login", "_blank");
-    window.open(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`, "_blank");
-  };
-  const riderectNuraniInterior = () => {
-    window.open("https://nuraniinteriorbd.com/", "_blank");
-  };
-  const riderectNuraniRadio = () => {
-    window.open("https://nuraniradio.com/", "_blank");
   };
 
   return (
@@ -33,60 +29,440 @@ const Topnav = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link className="nav_color">
-              <Link to="/home"> Home</Link>
-            </Nav.Link>
+          <Nav className="ml-auto ghuri_nav">
+            <Nav.Link href="/home">Home</Nav.Link>
+            <div class="dropdown_main">
+            <Nav.Link className="dropdown">Service <i class="fa fa-caret-down"></i></Nav.Link>
+            <div
+                class="dropdown_menu  drop_down_custom show drop_down_content"
+                aria-labelledby="menu-item-dropdown-223"
+                role="menu"
+                >
+                <div className="row drop_down_margin">
+                  <div className="col-sm-12 col-md-6  ">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      parcel_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      car
+                      "
+                    >
+                      <a
+                        title="Parcel"
+                        href="/ghuriparcel"
+                        class="dropdown-item"
+                      >
+                        {" "}
+                        Parcel
+                        <span class="sub">
+                          On Demand Delivery at Your Doorstep
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                  <div className="col-sm-12 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      health_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                      <a title="Health" href="/health" class="dropdown-item">
+                        Health
+                        <span class="sub">
+                         Ghuri Health Service
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                  <div className="col-sm-12 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      interior_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                      <a
+                        target="_Blank"
+                        title="Interior"
+                        href="https://nuraniinteriorbd.com/"
+                        class="dropdown-item"
+                      >
+                        Interior
+                        <span class="sub">
+                         Extra Idea Our Asset
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                  <div className="col-sm-12 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      news_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                      <a
+                        title="News"
+                        target="_Blank"
+                        href="https://nuraniradio.com/"
+                        class="dropdown-item"
+                      >
+                        News
+                        <span class="sub">
+                        Your Right To Know
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
 
-            <Nav.Link>
-              <DropdownButton title="Services" variant="none">
-                <Dropdown.Item className="hover_color">
-                  <Link to="#" className="drop_down_menu">
-                    <a onClick={() => riderectNuraniInterior()}>
-                      Nurani Interior
+                <hr />
+                <div className="row ml-2 download_app_all">
+                  <div className="col-md-6 col-sm-12">
+                    <h6>Download User App</h6>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
+                      target="_Blank"
+                    >
+                      <img
+                        width="146"
+                        height="44"
+                        src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
+                        title="Google Play"
+                      />
                     </a>
-                  </Link>
-                </Dropdown.Item>
-                <Dropdown.Item className="hover_color">
-                  <Link to="#" className="drop_down_menu">
-                    <a onClick={() => riderectNuraniRadio()}>Nurani Radio</a>
-                  </Link>
-                </Dropdown.Item>
-              </DropdownButton>
-            </Nav.Link>
 
-            <Nav.Link>
-              <DropdownButton
-                id="dropdown-basic-button"
-                title="Merchant"
-                variant="none"
-              >
-                <Dropdown.Item className="hover_color">
-                  <Link
-                    className="drop_down_menu"
-                    to="/merchant"
+                    <a>
+                      <img
+                        width="146"
+                        height="44"
+                        src="https://pathao.com/wp-content/uploads/2018/12/App-Store-nb.png"
+                        title="App-Store"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <h6>Download Fighter App</h6>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
+                      target="_Blank"
+                    >
+                      <img
+                        width="146"
+                        height="44"
+                        src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
+                        title="Google Play"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+
+            {/* Dropdown for small Screen Only */}
+            <NavDropdown
+              title="Services"
+              id="collasible-nav-dropdown"
+              className="nav_dropdown"
+            >
+                
+           
+            <div
+                class="dropdown-menu  drop_down_custom show drop_down_content"
+                aria-labelledby="menu-item-dropdown-223"
+                role="menu"
+                >
+                <div className="row drop_down_margin">
+                  <div className="col-sm-6 col-md-6  ">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      parcel_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      car
+                      "
+                    >
+                      <a
+                        title="Parcel"
+                        href="/ghuriparcel"
+                        class="dropdown-item"
+                      >
+                        {" "}
+                        Parcel
+                        <span class="sub">
+                          On Demand Delivery at Your Doorstep
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                  <div className="col-sm-6 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      health_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                      <a title="Health" href="/health" class="dropdown-item">
+                        Health
+                        <span class="sub">
+                          Get Your Food in Less Than an Hour
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                  <div className="col-sm-6 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      interior_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                      <a
+                        target="_Blank"
+                        title="Interior"
+                        href="https://nuraniinteriorbd.com/"
+                        class="dropdown-item"
+                      >
+                        Interior
+                        <span class="sub">
+                          Get Your Food in Less Than an Hour
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                  <div className="col-sm-6 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      class="
+                      news_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                      <a
+                        title="News"
+                        target="_Blank"
+                        href="https://nuraniradio.com/"
+                        class="dropdown-item"
+                      >
+                        News
+                        <span class="sub">
+                          Get Your Food in Less Than an Hour
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+
+                <hr />
+                <div className="row  download_app_all">
+                  <div className="col-md-6 col-sm-6">
+                    <h6>Download User App</h6>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
+                      target="_Blank"
+                    >
+                      <img
+                        width="146"
+                        height="44"
+                        src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
+                        title="Google Play"
+                      />
+                    </a>
+
+                    <a>
+                      <img
+                        width="146"
+                        height="44"
+                        src="https://pathao.com/wp-content/uploads/2018/12/App-Store-nb.png"
+                        title="App-Store"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <h6>Download Fighter App</h6>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
+                      target="_Blank"
+                    >
+                      <img
+                        width="146"
+                        height="44"
+                        src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
+                        title="Google Play"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+            </NavDropdown>
+            {/* End DropDown */}
+
+        
+            <NavDropdown
+              className="marchent_custom"
+              title="Merchant"
+              id="collasible-nav-dropdown"
+            >
+              <div className="merchant_drop mt-1">
+                <li
+                  id="menu-item-144"
+                  class="
+                  signup_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                >
+                  <a
+                    title="Signup"
+                    href="/merchant"
                     onClick={() => riderectMessage()}
+                    className="hover_color"
+                    class="dropdown-item"
                   >
-                    <a href> Signup</a>
-                  </Link>
-                </Dropdown.Item>
-                <Dropdown.Item className="hover_color">
-                  <Link to="#" className="drop_down_menu">
-                    <a onClick={() => handleRedirect()}>Login</a>
-                  </Link>
-                </Dropdown.Item>
-              </DropdownButton>
-            </Nav.Link>
-            <Nav.Link className="nav_color">
-              <Link to="/health"> Health</Link>
-            </Nav.Link>
+                    Signup
+                    <span class="sub">Signup As a Merchant</span>
+                  </a>
+                </li>
+              </div>
+
+              <div className="merchant_drop mt-1">
+                <li
+                  id="menu-item-144"
+                  class="
+                  login_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                >
+                  <a
+                    title="Login"
+                    target="_Blank"
+                    className="hover_color"
+                    href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
+                    class="dropdown-item"
+                  >
+                    Login
+                    <span class="sub">Login Your Merchant Account</span>
+                  </a>
+                </li>
+              </div>
+            </NavDropdown>
+
+            <div className="merchant_dropdown">
+            <Nav.Link className="dropdown">Merchant <i class="fa fa-caret-down"></i></Nav.Link>
+            <div className="merchant_content">
+            <div className="merchant_drop mt-2 mb-2">
+                <li
+                  id="menu-item-144"
+                  class="
+                  signup_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                >
+                  <a
+                    title="Health"
+                    href="/merchant"
+                    onClick={() => riderectMessage()}
+                    className="hover_color"
+                    class="dropdown-item"
+                  >
+                    Signup
+                    <span class="sub">Signup As a Merchant</span>
+                  </a>
+                </li>
+              </div>
+              <div className="merchant_drop mt-2 mb-2">
+                <li
+                  id="menu-item-144"
+                  class="
+                  login_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                >
+                  <a
+                    title="Health"
+                    target="_Blank"
+                    className="hover_color"
+                    href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
+                    class="dropdown-item"
+                  >
+                    Login
+                    <span class="sub">Login Your Merchant Account</span>
+                  </a>
+                </li>
+              </div>
+
+            </div>
+
+            </div>
+           
+            
+
+
+            {/* <Nav.Link href="/health" className="nav_color">
+              Health
+            </Nav.Link> */}
             {/* <Nav.Link className="nav_color">
               <Link to="/blog">Blog</Link>
             </Nav.Link> */}
-            <Nav.Link className="language">
-              <Link to="#">
-                <i className="fa fa-globe"></i> EN
-              </Link>
+            <Nav.Link className="custom_nav">
+              <i className="fa fa-globe"></i> EN
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

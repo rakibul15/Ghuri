@@ -4,7 +4,7 @@ const initialState = {
   healthFormInput: {
     name: "",
     nameShow: "",
-    dateOfBirth: "",
+    dateOfBirth: new Date(),
     applicantPhone: "",
     address: "",
     email: "",
@@ -86,6 +86,7 @@ const HealthReducer = (state = initialState, action) => {
         ...state,
         isHealthSubmitting: action.payload,
       };
+    
     default:
       break;
   }

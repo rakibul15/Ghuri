@@ -56,7 +56,7 @@ const Gold = () => {
 
             <Card.Footer className="card_footer_health">
               <h6 class="card-subtitltext-muted text-center">
-                <a onClick={() => history.push(`/healthform:7`)}>
+                <a onClick={() => history.push(`/health:gold3`)}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>
@@ -75,7 +75,7 @@ const Gold = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a onClick={() => history.push(`/healthform:8`)}>
+                <a onClick={() => history.push(`/health:gold6`)}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>
@@ -94,7 +94,7 @@ const Gold = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a onClick={() => history.push(`/healthform:9`)}>
+                <a onClick={() => history.push(`/health:gold12`)}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>

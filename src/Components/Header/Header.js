@@ -36,7 +36,7 @@ const Header = () => {
               </a>{" "}
               <br />
               <a
-                href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuridrive"
+                href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
                 target="_blank"
                 className="btn earnwith btn-lg mt-4"
                 rel="noreferrer"
