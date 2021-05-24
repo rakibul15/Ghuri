@@ -69,46 +69,43 @@ export const SubmitHealthForm = (data) => async (dispatch) => {
   dispatch({ type: Types.IS_HEALTH_SUBMITTING, payload: false });
 };
 
-export const SubmitHealthOtp = (
-  healthFormInput,
-  smsCode,
-  healthOtpId
-) => async (dispatch) => {
-  const verifyData = {
-    csms_id: healthOtpId,
-    otp: smsCode,
-  };
-  const url = `${process.env.REACT_APP_API_URL}admin/health_otp_check`;
-  const urlReg = `${process.env.REACT_APP_API_URL}admin/health/applicant_info`;
+export const SubmitHealthOtp =
+  (healthFormInput, smsCode, healthOtpId) => async (dispatch) => {
+    const verifyData = {
+      csms_id: healthOtpId,
+      otp: smsCode,
+    };
+    const url = `${process.env.REACT_APP_API_URL}admin/health_otp_check`;
+    const urlReg = `${process.env.REACT_APP_API_URL}admin/health/applicant_info`;
 
-  try {
-    await Axios.post(url, verifyData).then((res) => {
-      if (res.data.status) {
-        //Hit registration Url
-        try {
-          Axios.post(urlReg, healthFormInput).then((res) => {
-            if (typeof res !== "undefined") {
-              showToast("success", res.data.message);
-              if (res.status === 200) {
-                dispatch({ type: Types.IS_SUBMITED_HEALTH, payload: true });
-                dispatch({ type: Types.EMPTY_HEALTH_INPUT, payload: "" });
+    try {
+      await Axios.post(url, verifyData).then((res) => {
+        if (res.data.status) {
+          //Hit registration Url
+          try {
+            Axios.post(urlReg, healthFormInput).then((res) => {
+              if (typeof res !== "undefined") {
+                showToast("success", res.data.message);
+                if (res.status === 200) {
+                  dispatch({ type: Types.IS_SUBMITED_HEALTH, payload: true });
+                  dispatch({ type: Types.EMPTY_HEALTH_INPUT, payload: "" });
+                }
+              } else {
+                showToast(
+                  "error",
+                  "Please check the file inputs and try again !"
+                );
               }
-            } else {
-              showToast(
-                "error",
-                "Please check the file inputs and try again !"
-              );
-            }
-          });
-        } catch (error) {
-          showToast("error", "Something went wrong");
+            });
+          } catch (error) {
+            showToast("error", "Something went wrong");
+          }
         }
-      }
-    });
-  } catch (error) {
-    showToast("error", "Something went wrong");
-  }
-};
+      });
+    } catch (error) {
+      showToast("error", "Something went wrong");
+    }
+  };
 
 export const ResendHealthOtp = (mobile) => async (dispatch) => {
   const smsNumber = {
@@ -140,4 +137,3 @@ export const ResendHealthOtp = (mobile) => async (dispatch) => {
 export const EmptyHealthOtp = () => (dispatch) => {
   dispatch({ type: Types.HEALTH_OTP_ID, payload: null });
 };
-
