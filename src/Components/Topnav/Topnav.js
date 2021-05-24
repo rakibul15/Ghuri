@@ -31,6 +31,7 @@ const Topnav = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto ghuri_nav">
             <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link   href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}>Bazar</Nav.Link>
             <div class="dropdown_main">
             <Nav.Link className="dropdown">Service <i class="fa fa-caret-down"></i></Nav.Link>
             <div

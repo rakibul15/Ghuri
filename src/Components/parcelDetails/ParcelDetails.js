@@ -29,8 +29,11 @@ import IamFighter from "./IamFighter";
 import { FormControl } from "react-bootstrap";
 
 import logo from "../../images/ParcelDetails/logo7.svg";
+import { useDispatch } from "react-redux";
+import { getsearchdata } from "./_redux/action/ParcelAction";
 
 const ParcelDetails = () => {
+  const dispatch = useDispatch();
   const [show, setShow] = useState(false);
   const [allFaq, setAllFaq] = useState(false);
   const [changeimage, setchangeImage] = useState(
@@ -42,7 +45,8 @@ const ParcelDetails = () => {
 
   const [isshow, issetShow] = useState(false);
   const handleClose = () => issetShow(false);
-  const handleShow = () =>{
+  const handleShow = (data) =>{
+    dispatch(getsearchdata(data))
     issetShow(true);
   } 
 
@@ -89,7 +93,7 @@ const ParcelDetails = () => {
                     onChange={(e) => setSearch(e.target.value)}
                    
                   />
-                  <button className="btn btn-parcelTrack" onClick={handleShow}>
+                  <button className="btn btn-parcelTrack" onClick={()=>handleShow(search)}>
                     Track
                   </button>
                 </div>
