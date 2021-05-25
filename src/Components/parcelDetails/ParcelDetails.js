@@ -30,11 +30,18 @@ import { FormControl } from "react-bootstrap";
 
 import logo from "../../images/ParcelDetails/logo7.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { getsearchdata } from "./_redux/action/ParcelAction";
+import {
+  getsearchdata,
+  IconProgress,
+  Progress,
+} from "./_redux/action/ParcelDetailsAction";
 
 const ParcelDetails = () => {
   const dispatch = useDispatch();
-  const parcelracking = useSelector((state) => state.parcelInfo.parcelracking);
+  const parcelTracking = useSelector(
+    (state) => state.parcelInfo.parcelTracking
+  );
+  const isTracking = useSelector((state) => state.parcelInfo.isTracking);
   const [show, setShow] = useState(false);
   const [allFaq, setAllFaq] = useState(false);
   const [changeimage, setchangeImage] = useState(
@@ -50,40 +57,26 @@ const ParcelDetails = () => {
     dispatch(getsearchdata(data));
     issetShow(true);
   };
-
-  const returnstatus = (
-    <div className="col-sm-2 col-2">
-      <img className="img-fluid" src={returnparcel} alt="" />
-      <p>Return</p>
-      <small>15 Dec 2020, 12:32 pm</small>
-      <small>
-        {" "}
-        <p>Return To Merchant</p>
-      </small>
-    </div>
-  );
-
-  const sucessstatus = (
-    <div className="col-sm-2 col-2">
-      <img className="img-fluid" src={delivered} alt="" />
-      <p>Delivered</p>
-      <small>15 Dec 2020, 12:32 pm</small>
-      <small>
-        {" "}
-        <p>Delivered To Customer</p>
-      </small>
-    </div>
-  );
+  // const [progress, setProgress] = useState(0)
+  // const [progressIcon, setProgressIcon] = useState("0%")
   //test
   const [search, setSearch] = useState("");
-  console.log(`parcelracking`, parcelracking);
+  // if (parcelTracking && parcelTracking.status <= 0) {
+  //   console.log(`parcelTracking`, parcelTracking.status);
+  // }
+
+  // useEffect(() => {
+  //   if(parcelTracking.status){
+  //       if(parcelTracking.status === 0){setProgress(); setProgressIcon}
+  //   }
+  // }, [parcelTracking])
   return (
     <div>
       <div className="bgg ">
         <div className="Nav_overflow container">
           <div className="row parcel_main_content">
             <div className="col-sm-7">
-              <div className="parcel_tracker invisible">
+              <div className="parcel_tracker">
                 <h5>Enter parcel tracking number to track your parcel</h5>
                 <div className="track_search">
                   <FormControl
@@ -93,12 +86,23 @@ const ParcelDetails = () => {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                   />
-                  <button
-                    className="btn btn-parcelTrack"
-                    onClick={() => handleShow(search)}
-                  >
-                    Track
-                  </button>
+                  {!isTracking && (
+                    <button
+                      className="btn btn-parcelTrack"
+                      onClick={() => handleShow(search)}
+                    >
+                      Track
+                    </button>
+                  )}
+                  {isTracking && (
+                    <button className="btn btn-parcelTrack">
+                      <span
+                        class="spinner-border spinner-border-sm"
+                        role="status"
+                        aria-hidden="true"
+                      ></span>
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
@@ -438,97 +442,220 @@ const ParcelDetails = () => {
       </div> */}
 
       {/* Modal On click track*/}
-      <Modal
-        show={isshow}
-        centered
-        onHide={handleClose}
-        size="xl"
-        className="parcel_details_modal"
-      >
-        <Modal.Body className="modal_color">
-          <div className="modal_design  delivery_details_header">
-            <div className="row mt-2 mb-4 pb-4 status_header ">
-              <div className="col-sm-12">
-                <h5>
-                  <span className="black_color">
-                    Delivery on Progress by GHURI
-                  </span>
-                </h5>
+      {parcelTracking && (
+        <Modal
+          show={isshow}
+          centered
+          onHide={handleClose}
+          size="xl"
+          className="parcel_details_modal"
+        >
+          <Modal.Body className="modal_color">
+            <div className="modal_design  delivery_details_header">
+              <div className="row mt-2 mb-4 pb-4 status_header ">
+                <div className="col-sm-12">
+                  <h5>
+                    <span className="black_color">
+                      Delivery on Progress by GHURI
+                    </span>
+                  </h5>
+                </div>
               </div>
-            </div>
-            {/* Progressbar */}
-            <div className="row d-flex justify-content-center">
-              <div className="col-sm-11">
-                <ProgressBar>
-                  <ProgressBar className="p_color" now={77} key={1} />
-                  {/* Ghuri Images */}
-                  <img
-                    className="p_images"
-                    style={{ left: "74%" }}
-                    src={logo}
-                    alt=""
-                  />
-                </ProgressBar>
-              </div>
-            </div>
-
-            <div className="row d-flex justify-content-between mt-4 delivery_progress_status_icon">
-              <div className="col-sm-2 col-2">
-                <img className="img-fluid" src={pending} alt="" />
-                <p>Pending</p>
-                <small>15 Dec 2020, 12:32 pm</small>
-                <small>
-                  {" "}
-                  <p>Parcel Added by Merchant</p>
-                </small>
-              </div>
-              <div className="col-sm-2 col-2">
-                <img className="img-fluid" src={onpickup} alt="" />
-                <p>On Pick up</p>
-                <small>15 Dec 2020, 12:32 pm</small>
-                <small>
-                  {" "}
-                  <p>Waiting for pick up by GHURI</p>
-                </small>
-              </div>
-              <div className="col-sm-2 col-2">
-                <img className="img-fluid" src={pickedup} alt="" />
-                <p>Picked Up</p>
-                <small>15 Dec 2020, 12:32 pm</small>
-                <small>
-                  {" "}
-                  <p>Picked Up by GHURI</p>
-                </small>
-              </div>
-              <div className="col-sm-2 col-2">
-                <img className="img-fluid" src={inhub} alt="" />
-                <p>In hub</p>
-                <small>15 Dec 2020, 12:32 pm</small>
-                <small>
-                  {" "}
-                  <p>Parcel in Ghuri Hub</p>
-                </small>
-              </div>
-              <div className="col-sm-2 col-2">
-                <img className="img-fluid" src={ondelivery} alt="" />
-                <p>On delivery</p>
-                <small>15 Dec 2020, 12:32 pm</small>
-                <small>
-                  {" "}
-                  <p>Delivery on Progress by GHURI</p>
-                </small>
+              {/* Progressbar */}
+              <div className="row d-flex justify-content-center">
+                <div className="col-sm-11">
+                  <ProgressBar>
+                    <ProgressBar
+                      className="p_color"
+                      now={Progress(parcelTracking.status)}
+                      key={1}
+                    />
+                    {/* Ghuri Images */}
+                    <img
+                      className="p_images"
+                      style={{ left: IconProgress(parcelTracking.status) }}
+                      src={logo}
+                      alt=""
+                    />
+                  </ProgressBar>
+                </div>
               </div>
 
-              {/* {returnstatus} */}
-              {sucessstatus}
+              <div className="row d-flex justify-content-between mt-4 delivery_progress_status_icon">
+                <div
+                  className="col-sm-2 col-2"
+                  style={{
+                    boxShadow:
+                      parcelTracking.status === 0
+                        ? "5px 10px 16px 0 rgba(0,0,0,0.3)"
+                        : "",
+                    transform:
+                      parcelTracking.status === 0 ? "scale(1.2, 1.2)" : "",
+                  }}
+                >
+                  <img className="img-fluid" src={pending} alt="" />
+                  <h6>Pending</h6>
+                  <small>{parcelTracking.parcelCreateDateTime}</small>
+                  <small>
+                    {" "}
+                    <p>Parcel Added by Merchant</p>
+                  </small>
+                </div>
+                <div
+                  className="col-sm-2 col-2"
+                  style={{
+                    opacity: parcelTracking.status >= 1 ? "1" : "0.4",
+                    boxShadow:
+                      parcelTracking.status === 1
+                        ? "5px 10px 16px 0 rgba(0,0,0,0.3)"
+                        : "",
+                    transform:
+                      parcelTracking.status === 1 ? "scale(1.2, 1.2)" : "",
+                  }}
+                >
+                  <img className="img-fluid" src={onpickup} alt="" />
+                  <h6>On Pick up</h6>
+                  <small>
+                    {parcelTracking.pickUpAssign.pickUpAssignDateTime}
+                  </small>
+                  <small>
+                    {parcelTracking.status >= 1 && (
+                      <p>Waiting for pick up by GHURI</p>
+                    )}
+                    {parcelTracking.status < 1 && <p>Waiting</p>}
+                  </small>
+                </div>
+                <div
+                  className="col-sm-2 col-2"
+                  style={{
+                    opacity: parcelTracking.status >= 2 ? "1" : "0.4",
+                    boxShadow:
+                      parcelTracking.status === 2
+                        ? "5px 10px 16px 0 rgba(0,0,0,0.3)"
+                        : "",
+                    transform:
+                      parcelTracking.status === 2 ? "scale(1.2, 1.2)" : "",
+                  }}
+                >
+                  <img className="img-fluid" src={pickedup} alt="" />
+                  <h6>Picked Up</h6>
+                  <small>{parcelTracking.pickedUp.pickedUpDateTime}</small>
+                  <small>
+                    {parcelTracking.status >= 2 && <p>Picked Up by GHURI</p>}
+                    {parcelTracking.status < 2 && <p>Waiting</p>}
+                  </small>
+                </div>
+                <div
+                  className="col-sm-2 col-2"
+                  style={{
+                    opacity: parcelTracking.status >= 3 ? "1" : "0.4",
+                    boxShadow:
+                      parcelTracking.status === 3
+                        ? "5px 10px 16px 0 rgba(0,0,0,0.3)"
+                        : "",
+                    transform:
+                      parcelTracking.status === 3 ? "scale(1.2, 1.2)" : "",
+                  }}
+                >
+                  <img className="img-fluid" src={inhub} alt="" />
+                  <h6>In hub</h6>
+                  <small>
+                    {parcelTracking.hubReceived.hubReceivedDateTime}
+                  </small>
+                  <small>
+                    {parcelTracking.status >= 3 && <p>Parcel in Ghuri Hub</p>}
+                    {parcelTracking.status < 3 && <p>Waiting</p>}
+                  </small>
+                </div>
+                <div
+                  className="col-sm-2 col-2"
+                  style={{
+                    opacity: parcelTracking.status >= 4 ? "1" : "0.4",
+                    boxShadow:
+                      parcelTracking.status === 4
+                        ? "5px 10px 16px 0 rgba(0,0,0,0.3)"
+                        : "",
+                    transform:
+                      parcelTracking.status === 4 ? "scale(1.2, 1.2)" : "",
+                  }}
+                >
+                  <img className="img-fluid" src={ondelivery} alt="" />
+                  <h6>On delivery</h6>
+                  <small>
+                    {parcelTracking.deliveryAssign.assignedDateTime}
+                  </small>
+                  <small>
+                    {parcelTracking.status >= 4 && (
+                      <p>Delivery on Progress by GHURI</p>
+                    )}
+                    {parcelTracking.status < 4 && <p>Waiting</p>}
+                  </small>
+                </div>
+                {parcelTracking.status === 6 && (
+                  <div
+                    className="col-sm-2 col-2"
+                    style={{
+                      opacity: parcelTracking.status >= 6 ? "1" : "0.4",
+                      boxShadow:
+                        parcelTracking.status === 6
+                          ? "5px 10px 16px 0 rgba(0,0,0,0.3)"
+                          : "",
+                      transform:
+                        parcelTracking.status === 6 ? "scale(1.2, 1.2)" : "",
+                      backgroundColor:
+                        parcelTracking.status === 6 ? "#dc3545" : "",
+                    }}
+                  >
+                    <img className="img-fluid" src={returnparcel} alt="" />
+                    <div
+                      className={parcelTracking.status === 6 ? "bg-danger" : ""}
+                    ></div>
+                    <h6>Return</h6>
+                    <small>
+                      {" "}
+                      {parcelTracking.deliveryReturn.returnDateTime}
+                    </small>
+                    <small>
+                      {" "}
+                      <p>Return To Merchant</p>
+                    </small>
+                  </div>
+                )}
+                {parcelTracking.status <= 5 && (
+                  <div
+                    className="col-sm-2 col-2"
+                    style={{
+                      opacity: parcelTracking.status >= 5 ? "1" : "0.4",
+                      boxShadow:
+                        parcelTracking.status === 5
+                          ? "5px 10px 16px 0 rgba(0,0,0,0.3)"
+                          : "",
+                      transform:
+                        parcelTracking.status === 5 ? "scale(1.2, 1.2)" : "",
+                      backgroundColor:
+                        parcelTracking.status === 5 ? "#28a745" : "",
+                    }}
+                  >
+                    <img className="img-fluid" src={delivered} alt="" />
+                    <h6>Delivered</h6>
+                    <small> {parcelTracking.delivered.deliveredDateTime}</small>
+                    <small>
+                      {parcelTracking.status >= 5 && (
+                        <p>Delivered To Customer</p>
+                      )}
+                      {parcelTracking.status < 5 && <p>Waiting</p>}
+                    </small>
+                  </div>
+                )}
+              </div>
+              <div className="cross_fa_times" onClick={handleClose}>
+                {/* <i class="fa fa-times"></i> */}
+                <img src={cancel_icon} alt="" />
+              </div>
             </div>
-            <div className="cross_fa_times" onClick={handleClose}>
-              {/* <i class="fa fa-times"></i> */}
-              <img src={cancel_icon} alt="" />
-            </div>
-          </div>
-        </Modal.Body>
-      </Modal>
+          </Modal.Body>
+        </Modal>
+      )}
     </div>
   );
 };
