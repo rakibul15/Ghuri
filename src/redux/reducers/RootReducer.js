@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
 import HealthReducer from "../../Components/health/_redux/reducer/HealthReducer";
-import ParcelReducer from "../../Components/parcelDetails/_redux/reducer/ParcelReducer";
+import ParcelDeailsReducer from "../../Components/parcelDetails/_redux/reducer/ParcelDetailsReducer";
+
 import SignupReducer from "../../Components/Signup/_redux/reducer/SignupReducer";
 
 // combine all of the reducers here
@@ -9,7 +10,7 @@ const rootReducer = combineReducers({
   // TaskReducer: TaskReducer,
   signupInfo: SignupReducer,
   healthInfo: HealthReducer,
-  parcelInfo: ParcelReducer,
+  parcelInfo: ParcelDeailsReducer,
 });
 
 export default rootReducer;
