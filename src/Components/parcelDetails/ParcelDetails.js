@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Axios from "axios";
 import { Modal, ProgressBar } from "react-bootstrap";
 import documents from "../../images/ParcelDetails/documents.png";
 import packages from "../../images/ParcelDetails/packages.png";
@@ -55,21 +54,13 @@ const ParcelDetails = () => {
   const handleClose = () => issetShow(false);
   const handleShow = (data) => {
     dispatch(getsearchdata(data));
-    issetShow(true);
+    if (data.length > 0) {
+      issetShow(true);
+    }
   };
-  // const [progress, setProgress] = useState(0)
-  // const [progressIcon, setProgressIcon] = useState("0%")
-  //test
-  const [search, setSearch] = useState("");
-  // if (parcelTracking && parcelTracking.status <= 0) {
-  //   console.log(`parcelTracking`, parcelTracking.status);
-  // }
 
-  // useEffect(() => {
-  //   if(parcelTracking.status){
-  //       if(parcelTracking.status === 0){setProgress(); setProgressIcon}
-  //   }
-  // }, [parcelTracking])
+  const [search, setSearch] = useState("");
+
   return (
     <div>
       <div className="bgg ">
