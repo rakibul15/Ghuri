@@ -86,6 +86,7 @@ const HealthReducer = (state = initialState, action) => {
         ...state,
         isHealthSubmitting: action.payload,
       };
+    
     default:
       break;
   }

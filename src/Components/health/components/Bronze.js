@@ -58,7 +58,7 @@ const Bronze = () => {
 
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a onClick={() => history.push("/healthform:1")}>
+                <a onClick={() => history.push("/health:bronze3")}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>
@@ -77,7 +77,7 @@ const Bronze = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a onClick={() => history.push("/healthform:2")}>
+                <a onClick={() => history.push("/health:bronze6")}>
                   Buy Now <i className="fa fa-chevron-right"></i>
                 </a>
               </h6>
@@ -96,7 +96,7 @@ const Bronze = () => {
             </Card.Body>
             <Card.Footer className="card_footer_health">
               <h6 className="card-subtitltext-muted text-center">
-                <a onClick={() => history.push("/healthform:3")}>
+                <a onClick={() => history.push("/health:bronze12")}>
                   Buy Now <i clasclassNames="fa fa-chevron-right"></i>
                 </a>
               </h6>
