@@ -76,6 +76,11 @@ const ParcelDetails = () => {
                     className="mr-sm-3"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
+                    onKeyPress={(event) => {
+                      if (event.key === "Enter") {
+                        handleShow(search);
+                      }
+                    }}
                   />
                   {!isTracking && (
                     <button
