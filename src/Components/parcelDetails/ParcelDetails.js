@@ -598,8 +598,6 @@ const ParcelDetails = () => {
                           : "",
                       transform:
                         parcelTracking.status === 6 ? "scale(1.2, 1.2)" : "",
-                      backgroundColor:
-                        parcelTracking.status === 6 ? "#dc3545" : "",
                     }}
                   >
                     <img className="img-fluid" src={returnparcel} alt="" />
@@ -628,8 +626,6 @@ const ParcelDetails = () => {
                           : "",
                       transform:
                         parcelTracking.status === 5 ? "scale(1.2, 1.2)" : "",
-                      backgroundColor:
-                        parcelTracking.status === 5 ? "#28a745" : "",
                     }}
                   >
                     <img className="img-fluid" src={delivered} alt="" />
