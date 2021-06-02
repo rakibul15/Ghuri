@@ -16,6 +16,7 @@ import nuraniInterior from "../../images/partners/Nurani_Interior.png";
 import biddanondo from "../../images/partners/bidyanondo_foundation.png";
 import ekShop from "../../images/partners/ekShop.png";
 import nayabari from "../../images/partners/noyabari_logo.png";
+import bkash from "../../images/partners/bakash.png"
 
 const Partners = () => {
   let option = {
@@ -74,8 +75,14 @@ const Partners = () => {
         </div>
 
         <div className=" item">
+          <div className="partners_logo ">
+            <img src={bkash} alt="bkash logo" />
+          </div>
+        </div>
+
+        <div className=" item">
           <div className="a2i  partners_logo ">
-            <img src={ekShop} alt="a2i" />
+            <img src={ekShop} alt="ekshop" />
           </div>
         </div>
         <div className=" item ">
