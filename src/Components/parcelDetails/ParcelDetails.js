@@ -83,7 +83,7 @@ const ParcelDetails = () => {
         <div className="Nav_overflow container">
           <div className="row parcel_main_content">
             <div className="col-sm-7">
-              <div className="parcel_tracker invisible">
+              <div className="parcel_tracker">
                 <h5>Enter parcel tracking number to track your parcel</h5>
                 <div className="track_search">
                   <FormControl
@@ -460,11 +460,11 @@ const ParcelDetails = () => {
             <div className="row d-flex justify-content-center">
               <div className="col-sm-11">
                 <ProgressBar>
-                  <ProgressBar className="p_color" now={77} key={1} />
+                  <ProgressBar className="p_color" now={100} key={1} />
                   {/* Ghuri Images */}
                   <img
                     className="p_images"
-                    style={{ left: "74%" }}
+                    style={{ left: "94%" }}
                     src={logo}
                     alt=""
                   />
