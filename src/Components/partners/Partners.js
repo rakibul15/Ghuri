@@ -12,27 +12,29 @@ import OwlCarousel from "react-owl-carousel";
 import airtel from "../../images/partners/airtel_logo.png";
 import robi from "../../images/partners/robi_logo.png";
 import lodigreen from "../../images/partners/Lodi green_logo.png";
-import nuraniInterior from "../../images/partners/Nurani_Interior.png"
-import biddanondo from "../../images/partners/bidyanondo_foundation.png"
-import a2i from "../../images/partners/a2i.png"
+import nuraniInterior from "../../images/partners/Nurani_Interior.png";
+import biddanondo from "../../images/partners/bidyanondo_foundation.png";
+import ekShop from "../../images/partners/ekShop.png";
 import nayabari from "../../images/partners/noyabari_logo.png";
+import bkash from "../../images/partners/bakash.png"
 
 const Partners = () => {
-  let option= {
-    responsive:{
-        0: {
-            items: 3,
-        },
-        450: {
-            items: 3,
-        },
-        600: {
-            items: 4,
-        },
-        1000: {
-            items: 6,
-        },
-    }}
+  let option = {
+    responsive: {
+      0: {
+        items: 3,
+      },
+      450: {
+        items: 3,
+      },
+      600: {
+        items: 4,
+      },
+      1000: {
+        items: 6,
+      },
+    },
+  };
   return (
     <div className="partners ">
       <div className="row">
@@ -47,7 +49,6 @@ const Partners = () => {
         autoplay
         dots={false}
         {...option}
-      
         className=" d-flex  align-items-center owl-theme"
       >
         <div className="item">
@@ -74,8 +75,14 @@ const Partners = () => {
         </div>
 
         <div className=" item">
+          <div className="partners_logo ">
+            <img src={bkash} alt="bkash logo" />
+          </div>
+        </div>
+
+        <div className=" item">
           <div className="a2i  partners_logo ">
-            <img src={a2i} alt="a2i" />
+            <img src={ekShop} alt="ekshop" />
           </div>
         </div>
         <div className=" item ">
