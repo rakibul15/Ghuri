@@ -19,6 +19,7 @@ const initialState = {
   errors: [],
   redirectToLogin: false,
   redirectToVerification: false,
+  hubList: null,
 };
 const SignupReducer = (state = initialState, action) => {
   const newState = { ...state };
@@ -52,6 +53,11 @@ const SignupReducer = (state = initialState, action) => {
       return {
         ...state,
         signupTextInput: initialState.signupTextInput,
+      };
+    case Types.ALL_HUB_LIST:
+      return {
+        ...state,
+        hubList: action.payload,
       };
     default:
       break;

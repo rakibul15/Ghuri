@@ -220,3 +220,23 @@ export const ResendOtp = () => async (dispatch) => {
     toast.error("Something Went Wrong !");
   }
 };
+
+export const GetHubList = () => async (dispatch) => {
+  const url = `${process.env.REACT_APP_API_URL}admin/hub/list`;
+
+  try {
+    await Axios.get(url)
+      .then((res) => {
+        console.log(`res`, res);
+        if (res.data.status) {
+          dispatch({ type: Types.ALL_HUB_LIST, payload: res.data.hubs });
+        }
+      })
+      .catch((err) => {
+        const message = JSON.parse(err.request.response).message;
+        showToast("error", message);
+      });
+  } catch (error) {
+    showToast("error", "Something went wrong");
+  }
+};
