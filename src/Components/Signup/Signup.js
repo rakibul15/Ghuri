@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./Signup.css";
 import "../../css/mediaQuery.css";
 import {
+  GetHubList,
   InputSignupText,
   SubmitSignupData,
 } from "./_redux/action/SignupAction";
@@ -17,6 +18,7 @@ const Signup = () => {
     (state) => state.signupInfo.signupTextInput
   );
   const isLoading = useSelector((state) => state.signupInfo.isLoading);
+  const hubList = useSelector((state) => state.signupInfo.hubList);
 
   const redirectToVerification = useSelector(
     (state) => state.signupInfo.redirectToVerification
@@ -36,8 +38,9 @@ const Signup = () => {
   };
   useEffect(() => {
     window.scrollTo(0, 0);
+    dispatch(GetHubList());
   }, []);
-  //testaerser
+  console.log(`hubList`, hubList);
   return (
     <div>
       <div className="sign-top  signup_bg Nav_overflow">
@@ -232,7 +235,7 @@ const Signup = () => {
               </div>
               <div className="row sign_margin_top">
                 <div className="col-sm-4 fullwidth">
-                  <input
+                  {/* <input
                     autoComplete="off"
                     className="input"
                     type="text"
@@ -241,8 +244,22 @@ const Signup = () => {
                       handleChangeTextInput("area", e.target.value)
                     }
                     value={signupTextInput.area}
-                    placeholder="Enter Area"
-                  />
+                    placeholder="Enter Area" ///
+                  /> */}
+                  <select
+                    className="form-control"
+                    name="area"
+                    onChange={(e) =>
+                      handleChangeTextInput("area", e.target.value)
+                    }
+                    value={signupTextInput.area}
+                  >
+                    <option>Select Hub Name</option>
+                    {hubList &&
+                      hubList.map((item, index) => (
+                        <option value={item.hubName}>{item.hubName}</option>
+                      ))}
+                  </select>
                 </div>
                 <div className="col-sm-8 fullwidth">
                   <input
@@ -260,8 +277,6 @@ const Signup = () => {
               </div>
               <div className="row sign_margin_top ">
                 <div className="col-sm-12">
-               
-
                   <div className="form-check terms_condition checkbox">
                     <input
                       className="form-check-input"
@@ -272,9 +287,10 @@ const Signup = () => {
                     />
                     <label className="form-check-label" for="flexCheckChecked">
                       I agree the
-                     
-                        <a href="/terms" target="_Blank"> terms and condition </a>
-                     
+                      <a href="/terms" target="_Blank">
+                        {" "}
+                        terms and condition{" "}
+                      </a>
                       of GHURI Parcel
                     </label>
                   </div>
