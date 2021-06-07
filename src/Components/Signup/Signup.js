@@ -244,7 +244,7 @@ const Signup = () => {
                       handleChangeTextInput("area", e.target.value)
                     }
                     value={signupTextInput.area}
-                    placeholder="Enter Area"
+                    placeholder="Enter Area" ///
                   /> */}
                   <select
                     className="form-control"
