@@ -254,7 +254,7 @@ const Signup = () => {
                     }
                     value={signupTextInput.area}
                   >
-                    <option>Select Hub Name</option>
+                    <option>Select Area</option>
                     {hubList &&
                       hubList.map((item, index) => (
                         <option value={item.hubName}>{item.hubName}</option>
