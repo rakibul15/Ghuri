@@ -254,7 +254,7 @@ const Signup = () => {
                           if (option.value !== "Dhaka") {
                             handleChangeTextInput("area", option.value);
                           }
-                          // handleChangeTextInput("strPaymentMethod", option.label);
+                          // handleChangeTextInput("strPaymentMethod", option.label);//
                         }}
                       />
                     </div>
