@@ -220,3 +220,50 @@ export const ResendOtp = () => async (dispatch) => {
     toast.error("Something Went Wrong !");
   }
 };
+
+export const GetHubList = () => async (dispatch) => {
+  const url = `${process.env.REACT_APP_API_URL}admin/hub/list`;
+
+  try {
+    await Axios.get(url)
+      .then((res) => {
+        console.log(`res`, res);
+        if (res.data.status) {
+          dispatch({ type: Types.ALL_HUB_LIST, payload: res.data.hubs });
+        }
+      })
+      .catch((err) => {
+        const message = JSON.parse(err.request.response).message;
+        showToast("error", message);
+      });
+  } catch (error) {
+    showToast("error", "Something went wrong");
+  }
+};
+
+export const GetDistrictList = () => async (dispatch) => {
+  const url = `${process.env.REACT_APP_API_URL}parcel/bangladesh/area_list`;
+  try {
+    await Axios.get(url).then((res) => {
+      if (res.data.status) {
+        dispatch({ type: Types.GET_DISTRICT_LIST, payload: res.data.district });
+      }
+    });
+  } catch (error) {
+    showToast("error", "Something went wrong");
+  }
+};
+export const GetArea = () => {
+  return [
+    { value: "Badda", label: "Badda" },
+    { value: "Dhanmondi", label: "Dhanmondi" },
+    { value: "Gulshan", label: "Gulshan" },
+    { value: "Jatrabari", label: "Jatrabari" },
+    { value: "Malibag", label: "Malibag" },
+    { value: "Mirpur", label: "Mirpur" },
+    { value: "Mohakhali", label: "Mohakhali" },
+    { value: "Mohammadpur", label: "Mohammadpur" },
+    { value: "Puran Dhaka", label: "Puran Dhaka" },
+    { value: "Uttara", label: "Uttara" },
+  ];
+};

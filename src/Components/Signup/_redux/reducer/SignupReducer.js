@@ -19,6 +19,8 @@ const initialState = {
   errors: [],
   redirectToLogin: false,
   redirectToVerification: false,
+  hubList: null,
+  allDistrictList: null,
 };
 const SignupReducer = (state = initialState, action) => {
   const newState = { ...state };
@@ -53,9 +55,33 @@ const SignupReducer = (state = initialState, action) => {
         ...state,
         signupTextInput: initialState.signupTextInput,
       };
+    case Types.ALL_HUB_LIST:
+      return {
+        ...state,
+        hubList: action.payload,
+      };
+    case Types.GET_DISTRICT_LIST:
+      return {
+        ...state,
+        allDistrictList: makeDistrictList(action.payload),
+      };
     default:
       break;
   }
   return newState;
 };
 export default SignupReducer;
+
+const makeDistrictList = (data) => {
+  const option = [];
+  if (data) {
+    data.forEach((item) => {
+      const dist = {
+        label: item,
+        value: item,
+      };
+      option.push(dist);
+    });
+  }
+  return option;
+};

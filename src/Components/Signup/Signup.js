@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
+import Select from "react-select";
 import "./Signup.css";
 import "../../css/mediaQuery.css";
 import {
+  GetArea,
+  GetDistrictList,
+  GetHubList,
   InputSignupText,
   SubmitSignupData,
 } from "./_redux/action/SignupAction";
@@ -17,9 +20,13 @@ const Signup = () => {
     (state) => state.signupInfo.signupTextInput
   );
   const isLoading = useSelector((state) => state.signupInfo.isLoading);
+  const hubList = useSelector((state) => state.signupInfo.hubList);
 
   const redirectToVerification = useSelector(
     (state) => state.signupInfo.redirectToVerification
+  );
+  const allDistrictList = useSelector(
+    (state) => state.signupInfo.allDistrictList
   );
 
   useEffect(() => {
@@ -36,8 +43,11 @@ const Signup = () => {
   };
   useEffect(() => {
     window.scrollTo(0, 0);
+    // dispatch(GetHubList());
+    dispatch(GetDistrictList());
   }, []);
-  //testaerser
+  console.log(`signupTextInput`, signupTextInput);
+  console.log(`allDistrictList`, allDistrictList);
   return (
     <div>
       <div className="sign-top  signup_bg Nav_overflow">
@@ -217,7 +227,7 @@ const Signup = () => {
                   />
                 </div>
                 <div className="col-sm-4 fullwidth">
-                  <input
+                  {/* <input
                     autoComplete="off"
                     className="input"
                     type="text"
@@ -227,23 +237,60 @@ const Signup = () => {
                     }
                     value={signupTextInput.city}
                     placeholder="Enter City Name"
-                  />
+                  /> */}
+                  <div className="row">
+                    <div className="col-sm-3">
+                      <span className="select-dis">City</span>
+                    </div>
+                    <div className="col-sm-9">
+                      <Select
+                        className="react-select"
+                        options={allDistrictList}
+                        value={{ label: signupTextInput.city }}
+                        placeholder={"Hi"}
+                        name="city"
+                        onChange={(option) => {
+                          handleChangeTextInput("city", option.value);
+                          if (option.value !== "Dhaka") {
+                            handleChangeTextInput("area", option.value);
+                          }
+                          // handleChangeTextInput("strPaymentMethod", option.label);//
+                        }}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="row sign_margin_top">
-                <div className="col-sm-4 fullwidth">
-                  <input
-                    autoComplete="off"
-                    className="input"
-                    type="text"
-                    name="area"
-                    onChange={(e) =>
-                      handleChangeTextInput("area", e.target.value)
-                    }
-                    value={signupTextInput.area}
-                    placeholder="Enter Area"
-                  />
-                </div>
+                {signupTextInput.city === "Dhaka" && (
+                  <div className="col-sm-4 fullwidth">
+                    {/* <input
+       autoComplete="off"
+       className="input"
+       type="text"
+       name="area"
+       onChange={(e) =>
+         handleChangeTextInput("area", e.target.value)
+       }
+       value={signupTextInput.area}
+       placeholder="Enter Area" ///
+     /> */}
+                    <select
+                      className="form-control"
+                      name="area"
+                      onChange={(e) =>
+                        handleChangeTextInput("area", e.target.value)
+                      }
+                      value={signupTextInput.area}
+                    >
+                      <option>Select Area</option>
+                      {GetArea().map((item, index) => (
+                        <option value={item.value}>{item.value}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
                 <div className="col-sm-8 fullwidth">
                   <input
                     autoComplete="off"
@@ -260,8 +307,6 @@ const Signup = () => {
               </div>
               <div className="row sign_margin_top ">
                 <div className="col-sm-12">
-               
-
                   <div className="form-check terms_condition checkbox">
                     <input
                       className="form-check-input"
@@ -272,9 +317,10 @@ const Signup = () => {
                     />
                     <label className="form-check-label" for="flexCheckChecked">
                       I agree the
-                     
-                        <a href="/terms" target="_Blank"> terms and condition </a>
-                     
+                      <a href="/terms" target="_Blank">
+                        {" "}
+                        terms and condition{" "}
+                      </a>
                       of GHURI Parcel
                     </label>
                   </div>
