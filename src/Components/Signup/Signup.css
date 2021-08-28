@@ -19,13 +19,10 @@
   outline: none;
 }
 .fullwidth input::placeholder {
-color:white;
-font-size:smaller;
-opacity: 60%;
+  color: white;
+  font-size: smaller;
+  opacity: 60%;
 }
-
-
-
 
 .fullwidth select option {
   width: 100%;
@@ -38,7 +35,6 @@ opacity: 60%;
 }
 .sign-top {
   z-index: -1;
- 
 }
 
 .signup_bg {
@@ -87,13 +83,16 @@ opacity: 60%;
   color: red;
 }
 /**/
-.terms_condition input:disabled{
+.terms_condition input:disabled {
   background-color: #ffcc00;
 }
-.terms a{
+.terms a {
   color: #ffcc00 !important;
 }
 
-.sign_margin_top{
+.sign_margin_top {
   margin-top: 30px;
+}
+.react-select {
+  color: #000 !important;
 }
