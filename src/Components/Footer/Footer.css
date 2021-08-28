@@ -193,7 +193,9 @@
     margin-top:50px;
 }
 
-
+.footer-brand{
+    font-size: 14px !important;
+}
 /* Responsive */
 
 @media (max-width: 640px) {
