@@ -102,9 +102,7 @@
   border-top-right-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
 }
-.ssl img {
-  width: 100%;
-}
+
 
 .linklogo img {
   width: 5%;
@@ -259,7 +257,7 @@
     margin-top: 0px;
   }
   .ssl img {
-    width: 100%;
+    width: 70%;
   }
   .join_us p {
     margin-bottom: 5px;

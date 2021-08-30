@@ -490,18 +490,18 @@ const Footer = () => {
           </div>
 
           <div className="row footer_div_t">
-            <div className="col-sm-8 col-lg-7 col-12 ssl join_us dn_smd">
+            <div className="col-sm-8 col-lg-9 col-12 ssl join_us dn_smd">
               <p>Payment Partner</p>
               <img className="img-fluid" src={ssl} alt="" />
             </div>
         
             <div className="col-sm-4 col-lg-3 col-12 join_us">
-              <div className="row ">
+              <div className="row justify-content-between">
                 <div className="col-sm-12">
                   <p>Join Us</p>
                 </div>
               </div>
-              <div className="row justify-content-between fix_margin_issues_footer fix_padding_f image_content_small_f">
+              <div className="row justify-content-between fix_margin_issues_footer fix_padding_f image_content_small_f text-right">
                 <div className="col  col-md-2 col-2  col-xl-2 mt-1">
                   <a href="https://www.facebook.com/ghuriApp" target="_blank">
                     {" "}
