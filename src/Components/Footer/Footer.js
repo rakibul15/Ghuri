@@ -8,10 +8,8 @@ import twitter from "../../images/footer/twitter.png";
 import instagram from "../../images/footer/instagram.png";
 import youtube from "../../images/footer/youtube.png";
 import linkedin from "../../images/footer/linkedin.png";
-import ghurilogo from "../../images/logo/logo.svg";
-import csv from "../../images/footer/csa.png";
 import ssl from "../../images/footer/SSLCOMMERZ.png";
-import iso from "../../images/footer/iso.png";
+import iso from "../../images/footer/IOS & CSA.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -453,9 +451,9 @@ const Footer = () => {
                       <span> Contact no :</span>
                       <span className="mar_fix">
                         {" "}
-                        +880 9638222111, <br />
-                        +880 28411018, <br />
-                        +880 1309038120
+                        +880 9638 222 111 <br />
+                        +880 284 110 18
+                      
                       </span>
                     </small>
                   </div>
@@ -516,19 +514,19 @@ const Footer = () => {
           </div>
 
           <div className="row footer_div_t fix_footer_div">
-            <div className="col-sm-3 col-lg-4 col-12 ssl join_us dn_smd">
+            <div className="col-sm-6 col-lg-6 col-12 ssl join_us dn_smd">
               <p>Payment Partner</p>
               <img className="img-fluid" src={ssl} alt="" />
             </div>
-            <div className="col-sm-2 col-lg-2 col-6 iso join_us">
-              <p>ISO Certified</p>
+            <div className="col-sm-3 col-lg-3 col-12 iso join_us">
+              <p>Certification</p>
               <img className="img-fluid" src={iso} alt="" />
             </div>
-            <div className="col-sm-2 col-lg-2 col-6 csv join_us">
+            {/* <div className="col-sm-2 col-lg-2 col-6 csv join_us">
               <p>Member Of</p>
               <img className="img-fluid" src={csv} alt="" />
-            </div>
-            <div className="col-lg-1 col-sm-1"></div>
+            </div> */}
+           
             <div className="col-sm-4 col-lg-3 col-12 join_us">
               <div className="row justify-content-between">
                 <div className="col-sm-12">

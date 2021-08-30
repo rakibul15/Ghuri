@@ -3,7 +3,7 @@ import { Modal } from "react-bootstrap";
 import logo from "../../images/logo/logo.svg";
 import playstore from "../../images/footer/playstore.png";
 import appstore from "../../images/footer/appstore.png";
-import model from "../../images/ParcelDetails/popup.jpg";
+import model from "../../images/others/POPUP.png";
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal
@@ -67,7 +67,7 @@ function MyVerticallyCenteredModal(props) {
             <i class="fa fa-times"></i>
           </a>
         </div>
-
+{/* 
         <div className="playstore_popup">
           <a
             href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
@@ -85,7 +85,7 @@ function MyVerticallyCenteredModal(props) {
           >
             <img src={appstore} className="img-fluid" alt="" />
           </a>
-        </div>
+        </div> */}
       </Modal.Body>
     </Modal>
   );
