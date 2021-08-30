@@ -207,6 +207,10 @@
 /* Responsive */
 
 @media (max-width: 640px) {
+  .marchant_small {
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
   .margin_reduce_small_f {
     padding-left: 8px;
   }
