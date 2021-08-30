@@ -32,6 +32,7 @@ const Silver = () => {
 
     dispatch(SendPackage(packgeType, packageValue));
   };
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

@@ -10,7 +10,8 @@ import youtube from "../../images/footer/youtube.png";
 import linkedin from "../../images/footer/linkedin.png";
 import ghurilogo from "../../images/logo/logo.svg";
 import csv from "../../images/footer/csa.png";
-import ssl from "../../images/footer/SSL-Commerz-Pay-With-logo-All-Size.png";
+import ssl from "../../images/footer/SSLCOMMERZ.png";
+import iso from "../../images/footer/iso.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -470,7 +471,7 @@ const Footer = () => {
 
                 <div className="col-12 col-sm-3 col-md-3 download_footer">
                   <p className="marchant_small">Download</p>
-                  <div className="row ">
+                  <div className="row">
                     <div className="col-5 col-sm-12 col-md-6 footer_store_img play_store_sm">
                       <a
                         href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
@@ -484,17 +485,50 @@ const Footer = () => {
                       <img src={appstore} className="   text-right" alt="" />
                     </div>
                   </div>
+                  <div className="row mt-3 dn_smd">
+                    <div className="col-lg-12">
+                      <p>News Letter</p>
+                      <div className="input-group input-margin-top">
+                        <input
+                          className="form-control email"
+                          type="email"
+                          name=""
+                          id=""
+                          placeholder="Email"
+                        />
+                        <div className="input-group-append">
+                          <button
+                            className="btn newsletter-btn "
+                            type="button "
+                          >
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <small className="mt-2">
+                          Subscribe with email address for our monthly newletter
+                        </small>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="row footer_div_t">
-            <div className="col-sm-8 col-lg-9 col-12 ssl join_us dn_smd">
+          <div className="row footer_div_t fix_footer_div">
+            <div className="col-sm-3 col-lg-4 col-12 ssl join_us dn_smd">
               <p>Payment Partner</p>
               <img className="img-fluid" src={ssl} alt="" />
             </div>
-        
+            <div className="col-sm-2 col-lg-2 col-6 iso join_us">
+              <p>ISO Certified</p>
+              <img className="img-fluid" src={iso} alt="" />
+            </div>
+            <div className="col-sm-2 col-lg-2 col-6 csv join_us">
+              <p>Member Of</p>
+              <img className="img-fluid" src={csv} alt="" />
+            </div>
+            <div className="col-lg-1 col-sm-1"></div>
             <div className="col-sm-4 col-lg-3 col-12 join_us">
               <div className="row justify-content-between">
                 <div className="col-sm-12">
@@ -543,10 +577,12 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-sm-6 col-lg-9 col-12 ssl join_us dn_md_all ">
-              <p>Payment Partner</p>
-              <img className="img-fluid" src={ssl} alt="" />
-            </div>
+            
+              <div className="col-12 col-sm-12 ssl join_us dn_md_all ">
+                <p>Payment Partner</p>
+                <img className="img-fluid" src={ssl} alt="" />
+              </div>
+           
           </div>
         </div>
         <div className="footer-brand brand-color-bg align-items-center l">
