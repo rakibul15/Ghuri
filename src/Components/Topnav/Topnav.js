@@ -23,9 +23,9 @@ const Topnav = () => {
     <div>
       <Navbar collapseOnSelect expand="sm" className="fixed" mb-5>
         <Navbar.Brand>
-          <Link to="/">
+          <a href="/">
             <img className="ghuri_logo img-fluid" src={logo} fluid alt="" />
-          </Link>
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
