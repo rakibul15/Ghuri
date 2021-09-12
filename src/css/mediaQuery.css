@@ -175,13 +175,13 @@
     width: 34% !important;
   }
 
-  .ssl img {
+  /* .ssl img {
     width: 100% !important;
-  }
+  } */
 
-  .csv img {
+  /* .csv img {
     width: 38% !important;
-  }
+  } */
 
   .linklogo img {
     width: 10% !important;
@@ -203,15 +203,15 @@
     margin-top: 20px;
     /* justify-content: space-between; */
   }
-  .csv p {
+  /* .csv p {
     margin-top: 8px;
-  }
+  } */
   .appstore_footer {
     text-align: right;
   }
-  .marchant_small {
+  /* .marchant_small {
     margin-top: 20px;
-  }
+  } */
 
   /* Partners */
   .partners_logo {
@@ -447,6 +447,7 @@
   margin-right: 0px !important;
 }
 
+
 }
 
 
@@ -626,10 +627,7 @@
 
 /* Large Screen */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .footer_store_img img {
-    width: 70%;
-    margin-left: 35px !important;
-  }
+
   .marchent_custom .dropdown-menu{
     position: static;
     float: none;
@@ -653,10 +651,7 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .footer_store_img img {
-    width: 70%;
-    margin-left: 35px !important;
-  }
+
 
   .gallery_bg {
     height: 60vh !important;

@@ -7,6 +7,7 @@ const Food = () => {
   useEffect(() => {
     window.scrollTo(0, 900);
   }, []);
+  
   return (
     <div>
       <div className="food_bg platform">

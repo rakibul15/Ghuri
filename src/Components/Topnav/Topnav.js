@@ -9,7 +9,7 @@ import {
   NavDropdown,
 } from "react-bootstrap";
 import "./Topnav.css";
-import logo from "../../images/logo/logo.svg";
+import logo from "../../images/logo/Anniversary-logo.png";
 import { Link } from "react-router-dom";
 import { SetRiderectMessage } from "../Signup/_redux/action/SignupAction";
 
@@ -23,9 +23,9 @@ const Topnav = () => {
     <div>
       <Navbar collapseOnSelect expand="sm" className="fixed" mb-5>
         <Navbar.Brand>
-          <Link to="/">
+          <a href="/">
             <img className="ghuri_logo img-fluid" src={logo} fluid alt="" />
-          </Link>
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -462,9 +462,9 @@ const Topnav = () => {
             {/* <Nav.Link className="nav_color">
               <Link to="/blog">Blog</Link>
             </Nav.Link> */}
-            <Nav.Link className="custom_nav">
+            {/* <Nav.Link className="custom_nav">
               <i className="fa fa-globe"></i> EN
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
