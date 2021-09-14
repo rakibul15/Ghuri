@@ -41,6 +41,9 @@ import HealthTerms from "./Components/health/components/HealthTerms";
 import ParcelDetails from "./Components/parcelDetails/ParcelDetails";
 import Popup from "./Components/modal/Popup";
 import ParcelModal from "./Components/parcelDetails/ParcelModal";
+import Career from "./Components/career/Career";
+import Job from "./Components/career/Job";
+import Jobform from "./Components/career/Jobform";
 
 
 function App() {
@@ -197,6 +200,15 @@ function App() {
 
           <Route path="/parcelModal">
            <ParcelModal></ParcelModal>
+          </Route>
+          <Route path="/career">
+           <Career></Career>
+          </Route>
+          <Route path="/job">
+          <Job></Job>
+          </Route>
+          <Route path="/jobform">
+          <Jobform></Jobform>
           </Route>
 
 
