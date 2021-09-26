@@ -1,4 +1,5 @@
 import { combineReducers } from "redux";
+import careerReducer from "../../Components/career/_redux/reducer/CareerReducer";
 import HealthReducer from "../../Components/health/_redux/reducer/HealthReducer";
 import ParcelDeailsReducer from "../../Components/parcelDetails/_redux/reducer/ParcelDetailsReducer";
 
@@ -11,6 +12,7 @@ const rootReducer = combineReducers({
   signupInfo: SignupReducer,
   healthInfo: HealthReducer,
   parcelInfo: ParcelDeailsReducer,
+  careerInfo:careerReducer,
 });
 
 export default rootReducer;
