@@ -206,7 +206,7 @@ function App() {
           <Route path="/job/:id">
             <Job></Job>
           </Route>
-          <Route path="/jobform">
+          <Route path="/jobform/:id">
             <Jobform></Jobform>
           </Route>
 

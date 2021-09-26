@@ -1,6 +1,22 @@
 import * as Types from "../types/Types";
 
 const initialState = {
+  candidateInput: {
+    name: "",
+    email: "",
+    phone: "",
+    gender: "",
+    versity: "",
+    experience: "",
+    interest: "",
+    notice: "",
+    current: "",
+    expected: "",
+    cgpa: "",
+    gender:"",
+    cv2: "",
+  },
+
   careerDetails: null,
   career: null,
   isPageLoad: false,
@@ -26,6 +42,16 @@ const careerReducer = (state = initialState, action) => {
         ...state,
         careerDetails: action.payload,
       };
+      case Types.GET_CANDIDATE_INPUT:
+        const candidateInput = { ...state.candidateInput };
+        candidateInput[action.payload.name] = action.payload.value;
+        return {
+          ...state,
+          candidateInput:candidateInput,
+        };
+
+
+
 
     default:
       break;

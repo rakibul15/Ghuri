@@ -3,11 +3,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useParams } from "react-router";
 import team from "../../images/others/joomshaper-collage.jpg";
 import { GetCareerDetails } from "./_redux/action/CareerAction";
+import { Markup } from "interweave";
 
 const Job = () => {
   const history = useHistory();
   let { id } = useParams();
   const dispatch = useDispatch();
+
+
+  const handleJob = (id) => {
+    history.push(`/jobform/${id}`);
+  };
+
 
   const careerDetails = useSelector((state) => state.careerInfo.careerDetails);
   const isPageLoad = useSelector((state) => state.careerInfo.isPageLoad);
@@ -16,7 +23,7 @@ const Job = () => {
     dispatch(GetCareerDetails(id));
   }, []);
 
-
+  console.log(careerDetails)
   return (
     <>
       {isPageLoad && (
@@ -33,20 +40,25 @@ const Job = () => {
         </>
       )}
 
-      {!isPageLoad && careerDetails && careerDetails !== null && (
+      {!isPageLoad && careerDetails !== null && (
+    
         <>
+         {/* {careerDetails.career.reverse().map((item, index) => ( */}
           <div className="Nav_overflow">
             <div className="container-fluid bg_color_ash">
               <div className="container-condensed pt-5 pb-5">
                 <h2 className="text-center mb-3">
-                  Intern Software Engineer ( Front-end )
+                  {/* Intern Software Engineer ( Front-end ) */}
+                  {careerDetails.title}
+                  
+         
                 </h2>
                 <div className="job-item-meta d-flex text-muted justify-content-center align-items-center mt-2">
-                  <span>Job Type: Trainee </span>
+                  <span>  {careerDetails.status} </span>
                   <span class="job-meta-divider mx-3"></span>
-                  <span>No. of Vacancies: 4</span>
+                  <span>No. of Vacancies:  {careerDetails.vacancy} </span>
                   <span className="job-meta-divider mx-3"></span>
-                  <span>Deadline: September 15, 2021</span>
+                  <span>Deadline:  {careerDetails.deadline}</span>
                 </div>
                 <div className="mt-3 text-center">
                   <a className="btn btnApply btn-fw-lg  mt-4" href="#apply-now">
@@ -68,17 +80,15 @@ const Job = () => {
             <div className="container-fluid pt-5 pb-5">
               <div className="container">
                 <div className="row justify-content-center">
+              
                   <div className="col-sm-11 jobs_ul">
                     <h4 className="mt-4"> What We Are Looking For?</h4>
                     <p className="mt-3">
-                      We are looking for a few software engineers (interns) to
-                      join the engineering team. Interested candidates are
-                      invited to submit CVs after reading the following job
-                      description.
+                    {careerDetails.context}
                     </p>
 
                     <h4 className="mt-5">Requirements</h4>
-                    <ul>
+                    {/* <ul>
                       <li>
                         Strong proficiency in JavaScript, including DOM
                         manipulation and the JavaScript object model.
@@ -102,37 +112,26 @@ const Job = () => {
                         Experience with common front-end development tools such
                         as Babel, Webpack, NPM, etc. is a plus.
                       </li>
-                    </ul>
+                    </ul> */}
+                      <Markup content= {careerDetails.requirements} />
+                    
 
                     <h4 className="mt-5">Additional Job Requirement</h4>
-                    <p className="mt-2">Energetic, confident, and proactive.</p>
-
+                    <Markup content= {careerDetails.additional} />
                     <h4 className="mt-5">Working Hours</h4>
-                    <ul>
-                      <li>Sunday – Thrusday</li>
-                      <li>9 AM to 6 PM </li>
-                      <li>Friday and Saturday are weekly holidays</li>
-                    </ul>
+                    <Markup content= {careerDetails.hours} />
 
                     <h4 className="mt-5">Salary/Remuneration</h4>
-                    <ul>
-                      <li>15,000 BDT/Month</li>
-                      <li>
-                        Starting salary will be 25,000 BDT/Month after the
-                        successful completion of the internship period.
-                      </li>
-                    </ul>
+                    <Markup content= {careerDetails.salary} />
 
                     <h4 className="mt-5">Other Benefits</h4>
-                    <ul>
-                      <li>Free Lunch & Snacks</li>
-                      <li>Excellent Culture and Working Environment.</li>
-                    </ul>
+                    <Markup content= {careerDetails.benefits} />
 
                     <div className="mt-5 text-center">
                       <a
                         className="btn btnApply btn-fw-lg  mt-4"
-                        href="#apply-now"
+                        href
+                        onClick={() => handleJob(careerDetails.ID)}
                       >
                         Apply for this position
                       </a>
@@ -142,6 +141,7 @@ const Job = () => {
               </div>
             </div>
           </div>
+              {/* ))} */}
         </>
       )}
     </>
