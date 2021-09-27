@@ -60,11 +60,11 @@ const Job = () => {
                   <span className="job-meta-divider mx-3"></span>
                   <span>Deadline:  {careerDetails.deadline}</span>
                 </div>
-                <div className="mt-3 text-center">
+                {/* <div className="mt-3 text-center">
                   <a className="btn btnApply btn-fw-lg  mt-4" href="#apply-now">
                     Apply Now
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="container-fluid pt-5 pb-5">

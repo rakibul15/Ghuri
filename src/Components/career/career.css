@@ -102,13 +102,15 @@
 }
 
 .btnApply {
-  color: #fff !important;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: black !important;
+  background-color: #ffcc00;
+  border-color: #ffcc00;
   padding: 0.688rem 1.5rem;
   font-size: 1.1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
+  font-family:ibmplex-reg;
+  
 }
 
 .job-meta-divider {
@@ -176,4 +178,6 @@ input[type="file"] {
   background-color: #ffcc00 !important;
   outline: none;
   border: none !important;
+  color: black;
+  font-family:ibmplex;
 }

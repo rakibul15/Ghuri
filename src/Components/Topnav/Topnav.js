@@ -1,16 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
 // import { logDOM } from "@testing-library/react";
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  Dropdown,
-  DropdownButton,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import "./Topnav.css";
 import logo from "../../images/logo/Anniversary-logo.png";
-import { Link } from "react-router-dom";
 import { SetRiderectMessage } from "../Signup/_redux/action/SignupAction";
 
 const Topnav = () => {
@@ -103,6 +96,7 @@ const Topnav = () => {
                         title="Interior"
                         href="https://nuraniinteriorbd.com/"
                         class="dropdown-item"
+                        rel="noreferrer"
                       >
                         Interior
                         <span class="sub">Extra Idea Our Asset</span>
@@ -126,6 +120,7 @@ const Topnav = () => {
                         target="_Blank"
                         href="https://nuraniradio.com/"
                         class="dropdown-item"
+                        rel="noreferrer"
                       >
                         News
                         <span class="sub">Your Right To Know</span>
@@ -141,6 +136,7 @@ const Topnav = () => {
                     <a
                       href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
                       target="_Blank"
+                      rel="noreferrer"
                     >
                       <img
                         width="146"
@@ -150,7 +146,7 @@ const Topnav = () => {
                       />
                     </a>
 
-                    <a>
+                    <a href>
                       <img
                         width="146"
                         height="44"
@@ -164,6 +160,7 @@ const Topnav = () => {
                     <a
                       href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
                       target="_Blank"
+                      rel="noreferrer"
                     >
                       <img
                         width="146"
@@ -256,6 +253,7 @@ const Topnav = () => {
                         title="Interior"
                         href="https://nuraniinteriorbd.com/"
                         class="dropdown-item"
+                        rel="noreferrer"
                       >
                         Interior
                         <span class="sub">
@@ -281,6 +279,7 @@ const Topnav = () => {
                         target="_Blank"
                         href="https://nuraniradio.com/"
                         class="dropdown-item"
+                        rel="noreferrer"
                       >
                         News
                         <span class="sub">
@@ -298,6 +297,7 @@ const Topnav = () => {
                     <a
                       href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
                       target="_Blank"
+                      rel="noreferrer"
                     >
                       <img
                         width="146"
@@ -307,7 +307,7 @@ const Topnav = () => {
                       />
                     </a>
 
-                    <a>
+                    <a href>
                       <img
                         width="146"
                         height="44"
@@ -321,6 +321,7 @@ const Topnav = () => {
                     <a
                       href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
                       target="_Blank"
+                      rel="noreferrer"
                     >
                       <img
                         width="146"
@@ -383,6 +384,7 @@ const Topnav = () => {
                     className="hover_color"
                     href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
                     class="dropdown-item"
+                    rel="noreferrer"
                   >
                     Login
                     <span class="sub">Login Your Merchant Account</span>
@@ -438,6 +440,7 @@ const Topnav = () => {
                       className="hover_color"
                       href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
                       class="dropdown-item"
+                      rel="noreferrer"
                     >
                       Login
                       <span class="sub">Login Your Merchant Account</span>
@@ -447,9 +450,9 @@ const Topnav = () => {
               </div>
             </div>
 
-            <Nav.Link href="/career" className="nav_color">
+            {/* <Nav.Link href="/career" className="nav_color">
               Career
-            </Nav.Link>
+            </Nav.Link> */}
 
             {/* <Nav.Link href="/health" className="nav_color">
               Health

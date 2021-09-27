@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Button, Col, Form, FormControl, Row } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
 import {
   GetCandidateInput,
   GetCareerDetails,
@@ -24,10 +24,11 @@ const Jobform = () => {
   }, []);
 
   const candidateInput = useSelector((state) => state.careerInfo.candidateInput);
-
+  const history = useHistory();
   const handleSubmit = (data) => {
     dispatch(SubmitCandidateInput(data,id));
     // dispatch(GetCareerDetails(id));
+
   };
 
   return (
@@ -273,7 +274,7 @@ const Jobform = () => {
                             className="edit_form_control"
                             type="text"
                             name="expected"
-                            placeholder="current salary"
+                            placeholder="expected salary"
                             value={GetCandidateInput.current}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
@@ -329,11 +330,11 @@ const Jobform = () => {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-sm-12 text-right mt-5">
                           <Button
                             onClick={() => handleSubmit(candidateInput)}
                            
-                            className="btn btn_submit_job"
+                            className="btn btn_submit_job p-2"
                             type="submit"
                           >
                             Submit
