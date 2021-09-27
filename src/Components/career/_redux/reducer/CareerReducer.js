@@ -50,6 +50,8 @@ const careerReducer = (state = initialState, action) => {
           candidateInput:candidateInput,
         };
 
+        
+
 
 
 
