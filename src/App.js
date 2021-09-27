@@ -41,9 +41,9 @@ import HealthTerms from "./Components/health/components/HealthTerms";
 import ParcelDetails from "./Components/parcelDetails/ParcelDetails";
 import Popup from "./Components/modal/Popup";
 import ParcelModal from "./Components/parcelDetails/ParcelModal";
-// import Career from "./Components/career/Career";
-// import Job from "./Components/career/Job";
-// import Jobform from "./Components/career/Jobform";
+import Career from "./Components/career/Career";
+import Job from "./Components/career/Job";
+import Jobform from "./Components/career/Jobform";
 
 function App() {
   return (
@@ -200,15 +200,15 @@ function App() {
           <Route path="/parcelModal">
             <ParcelModal></ParcelModal>
           </Route>
-          {/* <Route path="/career">
+          <Route path="/career">
             <Career></Career>
-          </Route> */}
-          {/* <Route path="/job/:id">
+          </Route>
+          <Route path="/job/:id">
             <Job></Job>
-          </Route> */}
-          {/* <Route path="/jobform/:id">
+          </Route>
+          <Route path="/jobform/:id">
             <Jobform></Jobform>
-          </Route> */}
+          </Route>
 
           <Route path="*">
             <Notmatch />
