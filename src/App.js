@@ -35,13 +35,15 @@ import Healthform from "./Components/health/views/HealthFormContainer";
 import Privacy from "./Components/privacy/Privacy";
 import Refund from "./Components/refund/Refund";
 import "../src/css/main.css";
-import Blog from "./Components/Blog/Blog";
-import Blogdetails from "./Components/Blog/Blogdetails";
+// import Blog from "./Components/Blog/Blog";
+// import Blogdetails from "./Components/Blog/Blogdetails";
 import HealthTerms from "./Components/health/components/HealthTerms";
 import ParcelDetails from "./Components/parcelDetails/ParcelDetails";
 import Popup from "./Components/modal/Popup";
 import ParcelModal from "./Components/parcelDetails/ParcelModal";
-
+// import Career from "./Components/career/Career";
+// import Job from "./Components/career/Job";
+// import Jobform from "./Components/career/Jobform";
 
 function App() {
   return (
@@ -196,9 +198,17 @@ function App() {
           </Route>
 
           <Route path="/parcelModal">
-           <ParcelModal></ParcelModal>
+            <ParcelModal></ParcelModal>
           </Route>
-
+          {/* <Route path="/career">
+            <Career></Career>
+          </Route> */}
+          {/* <Route path="/job/:id">
+            <Job></Job>
+          </Route> */}
+          {/* <Route path="/jobform/:id">
+            <Jobform></Jobform>
+          </Route> */}
 
           <Route path="*">
             <Notmatch />

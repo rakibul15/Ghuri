@@ -1,16 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
 // import { logDOM } from "@testing-library/react";
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  Dropdown,
-  DropdownButton,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import "./Topnav.css";
 import logo from "../../images/logo/Anniversary-logo.png";
-import { Link } from "react-router-dom";
 import { SetRiderectMessage } from "../Signup/_redux/action/SignupAction";
 
 const Topnav = () => {
@@ -31,14 +24,16 @@ const Topnav = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto ghuri_nav">
             <Nav.Link href="/home">Home</Nav.Link>
-           
+
             <div class="dropdown_main">
-            <Nav.Link className="dropdown">Service <i class="fa fa-caret-down"></i></Nav.Link>
-            <div
+              <Nav.Link className="dropdown">
+                Service <i class="fa fa-caret-down"></i>
+              </Nav.Link>
+              <div
                 class="dropdown_menu  drop_down_custom show drop_down_content"
                 aria-labelledby="menu-item-dropdown-223"
                 role="menu"
-                >
+              >
                 <div className="row drop_down_margin">
                   <div className="col-sm-12 col-md-6  ">
                     <li
@@ -80,9 +75,7 @@ const Topnav = () => {
                     >
                       <a title="Health" href="/health" class="dropdown-item">
                         Health
-                        <span class="sub">
-                         Ghuri Health Service
-                        </span>
+                        <span class="sub">Ghuri Health Service</span>
                       </a>
                     </li>
                   </div>
@@ -103,11 +96,10 @@ const Topnav = () => {
                         title="Interior"
                         href="https://nuraniinteriorbd.com/"
                         class="dropdown-item"
+                        rel="noreferrer"
                       >
                         Interior
-                        <span class="sub">
-                         Extra Idea Our Asset
-                        </span>
+                        <span class="sub">Extra Idea Our Asset</span>
                       </a>
                     </li>
                   </div>
@@ -128,11 +120,10 @@ const Topnav = () => {
                         target="_Blank"
                         href="https://nuraniradio.com/"
                         class="dropdown-item"
+                        rel="noreferrer"
                       >
                         News
-                        <span class="sub">
-                        Your Right To Know
-                        </span>
+                        <span class="sub">Your Right To Know</span>
                       </a>
                     </li>
                   </div>
@@ -145,6 +136,7 @@ const Topnav = () => {
                     <a
                       href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
                       target="_Blank"
+                      rel="noreferrer"
                     >
                       <img
                         width="146"
@@ -154,7 +146,7 @@ const Topnav = () => {
                       />
                     </a>
 
-                    <a>
+                    <a href>
                       <img
                         width="146"
                         height="44"
@@ -168,6 +160,7 @@ const Topnav = () => {
                     <a
                       href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
                       target="_Blank"
+                      rel="noreferrer"
                     >
                       <img
                         width="146"
@@ -179,9 +172,11 @@ const Topnav = () => {
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
 
-          <Nav.Link   href={`${process.env.REACT_APP_BAZAR}`}   target="_Blank">Bazar</Nav.Link>
+            <Nav.Link href={`${process.env.REACT_APP_BAZAR}`} target="_Blank">
+              Bazar
+            </Nav.Link>
 
             {/* Dropdown for small Screen Only */}
             <NavDropdown
@@ -189,13 +184,11 @@ const Topnav = () => {
               id="collasible-nav-dropdown"
               className="nav_dropdown"
             >
-                
-           
-            <div
+              <div
                 class="dropdown-menu  drop_down_custom show drop_down_content"
                 aria-labelledby="menu-item-dropdown-223"
                 role="menu"
-                >
+              >
                 <div className="row drop_down_margin">
                   <div className="col-sm-6 col-md-6  ">
                     <li
@@ -260,6 +253,7 @@ const Topnav = () => {
                         title="Interior"
                         href="https://nuraniinteriorbd.com/"
                         class="dropdown-item"
+                        rel="noreferrer"
                       >
                         Interior
                         <span class="sub">
@@ -285,6 +279,7 @@ const Topnav = () => {
                         target="_Blank"
                         href="https://nuraniradio.com/"
                         class="dropdown-item"
+                        rel="noreferrer"
                       >
                         News
                         <span class="sub">
@@ -302,6 +297,7 @@ const Topnav = () => {
                     <a
                       href="https://play.google.com/store/apps/details?id=com.ghuriexpress.ghuri"
                       target="_Blank"
+                      rel="noreferrer"
                     >
                       <img
                         width="146"
@@ -311,7 +307,7 @@ const Topnav = () => {
                       />
                     </a>
 
-                    <a>
+                    <a href>
                       <img
                         width="146"
                         height="44"
@@ -325,6 +321,7 @@ const Topnav = () => {
                     <a
                       href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
                       target="_Blank"
+                      rel="noreferrer"
                     >
                       <img
                         width="146"
@@ -336,11 +333,9 @@ const Topnav = () => {
                   </div>
                 </div>
               </div>
-              
             </NavDropdown>
             {/* End DropDown */}
 
-        
             <NavDropdown
               className="marchent_custom"
               title="Merchant"
@@ -389,6 +384,7 @@ const Topnav = () => {
                     className="hover_color"
                     href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
                     class="dropdown-item"
+                    rel="noreferrer"
                   >
                     Login
                     <span class="sub">Login Your Merchant Account</span>
@@ -398,12 +394,14 @@ const Topnav = () => {
             </NavDropdown>
 
             <div className="merchant_dropdown">
-            <Nav.Link className="dropdown">Merchant <i class="fa fa-caret-down"></i></Nav.Link>
-            <div className="merchant_content">
-            <div className="merchant_drop mt-2 mb-2">
-                <li
-                  id="menu-item-144"
-                  class="
+              <Nav.Link className="dropdown">
+                Merchant <i class="fa fa-caret-down"></i>
+              </Nav.Link>
+              <div className="merchant_content">
+                <div className="merchant_drop mt-2 mb-2">
+                  <li
+                    id="menu-item-144"
+                    class="
                   signup_icon
                       nav-icon
                       menu-item
@@ -411,23 +409,23 @@ const Topnav = () => {
                       menu-item-object-page menu-item-144
                       nav-item
                       "
-                >
-                  <a
-                    title="Health"
-                    href="/merchant"
-                    onClick={() => riderectMessage()}
-                    className="hover_color"
-                    class="dropdown-item"
                   >
-                    Signup
-                    <span class="sub">Signup As a Merchant</span>
-                  </a>
-                </li>
-              </div>
-              <div className="merchant_drop mt-2 mb-2">
-                <li
-                  id="menu-item-144"
-                  class="
+                    <a
+                      title="Health"
+                      href="/merchant"
+                      onClick={() => riderectMessage()}
+                      className="hover_color"
+                      class="dropdown-item"
+                    >
+                      Signup
+                      <span class="sub">Signup As a Merchant</span>
+                    </a>
+                  </li>
+                </div>
+                <div className="merchant_drop mt-2 mb-2">
+                  <li
+                    id="menu-item-144"
+                    class="
                   login_icon
                       nav-icon
                       menu-item
@@ -435,26 +433,26 @@ const Topnav = () => {
                       menu-item-object-page menu-item-144
                       nav-item
                       "
-                >
-                  <a
-                    title="Health"
-                    target="_Blank"
-                    className="hover_color"
-                    href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
-                    class="dropdown-item"
                   >
-                    Login
-                    <span class="sub">Login Your Merchant Account</span>
-                  </a>
-                </li>
+                    <a
+                      title="Health"
+                      target="_Blank"
+                      className="hover_color"
+                      href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
+                      class="dropdown-item"
+                      rel="noreferrer"
+                    >
+                      Login
+                      <span class="sub">Login Your Merchant Account</span>
+                    </a>
+                  </li>
+                </div>
               </div>
-
             </div>
 
-            </div>
-           
-            
-
+            {/* <Nav.Link href="/career" className="nav_color">
+              Career
+            </Nav.Link> */}
 
             {/* <Nav.Link href="/health" className="nav_color">
               Health
