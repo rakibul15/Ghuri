@@ -2,9 +2,37 @@
 
 
 const news = [
+  {
+    id: 7,
+    image:"https://www.newagebd.com/files/sitesetup/1_2.png",
+    haedline: "Ghuri receives ISO certificate",
+    description:
+      "Ghuri Express Limited became certified by the International Organisation for Standardisation on Saturday, said a press release.",
+    link:
+      "https://www.newagebd.net/article/150109/ghuri-receives-iso-certificate?fbclid=IwAR2N6aFJS6tLCqdgaj1SIYi8TxHe1-uGLpXayFTbzEXmUvt25y7UhbhG-5s",
+  },
+  
+  {
+    id: 6,
+    image:"https://embajadadebarbados.com/wp-content/uploads/2021/06/logo-46-e1624253053759-300x70.png",
+    haedline: "Ghuri receives ISO certificate",
+    description:
+      "Ghuri Express Limited CEO Faijunnur Akon Rasel receives a certificate from the International Organization for Standardization on Saturday.",
+    link:
+      "https://embajadadebarbados.com/ghuri-receives-iso-certificate/?fbclid=IwAR0AE4Nm6ESlSK3UFhsGm_-iE8og98CooOdJXnMIY4knAgsDvlFRwtm0wyc",
+  },
+  {
+    id: 5,
+    image:"https://www.daily-sun.com/assets/newDesktop/img/logo.png",
+    haedline: "Ghuri Express CEO Faijunnur Akon Rasel receives the ISO certificate from a representative of ISO at a function in the capital on Saturday.",
+    description:
+      "Ghuri Express CEO Faijunnur Akon Rasel receives the ISO certificate from a representative of ISO at a function in the capital on Saturday",
+    link:
+      "https://www.daily-sun.com/printversion/details/578890/Ghuri-Express-CEO-Faijunnur-Akon-Rasel-receives-the-ISO-certificate-from-a-representative-of-ISO-at-a-function-in-the-capital-on-Saturday.-?fbclid=IwAR1DljdnD5GklbDXzaC8ClU624e_QWqV7Si7xH4nAody7KWalnkIc7nkgq4",
+  },
     
   {
-    id: 1,
+    id: 4,
     image:"http://thebusiness24.net/wp-content/uploads/2021/01/cropped-Logo-TB24.png",
     haedline: "A new App Ghuri fly for everything",
     description:
@@ -14,7 +42,7 @@ const news = [
   },
 
   {
-    id: 2,
+    id: 3,
     image: "https://www.bangladeshpost.net/img/logo.png",
     haedline: "‘Ghuri’ app launched to offer day-to-day services",
     description:
@@ -23,7 +51,7 @@ const news = [
       "https://www.bangladeshpost.net/posts/ghuri-app-launched-to-offer-day-to-day-services-53213?fbclid=IwAR3sr9HBxkll3mqyD0BF16WAA0xiAvOJqtbf2Uq7EjRfN09X262CI5VhrSo",
   },
   {
-    id: 3,
+    id: 2,
     image: "https://www.tbsnews.net/sites/all/themes/sloth/images/footer_logo.svg",
     haedline: "‘Ghuri launches new app",
     description:
@@ -33,17 +61,7 @@ const news = [
   },
 
   {
-    id: 4,
-    image: "https://bengal-gazette.com/wp-content/uploads/2020/08/download-e1597575777736.png",
-    haedline: "Ghuri wants to fly in the sky",
-    description:
-      "In this day and age of technology and advancement, every aspect of life has been getting improvements.... ",
-    link:
-      "https://bengal-gazette.com/2021/02/02/ghuri-wants-to-fly-in-the-sky/?fbclid=IwAR0VURBoVhCl_QQRzoz4EbEjhiP0PHAztLbKoUU_MLJ735A20JN0wjwvnl8",
-  },
-
-  {
-    id: 5,
+    id: 1,
     image: "http://todaytimes24.com/bn/wp-content/uploads/2017/04/Portal-Logo.png",
     haedline: "ঘুড়ি আসছে রাইড শেয়ার নিয়ে",
     description:
