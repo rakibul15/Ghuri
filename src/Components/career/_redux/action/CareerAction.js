@@ -67,7 +67,7 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
           dispatch({ type: Types.IS_LOADING, payload: true });
           await Axios.put(cvurl, formData).then((cvdata) => {
             if (cvdata.data.status) {
-              showToast("success", res.data.message);
+              showToast("success", "Successfully Submitted");
             }
             dispatch({ type: Types.IS_LOADING, payload:false });
           });

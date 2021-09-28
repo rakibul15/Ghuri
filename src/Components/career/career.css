@@ -24,7 +24,7 @@
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
-  background-image: url(../../images/others/career-hero-bg.jpg);
+  background-image: url(../../images/others/frame_site.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -185,4 +185,10 @@ input[type="file"] {
 
 .text_for_all ul li{
   font-family:roboto;
+}
+
+.jobs_aplication label {
+  display: inline-block;
+  margin-bottom: 0px !important;
+  padding: .375rem .75rem;
 }
