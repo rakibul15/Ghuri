@@ -41,7 +41,7 @@ const Career = () => {
         {careerList && careerList.career.length === 0 && (
           <>
             <div class="alert alert-success text-center mt-5 mt-5" role="alert">
-              Sorry ! No data found.
+              Sorry ! No Job Post Found
             </div>
           </>
         )}
