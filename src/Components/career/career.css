@@ -180,4 +180,9 @@ input[type="file"] {
   border: none !important;
   color: black;
   font-family:ibmplex;
+  cursor: pointer;
+}
+
+.text_for_all ul li{
+  font-family:roboto;
 }
