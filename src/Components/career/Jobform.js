@@ -14,6 +14,7 @@ const Jobform = () => {
   let { id } = useParams();
   const careerDetails = useSelector((state) => state.careerInfo.careerDetails);
   const isPageLoad = useSelector((state) => state.careerInfo.isPageLoad);
+  const isLoading = useSelector((state) => state.careerInfo.isLoading);
 
   const handleChangeInput = (name, value) => {
     dispatch(GetCandidateInput(name, value));
@@ -23,12 +24,12 @@ const Jobform = () => {
     dispatch(GetCareerDetails(id));
   }, []);
 
-  const candidateInput = useSelector((state) => state.careerInfo.candidateInput);
-  const history = useHistory();
+  const candidateInput = useSelector(
+    (state) => state.careerInfo.candidateInput
+  );
   const handleSubmit = (data) => {
-    dispatch(SubmitCandidateInput(data,id));
+    dispatch(SubmitCandidateInput(data, id));
     // dispatch(GetCareerDetails(id));
-
   };
 
   return (
@@ -54,7 +55,7 @@ const Jobform = () => {
               <div className="col-sm-12">
                 <div className="row d-flex align-items-center text-center justify-content-center">
                   <div className="col-sm-12 JObAForm">
-                    <h1>Job Application Form</h1>
+                    <h2>Job Application Form</h2>
 
                     <h4>{careerDetails.title}</h4>
                   </div>
@@ -72,7 +73,7 @@ const Jobform = () => {
                       <div className="row mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            name<span className="text-danger"></span>
+                            Name<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -81,7 +82,7 @@ const Jobform = () => {
                             autoComplete="off"
                             type="text"
                             name="name"
-                            placeholder="name"
+                            placeholder="Name"
                             value={GetCandidateInput.title}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
@@ -122,7 +123,7 @@ const Jobform = () => {
                             autoComplete="off"
                             type="text"
                             name="phone"
-                            placeholder="phone"
+                            placeholder="Phone"
                             value={GetCandidateInput.phone}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
@@ -206,7 +207,29 @@ const Jobform = () => {
                       <div className="row mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            experience<span className="text-danger"></span>
+                            Resume
+                            <span className="text-danger"></span>
+                          </label>
+                        </div>
+                        <div className="col-sm-9">
+                          <FormControl
+                            className="edit_form_control"
+                            type="file"
+                            name="cv2"
+                            accept=".pdf"
+                            placeholder="cv"
+                            value={GetCandidateInput.cv}
+                            onChange={(e) =>
+                              handleChangeInput("cv2", e.target.files[0])
+                            }
+                          />
+                        </div>
+                      </div>
+
+                      <div className="row mt-3">
+                        <div className="col-sm-3 text-right">
+                          <label>
+                            Experience<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -214,7 +237,7 @@ const Jobform = () => {
                             className="edit_form_control"
                             type="text"
                             name="experience"
-                            placeholder="experience"
+                            placeholder="Experience"
                             value={GetCandidateInput.experience}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
@@ -235,7 +258,7 @@ const Jobform = () => {
                             className="edit_form_control"
                             type="text"
                             name="interest"
-                            placeholder="interest"
+                            placeholder="Interest"
                             value={GetCandidateInput.interest}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
@@ -255,7 +278,7 @@ const Jobform = () => {
                             className="edit_form_control"
                             type="text"
                             name="current"
-                            placeholder="current salary"
+                            placeholder="Current salary"
                             value={GetCandidateInput.current}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
@@ -274,7 +297,7 @@ const Jobform = () => {
                             className="edit_form_control"
                             type="text"
                             name="expected"
-                            placeholder="expected salary"
+                            placeholder="Expected salary"
                             value={GetCandidateInput.current}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
@@ -308,41 +331,29 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
-                        <div className="col-sm-3 text-right">
-                          <label>
-                            CV
-                            <span className="text-danger"></span>
-                          </label>
-                        </div>
-                        <div className="col-sm-9">
-                          <FormControl
-                            className="edit_form_control"
-                            type="file"
-                            name="cv2"
-                            accept=".pdf"
-                            placeholder="cv"
-                            value={GetCandidateInput.cv}
-                            onChange={(e) =>
-                              handleChangeInput("cv2", e.target.files[0])
-                            }
-                          />
-                        </div>
-                      </div>
                       <div className="row">
-                        <div className="col-sm-12 text-right mt-5">
-                          <Button
-                            onClick={() => handleSubmit(candidateInput)}
-                           
-                            className="btn btn_submit_job p-2"
-                            type="submit"
-                          >
-                            Submit
-                          </Button>
+                        <div className="col-sm-12 text-right mt-5 ">
+                          {!isLoading && (
+                            <Button
+                              onClick={() => handleSubmit(candidateInput)}
+                              className="btn btn_submit_job point p-2"
+                              type="submit"
+                            >
+                              Submit
+                            </Button>
+                          )}
+
+                          {isLoading && (
+                            <Button disabled
+                              onClick={() => handleSubmit(candidateInput)}
+                              className="btn btn_submit_job poin p-2"
+                              type="submit"
+                            >
+                              Submitting.....
+                            </Button>
+                          )}
                         </div>
                       </div>
-                   
-            
                     </div>
                   </div>
                 </div>

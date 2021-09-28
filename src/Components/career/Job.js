@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useParams } from "react-router";
-import team from "../../images/others/joomshaper-collage.jpg";
+import team from "../../images/others/team_member.jpeg";
 import { GetCareerDetails } from "./_redux/action/CareerAction";
 import { Markup } from "interweave";
 
@@ -44,7 +44,7 @@ const Job = () => {
     
         <>
          {/* {careerDetails.career.reverse().map((item, index) => ( */}
-          <div className="Nav_overflow">
+          <div className="Nav_overflow text_for_all">
             <div className="container-fluid bg_color_ash">
               <div className="container-condensed pt-5 pb-5">
                 <h2 className="text-center mb-3">
