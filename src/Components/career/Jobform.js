@@ -49,7 +49,7 @@ const Jobform = () => {
       )}
 
       {!isPageLoad && careerDetails !== null && (
-        <div className="Nav_overflow pt-5 pb-4">
+        <div className="Nav_overflow jobs_aplication pt-5 pb-4">
           <div className="container ">
             <div className="row d-flex align-items-center ">
               <div className="col-sm-12">
@@ -70,7 +70,7 @@ const Jobform = () => {
                     </div>
 
                     <div className="JobForm">
-                      <div className="row mt-3">
+                      <div className="row mt-3 d-flex align-items-center">
                         <div className="col-sm-3 text-right">
                           <label>
                             Name<span className="text-danger"></span>
@@ -91,7 +91,7 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
                             Email<span className="text-danger"></span>
@@ -111,7 +111,7 @@ const Jobform = () => {
                           />
                         </div>
                       </div>
-                      <div className="row mt-3">
+                      <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
                             Phone<span className="text-danger"></span>
@@ -132,7 +132,7 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
                             University<span className="text-danger"></span>
@@ -153,7 +153,7 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
                             Cgpa<span className="text-danger"></span>
@@ -174,7 +174,7 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
                             Gender<span className="text-danger"></span>
@@ -198,13 +198,13 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-5 mb-3 JObAForm">
+                      <div className="row  d-flex JObAForm">
                         <div className="col-sm-3">
                           <h5>Career quiz</h5>
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      <div className="row mt-3  d-flex align-items-center">
                         <div className="col-sm-3 text-right">
                           <label>
                             Resume
@@ -226,7 +226,7 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      <div className="row mt-3  d-flex align-items-center">
                         <div className="col-sm-3 text-right">
                           <label>
                             Experience<span className="text-danger"></span>
@@ -246,7 +246,7 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
                             Expertise/Interest Areas
@@ -267,7 +267,7 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
                             Current Salary<span className="text-danger"></span>
@@ -286,7 +286,7 @@ const Jobform = () => {
                           />
                         </div>
                       </div>
-                      <div className="row mt-3">
+                      <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
                             Expected Salary<span className="text-danger"></span>
@@ -306,7 +306,7 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
                             Notice<span className="text-danger"></span>
@@ -331,7 +331,7 @@ const Jobform = () => {
                         </div>
                       </div>
 
-                      <div className="row">
+                      <div className="row  d-flex align-items-center">
                         <div className="col-sm-12 text-right mt-5 ">
                           {!isLoading && (
                             <Button
