@@ -450,9 +450,9 @@ const Topnav = () => {
               </div>
             </div>
 
-            {/* <Nav.Link href="/career" className="nav_color">
+            <Nav.Link href="/career" className="nav_color last_nav">
               Career
-            </Nav.Link> */}
+            </Nav.Link>
 
             {/* <Nav.Link href="/health" className="nav_color">
               Health

@@ -44,7 +44,7 @@
   max-width: 162px;
 }
 .navbar-nav .nav-link {
-  padding-left: 1.4rem !important;
+  padding-left: 0.8rem !important;
 }
 .nav_dropdown .dropdown-menu {
   position: static;
@@ -146,6 +146,10 @@
   background-image: url(../../images/others/login.png);
   background-size: 28px 28px;
 
+}
+
+.last_nav{
+  padding-right: 16px !important;
 }
 
 /* DropDown Menu */

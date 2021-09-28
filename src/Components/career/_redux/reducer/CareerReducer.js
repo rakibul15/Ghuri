@@ -20,6 +20,7 @@ const initialState = {
   careerDetails: null,
   career: null,
   isPageLoad: false,
+  isLoading: false,
 };
 
 const careerReducer = (state = initialState, action) => {
@@ -49,6 +50,12 @@ const careerReducer = (state = initialState, action) => {
           ...state,
           candidateInput:candidateInput,
         };
+
+        case Types.IS_LOADING:
+          return {
+            ...state,
+            isLoading: action.payload,
+          };
 
         
 

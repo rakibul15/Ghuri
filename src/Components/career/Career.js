@@ -28,10 +28,7 @@ const Career = () => {
             <div className="col-sm-6 join_us_sec">
               <h1>Join Us</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-                minus cumque, officia similique consequatur, saepe ratione vero
-                harum, quia dolor distinctio repellendus sed voluptatibus
-                reprehenderit deserunt. Sunt, vel inventore! Nemo!
+              Join us, we offer you an extraordinary chance to learn, to develop and to be part of an exciting experience and team.
               </p>
             </div>
           </div>

@@ -35,22 +35,24 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
   } else if (data && data.gender.length === 0) {
     showToast("error", "Please select gender");
     return 0;
-  } else if (data && data.experience.length === 0) {
+  } 
+  else if (data && data.cv2.length === 0) {
+    showToast("error", "Select Your CV");
+    return 0;
+  }
+  else if (data && data.experience.length === 0) {
     showToast("error", "experience shouldn't be empty");
     return 0;
   } else if (data && data.interest.length === 0) {
-    showToast("error", "experience shouldn't be empty");
+    showToast("error", "Expertise/interest shouldn't be empty");
     return 0;
   } else if (data && data.current.length === 0) {
     showToast("error", "Current salary shouldn't be empty");
     return 0;
   } else if (data && data.expected.length === 0) {
-    showToast("error", "expected salary shouldn't be empty");
+    showToast("error", "Expected salary shouldn't be empty");
     return 0;
-  } else if (data && data.cv2.length === 0) {
-    showToast("error", "Select Your CV");
-    return 0;
-  }
+  } 
   const formData = new FormData();
   formData.append("cv", data.cv2);
 
@@ -62,11 +64,12 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
         console.log(res);
         if (res.data.status) {
           const cvurl = `${process.env.REACT_APP_BAZAR_URL}user/career/cv?id=${res.data.CandidateID}`;
-
+          dispatch({ type: Types.IS_LOADING, payload: true });
           await Axios.put(cvurl, formData).then((cvdata) => {
             if (cvdata.data.status) {
-              showToast("success", res.data.message);
+              showToast("success", "Successfully Submitted");
             }
+            dispatch({ type: Types.IS_LOADING, payload:false });
           });
         } else {
           showToast("error", res.data.message);
