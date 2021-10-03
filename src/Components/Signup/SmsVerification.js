@@ -52,7 +52,7 @@ const SmsVerification = () => {
   const userData = JSON.parse(localStorage.getItem("signupData"));
   const mobile = userData.phone;
   const lastTwo = mobile.slice(-2);
-
+  //test
   return (
     <>
       <div className="sms Nav_overflow">
@@ -61,56 +61,56 @@ const SmsVerification = () => {
           className="d-flex align-items-center justify-content-center"
         >
           <div className="col-sm-6">
-          <Card className="bg-light ">
-            <Card.Body className="verification_box">
-              <Card.Title>SMS VERIFICATION</Card.Title>
-              <Card.Subtitle className="mb-2 verification_subtitle">
-                Please enter the GHURI PARCEL registration verification code
-                send to 01XXXXXXX{lastTwo}
-              </Card.Subtitle>
-              <Card.Text className="verification_input">
-                <label>GP-</label>{" "}
-                <input
-                  className="mt-3 mb-1"
-                  type="number"
-                  name="smsVerification"
-                  placeholder="Enter verification code"
-                  value={smsCode}
-                  onChange={(e) => setSmsCode(e.target.value)}
-                />
-              </Card.Text>
-              <Card.Link>
-                <a
-                  className="btn btn-verification"
-                  onClick={() => handleSubmit(smsCode)}
-                >
-                  Submit
-                </a>
-              </Card.Link>
-              <Card.Link className="resend">
-                <span className="text-right" >
+            <Card className="bg-light ">
+              <Card.Body className="verification_box">
+                <Card.Title>SMS VERIFICATION</Card.Title>
+                <Card.Subtitle className="mb-2 verification_subtitle">
+                  Please enter the GHURI PARCEL registration verification code
+                  send to 01XXXXXXX{lastTwo}
+                </Card.Subtitle>
+                <Card.Text className="verification_input">
+                  <label>GP-</label>{" "}
+                  <input
+                    className="mt-3 mb-1"
+                    type="number"
+                    name="smsVerification"
+                    placeholder="Enter verification code"
+                    value={smsCode}
+                    onChange={(e) => setSmsCode(e.target.value)}
+                  />
+                </Card.Text>
+                <Card.Link>
                   <a
-                    style={{ cursor: "pointer" }}
-                    onClick={() => {
-                      reset();
-                      setResend(false);
-                      handleResend();
-                      setCount(count + 1);
-                    }}
+                    className="btn btn-verification"
+                    onClick={() => handleSubmit(smsCode)}
                   >
-                    {resend && "Resend?"}
+                    Submit
                   </a>
-                  {!resend && (
-                    <>
-                      <span style={{ fontSize: "20px" }}>
-                        00:00:{30 - seconds}
-                      </span>
-                    </>
-                  )}
-                </span>
-              </Card.Link>
-            </Card.Body>
-          </Card>
+                </Card.Link>
+                <Card.Link className="resend">
+                  <span className="text-right">
+                    <a
+                      style={{ cursor: "pointer" }}
+                      onClick={() => {
+                        reset();
+                        setResend(false);
+                        handleResend();
+                        setCount(count + 1);
+                      }}
+                    >
+                      {resend && "Resend?"}
+                    </a>
+                    {!resend && (
+                      <>
+                        <span style={{ fontSize: "20px" }}>
+                          00:00:{30 - seconds}
+                        </span>
+                      </>
+                    )}
+                  </span>
+                </Card.Link>
+              </Card.Body>
+            </Card>
           </div>
         </div>
       </div>
