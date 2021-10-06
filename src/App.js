@@ -200,13 +200,13 @@ function App() {
           <Route path="/parcelModal">
             <ParcelModal></ParcelModal>
           </Route>
-          <Route path="/career">
+          <Route exact path="/career">
             <Career></Career>
           </Route>
-          <Route path="/job/:id">
+          <Route exact path="/career/details/:slug">
             <Job></Job>
           </Route>
-          <Route path="/jobform/:id">
+          <Route exact path="/career/application/:slug">
             <Jobform></Jobform>
           </Route>
 
