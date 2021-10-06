@@ -4,38 +4,33 @@ import { useHistory, useParams } from "react-router";
 import team from "../../images/others/team_member.jpeg";
 import { GetCareerDetails } from "./_redux/action/CareerAction";
 import { Markup } from "interweave";
-
 const Job = () => {
   const history = useHistory();
   // let {id } = useParams();
- 
- 
+
   const dispatch = useDispatch();
 
   var slug;
   var id;
-  const handleJob = (title,id) => {
+  const handleJob = (title, id) => {
     slug = title
-    .toLowerCase()
-    .replace(/ /g, '-')
-    .replace(/[^\w-]+/g, '')
-    ;
+      .toLowerCase()
+      .replace(/ /g, "-")
+      .replace(/[^\w-]+/g, "");
 
-  history.push(`/career/application/${slug}`, {
-    id: id
-  });
-  
+    history.push(`/career/application/${slug}`, {
+      id: id,
+    });
   };
 
   const careerDetails = useSelector((state) => state.careerInfo.careerDetails);
   const isPageLoad = useSelector((state) => state.careerInfo.isPageLoad);
 
-
   useEffect(() => {
     dispatch(GetCareerDetails(history.location.state.id));
   }, []);
 
-
+  // <meta property="og:image" content="https://i.ibb.co/ZM321Nz/OG-Screen.png" />
   return (
     <>
       {isPageLoad && (
@@ -98,15 +93,15 @@ const Job = () => {
 
                     <h4 className="mt-5 mb-3">Requirements</h4>
 
-                    <Markup  content={careerDetails.requirements} />
+                    <Markup content={careerDetails.requirements} />
 
                     <h4 className="mt-5 mb-3">Additional Job Requirement</h4>
-                    <Markup  content={careerDetails.additional} />
+                    <Markup content={careerDetails.additional} />
                     <h4 className="mt-5 mb-3">Working Hours</h4>
-                    <Markup  content={careerDetails.hours} />
+                    <Markup content={careerDetails.hours} />
 
                     <h4 className="mt-5 mb-3">Remuneration</h4>
-                    <Markup  content={careerDetails.salary} />
+                    <Markup content={careerDetails.salary} />
 
                     <h4 className="mt-5 mb-3">Other Benefits</h4>
                     <Markup content={careerDetails.benefits} />
@@ -115,7 +110,9 @@ const Job = () => {
                       <a
                         className="btn btnApply btn-fw-lg  mt-4"
                         href
-                        onClick={() => handleJob(careerDetails.title,careerDetails.ID)}
+                        onClick={() =>
+                          handleJob(careerDetails.title, careerDetails.ID)
+                        }
                       >
                         Apply for this position
                       </a>

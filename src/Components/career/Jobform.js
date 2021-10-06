@@ -157,7 +157,7 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Cgpa<span className="text-danger"></span>
+                            CGPA<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -166,7 +166,7 @@ const Jobform = () => {
                             autoComplete="off"
                             type="text"
                             name="cgpa"
-                            placeholder="Cgpa"
+                            placeholder="CGPAw"
                             value={GetCandidateInput.cgpa}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
