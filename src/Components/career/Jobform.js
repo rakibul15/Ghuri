@@ -10,8 +10,9 @@ import {
 } from "./_redux/action/CareerAction";
 
 const Jobform = () => {
+  const history = useHistory();
   const dispatch = useDispatch();
-  let { id } = useParams();
+  // let { id } = useParams();
   const careerDetails = useSelector((state) => state.careerInfo.careerDetails);
   const isPageLoad = useSelector((state) => state.careerInfo.isPageLoad);
   const isLoading = useSelector((state) => state.careerInfo.isLoading);
@@ -21,14 +22,14 @@ const Jobform = () => {
     console.log(name, value);
   };
   useEffect(() => {
-    dispatch(GetCareerDetails(id));
+    dispatch(GetCareerDetails(history.location.state.id));
   }, []);
 
   const candidateInput = useSelector(
     (state) => state.careerInfo.candidateInput
   );
   const handleSubmit = (data) => {
-    dispatch(SubmitCandidateInput(data, id));
+    dispatch(SubmitCandidateInput(data, history.location.state.id));
     // dispatch(GetCareerDetails(id));
   };
 
@@ -55,7 +56,7 @@ const Jobform = () => {
               <div className="col-sm-12">
                 <div className="row d-flex align-items-center text-center justify-content-center">
                   <div className="col-sm-12 JObAForm">
-                    <h2>Job Application Form</h2>
+                  
 
                     <h4>{careerDetails.title}</h4>
                   </div>
@@ -190,7 +191,7 @@ const Jobform = () => {
                                 handleChangeInput(e.target.name, e.target.value)
                               }
                             >
-                              <option selected>Select a notice period</option>
+                              <option selected>Select Gender</option>
                               <option value="male">Male</option>
                               <option value="female">Female</option>
                             </select>
@@ -309,7 +310,7 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Notice<span className="text-danger"></span>
+                            Notice Period<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -344,7 +345,8 @@ const Jobform = () => {
                           )}
 
                           {isLoading && (
-                            <Button disabled
+                            <Button
+                              disabled
                               onClick={() => handleSubmit(candidateInput)}
                               className="btn btn_submit_job poin p-2"
                               type="submit"
