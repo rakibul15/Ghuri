@@ -166,7 +166,7 @@ const Jobform = () => {
                             autoComplete="off"
                             type="text"
                             name="cgpa"
-                            placeholder="CGPAw"
+                            placeholder="CGPA"
                             value={GetCandidateInput.cgpa}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
