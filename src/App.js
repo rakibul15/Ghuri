@@ -203,10 +203,10 @@ function App() {
           <Route exact path="/career">
             <Career></Career>
           </Route>
-          <Route exact path="/career/details/:slug">
+          <Route exact path="/career/details/:id/:slug">
             <Job></Job>
           </Route>
-          <Route exact path="/career/application/:slug">
+          <Route exact path="/career/application/:id/:slug">
             <Jobform></Jobform>
           </Route>
 

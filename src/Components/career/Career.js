@@ -22,7 +22,7 @@ const Career = () => {
       .replace(/[^\w-]+/g, '')
       ;
 
-    history.push(`/career/details/${slug}`, {
+    history.push(`/career/details/${id}/${slug}`, {
       id: id
     });
 

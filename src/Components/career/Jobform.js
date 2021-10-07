@@ -12,7 +12,7 @@ import {
 const Jobform = () => {
   const history = useHistory();
   const dispatch = useDispatch();
-  // let { id } = useParams();
+  let { id } = useParams();
   const careerDetails = useSelector((state) => state.careerInfo.careerDetails);
   const isPageLoad = useSelector((state) => state.careerInfo.isPageLoad);
   const isLoading = useSelector((state) => state.careerInfo.isLoading);
@@ -22,7 +22,7 @@ const Jobform = () => {
     console.log(name, value);
   };
   useEffect(() => {
-    dispatch(GetCareerDetails(history.location.state.id));
+    dispatch(GetCareerDetails(id));
   }, []);
 
   const candidateInput = useSelector(
