@@ -6,20 +6,20 @@ import { GetCareerDetails } from "./_redux/action/CareerAction";
 import { Markup } from "interweave";
 const Job = () => {
   const history = useHistory();
-  // let {id } = useParams();
+  let {id } = useParams();
 
   const dispatch = useDispatch();
 
   var slug;
-  var id;
+
   const handleJob = (title, id) => {
     slug = title
       .toLowerCase()
       .replace(/ /g, "-")
       .replace(/[^\w-]+/g, "");
 
-    history.push(`/career/application/${slug}`, {
-      id: id,
+    history.push(`/career/application/${id}/${slug}`, {
+     
     });
   };
 
@@ -27,7 +27,7 @@ const Job = () => {
   const isPageLoad = useSelector((state) => state.careerInfo.isPageLoad);
 
   useEffect(() => {
-    dispatch(GetCareerDetails(history.location.state.id));
+    dispatch(GetCareerDetails(id));
   }, []);
 
   // <meta property="og:image" content="https://i.ibb.co/ZM321Nz/OG-Screen.png" />
