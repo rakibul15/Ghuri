@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useParams } from "react-router";
-import team from "../../images/others/team_member.jpeg";
+import team from "../../images/others/team_member.png";
 import { GetCareerDetails } from "./_redux/action/CareerAction";
 import { Markup } from "interweave";
 const Job = () => {
