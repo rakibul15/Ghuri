@@ -61,7 +61,7 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
   try {
     await Axios.post(url, data)
       .then(async (res) => {
-        console.log(res);
+        console.log(res.data);
         if (res.data.status) {
           const cvurl = `${process.env.REACT_APP_BAZAR_URL}user/career/cv?id=${res.data.CandidateID}`;
           dispatch({ type: Types.IS_LOADING, payload: true });
@@ -87,7 +87,7 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
 };
 
 export const GetCareerInfo = () => (dispatch) => {
-  let url = `${process.env.REACT_APP_BAZAR_URL}user/career/list?page=1&size=50`;
+  let url = `${process.env.REACT_APP_BAZAR_URL}user/career/list?page=1&size=100`;
 
   try {
     Axios.get(url).then((res) => {
