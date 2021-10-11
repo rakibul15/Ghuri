@@ -15,7 +15,7 @@ export const GetCandidateInput = (name, value) => (dispatch) => {
 };
 
 export const SubmitCandidateInput = (data, id) => async (dispatch) => {
-  console.log(`data`, data);
+
   if (data && data.name.length === 0) {
     showToast("error", "Name shouldn't be empty");
 
@@ -57,13 +57,15 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
   formData.append("cv", data.cv2);
 
   const url = `${process.env.REACT_APP_BAZAR_URL}user/career/submit?id=${id}`;
-
+  console.log(`id career action page`, id);
+  console.log(`Sumit URL`, url);
   try {
     await Axios.post(url, data)
       .then(async (res) => {
         console.log(res.data);
         if (res.data.status) {
           const cvurl = `${process.env.REACT_APP_BAZAR_URL}user/career/cv?id=${res.data.CandidateID}`;
+          console.log(`CandidateID`, res.data.CandidateID)
           dispatch({ type: Types.IS_LOADING, payload: true });
           await Axios.put(cvurl, formData).then((cvdata) => {
             if (cvdata.data.status) {

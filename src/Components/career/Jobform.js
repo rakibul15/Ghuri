@@ -28,7 +28,7 @@ const Jobform = () => {
   const candidateInput = useSelector(
     (state) => state.careerInfo.candidateInput
   );
-  // console.log(`id`,id)
+  console.log(` job form id`,id)
   const handleSubmit = (data) => {
     dispatch(SubmitCandidateInput(data,id));
     // dispatch(GetCareerDetails(id));
