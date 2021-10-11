@@ -19,7 +19,7 @@ const Jobform = () => {
 
   const handleChangeInput = (name, value) => {
     dispatch(GetCandidateInput(name, value));
-    console.log(name, value);
+    // console.log(name, value);
   };
   useEffect(() => {
     dispatch(GetCareerDetails(id));
@@ -28,7 +28,7 @@ const Jobform = () => {
   const candidateInput = useSelector(
     (state) => state.careerInfo.candidateInput
   );
-  console.log(`id`,id)
+  // console.log(`id`,id)
   const handleSubmit = (data) => {
     dispatch(SubmitCandidateInput(data,id));
     // dispatch(GetCareerDetails(id));
