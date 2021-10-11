@@ -44,6 +44,7 @@ import ParcelModal from "./Components/parcelDetails/ParcelModal";
 import Career from "./Components/career/Career";
 import Job from "./Components/career/Job";
 import Jobform from "./Components/career/Jobform";
+import FoodHome from "./Components/GhuriFood/FoodHome";
 
 function App() {
   return (
@@ -203,6 +204,10 @@ function App() {
           <Route exact path="/career">
             <Career></Career>
           </Route>
+          <Route exact path="/ghuriFood">
+           <FoodHome></FoodHome>
+          </Route>
+
           <Route exact path="/career/details/:id/:slug">
             <Job></Job>
           </Route>
