@@ -75,7 +75,7 @@ const Jobform = () => {
                       <div className="row mt-3 d-flex align-items-center">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Name<span className="text-danger"></span>
+                            Name*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -96,7 +96,7 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Email<span className="text-danger"></span>
+                            Email*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -116,7 +116,7 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Phone<span className="text-danger"></span>
+                            Phone*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -137,7 +137,7 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            University<span className="text-danger"></span>
+                            University*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -158,14 +158,14 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            CGPA<span className="text-danger"></span>
+                            CGPA*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
                           <FormControl
                             className="edit_form_control"
                             autoComplete="off"
-                            type="text"
+                            type="number"
                             name="cgpa"
                             placeholder="CGPA"
                             value={GetCandidateInput.cgpa}
@@ -179,7 +179,7 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Gender<span className="text-danger"></span>
+                            Gender*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -209,7 +209,7 @@ const Jobform = () => {
                       <div className="row mt-3  d-flex align-items-center">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Resume
+                            Resume*
                             <span className="text-danger"></span>
                           </label>
                         </div>
@@ -278,7 +278,7 @@ const Jobform = () => {
                         <div className="col-sm-9">
                           <FormControl
                             className="edit_form_control"
-                            type="text"
+                            type="number"
                             name="current"
                             placeholder="Current salary"
                             value={GetCandidateInput.current}
@@ -297,7 +297,7 @@ const Jobform = () => {
                         <div className="col-sm-9">
                           <FormControl
                             className="edit_form_control"
-                            type="text"
+                            type="number"
                             name="expected"
                             placeholder="Expected salary"
                             value={GetCandidateInput.current}
