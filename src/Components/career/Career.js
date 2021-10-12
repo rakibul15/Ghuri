@@ -66,7 +66,7 @@ const Career = () => {
                 <div className="d-flex">
                   <div className="flex-grow-1">
                     <div className="d-flex align-items-center mb-3">
-                      <span className={item.department.substring(0,1).toLowerCase()==='i'? 'badge badge-success  mr-3' : 'badge badge-primary  mr-3'}>{item.department[0]}</span>{" "}
+                      <span className={item.department.substring(0,1).toLowerCase()==='i'? 'badge badge-success  mr-2' : 'badge badge-primary  mr-2'}>{item.department[0]}</span>{" "}
                       <strong>{item.department}</strong>
                     </div>
                     <div className="flex">
