@@ -30,16 +30,15 @@ const Job = () => {
     dispatch(GetCareerDetails(id));
   }, []);
 
-  // <meta property="og:image" content="https://i.ibb.co/ZM321Nz/OG-Screen.png" />
   return (
     <>
       {isPageLoad && (
         <>
           <div className="Nav_overflow">
             <div className="container mt-5 pt-5">
-              <div class="d-flex justify-content-center  mt-5">
-                <div class="spinner-border mt-5" role="status">
-                  <span class="sr-only">Loading...</span>
+              <div className="d-flex justify-content-center  mt-5">
+                <div className="spinner-border mt-5" role="status">
+                  <span className="sr-only">Loading...</span>
                 </div>
               </div>
             </div>
@@ -59,7 +58,7 @@ const Job = () => {
                 </h2>
                 <div className="job-item-meta d-flex text-muted justify-content-center align-items-center mt-2">
                   <span> {careerDetails.status} </span>
-                  <span class="job-meta-divider mx-3"></span>
+                  <span className="job-meta-divider mx-3"></span>
                   <span>No. of Vacancies: {careerDetails.vacancy} </span>
                   <span className="job-meta-divider mx-3"></span>
                   <span>Deadline: {careerDetails.deadline}</span>

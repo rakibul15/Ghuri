@@ -1,6 +1,5 @@
 import { Modal } from 'react-bootstrap'
 import React, { useState } from "react";
-import { FormControl, InputGroup } from "react-bootstrap";
 
 const ParcelModal = () => {
   const [show, setShow] = useState(false);

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Button, Col, Form, FormControl, Row } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { useHistory, useParams } from "react-router";
+import { useParams } from "react-router";
 import {
   GetCandidateInput,
   GetCareerDetails,
@@ -10,7 +10,6 @@ import {
 } from "./_redux/action/CareerAction";
 
 const Jobform = () => {
-  const history = useHistory();
   const dispatch = useDispatch();
   let { id } = useParams();
   const careerDetails = useSelector((state) => state.careerInfo.careerDetails);
@@ -40,9 +39,9 @@ const Jobform = () => {
         <>
           <div className="Nav_overflow">
             <div className="container mt-5 pt-5 mb-5 pb-5">
-              <div class="d-flex justify-content-center  mt-5">
-                <div class="spinner-border mt-5" role="status">
-                  <span class="sr-only">Loading...</span>
+              <div className="d-flex justify-content-center  mt-5">
+                <div className="spinner-border mt-5" role="status">
+                  <span className="sr-only">Loading...</span>
                 </div>
               </div>
             </div>
@@ -185,7 +184,7 @@ const Jobform = () => {
                         <div className="col-sm-9">
                           <div>
                             <select
-                              class="form-control"
+                              className="form-control"
                               name="gender"
                               value={GetCandidateInput.gender}
                               onChange={(e) =>
@@ -317,7 +316,7 @@ const Jobform = () => {
                         <div className="col-sm-9">
                           <div>
                             <select
-                              class="form-control"
+                              className="form-control"
                               name="notice"
                               // value={careerInput.expected}
                               onChange={(e) =>

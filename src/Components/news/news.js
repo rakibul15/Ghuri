@@ -2,15 +2,7 @@
 
 
 const news = [
-  {
-    id: 7,
-    image:"https://www.newagebd.com/files/sitesetup/1_2.png",
-    haedline: "Ghuri receives ISO certificate",
-    description:
-      "Ghuri Express Limited became certified by the International Organisation for Standardisation on Saturday, said a press release.",
-    link:
-      "https://www.newagebd.net/article/150109/ghuri-receives-iso-certificate?fbclid=IwAR2N6aFJS6tLCqdgaj1SIYi8TxHe1-uGLpXayFTbzEXmUvt25y7UhbhG-5s",
-  },
+
   
   {
     id: 6,

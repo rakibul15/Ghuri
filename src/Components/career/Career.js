@@ -3,7 +3,7 @@ import "./career.css";
 import "../../assets/css/Custom.css";
 import { GetCareerInfo } from "./_redux/action/CareerAction";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Career = () => {
   const history = useHistory();
@@ -50,7 +50,7 @@ const Career = () => {
 
         {careerList && careerList.career.length === 0 && (
           <>
-            <div class="alert alert-success text-center mt-5 mt-5" role="alert">
+            <div className="alert alert-success text-center mt-5 mt-5" role="alert">
               Sorry ! No Job Post Found.
             </div>
           </>
@@ -70,22 +70,22 @@ const Career = () => {
                       <strong>{item.department}</strong>
                     </div>
                     <div className="flex">
-                      <span class="job-title h6 line-height-1 m-0">
+                      <span className="job-title h6 line-height-1 m-0">
                         {item.title}
                       </span>
-                      <span class="badge badge-soft-primary ml-2">Open</span>
+                      <span className="badge badge-soft-primary ml-2">Open</span>
                     </div>
-                    <div class="job-item-meta d-none d-lg-flex text-muted align-items-center mt-2">
+                    <div classname="job-item-meta d-none d-lg-flex text-muted align-items-center mt-2">
                       <span>Job Type: {item.status}</span>
-                      <span class="job-meta-divider mx-3"></span>
+                      <span className="job-meta-divider mx-3"></span>
                       <span>Vacancy: {item.vacancy}</span>
-                      <span class="job-meta-divider mx-3"></span>
+                      <span classNmae="job-meta-divider mx-3"></span>
                       <span>Deadline: {item.deadline}</span>
                     </div>
                   </div>
-                  <div class="align-self-end ">
-                    <div class="iconic-avatar iconic-avatar-sm">
-                      <span class="fa fa-chevron-right"></span>
+                  <div className="align-self-end ">
+                    <div className="iconic-avatar iconic-avatar-sm">
+                      <span className="fa fa-chevron-right"></span>
                     </div>
                   </div>
                 </div>

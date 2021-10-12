@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Blog.css";
-import image from "../../images/Health/bronze.jpg";
 import blogdata from "./blogContent";
-import Singleblog from "./Singleblog";
-import { Col } from "react-bootstrap";
 import Pagination from "./Pagination";
 
 const Blog = () => {
