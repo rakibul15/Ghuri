@@ -10,7 +10,6 @@ import youtube from "../../images/footer/youtube.png";
 import linkedin from "../../images/footer/linkedin.png";
 import ssl from "../../images/footer/SSLCOMMERZ.png";
 import iso from "../../images/footer/IOS & CSA.png";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   const handleParcel = () => {
@@ -548,7 +547,7 @@ const Footer = () => {
                 <div className="col col-sm-2 col-md-2 col-2 col-xl-2 mt-1 ">
                   <a
                     href="https://www.linkedin.com/company/ghuri/"
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                   >
                     {" "}
                     <img className="follow_us" src={linkedin} alt="" />
@@ -557,7 +556,7 @@ const Footer = () => {
                 <div className="col col-sm-2 col-md-2 col-2 col-xl-2 mt-1">
                   <a
                     href="https://www.youtube.com/channel/UCLVDbjelUC0_zV6gTLF-JYQ/featured"
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                   >
                     {" "}
                     <img className="follow_us" src={youtube} alt="" />
@@ -566,7 +565,7 @@ const Footer = () => {
                 <div className="col col-2 col-sm-2 col-md-2 col-xl-2 mt-1">
                   <a
                     href="https://www.instagram.com/ghuri_app/"
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                   >
                     {" "}
                     <img className="follow_us" src={instagram} alt="" />

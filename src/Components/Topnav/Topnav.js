@@ -25,12 +25,12 @@ const Topnav = () => {
           <Nav className="ml-auto ghuri_nav">
             <Nav.Link href="/home">Home</Nav.Link>
 
-            <div class="dropdown_main">
+            <div className="dropdown_main">
               <Nav.Link className="dropdown">
-                Service <i class="fa fa-caret-down"></i>
+                Service <i className="fa fa-caret-down"></i>
               </Nav.Link>
               <div
-                class="dropdown_menu  drop_down_custom show drop_down_content"
+                className="dropdown_menu  drop_down_custom show drop_down_content"
                 aria-labelledby="menu-item-dropdown-223"
                 role="menu"
               >
@@ -38,7 +38,7 @@ const Topnav = () => {
                   <div className="col-sm-12 col-md-6  ">
                     <li
                       id="menu-item-144"
-                      class="
+                      className="
                       parcel_icon
                       nav-icon
                       menu-item
@@ -51,11 +51,11 @@ const Topnav = () => {
                       <a
                         title="Parcel"
                         href="/ghuriparcel"
-                        class="dropdown-item"
+                        className="dropdown-item"
                       >
                         {" "}
                         Parcel
-                        <span class="sub">
+                        <span className="sub">
                           On Demand Delivery at Your Doorstep
                         </span>
                       </a>
@@ -64,7 +64,7 @@ const Topnav = () => {
                   <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
-                      class="
+                      className="
                       health_icon
                       nav-icon
                       menu-item
@@ -73,16 +73,16 @@ const Topnav = () => {
                       nav-item
                       "
                     >
-                      <a title="Health" href="/health" class="dropdown-item">
+                      <a title="Health" href="/health" className="dropdown-item">
                         Health
-                        <span class="sub">Ghuri Health Service</span>
+                        <span className="sub">Ghuri Health Service</span>
                       </a>
                     </li>
                   </div>
                   <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
-                      class="
+                      className="
                       interior_icon
                       nav-icon
                       menu-item
@@ -95,18 +95,18 @@ const Topnav = () => {
                         target="_Blank"
                         title="Interior"
                         href="https://nuraniinteriorbd.com/"
-                        class="dropdown-item"
+                        className="dropdown-item"
                         rel="noreferrer"
                       >
                         Interior
-                        <span class="sub">Extra Idea Our Asset</span>
+                        <span className="sub">Extra Idea Our Asset</span>
                       </a>
                     </li>
                   </div>
                   <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
-                      class="
+                      className="
                       news_icon
                       nav-icon
                       menu-item
@@ -119,11 +119,11 @@ const Topnav = () => {
                         title="News"
                         target="_Blank"
                         href="https://nuraniradio.com/"
-                        class="dropdown-item"
+                        className="dropdown-item"
                         rel="noreferrer"
                       >
                         News
-                        <span class="sub">Your Right To Know</span>
+                        <span className="sub">Your Right To Know</span>
                       </a>
                     </li>
                   </div>
@@ -155,7 +155,7 @@ const Topnav = () => {
                       />
                     </a>
                   </div>
-                  <div class="col-md-6 col-sm-12">
+                  <div className="col-md-6 col-sm-12">
                     <h6>Download Fighter App</h6>
                     <a
                       href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
@@ -185,7 +185,7 @@ const Topnav = () => {
               className="nav_dropdown"
             >
               <div
-                class="dropdown-menu  drop_down_custom show drop_down_content"
+                className="dropdown-menu  drop_down_custom show drop_down_content"
                 aria-labelledby="menu-item-dropdown-223"
                 role="menu"
               >
@@ -193,7 +193,7 @@ const Topnav = () => {
                   <div className="col-sm-6 col-md-6  ">
                     <li
                       id="menu-item-144"
-                      class="
+                      className="
                       parcel_icon
                       nav-icon
                       menu-item
@@ -206,11 +206,11 @@ const Topnav = () => {
                       <a
                         title="Parcel"
                         href="/ghuriparcel"
-                        class="dropdown-item"
+                        className="dropdown-item"
                       >
                         {" "}
                         Parcel
-                        <span class="sub">
+                        <span className="sub">
                           On Demand Delivery at Your Doorstep
                         </span>
                       </a>
@@ -219,7 +219,7 @@ const Topnav = () => {
                   <div className="col-sm-6 col-md-6">
                     <li
                       id="menu-item-144"
-                      class="
+                      className="
                       health_icon
                       nav-icon
                       menu-item
@@ -228,9 +228,9 @@ const Topnav = () => {
                       nav-item
                       "
                     >
-                      <a title="Health" href="/health" class="dropdown-item">
+                      <a title="Health" href="/health" className="dropdown-item">
                         Health
-                        <span class="sub">
+                        <span className="sub">
                           Get Your Food in Less Than an Hour
                         </span>
                       </a>
@@ -239,7 +239,7 @@ const Topnav = () => {
                   <div className="col-sm-6 col-md-6">
                     <li
                       id="menu-item-144"
-                      class="
+                      className="
                       interior_icon
                       nav-icon
                       menu-item
@@ -252,11 +252,11 @@ const Topnav = () => {
                         target="_Blank"
                         title="Interior"
                         href="https://nuraniinteriorbd.com/"
-                        class="dropdown-item"
+                        className="dropdown-item"
                         rel="noreferrer"
                       >
                         Interior
-                        <span class="sub">
+                        <span className="sub">
                           Get Your Food in Less Than an Hour
                         </span>
                       </a>
@@ -265,7 +265,7 @@ const Topnav = () => {
                   <div className="col-sm-6 col-md-6">
                     <li
                       id="menu-item-144"
-                      class="
+                      className="
                       news_icon
                       nav-icon
                       menu-item
@@ -278,11 +278,11 @@ const Topnav = () => {
                         title="News"
                         target="_Blank"
                         href="https://nuraniradio.com/"
-                        class="dropdown-item"
+                        className="dropdown-item"
                         rel="noreferrer"
                       >
                         News
-                        <span class="sub">
+                        <span className="sub">
                           Get Your Food in Less Than an Hour
                         </span>
                       </a>
@@ -316,7 +316,7 @@ const Topnav = () => {
                       />
                     </a>
                   </div>
-                  <div class="col-md-6 col-sm-6">
+                  <div className="col-md-6 col-sm-6">
                     <h6>Download Fighter App</h6>
                     <a
                       href="https://play.google.com/store/apps/details?id=ghuri.express.parcelfighter"
@@ -344,7 +344,7 @@ const Topnav = () => {
               <div className="merchant_drop mt-1">
                 <li
                   id="menu-item-144"
-                  class="
+                  className="
                   signup_icon
                       nav-icon
                       menu-item
@@ -357,11 +357,11 @@ const Topnav = () => {
                     title="Signup"
                     href="/merchant"
                     onClick={() => riderectMessage()}
-                    className="hover_color"
-                    class="dropdown-item"
+                    className="hover_color dropdown-item"
+                   
                   >
                     Signup
-                    <span class="sub">Signup As a Merchant</span>
+                    <span className="sub">Signup As a Merchant</span>
                   </a>
                 </li>
               </div>
@@ -369,7 +369,7 @@ const Topnav = () => {
               <div className="merchant_drop mt-1">
                 <li
                   id="menu-item-144"
-                  class="
+                  className="
                   login_icon
                       nav-icon
                       menu-item
@@ -381,13 +381,13 @@ const Topnav = () => {
                   <a
                     title="Login"
                     target="_Blank"
-                    className="hover_color"
+                    className="hover_color dropdown-item"
                     href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
-                    class="dropdown-item"
+                  
                     rel="noreferrer"
                   >
                     Login
-                    <span class="sub">Login Your Merchant Account</span>
+                    <span className="sub">Login Your Merchant Account</span>
                   </a>
                 </li>
               </div>
@@ -395,13 +395,13 @@ const Topnav = () => {
 
             <div className="merchant_dropdown">
               <Nav.Link className="dropdown">
-                Merchant <i class="fa fa-caret-down"></i>
+                Merchant <i className="fa fa-caret-down"></i>
               </Nav.Link>
               <div className="merchant_content">
                 <div className="merchant_drop mt-2 mb-2">
                   <li
                     id="menu-item-144"
-                    class="
+                    className="
                   signup_icon
                       nav-icon
                       menu-item
@@ -414,18 +414,18 @@ const Topnav = () => {
                       title="Health"
                       href="/merchant"
                       onClick={() => riderectMessage()}
-                      className="hover_color"
-                      class="dropdown-item"
+                      className="hover_color dropdown-item"
+                     
                     >
                       Signup
-                      <span class="sub">Signup As a Merchant</span>
+                      <span className="sub">Signup As a Merchant</span>
                     </a>
                   </li>
                 </div>
                 <div className="merchant_drop mt-2 mb-2">
                   <li
                     id="menu-item-144"
-                    class="
+                    className="
                   login_icon
                       nav-icon
                       menu-item
@@ -443,7 +443,7 @@ const Topnav = () => {
                       rel="noreferrer"
                     >
                       Login
-                      <span class="sub">Login Your Merchant Account</span>
+                      <span className="sub">Login Your Merchant Account</span>
                     </a>
                   </li>
                 </div>
