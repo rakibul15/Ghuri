@@ -15,16 +15,27 @@ export const GetCandidateInput = (name, value) => (dispatch) => {
 };
 
 export const SubmitCandidateInput = (data, id) => async (dispatch) => {
+  const validEmail = new RegExp(
+    "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$"
+  );
+
+  const validPhone = new RegExp(/(^(\+88|0088)?(01){1}[3456789]{1}(\d){8})$/);
+
 
   if (data && data.name.length === 0) {
     showToast("error", "Name shouldn't be empty");
-
     return 0;
   } else if (data.email.length === 0) {
     showToast("error", "Email shouldn't be empty");
     return 0;
+  } else if (!validEmail.test(data.email)) {
+    showToast("error", "Email invalid");
+    return 0;
   } else if (data && data.phone.length === 0) {
     showToast("error", "Phone Number Shouldn't be empty");
+    return 0;
+  } else if (!validPhone.test(data.phone)) {
+    showToast("error", "Please input a valid phone number");
     return 0;
   } else if (data && data.versity.length === 0) {
     showToast("error", " University Shouldn't be empty");
@@ -32,27 +43,33 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
   } else if (data && data.cgpa.length === 0) {
     showToast("error", " Cgpa Shouldn't be empty");
     return 0;
-  } else if (data && data.gender.length === 0) {
+  }  
+  
+  
+  else if ((parseFloat(data.cgpa))>4 || parseFloat(data.cgpa)<=0 ){
+    showToast("error", "Please input a valid Cgpa");
+    return 0;
+  } 
+  
+  else if (data && data.gender.length === 0) {
     showToast("error", "Please select gender");
     return 0;
-  } 
-  else if (data && data.cv2.length === 0) {
+  } else if (data && data.cv2.length === 0) {
     showToast("error", "Select Your CV");
-    return 0;
-  }
-  else if (data && data.experience.length === 0) {
-    showToast("error", "experience shouldn't be empty");
-    return 0;
-  } else if (data && data.interest.length === 0) {
-    showToast("error", "Expertise/interest shouldn't be empty");
-    return 0;
-  } else if (data && data.current.length === 0) {
-    showToast("error", "Current salary shouldn't be empty");
-    return 0;
-  } else if (data && data.expected.length === 0) {
-    showToast("error", "Expected salary shouldn't be empty");
-    return 0;
-  } 
+    return 0;}
+  // } else if (data && data.experience.length === 0) {
+  //   showToast("error", "experience shouldn't be empty");
+  //   return 0;
+  // } else if (data && data.interest.length === 0) {
+  //   showToast("error", "Expertise/interest shouldn't be empty");
+  //   return 0;
+  // } else if (data && data.current.length === 0) {
+  //   showToast("error", "Current salary shouldn't be empty");
+  //   return 0;
+  // } else if (data && data.expected.length === 0) {
+  //   showToast("error", "Expected salary shouldn't be empty");
+  //   return 0;
+  // }
   const formData = new FormData();
   formData.append("cv", data.cv2);
 
@@ -65,19 +82,18 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
         console.log(res.data);
         if (res.data.status) {
           const cvurl = `${process.env.REACT_APP_BAZAR_URL}user/career/cv?id=${res.data.CandidateID}`;
-          console.log(`CandidateID`, res.data.CandidateID)
+          console.log(`CandidateID`, res.data.CandidateID);
           dispatch({ type: Types.IS_LOADING, payload: true });
           await Axios.put(cvurl, formData).then((cvdata) => {
             if (cvdata.data.status) {
               showToast("success", "Successfully Submitted");
             }
-            dispatch({ type: Types.IS_LOADING, payload:false });
+            dispatch({ type: Types.IS_LOADING, payload: false });
           });
         } else {
           showToast("error", res.data.message);
         }
         window.location.href = "/career";
-      
       })
       .catch((err) => {
         const message = JSON.parse(err.request.response).message;
