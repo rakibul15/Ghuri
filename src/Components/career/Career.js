@@ -79,7 +79,7 @@ const Career = () => {
                       <span>Job Type: {item.status}</span>
                       <span className="job-meta-divider mx-3"></span>
                       <span>Vacancy: {item.vacancy}</span>
-                      <span classNmae="job-meta-divider mx-3"></span>
+                      <span className="job-meta-divider mx-3"></span>
                       <span>Deadline: {item.deadline}</span>
                     </div>
                   </div>
