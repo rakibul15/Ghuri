@@ -191,7 +191,7 @@ const Jobform = () => {
                                 handleChangeInput(e.target.name, e.target.value)
                               }
                             >
-                              <option selected>Select Gender</option>
+                              <option value="">Select Gender</option>
                               <option value="male">Male</option>
                               <option value="female">Female</option>
                             </select>
@@ -323,7 +323,7 @@ const Jobform = () => {
                                 handleChangeInput(e.target.name, e.target.value)
                               }
                             >
-                              <option selected>Select a notice period</option>
+                              <option value="">Select a notice period</option>
                               <option value="7days">7 days</option>
                               <option value="15days">15 days</option>
                               <option value="1 month">1 Month</option>
