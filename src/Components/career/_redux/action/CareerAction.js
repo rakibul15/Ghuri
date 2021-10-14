@@ -32,16 +32,16 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
     showToast("error", "Email invalid");
     return 0;
   } else if (data && data.phone.length === 0) {
-    showToast("error", "Phone Number Shouldn't be empty");
+    showToast("error", "Phone Number shouldn't be empty");
     return 0;
   } else if (!validPhone.test(data.phone)) {
     showToast("error", "Please input a valid phone number");
     return 0;
   } else if (data && data.versity.length === 0) {
-    showToast("error", " University Shouldn't be empty");
+    showToast("error", " University shouldn't be empty");
     return 0;
   } else if (data && data.cgpa.length === 0) {
-    showToast("error", " Cgpa Shouldn't be empty");
+    showToast("error", " Cgpa shouldn't be empty");
     return 0;
   }  
   

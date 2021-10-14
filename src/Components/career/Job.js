@@ -94,8 +94,14 @@ const Job = () => {
 
                     <Markup content={careerDetails.requirements} />
 
+                  
+
                     <h4 className="mt-5 mb-3">Additional Job Requirement</h4>
                     <Markup content={careerDetails.additional} />
+
+                    <h4 className="mt-5 mb-3">Experience</h4>
+                    <Markup content={careerDetails.experience} />
+
                     <h4 className="mt-5 mb-3">Working Hours</h4>
                     <Markup content={careerDetails.hours} />
 
