@@ -14,15 +14,38 @@
   src: local("NCTTorin"), url(../font/NCTTorin-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "InterSemi";
+  src: local("InterSemi"), url(../font/Inter-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "inter_r";
+  src: local("inter_r"), url(../font/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "inter_m";
+  src: local("inter_m"), url(../font/Inter-Medium.ttf) format("truetype");
+}
+
+
+
+
+
+
+
+
 .not_found {
   text-align: center;
   justify-content: center;
   margin-top: 15%;
   height: 70vh;
 }
+
 .not_found h1 {
   font-size: 28px;
 }
+
 .not_found p {
   font-size: 12px;
 }
@@ -42,6 +65,7 @@
   color: white !important;
   font-family: abel;
 }
+
 .img_users {
   height: 40px;
   width: 40px;
@@ -52,6 +76,7 @@
   border-radius: 50%;
   background-color: #ffcc00;
 }
+
 .img_comunication {
   height: 40px;
   width: 40px;
@@ -63,16 +88,19 @@
   background-color: #ffcc00;
   object-fit: cover;
 }
+
 .body_text_info {
   font-weight: 400;
   color: white !important;
   font-family: abel;
 }
+
 .card_footer_health {
   background-color: black !important;
   color: #ffcc00 !important;
   border-top: 1px solid white;
 }
+
 .card_footer_health a {
   color: #ffcc00 !important;
 }
@@ -82,18 +110,22 @@
   border: none;
   box-shadow: 2px 2px 6px grey;
 }
+
 .card_title {
   color: white !important;
   text-transform: uppercase;
   font-family: abel;
 }
+
 .health_headline {
   text-transform: uppercase;
   font-family: abel;
 }
+
 .dg_health {
   width: 5%;
 }
+
 /* .powered_by h6 {
   color:black;
   font-family: abel;
@@ -123,6 +155,7 @@ margin-left:2%;
 .sms {
   background-color: #ffcc00;
 }
+
 .verification_box {
   background-color: black !important;
   border: none !important;
@@ -132,6 +165,7 @@ margin-left:2%;
   border: none !important;
   box-shadow: 2px 2px 6px grey;
 }
+
 .btn-verification {
   background-color: #ffcc00;
   color: black;
@@ -151,12 +185,14 @@ margin-left:2%;
   right: 20px;
   position: absolute;
 }
+
 .verification_input input {
   border: none;
   background-color: black;
   border-bottom: 2px solid white;
   color: white;
 }
+
 .verification_input input::placeholder {
   color: white;
   opacity: 50%;
@@ -166,9 +202,11 @@ margin-left:2%;
 .verification_input input:focus {
   outline: none;
 }
+
 .verification_subtitle {
   opacity: 70%;
 }
+
 .card {
   border: none !important;
 }
@@ -178,15 +216,19 @@ margin-left:2%;
   color: #ffcc00;
   font-weight: bold;
 }
+
 .package_content_details p {
   font-family: abel;
 }
+
 .package_content_details .fa-check {
   color: #ffcc00 !important;
 }
+
 .package_content_details ul li {
   font-family: abel;
 }
+
 .package_content_details h2 {
   font-family: abel;
   color: #ffcc00;
@@ -194,6 +236,7 @@ margin-left:2%;
   margin-bottom: 15px;
   margin-top: 20px;
 }
+
 .package_content_details h4 {
   font-family: abel;
   color: grey;
@@ -207,17 +250,20 @@ margin-left:2%;
   /* font-family: abel; */
   font-weight: 600;
 }
+
 .confirm_package_details h4 {
   color: #ffcc00;
   font-family: abel;
   font-weight: 600;
   font-family: Abel;
 }
+
 .form_applicant label {
   font-family: Abel;
   font-weight: 500;
   font-size: 14px;
 }
+
 .form_applicant input {
   font-family: Abel;
   background-color: transparent;
@@ -226,9 +272,11 @@ margin-left:2%;
   padding-left: 0px;
   font-size: 12px;
 }
+
 .edit-form-control .form-control {
   border-radius: 0px !important;
 }
+
 .form_applicant input:focus {
   font-family: Abel;
   background-color: transparent;
@@ -236,9 +284,11 @@ margin-left:2%;
   box-shadow: none !important;
   border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
+
 .form_applicant input::placeholder {
   font-family: Abel;
 }
+
 .date_applicant {
   font-family: Abel;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
@@ -246,6 +296,7 @@ margin-left:2%;
   margin-top: 12px;
   font-size: 13px;
 }
+
 .ghuri_btn {
   background-color: #ffcc00 !important;
   color: black !important;
@@ -255,6 +306,7 @@ margin-left:2%;
   outline: none !important;
   box-shadow: none !important;
 }
+
 .ghuri_btn:hover {
   background-color: #ffcc00 !important;
   color: black !important;
@@ -264,6 +316,7 @@ margin-left:2%;
   outline: none !important;
   box-shadow: none !important;
 }
+
 .ghuri_btn:active {
   background-color: #ffcc00 !important;
   color: black !important;
@@ -273,6 +326,7 @@ margin-left:2%;
   outline: none !important;
   box-shadow: none !important;
 }
+
 .ghuri_btn:checked {
   background-color: #ffcc00 !important;
   color: black;
@@ -286,9 +340,11 @@ margin-left:2%;
 .card_footer_health a {
   cursor: pointer;
 }
+
 .cover_healthform {
   background-color: #daebe8;
 }
+
 .form_control_select {
   background-color: transparent;
   border: none;
@@ -296,10 +352,12 @@ margin-left:2%;
   padding-left: 0px;
   font-size: 12px;
 }
+
 .form_control_select option {
   font-family: Abel !important;
   font-size: 12px;
 }
+
 .form_control_select:focus {
   background-color: transparent;
   background-color: transparent;
@@ -307,6 +365,7 @@ margin-left:2%;
   box-shadow: none !important;
   border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
+
 .input-group .input-group-text {
   background-color: transparent;
   border: none;
@@ -316,6 +375,7 @@ margin-left:2%;
   font-weight: 600;
   font-size: 12px;
 }
+
 .health_form_row {
   margin-top: 5px;
 }
@@ -324,18 +384,22 @@ margin-left:2%;
   font-family: Abel;
   font-size: 13px;
 }
+
 .package_confirm_details p span {
   font-family: Abel;
   font-size: 13px;
   font-weight: 600;
 }
+
 .checkbox a {
   color: #ffcc00 !important;
 }
+
 .example-custom-input {
   cursor: pointer;
   width: 100%;
 }
+
 /* Custom Checkbox*/
 /* .squaredThree */
 .squaredThree {
@@ -381,6 +445,7 @@ margin-left:2%;
 .squaredThree input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }
+
 /* end .squaredThree *
 
 
@@ -393,11 +458,13 @@ margin-left:2%;
   font-weight: bold;
   color: #ffcc00;
 }
+
 .terms_content p {
   font-family: abel;
   font-size: 1rem;
   text-align: justify;
 }
+
 .terms_content h2 {
   font-family: abel;
   font-size: 1.5rem;
@@ -405,26 +472,32 @@ margin-left:2%;
   margin-bottom: 25px;
   color: #ffcc00;
 }
+
 .terms_content ul li {
   font-family: abel;
   font-size: 1rem;
   text-align: justify;
 }
+
 .terms_content ol li {
   font-family: abel;
   font-size: 1rem;
   text-align: justify;
 }
+
 .refund_table {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .refund_table th {
   font-family: abel;
 }
+
 .refund_table td {
   font-family: abel;
 }
+
 /* End Terms*/
 
 /* Blogs */
@@ -432,18 +505,22 @@ margin-left:2%;
   text-transform: uppercase;
   font-family: poppins_semi_bold;
 }
+
 .blog {
   /* margin-top: 15px; */
   padding-bottom: 15px;
 }
+
 .blog img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
+
 .ghuri_blog {
   margin-top: 50px;
 }
+
 .single_blog h6 {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -451,9 +528,11 @@ margin-left:2%;
   font-family: poppins;
   font-size: 15px;
 }
+
 .single_blog h6 {
   padding-bottom: 15px;
 }
+
 .single_blog_sideNav {
   box-shadow: 2px 2px 8px grey;
 }
@@ -461,22 +540,26 @@ margin-left:2%;
 .single_blog_sideNav:hover {
   box-shadow: 2px 2px 15px grey;
 }
+
 .all_blogs img {
   height: 150px;
   object-fit: cover;
   width: 100%;
 }
+
 .all_blogs h6 {
   font-size: 14px;
   padding: 10px;
   text-align: left;
 }
+
 .show_image img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   box-shadow: 2px 2px 4px grey;
 }
+
 .show_image img:hover {
   box-shadow: 2px 2px 10px grey;
 }
@@ -484,10 +567,12 @@ margin-left:2%;
 .blog_main h1 {
   font-size: 1.4rem;
 }
+
 .blog_main p {
   font-size: 14px;
   text-align: justify;
 }
+
 /* Blogs Ends */
 .page-link:focus {
   background-color: #ffcc00 !important;
@@ -497,9 +582,11 @@ margin-left:2%;
   position: fixed;
   top: 0;
 }
+
 .Nav_overflow {
   margin-top: 62px;
 }
+
 /*Health Verifications*/
 
 /*Modal*/
@@ -508,7 +595,7 @@ margin-left:2%;
 }
 
 .health_verification_container {
-  margin-top: 35%!;
+  margin-top: 35% !;
 }
 
 .health_verification_container .modal-content {
@@ -523,6 +610,7 @@ margin-left:2%;
   outline: none !important;
   box-shadow: none !important;
 }
+
 .health_confirm:hover {
   background-color: #ffcc00 !important;
   color: black !important;
@@ -531,6 +619,7 @@ margin-left:2%;
   outline: none !important;
   box-shadow: none !important;
 }
+
 .health_confirm:active {
   background-color: #ffcc00 !important;
   color: black !important;
@@ -539,6 +628,7 @@ margin-left:2%;
   outline: none !important;
   box-shadow: none !important;
 }
+
 .health_confirm:checked {
   background-color: #ffcc00 !important;
   color: black;
@@ -547,16 +637,19 @@ margin-left:2%;
   outline: none !important;
   box-shadow: none !important;
 }
+
 .modal_title {
   font-family: Abel;
   font-size: 20px;
 }
+
 .modal_body input {
   border: none;
   border-bottom: 1px solid white;
   border-radius: 0px;
   background-color: transparent;
 }
+
 .modal_body input:focus {
   font-family: Abel;
   background-color: transparent;
@@ -564,16 +657,20 @@ margin-left:2%;
   box-shadow: none !important;
   border-bottom: 2px solid white;
 }
+
 .modal {
   padding-right: 0px !important;
 }
+
 .modal_body h6 {
   font-family: Abel;
 }
+
 .GP .input-group-text {
   font-size: 16px;
   color: white;
 }
+
 .health_verification_container {
   background-color: black;
   color: white;
@@ -582,9 +679,11 @@ margin-left:2%;
 .resend_color {
   color: #cc0000;
 }
+
 .health_verification_container .modal-header {
   border-bottom: none !important;
 }
+
 .health_verification_container .modal-header .close {
   color: white;
 }
@@ -601,29 +700,37 @@ margin-left:2%;
 
   margin-top: -60px;
 }
+
 .parcel_main_content {
   padding-top: 100px;
 }
+
 .parcel_first_app {
   margin-top: 10px;
 }
+
 .what_we_deliver {
   /* margin-top: 150px; */
   margin-bottom: 100px;
 }
+
 .what_we_deliver h2 {
   font-family: Abel;
 }
+
 .what_we_deliver P {
   font-family: Abel;
   margin-top: 8px;
 }
+
 .how_to_deliver p span {
   margin-right: 15px;
 }
+
 .how_to_deliver_main h2 {
   font-family: Abel;
 }
+
 .how_to_deliver p {
   font-family: Abel;
 }
@@ -639,10 +746,12 @@ margin-left:2%;
   margin-left: 25px;
   margin-right: 36px;
 }
+
 .Parecl_app span {
   vertical-align: middle;
   display: inline-block;
 }
+
 .Play_fixed {
   margin-left: 25px;
   margin-right: 45px;
@@ -658,6 +767,7 @@ margin-left:2%;
   border: 1px solid black;
   padding: 0.7rem 1.5rem;
 }
+
 .app_store_btn .fa-money {
   font-size: 30px;
 }
@@ -679,39 +789,48 @@ margin-left:2%;
   width: 20%;
   margin-right: 10px;
 }
+
 .card {
   width: 100%;
 
   box-shadow: 2px 2px 7px black;
   border-radius: 10px;
 }
+
 .how_to_deliver span {
   background-color: #ffcc00;
   border-radius: 50%;
   padding: 4px 10px;
   font-weight: bold;
 }
+
 .custom_card {
   padding: 15px 10px;
 }
+
 .content_info_box img {
   width: 20%;
 }
+
 .content_info_box {
   padding: 20px 20px;
   border-radius: 10px;
   min-height: 200px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
 }
+
 .content_info_box h2 {
   font-family: Abel;
 }
+
 .content_info_box small {
   font-family: Abel;
 }
+
 .rider img {
   width: 100%;
 }
+
 .btn_Faq_active {
   width: 100%;
   padding: 10px 20px;
@@ -722,10 +841,12 @@ margin-left:2%;
   /* opacity: 40%;
   color: black; */
 }
+
 .btn_Faq_active:active {
   box-shadow: 2px 2px 10px black;
   outline: none !important;
 }
+
 .btn_Faq_active:focus {
   box-shadow: none;
   outline: none !important;
@@ -739,6 +860,7 @@ margin-left:2%;
   box-shadow: none;
   background-color: white;
 }
+
 .btn_Faq:focus {
   width: 100% !important;
   padding: 10px 20px;
@@ -746,6 +868,7 @@ margin-left:2%;
   outline: none !important;
   box-shadow: none;
 }
+
 .btn_Faq:active {
   width: 100% !important;
   padding: 10px 20px;
@@ -753,6 +876,7 @@ margin-left:2%;
   outline: none !important;
   box-shadow: none;
 }
+
 .combained_sec {
   margin-top: 150px;
   background-image: url(../images/ParcelDetails/combained_sec.png);
@@ -762,16 +886,20 @@ margin-left:2%;
   padding-bottom: 10px;
   font-family: Abel;
 }
+
 .combained_sec h2 {
   font-family: Abel;
 }
+
 .combained_sec h4 {
   font-family: Abel;
   margin-top: 35px;
 }
+
 .deliverearn img {
   width: 73%;
 }
+
 .delivery_and_earn {
   position: relative;
 }
@@ -781,12 +909,14 @@ margin-left:2%;
   left: 20%;
   top: 30%;
 }
+
 .left_bottom {
   position: absolute;
   left: 30%;
   bottom: -12%;
   text-align: center;
 }
+
 .right_bottom {
   position: absolute;
   right: 15%;
@@ -817,12 +947,15 @@ body {
   padding-bottom: 40px;
   font-family: Abel;
 }
+
 .Parcel_Faq h2 {
   font-family: Abel;
 }
+
 .parcel_Faq .btn {
   font-family: Abel;
 }
+
 .btn-link {
   color: black !important;
   outline: none !important;
@@ -833,9 +966,11 @@ body {
 .btn-link .fa-plus {
   color: #ffcc00;
 }
+
 .btn-link .fa-minus {
   color: #ffcc00;
 }
+
 .btn_box_shadow {
   outline: none !important;
   box-shadow: none !important;
@@ -851,14 +986,17 @@ body {
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
+
 .collapse_body {
   margin-left: 28px;
 }
+
 .card_custom_attach .fa-circle {
   color: #ffcc00;
   font-size: 10px;
   margin-right: 8px;
 }
+
 .parcel_main_content h2 {
   font-family: Abel;
 }
@@ -866,6 +1004,7 @@ body {
 .parcel_main_conten tp {
   font-family: Abel;
 }
+
 .parcel_main_content a {
   font-family: Abel;
 }
@@ -879,23 +1018,29 @@ body {
 .pop_up .modal-content {
   margin-top: 0px !important;
 }
+
 .popup_modal img {
   width: 50%;
 }
+
 .popup_modal h2 {
   font-family: Abel;
   font-weight: 600;
   font-size: 2vw;
 }
+
 .google_play_icon img {
   width: 100%;
 }
+
 .google_play_icon {
   display: flex;
 }
+
 .modal_container {
   position: relative;
 }
+
 /* .app_store_popup{
   position: absolute;
   left: 38%;
@@ -915,16 +1060,20 @@ body {
   top: 2%;
   cursor: pointer;
 }
+
 .modal_custom_body {
   padding: 0px !important;
 }
+
 .cross .fa-times {
   color: black;
   font-size: 20px;
 }
+
 .curve_img {
   margin-top: -130px;
 }
+
 .playstore_popup {
   position: absolute;
   left: 10%;
@@ -932,6 +1081,7 @@ body {
   cursor: pointer;
   width: 15%;
 }
+
 .appstore_popup {
   position: absolute;
   left: 28%;
@@ -943,9 +1093,11 @@ body {
 .parcel_view_step {
   cursor: pointer;
 }
+
 .accordion_faq img {
   margin-right: 20px;
 }
+
 /* .parcel_main_section {
   margin-top: 100px;
 } */
@@ -968,11 +1120,13 @@ body {
   border-radius: 5px;
   margin-top: 10vh;
 }
+
 .parcel_tracker h5 {
   color: black;
   font-family: Abel;
   font-size: 1.1rem;
 }
+
 .track_search .form-control {
   width: 80%;
   margin-top: 10px;
@@ -997,21 +1151,26 @@ body {
   font-family: Abel;
   margin-top: -5px;
 }
+
 .btn-parcelTrack:hover {
   color: white;
 }
+
 .btn-parcelTrack:active {
   color: white;
   outline: none !important;
 }
+
 .btn-parcelTrack:focus {
   color: white;
   outline: none !important;
   box-shadow: none !important;
 }
+
 .parcel_main_content_small p {
   font-family: Abel;
 }
+
 /* Progressbar */
 .p_color {
   background-image: linear-gradient(
@@ -1024,24 +1183,29 @@ body {
   );
   position: relative;
 }
+
 .progress {
   border-radius: 2.25rem;
 }
+
 .progress_status_info p {
   font-size: 12px;
   padding-bottom: 0px !important;
   margin-bottom: 5px !important;
 }
+
 .parcel_details_modal {
   margin-top: 0% !important;
   width: 100%;
   height: 100vh !important;
 }
+
 .parcel_details_modal .modal-content {
   margin-top: 5% !important;
   background-color: transparent;
   border: none;
 }
+
 .modal_color {
   background-image: linear-gradient(
     to left,
@@ -1053,12 +1217,14 @@ body {
   );
   border-radius: 20px;
 }
+
 .modal_design {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
   margin: 40px;
 }
+
 .p_images {
   height: 50px !important;
   width: 50px !important;
@@ -1066,14 +1232,17 @@ body {
   z-index: 99999 !important;
   position: absolute;
 }
+
 .black_color {
   color: black;
 }
+
 .delivery_progress_status_icon img {
   height: 30px;
   width: 30px;
   text-align: center;
 }
+
 .cross_fa_times img {
   position: absolute;
   top: 15px;
@@ -1082,258 +1251,25 @@ body {
   height: 12px;
   width: 12px;
 }
+
 .delivery_progress_status_icon {
   text-align: center;
   font-family: Abel;
 }
+
 .delivery_progress_status_icon p {
   margin-top: 10px;
 }
+
 .delivery_details_header {
   font-family: Abel;
 }
+
 .status_header {
   text-align: center;
 }
+
 .delivery_progress_status_icon small p {
   margin-top: 0px !important;
 }
 
-/* Ghuri Food */
-
-.contain {
-  max-width: 1492px;
-}
-.hero_food {
-  margin-top: 94px;
-}
-.food_hero_text {
-  margin-top: 64px;
-}
-
-.btn_lmore {
-  background-color: #ffcc00;
-  border-radius: 44.5px;
-  width: 178px;
-  vertical-align: middle;
-  padding: 17px;
-  font-size: 16px !important;
-  margin-top: 24px;
-}
-.hero_food p {
-  font-size: 18px;
-}
-.hero_food h1 {
-  font-size: 60px;
-  color: #212121;
-  margin-bottom: 40px;
-}
-
-.single_cart_food {
-  max-width: 351px;
-  height: 447px;
-
-  border-radius: 50px;
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%); */
-  background-color: white;
-}
-
-.single_cart_food img {
-  max-width: 309px;
-  max-height: 309px;
-  object-fit: cover;
-  width: 100%;
-}
-.single_cart_food h5 {
-  font-size: 28px !important;
-  margin-bottom: 12px;
-}
-.single_cart_food p {
-  font-size: 16px !important;
-}
-.food_over {
-  background-color: #f2f3f7;
-}
-.Nav_overflow_food {
-  padding-top: 62px;
-}
-.special_dish h1 {
-  font-size: 55px;
-}
-.special_dish p {
-  font-size: 18px;
-}
-.mt-90 {
-  margin-top: 90px;
-}
-.pb-90 {
-  padding-bottom: 90px;
-}
-.fresh_veg img {
-  max-height: 825px;
-  max-width: 732px;
-  width: 100%;
-}
-.fresh_veg h1 {
-  font-size: 55px;
-  margin-bottom: 40px;
-  margin-top: 130px;
-}
-.fresh_veg p {
-  font-size: 18px;
-}
-
-.popular_menu h1 {
-  font-size: 55px;
-}
-.popular_menu p {
-  font-size: 18px;
-  margin-top: 16px;
-}
-.mt-70 {
-  margin-top: 70px;
-}
-.single_menu {
-  width: 478px;
-  height: 407px;
-  width: 100%;
-  box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 7%);
-  border-radius: 40px;
-  border-top: 2px solid white;
-}
-.single_menu img {
-  width: 472px;
-  height: 296px;
-  width: 100%;
-  position: relative;
-}
-.w-60 {
-  width: 60%;
-}
-.w-30 {
-  width: 30%;
-}
-.food_price h6 {
-  text-align: right;
-  color: #f54c54;
-}
-.review {
-  position: absolute;
-  top: 1px;
-  left: 15px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
-  width: 125px;
-  height: 50px;
-  border-radius: 39px 0px 28px 0px;
-  color: #f54c54;
-  background-color: rgba(255, 255, 255, 0.75);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.review img {
-  height: 19px;
-  width: 20px;
-}
-.btn_lmore_menu {
-  background-color: #ffcc00;
-  border-radius: 44.5px;
-  width: 217px;
-  vertical-align: middle;
-  padding: 17px;
-  font-size: 16px !important;
-  margin-top: 70px;
-}
-
-.chefs {
-  margin-top: 90px;
-}
-.chefs_img img {
-  max-width: 616px;
-  height: 892px;
-}
-.p-24 {
-  padding: 24px;
-}
-.chefs_text h1 {
-  font-size: 55px;
-  margin-top: 120px;
-}
-.chefs_text p {
-  font-size: 18px;
-}
-.chefs_text p {
-  padding: 0px;
-  margin: 0px;
-}
-
-.mt-28 {
-  margin-top: 28px !important;
-}
-.chefs_text img {
-  height: 26px;
-  width: 26px;
-}
-
-.mt-20 {
-  margin-top: 20px !important;
-}
-.mr-22 {
-  margin-right: 22px;
-}
-.image_sec img{
-  height: 56px;
-  width: 56px;
-  object-fit: cover;
-  border-radius: 505;
-}
-
-.star img{
-  width: 20px;
-  height: 19px;
-  margin-right: 8px;
-}
-
-.star p{
-  margin: 0px !important;
-}
-
-.customer_leaf img{
-  width: 732px;
-  width: 825px;
-}
-.customer_heading h1{
-  font-size: 65px;
-  margin-bottom: 32px;
-}
-.profile_sec{
-  margin-left: 20px;
-  margin-bottom: 32px;
-}
-.profile_sec h5{
-  font-size: 26px;
-  margin: 0px !important;
-}
-.profile_sec p{
-  font-size: 16px;
-  margin: 0px !important;
-}
-.cus_message{
-  font-size: 18px;
-  margin: 0px !important;
-}
-
-.ratings{
-  margin-top: 32px;
-}
-
-@media (min-width: 1900px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1492px;
-  }
-}

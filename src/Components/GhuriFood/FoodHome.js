@@ -9,10 +9,27 @@ import mark from "../../images/food/mark.png";
 import aman from "../../images/food/aman.png";
 import customer_leaf from "../../images/food/customer_leaf.png";
 import star_rating from "../../images/food/StarYellow.png";
-
-
+import OwlCarousel from "react-owl-carousel";
+import "./GhuriFood.css";
 
 const FoodHome = () => {
+  let option = {
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  };
+
   return (
     <>
       <div className="Nav_overflow_food food_over">
@@ -32,7 +49,7 @@ const FoodHome = () => {
               </button>
             </div>
             <div className="col-sm-6">
-              <img className="img-fluid" src={foodcover} alt="" />
+              <img  src={foodcover} alt="" />
             </div>
           </div>
 
@@ -40,7 +57,7 @@ const FoodHome = () => {
             <h1 className="text-center">Our Special Dish</h1>
             <p className="text-center">Made with premium ingredients.</p>
             <div className="row align-items-center mt-90 pb-90">
-              <div className="col-sm-3">
+              <div className=" col-md-6 col-sm-6 col-lg-3">
                 <div className="single_cart_food text-center">
                   <img src={dish1} alt="" />
                   <h5>Green Salad</h5>
@@ -50,7 +67,7 @@ const FoodHome = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-6 col-sm-6 col-lg-3">
                 <div className="single_cart_food text-center">
                   <img src={dish1} alt="" />
                   <h5>Green Salad</h5>
@@ -60,7 +77,7 @@ const FoodHome = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className=" col-md-6 col-sm-6 col-lg-3">
                 <div className="single_cart_food text-center">
                   <img src={dish1} alt="" />
                   <h5>Green Salad</h5>
@@ -70,7 +87,7 @@ const FoodHome = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-md-6 col-sm-6 col-lg-3 text-center">
                 <div className="single_cart_food text-center">
                   <img src={dish1} alt="" />
                   <h5>Green Salad</h5>
@@ -106,7 +123,7 @@ const FoodHome = () => {
             <h1 className="text-center">Our Polpular Menu</h1>
             <p className="text-center">Made with premium ingredients.</p>
             <div className="row mt-70">
-              <div className="col-sm-4">
+              <div className="col-lg-4  col-sm-6 Food_menu">
                 <div className="single_menu">
                   <img src={singlemenu} alt="" />
                   <div className="d-flex justify-content-between align-items-center p-4">
@@ -129,7 +146,7 @@ const FoodHome = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-6 col-lg-4 Food_menu">
                 <div className="single_menu">
                   <img src={singlemenu} alt="" />
                   <div className="d-flex justify-content-between align-items-center p-4">
@@ -152,10 +169,10 @@ const FoodHome = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-6 col-lg-4 Food_menu">
                 <div className="single_menu">
                   <img src={singlemenu} alt="" />
-                  <div className="d-flex justify-content-between align-items-center p-24">
+                  <div className="d-flex justify-content-between align-items-center p-24 ">
                     <div className="w-60">
                       {" "}
                       <h5>Chicken Salad with Avocado Toast</h5>
@@ -221,56 +238,62 @@ const FoodHome = () => {
             </div>
           </section>
 
-          <section className="customer_say mt-90">
-            <div className="row align-items-center">
-              <div className="col-sm-6 customer_leaf">
-                <img className="img-fluid" src={customer_leaf} alt="" />
-              </div>
-              <div className="col-sm-1"></div>
-              <div className="col-sm-5 customer_heading">
-                <h1>
-                  {" "}
-                  Customer <br /> say about us
-                </h1>
-                <div className="user_food d-flex">
-                  <div className="image_sec">
-                    <img src={aman} alt="" />
+          <OwlCarousel
+            loop
+            margin={10}
+            autoplay
+            dots={false}
+            {...option}
+            className=" d-flex  align-items-center owl-theme"
+          >
+            <section className="customer_say mt-90  pb-5">
+              <div className="row align-items-center">
+                <div className="col-sm-6 customer_leaf">
+                  <img  src={customer_leaf} alt="" />
+                </div>
+                <div className="col-sm-1"></div>
+                <div className="col-sm-5 customer_heading">
+                  <h1>
+                    {" "}
+                    Customer <br /> say about us
+                  </h1>
+                  <div className="user_food d-flex">
+                    <div className="image_sec">
+                      <img src={aman} alt="" />
+                    </div>
+                    <div className="profile_sec">
+                      <h5>Aman Ullah</h5>
+                      <p>UI/UX Designer</p>
+                    </div>
                   </div>
-                  <div className="profile_sec">
-                    <h5>Aman Ullah</h5>
-                    <p>UI/UX Designer</p>
+                  <p className="cus_message">
+                    How much weight could you lose for good? Members cat freely
+                    five days a week no rules or foodlogging. How much weight
+                    could you lose for good? Members eat freely five days a week
+                    no rules or food logging five days a week
+                  </p>
+                  <div className="ratings d-flex align-items-center">
+                    <div className="star">
+                      <img src={star_rating} alt="" />
+                    </div>
+                    <div className="star">
+                      <img src={star_rating} alt="" />
+                    </div>
+                    <div className="star">
+                      <img src={star_rating} alt="" />
+                    </div>
+                    <div className="star">
+                      <img src={star_rating} alt="" />
+                    </div>
+                    <div className="star">
+                      <img src={star_rating} alt="" />
+                    </div>
+                    <div className="star">(5.00)</div>
                   </div>
                 </div>
-                <p className="cus_message">
-                  How much weight could you lose for good? Members cat freely
-                  five days a week no rules or foodlogging. How much weight
-                  could you lose for good? Members eat freely five days a week
-                  no rules or food logging five days a week
-                </p>
-                <div className="ratings d-flex align-items-center">
-                 
-                <div className="star">
-                        <img src={star_rating} alt="" />
-                  </div>
-                  <div className="star">
-                        <img src={star_rating} alt="" />
-                  </div>
-                  <div className="star">
-                        <img src={star_rating} alt="" />
-                  </div>
-                  <div className="star">
-                        <img src={star_rating} alt="" />
-                  </div>
-                  <div className="star">
-                        <img src={star_rating} alt="" />
-                  </div>
-                  <div className="star">
-                    (5.00)
-                  </div>
-                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </OwlCarousel>
         </div>
       </div>
     </>
