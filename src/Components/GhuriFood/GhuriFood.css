@@ -293,6 +293,8 @@
 
 .ratings {
   margin-top: 32px;
+  font-size: 20px;
+  font-family: inter_r;
 }
 
 
@@ -300,15 +302,75 @@
     font-family: inter_m;
     font-size: 25px;
 }
-.ratings{
-    font-size: 20px;
-    font-family: inter_r;
-}
 
 .hero_food img{
     height: 776px;
     width: 732px;
 }
+
+
+
+
+
+/* Media Query Responsive */
+/* .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+  background: red;
+  color: green;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+  display: block !important;
+} */
+
+
+ .owl_profile .owl-carousel .owl-nav {
+  display:block !important;
+  position: absolute;
+  right: 0;
+bottom:22%;
+
+}
+
+.prev-slide img{
+height: 24px;
+width: 24px;
+}
+
+.next-slide img{
+  height: 24px;
+  width: 24px;
+  }
+.prev-slide{
+  height:46px;
+  width:46px;
+  background: white;
+  border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  
+  }
+  .next-slide{
+    height:46px;
+    width:46px;
+    background: white;
+    border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+    }
+  .owl-theme .owl-nav [class*='owl-']:hover {
+    background: white !important;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.ratings {
+
+  position: relative !important;
+}
+
 
 
 @media (min-width: 1900px) {
@@ -522,6 +584,7 @@ chefs_text h1 {
 .ratings {
     font-size: 16px;
     font-family: inter_r;
+    position: relative;
 }
 
 
@@ -701,6 +764,11 @@ chefs_text h1 {
             font-size: 12px;
             font-family: inter_r;
         }
+        .hero_food img {
+          height: auto;
+          width: 95%;
+          margin-top: 50px;
+      }
     }
 
 
