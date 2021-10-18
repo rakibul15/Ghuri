@@ -491,9 +491,8 @@ const Topnav = () => {
                     <a
                       title="Health"
                       target="_Blank"
-                      className="hover_color"
+                      className="hover_color dropdown-item"
                       href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
-                      class="dropdown-item"
                       rel="noreferrer"
                     >
                       Login

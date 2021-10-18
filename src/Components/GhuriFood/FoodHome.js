@@ -53,7 +53,7 @@ const FoodHome = () => {
                 lifestyle.
               </p>
               <button className="btn btn_lmore">
-                Learn More <i class="fa fa-caret-right"></i>
+                Learn More <i className="fa fa-caret-right"></i>
               </button>
             </div>
             <div className="col-sm-6">
@@ -121,7 +121,7 @@ const FoodHome = () => {
                   directly from the farmer’s garden especially for you
                 </p>
                 <button className="btn btn_lmore">
-                  Learn More <i class="fa fa-caret-right"></i>
+                  Learn More <i className="fa fa-caret-right"></i>
                 </button>
               </div>
             </div>
@@ -204,7 +204,7 @@ const FoodHome = () => {
 
             <div className="d-flex justify-content-center">
               <button className="btn btn_lmore_menu text-center">
-                Load More Menu <i class="fa fa-caret-right"></i>
+                Load More Menu <i className="fa fa-caret-right"></i>
               </button>
             </div>
           </section>
