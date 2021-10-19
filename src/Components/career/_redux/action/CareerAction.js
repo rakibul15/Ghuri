@@ -75,13 +75,13 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
     return 0;
   }
 
-  else if (data && data.current.length > 1 && (!positiveNumber.test(data.current))) {
+  else if (data && data.current.length > 0 && (!positiveNumber.test(data.current))) {
     showToast("error", "Please input valid current salary");
     return 0;
   }
 
 
-  else if (data && data.expected.length > 1 && (!positiveNumber.test(data.expected))) {
+  else if (data && data.expected.length > 0 && (!positiveNumber.test(data.expected))) {
     showToast("error", "Please input valid expected salary");
     return 0;
   }
