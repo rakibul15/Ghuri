@@ -5,6 +5,8 @@ import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import "./Topnav.css";
 import logo from "../../images/logo/Anniversary-logo.png";
 import { SetRiderectMessage } from "../Signup/_redux/action/SignupAction";
+import gplay from "../../images/others/Google-Play-nb.png";
+import appstore from "../../images/others/App-Store-nb.png";
 
 const Topnav = () => {
   const dispatch = useDispatch();
@@ -73,12 +75,17 @@ const Topnav = () => {
                       nav-item
                       "
                     >
-                      <a title="Health" href="/health" className="dropdown-item">
+                      <a
+                        title="Health"
+                        href="/health"
+                        className="dropdown-item"
+                      >
                         Health
                         <span className="sub">Ghuri Health Service</span>
                       </a>
                     </li>
                   </div>
+
                   <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
@@ -128,11 +135,41 @@ const Topnav = () => {
                     </li>
                   </div>
                   {/* //////////////////Tanni-tickets///////////////////// */}
+
                   <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
                       className="
-                      interior_icon
+                     
+                      food_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                     {/* <a title="Ticket" href="/ticket" class="dropdown-item">
+                        Tickets
+                        <span class="sub">Ghuri Ticket Service</span> */}
+                      <a
+                        title="Food"
+                        href="/ghuriFood"
+                        className="dropdown-item"
+                      >
+                        Food
+                        <span className="sub">
+                          {" "}
+                          Get Your Food in Less Than an Hour
+                        </span>
+                      </a>
+                    </li>
+                  </div>
+                  <div className="col-sm-12 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      className="
+                      ticket_icon
                       nav-icon
                       menu-item
                       menu-item-type-post_type
@@ -146,6 +183,7 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
+
                 </div>
 
                 <hr />
@@ -160,7 +198,7 @@ const Topnav = () => {
                       <img
                         width="146"
                         height="44"
-                        src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
+                        src={gplay}
                         title="Google Play"
                       />
                     </a>
@@ -169,7 +207,7 @@ const Topnav = () => {
                       <img
                         width="146"
                         height="44"
-                        src="https://pathao.com/wp-content/uploads/2018/12/App-Store-nb.png"
+                        src={appstore}
                         title="App-Store"
                       />
                     </a>
@@ -184,7 +222,7 @@ const Topnav = () => {
                       <img
                         width="146"
                         height="44"
-                        src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
+                        src={gplay}
                         title="Google Play"
                       />
                     </a>
@@ -247,11 +285,13 @@ const Topnav = () => {
                       nav-item
                       "
                     >
-                      <a title="Health" href="/health" className="dropdown-item">
+                      <a
+                        title="Health"
+                        href="/health"
+                        className="dropdown-item"
+                      >
                         Health
-                        <span className="sub">
-                          Get Your Food in Less Than an Hour
-                        </span>
+                        <span className="sub">Ghuri Health Service</span>
                       </a>
                     </li>
                   </div>
@@ -275,9 +315,7 @@ const Topnav = () => {
                         rel="noreferrer"
                       >
                         Interior
-                        <span className="sub">
-                          Get Your Food in Less Than an Hour
-                        </span>
+                        <span className="sub">Extra Idea Our Asset</span>
                       </a>
                     </li>
                   </div>
@@ -301,7 +339,31 @@ const Topnav = () => {
                         rel="noreferrer"
                       >
                         News
+                        <span className="sub">Your Right To Know</span>
+                      </a>
+                    </li>
+                  </div>
+
+                  <div className="col-sm-12 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      className="
+                      food_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                      <a
+                        title="Food"
+                        href="/ghuriFood"
+                        className="dropdown-item"
+                      >
+                        Food
                         <span className="sub">
+                          {" "}
                           Get Your Food in Less Than an Hour
                         </span>
                       </a>
@@ -321,7 +383,7 @@ const Topnav = () => {
                       <img
                         width="146"
                         height="44"
-                        src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
+                        src={gplay}
                         title="Google Play"
                       />
                     </a>
@@ -330,7 +392,7 @@ const Topnav = () => {
                       <img
                         width="146"
                         height="44"
-                        src="https://pathao.com/wp-content/uploads/2018/12/App-Store-nb.png"
+                        src={appstore}
                         title="App-Store"
                       />
                     </a>
@@ -345,7 +407,7 @@ const Topnav = () => {
                       <img
                         width="146"
                         height="44"
-                        src="https://pathao.com/wp-content/uploads/2018/12/Google-Play-nb.png"
+                        src={gplay}
                         title="Google Play"
                       />
                     </a>
@@ -377,7 +439,6 @@ const Topnav = () => {
                     href="/merchant"
                     onClick={() => riderectMessage()}
                     className="hover_color dropdown-item"
-                   
                   >
                     Signup
                     <span className="sub">Signup As a Merchant</span>
@@ -402,7 +463,6 @@ const Topnav = () => {
                     target="_Blank"
                     className="hover_color dropdown-item"
                     href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
-                  
                     rel="noreferrer"
                   >
                     Login
@@ -434,7 +494,6 @@ const Topnav = () => {
                       href="/merchant"
                       onClick={() => riderectMessage()}
                       className="hover_color dropdown-item"
-                     
                     >
                       Signup
                       <span className="sub">Signup As a Merchant</span>
@@ -456,9 +515,8 @@ const Topnav = () => {
                     <a
                       title="Health"
                       target="_Blank"
-                      className="hover_color"
+                      className="hover_color dropdown-item"
                       href={`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`}
-                      class="dropdown-item"
                       rel="noreferrer"
                     >
                       Login

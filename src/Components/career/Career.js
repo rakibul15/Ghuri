@@ -10,6 +10,7 @@ const Career = () => {
 
   const dispatch = useDispatch();
   const careerList = useSelector((state) => state.careerInfo.career);
+  console.log(careerList)
   useEffect(() => {
     dispatch(GetCareerInfo(1));
   }, []);

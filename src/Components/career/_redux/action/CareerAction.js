@@ -20,12 +20,21 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
   );
 
   const validPhone = new RegExp(/(^(\+88|0088)?(01){1}[3456789]{1}(\d){8})$/);
+  const validName = new RegExp(/^[a-zA-Z ]{2,70}$/);
+  const positiveNumber = new RegExp(/^[0-9]*[1-9][0-9]*$/)
 
 
   if (data && data.name.length === 0) {
     showToast("error", "Name shouldn't be empty");
     return 0;
-  } else if (data.email.length === 0) {
+  }
+
+  else if (!validName.test(data.name)) {
+    showToast("error", "Please input a valid name");
+    return 0;
+  }
+
+  else if (data.email.length === 0) {
     showToast("error", "Email shouldn't be empty");
     return 0;
   } else if (!validEmail.test(data.email)) {
@@ -40,33 +49,58 @@ export const SubmitCandidateInput = (data, id) => async (dispatch) => {
   } else if (data && data.versity.length === 0) {
     showToast("error", " University shouldn't be empty");
     return 0;
-  } else if (data && data.cgpa.length === 0) {
+  }
+  else if (!validName.test(data.versity)) {
+    showToast("error", "Please input a valid university name");
+    return 0;
+  }
+
+
+  else if (data && data.cgpa.length === 0) {
     showToast("error", " Cgpa shouldn't be empty");
     return 0;
-  }  
-  
-  
-  else if ((parseFloat(data.cgpa))>4 || parseFloat(data.cgpa)<=0 ){
+  }
+
+
+  else if ((parseFloat(data.cgpa)) > 4 || parseFloat(data.cgpa) <= 0) {
     showToast("error", "Please input a valid Cgpa");
     return 0;
-  } 
-  
+  }
+
   else if (data && data.gender.length === 0) {
     showToast("error", "Please select gender");
     return 0;
   } else if (data && data.cv2.length === 0) {
     showToast("error", "Select Your CV");
-    return 0;}
+    return 0;
+  }
+
+  else if (data && data.current.length > 1 && (!positiveNumber.test(data.current))) {
+    showToast("error", "Please input valid current salary");
+    return 0;
+  }
+
+
+  else if (data && data.expected.length > 1 && (!positiveNumber.test(data.expected))) {
+    showToast("error", "Please input valid expected salary");
+    return 0;
+  }
+
+
+
+
+
   // } else if (data && data.experience.length === 0) {
   //   showToast("error", "experience shouldn't be empty");
   //   return 0;
   // } else if (data && data.interest.length === 0) {
   //   showToast("error", "Expertise/interest shouldn't be empty");
   //   return 0;
-  // } else if (data && data.current.length === 0) {
-  //   showToast("error", "Current salary shouldn't be empty");
-  //   return 0;
-  // } else if (data && data.expected.length === 0) {
+  // }
+
+
+
+  //else if (data && data.expected.length === 0) {
   //   showToast("error", "Expected salary shouldn't be empty");
   //   return 0;
   // }
@@ -137,5 +171,5 @@ export const GetCareerDetails = (id) => async (dispatch) => {
       }
       dispatch({ type: Types.IS_PAGE_LOAD, payload: false });
     });
-  } catch (error) {}
+  } catch (error) { }
 };

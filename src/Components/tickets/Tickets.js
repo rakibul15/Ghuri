@@ -26,6 +26,8 @@ import star from '../../images/tickets/Star.png'
 import hotel from '../../images/tickets/hotel.png'
 import Stary from '../../images/tickets/Star-y.png'
 import picture from '../../images/tickets/picture.png'
+import vector from '../../images/tickets/Vector 5.png'
+import OwlCarousel from "react-owl-carousel";
 
 const Tickets = () => {
   return (
@@ -36,8 +38,8 @@ const Tickets = () => {
             <h5>
               <img src={text1} alt="" /> Easy Way to Book your Ticket
             </h5>
-            <h1>Find Your</h1> <br />
-            <h1> Tickets Now!</h1>
+            <h1>Find Your <br />
+             Tickets Now!</h1>
           </div>
 
           <div className="row">
@@ -153,17 +155,17 @@ const Tickets = () => {
       </div>
 
       </div>
-      <button className="customer_btn" >
-        learn more
+      <button className="btn customer_btn" >
+        Load more <i className="fa fa-caret-right lmore"></i>
       </button>
       </div>
      
-      <div className="row customer ">
+      {/* <div className="row customer ">
       <div className="col-sm-6 ">
       <img src={hotel} alt="" />
       </div>
-      <div className="col-sm-6 ">
-      <div className="about">
+      <div className="col-sm-6 "> */}
+      {/* <div className="about">
       <h1>Customer <br/>say  about us</h1>
       <div className="user">
         <img src={picture }alt="" />
@@ -181,11 +183,85 @@ a galley of type and scrambled
         </div>
         
       </div>
-      </div>
+      </div> */}
+      <section className="customer_review">
+      {/* <OwlCarousel
+              navigation={true}
+              navText={[
+                `<div class='nav-btn prev-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></div>`,
+                `<div class='nav-btn next-slide'><img src="https://i.ibb.co/Jn6GBBC/next.png"/> </div>`,
+              ]}
+              loop
+              margin={10}
+              autoplay
+              dots={false}
+             
+              className=" d-flex  align-items-center owl-theme"
+            > */}
+      <section className="customer_say   pb-5">
+                <div className="row align-items-center">
+                  <div className="col-sm-6 customer">
+                    <img src={hotel} alt="" />
+                  </div>
+                  <div className="col-sm-1"></div>
+                  <div className="col-sm-5 customer_heading">
+                    <h1>
+                      {" "}
+                      Customer <br /> say about us
+                    </h1>
+                    <div className="user_food d-flex">
+                      <div className="user">
+                        <img src={picture} alt="" />
+                      </div>
+                      <div className="profile_sec">
+                        <h5>Aman Ullah</h5>
+                        <p>UI/UX Designer</p>
+                      </div>
+                    </div>
+                    <p className="cus_message">
+                    Lorem Ipsum is simply dummy text of the printing and
+typesetting industry. Lorem Ipsum has been the industry's standard
+dummy text ever since the 1500s, when an unknown printer took
+a galley of type and scrambled
+                    </p>
+                    <div className="ratings d-flex align-items-center">
+                      <div className="star">
+                        <img src={Stary} alt="" />
+                      </div>
+                      <div className="star">
+                        <img src={Stary} alt="" />
+                      </div>
+                      <div className="star">
+                        <img src={Stary} alt="" />
+                      </div>
+                      <div className="star">
+                        <img src={Stary} alt="" />
+                      </div>
+                      <div className="star">
+                        <img src={Stary} alt="" />
+                      </div>
+                      <div className="star">(5.00)</div>
+                      <div className="d-flex slide_btn">
+                    <button class='nav-btn next-slide'><img src="https://i.ibb.co/Jn6GBBC/next.png"/> </button>
+                    <button class='nav-btn prev-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></button>
+                
+                    </div>
+                    </div>
+                   
+                    
+                  </div>
+                 
+                </div>
+                
+              </section>
+        {/* </OwlCarousel> */}
+              
+      </section>
+      
      
       </div>
-      </div>
-    </div>
+      // </div>
+    // </div>
   )
 }
 

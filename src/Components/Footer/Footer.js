@@ -360,7 +360,7 @@ const Footer = () => {
 
                   <div className="platform_margin">
                     <small>
-                      <a target="_blank" href="https://bazar.ghuriexpress.com/">
+                      <a target="_blank" href="https://bazar.ghuriexpress.com/" rel="noreferrer">
                         GHURI Bazar
                       </a>
                     </small>
@@ -370,7 +370,7 @@ const Footer = () => {
                     <small>GHURI Ride</small>
                   </div>
                   <div className="platform_margin">
-                    <small>GHURI Food</small>
+                    <small><a href="/ghuriFood">GHURI Food</a></small>
                   </div>
                   <div className="platform_margin">
                     <small>GHURI Ticket</small>
@@ -534,13 +534,13 @@ const Footer = () => {
               </div>
               <div className="row justify-content-between fix_margin_issues_footer fix_padding_f image_content_small_f text-right">
                 <div className="col  col-md-2 col-2  col-xl-2 mt-1">
-                  <a href="https://www.facebook.com/ghuriApp" target="_blank">
+                  <a href="https://www.facebook.com/ghuriApp" target="_blank" rel="noreferrer">
                     {" "}
                     <img className="follow_us" src={facebook} alt="" />
                   </a>
                 </div>
                 <div className="col  col-md-2 col-2  col-xl-2 mt-1">
-                  <a href="https://twitter.com/GHURI67793705" target="_blank">
+                  <a href="https://twitter.com/GHURI67793705" target="_blank" rel="noreferrer">
                     <img className="follow_us" src={twitter} alt="" />
                   </a>
                 </div>
