@@ -44,6 +44,8 @@ import ParcelModal from "./Components/parcelDetails/ParcelModal";
 import Career from "./Components/career/Career";
 import Job from "./Components/career/Job";
 import Jobform from "./Components/career/Jobform";
+///////////////tanni-ticket///////////////
+import Tickets from './Components/tickets/Tickets'
 
 function App() {
   return (
@@ -138,7 +140,7 @@ function App() {
           </Route>
 
           {/* Ticket */}
-          <Route path="/ticket">
+          {/* <Route path="/ticket">
             <Header></Header>
             <Count />
             <Ticket></Ticket>
@@ -146,7 +148,7 @@ function App() {
             <Headline></Headline>
             <Partners></Partners>
             <Clients></Clients>
-          </Route>
+          </Route> */}
 
           {/* sign up */}
           <Route path="/signup">
@@ -210,9 +212,14 @@ function App() {
             <Jobform></Jobform>
           </Route>
 
-          <Route path="*">
-            <Notmatch />
+          {/* ////////////tanni-ticket///////////////// */}
+          <Route path="/ticket">
+            <Tickets></Tickets>
           </Route>
+
+          {/* <Route path="*">
+            <Notmatch />
+          </Route> */}
         </Switch>
 
         <Footer />
