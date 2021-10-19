@@ -6,7 +6,7 @@ import { GetCareerDetails } from "./_redux/action/CareerAction";
 import { Markup } from "interweave";
 const Job = () => {
   const history = useHistory();
-  let {id } = useParams();
+  let { id } = useParams();
 
   const dispatch = useDispatch();
 
@@ -19,7 +19,7 @@ const Job = () => {
       .replace(/[^\w-]+/g, "");
 
     history.push(`/career/application/${id}/${slug}`, {
-     
+
     });
   };
 
@@ -94,13 +94,19 @@ const Job = () => {
 
                     <Markup content={careerDetails.requirements} />
 
-                  
+
 
                     <h4 className="mt-5 mb-3">Additional Job Requirement</h4>
                     <Markup content={careerDetails.additional} />
 
                     <h4 className="mt-5 mb-3">Experience</h4>
                     <Markup content={careerDetails.experience} />
+
+                    <h4 className="mt-5 mb-3">Educational Qualification</h4>
+                    <Markup content={careerDetails.education} />
+
+
+
 
                     <h4 className="mt-5 mb-3">Working Hours</h4>
                     <Markup content={careerDetails.hours} />
