@@ -46,6 +46,7 @@ import Job from "./Components/career/Job";
 import Jobform from "./Components/career/Jobform";
 ///////////////tanni-ticket///////////////
 import Tickets from './Components/tickets/Tickets'
+import FoodHome from "./Components/GhuriFood/FoodHome";
 
 function App() {
   return (
@@ -202,13 +203,17 @@ function App() {
           <Route path="/parcelModal">
             <ParcelModal></ParcelModal>
           </Route>
-          <Route path="/career">
+          <Route exact path="/career">
             <Career></Career>
           </Route>
-          <Route path="/job/:id">
+          <Route exact path="/ghuriFood">
+           <FoodHome></FoodHome>
+          </Route>
+
+          <Route exact path="/career/details/:id/:slug">
             <Job></Job>
           </Route>
-          <Route path="/jobform/:id">
+          <Route exact path="/career/application/:id/:slug">
             <Jobform></Jobform>
           </Route>
 

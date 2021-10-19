@@ -171,6 +171,14 @@ const Tickets = () => {
         <h3>Aman Ullah</h3>
         <h5>UI/UX Designer</h5>
         </div>
+        <div className="review">
+          <p>
+          Lorem Ipsum is simply dummy text of the printing and
+typesetting industry. Lorem Ipsum has been the industry's standard
+dummy text ever since the 1500s, when an unknown printer took
+a galley of type and scrambled
+          </p>
+        </div>
         
       </div>
       </div>

@@ -75,7 +75,7 @@ const Parcel = () => {
               </p>
               <a href="/ghuriparcel" className="btn  mt-2 learn_more">
                 Learn More
-                <i class="fa fa-chevron-right"></i> 
+                <i className="fa fa-chevron-right"></i> 
               </a>
             </div>
             <div className="col-sm-6 product_img">
