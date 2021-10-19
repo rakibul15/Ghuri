@@ -28,7 +28,10 @@
   src: local("inter_m"), url(../font/Inter-Medium.ttf) format("truetype");
 }
 
-
+@font-face {
+  font-family: "inter_m";
+  src: local("inter_m"), url(../font/Inter-Medium.ttf) format("truetype");
+}
 
 
 
