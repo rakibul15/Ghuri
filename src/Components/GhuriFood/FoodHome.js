@@ -141,7 +141,7 @@ const FoodHome = () => {
                         <span>
                           <strong>&#2547;</strong>
                         </span>{" "}
-                        290.00
+                        00.00
                       </h6>
                     </div>
                   </div>
@@ -164,7 +164,7 @@ const FoodHome = () => {
                         <span>
                           <strong>&#2547;</strong>
                         </span>{" "}
-                        290.00
+                        00.00
                       </h6>
                     </div>
                   </div>
@@ -187,7 +187,7 @@ const FoodHome = () => {
                         <span>
                           <strong>&#2547;</strong>
                         </span>{" "}
-                        290.00
+                        00.00
                       </h6>
                     </div>
                   </div>
