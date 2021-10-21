@@ -162,6 +162,12 @@
   padding-right: 16px !important;
 }
 
+/* /////////////////tanni-ticket////////////////// */
+.ticket_icon a {
+  background-image: url(../../images/tickets/ticket_service.png);
+  background-size: 40px 40px;
+}
+
 /* DropDown Menu */
 
 .topmenu .dropdown-menu .car-icon a,
