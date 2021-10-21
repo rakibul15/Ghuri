@@ -165,7 +165,7 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
-                  <div className="col-sm-12 col-md-6">
+                  {/* <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
                       className="
@@ -182,7 +182,7 @@ const Topnav = () => {
                         <span class="sub">Ghuri Ticket Service</span>
                       </a>
                     </li>
-                  </div>
+                  </div> */}
 
                 </div>
 
