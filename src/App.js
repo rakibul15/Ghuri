@@ -218,9 +218,9 @@ function App() {
           </Route>
 
           {/* ////////////tanni-ticket///////////////// */}
-          <Route path="/ticket">
+          {/* <Route path="/ticket">
             <Tickets></Tickets>
-          </Route>
+          </Route> */}
 
           {/* <Route path="*">
             <Notmatch />

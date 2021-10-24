@@ -15,6 +15,8 @@ import star from "../../images/food/Star.png";
 import cheif from "../../images/food/chefs.png";
 import mark from "../../images/food/mark.png";
 import aman from "../../images/food/aman.png";
+import rakib from "../../images/food/rakib.JPG";
+
 import customer_leaf from "../../images/food/customer_leaf.png";
 import star_rating from "../../images/food/StarYellow.png";
 import OwlCarousel from "react-owl-carousel";
@@ -52,11 +54,11 @@ const FoodHome = () => {
                 filled with nutritional value for your healthy & smart
                 lifestyle.
               </p>
-              <button className="btn btn_lmore">
+              {/* <button className="btn btn_lmore">
                 Learn More <i className="fa fa-caret-right"></i>
-              </button>
+              </button> */}
             </div>
-            <div className="col-sm-6">
+            <div className="col-sm-6 hero_food_IMG">
               <img src={foodcover} alt="" />
             </div>
           </div>
@@ -64,14 +66,13 @@ const FoodHome = () => {
           <div className="special_dish mt-90">
             <h1 className="text-center">Our Special Dish</h1>
             <p className="text-center">Made with premium ingredients.</p>
-            <div className="row align-items-center mt-90 pb-90">
+            <div className="row align-items-center mt-70 pb-90">
               <div className=" col-md-6 col-sm-6 col-lg-3">
                 <div className="single_cart_food text-center">
                   <img src={dish1} alt="" />
                   <h5>Green Salad</h5>
                   <p>
-                    A green salad filled with cabbage, mustard greens, and added
-                    chicken pieces for a more delicious.
+                    A green salad filled with tomato, mixed salad and sliced chicken deli meat.
                   </p>
                 </div>
               </div>
@@ -90,8 +91,7 @@ const FoodHome = () => {
                   <img src={dish3} alt="" />
                   <h5>Vegan Menu</h5>
                   <p>
-                    A vegan menu filled with cabbage, mustard greens, and added
-                    chicken pieces for a more delicious.
+                  A vegan menu filled with tomatoes, red onions, olive oil, lemon juice, and fresh cilantro.
                   </p>
                 </div>
               </div>
@@ -100,8 +100,7 @@ const FoodHome = () => {
                   <img src={dish4} alt="" />
                   <h5>Chicken Salad</h5>
                   <p>
-                    A chicken salad filled with cabbage, mustard greens, and
-                    added chicken pieces for a more delicious.
+                    A chicken salad filled with Stir chicken, avocado, scallions, celery, onion and lime juice.
                   </p>
                 </div>
               </div>
@@ -110,7 +109,7 @@ const FoodHome = () => {
 
           <section className="fresh_veg">
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-sm-6 fresh_veg_div">
                 <img src={leaf} alt="" />
               </div>
               <div className="col-sm-1"></div>
@@ -120,9 +119,9 @@ const FoodHome = () => {
                   We present various types of fresh vegetables and taken
                   directly from the farmer’s garden especially for you
                 </p>
-                <button className="btn btn_lmore">
+                {/* <button className="btn btn_lmore">
                   Learn More <i className="fa fa-caret-right"></i>
-                </button>
+                </button> */}
               </div>
             </div>
           </section>
@@ -144,7 +143,7 @@ const FoodHome = () => {
                         <span>
                           <strong>&#2547;</strong>
                         </span>{" "}
-                        290.00
+                        00.00
                       </h6>
                     </div>
                   </div>
@@ -167,7 +166,7 @@ const FoodHome = () => {
                         <span>
                           <strong>&#2547;</strong>
                         </span>{" "}
-                        290.00
+                        00.00
                       </h6>
                     </div>
                   </div>
@@ -190,7 +189,7 @@ const FoodHome = () => {
                         <span>
                           <strong>&#2547;</strong>
                         </span>{" "}
-                        290.00
+                        00.00
                       </h6>
                     </div>
                   </div>
@@ -203,9 +202,9 @@ const FoodHome = () => {
             </div>
 
             <div className="d-flex justify-content-center">
-              <button className="btn btn_lmore_menu text-center">
+              {/* <button className="btn btn_lmore_menu text-center">
                 Load More Menu <i className="fa fa-caret-right"></i>
-              </button>
+              </button> */}
             </div>
           </section>
 
@@ -322,26 +321,35 @@ const FoodHome = () => {
                     </h1>
                     <div className="user_food d-flex">
                       <div className="image_sec">
-                        <img src={aman} alt="" />
+                        <img src={rakib} alt="" />
                       </div>
                       <div className="profile_sec">
-                        <h5>Aman Ullah</h5>
-                        <p>UI/UX Designer</p>
+                        <h5>Rakibul Hasan</h5>
+                        <p>Frontend Developer</p>
                       </div>
                     </div>
                     <p className="cus_message">
-                      Excellent food. Menu is extensive and seasonal to a
-                      particularly high standard. Definitely fine dining. It can
-                      be expensive but worth it and they do different deals on
-                      different nights so it’s worth checking them out before
-                      you book. Highly recommended.
+                    Ghuri Food has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation and wonderful dessert. I recommend to everyone!
                     </p>
                     <div className="ratings d-flex align-items-center">
                       <div className="star">
                         <img src={star_rating} alt="" />
                       </div>
+                      <div className="star">
+                        <img src={star_rating} alt="" />
+                      </div>
+                      <div className="star">
+                        <img src={star_rating} alt="" />
+                      </div>
+                      <div className="star">
+                        <img src={star_rating} alt="" />
+                      </div>
+                      <div className="star">
+                        <img src={star_rating} alt="" />
+                      </div>
 
                       <div className="star">(5.00)</div>
+                      
                     </div>
                   </div>
                 </div>
