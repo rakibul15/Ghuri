@@ -50,6 +50,23 @@ const Tickets = () => {
         },
       },
     };
+    let options = {
+      responsive: {
+        0: {
+          items: 1,
+        },
+        450: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    };
+  
   return (
     // <div className="container">
 
@@ -140,7 +157,7 @@ const Tickets = () => {
       </div>
       <div className="container">
       <div className="top_destination">
-        <h1>Top Destination</h1>
+        <h2>Top Destination</h2>
         <h5>Made with premium ingredients.</h5>
         <div className=" row destination ">
           <div className="col-md-8 col-sm-12  destination_text">
@@ -181,7 +198,7 @@ const Tickets = () => {
           <div className="col-md-4  col-sm-12">
             <div className="service_card">
               <img src={bus2} alt="" />
-              <div className="display">
+              <div className="d-flex">
                 <p>
                   Green Line provides <br />
                   the best service
@@ -240,6 +257,18 @@ const Tickets = () => {
 
    
       <section className="customer_review">
+        {/* <OwlCarousel
+        navigation={true}
+        navText={[
+          `<div class='nav-btn prev-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></div>`,
+          `<div class='nav-btn next-slide'><img src="https://i.ibb.co/Jn6GBBC/next.png"/> </div>`,
+        ]}
+        loop
+        margin={10}
+        autoplay
+        dots={false}
+        {...options}
+        className=" d-flex  align-items-center owl-theme"> */}
         <section >
           <div className="row align-items-center">
             <div className="col-md-6 col-sm-0 customer">
