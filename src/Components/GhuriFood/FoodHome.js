@@ -15,6 +15,8 @@ import star from "../../images/food/Star.png";
 import cheif from "../../images/food/chefs.png";
 import mark from "../../images/food/mark.png";
 import aman from "../../images/food/aman.png";
+import rakib from "../../images/food/rakib.JPG";
+
 import customer_leaf from "../../images/food/customer_leaf.png";
 import star_rating from "../../images/food/StarYellow.png";
 import OwlCarousel from "react-owl-carousel";
@@ -319,19 +321,15 @@ const FoodHome = () => {
                     </h1>
                     <div className="user_food d-flex">
                       <div className="image_sec">
-                        <img src={aman} alt="" />
+                        <img src={rakib} alt="" />
                       </div>
                       <div className="profile_sec">
-                        <h5>Aman Ullah</h5>
-                        <p>UI/UX Designer</p>
+                        <h5>Rakibul Hasan</h5>
+                        <p>Frontend Developer</p>
                       </div>
                     </div>
                     <p className="cus_message">
-                      Excellent food. Menu is extensive and seasonal to a
-                      particularly high standard. Definitely fine dining. It can
-                      be expensive but worth it and they do different deals on
-                      different nights so it’s worth checking them out before
-                      you book. Highly recommended.
+                    Ghuri Food has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation and wonderful dessert. I recommend to everyone!
                     </p>
                     <div className="ratings d-flex align-items-center">
                       <div className="star">
