@@ -27,11 +27,29 @@ import hotel from '../../images/tickets/hotel.png'
 import Stary from '../../images/tickets/Star-y.png'
 import picture from '../../images/tickets/picture.png'
 import smily from '../../images/tickets/smily.png'
+import { Carousel } from '@trendyol-js/react-carousel';
 import vector from '../../images/tickets/Vector 5.png'
 import OwlCarousel from 'react-owl-carousel'
 
 
 const Tickets = () => {
+ 
+    let option = {
+      responsive: {
+        0: {
+          items: 3,
+        },
+        450: {
+          items: 3,
+        },
+        600: {
+          items: 4,
+        },
+        1000: {
+          items: 6,
+        },
+      },
+    };
   return (
     // <div className="container">
 
@@ -42,7 +60,7 @@ const Tickets = () => {
 
   
       <div className="row ">
-        <div className="col-sm-6  first-box text">
+        <div className="col-md-6 col-sm-12  first-box text">
           <div className="text-box">
             <h5>
               <img src={smily} alt="" /> Easy Way to Book your Ticket
@@ -54,20 +72,20 @@ const Tickets = () => {
           </div>
 
           <div className="row mt-45">
-            <div className=" col-sm-4  ">
+            <div className="col-4  col-sm-4  ">
             <div className="card_size ">
             <img className="plane_img" src={plane} />
               <h4>Flight</h4>
             </div>
              
             </div>
-            <div className="  col-sm-4 ">
+            <div className="col-4   col-sm-4 ">
             <div className=" card_size">
             <img className="plane_img" src={launch} />
               <h4>Launch</h4>
             </div>
             </div>
-            <div className="   col-sm-4  ">
+            <div className="col-4   col-sm-4  ">
             <div className="card_size">
             <img className="plane_img" src={bus} />
               <h4>Bus</h4>
@@ -75,8 +93,8 @@ const Tickets = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm-1"></div>
-        <div className="col-sm-5 order-1 order-lg-2 align-content-center">
+        <div className="col-md-1"></div>
+        <div className="col-md-5 col-sm-0 order-1 order-lg-2 align-content-center">
           <div className=" upperPicture  ">
             <img src={upperPicture} />
           </div>
@@ -85,27 +103,36 @@ const Tickets = () => {
       </div>
       <div className=" middle-row">
       {/* <div className="container"> */}
-      <div className="  container">
-      <div className="row">
-      <div className=" col-sm-2 airline">
+      <div className="  slider container">
+      {/* <div className="row"> */}
+        <OwlCarousel
+           loop
+           margin={10}
+           items={6}
+           autoplay
+           dots={false}
+           {...option}
+           className=" d-flex  align-items-center owl-theme">
+      <div className="  airline">
           <img src={BBAL1} />
         </div>
-        <div className="col-sm-2 airline">
+        <div className=" airline">
           <img src={glpl1} />
         </div>
-        <div className=" col-sm-2 airline">
+        <div className="  airline">
           <img src={BBAL2} />
         </div>
-        <div className=" col-sm-2 airline">
+        <div className="  airline">
           <img src={glpl2} />
         </div>
-        <div className=" col-sm-2 airline">
+        <div className="  airline">
           <img src={BBAL3} />
         </div>
-        <div className=" col-sm-2 airline">
+        <div className="  airline">
           <img src={glpl3} />
         </div>
-      </div>
+        </OwlCarousel>
+      {/* </div> */}
         
       {/* </div> */}
       </div>
@@ -116,40 +143,42 @@ const Tickets = () => {
         <h1>Top Destination</h1>
         <h5>Made with premium ingredients.</h5>
         <div className=" row destination ">
-          <div className="col-sm-8 destination_text">
-            {/* <h4>M A R I N E D R I V E</h4>
-            <h1>C O X’ S B A Z A R</h1> */}
+          <div className="col-md-8 col-sm-12  destination_text">
+            <h4>M A R I N E D R I V E</h4>
+            <h1>COX ’ S BAZAR</h1>
             <img src={cox} alt="" />
           </div>
-          <div className="col-sm-4 destination_text2">
-            {/* <p>M A R I N E D R I V E</p>
-            <h1>C O X’ S B A Z A R</h1> */}
+          <div className="col-md-4  col-sm-6  col-6 destination_text2">
+            <p>M A R I N E D R I V E</p>
+            <h1>COX ’ S BAZAR</h1>
             <img src={cox2} alt="" />
           </div>
-        </div>
-        <div className=" row destination destination2">
-          <div className="col-sm-4 destination_text3 ">
-            {/* <p>M A R I N E D R I V EE</p>
-            <h1>C O X’S B A Z A R</h1> */}
+        {/* </div> */}
+        {/* <div className="  destination destination2"> */}
+          <div className="col-md-4  col-sm-6 col-6 destination_text3 ">
+            <p>M A R I N E D R I V E</p>
+            <h1>COX ' S BAZAR</h1>
             <img src={cox3} alt="" />
           </div>
-          <div className="col-sm-4 destination_text3">
-            {/* <p>M A R I N E D R I V E</p>
-            <h1>C O X’ S B A Z A R</h1> */}
+          <div className="col-md-4  col-sm-6 col-6  destination_text3">
+            <p>M A R I N E D R I V E</p>
+            <h1>COX ' S BAZAR</h1>
             <img src={cox4} alt="" />
           </div>
-          <div className="col-sm-4 destination_text3">
-            {/* <p>M A R I N E D R I V E</p>
-            <h1>C O X’ S B A Z A R</h1> */}
+          <div className="col-md-4  col-sm-6 col-6  destination_text3">
+            <p>M A R I N E D R I V E</p>
+            <h1>COX ' S BAZAR</h1>
             <img src={cox5} alt="" />
           </div>
+        {/* </div> */}
         </div>
       </div>
       <div className=" service">
         <h1>Our Best Services</h1>
         <h5>Made with premium ingredients.</h5>
-        <div className=" row">
-          <div className="col-sm-4">
+        <div className=" row service_div">
+          {/* <Carousel> */}
+          <div className="col-md-4  col-sm-12">
             <div className="service_card">
               <img src={bus2} alt="" />
               <div className="display">
@@ -157,7 +186,7 @@ const Tickets = () => {
                   Green Line provides <br />
                   the best service
                 </p>
-                <div className="ratings d-flex align-items-center">
+                <div className=" d-flex align-items-center">
                 <div  className="star">
                   <img src={star} alt="" />
                 </div>
@@ -167,7 +196,7 @@ const Tickets = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-4 ">
+          <div className="col-md-4  col-sm-12">
             <div className="service_card">
               <img src={plane2} alt="" />
               <div className="display">
@@ -175,7 +204,7 @@ const Tickets = () => {
                   Green Line provides <br />
                   the best service
                 </p>
-                <div className="ratings d-flex align-items-center">
+                <div className=" d-flex align-items-center">
                 <div className="star">
                   <img  src={star} alt="" />
                 </div>
@@ -184,7 +213,7 @@ const Tickets = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-4 ">
+          <div className="col-md-4  col-sm-12">
             <div className="service_card">
               <img src={launch2} alt="" />
               <div className="display">
@@ -193,7 +222,7 @@ const Tickets = () => {
                   Green Line provides <br />
                   the best service
                 </p>
-                <div className="ratings d-flex align-items-center">
+                <div className=" d-flex align-items-center">
                 <div className="star">
                   <img  src={star} alt="" />
                 </div>
@@ -202,6 +231,7 @@ const Tickets = () => {
               </div>
             </div>
           </div>
+          {/* </Carousel> */}
         </div>
         <button className="btn customer_btn">
           Load more <i className="fa fa-caret-right lmore"></i>
@@ -212,11 +242,11 @@ const Tickets = () => {
       <section className="customer_review">
         <section >
           <div className="row align-items-center">
-            <div className="col-sm-6 customer">
+            <div className="col-md-6 col-sm-0 customer">
               <img src={hotel} alt="" />
             </div>
             <div className="col-sm-1"></div>
-            <div className="col-sm-5 msg customer_heading">
+            <div className="col-md-5 col-sm-12 msg customer_heading">
               <h1>
                 {' '}
                 Customer <br /> say about us
@@ -254,10 +284,10 @@ const Tickets = () => {
                 </div>
                 <div className="star">(5.00)</div>
                 <div className="d-flex slide_btn">
-                  <button class="nav-btn next-slide">
+                  <button class="nav-btn text-right next-slide">
                     <img src="https://i.ibb.co/Jn6GBBC/next.png" />{' '}
                   </button>
-                  <button class="nav-btn prev-slide">
+                  <button class="nav-btn text-right prev-slide">
                     <img src="https://i.ibb.co/Fn597p9/preview.png" />
                   </button>
                 </div>

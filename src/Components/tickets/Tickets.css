@@ -43,7 +43,7 @@ font-size: 468.75%;
 }
 .text img{
     margin-right: 16px;
-    width: 10%;
+    width: 3%;
 }
 .card_size{
     /* position: absolute; */
@@ -64,11 +64,14 @@ height: 70%;
 }
 .card_size h4{
     font-family: inter_r;
-    font-size: 90%;
+    /* font-size: 90%; */
     text-align: center;
 }
 .text-box{
     margin-bottom: 45px;
+}
+.text-box img{
+    width: 10%;
 }
 .upperPicture{
     /* margin-left: 151px; */
@@ -90,7 +93,7 @@ height: 100%;
  
 width: 100%;
 height: 100%;
-margin-top: 14px;
+margin-top: 10px;
 margin-bottom: 13px;
 }
 .top_destination{
@@ -114,8 +117,10 @@ color: #3D3D3D;
     font-size: 55px;
     line-height: 67px;
     text-align: center;
-    color: #212121;  
+    color: black;  
     margin-bottom: 16px;
+    /* position: absolute; */
+ 
 }
 .destination{
     margin-top: 70px;
@@ -125,36 +130,34 @@ color: #3D3D3D;
 .destination img{
     width: 100%;
     height: 100%;
+    padding-bottom: 30px;
     
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    border-radius: 25px; 
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    border-radius: 25px;  */
 }
 .destination2 img{
-    margin-top :-42px;
+    margin-top :-1.4rem;
+    
 }
+/* .container{
+    position: relative;
+    text-align: center;
+} */
 .destination_text h1 {
-    padding-left: 328px;
-    padding-top: 166px;
-    padding-bottom: 101px;
-    /* padding-right: 251px; */
-    position: absolute;
     font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 50px;
-line-height: 61px;
-/* identical to box height */
-text-align: center;
 color: #FFFFFF;
+position: absolute;
+font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 .destination_text h4 {
     position: absolute;
-    padding-left: 436px;
-    padding-top: 121px;
-    padding-bottom: 178px;
-    padding-right: 137px;
-    /* top: 1382px; */
+    top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -167,38 +170,39 @@ color: #FFFFFF;
 }
 .destination_text3 p{
  position: absolute;
- padding-left: 155px;
-    margin-top: 190px;
+ top: 52%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ /* padding-left: 155px;
+    margin-top: 190px; */
     /* padding-bottom: 93px; */
-    padding-right: 156px;
+    /* padding-right: 156px; */
     font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 20px;
-text-align: center;
+/* line-height: 20px;
+text-align: center; */
 color: #FFFFFF;
 }
 .destination_text3 h1{
     position: absolute;
-    padding-left: 99px;
-       padding-top: 222px;
-       /* padding-bottom: 40px; */
-       padding-right: 83px;
-       font-family: 'Montserrat', sans-serif;
+    top: 64%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-family: 'Montserrat', sans-serif;
    font-style: normal;
    font-weight: bold;
-font-size: 32px;
+font-size: 27px;
 line-height: 39px;
-   text-align: center;
+
    color: #FFFFFF;
    }
    .destination_text2 p{
     position: absolute;
-    padding-left: 155px;
-       margin-top: 217px;
-       /* padding-bottom: 93px; */
-       padding-right: 156px;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
        font-family: 'Montserrat', sans-serif;
    font-style: normal;
    font-weight: 500;
@@ -209,15 +213,12 @@ line-height: 39px;
    }
    .destination_text2 h1{
        position: absolute;
-       padding-left: 99px;
-          padding-top: 249px;
-          /* padding-bottom: 40px; */
-          padding-right: 83px;
-      
-          font-family: 'Montserrat', sans-serif;
-      /* font-style: normal; */
+       top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     font-family: 'Montserrat', sans-serif;
       font-weight: bold;
-   font-size: 32px;
+   font-size: 27px;
    line-height: 39px;
       text-align: center;
       color: #FFFFFF;
@@ -226,6 +227,9 @@ line-height: 39px;
     margin-top: 90px;
     text-align: center;
 
+   }
+   .service_div{
+       margin-top:90px ;
    }
    .service h5{
     font-family: inter_r;
@@ -247,7 +251,7 @@ line-height: 39px;
         margin-bottom: 16px;
     }
     .service_card{
-        margin-top: 90px;
+        /* margin-top: 90px; */
        
 background: #FFFFFF;
 box-shadow: 0px 15px 32px rgba(0, 0, 0, 0.07);
@@ -375,27 +379,21 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     /* padding-right: 213px; */
 }
 .customer_review{
-    /* margin-bottom: 75px; */
+    padding-bottom: 75px;
     margin-top: 90px;
+    /* margin-bottom: 45px; */
 }
 
 .container-fluid{
     padding: 0;
 }
 
-/* // X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { }
+
 
 /* // Small devices (landscape phones, less than 768px) */
 
 
-/* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
-    .text h1 {
-        font-size: 40px;
-        margin-bottom: 40px;
-    }
- }
+
 
 /* // Large devices (desktops, less than 1200px) */
 
@@ -417,6 +415,26 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
           }
 }
 @media (max-width: 1399.98px) { 
+    .destination_text2 h1{
+        font-size: 25px;
+        color: white;
+    }
+    .destination_text2 p{
+        font-size: 15px;
+        color: white;
+    }
+    .destination_text3 h1{
+        color: white;
+        font-size: 25px;
+    }
+    .destination_text h1{
+        font-size: 40px;
+        color: white;
+    }
+    .destination_text3 p{
+        font-size: 14px;
+    }
+   
     .text h1 {
         font-size: 65px;
         margin-bottom: 40px;
@@ -431,25 +449,74 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .top_destination {
         text-align: center;
-        margin-top: 55px;
+        margin-top: 80px;
     }
     .destination{
-        margin-top: 45px;
+        margin-top: 65px;
     }
     
-    .top_destination h1 {
+    /* .top_destination h1 {
         font-family: InterSemi;
         font-size: 45px;
         color: #212121;
         line-height: 35px;
-        /* margin-bottom: 16px; */
+        
     }
     .top_destination h5 {
         font-family: inter_r;
         font-size: 15px;
         
-    }
+    } */
+    .service{
+        margin-top: 80px;
+        text-align: center;
+    
+       }
+       .service h1 {
+        font-family: InterSemi;
+        font-size: 50px;
+        margin-bottom: 13px;
+       }
+       .service h5 {
+        font-size: 15px;
+        line-height: 20px;
+       }
+       .service_div{
+           margin-top: 80px;
+       }
+       .service_card p {
+       
+        font-weight: 400;
+        font-size: 19px;
+        /* line-height: 30px; */
+        text-align: left;
+        margin: 19px;
+        letter-spacing: 0;
+       }
+.customer_btn{
+    margin-top: 80px;
+    font-size: 14px;
+    height: 56px;
+}
+.customer_review {
+    margin-top: 80px;
+   
+   
 
+}
+.customer img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .middle-row {
+    width: 100%;
+    height: 145px;
+    margin-top: 80px;
+}
+.slide_btn {
+    margin-left: 205px;
+
+}
 }
 @media (max-width: 1199.98px) {
     .text h1 {
@@ -462,30 +529,179 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .top_destination {
         text-align: center;
-        margin-top: 40px;
+        margin-top: 70px;
     }
     .destination{
-        margin-top: 35px;
+        margin-top: 50px;
     }
     
-    .top_destination h1 {
+    /* .top_destination h1 {
         font-family: InterSemi;
-        font-size: 35px;
+        font-size: 40px;
         color: #212121;
-        margin-bottom: 16px;
+    
         line-height: 30px;
     }
     .top_destination h5 {
         font-family: inter_r;
         font-size: 13px;
+        margin-bottom: 45px;
+
         
+    } */
+    .service{
+        margin-top: 70px;
+        text-align: center;
+    
+       }
+       .service h1 {
+        font-family: InterSemi;
+        font-size: 45px;
+        margin-bottom: 11px;
+       }
+       .service h5 {
+        font-size: 13px;
+        line-height: 18px;
+       }
+       .service_div{
+           margin-top: 70px;
+       }
+       .service_card p {
+       
+        font-weight: 400;
+        font-size: 17px;
+        /* line-height: 30px; */
+        text-align: left;
+        margin: 19px;
+        letter-spacing: 0;
+       }
+       .customer_btn{
+        margin-top: 70px;
+        font-size: 13px;
+        height: 54px;
     }
+    .customer_review {
+        margin-top: 70px
+    
+    }
+    .middle-row {
+        width: 100%;
+        height: 123px;
+        margin-top: 70px;
+    }
+    .slide_btn {
+        margin-left: 95px;
+    
+    }
+    .destination_text2 h1{
+        font-size: 19px;
+        color: white;
+    }
+    .destination_text2 p{
+        font-size: 13px;
+        color: white;
+    }
+    .destination_text3 h1{
+        color: white;
+        font-size: 19px;
+    }
+    .destination_text h1{
+        font-size: 35px;
+        color: white;
+    }
+    .destination_text3 p{
+        font-size: 13px;
+    }
+        /* /* letter-spacing: 0.02em; */
 }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .destination_text h1{
+        font-size: 30px;
+        color: white;
+    }
+    .destination_text h4{
+        font-size: 20px;
+        color: white;
+    }
+    .text h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .service{
+        margin-top: 60px;
+        text-align: center;
+    
+       }
+       .service h1 {
+        font-family: InterSemi;
+        font-size: 40px;
+        margin-bottom: 9px;
+       }
+       .service h5 {
+        font-size: 12px;
+        line-height: 15px;
+       }
+       .service_div{
+           margin-top: 60px;
+       }
+       .service_card p {
+        font-size: 15px;
+        line-height: 20px;
+        margin:20px 13px;
+       }
+       .customer_btn{
+        margin-top: 65px;
+        font-size: 13px;
+        height: 52px;
+    }
+    .customer_review {
+        margin-top: 65px
+    
+    }
+    .middle-row {
+        width: 100%;
+        height: 102px;
+        margin-top: 60px;
+    }
+    .card_size{
+        border-radius: 30px;
+    }
+    .slide_btn {
+        margin-left: 95px;
+    
+    }
+    .destination_text2 h1{
+        font-size: 14px;
+        color: white;
+    }
+    .destination_text2 p{
+        font-size: 11px;
+        color: white;
+    }
+    .destination_text3 h1{
+        color: white;
+        font-size: 14px;
+    }
+    .destination_text h1{
+        font-size: 28px;
+        color: white;
+    }
+    .destination_text h4{
+        font-size: 20px;
+    }
+    .destination_text3 p{
+        font-size: 11px;
+    }
+ }
+
 @media (max-width: 767.98px) {
     .customer img {
-        height: auto;
-        width: 95%;
-        margin-top: 50px;
+        display: none;
+    }
+    .upperPicture img {
+        display: none;
     }
     .text h1 {
         font-size: 45px;
@@ -495,13 +711,15 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
         font-size: 11px;
         /* margin-bottom: 40px; */
     }
-    .top_destination {
+
+    /* .top_destination {
         text-align: center;
-        margin-top: 35px;
+        margin-top: 55px;
+       
     }
     .destination{
         margin-top: 30px;
-    }
+    } */
     
     .top_destination h1 {
         font-family: InterSemi;
@@ -515,7 +733,241 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
         font-size: 11px;
         
     }
+    .service{
+        margin-top: 28px;
+        text-align: center;
+    
+       }
+       .service h1 {
+        font-family: InterSemi;
+        font-size: 25px;
+        line-height: 25px;
+        /* text-align: left; */
+        /* margin-bottom: 9px; */
+       }
+       .service h5 {
+        font-size: 11px;
+        line-height: 10px;
+        /* display: none; */
+       }
+       .service_div{
+           margin-top: 30px;
+       }
+       .service_card{
+           margin-bottom: 30px;
+       }
+       /* .service_card p {
+        font-size: 25px;
+        line-height: 20px;
+        margin:19px 13px;
+       } */
+       .customer_btn{
+        margin-top: 60px;
+        font-size: 12px;
+        height: 50px;
+        display: none;
+    }
+    .customer_review {
+        margin: 20px 25px
+    
+    }
+    .middle-row {
+        width: 100%;
+        height: 96px;
+        margin-top: 55px;
+        /* background-color:#F8FDFC ; */
+    }
+    .card_size{
+        border-radius: 30px;
+    }
+    .slide_btn {
+        margin-left: 295px;
+    
+    }
+    .destination img{
+        padding-bottom: 30px;
+        background: #F8FDFC;
+        /* background: linear-gradient(
+            0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
+        border-radius: 0;
+    }
+    .service_card{
+        margin: 20px;
+    }
+    .ratings{
+        margin-top: 0;
+    }
+    .destination_text2 h1{
+        font-size: 14px;
+        color: white;
+    }
+    .destination_text2 p{
+        font-size: 10px;
+        color: white;
+    }
+    .destination_text3 h1{
+        color: white;
+        font-size: 14px;
+    }
+    .destination_text h1{
+        font-size: 30px;
+        color: white;
+    }
+    .destination_text3 p{
+        font-size: 10px;
+    }
+
  }
 
-/* // XX-Large devices (larger desktops) */
-/* // No media query since the xxl breakpoint has no upper bound on its width */
+ /* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .upperPicture img {
+        display: none;
+    }
+    .text h5 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .text h1 {
+        font-size: 39px;
+        line-height: 55px;
+        margin-bottom: 37px;
+    }
+    .middle-row {
+        width: 100%;
+        height: 80px;
+        margin-top: 39px;  
+    }
+    .customer img {
+       display: none;
+    }
+    .slide_btn {
+        margin-left: 190px;
+    }
+    .destination img{
+        padding-bottom: 30px;
+        background-color: #F8FDFC;
+        border-radius: 0;
+    }
+    .service_card{
+        margin: 20px;
+    }
+    .customer_btn{
+        display: none;
+    }
+    .customer_review {
+        margin: 20px;
+    
+    }
+    .ratings{
+        margin-top: 0;
+    }
+    .destination_text3 p{
+font-size: 10px !important;
+    }
+
+}
+
+ /* // X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 375.98px) { 
+    .upperPicture img {
+        display: none;
+    }
+    .text h5 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .text h1 {
+        font-size: 39px;
+        line-height: 55px;
+        margin-bottom: 37px;
+    }
+    .middle-row {
+        width: 100%;
+        height: 73px;
+        margin-top: 29px; 
+        margin-bottom: 15px;
+        background-color: #F8FDFC; 
+    }
+    .customer img {
+       display: none;
+    }
+    .slide_btn {
+        margin-left: 190px;
+    }
+    .destination img{
+        padding-bottom: 30px;
+        background-color: #F8FDFC;
+        border-radius: 0;
+    }
+    .service_card{
+        margin: 20px;
+    }
+    .customer_btn{
+        display: none;
+    }
+    .customer_review {
+        margin: 20px;
+    
+    }
+    .ratings{
+        margin-top: 0;
+    }
+    .top_destination {
+        /* text-align: center; */
+        margin-top: 8px;
+    
+    }
+    .top_destination h1{
+        text-align: left;
+    }
+    .top_destination h5{
+        text-align: left;
+    }
+    .destination{
+        margin-top: 30px;
+    }
+    .destination_text h4{
+        font-size: 11px !important;
+    }
+    .destination_text h1{
+        font-size: 24px;
+    }
+    .destination_text2 p {
+        font-size: 7px !important;
+        color: white;
+    }
+    .destination_text2 h1 {
+        font-size: 12px;
+        color: white;
+    }
+    .destination_text3 h1 {
+        font-size: 12px;
+        color: white;
+    }
+    .destination_text3 p {
+        font-size: 7px !important;
+        color: white;
+    }
+    .service {
+        margin-top: 0;
+    
+        text-align: left;
+    }
+
+    .service_div {
+        margin-top: -6px;
+    
+    }
+    .styles-module_item-tracker__3bypy.slider{
+        transform: translateX(-298 px);
+        transition: transform 0s ease 0s;
+        width: 628px;
+    }
+    .ticket-body{
+        padding-top: 101px;
+    }
+
+
+}
+
