@@ -7,12 +7,12 @@ import plane from '../../images/tickets/plane.png'
 import launch from '../../images/tickets/launch.png'
 import bus from '../../images/tickets/bus.png'
 import upperPicture from '../../images/tickets/upperPicture.png'
-import glpl1 from '../../images/tickets/glpl1.png'
+import novoair from '../../images/tickets/novoair.png'
 import glpl2 from '../../images/tickets/glpl2.png'
 import glpl3 from '../../images/tickets/glpl3.png'
 import BBAL1 from '../../images/tickets/BBAL1.png'
-import BBAL2 from '../../images/tickets/BBAL2.png'
-import BBAL3 from '../../images/tickets/BBAL3.png'
+import usb from '../../images/tickets/usb.png'
+import shohag from '../../images/tickets/shohag.png'
 import cox from '../../images/tickets/cox.png'
 // import cox1 from '../../images/tickets/cox1.png'
 import cox2 from '../../images/tickets/cox2.png'
@@ -26,6 +26,7 @@ import star from '../../images/tickets/Star.png'
 import hotel from '../../images/tickets/hotel.png'
 import Stary from '../../images/tickets/Star-y.png'
 import picture from '../../images/tickets/picture.png'
+import tanni from '../../images/tickets/tanni.jpg'
 import smily from '../../images/tickets/smily.png'
 import { Carousel } from '@trendyol-js/react-carousel';
 import vector from '../../images/tickets/Vector 5.png'
@@ -134,19 +135,19 @@ const Tickets = () => {
           <img src={BBAL1} />
         </div>
         <div className=" airline">
-          <img src={glpl1} />
+          <img src={novoair} />
         </div>
         <div className="  airline">
-          <img src={BBAL2} />
+          <img src={usb} />
         </div>
         <div className="  airline">
           <img src={glpl2} />
         </div>
         <div className="  airline">
-          <img src={BBAL3} />
+          <img src={shohag} />
         </div>
         <div className="  airline">
-          <img src={glpl3} />
+          <img src={novoair} />
         </div>
         </OwlCarousel>
       {/* </div> */}
@@ -158,7 +159,9 @@ const Tickets = () => {
       <div className="container">
       <div className="top_destination">
         <h2>Top Destination</h2>
-        <h5>Made with premium ingredients.</h5>
+        <h5>After an 18-month ban on most inbound travel, the US is set to update its border rules on
+November 8, by requiring all foreign visitors to be vaccinated before entering.
+Here's what you need to know about the new travel policy.</h5>
         <div className=" row destination ">
           <div className="col-md-8 col-sm-12  destination_text">
             <h4>M A R I N E D R I V E</h4>
@@ -192,13 +195,15 @@ const Tickets = () => {
       </div>
       <div className=" service">
         <h1>Our Best Services</h1>
-        <h5>Made with premium ingredients.</h5>
+        <h5>GHURI Ticket is a premium online booking portal which allows users to purchase
+tickets for various services like bus services, launch services, Beman ticket
+and more across all over Bangladesh.</h5>
         <div className=" row service_div">
           {/* <Carousel> */}
           <div className="col-md-4  col-sm-12">
             <div className="service_card">
               <img src={bus2} alt="" />
-              <div className="d-flex">
+              <div className="d-flex justify-content-between align-items-center ">
                 <p>
                   Green Line provides <br />
                   the best service
@@ -207,7 +212,7 @@ const Tickets = () => {
                 <div  className="star">
                   <img src={star} alt="" />
                 </div>
-                <div> (5.00)</div>
+                <p> (5.00)</p>
                 </div>
                
               </div>
@@ -216,7 +221,7 @@ const Tickets = () => {
           <div className="col-md-4  col-sm-12">
             <div className="service_card">
               <img src={plane2} alt="" />
-              <div className="display">
+              <div className=" d-flex justify-content-between align-items-center p-22">
                 <p>
                   Green Line provides <br />
                   the best service
@@ -225,7 +230,7 @@ const Tickets = () => {
                 <div className="star">
                   <img  src={star} alt="" />
                 </div>
-                <div> (5.00)</div>
+                <p> (5.00)</p>
                 </div>
               </div>
             </div>
@@ -233,7 +238,7 @@ const Tickets = () => {
           <div className="col-md-4  col-sm-12">
             <div className="service_card">
               <img src={launch2} alt="" />
-              <div className="display">
+              <div className="display  d-flex justify-content-between align-items-center p-22">
                 <p>
                   {' '}
                   Green Line provides <br />
@@ -243,7 +248,7 @@ const Tickets = () => {
                 <div className="star">
                   <img  src={star} alt="" />
                 </div>
-                <div> (5.00)</div>
+                <p> (5.00)</p>
                 </div>
               </div>
             </div>
@@ -257,7 +262,7 @@ const Tickets = () => {
 
    
       <section className="customer_review">
-        {/* <OwlCarousel
+        <OwlCarousel
         navigation={true}
         navText={[
           `<div class='nav-btn prev-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></div>`,
@@ -265,10 +270,66 @@ const Tickets = () => {
         ]}
         loop
         margin={10}
+        items={2}
         autoplay
         dots={false}
+        // img={}
         {...options}
-        className=" d-flex  align-items-center owl-theme"> */}
+        className=" d-flex  align-items-center owl-theme">
+        <section >
+          <div className="row align-items-center">
+            <div className="col-md-6 col-sm-0 customer">
+              <img src={hotel} alt="" />
+            </div>
+            <div className="col-sm-1"></div>
+            <div className="col-md-5 col-sm-12 msg customer_heading">
+              <h1>
+                {' '}
+                Customer <br /> say about us
+              </h1>
+              <div className="user_food d-flex">
+                <div className="user">
+                  <img src={tanni} alt="" />
+                </div>
+                <div className="profile_sec">
+                  <h5>Saima Tanni</h5>
+                  <p>Frontend Developer</p>
+                </div>
+              </div>
+              <p className="cus_message">
+              The website is fantastic for everything; food, tickets and truck, parcel. 
+              Treir Ticket system is very helpfull. 100% Secure, Privacy Friendly, and 
+              the best resources and also best in search
+              </p>
+              <div className="ratings d-flex align-items-center">
+                <div className="star">
+                  <img src={Stary} alt="" />
+                </div>
+                <div className="star">
+                  <img src={Stary} alt="" />
+                </div>
+                <div className="star">
+                  <img src={Stary} alt="" />
+                </div>
+                <div className="star">
+                  <img src={Stary} alt="" />
+                </div>
+                <div className="star">
+                  <img src={Stary} alt="" />
+                </div>
+                <div className="star">(5.00)</div>
+                {/* <div className="d-flex slide_btn">
+                  <button class="nav-btn text-right next-slide">
+                    <img src="https://i.ibb.co/Jn6GBBC/next.png" />{' '}
+                  </button>
+                  <button class="nav-btn text-right prev-slide">
+                    <img src="https://i.ibb.co/Fn597p9/preview.png" />
+                  </button>
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </section>
         <section >
           <div className="row align-items-center">
             <div className="col-md-6 col-sm-0 customer">
@@ -312,20 +373,22 @@ const Tickets = () => {
                   <img src={Stary} alt="" />
                 </div>
                 <div className="star">(5.00)</div>
-                <div className="d-flex slide_btn">
+                {/* <div className="d-flex slide_btn">
                   <button class="nav-btn text-right next-slide">
                     <img src="https://i.ibb.co/Jn6GBBC/next.png" />{' '}
                   </button>
                   <button class="nav-btn text-right prev-slide">
                     <img src="https://i.ibb.co/Fn597p9/preview.png" />
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </section>
-        {/* </OwlCarousel> */}
+        
+        </OwlCarousel>
       </section>
+      
       </div>
       </div>
     </div>
