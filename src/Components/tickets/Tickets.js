@@ -29,7 +29,8 @@ import picture from '../../images/tickets/picture.png'
 import tanni from '../../images/tickets/tanni.jpg'
 import smily from '../../images/tickets/smily.png'
 import { Carousel } from '@trendyol-js/react-carousel';
-import vector from '../../images/tickets/Vector 5.png'
+import ticket2 from '../../images/tickets/ticket2.png'
+import ticket_pic from '../../images/tickets/ticket-pic.png'
 import OwlCarousel from 'react-owl-carousel'
 
 
@@ -64,6 +65,22 @@ const Tickets = () => {
         },
         1000: {
           items: 1,
+        },
+      },
+    };
+    let service = {
+      responsive: {
+        0: {
+          items: 2,
+        },
+        450: {
+          items: 2,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 3,
         },
       },
     };
@@ -111,10 +128,10 @@ const Tickets = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-1"></div>
-        <div className="col-md-5 col-sm-0 order-1 order-lg-2 align-content-center">
+        {/* <div className="col-md-1"></div> */}
+        <div className="col-md-6 col-sm-0 order-1 order-lg-2 align-content-center">
           <div className=" upperPicture  ">
-            <img src={upperPicture} />
+            <img src={ticket_pic} />
           </div>
         </div>
       </div>
@@ -200,6 +217,14 @@ tickets for various services like bus services, launch services, Beman ticket
 and more across all over Bangladesh.</h5>
         <div className=" row service_div">
           {/* <Carousel> */}
+          {/* <OwlCarousel
+           loop
+           margin={10}
+           items={6}
+           autoplay
+           dots={false}
+           {...option}
+           className=" d-flex  align-items-center owl-theme"> */}
           <div className="col-md-4  col-sm-12">
             <div className="service_card">
               <img src={bus2} alt="" />
@@ -218,7 +243,7 @@ and more across all over Bangladesh.</h5>
               </div>
             </div>
           </div>
-          <div className="col-md-4  col-sm-12">
+          <div className="col-md-4  col-sm-12 ">
             <div className="service_card">
               <img src={plane2} alt="" />
               <div className=" d-flex justify-content-between align-items-center p-22">
@@ -235,7 +260,7 @@ and more across all over Bangladesh.</h5>
               </div>
             </div>
           </div>
-          <div className="col-md-4  col-sm-12">
+          <div className="col-md-4  col-sm-12 ">
             <div className="service_card">
               <img src={launch2} alt="" />
               <div className="display  d-flex justify-content-between align-items-center p-22">
@@ -264,10 +289,10 @@ and more across all over Bangladesh.</h5>
       <section className="customer_review">
         <OwlCarousel
         navigation={true}
-        navText={[
-          `<div class='nav-btn prev-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></div>`,
-          `<div class='nav-btn next-slide'><img src="https://i.ibb.co/Jn6GBBC/next.png"/> </div>`,
-        ]}
+        // navText={[
+        //   `<div class='nav-btn prev-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></div>`,
+        //   `<div class='nav-btn next-slide'><img src="https://i.ibb.co/Jn6GBBC/next.png"/> </div>`,
+        // ]}
         loop
         margin={10}
         items={2}
@@ -301,7 +326,8 @@ and more across all over Bangladesh.</h5>
               Treir Ticket system is very helpfull. 100% Secure, Privacy Friendly, and 
               the best resources and also best in search
               </p>
-              <div className="ratings d-flex align-items-center">
+              <div className=" ratings d-flex align-items-center">
+                <div className="d-flex col-sm-2">
                 <div className="star">
                   <img src={Stary} alt="" />
                 </div>
@@ -318,14 +344,17 @@ and more across all over Bangladesh.</h5>
                   <img src={Stary} alt="" />
                 </div>
                 <div className="star">(5.00)</div>
-                {/* <div className="d-flex slide_btn">
-                  <button class="nav-btn text-right next-slide">
+                </div>
+                <div className="col-sm-6 "></div>
+
+                <div className="d-flex col-sm-4 col-md-5 slide_btn ">
+                  <button class="nav-btn text-right ">
                     <img src="https://i.ibb.co/Jn6GBBC/next.png" />{' '}
                   </button>
-                  <button class="nav-btn text-right prev-slide">
+                  <button class="nav-btn text-right ">
                     <img src="https://i.ibb.co/Fn597p9/preview.png" />
                   </button>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -357,6 +386,7 @@ and more across all over Bangladesh.</h5>
                 of type and scrambled
               </p>
               <div className="ratings d-flex align-items-center">
+                <div className="col-sm-2 d-flex">
                 <div className="star">
                   <img src={Stary} alt="" />
                 </div>
@@ -373,14 +403,16 @@ and more across all over Bangladesh.</h5>
                   <img src={Stary} alt="" />
                 </div>
                 <div className="star">(5.00)</div>
-                {/* <div className="d-flex slide_btn">
-                  <button class="nav-btn text-right next-slide">
+                </div>
+                <div className="col-sm-6"></div>
+                <div className="d-flex col-sm-4 col-md-5 slide_btn">
+                  <button class="nav-btn text-right ">
                     <img src="https://i.ibb.co/Jn6GBBC/next.png" />{' '}
                   </button>
-                  <button class="nav-btn text-right prev-slide">
+                  <button class="nav-btn text-right ">
                     <img src="https://i.ibb.co/Fn597p9/preview.png" />
                   </button>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
