@@ -318,7 +318,7 @@ const Tickets = () => {
                       </div>
                       <div className="profile_sec">
                         <h5>Saima Tanni</h5>
-                        <p>Frontend Developer</p>
+                        {/* <p>Frontend Developer</p> */}
                       </div>
                     </div>
                     <p className="cus_message">
@@ -376,7 +376,7 @@ const Tickets = () => {
                       </div>
                       <div className="profile_sec">
                         <h5>Aman Ullah</h5>
-                        <p>UI/UX Designer</p>
+                        {/* <p>UI/UX Designer</p> */}
                       </div>
                     </div>
                     <p className="cus_message">
