@@ -66,6 +66,7 @@ height: 70%;
     font-family: inter_r;
     /* font-size: 90%; */
     text-align: center;
+    font-size: 19px;
 }
 .text-box{
     margin-bottom: 45px;
@@ -155,13 +156,13 @@ font-weight: bold;
 }
 .destination_text h4 {
     position: absolute;
-    top: 35%;
+    top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 29px;
     text-align: center;
     
@@ -193,14 +194,14 @@ color: #FFFFFF;
  font-family: 'Montserrat', sans-serif;
    font-style: normal;
    font-weight: bold;
-font-size: 27px;
+font-size: 25px;
 line-height: 39px;
 
    color: #FFFFFF;
    }
    .destination_text2 p{
     position: absolute;
-    top: 54%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
        font-family: 'Montserrat', sans-serif;
@@ -213,12 +214,12 @@ line-height: 39px;
    }
    .destination_text2 h1{
        position: absolute;
-       top: 68%;
+       top: 64%;
     left: 50%;
     transform: translate(-50%, -50%);
      font-family: 'Montserrat', sans-serif;
       font-weight: bold;
-   font-size: 27px;
+   font-size: 25px;
    line-height: 39px;
       text-align: center;
       color: #FFFFFF;
@@ -267,11 +268,11 @@ border-radius: 40px;
 .service_card p{
 font-family: inter_r;
 font-style: normal;
-font-weight: 500;
-font-size: 25px;
+font-weight: bold;
+font-size: 16px;
 line-height: 30px;
 text-align: left;
-margin: 24px 24px;
+margin: 22px 22px;
 letter-spacing: 0.02em;
 
 color: #212121;
@@ -363,15 +364,19 @@ color: #000000;
     padding-left: 144px;
     padding-bottom: 32px;
 }
-.slide_btn{
+/* .slide_btn{
    margin-left: 270px; 
-}
+} */
 .slide_btn button{
+    height: 38px;
+    width: 38px;
+    border-radius: 100%;
     border: none;
-    margin-right: 25px;
-    margin-top: 12px;
+    margin: 7px;
+    /* padding: 10px; */
+    /* margin-top: 12px; */
     background: #FFFFFF;
-    left: 100%;
+    /* left: 100%; */
 box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
 transform: matrix(-1, 0, 0, 1, 0, 0);
 }
@@ -387,6 +392,31 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 .container-fluid{
     padding: 0;
 }
+.next-slide{
+    height: 366 px;
+    width: 36px;
+     background: white;
+     border-radius: 50%;
+     display: flex;
+      align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+border: none;
+}
+.prev-slide {
+    height: 36px;
+    width: 36px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+margin-left: 5px;
+border: none;
+}
 
 
 
@@ -400,7 +430,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 /* // X-Large devices (large desktops, less than 1400px) */
 
-@media (max-width: 1920px) { 
+@media (min-width: 1920px) { 
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1492px;
     }
@@ -412,6 +442,9 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
         .customer img {
             width: 100% !important;
             height: auto !important;
+          }
+          .middle-row{
+              height: 125px;
           }
 }
 @media (max-width: 1399.98px) { 
@@ -488,13 +521,9 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
            margin-top: 80px;
        }
        .service_card p {
-       
-        font-weight: 400;
-        font-size: 19px;
-        /* line-height: 30px; */
+        font-size: 17px;
         text-align: left;
-        margin: 19px;
-        letter-spacing: 0;
+        margin: 20px;
        }
 .customer_btn{
     margin-top: 80px;
@@ -513,13 +542,13 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   }
   .middle-row {
     width: 100%;
-    height: 145px;
+    height: 115px;
     margin-top: 80px;
 }
-.slide_btn {
+/* .slide_btn {
     margin-left: 205px;
 
-}
+} */
 }
 @media (max-width: 1199.98px) {
     .text-box img{
@@ -569,13 +598,8 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
            margin-top: 70px;
        }
        .service_card p {
-       
-        font-weight: 400;
-        font-size: 17px;
-        /* line-height: 30px; */
-        text-align: left;
+        font-size: 14px;
         margin: 19px;
-        letter-spacing: 0;
        }
        .customer_btn{
         margin-top: 70px;
@@ -588,13 +612,13 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .middle-row {
         width: 100%;
-        height: 123px;
+        height: 100px;
         margin-top: 70px;
     }
-    .slide_btn {
+    /* .slide_btn {
         margin-left: 95px;
     
-    }
+    } */
     .destination_text2 h1{
         font-size: 19px;
         color: white;
@@ -652,9 +676,9 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
            margin-top: 60px;
        }
        .service_card p {
-        font-size: 17px;
+        font-size: 10px;
         line-height: 20px;
-        margin:20px 13px;
+        margin:16px 13px;
        }
        .customer_btn{
         margin-top: 65px;
@@ -673,10 +697,10 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     .card_size{
         border-radius: 30px;
     }
-    .slide_btn {
+    /* .slide_btn {
         margin-left: 95px;
     
-    }
+    } */
     .destination_text2 h1{
         font-size: 14px;
         color: white;
@@ -694,13 +718,16 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
         color: white;
     }
     .destination_text h4{
-        font-size: 20px;
+        font-size: 15px;
     }
     .destination_text3 p{
         font-size: 11px;
     }
     .top_destination h2{
         font-size: 38px;
+    }
+    .card_size h4{
+        font-size: 12px !important;
     }
  }
 
@@ -709,7 +736,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
         width: 3%;
     }
     .customer img {
-        display: none;
+        display: none !important;
     }
     .upperPicture img {
         display: none;
@@ -784,17 +811,17 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .middle-row {
         width: 100%;
-        height: 96px;
+        height: 84px;
         margin-top: 55px;
         /* background-color:#F8FDFC ; */
     }
     .card_size{
         border-radius: 30px;
     }
-    .slide_btn {
+    /* .slide_btn {
         margin-left: 295px;
     
-    }
+    } */
     .destination img{
         padding-bottom: 30px;
         background: #F8FDFC;
@@ -813,7 +840,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
         color: white;
     }
     .destination_text2 p{
-        font-size: 10px;
+        font-size: 10px !important;
         color: white;
     }
     .destination_text3 h1{
@@ -821,11 +848,11 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
         font-size: 14px;
     }
     .destination_text h1{
-        font-size: 30px;
+        font-size: 28px;
         color: white;
     }
     .destination_text3 p{
-        font-size: 10px;
+        font-size: 10px !important;
     }
 
  }
@@ -852,12 +879,18 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
         height: 80px;
         margin-top: 39px;  
     }
-    .customer img {
+    .owl-theme.customer img {
        display: none;
     }
-    .slide_btn {
-        margin-left: 190px;
+    .customer.owl-item .customer img{
+        display: none !important;
     }
+    .customer img{
+        display: none !important;  
+    }
+    /* .slide_btn {
+        margin-left: 190px;
+    } */
     .destination img{
         padding-bottom: 30px;
         background-color: #F8FDFC;
@@ -865,6 +898,12 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .service_card{
         margin: 20px;
+    }
+    .service_card p {
+        font-size: 14px !important;
+        line-height: 12px;
+        font-weight: bold;
+        line-height: 17px;
     }
     .customer_btn{
         display: none;
@@ -882,6 +921,29 @@ font-size: 10px !important;
     .service_card p{
         font-size: 16px !important;
         line-height: 24px;
+        font-weight: bold;
+    }
+    .destination_text h4{
+        font-size: 11px !important;
+    }
+    .destination_text h1{
+        font-size: 24px;
+    }
+    .destination_text2 p {
+        font-size: 7px !important;
+        color: white;
+    }
+    .destination_text2 h1 {
+        font-size: 12px;
+        color: white;
+    }
+    .destination_text3 h1 {
+        font-size: 12px;
+        color: white;
+    }
+    .destination_text3 p {
+        font-size: 7px !important;
+        color: white;
     }
 
 }
@@ -913,9 +975,9 @@ font-size: 10px !important;
     .customer img {
        display: none;
     }
-    .slide_btn {
+    /* .slide_btn {
         margin-left: 190px;
-    }
+    } */
     .destination img{
         padding-bottom: 30px;
         background-color: #F8FDFC;
@@ -945,6 +1007,7 @@ font-size: 10px !important;
     }
     .top_destination h5{
         text-align: left;
+        display: none;
     }
     .destination{
         margin-top: 30px;
@@ -953,23 +1016,29 @@ font-size: 10px !important;
         font-size: 11px !important;
     }
     .destination_text h1{
-        font-size: 24px;
+        font-size: 21px;
     }
     .destination_text2 p {
         font-size: 7px !important;
         color: white;
     }
     .destination_text2 h1 {
-        font-size: 12px;
+        font-size: 10px;
         color: white;
     }
     .destination_text3 h1 {
-        font-size: 12px;
+        font-size: 11px;
         color: white;
     }
     .destination_text3 p {
         font-size: 7px !important;
         color: white;
+    }
+    .service h5{
+        display: none;
+    }
+    .service h1{
+        font-size: 25px;
     }
     .service {
         margin-top: 11;
@@ -989,7 +1058,60 @@ font-size: 10px !important;
     .ticket-body{
         padding-top: 101px;
     }
+    /* .slide_btn button{
+        margin-left: 50px;
+    } */
 
+.slide_btn button{
+    height: 25px;
+    width: 25px;
+    /* margin-right: 25px; */
+}
+.service_card p {
+    font-size: 14px !important;
+    line-height: 12px;
+    font-weight: bold;
+    line-height: 17px;
+}
 
+}
+@media (max-width: 320.98px) { 
+    .card_size h4{
+        font-size: 10px !important;
+    }
+    .card_size{
+        border-radius: 25px;
+    }
+
+.destination_text h1 {
+    font-size: 19px;
+}
+.destination_text2 p {
+    font-size: 5px !important;
+    color: white;
+}
+.destination_text2 h1 {
+    font-size: 9px;
+    /* color: white; */
+}
+.destination_text3 h1 {
+    font-size: 9px;
+    color: white;
+}
+.destination_text3 p {
+    font-size: 5px !important;
+    color: white;
+}
+.service_card p {
+    font-size: 10px !important;
+    line-height: 19px;
+    /* font-weight: bold; */
+    margin: 18px !important;
+}
+.slide_btn button{
+    height: 23px;
+    width: 23px;
+    margin-right: -58px;
+}
 }
 
