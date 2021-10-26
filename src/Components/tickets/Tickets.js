@@ -77,7 +77,7 @@ const Tickets = () => {
           items: 2,
         },
         600: {
-          items: 3,
+          items: 2,
         },
         1000: {
           items: 3,
@@ -223,7 +223,7 @@ and more across all over Bangladesh.</h5>
            items={6}
            autoplay
            dots={false}
-           {...option}
+           {...service}
            className=" d-flex  align-items-center owl-theme"> */}
           <div className="col-md-4  col-sm-12">
             <div className="service_card">
@@ -243,7 +243,7 @@ and more across all over Bangladesh.</h5>
               </div>
             </div>
           </div>
-          <div className="col-md-4  col-sm-12 ">
+          <div className="col-md-4  col-sm-2 col-sm-12 ">
             <div className="service_card">
               <img src={plane2} alt="" />
               <div className=" d-flex justify-content-between align-items-center p-22">
@@ -278,7 +278,7 @@ and more across all over Bangladesh.</h5>
               </div>
             </div>
           </div>
-          {/* </Carousel> */}
+          {/* </OwlCarousel> */}
         </div>
         <button className="btn customer_btn">
           Load more <i className="fa fa-caret-right lmore"></i>
@@ -380,10 +380,9 @@ and more across all over Bangladesh.</h5>
                 </div>
               </div>
               <p className="cus_message">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled
+                I don’t know of another website as comprehensive as this one. They do a really good job. 
+                Ghuri-Ticket also leaves room for spontaneity and last minute travel changes.
+                
               </p>
               <div className="ratings d-flex align-items-center">
                 <div className="col-sm-2 d-flex">

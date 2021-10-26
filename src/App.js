@@ -222,9 +222,9 @@ function App() {
             <Tickets></Tickets>
           </Route>
 
-          {/* <Route path="*">
+          <Route path="*">
             <Notmatch />
-          </Route> */}
+          </Route>
         </Switch>
 
         <Footer />
