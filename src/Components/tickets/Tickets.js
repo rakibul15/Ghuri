@@ -7,12 +7,12 @@ import plane from '../../images/tickets/plane.png'
 import launch from '../../images/tickets/launch.png'
 import bus from '../../images/tickets/bus.png'
 import upperPicture from '../../images/tickets/upperPicture.png'
-import novoair from '../../images/tickets/novoair.png'
+// import novoair from '../../images/tickets/novoair.png'
 import glpl2 from '../../images/tickets/glpl2.png'
 import glpl3 from '../../images/tickets/glpl3.png'
 import BBAL1 from '../../images/tickets/BBAL1.png'
-import usb from '../../images/tickets/usb.png'
-import shohag from '../../images/tickets/shohag.png'
+// import usb from '../../images/tickets/usb.png'
+// import shohag from '../../images/tickets/shohag.png'
 import cox from '../../images/tickets/cox.png'
 // import cox1 from '../../images/tickets/cox1.png'
 import cox2 from '../../images/tickets/cox2.png'
@@ -152,19 +152,19 @@ const Tickets = () => {
                 <img src={BBAL1} />
               </div>
               <div className=" airline">
-                <img src={novoair} />
+                <img src={glpl2} />
               </div>
               <div className="  airline">
-                <img src={usb} />
+                <img src={BBAL1} />
               </div>
               <div className="  airline">
                 <img src={glpl2} />
               </div>
               <div className="  airline">
-                <img src={shohag} />
+                <img src={glpl2} />
               </div>
               <div className="  airline">
-                <img src={novoair} />
+                <img src={BBAL1} />
               </div>
             </OwlCarousel>
             {/* </div> */}
