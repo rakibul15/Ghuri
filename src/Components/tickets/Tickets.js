@@ -149,16 +149,16 @@ const Tickets = () => {
               {...option}
               className=" d-flex  align-items-center owl-theme">
               <div className="  airline">
-                <img src={usb} />
+                <img src={glpl3} />
               </div>
               <div className=" airline">
-                <img src={glpl2} />
-              </div>
-              <div className="  airline">
                 <img src={BBAL1} />
               </div>
               <div className="  airline">
-                <img src={shohag} />
+                <img src={glpl3} />
+              </div>
+              <div className="  airline">
+                <img src={BBAL1} />
               </div>
               <div className="  airline">
                 <img src={glpl2} />
