@@ -47,6 +47,7 @@ import Jobform from "./Components/career/Jobform";
 ///////////////tanni-ticket///////////////
 import Tickets from './Components/tickets/Tickets'
 import FoodHome from "./Components/GhuriFood/FoodHome";
+import GhuriTruck from "./Components/ghuriTrack/GhuriTruck";
 
 function App() {
   return (
@@ -222,9 +223,14 @@ function App() {
             <Tickets></Tickets>
           </Route>
 
-          {/* <Route path="*">
+          {/* Ghuri Truck */}
+          <Route path="/ghuriTruck">
+           <GhuriTruck></GhuriTruck>
+          </Route>
+
+          <Route path="*">
             <Notmatch />
-          </Route> */}
+          </Route>
         </Switch>
 
         <Footer />
