@@ -11,8 +11,8 @@ import upperPicture from '../../images/tickets/upperPicture.png'
 import glpl2 from '../../images/tickets/glpl2.png'
 import glpl3 from '../../images/tickets/glpl3.png'
 import BBAL1 from '../../images/tickets/BBAL1.png'
-// import usb from '../../images/tickets/usb.png'
-// import shohag from '../../images/tickets/shohag.png'
+import usb from '../../images/tickets/usb.png'
+import shohag from '../../images/tickets/shohag.png'
 import cox from '../../images/tickets/cox.png'
 // import cox1 from '../../images/tickets/cox1.png'
 import cox2 from '../../images/tickets/cox2.png'
@@ -149,7 +149,7 @@ const Tickets = () => {
               {...option}
               className=" d-flex  align-items-center owl-theme">
               <div className="  airline">
-                <img src={BBAL1} />
+                <img src={usb} />
               </div>
               <div className=" airline">
                 <img src={glpl2} />
@@ -158,7 +158,7 @@ const Tickets = () => {
                 <img src={BBAL1} />
               </div>
               <div className="  airline">
-                <img src={glpl2} />
+                <img src={shohag} />
               </div>
               <div className="  airline">
                 <img src={glpl2} />
@@ -174,43 +174,7 @@ const Tickets = () => {
 
         </div>
         <div className="container">
-          <div className="top_destination">
-            <h2>Top Destination</h2>
-            <h5>After an 18-month ban on most inbound travel, the US is set to update its border rules on
-              November 8, by requiring all foreign visitors to be vaccinated before entering.
-              Here's what you need to know about the new travel policy.</h5>
-            <div className=" row destination ">
-              <div className="col-md-8 col-sm-12  destination_text">
-                <h4>M A R I N E D R I V E</h4>
-                <h1>COX ’ S BAZAR</h1>
-                <img src={cox} alt="" />
-              </div>
-              <div className="col-md-4  col-sm-6  col-6 destination_text2">
-                <p>M A R I N E D R I V E</p>
-                <h1>COX ’ S BAZAR</h1>
-                <img src={cox2} alt="" />
-              </div>
-              {/* </div> */}
-              {/* <div className="  destination destination2"> */}
-              <div className="col-md-4  col-sm-6 col-6 destination_text3 ">
-                <p>M A R I N E D R I V E</p>
-                <h1>COX ' S BAZAR</h1>
-                <img src={cox3} alt="" />
-              </div>
-              <div className="col-md-4  col-sm-6 col-6  destination_text3">
-                <p>M A R I N E D R I V E</p>
-                <h1>COX ' S BAZAR</h1>
-                <img src={cox4} alt="" />
-              </div>
-              <div className="col-md-4  col-sm-6 col-6  destination_text3">
-                <p>M A R I N E D R I V E</p>
-                <h1>COX ' S BAZAR</h1>
-                <img src={cox5} alt="" />
-              </div>
-              {/* </div> */}
-            </div>
-          </div>
-          <div className=" service">
+        <div className=" service">
             <h1>Our Best Services</h1>
             <h5>GHURI Ticket is a premium online booking portal which allows users to purchase
               tickets for various services like bus services, launch services, Beman ticket
@@ -284,6 +248,43 @@ const Tickets = () => {
               Load more <i className="fa fa-caret-right lmore"></i>
             </button>
           </div>
+          <div className="top_destination">
+            <h2>Top Destination</h2>
+            <h5>After an 18-month ban on most inbound travel, the US is set to update its border rules on
+              November 8, by requiring all foreign visitors to be vaccinated before entering.
+              Here's what you need to know about the new travel policy.</h5>
+            <div className=" row destination ">
+              <div className="col-md-8 col-sm-12  destination_text">
+                <h4>M A R I N E D R I V E</h4>
+                <h1>COX ’ S BAZAR</h1>
+                <img src={cox} alt="" />
+              </div>
+              <div className="col-md-4  col-sm-6  col-6 destination_text2">
+                <p>M A R I N E D R I V E</p>
+                <h1>COX ’ S BAZAR</h1>
+                <img src={cox2} alt="" />
+              </div>
+              {/* </div> */}
+              {/* <div className="  destination destination2"> */}
+              <div className="col-md-4  col-sm-6 col-6 destination_text3 ">
+                <p>M A R I N E D R I V E</p>
+                <h1>COX ' S BAZAR</h1>
+                <img src={cox3} alt="" />
+              </div>
+              <div className="col-md-4  col-sm-6 col-6  destination_text3">
+                <p>M A R I N E D R I V E</p>
+                <h1>COX ' S BAZAR</h1>
+                <img src={cox4} alt="" />
+              </div>
+              <div className="col-md-4  col-sm-6 col-6  destination_text3">
+                <p>M A R I N E D R I V E</p>
+                <h1>COX ' S BAZAR</h1>
+                <img src={cox5} alt="" />
+              </div>
+              {/* </div> */}
+            </div>
+          </div>
+         
 
 
           <section className="customer_review">
@@ -312,8 +313,8 @@ const Tickets = () => {
                       {' '}
                       Customer <br /> say about us
                     </h1>
-                    <div className="user_food d-flex">
-                      <div className="user">
+                    <div className="user_food user d-flex align-items-center">
+                      <div >
                         <img src={tanni} alt="" />
                       </div>
                       <div className="profile_sec">
@@ -370,9 +371,11 @@ const Tickets = () => {
                       {' '}
                       Customer <br /> say about us
                     </h1>
-                    <div className="user_food d-flex">
-                      <div className="user">
+                    <div className=" user d-flex ">
+                      <div className=" align-items-center">
                         <img src={picture} alt="" />
+                        {/* <h5>Aman Ullah</h5> */}
+
                       </div>
                       <div className="profile_sec">
                         <h5>Aman Ullah</h5>
