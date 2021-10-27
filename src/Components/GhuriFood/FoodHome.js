@@ -249,8 +249,9 @@ const FoodHome = () => {
             <OwlCarousel
               navigation={true}
               navText={[
-                `<div class='nav-btn prev-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></div>`,
-                `<div class='nav-btn next-slide'><img src="https://i.ibb.co/Jn6GBBC/next.png"/> </div>`,
+                `<div class='nav-btn prev-slide'><img src="https://i.ibb.co/Jn6GBBC/next.png"/> </div>`,
+                `<div class='nav-btn next-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></div>`,
+                
               ]}
               loop
               margin={10}
