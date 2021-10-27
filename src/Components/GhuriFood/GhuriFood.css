@@ -250,6 +250,7 @@
   width: 56px;
   object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .star img {
@@ -280,7 +281,8 @@
 
 .profile_sec h5 {
   font-size: 26px;
-  margin: 0px !important;
+  /* margin: 0px !important; */
+  margin-top: 22px;
   font-family: inter_m;
 }
 
@@ -564,7 +566,7 @@
   }
   .profile_sec h5 {
     font-size: 18px;
-    margin: 0px !important;
+    /* margin: 0px !important; */
     font-family: inter_m;
   }
   .cus_message {
@@ -694,7 +696,7 @@
   }
   .profile_sec h5 {
     font-size: 16px;
-    margin: 0px !important;
+    /* margin: 0px !important; */
     font-family: inter_m;
   }
   .hero_food {
@@ -847,4 +849,23 @@
   .fresh_veg img {
     width: 90%;
   }
+  .single_cart_food{
+    height: 385px !important;
+  }  
+ 
+  .single_cart_food img {
+  
+    object-fit: cover;
+    width: 75%;
+  }
 }
+/* @media (max-width: 375.98px) {
+  .single_cart_food img {
+  
+    object-fit: cover;
+    width: 75%;
+  }
+  .single_cart_food{
+    height: 385px !important;
+  } 
+} */
