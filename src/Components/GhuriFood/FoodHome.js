@@ -270,13 +270,13 @@ const FoodHome = () => {
                       {" "}
                       Customer <br /> say about us
                     </h1>
-                    <div className="user_food d-flex">
+                    <div className="user_food d-flex align-items-center">
                       <div className="image_sec">
                         <img src={aman} alt="" />
                       </div>
                       <div className="profile_sec">
                         <h5>Aman Ullah</h5>
-                        <p>UI/UX Designer</p>
+                        {/* <p>UI/UX Designer</p> */}
                       </div>
                     </div>
                     <p className="cus_message">
@@ -325,7 +325,7 @@ const FoodHome = () => {
                       </div>
                       <div className="profile_sec">
                         <h5>Rakibul Hasan</h5>
-                        <p>Frontend Developer</p>
+                        {/* <p>Frontend Developer</p> */}
                       </div>
                     </div>
                     <p className="cus_message">

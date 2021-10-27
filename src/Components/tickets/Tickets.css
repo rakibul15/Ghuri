@@ -87,7 +87,7 @@ height: 100%;
     width: 100%;
     height: 123px;
     background: #E6E6E6;
-    margin-top: 90px;
+    margin-top: 64px;
 
 }
 .airline img{
@@ -124,7 +124,7 @@ color: #3D3D3D;
  
 }
 .destination{
-    margin-top: 90px;
+    margin-top: 70px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -230,7 +230,7 @@ line-height: 39px;
 
    }
    .service_div{
-       margin-top:120px ;
+       margin-top:70px ;
    }
    .service h5{
     font-family: inter_r;
@@ -311,7 +311,7 @@ height: 59px;
     padding: 9px 25px;
     font-size: 15px !important;
     font-family: inter_m; 
-    margin-top: 90px;
+    margin-top: 70px;
 }
 .lmore.fa{
     margin-left: 20px;
@@ -337,10 +337,13 @@ margin-left: 127px;
     line-height: 79px;
     font-family: inter_r;
 }
-.user{
-    /* margin-top: 32px; */
-    
-    /* float: right; */
+/* .user{
+    margin-bottom: 15px;
+} */
+.profile_sec h5{
+    font-size: 16px;
+    margin-top: 22px !important;
+    font-family: inter_m;
 }
 .user img{
     /* margin-top: 32px; */
