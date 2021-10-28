@@ -58,6 +58,7 @@ const FoodHome = () => {
                 Learn More <i className="fa fa-caret-right"></i>
               </button> */}
             </div>
+         
             <div className="col-sm-6 hero_food_IMG">
               <img src={foodcover} alt="" />
             </div>
