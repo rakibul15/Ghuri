@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import plane from '../../images/tickets/plane.png'
 import launch from '../../images/tickets/launch.png'
 import bus from '../../images/tickets/bus.png'
-import upperPicture from '../../images/tickets/upperPicture.png'
+import review from '../../images/tickets/review.jpg'
 // import novoair from '../../images/tickets/novoair.png'
 import glpl2 from '../../images/tickets/greenline2.png'
 
@@ -186,7 +186,7 @@ const Tickets = () => {
         <div className=" service">
             <h1>Our Best Services</h1>
             <h5>GHURI Ticket is a premium online booking portal which allows users to purchase<br/>
-              tickets for various services like bus services, launch services, Beman ticket<br/>
+              tickets for various services like bus, launch, Biman ticket<br/>
               and more across all over Bangladesh.</h5>
             <div className=" row service_div">
               {/* <Carousel> */}
@@ -265,29 +265,29 @@ const Tickets = () => {
             <div className=" row destination ">
               <div className="col-md-8 col-sm-12  destination_text">
                 <h4>M A R I N E D R I V E</h4>
-                <h1>COX ’ S BAZAR</h1>
+                <h1>COX'S BAZAR</h1>
                 <img src={cox} alt="" />
               </div>
               <div className="col-md-4  col-sm-6  col-6 destination_text2">
                 <p>M A R I N E D R I V E</p>
-                <h1>COX ’ S BAZAR</h1>
+                <h1>COX'S BAZAR</h1>
                 <img src={cox2} alt="" />
               </div>
               {/* </div> */}
               {/* <div className="  destination destination2"> */}
               <div className="col-md-4  col-sm-6 col-6 destination_text3 ">
                 <p>M A R I N E D R I V E</p>
-                <h1>COX ' S BAZAR</h1>
+                <h1>COX'S BAZAR</h1>
                 <img src={cox3} alt="" />
               </div>
               <div className="col-md-4  col-sm-6 col-6  destination_text3">
                 <p>M A R I N E D R I V E</p>
-                <h1>COX ' S BAZAR</h1>
+                <h1>COX'S BAZAR</h1>
                 <img src={cox4} alt="" />
               </div>
               <div className="col-md-4  col-sm-6 col-6  destination_text3">
                 <p>M A R I N E D R I V E</p>
-                <h1>COX ' S BAZAR</h1>
+                <h1>COX'S BAZAR</h1>
                 <img src={cox5} alt="" />
               </div>
               {/* </div> */}
@@ -332,9 +332,9 @@ const Tickets = () => {
                       </div>
                     </div>
                     <p className="cus_message">
-                      The website is fantastic for everything; food, tickets and truck, parcel.
-                      Treir Ticket system is very helpfull. 100% Secure, Privacy Friendly, and
-                      the best resources and also best in search
+                      This website is fantastic for everything like food, tickets, truck and parcel.
+                      Their Ticket system is very helpful, 100% Secure, privacy friendly and
+                      the best resources and also best in search.
                     </p>
                     <div className=" ratings d-flex align-items-center">
                       <div className="d-flex col-sm-2">
@@ -392,7 +392,7 @@ const Tickets = () => {
                       </div>
                     </div>
                     <p className="cus_message">
-                      I don’t know of another website as comprehensive as this one. They do a really good job.
+                      I don’t know of another website as comprehensive as this one. They do really a good job.
                       Ghuri-Ticket also leaves room for spontaneity and last minute travel changes.
 
                     </p>

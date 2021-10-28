@@ -12,7 +12,7 @@ import fooditem2 from "../../images/food/fooditem2.png";
 import fooditem3 from "../../images/food/fooditem3.png";
 
 import star from "../../images/food/Star.png";
-import cheif from "../../images/food/chefs.png";
+import cheif from "../../images/food/chefs2.png";
 import mark from "../../images/food/mark.png";
 import aman from "../../images/food/aman.png";
 import rakib from "../../images/food/rakib.JPG";
@@ -58,6 +58,7 @@ const FoodHome = () => {
                 Learn More <i className="fa fa-caret-right"></i>
               </button> */}
             </div>
+         
             <div className="col-sm-6 hero_food_IMG">
               <img src={foodcover} alt="" />
             </div>
