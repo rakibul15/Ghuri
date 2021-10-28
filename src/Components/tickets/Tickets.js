@@ -176,8 +176,8 @@ const Tickets = () => {
         <div className="container">
         <div className=" service">
             <h1>Our Best Services</h1>
-            <h5>GHURI Ticket is a premium online booking portal which allows users to purchase
-              tickets for various services like bus services, launch services, Beman ticket
+            <h5>GHURI Ticket is a premium online booking portal which allows users to purchase<br/>
+              tickets for various services like bus services, launch services, Beman ticket<br/>
               and more across all over Bangladesh.</h5>
             <div className=" row service_div">
               {/* <Carousel> */}
@@ -189,8 +189,8 @@ const Tickets = () => {
            dots={false}
            {...service}
            className=" d-flex  align-items-center owl-theme"> */}
-              <div className="col-md-4  col-sm-12">
-                <div className="service_card">
+              <div className="col-md-4 service_card col-sm-12">
+                {/* <div className="service_card"> */}
                   <img src={bus2} alt="" />
                   <div className="d-flex justify-content-between align-items-center ">
                     <p>
@@ -205,10 +205,10 @@ const Tickets = () => {
                     </div>
 
                   </div>
-                </div>
+                {/* </div> */}
               </div>
-              <div className="col-md-4  col-sm-2 col-sm-12 ">
-                <div className="service_card">
+              <div className="col-md-4 service_card col-sm-2 col-sm-12 ">
+                {/* <div className="service_card"> */}
                   <img src={plane2} alt="" />
                   <div className=" d-flex justify-content-between align-items-center p-22">
                     <p>
@@ -222,10 +222,10 @@ const Tickets = () => {
                       <p> (5.00)</p>
                     </div>
                   </div>
-                </div>
+                {/* </div> */}
               </div>
-              <div className="col-md-4  col-sm-12 ">
-                <div className="service_card">
+              <div className="col-md-4 service_card col-sm-12 ">
+                {/* <div className="service_card"> */}
                   <img src={launch2} alt="" />
                   <div className="display  d-flex justify-content-between align-items-center p-22">
                     <p>
@@ -240,7 +240,7 @@ const Tickets = () => {
                       <p> (5.00)</p>
                     </div>
                   </div>
-                </div>
+                {/* </div> */}
               </div>
               {/* </OwlCarousel> */}
             </div>
@@ -250,8 +250,8 @@ const Tickets = () => {
           </div>
           <div className="top_destination">
             <h2>Top Destination</h2>
-            <h5>After an 18-month ban on most inbound travel, the US is set to update its border rules on
-              November 8, by requiring all foreign visitors to be vaccinated before entering.
+            <h5>After an 18-month ban on most inbound travel, the US is set to update its border rules on<br/>
+              November 8, by requiring all foreign visitors to be vaccinated before entering.<br/>
               Here's what you need to know about the new travel policy.</h5>
             <div className=" row destination ">
               <div className="col-md-8 col-sm-12  destination_text">
