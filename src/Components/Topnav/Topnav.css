@@ -123,33 +123,62 @@
 }
 .parcel_icon a {
   background-image: url(../../images/others/parcel_icon.png);
-  background-size: 28px 28px;
+  background-size: 40px 40px;
+  background-size: 40px 40px;
+  object-fit: cover;
 }
+
+
+.food_icon a {
+  background-image: url(../../images/food/food.png);
+  background-size: 40px 40px;
+  background-size: 40px 40px;
+  object-fit: cover;
+}
+
+
+
+
 .health_icon a {
   background-image: url(../../images/others/Health.png);
-  background-size: 28px 28px;
+  background-size: 40px 40px;
+  object-fit: cover;
 }
 .interior_icon a {
   background-image: url(../../images/others/Interior-icon.png);
-  background-size: 28px 28px;
+  background-size: 40px 40px;
+  background-size: 40px 40px;
+  object-fit: cover;
 }
 .news_icon a {
   background-image: url(../../images/others/news.png);
-  background-size: 28px 28px;
+  background-size: 40px 40px;
+  background-size: 40px 40px;
+  object-fit: cover;
 }
 .signup_icon a{
   background-image: url(../../images/others/Signup.png);
-  background-size: 28px 28px;
+  background-size: 40px 40px;
+  background-size: 40px 40px;
+  object-fit: cover;
 
 }
 .login_icon a{
   background-image: url(../../images/others/login.png);
-  background-size: 28px 28px;
+  background-size: 40px 40px;
+  background-size: 40px 40px;
+  object-fit: cover;
 
 }
 
 .last_nav{
   padding-right: 16px !important;
+}
+
+/* /////////////////tanni-ticket////////////////// */
+.ticket_icon a {
+  background-image: url(../../images/tickets/ticket_service.png);
+  background-size: 40px 40px;
 }
 
 /* DropDown Menu */

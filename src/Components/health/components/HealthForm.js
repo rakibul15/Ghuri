@@ -252,7 +252,7 @@ const HealthForm = () => {
               <Form.Row>
                 <div className="col-sm-12  checkbox">
                  
-                  <div class="squaredThree mt-1">
+                  <div className="squaredThree mt-1">
                     <input
                       type="checkbox"
                       name="optionsRadios"
@@ -262,7 +262,7 @@ const HealthForm = () => {
                     />
                     <label for="checkOther"></label>
                   </div>
-                  <label class="label-text ml-4">
+                  <label className="label-text ml-4">
                     {" "}
                     I agree with all the
                     <a href="/HealthTerms" target="_blank">

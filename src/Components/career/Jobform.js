@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Button, Col, Form, FormControl, Row } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { useHistory, useParams } from "react-router";
+import { useParams } from "react-router";
 import {
   GetCandidateInput,
   GetCareerDetails,
@@ -18,7 +18,7 @@ const Jobform = () => {
 
   const handleChangeInput = (name, value) => {
     dispatch(GetCandidateInput(name, value));
-    console.log(name, value);
+    // console.log(name, value);
   };
   useEffect(() => {
     dispatch(GetCareerDetails(id));
@@ -27,8 +27,9 @@ const Jobform = () => {
   const candidateInput = useSelector(
     (state) => state.careerInfo.candidateInput
   );
+  console.log(` job form id`,id)
   const handleSubmit = (data) => {
-    dispatch(SubmitCandidateInput(data, id));
+    dispatch(SubmitCandidateInput(data,id));
     // dispatch(GetCareerDetails(id));
   };
 
@@ -38,9 +39,9 @@ const Jobform = () => {
         <>
           <div className="Nav_overflow">
             <div className="container mt-5 pt-5 mb-5 pb-5">
-              <div class="d-flex justify-content-center  mt-5">
-                <div class="spinner-border mt-5" role="status">
-                  <span class="sr-only">Loading...</span>
+              <div className="d-flex justify-content-center  mt-5">
+                <div className="spinner-border mt-5" role="status">
+                  <span className="sr-only">Loading...</span>
                 </div>
               </div>
             </div>
@@ -55,7 +56,7 @@ const Jobform = () => {
               <div className="col-sm-12">
                 <div className="row d-flex align-items-center text-center justify-content-center">
                   <div className="col-sm-12 JObAForm">
-                    <h2>Job Application Form</h2>
+                  
 
                     <h4>{careerDetails.title}</h4>
                   </div>
@@ -73,7 +74,7 @@ const Jobform = () => {
                       <div className="row mt-3 d-flex align-items-center">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Name<span className="text-danger"></span>
+                            Name*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -94,7 +95,7 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Email<span className="text-danger"></span>
+                            Email*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -114,7 +115,7 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Phone<span className="text-danger"></span>
+                            Phone*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -135,7 +136,7 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            University<span className="text-danger"></span>
+                            University*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
@@ -156,16 +157,16 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Cgpa<span className="text-danger"></span>
+                            CGPA*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
                           <FormControl
                             className="edit_form_control"
                             autoComplete="off"
-                            type="text"
+                            type="number"
                             name="cgpa"
-                            placeholder="Cgpa"
+                            placeholder="CGPA"
                             value={GetCandidateInput.cgpa}
                             onChange={(e) =>
                               handleChangeInput(e.target.name, e.target.value)
@@ -177,20 +178,20 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Gender<span className="text-danger"></span>
+                            Gender*<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
                           <div>
                             <select
-                              class="form-control"
+                              className="form-control"
                               name="gender"
                               value={GetCandidateInput.gender}
                               onChange={(e) =>
                                 handleChangeInput(e.target.name, e.target.value)
                               }
                             >
-                              <option selected>Select a notice period</option>
+                              <option value="">Select Gender</option>
                               <option value="male">Male</option>
                               <option value="female">Female</option>
                             </select>
@@ -207,7 +208,7 @@ const Jobform = () => {
                       <div className="row mt-3  d-flex align-items-center">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Resume
+                            Resume*
                             <span className="text-danger"></span>
                           </label>
                         </div>
@@ -276,7 +277,7 @@ const Jobform = () => {
                         <div className="col-sm-9">
                           <FormControl
                             className="edit_form_control"
-                            type="text"
+                            type="number"
                             name="current"
                             placeholder="Current salary"
                             value={GetCandidateInput.current}
@@ -295,7 +296,7 @@ const Jobform = () => {
                         <div className="col-sm-9">
                           <FormControl
                             className="edit_form_control"
-                            type="text"
+                            type="number"
                             name="expected"
                             placeholder="Expected salary"
                             value={GetCandidateInput.current}
@@ -309,20 +310,20 @@ const Jobform = () => {
                       <div className="row  d-flex align-items-center mt-3">
                         <div className="col-sm-3 text-right">
                           <label>
-                            Notice<span className="text-danger"></span>
+                            Notice Period<span className="text-danger"></span>
                           </label>
                         </div>
                         <div className="col-sm-9">
                           <div>
                             <select
-                              class="form-control"
+                              className="form-control"
                               name="notice"
                               // value={careerInput.expected}
                               onChange={(e) =>
                                 handleChangeInput(e.target.name, e.target.value)
                               }
                             >
-                              <option selected>Select a notice period</option>
+                              <option value="">Select a notice period</option>
                               <option value="7days">7 days</option>
                               <option value="15days">15 days</option>
                               <option value="1 month">1 Month</option>
@@ -344,7 +345,8 @@ const Jobform = () => {
                           )}
 
                           {isLoading && (
-                            <Button disabled
+                            <Button
+                              disabled
                               onClick={() => handleSubmit(candidateInput)}
                               className="btn btn_submit_job poin p-2"
                               type="submit"

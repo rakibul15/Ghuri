@@ -44,6 +44,10 @@ import ParcelModal from "./Components/parcelDetails/ParcelModal";
 import Career from "./Components/career/Career";
 import Job from "./Components/career/Job";
 import Jobform from "./Components/career/Jobform";
+///////////////tanni-ticket///////////////
+import Tickets from './Components/tickets/Tickets'
+import FoodHome from "./Components/GhuriFood/FoodHome";
+import GhuriTruck from "./Components/ghuriTrack/GhuriTruck";
 
 function App() {
   return (
@@ -138,7 +142,7 @@ function App() {
           </Route>
 
           {/* Ticket */}
-          <Route path="/ticket">
+          {/* <Route path="/ticket">
             <Header></Header>
             <Count />
             <Ticket></Ticket>
@@ -146,7 +150,7 @@ function App() {
             <Headline></Headline>
             <Partners></Partners>
             <Clients></Clients>
-          </Route>
+          </Route> */}
 
           {/* sign up */}
           <Route path="/signup">
@@ -200,14 +204,28 @@ function App() {
           <Route path="/parcelModal">
             <ParcelModal></ParcelModal>
           </Route>
-          <Route path="/career">
+          <Route exact path="/career">
             <Career></Career>
           </Route>
-          <Route path="/job/:id">
+          <Route exact path="/ghuriFood">
+           <FoodHome></FoodHome>
+          </Route>
+
+          <Route exact path="/career/details/:id/:slug">
             <Job></Job>
           </Route>
-          <Route path="/jobform/:id">
+          <Route exact path="/career/application/:id/:slug">
             <Jobform></Jobform>
+          </Route>
+
+          {/* ////////////tanni-ticket///////////////// */}
+          <Route path="/ticket">
+            <Tickets></Tickets>
+          </Route>
+
+          {/* Ghuri Truck */}
+          <Route path="/ghuriTruck">
+           <GhuriTruck></GhuriTruck>
           </Route>
 
           <Route path="*">
