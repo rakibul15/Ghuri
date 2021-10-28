@@ -47,6 +47,7 @@ import Jobform from "./Components/career/Jobform";
 ///////////////tanni-ticket///////////////
 import Tickets from './Components/tickets/Tickets'
 import FoodHome from "./Components/GhuriFood/FoodHome";
+import GhuriTruck from "./Components/ghuriTrack/GhuriTruck";
 
 function App() {
   return (
@@ -220,6 +221,11 @@ function App() {
           {/* ////////////tanni-ticket///////////////// */}
           <Route path="/ticket">
             <Tickets></Tickets>
+          </Route>
+
+          {/* Ghuri Truck */}
+          <Route path="/ghuriTruck">
+           <GhuriTruck></GhuriTruck>
           </Route>
 
           <Route path="*">

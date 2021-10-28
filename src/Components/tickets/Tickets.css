@@ -348,7 +348,7 @@ margin-left: 127px;
 }
 .user img{
     /* margin-top: 32px; */
-    width: 56px;
+    width: 56px !important;
 height: 56px;
 border-radius: 100%;
 /* float: left; */

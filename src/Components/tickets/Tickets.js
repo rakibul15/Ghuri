@@ -8,11 +8,10 @@ import launch from '../../images/tickets/launch.png'
 import bus from '../../images/tickets/bus.png'
 import upperPicture from '../../images/tickets/upperPicture.png'
 // import novoair from '../../images/tickets/novoair.png'
-import glpl2 from '../../images/tickets/glpl2.png'
-import glpl3 from '../../images/tickets/glpl3.png'
-import BBAL1 from '../../images/tickets/BBAL1.png'
-import usb from '../../images/tickets/usb.png'
-import shohag from '../../images/tickets/shohag.png'
+import glpl2 from '../../images/tickets/greenline2.png'
+
+
+
 import cox from '../../images/tickets/cox.png'
 // import cox1 from '../../images/tickets/cox1.png'
 import cox2 from '../../images/tickets/cox2.png'
@@ -32,6 +31,16 @@ import { Carousel } from '@trendyol-js/react-carousel';
 import ticket2 from '../../images/tickets/ticket2.png'
 import ticket_pic from '../../images/tickets/ticket-pic.png'
 import OwlCarousel from 'react-owl-carousel'
+
+
+import novo from "../../images/tickets/novo.png"
+import shohag from "../../images/tickets/shohag2.png"
+import usb from "../../images/tickets/usb2.png"
+import usbangla from "../../images/tickets/usbangla.png"
+
+
+
+
 
 
 const Tickets = () => {
@@ -149,22 +158,22 @@ const Tickets = () => {
               {...option}
               className=" d-flex  align-items-center owl-theme">
               <div className="  airline">
-                <img src={glpl3} />
+                <img src={glpl2} />
               </div>
               <div className=" airline">
-                <img src={BBAL1} />
+                <img src={novo} />
               </div>
               <div className="  airline">
-                <img src={glpl3} />
+                <img src={usb} />
               </div>
               <div className="  airline">
-                <img src={BBAL1} />
+                <img src={shohag} />
               </div>
               <div className="  airline">
                 <img src={glpl2} />
               </div>
               <div className="  airline">
-                <img src={BBAL1} />
+                <img src={usbangla} />
               </div>
             </OwlCarousel>
             {/* </div> */}
