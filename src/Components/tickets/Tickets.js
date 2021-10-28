@@ -185,8 +185,8 @@ const Tickets = () => {
         <div className="container">
         <div className=" service">
             <h1>Our Best Services</h1>
-            <h5>GHURI Ticket is a premium online booking portal which allows users to purchase <br />
-              tickets for various services like bus services, launch services, Beman ticket <br />
+            <h5>GHURI Ticket is a premium online booking portal which allows users to purchase<br/>
+              tickets for various services like bus services, launch services, Beman ticket<br/>
               and more across all over Bangladesh.</h5>
             <div className=" row service_div">
               {/* <Carousel> */}
@@ -198,7 +198,7 @@ const Tickets = () => {
            dots={false}
            {...service}
            className=" d-flex  align-items-center owl-theme"> */}
-              <div className="col-md-4  col-sm-12">
+              <div className="col-md-4 single_pic col-sm-12">
                 <div className="service_card">
                   <img src={bus2} alt="" />
                   <div className="d-flex justify-content-between align-items-center ">
@@ -259,8 +259,8 @@ const Tickets = () => {
           </div>
           <div className="top_destination">
             <h2>Top Destination</h2>
-            <h5>After an 18-month ban on most inbound travel, the US is set to update its border rules on <br />
-              November 8, by requiring all foreign visitors to be vaccinated before entering. <br />
+            <h5>After an 18-month ban on most inbound travel, the US is set to update its border rules on<br/>
+              November 8, by requiring all foreign visitors to be vaccinated before entering.<br/>
               Here's what you need to know about the new travel policy.</h5>
             <div className=" row destination ">
               <div className="col-md-8 col-sm-12  destination_text">
