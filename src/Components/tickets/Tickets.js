@@ -189,8 +189,8 @@ const Tickets = () => {
            dots={false}
            {...service}
            className=" d-flex  align-items-center owl-theme"> */}
-              <div className="col-md-4 service_card col-sm-12">
-                {/* <div className="service_card"> */}
+              <div className="col-md-4 single_pic col-sm-12">
+                <div className="service_card">
                   <img src={bus2} alt="" />
                   <div className="d-flex justify-content-between align-items-center ">
                     <p>
@@ -205,10 +205,10 @@ const Tickets = () => {
                     </div>
 
                   </div>
-                {/* </div> */}
+                </div>
               </div>
-              <div className="col-md-4 service_card col-sm-2 col-sm-12 ">
-                {/* <div className="service_card"> */}
+              <div className="col-md-4  col-sm-2 col-sm-12 ">
+                <div className="service_card">
                   <img src={plane2} alt="" />
                   <div className=" d-flex justify-content-between align-items-center p-22">
                     <p>
@@ -222,10 +222,10 @@ const Tickets = () => {
                       <p> (5.00)</p>
                     </div>
                   </div>
-                {/* </div> */}
+                </div>
               </div>
-              <div className="col-md-4 service_card col-sm-12 ">
-                {/* <div className="service_card"> */}
+              <div className="col-md-4  col-sm-12 ">
+                <div className="service_card">
                   <img src={launch2} alt="" />
                   <div className="display  d-flex justify-content-between align-items-center p-22">
                     <p>
@@ -240,7 +240,7 @@ const Tickets = () => {
                       <p> (5.00)</p>
                     </div>
                   </div>
-                {/* </div> */}
+                </div>
               </div>
               {/* </OwlCarousel> */}
             </div>

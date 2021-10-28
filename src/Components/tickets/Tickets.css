@@ -88,6 +88,7 @@ height: 100%;
     height: 123px;
     background: #E6E6E6;
     margin-top: 64px;
+    display: none;
 
 }
 .airline img{
@@ -983,7 +984,7 @@ font-size: 10px !important;
     }
     .service_card{
         margin: 20px;
-        width: 75%;
+        /* width: 75%; */
     }
     .service_card img {
         width: 100%;
