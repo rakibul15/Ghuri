@@ -269,10 +269,10 @@ border-radius: 39px;
 font-family: inter_r;
 font-style: normal;
 font-weight: bold;
-font-size: 16px;
+font-size: 22px;
 line-height: 30px;
 text-align: left;
-margin: 22px 22px;
+margin: 24px 24px;
 letter-spacing: 0.02em;
 
 color: #212121;
@@ -313,6 +313,7 @@ height: 59px;
     font-size: 15px !important;
     font-family: inter_m; 
     margin-top: 70px;
+    display: none;
 }
 .lmore.fa{
     margin-left: 20px;
