@@ -135,7 +135,12 @@
   background-size: 40px 40px;
   object-fit: cover;
 }
-
+.truck_icon a{
+  background-image: url(../../images/GhuriTruck/truck.png);
+  background-size: 40px 40px;
+  background-size: 40px 40px;
+  object-fit: cover;
+}
 
 
 
