@@ -2,7 +2,6 @@ import React from "react";
 import foodcover from "../../images/food/cover.png";
 import dish1 from "../../images/food/kisspng-hamburger-street-food-seafood-fast-food-delicious-food-5a75083cceaf41 1.png";
 import leaf from "../../images/food/leaf.png";
-import singlemenu from "../../images/food/ppmenu.png";
 import dish2 from "../../images/food/dish2.png";
 import dish3 from "../../images/food/dish3.png";
 import dish4 from "../../images/food/dish4.png";

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Header.css";
 import "../../css/mediaQuery.css"
-import video from "./ghuri_percel.mp4"
+
 
 const Header = () => {
 
@@ -13,7 +13,7 @@ const Header = () => {
     <>
 
 <video className='video' autoPlay loop muted>
-    <source src={video} type='video/mp4' />
+    <source src="https://i.imgur.com/34rVUuP.mp4" type='video/mp4' />
     </video>
 
     <div className=" row d-flex align-items-center justify-content-center remove_small">

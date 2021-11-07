@@ -51,6 +51,7 @@
   .info h2 {
     font-size: 20px;
     font-weight: bold;
+    font-size: 13px;
   }
   .info p {
     font-size: 8px;
@@ -122,7 +123,7 @@
   }
 
   p {
-    font-size: 12px !important;
+    font-size: 11px !important;
   }
   h4 {
     font-size: 14px !important;

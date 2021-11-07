@@ -1,0 +1,351 @@
+.truck_headline h1 {
+  line-height: 80px;
+  font-size: 52px;
+  font-family: interSemi;
+  margin-bottom: 28px;
+}
+
+.truck_headline p {
+  line-height: 33px;
+  font-size: 17px;
+  font-family: inter_r;
+}
+
+.truck_headline {
+  margin-top: 47px;
+}
+
+.item_truck_logo img {
+  max-width: 224px;
+  max-height: 100px;
+}
+
+.item_truck_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-58 {
+  margin-top: 58px;
+}
+
+.why_truck h1 {
+  font-size: 55px;
+  font-family: inter_m;
+  text-align: center;
+}
+
+.single_truck_card img {
+  width: 87px;
+  height: 87px;
+}
+
+.single_truck_card h6 {
+  font-family: interSemi;
+  font-size: 18px;
+  margin-top: 21px;
+}
+
+.single_truck_card p {
+  font-family: inter_r;
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 21px;
+}
+
+.truck_carousel_0th {
+  background-color: #ececec;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.customer_say_bg {
+  background-color: #ececec;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.cus_truck h1 {
+  font-family: interSemi;
+  font-size: 55px;
+  padding-bottom: 66px;
+}
+
+.customer_say_img img {
+  height: 58px !important;
+  width: 58px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+
+.cus_truck h5 {
+  font-size: 35px;
+  font-family: inter_m;
+}
+
+.customer_say_img p {
+  font-size: 16px;
+  font-family: inter_r;
+  line-height: 32px;
+  width: 98%;
+  text-align: center;
+}
+
+.owl_truck .owl-carousel .owl-nav {
+  display: block !important;
+}
+
+.truck_prev {
+  position: absolute;
+  left: -25% !important;
+  top: 20% !important;
+}
+
+.truck_next {
+  position: absolute;
+  right: -25%;
+  top: 20%;
+}
+
+.truck_services {
+  background-color: #ffffff;
+}
+
+.truck_services h1 {
+  font-family: inter_m;
+  font-size: 55px;
+  margin-bottom: 16px;
+}
+
+.truck_services p {
+  font-family: inter_r;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 70px;
+}
+
+.single_truck img {
+  width: 224px;
+  height: 161px;
+}
+
+.single_truck p {
+  font-size: 18px;
+  font-family: InterSemi;
+}
+
+.single_truck {
+  text-align: center;
+}
+
+.truck_section {
+  margin-top: 90px;
+}
+
+.truck_section_pd {
+  padding-bottom: 90px;
+}
+
+@media (max-width: 1900px) {
+  .single_truck img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .truck_headline h1 {
+    line-height: 56px;
+    font-size: 36px;
+  }
+
+  .truck_section {
+    margin-top: 70px;
+    align-items: center;
+  }
+
+  .truck_headline p {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .truck_headline {
+    margin-top: 0px;
+  }
+
+  single_truck_card {
+    margin-bottom: 20px;
+  }
+
+  .why_truck h1 {
+    font-size: 36px;
+  }
+
+  .single_truck_card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cus_truck h1 {
+    font-size: 36px;
+    padding-bottom: 50px;
+  }
+
+  .cus_truck h5 {
+    font-family: interSemi;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .cus_truck p {
+    font-size: 15px;
+  }
+
+  .truck_services p {
+    font-family: inter_r;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+
+  .truck_services h1 {
+    font-family: inter_m;
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+
+  .single_truck {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .truck_section_pd {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .truck_headline h1 {
+    line-height: 56px;
+    font-size: 36px;
+  }
+
+  .truck_section {
+    margin-top: 70px;
+    align-items: center;
+  }
+
+  .truck_headline p {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .truck_headline {
+    margin-top: 0px;
+  }
+
+  single_truck_card {
+    margin-bottom: 20px;
+  }
+
+  .why_truck h1 {
+    font-size: 36px;
+  }
+
+  .single_truck_card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cus_truck h1 {
+    font-size: 36px;
+    padding-bottom: 50px;
+  }
+
+  .cus_truck h5 {
+    font-family: interSemi;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .cus_truck p {
+    font-size: 15px;
+  }
+
+  .truck_services p {
+    font-family: inter_r;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+
+  .truck_services h1 {
+    font-family: inter_m;
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+
+  .single_truck {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .truck_section_pd {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .single_truck_card img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .truck_headline h1 {
+    line-height: 49px;
+    font-size: 30px;
+  }
+
+  .truck_section {
+    margin-top: 50px;
+    align-items: center;
+  }
+
+  .why_truck h1 {
+    font-size: 30px;
+  }
+
+  .single_truck_card h6 {
+    font-family: interSemi;
+    font-size: 16px;
+    margin-top: 21px;
+  }
+
+  .single_truck_card {
+    margin-bottom: 30px;
+  }
+
+  .cus_truck h1 {
+    font-size: 30px;
+    padding-bottom: 50 px;
+  }
+  .cus_truck h1 {
+    font-size: 30px;
+  }
+  .cus_truck p {
+    margin-bottom: 0px;
+  }
+  .truck_services h1 {
+    font-family: inter_m;
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+}
