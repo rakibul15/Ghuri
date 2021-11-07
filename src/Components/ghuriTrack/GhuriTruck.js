@@ -182,15 +182,15 @@ const GhuriTruck = () => {
         </div>
 
         <div className="container-fluid customer_say_bg">
-          <div className="container customer_say">
+          <div className="container customer_say cus_truck">
             <div className="row justify-content-center">
               <div className="col-sm-8 owl_truck">
                 <h1 className="text-center">Customer say about us</h1>
                 <OwlCarousel
                   navigation={true}
                   navText={[
-                    `<div class='nav-btn prev-slide'><img src="https://i.ibb.co/Jn6GBBC/next.png"/> </div>`,
-                    `<div class='nav-btn next-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></div>`,
+                    `<div class='nav-btn truck_prev prev-slide'><img src="https://i.ibb.co/Jn6GBBC/next.png"/> </div>`,
+                    `<div class='nav-btn truck_next next-slide'><img src="https://i.ibb.co/Fn597p9/preview.png" /></div>`,
                   ]}
                   loop
                   margin={10}
