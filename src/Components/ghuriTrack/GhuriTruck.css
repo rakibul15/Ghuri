@@ -70,7 +70,7 @@
   padding-bottom: 60px;
 }
 
-.customer_say h1 {
+.cus_truck h1 {
   font-family: interSemi;
   font-size: 55px;
   padding-bottom: 66px;
@@ -84,12 +84,12 @@
   
 }
 
-.customer_say h5 {
+.cus_truck h5 {
   font-size: 35px;
   font-family: inter_m;
 }
 
-.customer_say p {
+.customer_say_img p {
   font-size: 16px;
   font-family: inter_r;
   line-height: 32px;
@@ -101,13 +101,13 @@
   display: block !important;
 }
 
-.prev-slide {
+.truck_prev {
   position: absolute;
-  left: -25%;
-  top: 20%;
+  left: -25% !important;
+  top: 20% !important;
 }
 
-.next-slide {
+.truck_next {
   position: absolute;
   right: -25%;
   top: 20%;
@@ -192,19 +192,19 @@
     height: 70px;
   }
 
-  .customer_say h1 {
+  .cus_truck h1 {
     font-size: 36px;
     padding-bottom: 50px;
   }
 
-  .customer_say h5 {
+  .cus_truck h5 {
     font-family: interSemi;
     font-size: 22px;
     margin-top: 20px;
     margin-bottom: 0px;
   }
 
-  .customer_say p {
+  .cus_truck p {
     font-size: 15px;
   }
 
@@ -264,19 +264,19 @@
     height: 70px;
   }
 
-  .customer_say h1 {
+  .cus_truck h1 {
     font-size: 36px;
     padding-bottom: 50px;
   }
 
-  .customer_say h5 {
+  .cus_truck h5 {
     font-family: interSemi;
     font-size: 22px;
     margin-top: 20px;
     margin-bottom: 0px;
   }
 
-  .customer_say p {
+  .cus_truck p {
     font-size: 15px;
   }
 
@@ -333,14 +333,14 @@
     margin-bottom: 30px;
   }
 
-  .customer_say h1 {
+  .cus_truck h1 {
     font-size: 30px;
     padding-bottom: 50 px;
   }
-  .customer_say h1 {
+  .cus_truck h1 {
     font-size: 30px;
   }
-  .customer_say p {
+  .cus_truck p {
     margin-bottom: 0px;
   }
   .truck_services h1 {
