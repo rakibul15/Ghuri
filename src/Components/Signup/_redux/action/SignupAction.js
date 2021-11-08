@@ -71,7 +71,7 @@ export const SubmitSignupData = (data) => async (dispatch) => {
   const smsNumber = {
     msisdn: `88${data.phone}`,
   };
-
+  //test
   // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp?status=register`;//this otp send api
   // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
 
