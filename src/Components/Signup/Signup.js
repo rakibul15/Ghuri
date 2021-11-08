@@ -31,7 +31,8 @@ const Signup = () => {
 
   useEffect(() => {
     if (redirectToVerification) {
-      history.push("/verification");
+      // history.push("/verification");
+      window.location.assign(`${process.env.REACT_APP_OCEAN_GHURIPARCEL}`);
     }
   }, [redirectToVerification]);
 
