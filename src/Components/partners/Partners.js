@@ -96,6 +96,16 @@ const Partners = () => {
           </div>
         </div>
       </OwlCarousel>
+
+
+
+
+
+
+
+
+
+      
     </div>
   );
 };

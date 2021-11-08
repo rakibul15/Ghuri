@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Singleblog = (props) => {
-  const blog = { props };
   const title = props.sblog.haedline;
   // const des = (title) => title.length > 5 ? `${title.substring(5, )}...` : title;
 

@@ -1,0 +1,874 @@
+/* Ghuri Food */
+
+.contain {
+  max-width: 1492px;
+}
+
+.hero_food {
+  margin-top: 94px;
+}
+
+.food_hero_text {
+  margin-top: 64px;
+}
+
+.btn_lmore {
+  background-color: #ffcc00;
+  border-radius: 44.5px;
+  width: 178px;
+  vertical-align: middle;
+  padding: 17px;
+  font-size: 16px !important;
+  margin-top: 24px;
+  font-family: inter_m;
+}
+
+.hero_food p {
+  font-size: 18px;
+  font-family: inter_r;
+  width: 80%;
+  line-height: 27px;
+}
+
+.hero_food h1 {
+  font-size: 60px;
+  color: #212121;
+  margin-bottom: 25px;
+  font-family: InterSemi;
+  line-height: 90px;
+}
+
+.single_cart_food {
+  max-width: 351px;
+  height: 447px;
+
+  border-radius: 50px;
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%); */
+  background-color: white;
+}
+.single_cart_food:hover {
+  box-shadow: 10px 25px 21px 0px rgba(0, 0, 0, 10%);
+}
+
+.single_cart_food img {
+  max-width: 309px;
+  max-height: 309px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.single_cart_food h5 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  font-family: inter_m;
+}
+
+.single_cart_food p {
+  font-size: 16px;
+  font-family: inter_r;
+  margin: 0px 36px;
+}
+
+.food_over {
+  background-color: #f2f3f7;
+}
+
+.Nav_overflow_food {
+  padding-top: 62px;
+}
+
+.special_dish h1 {
+  font-size: 55px;
+  font-family: inter_m;
+}
+
+.special_dish p {
+  font-size: 16px;
+  font-family: inter_r;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.fresh_veg img {
+  max-height: 825px;
+  max-width: 732px;
+  width: 100%;
+}
+
+.fresh_veg h1 {
+  font-size: 55px;
+  margin-bottom: 40px;
+  margin-top: 130px;
+  font-family: InterSemi;
+}
+
+.fresh_veg p {
+  font-size: 18px;
+  font-family: inter_r;
+}
+
+.popular_menu h1 {
+  font-size: 55px;
+  font-family: inter_m;
+}
+
+.popular_menu p {
+  font-size: 18px;
+  margin-top: 16px;
+  font-family: inter_r;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.single_menu {
+  width: 478px;
+  height: 407px;
+  /* width: 100%; */
+  box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 7%);
+  border-radius: 40px;
+  border-top: 2px solid white;
+}
+
+.single_menu img {
+  width: 472px;
+  height: 296px;
+  /* width: 100%; */
+  position: relative;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.food_price h6 {
+  text-align: right;
+  color: #f54c54;
+  font-family: InterSemi;
+  font-size: 22px;
+}
+
+.review {
+  position: absolute;
+  top: 1px;
+  left: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+  width: 125px;
+  height: 50px;
+  border-radius: 39px 0px 28px 0px;
+  color: #f54c54;
+  background-color: rgba(255, 255, 255, 0.75);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: inter_r;
+}
+
+.review img {
+  height: 19px !important;
+  width: 20px !important;
+}
+
+.btn_lmore_menu {
+  background-color: #ffcc00;
+  border-radius: 44.5px;
+  width: 217px;
+  vertical-align: middle;
+  padding: 17px;
+  font-size: 16px !important;
+  margin-top: 70px;
+  font-family: inter_m;
+}
+
+.chefs {
+  margin-top: 90px;
+}
+
+.chefs_img img {
+  max-width: 616px;
+  height: 892px;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+.chefs_text h1 {
+  font-size: 55px;
+  margin-top: 120px;
+  font-family: InterSemi;
+  margin-bottom: 32px;
+}
+
+.chefs_text p {
+  font-size: 18px;
+  font-family: inter_r;
+}
+
+.chefs_text p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.chefs_text p span {
+  font-family: inter_m;
+  font-size: 18px;
+}
+
+.mt-28 {
+  margin-top: 28px !important;
+}
+
+.chefs_text img {
+  height: 26px;
+  width: 26px;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mr-22 {
+  margin-right: 22px;
+}
+
+.image_sec img {
+  height: 56px;
+  width: 56px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.star img {
+  width: 20px !important;
+  height: 19px !important;
+  margin-right: 8px;
+}
+
+.star p {
+  margin: 0px !important;
+}
+
+.customer_leaf img {
+  width: 732px !important;
+  height: 825px !important;
+}
+
+.customer_heading h1 {
+  font-size: 65px;
+  margin-bottom: 32px;
+  font-family: InterSemi;
+}
+
+.profile_sec {
+  margin-left: 20px;
+  margin-bottom: 32px;
+}
+
+.profile_sec h5 {
+  font-size: 26px;
+  /* margin: 0px !important; */
+  margin-top: 22px;
+  font-family: inter_m;
+}
+
+.profile_sec p {
+  font-size: 16px;
+  margin: 0px !important;
+  font-family: inter_r;
+}
+
+.cus_message {
+  font-size: 18px;
+  margin: 0px !important;
+  font-family: inter_r;
+}
+
+.ratings {
+  margin-top: 32px;
+  font-size: 20px;
+  font-family: inter_r;
+}
+
+.Food_menu h5 {
+  font-family: inter_m;
+  font-size: 25px;
+}
+
+.hero_food img {
+  height: 776px;
+  width: 732px;
+}
+
+/* Media Query Responsive */
+/* .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+  background: red;
+  color: green;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+  display: block !important;
+} */
+
+.owl_profile .owl-carousel .owl-nav {
+  display: block !important;
+  position: absolute;
+  right: 0;
+  bottom: 22%;
+}
+
+.prev-slide img {
+  height: 24px;
+  width: 24px;
+}
+
+.next-slide img {
+  height: 24px !important;
+  width: 24px !important;
+}
+.prev-slide {
+  height: 46px;
+  width: 46px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.next-slide {
+  height: 46px;
+  width: 46px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #f2f3f7!important;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.ratings {
+  position: relative !important;
+}
+
+@media (min-width: 1900px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1492px;
+  }
+}
+
+@media (max-width: 1899px) {
+  .hero_food h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  .single_menu {
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 7%);
+    border-radius: 40px;
+    border-top: 2px solid white;
+  }
+
+  .single_menu img {
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 1490px) {
+  .hero_food img {
+    height: auto;
+    width: 95%;
+  }
+  .customer_leaf img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .hero_food h1 {
+    font-size: 45px;
+
+    margin-bottom: 40px;
+  }
+  .hero_food p {
+    font-size: 16px;
+    font-family: inter_r;
+  }
+
+  .fresh_veg h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 130px;
+    font-family: InterSemi;
+  }
+  .fresh_veg p {
+    font-size: 16px;
+    font-family: inter_r;
+  }
+  .btn_lmore {
+    background-color: #ffcc00;
+    border-radius: 44.5px;
+    width: auto;
+    vertical-align: middle;
+    padding: 9px 25px;
+    font-size: 15px !important;
+    margin-top: 24px;
+    font-family: inter_m;
+  }
+
+  .fresh_veg img {
+    max-height: 825px;
+    max-width: 732px;
+    width: 95%;
+    height: auto;
+  }
+
+  .single_cart_food {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 50px;
+    /* box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%); */
+    background-color: white;
+    padding-bottom: 9px;
+  }
+
+  single_cart_food h5 {
+    font-size: 20px !important;
+    margin-bottom: 12px;
+    font-family: inter_m;
+  }
+
+  .single_cart_food p {
+    font-size: 14px;
+    font-family: inter_r;
+    margin: 0px 15px;
+  }
+
+  .single_menu {
+    width: 478px;
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 15px 32px 0px rgb(0 0 0 / 7%);
+    border-radius: 40px;
+    border-top: 2px solid white;
+    margin-bottom: 30px;
+  }
+
+  .single_menu img {
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  .review {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+    width: 125px;
+    height: 30px;
+    border-radius: 24px 0px 10px 0px;
+    color: #f54c54;
+    background-color: rgba(255, 255, 255, 0.75);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: inter_r;
+  }
+  .Food_menu h5 {
+    font-family: inter_m;
+    font-size: 15px;
+  }
+  .food_price h6 {
+    text-align: right;
+    color: #f54c54;
+    font-family: InterSemi;
+    font-size: 15px;
+  }
+
+  .popular_menu p {
+    font-size: 16px;
+    margin-top: 16px;
+    font-family: inter_r;
+  }
+  .popular_menu h1 {
+    font-size: 40px;
+    font-family: inter_m;
+  }
+
+  .btn_lmore_menu {
+    background-color: #ffcc00;
+    border-radius: 44.5px;
+    width: auto;
+    vertical-align: middle;
+    padding: 10px 22px;
+    font-size: 15px !important;
+    margin-top: 70px;
+    font-family: inter_m;
+  }
+  chefs_text h1 {
+    font-size: 40px;
+    margin-top: 120px;
+    font-family: InterSemi;
+    margin-bottom: 32px;
+  }
+  .chefs_text h1 {
+    font-size: 40px;
+    margin-top: 120px;
+    font-family: InterSemi;
+    margin-bottom: 32px;
+  }
+  .chefs_text p {
+    font-size: 16px;
+    font-family: inter_r;
+  }
+  .chefs_text p span {
+    font-family: inter_m;
+    font-size: 16px;
+  }
+  .chefs_img img {
+    height: auto;
+    width: 95%;
+  }
+  .customer_leaf img {
+    width: 95%;
+    height: auto;
+  }
+
+  .customer_heading h1 {
+    font-size: 40px;
+    margin-bottom: 32px;
+    font-family: InterSemi;
+  }
+  .profile_sec h5 {
+    font-size: 18px;
+    /* margin: 0px !important; */
+    font-family: inter_m;
+  }
+  .cus_message {
+    font-size: 16px;
+    margin: 0px !important;
+    font-family: inter_r;
+  }
+  .profile_sec p {
+    font-size: 14px;
+    margin: 0px !important;
+    font-family: inter_r;
+  }
+  .star img {
+    width: 17px !important;
+    height: 16px !important;
+    margin-right: 8px;
+  }
+  .ratings {
+    font-size: 16px;
+    font-family: inter_r;
+    position: relative;
+  }
+
+  .single_menu {
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, 7%);
+    border-radius: 40px;
+    border-top: 2px solid white;
+  }
+
+  .single_menu img {
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  .hero_food_IMG {
+    display: flex;
+    justify-content: center;
+  }
+  .single_cart_food h5 {
+    font-size: 22px;
+    margin-bottom: 12 px;
+    font-family: inter_m;
+  }
+  .single_cart_food img {
+    max-width: 309 px;
+    max-height: 309 px;
+    object-fit: cover;
+    width: 90%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .single_cart_food {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero_food {
+    align-items: center;
+  }
+  .hero_food p {
+    font-size: 14px;
+    font-family: inter_r;
+  }
+  .hero_food h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .food_hero_text {
+    margin-top: 0px;
+  }
+  .special_dish h1 {
+    font-size: 36px;
+    font-family: inter_m;
+  }
+  .single_cart_food h5 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-family: inter_m;
+  }
+  .fresh_veg h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    font-family: InterSemi;
+  }
+  .popular_menu h1 {
+    font-size: 35px;
+    font-family: inter_m;
+  }
+  .Food_menu h5 {
+    font-family: inter_m;
+    font-size: 14px;
+  }
+  .Food_menu h5 {
+    font-family: inter_m;
+    font-size: 14px;
+  }
+  .review {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+    width: 125px;
+    height: 30px;
+    border-radius: 29px 0px 34px 0px;
+    color: #f54c54;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: inter_r;
+  }
+  .chefs_text h1 {
+    font-size: 35px;
+    margin-top: 0px;
+    font-family: InterSemi;
+    margin-bottom: 32px;
+  }
+  .customer_heading h1 {
+    font-size: 35px;
+    margin-bottom: 32px;
+    font-family: InterSemi;
+  }
+  .profile_sec h5 {
+    font-size: 16px;
+    /* margin: 0px !important; */
+    font-family: inter_m;
+  }
+  .hero_food {
+    margin-top: 50px;
+  }
+  .single_cart_food img {
+    max-width: 309 px;
+    max-height: 309 px;
+    object-fit: cover;
+    width: 90%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero_food h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .btn_lmore {
+    background-color: #ffcc00;
+    border-radius: 44.5px;
+    width: auto;
+    vertical-align: middle;
+    padding: 9px 25px;
+    font-size: 12px !important;
+    margin-top: 24px;
+    font-family: inter_m;
+  }
+  .special_dish h1 {
+    font-size: 25px;
+    font-family: inter_m;
+  }
+  .single_cart_food h5 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-family: inter_m;
+  }
+  .fresh_veg h1 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    font-family: InterSemi;
+  }
+  .popular_menu h1 {
+    font-size: 25px;
+    font-family: inter_m;
+  }
+  .Food_menu h5 {
+    font-family: inter_m;
+    font-size: 12px;
+  }
+  .food_price h6 {
+    text-align: right;
+    color: #f54c54;
+    font-family: InterSemi;
+    font-size: 12px;
+  }
+  .review {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+    width: 125px;
+    height: 30px;
+    border-radius: 25px 0px 34px 0px;
+    color: #f54c54;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: inter_r;
+  }
+  .btn_lmore_menu {
+    background-color: #ffcc00;
+    border-radius: 44.5px;
+    width: auto;
+    vertical-align: middle;
+    padding: 10px 22px;
+    font-size: 12px !important;
+    margin-top: 70px;
+    font-family: inter_m;
+  }
+  .chefs_text h1 {
+    font-size: 25px;
+    margin-top: 0px;
+    font-family: InterSemi;
+    margin-bottom: 32px;
+  }
+  .chefs_text p span {
+    font-family: inter_m;
+    font-size: 13px;
+  }
+  .customer_heading h1 {
+    font-size: 25px;
+    margin-bottom: 32px;
+    font-family: InterSemi;
+  }
+  .ratings {
+    font-size: 12px;
+    font-family: inter_r;
+  }
+  .hero_food img {
+    height: auto;
+    width: 95%;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 575.98px) {
+  .review {
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px 0px;
+    width: 125px;
+    height: 30px;
+    border-radius: 30px 0px 31px;
+    color: rgb(245, 76, 84);
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: inter_r;
+  }
+  .fresh_veg h1 {
+    font-size: 25px;
+    margin-bottom: 40px;
+
+    font-family: InterSemi;
+    margin-top: 40px;
+  }
+
+  .owl_profile .owl-carousel .owl-nav {
+    bottom: 25%;
+  }
+  .chefs_img {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .chefs_img img {
+    width: 90%;
+  }
+  .fresh_veg_div {
+    display: flex;
+    justify-content: center;
+  }
+  .fresh_veg img {
+    width: 90%;
+  }
+  .single_cart_food{
+    height: 385px !important;
+  }  
+ 
+  .single_cart_food img {
+  
+    object-fit: cover;
+    width: 75%;
+  }
+}
+/* @media (max-width: 375.98px) {
+  .single_cart_food img {
+  
+    object-fit: cover;
+    width: 75%;
+  }
+  .single_cart_food{
+    height: 385px !important;
+  } 
+} */

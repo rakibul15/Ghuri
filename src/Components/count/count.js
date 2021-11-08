@@ -8,17 +8,21 @@ const Count = () => {
             <div className="container">
                     <div className="total Count ">
                             <div className="row sm_liline">
-                                <div className="col-sm-4 info">
-                                    <h2>1000+</h2>
-                                    <p>App Download</p>
+                                <div className="col-sm-3 info">
+                                    <h2>7828+</h2>
+                                    <p>Total Products</p>
                                 </div>
-                                <div className="col-sm-4 info">
-                                    <h2>10000+</h2>
+                                <div className="col-sm-3 info">
+                                    <h2>6950+</h2>
+                                    <p>Product Delivered</p>
+                                </div>
+                                <div className="col-sm-3 info">
+                                    <h2>13350+</h2>
                                     <p>Parcel Delivered</p>
                                 </div>
-                                <div className="col-sm-4 info">
-                                    <h2>50000+</h2>
-                                    <p>Lives Impacted</p>
+                                <div className="col-sm-3 info">
+                                    <h2>57848+</h2>
+                                    <p>Live Impact</p>
                                 </div>
                             </div>
                     </div>
