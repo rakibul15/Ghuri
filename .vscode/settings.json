@@ -1,13 +1,8 @@
-{
-    "emmet.syntaxProfiles": {
-
-    }
-    ,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-      },
-      "emmet.excludeLanguages": [
-      
-        "markdown"
-      ]
+{"emmet.triggerExpansionOnTab": true,
+"emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "razor": "html",
+    "plaintext": "jade"
+}
 }

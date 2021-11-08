@@ -16,11 +16,13 @@ const Topnav = () => {
 
   return (
     <div>
+      
       <Navbar collapseOnSelect expand="sm" className="fixed" mb-5>
         <Navbar.Brand>
           <a href="/">
             <img className="ghuri_logo img-fluid" src={logo} fluid alt="" />
           </a>
+          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
