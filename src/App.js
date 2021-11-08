@@ -232,7 +232,6 @@ function App() {
             <Notmatch />
           </Route>
         </Switch>
-
         <Footer />
       </Router>
     </div>
