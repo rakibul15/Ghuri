@@ -1,0 +1,140 @@
+.Nav_overflow_Ride {
+  padding-top: 62px;
+}
+
+.hero_ride {
+  margin-top: 143px;
+  margin-bottom: 143px;
+}
+
+.hero_ride h1 {
+  font-family: InterSemi;
+  font-size: 60px;
+  line-height: 80px;
+}
+.hero_ride p {
+  font-family: inter;
+  font-size: 17px;
+  line-height: 33px;
+  margin-top: 28px;
+}
+
+.hero_ride img {
+  width: 845.83px;
+  height: 547.44px;
+  /* max-width: 100%; */
+  object-fit: cover;
+}
+
+/* Why Ride */
+.whyRide {
+  background-color: #e6e6e6;
+}
+.rideSection {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.mt-58 {
+  margin-top: 58px;
+}
+
+.whyRide h1 {
+  font-size: 50px;
+  font-family: inter_m;
+  text-align: center;
+}
+
+.single_ride_card img {
+  width: 87px;
+  height: 87px;
+}
+
+.single_ride_card h6 {
+  font-family: interSemi;
+  font-size: 18px;
+  margin-top: 21px;
+}
+
+.single_ride_card p {
+  font-family: inter_r;
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 21px;
+}
+.joinRide {
+  margin-top: 128px;
+}
+
+.joinRideCar img {
+  width: 732px;
+  height: 700px;
+  object-fit: cover;
+}
+.joinRide_Text h1 {
+  font-family: inter_m;
+  font-size: 50px;
+}
+
+.singleCar img {
+  width: 123px;
+  height: 105px;
+}
+
+.singleCar h5{
+    font-size: 20px;
+    font-family: inter_m;
+    margin-top: 19px;
+    text-align: center;
+    margin-left: -24%;
+}
+
+.bgRide {
+  background-color: #f2f3f7;
+}
+.singleCarRow {
+  margin-top: 52px;
+}
+/* .plReduce{
+padding: 0px !important;
+
+} */
+
+
+
+
+.box {
+    width:95%;
+    height: auto;
+    background-color: white;
+    color: black;
+    padding: 58px 39px 43px 39px;
+    position: relative;
+ border-radius: 4px;
+    float: left;
+}
+  
+  .box.arrow-top {
+    margin-top: 40px;
+  }
+  
+  .box.arrow-top:after {
+    content: " ";
+    position: absolute;
+    right: 30px;
+    top: -25px;
+    border-top: none;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 25px solid white;
+  }
+
+
+
+@media only screen and (min-width:240px) and (max-width: 768px){
+    .box{
+        display: block;
+        float: none;
+        margin: 40px auto;
+    }
+}

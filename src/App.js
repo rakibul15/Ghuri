@@ -45,9 +45,10 @@ import Career from "./Components/career/Career";
 import Job from "./Components/career/Job";
 import Jobform from "./Components/career/Jobform";
 ///////////////tanni-ticket///////////////
-import Tickets from './Components/tickets/Tickets'
+import Tickets from "./Components/tickets/Tickets";
 import FoodHome from "./Components/GhuriFood/FoodHome";
 import GhuriTruck from "./Components/ghuriTrack/GhuriTruck";
+import GhuriRide from "./Components/ghuriRide/GhuriRide";
 
 function App() {
   return (
@@ -208,7 +209,7 @@ function App() {
             <Career></Career>
           </Route>
           <Route exact path="/ghuriFood">
-           <FoodHome></FoodHome>
+            <FoodHome></FoodHome>
           </Route>
 
           <Route exact path="/career/details/:id/:slug">
@@ -225,7 +226,12 @@ function App() {
 
           {/* Ghuri Truck */}
           <Route path="/ghuriTruck">
-           <GhuriTruck></GhuriTruck>
+            <GhuriTruck></GhuriTruck>
+          </Route>
+
+          {/* Ghuri Ride */}
+          <Route path="/ghuriRide">
+            <GhuriRide></GhuriRide>
           </Route>
 
           <Route path="*">
