@@ -165,6 +165,7 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
+                  
                   <div className="col-sm-12 col-md-6">
                     <li
                       id="menu-item-144"
@@ -180,6 +181,25 @@ const Topnav = () => {
                      <a title="Ticket" href="/ticket" class="dropdown-item">
                         Tickets
                         <span class="sub">Ghuri Ticket Service</span>
+                      </a>
+                    </li>
+                  </div>
+
+                  <div className="col-sm-12 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      className="
+                      truck_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                     <a title="Ticket" href="/ghuriTruck" class="dropdown-item">
+                        Truck
+                        <span class="sub">Ghuri Truck Service</span>
                       </a>
                     </li>
                   </div>
@@ -395,6 +415,37 @@ const Topnav = () => {
                       </a>
                     </li>
                   </div>
+
+
+
+
+
+
+
+                  <div className="col-sm-12 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      className="
+                      truck_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                     <a title="Ticket" href="/ghuriTruck" class="dropdown-item">
+                        Truck
+                        <span class="sub">Ghuri Truck Service</span>
+                      </a>
+                    </li>
+                  </div>
+
+
+
+
+
+
                 </div>
 
                 <hr />
