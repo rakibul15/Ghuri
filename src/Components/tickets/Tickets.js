@@ -263,18 +263,20 @@ const Tickets = () => {
               November 8, by requiring all foreign visitors to be vaccinated before entering.<br/>
               Here's what you need to know about the new travel policy.</h5>
             <div className=" row destination ">
-              <div className="col-md-8 col-sm-12  destination_text">
+              {/* <div className="row destination cox"> */}
+              <div className="col-md-8 col-sm-12 Destination_card destination_text">
                 <h4>M A R I N E D R I V E</h4>
                 <h1>COX'S BAZAR</h1>
                 <img src={cox} alt="" />
               </div>
-              <div className="col-md-4  col-sm-6  col-6 destination_text2">
+              <div className="col-md-4  col-sm-6 col-6   destination_text2">
                 <p>M A R I N E D R I V E</p>
                 <h1>COX'S BAZAR</h1>
                 <img src={cox2} alt="" />
-              </div>
               {/* </div> */}
+              </div>
               {/* <div className="  destination destination2"> */}
+              {/* <div className="row"> */}
               <div className="col-md-4  col-sm-6 col-6 destination_text3 ">
                 <p>M A R I N E D R I V E</p>
                 <h1>COX'S BAZAR</h1>
@@ -326,7 +328,7 @@ const Tickets = () => {
                       <div >
                         <img src={tanni} alt="" />
                       </div>
-                      <div className="profile_sec">
+                      <div className="user_name">
                         <h5>Saima Tanni</h5>
                         {/* <p>Frontend Developer</p> */}
                       </div>
@@ -386,7 +388,7 @@ const Tickets = () => {
                         {/* <h5>Aman Ullah</h5> */}
 
                       </div>
-                      <div className="profile_sec">
+                      <div className="user_name">
                         <h5>Aman Ullah</h5>
                         {/* <p>UI/UX Designer</p> */}
                       </div>
