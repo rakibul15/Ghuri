@@ -35,29 +35,54 @@ import aman2 from "../../images/GhuriRide/men2.jpg";
 import community from ".././../images/GhuriRide/Commuinity.png";
 
 const GhuriRide = () => {
-
-  const [active, setActive] = useState(1)
-  const Txt=()=>{
-    let tx="";
-    if(active===1){
-      tx=(   <div className="col-sm-12">
-      <div className="box arrow-top-third">
-      Nothing beats traffic like Ghuri Bikes and you know it! Save time, save money and reach your destination on time.
-      </div>
-    </div>
-);
-    }
-    else if(active ===2){
-      tx="Budget tight? Try Ghuri Car Lite!";
-    }
-    else if(active===3){
-      tx=" Want to travel in AC? Use Pathao Car Plus!";
-    }
-    else{
-      tx="With Ghuri Intercity, you can keep Ghuri’s best in class drivers and sedans for up to 10 hours.The service is available for pick ups starting from Dhaka metropolitan area to Gazipur, Savar, Narayanganj, Mawna, Katiyadi, Bhairab Bazar, Araihazar, Munshiganj, Mawa Ferry Ghat, Dohar, Paturia Ferry Ghat, Saturia, Mymensingh and Cumilla"
+  const [active, setActive] = useState(1);
+  const Txt = () => {
+    let tx = "";
+    if (active === 1) {
+      tx = (
+        <div className="col-sm-12">
+          <div className="box arrow-top-third">
+            Nothing beats traffic like Ghuri Bikes and you know it! Save time,
+            save money and reach your destination on time.
+          </div>
+        </div>
+      );
+    } else if (active === 2) {
+      tx =( <div className="col-sm-12">
+        <div className="box arrow-top_lite">
+        "Budget tight? Try Ghuri Car Lite!";
+        </div>
+      </div>)
+    } else if (active === 3) {
+      tx = (
+        <div className="col-sm-12">
+          <div className="box arrow-top_plus">
+            With Ghuri Intercity, you can keep Ghuri’s best in class drivers and
+            sedans for up to 10 hours.The service is available for pick ups
+            starting from Dhaka metropolitan area to Gazipur, Savar,
+            Narayanganj, Mawna, Katiyadi, Bhairab Bazar, Araihazar, Munshiganj,
+            Mawa Ferry Ghat, Dohar, Paturia Ferry Ghat, Saturia, Mymensingh and
+            Cumilla.
+          </div>
+        </div>
+      );
+      // tx=" Want to travel in AC? Use Pathao Car Plus!";
+    } else {
+      tx = (
+        <div className="col-sm-12">
+          <div className="box arrow-top">
+            With Ghuri Intercity, you can keep Ghuri’s best in class drivers and
+            sedans for up to 10 hours.The service is available for pick ups
+            starting from Dhaka metropolitan area to Gazipur, Savar,
+            Narayanganj, Mawna, Katiyadi, Bhairab Bazar, Araihazar, Munshiganj,
+            Mawa Ferry Ghat, Dohar, Paturia Ferry Ghat, Saturia, Mymensingh and
+            Cumilla.
+          </div>
+        </div>
+      );
     }
     return tx;
-  }
+  };
 
   let option2 = {
     responsive: {
@@ -87,7 +112,8 @@ const GhuriRide = () => {
                   Now, it’s time to earn while you travel! Time to say no to
                   empty seats. Get your spare seats earning money and also enjoy
                   the journey sharing with new people. Road is no longer a
-                  boring thing, meet people, bring fun while you earn money! Not bad, right?
+                  boring thing, meet people, bring fun while you earn money! Not
+                  bad, right?
                 </p>
                 {/* <button className="btn btn_lmore">
                   Learn More <i className="fa fa-caret-right"></i>
@@ -153,31 +179,46 @@ const GhuriRide = () => {
                 <h1>Ride Service Category</h1>
                 <div className="row singleCarRow">
                   <div className="col-6 col-md-3">
-                    <div className="singleCar" onClick={()=>setActive(1)}>
-                      {active===1 ? (<img src={ERideY1} alt="" />) : (<img src={ERide1} alt="" />)}
+                    <div className="singleCar" onClick={() => setActive(1)}>
+                      {active === 1 ? (
+                        <img src={ERideY1} alt="" />
+                      ) : (
+                        <img src={ERide1} alt="" />
+                      )}
                       <h5>Bike</h5>
                     </div>
                   </div>
                   <div className="col-6 col-md-3">
-                    <div className="singleCar" onClick={()=>setActive(2)}>
-                    {active===2 ? (<img src={ERideY2} alt="" />) : (<img src={ERide2} alt="" />)}
+                    <div className="singleCar" onClick={() => setActive(2)}>
+                      {active === 2 ? (
+                        <img src={ERideY2} alt="" />
+                      ) : (
+                        <img src={ERide2} alt="" />
+                      )}
                       <h5>Car Lite</h5>
                     </div>
                   </div>
                   <div className="col-6 col-md-3">
-                    <div className="singleCar" onClick={()=>setActive(3)}>
-                    {active===3 ? (<img src={ERideY3} alt="" />) : (<img src={ERide3} alt="" />)}
+                    <div className="singleCar" onClick={() => setActive(3)}>
+                      {active === 3 ? (
+                        <img src={ERideY3} alt="" />
+                      ) : (
+                        <img src={ERide3} alt="" />
+                      )}
                       <h5>car Plus</h5>
                     </div>
                   </div>
                   <div className="col-6 col-md-3">
-                    <div className="singleCar" onClick={()=>setActive(4)}>
-                    {active===4 ? (<img src={ERideY4} alt="" />) : (<img src={ERide4} alt="" />)}
+                    <div className="singleCar" onClick={() => setActive(4)}>
+                      {active === 4 ? (
+                        <img src={ERideY4} alt="" />
+                      ) : (
+                        <img src={ERide4} alt="" />
+                      )}
                       <h5>Intercity</h5>
                     </div>
                   </div>
 
-               
                   {Txt()}
                 </div>
               </div>
@@ -246,7 +287,8 @@ const GhuriRide = () => {
                     <p className="text-center"></p>
 
                     <p className="mt-2 text-center">
-                    Its like a daily basis app cause its help us to arrived location easily and safely.
+                      Its like a daily basis app cause its help us to arrived
+                      location easily and safely.
                     </p>
                   </div>
 
@@ -258,7 +300,7 @@ const GhuriRide = () => {
                     {/* <p className="text-center">Businessman</p> */}
 
                     <p className="mt-2 text-center">
-                    Trustable and affortable app which is very easy to use
+                      Trustable and affortable app which is very easy to use
                     </p>
                   </div>
                 </OwlCarousel>
@@ -304,24 +346,24 @@ const GhuriRide = () => {
         </section>
 
         <section className="commitment">
-    <div className="container">
-    <div className="row d-flex justify-content-center text-center aic">
-            <div className="col-sm-9">
-              <div className="commitmentMain">
-                <h1>Commitment to Our Community</h1>
-                <p>
-                  Our team is working on extracting potential technology to
-                  contribute to help build a better future and serve our
-                  community. We are determined to transform our cities into a
-                  safer, more comfortable &amp; more efficient place by
-                  simplifying travel experience and by taking sustainable
-                  initiatives for the world.
-                </p>
-                <img src={community} alt="" />
+          <div className="container">
+            <div className="row d-flex justify-content-center text-center aic">
+              <div className="col-sm-9">
+                <div className="commitmentMain">
+                  <h1>Commitment to Our Community</h1>
+                  <p>
+                    Our team is working on extracting potential technology to
+                    contribute to help build a better future and serve our
+                    community. We are determined to transform our cities into a
+                    safer, more comfortable &amp; more efficient place by
+                    simplifying travel experience and by taking sustainable
+                    initiatives for the world.
+                  </p>
+                  <img src={community} alt="" />
+                </div>
               </div>
             </div>
           </div>
-    </div>
         </section>
       </div>
     </div>
