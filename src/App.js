@@ -49,6 +49,8 @@ import Tickets from "./Components/tickets/Tickets";
 import FoodHome from "./Components/GhuriFood/FoodHome";
 import GhuriTruck from "./Components/ghuriTrack/GhuriTruck";
 import GhuriRide from "./Components/ghuriRide/GhuriRide";
+import Home from "./Components/Home/Home";
+
 
 function App() {
   return (
@@ -69,13 +71,14 @@ function App() {
 
           {/* Home */}
           <Route path="/home">
-            <Header></Header>
-            <Count />
+            {/* <Header></Header> */}
+            {/* <Count />
             <Parcel></Parcel>
             <Gallery></Gallery>
             <Headline></Headline>
             <Partners></Partners>
-            <Clients></Clients>
+            <Clients></Clients> */}
+           <Home/>
           </Route>
           <Route path="/merchant">
             <Signup></Signup>

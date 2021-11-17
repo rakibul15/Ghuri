@@ -1,0 +1,140 @@
+.homepageLanding {
+  background-image: url(../../images/hero.png);
+  background-repeat: no-repeat;
+  max-height:691px;
+  height: 691px;
+  background-size: 100%;
+  width: 100%;
+  z-index: 2;
+ 
+}
+
+.mt-127{
+    padding-top:60px;
+   
+}
+
+.homepageLanding h1{
+    font-size: 65px;
+    line-height: 90px;
+    font-family: interSemi;
+}
+
+.homepageLanding p{
+    font-size: 16px;
+    line-height: 33px;
+    font-family: inter_r;
+    margin-bottom: 88px;
+}
+
+.btnGhuri-primary{
+    background-color: #ffcc00;
+    padding:19px 42px;
+    font-size: 16px;
+    font-family: inter_m;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.btnGhuri-download{
+    background-color: #ffffff;
+    padding:19px 42px;
+    font-size: 16px;
+    font-family: inter_m;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffcc00;
+    margin-top: 32px;
+}
+
+
+
+
+
+.ml-17{
+    margin-left: 17px;
+}
+
+
+
+.ghuri_platform{
+    margin-top: 90px;
+}
+
+.platFormText h1{
+    text-align: center;
+    font-family: inter_m;
+    font-size: 55px;
+}
+.platFormText p{
+    text-align: center;
+    font-family: inter_r;
+    font-size:24px;
+}
+
+.platForm_content{
+    margin-top: 70px;
+}
+
+.platformMobile img{
+    width: 732px;
+    height: 708px;
+    object-fit: cover;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+.mar-70{
+    margin-top: 70px;
+}
+.iconImage img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    margin-right: 50px;
+}
+.platformBazar h2 img{
+    height: 90px;
+    width: 90px;
+
+}
+
+.platformBazar h2 {
+  font-family: inter_r;
+  font-size: 55px;
+}
+.aboutGhuri{
+    margin-top: 180px;
+}
+
+.aboutGhuriTxt h1{
+    font-family: inter_m;
+    font-size: 55px;
+}
+
+.aboutGhuriTxt p{
+    font-family: inter_r;
+    font-size:16px;
+    margin-top: 32px;
+}
+.mar-60{
+    margin-top: 60px;
+}
+.aboutGhuriImg img{
+   width: 732px;
+    height: 559px;
+}
+.download{
+    margin-top: 180px;
+}
+.ghuriMobile img{
+    width: 869px;
+    height: 839px;
+}
+.downloadTxt h2{
+    font-family: inter_m;
+    font-size: 45px;
+}
