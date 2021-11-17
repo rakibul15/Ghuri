@@ -138,7 +138,7 @@ const Home = () => {
     </div>
     <div className="col-sm-1"></div>
     <div className="col-sm-4 downloadTxt">
-      <h2>Download the app</h2>
+      <h2>Download app now</h2>
     </div>
   </div>
 </div>
