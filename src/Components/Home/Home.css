@@ -138,3 +138,195 @@
     font-family: inter_m;
     font-size: 45px;
 }
+
+.news img{
+    width: 351px;
+    height: 108px;
+    object-fit: contain;
+}
+.ghuriHighlights h1{
+    font-family: inter_m;
+    font-size: 55px;
+    text-align: center;
+}
+
+.ghuriHighlights{
+  margin-top: 90px;
+  padding-bottom: 90px;
+}
+.ghuriHighlights img{
+    width: 351px;
+    height: 108px;
+}
+
+.allnews {
+    margin-top:50px;
+}
+.blogHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blogTitle h1{
+    font-family: inter_m;
+    font-size: 55px;
+ 
+}
+
+.blog img{
+    width:351px;
+    height: 250px;
+}
+.allblog{
+    margin-top: 50px;
+}
+.blog h6{
+    font-family: inter_m;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 16px;
+}
+.app{
+    display: flex;
+}
+.app img{
+    width:40%;
+    height: 55px;
+  
+}
+.app-50{
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+.item1 img{
+    width: 224px;
+    height: 100px;
+    object-fit: contain;
+}
+.item1{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.ghuriBlog{
+    background-color: #F2F3F7;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* Responsive */
+/* 
+@media (max-width: 1899px) {}
+
+@media (max-width: 1490px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {} */
+
+
+@media (max-width: 1899px) {
+    .homepageLanding h1 {
+        font-size: 40px;
+        line-height: 50px;
+        font-family: interSemi;
+    }
+
+    .homepageLanding p {
+        font-size: 15px;
+        line-height: 33px;
+        font-family: inter_r;
+        margin-bottom: 30px;
+    }
+
+    .btnGhuri-primary {
+     
+        padding: 16px 42px;
+        font-size: 15px;
+  
+    }
+    .btnGhuri-download {
+        background-color: #ffffff;
+        padding: 15px 38px;
+        font-size: 15px;
+        font-family: inter_m;
+        border-radius: 45px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ffcc00;
+        margin-top: 22px;
+    }
+    .ghuriMobile img {
+        width:100%;
+        height:auto;
+    }
+    .blog img {
+        width:100%;
+        height:auto;
+    }
+    .ghuriHighlights img {
+        width: 100%;
+        height:auto;
+    }
+    .aboutGhuriImg img {
+        width: 100%;
+        height:auto;
+    }
+}
+
+@media (max-width: 1490px) {
+    .mt-127 {
+        padding-top: 30px;
+    }
+    .homepageLanding p {
+        font-size: 15px;
+        line-height: 33px;
+        font-family: inter_r;
+        margin-bottom:15px;
+    }
+    .homepageLanding h1 {
+        font-size: 28px;
+        line-height: 37px;
+        font-family: interSemi;
+    }
+    .btnGhuri-primary {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    .btnGhuri-download {
+        background-color: #ffffff;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-family: inter_m;
+        border-radius: 45px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ffcc00;
+        margin-top: 22px;
+    }
+    .homepageLanding {
+       
+        max-height: 691px;
+        height: 365px;
+        background-size: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+    .platformMobile img {
+        width:100%;
+        height:auto;
+        object-fit: cover;
+    }
+    .ghuriMobile img {
+        width:100%;
+        height:auto;
+    }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}
+

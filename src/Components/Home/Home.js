@@ -7,7 +7,48 @@ import cod from "../../images/Homepage/cod.png";
 import cod2 from "../../images/Homepage/cod2.png";
 import aboutGhuri from "../../images/Homepage/aboutGhuri.png";
 import mobile from "../../images/Homepage/Mobile.png";
+
+// Ghuri Highlights
+import news1 from "../../images/Homepage/news1.png";
+import news2 from "../../images/Homepage/news2.png";
+import news3 from "../../images/Homepage/news3.png";
+import news4 from "../../images/Homepage/news4.png";
+
+// Ghuri Blogs
+import blog1 from "../../images/Homepage/blog1.png";
+import blog2 from "../../images/Homepage/blog2.png";
+import blog3 from "../../images/Homepage/blog3.png";
+import blog4 from "../../images/Homepage/blog4.png";
+
+// App Image
+import appstore from "../../images/Homepage/playstore.png";
+import playstore from "../../images/Homepage/AppStore.png";
+import OwlCarousel from "react-owl-carousel";
+
+// images
+import partner1 from "../../images/partners/brothers_logo.png";
+import partner2 from "../../images/partners/lilstar.png";
+import partner3 from "../../images/partners/fasal_logo.png";
+import partner4 from "../../images/partners/Nurani_Interior.png";
+
 const Home = () => {
+  let option = {
+    responsive: {
+      0: {
+        items: 3,
+      },
+      450: {
+        items: 4,
+      },
+      600: {
+        items: 6,
+      },
+      1000: {
+        items: 8,
+      },
+    },
+  };
+
   return (
     <div>
       <div className="Nav_overflow">
@@ -128,23 +169,144 @@ const Home = () => {
           </div>
         </section>
 
-<section className="download">
-<div className="container">
-<div className="row">
-    <div className="col-sm-7">
-      <div className="ghuriMobile">
-        <img src={mobile} alt="" />
-      </div>
-    </div>
-    <div className="col-sm-1"></div>
-    <div className="col-sm-4 downloadTxt">
-      <h2>Download app now</h2>
-    </div>
-  </div>
-</div>
-</section>
+        <section className="download">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-7">
+                <div className="ghuriMobile">
+                  <img src={mobile} alt="" />
+                </div>
+              </div>
+              <div className="col-sm-1"></div>
+              <div className="col-sm-4 downloadTxt">
+                <h2>Download app now</h2>
+                <div className="ghuriApp">
+                  <h5 className="app-50">Ghuri Super App</h5>
+                  <div className="app">
+                    <img src={playstore} alt="" />
+                    <img className="ml-4" src={appstore} alt="" />
+                  </div>
 
+                  <h5 className="app-50">Ghuri Super App</h5>
+                  <div className="app">
+                    <img src={playstore} alt="" />
+                  </div>
+                  <h5 className="app-50">Ghuri Super App</h5>
+                  <div className="app">
+                    <img src={playstore} alt="" />
+                  </div>
 
+                  <h5 className="app-50">Ghuri Super App</h5>
+                  <div className="app">
+                    <img src={playstore} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="ghuriHighlights">
+          <div className="container">
+            <h1>Ghuri Highlights</h1>
+            <div className="row allnews">
+              <div className="col-sm-3">
+                <div className="news">
+                  <img src={news1} alt="" />
+                </div>
+              </div>
+              <div className="col-sm-3">
+                {" "}
+                <div className="news">
+                  <img src={news2} alt="" />
+                </div>
+              </div>
+              <div className="col-sm-3">
+                {" "}
+                <div className="news">
+                  <img src={news3} alt="" />
+                </div>
+              </div>
+              <div className="col-sm-3">
+                {" "}
+                <div className="news">
+                  <img src={news4} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="ghuriBlog">
+          <div className="container">
+            <div className="blogHead">
+              <div className="blogTitle">
+                <h1>From The Blog</h1>
+              </div>
+              <div className="blogSearch">
+                <button className="btn btnGhuri-download">
+                  See More <i class="fa fa-caret-right ml-17"></i>
+                </button>
+              </div>
+            </div>
+
+            <div className="row allblog">
+              <div className="col-sm-3">
+                <div className="blog">
+                  <img src={blog1} alt="" />
+                  <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                  <p>December 1, 2021</p>
+                </div>
+              </div>
+              <div className="col-sm-3">
+                <div className="blog">
+                  <img src={blog2} alt="" />
+                  <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                  <p>December 1, 2021</p>
+                </div>
+              </div>
+              <div className="col-sm-3">
+                <div className="blog">
+                  <img src={blog3} alt="" />
+                  <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                  <p>December 1, 2021</p>
+                </div>
+              </div>
+              <div className="col-sm-3">
+                <div className="blog">
+                  <img src={blog4} alt="" />
+                  <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+                  <p>December 1, 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="lastnav">
+          <OwlCarousel
+            navigation={false}
+            loop
+            margin={10}
+            autoplay
+            dots={false}
+            {...option}
+            className=" d-flex  align-items-center owl-theme"
+          >
+            <div className="item1">
+              <img src={partner1} alt="" />
+            </div>
+            <div className="item1">
+              <img src={partner2} alt="" />
+            </div>
+            <div className="item1">
+              <img src={partner3} alt="" />
+            </div>
+            <div className="item1">
+              <img src={partner4} alt="" />
+            </div>
+          </OwlCarousel>
+        </section>
       </div>
     </div>
   );
