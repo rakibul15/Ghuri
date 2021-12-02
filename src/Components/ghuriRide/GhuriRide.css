@@ -1,0 +1,694 @@
+.rmt-70 {
+  margin-top: 70px;
+}
+
+.Nav_overflow_Ride {
+  padding-top: 62px;
+}
+
+.hero_ride {
+  margin-top: 143px;
+  margin-bottom: 143px;
+}
+
+.hero_ride h1 {
+  font-family: InterSemi;
+  font-size: 60px;
+  line-height: 80px;
+}
+.hero_ride p {
+  font-family: inter;
+  font-size: 17px;
+  line-height: 33px;
+  margin-top: 28px;
+}
+
+.hero_ride img {
+  width: 845.83px;
+  height: 547.44px;
+  /* max-width: 100%; */
+  object-fit: cover;
+}
+
+/* Why Ride */
+.whyRide {
+  background-color: #e6e6e6;
+}
+.rideSection {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.mt-58 {
+  margin-top: 58px;
+}
+
+.whyRide h1 {
+  font-size: 50px;
+  font-family: inter_m;
+  text-align: center;
+}
+
+.single_ride_card img {
+  width: 87px;
+  height: 87px;
+}
+
+.single_ride_card h6 {
+  font-family: interSemi;
+  font-size: 18px;
+  margin-top: 21px;
+}
+
+.single_ride_card p {
+  font-family: inter_r;
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 21px;
+}
+.joinRide {
+  margin-top: 128px;
+}
+
+.joinRideCar img {
+  width: 732px;
+  height: 700px;
+  object-fit: cover;
+}
+.joinRide_Text h1 {
+  font-family: inter_m;
+  font-size: 50px;
+}
+
+.singleCar img {
+  width: 123px;
+  height: 105px;
+}
+
+.singleCar{
+  cursor: pointer;
+}
+
+.singleCar h5 {
+  font-size: 20px;
+  font-family: inter_m;
+  margin-top: 19px;
+  text-align: center;
+  margin-left: -24%;
+}
+
+.bgRide {
+  background-color: #f2f3f7;
+}
+.singleCarRow {
+  margin-top: 52px;
+}
+/* .plReduce{
+padding: 0px !important;
+
+} */
+
+.box {
+  width: 95%;
+  height: auto;
+  background-color: white;
+  color: black;
+  padding: 58px 39px 43px 39px;
+  position: relative;
+  border-radius: 4px;
+  float: left;
+}
+.box.arrow-top-third{
+  margin-top: 40px;
+}
+.box.arrow-top {
+  margin-top: 40px;
+}
+
+.box.arrow-top:after {
+  content: " ";
+  position: absolute;
+  right: 30px;
+  top: -25px;
+  border-top: none;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 25px solid white;
+}
+
+.arrow-top_plus::after{
+  content: " ";
+  position: absolute;
+  right:30%;
+  top: -25px;
+  border-top: none;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 25px solid white;
+}
+.box.arrow-top_plus {
+  margin-top: 40px;
+}
+
+
+.arrow-top_lite::after{
+  content: " ";
+  position: absolute;
+  left:35%;
+  top: -25px;
+  border-top: none;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 25px solid white;
+}
+.box.arrow-top_lite {
+  margin-top: 40px;
+}
+
+
+
+
+.box.arrow-top-third:after {
+  content: " ";
+  position: absolute;
+  left:5%;
+  top: -25px;
+  border-top: none;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-bottom: 25px solid white;
+}
+
+
+
+
+.joinRide_Text {
+  margin-top: 76px;
+}
+.aboutRide {
+  margin-top: 90px;
+  padding-bottom: 127px;
+}
+.about_img img {
+  width: 716px;
+  height: 547px;
+}
+
+.AboutRideTxt h1 {
+  font-size: 50px;
+  font-family: inter_m;
+}
+.AboutRideTxt p {
+  font-size: 17px;
+  font-family: inter_r;
+  line-height: 32px;
+  margin-top: 32px;
+}
+.elRider {
+  margin-top: 90px;
+}
+.elRiderTxt {
+  margin-top: 66px;
+}
+
+.elRiderTxt h1 {
+  font-family: inter_m;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.elRiderTxt p {
+  font-family: inter_m;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.circleY {
+  height: 13px;
+  width: 13px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.elRider img {
+  width: 732px;
+  height: 754px;
+  object-fit: cover;
+}
+.commitment {
+  margin-top: 130px;
+}
+
+.commitmentMain h1 {
+  font-family: inter_m;
+  font-size: 50px;
+  margin-bottom: 32px;
+}
+.commitmentMain p {
+  font-family: inter_m;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.commitmentMain img {
+  width: 1133px;
+  height: 506px;
+  margin-top: 70px;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 768px) {
+  .box {
+    display: block;
+    float: none;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 1900px) {
+  .hero_ride img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+
+  .about_img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .elRider img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .commitmentMain img {
+    width: 100%;
+    height: auto;
+  }
+  .joinRideCar img {
+    width: 100%;
+    height: auto;
+  }
+  .singleCar img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1400px) {
+  .hero_ride h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .hero_ride p {
+    font-family: inter;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 28px;
+  }
+  .hero_ride p {
+    font-family: inter;
+    font-size: 15px !important;
+    line-height: 30px;
+   
+  }
+  .hero_ride h1 {
+    font-size:40px;
+  }
+
+  .whyRide h1 {
+    font-size: 38px;
+  }
+ 
+
+  .single_ride_card h6 {
+    font-family: interSemi;
+    font-size: 15px;
+  }
+  .joinRide_Text h1 {
+    font-family: inter_m;
+    font-size: 38px;
+
+  }
+
+
+  .singleCar h5 {
+    font-size: 15px;
+    font-family: inter_m;
+  }
+
+ 
+  .AboutRideTxt h1 {
+    font-size: 38px;
+    font-family: inter_m;
+
+  }
+  .AboutRideTxt p {
+    font-size: 15px;
+    font-family: inter_r;
+
+  }
+  
+  .ride_cus_say h1 {
+    font-size: 38px !important;
+  }
+  .elRiderTxt h1 {
+    font-family: inter_m;
+    font-size: 38px;
+  }
+  .elRiderTxt p {
+    font-family: inter_m;
+    font-size: 15px;
+  
+  }
+ 
+  .commitmentMain h1 {
+    font-family: inter_m;
+    font-size: 38px;
+
+  }
+  .commitmentMain p {
+    font-family: inter_r;
+    font-size: 15px;
+  }
+  .aic{
+    display: flex;
+    
+  }
+}
+/* 
+@media (max-width: 991.98px) {
+
+  .hero_ride p {
+    font-family: inter;
+    font-size: 15px !important;
+    line-height: 30px;
+   
+  }
+  .hero_ride h1 {
+    font-size:40px;
+  }
+
+  .whyRide h1 {
+    font-size: 38px;
+  }
+ 
+
+  .single_ride_card h6 {
+    font-family: interSemi;
+    font-size: 15px;
+  }
+  .joinRide_Text h1 {
+    font-family: inter_m;
+    font-size: 38px;
+
+  }
+
+
+  .singleCar h5 {
+    font-size: 15px;
+    font-family: inter_m;
+  }
+
+ 
+  .AboutRideTxt h1 {
+    font-size: 38px;
+    font-family: inter_m;
+
+  }
+  .AboutRideTxt p {
+    font-size: 15px;
+    font-family: inter_r;
+
+  }
+  
+  .ride_cus_say h1 {
+    font-size: 38px !important;
+  }
+  .elRiderTxt h1 {
+    font-family: inter_m;
+    font-size: 38px;
+  }
+  .elRiderTxt p {
+    font-family: inter_m;
+    font-size: 15px;
+  
+  }
+ 
+  .commitmentMain h1 {
+    font-family: inter_m;
+    font-size: 38px;
+
+  }
+  .commitmentMain p {
+    font-family: inter_r;
+    font-size: 15px;
+  }
+  .aic{
+    display: flex;
+    align-items: center;
+  }
+
+} */
+
+@media (max-width: 768px) {
+  .hero_ride p {
+    font-family: inter;
+    font-size: 14px !important;
+    line-height: 28px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  .hero_ride h1 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .hero_ride {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .whyRide h1 {
+    font-size: 26px;
+  }
+  .single_ride_card img {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  .rmt-70 {
+    margin-top: 40px;
+  }
+  .rideSection {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .single_ride_card h6 {
+    font-family: interSemi;
+    font-size: 14px;
+    margin-top: 14px;
+  }
+  .joinRide_Text h1 {
+    font-family: inter_m;
+    font-size: 26px;
+    text-align: center;
+  }
+  .joinRide {
+    margin-top: 0px;
+  }
+  .joinRide_Text {
+    margin-top: 60px;
+  }
+
+  .singleCar h5 {
+    font-size: 15px;
+    font-family: inter_m;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 0%;
+  }
+
+  
+  .box {
+    display: none;
+  }
+  .joinRideCar img {
+    margin-top: 20px;
+  }
+  .AboutRideTxt h1 {
+    font-size: 26px;
+    font-family: inter_m;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .AboutRideTxt p {
+    font-size: 14px;
+    font-family: inter_r;
+    line-height: 28px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  .aboutRide {
+    margin-top: 90px;
+    padding-bottom: 40px;
+  }
+  .ride_cus_say h1 {
+    font-size: 26px !important;
+  }
+  .elRiderTxt h1 {
+    font-family: inter_m;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .elRiderTxt p {
+    font-family: inter_m;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .elRiderTxt {
+    margin-top: 0px;
+  }
+  .elRider {
+    margin-top: 60px;
+  }
+  .commitment {
+    margin-top: 60px;
+  }
+  .commitmentMain h1 {
+    font-family: inter_m;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .commitmentMain p {
+    font-family: inter_r;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: justify;
+  }
+  .commitmentMain img {
+  
+    margin-top: 0px;
+  }
+  .aic{
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero_ride p {
+    font-family: inter;
+    font-size: 14px !important;
+    line-height: 28px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  .hero_ride h1 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .hero_ride {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .whyRide h1 {
+    font-size: 26px;
+  }
+  .single_ride_card img {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  .rmt-70 {
+    margin-top: 40px;
+  }
+  .rideSection {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .single_ride_card h6 {
+    font-family: interSemi;
+    font-size: 14px;
+    margin-top: 14px;
+  }
+  .joinRide_Text h1 {
+    font-family: inter_m;
+    font-size: 26px;
+    text-align: center;
+  }
+  .joinRide {
+    margin-top: 0px;
+  }
+  .joinRide_Text {
+    margin-top: 60px;
+  }
+
+  .singleCar h5 {
+    font-size: 15px;
+    font-family: inter_m;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 0%;
+  }
+  .box {
+    display: none;
+  }
+  .joinRideCar img {
+    margin-top: 20px;
+  }
+  .AboutRideTxt h1 {
+    font-size: 26px;
+    font-family: inter_m;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .AboutRideTxt p {
+    font-size: 14px;
+    font-family: inter_r;
+    line-height: 28px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  .aboutRide {
+    margin-top: 90px;
+    padding-bottom: 40px;
+  }
+  .ride_cus_say h1 {
+    font-size: 26px !important;
+  }
+  .elRiderTxt h1 {
+    font-family: inter_m;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .elRiderTxt p {
+    font-family: inter_m;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .elRiderTxt {
+    margin-top: 0px;
+  }
+  .elRider {
+    margin-top: 60px;
+  }
+  .commitment {
+    margin-top: 60px;
+  }
+  .commitmentMain h1 {
+    font-family: inter_m;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .commitmentMain p {
+    font-family: inter_r;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: justify;
+  }
+  .commitmentMain img {
+  
+    margin-top: 0px;
+  }
+}

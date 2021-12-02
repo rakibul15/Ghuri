@@ -16,11 +16,13 @@ const Topnav = () => {
 
   return (
     <div>
+      
       <Navbar collapseOnSelect expand="sm" className="fixed" mb-5>
         <Navbar.Brand>
           <a href="/">
             <img className="ghuri_logo img-fluid" src={logo} fluid alt="" />
           </a>
+          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -200,6 +202,26 @@ const Topnav = () => {
                      <a title="Ticket" href="/ghuriTruck" class="dropdown-item">
                         Truck
                         <span class="sub">Ghuri Truck Service</span>
+                      </a>
+                    </li>
+                  </div>
+
+
+                  <div className="col-sm-12 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      className="
+                      ride_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                     <a title="Ticket" href="/ghuriRide" class="dropdown-item">
+                        Ride
+                        <span class="sub">Ghuri Ride Service</span>
                       </a>
                     </li>
                   </div>
@@ -441,7 +463,25 @@ const Topnav = () => {
                     </li>
                   </div>
 
-
+                
+                  <div className="col-sm-12 col-md-6">
+                    <li
+                      id="menu-item-144"
+                      className="
+                      ride_icon
+                      nav-icon
+                      menu-item
+                      menu-item-type-post_type
+                      menu-item-object-page menu-item-144
+                      nav-item
+                      "
+                    >
+                     <a title="Ticket" href="/ghuriRide" class="dropdown-item">
+                        Ride
+                        <span class="sub">Ghuri Ride Service</span>
+                      </a>
+                    </li>
+                  </div>
 
 
 

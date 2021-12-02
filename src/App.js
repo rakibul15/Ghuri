@@ -45,9 +45,12 @@ import Career from "./Components/career/Career";
 import Job from "./Components/career/Job";
 import Jobform from "./Components/career/Jobform";
 ///////////////tanni-ticket///////////////
-import Tickets from './Components/tickets/Tickets'
+import Tickets from "./Components/tickets/Tickets";
 import FoodHome from "./Components/GhuriFood/FoodHome";
 import GhuriTruck from "./Components/ghuriTrack/GhuriTruck";
+import GhuriRide from "./Components/ghuriRide/GhuriRide";
+import Home from "./Components/Home/Home";
+
 
 function App() {
   return (
@@ -68,13 +71,14 @@ function App() {
 
           {/* Home */}
           <Route path="/home">
-            <Header></Header>
-            <Count />
+            {/* <Header></Header> */}
+            {/* <Count />
             <Parcel></Parcel>
             <Gallery></Gallery>
             <Headline></Headline>
             <Partners></Partners>
-            <Clients></Clients>
+            <Clients></Clients> */}
+           <Home/>
           </Route>
           <Route path="/merchant">
             <Signup></Signup>
@@ -208,7 +212,7 @@ function App() {
             <Career></Career>
           </Route>
           <Route exact path="/ghuriFood">
-           <FoodHome></FoodHome>
+            <FoodHome></FoodHome>
           </Route>
 
           <Route exact path="/career/details/:id/:slug">
@@ -225,14 +229,18 @@ function App() {
 
           {/* Ghuri Truck */}
           <Route path="/ghuriTruck">
-           <GhuriTruck></GhuriTruck>
+            <GhuriTruck></GhuriTruck>
+          </Route>
+
+          {/* Ghuri Ride */}
+          <Route path="/ghuriRide">
+            <GhuriRide></GhuriRide>
           </Route>
 
           <Route path="*">
             <Notmatch />
           </Route>
         </Switch>
-
         <Footer />
       </Router>
     </div>

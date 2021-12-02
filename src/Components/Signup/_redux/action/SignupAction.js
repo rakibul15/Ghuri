@@ -71,11 +71,11 @@ export const SubmitSignupData = (data) => async (dispatch) => {
   const smsNumber = {
     msisdn: `88${data.phone}`,
   };
-
-  const url = `${process.env.REACT_APP_API_URL}merchant/send_otp?status=register`;
+  //test
+  // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp?status=register`;//this otp send api
   // const url = `${process.env.REACT_APP_API_URL}merchant/send_otp`;
 
-  // const url = `${process.env.REACT_APP_API_URL}merchant/register`;
+  const url = `${process.env.REACT_APP_API_URL}merchant/register`; //for off otp page
   // const headersData= {
   //     'Authorization': 'Basic UjJoMWNtbEZlSEJ5WlhOTVZFUTpVMk55WldOMFMwVlpaMmgxY21sRldGQlNSVk5UVEZSRQ=='
   //   }
@@ -90,7 +90,8 @@ export const SubmitSignupData = (data) => async (dispatch) => {
   dispatch({ type: Types.CREATE_SUBMIT, payload: response });
 
   try {
-    await Axios.post(url, smsNumber)
+    // await Axios.post(url, smsNumber)
+    await Axios.post(url, submitData)
       .then((res) => {
         if (res.data.status) {
           toast.success(res.data.message);
@@ -111,7 +112,7 @@ export const SubmitSignupData = (data) => async (dispatch) => {
     response.message = "Something Went Wrong !";
     toast.error(error);
   }
-
+  //test
   //  try{
   //     await Axios.post(url,submitData,{
   //         headers: headersData
