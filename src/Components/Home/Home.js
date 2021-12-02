@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import platformImage from "../../images/Homepage/platformMobile.png";
 import premium from "../../images/Homepage/premium.png";
@@ -49,12 +49,127 @@ const Home = () => {
     },
   };
 
+  let option2 = {
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  };
+
+
+  let option3= {
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  };
+
+  let option4 = {
+    responsive: {
+      0: {
+        items: 3,
+      },
+      450: {
+        items: 3,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  };
+
+  const [active, setActive] = useState(1);
+  const Txt = () => {
+    let tx = "";
+    if (active === 1) {
+      tx = (
+        <div className="col-sm-12">
+          <div className="boxHome arrow-top-third">
+            Nothing beats traffic like Ghuri Bikes and you know it! Save time,
+            save money and reach your destination on time.
+          </div>
+        </div>
+      );
+    } else if (active === 2) {
+      tx =( <div className="col-sm-12">
+        <div className="boxHome arrow-top_lite">
+        "Budget tight? Try Ghuri Car Lite!";
+        </div>
+      </div>)
+    } else if (active === 3) {
+      tx = (
+        <div className="col-sm-12">
+          <div className="boxHome arrow-top_plus">
+            With Ghuri Intercity, you can keep Ghuri’s best in class drivers and
+            sedans for up to 10 hours.The service is available for pick ups
+            starting from Dhaka metropolitan area to Gazipur, Savar,
+            Narayanganj, Mawna, Katiyadi, Bhairab Bazar, Araihazar, Munshiganj,
+            Mawa Ferry Ghat, Dohar, Paturia Ferry Ghat, Saturia, Mymensingh and
+            Cumilla.
+          </div>
+        </div>
+      );
+      // tx=" Want to travel in AC? Use Pathao Car Plus!";
+    } else{
+      tx = (
+        <div className="col-sm-12">
+          <div className="boxHome arrow-top">
+            With Ghuri Intercity, you can keep Ghuri’s best in class drivers and
+            
+          </div>
+        </div>
+      );
+    }
+
+    
+    return tx;
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div>
-      <div className="Nav_overflow">
+      <div className="Nav_home">
         <section className="homepageLanding">
           <div className="container">
-            <div className="col-sm-5 mt-127">
+            <div className="col-sm-7 col-md-5 mt-127">
               <h1>A Platform For Every Need</h1>
               <p>
                 Save your time Ease your Life With One - Stop - Solution Ghuri
@@ -77,19 +192,34 @@ const Home = () => {
               <p>A Platform For Every Need</p>
             </div>
           </div>
+
+
+
+
+          <OwlCarousel
+            navigation={false}
+            loop
+            margin={10}
+            autoplay
+            dots={false}
+            {...option3}
+            className=" d-flex  align-items-center owl-theme"
+          >
+
+
           <div className="container">
             <div className="row platForm_content d-flex align-items-center">
-              <div className="col-sm-6">
+              <div className="col-lg-6">
                 <div className="platformMobile">
                   <img src={platformImage} alt="" />
                 </div>
               </div>
-              <div className="col-sm-1"></div>
-              <div className="col-sm-5">
+              {/* <div className="col-sm-1"></div> */}
+              <div className="col-lg-6">
                 <div className="platformBazar">
                   <h2>
                     {" "}
-                    <img src={premium} alt="" /> Ghuri Bazar
+                    <img id="ins" src={premium} alt="" /> Ghuri Bazar
                   </h2>
 
                   <div className="d-flex mar-70">
@@ -123,19 +253,31 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <button className="btn btnGhuri-primary mar-70">
+                  {/* <button className="btn btnGhuri-primary mar-70">
                     See More <i class="fa fa-caret-right ml-17"></i>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
           </div>
+          </OwlCarousel>
+
+
+
+
+
+
+
+
+
+
+
         </section>
 
         <section className="aboutGhuri">
           <div className="container">
-            <div className="row">
-              <div className="col-sm-5">
+            <div className="row d-flex align-items-center">
+              <div className="col-md-6">
                 <div className="aboutGhuriTxt">
                   <h1>About Ghuri</h1>
                   <p>
@@ -154,13 +296,13 @@ const Home = () => {
                     provider. It launched its android app with 6 special
                     features, three more will be coming soon.
                   </p>
-                  <button className="btn btnGhuri-primary mar-60">
+                  {/* <button className="btn btnGhuri-primary mar-60">
                     Learn More <i class="fa fa-caret-right ml-17"></i>
-                  </button>
+                  </button> */}
                 </div>
               </div>
-              <div className="col-sm-1"></div>
-              <div className="col-sm-6">
+              {/* <div className="col-sm-1"></div> */}
+              <div className="col-md-6 mt-smd-6">
                 <div className="aboutGhuriImg">
                   <img src={aboutGhuri} alt="" />
                 </div>
@@ -171,22 +313,22 @@ const Home = () => {
 
         <section className="download">
           <div className="container">
-            <div className="row">
+            <div className="row d-flex align-items-center">
               <div className="col-sm-7">
                 <div className="ghuriMobile">
                   <img src={mobile} alt="" />
                 </div>
               </div>
-              <div className="col-sm-1"></div>
-              <div className="col-sm-4 downloadTxt">
+              {/* <div className="col-sm-1"></div> */}
+              <div className="col-sm-5 downloadTxt">
                 <h2>Download app now</h2>
                 <div className="ghuriApp">
                   <h5 className="app-50">Ghuri Super App</h5>
                   <div className="app">
                     <img src={playstore} alt="" />
-                    <img className="ml-4" src={appstore} alt="" />
+                    <img className="marginL" src={appstore} alt="" />
                   </div>
-
+{/* 
                   <h5 className="app-50">Ghuri Super App</h5>
                   <div className="app">
                     <img src={playstore} alt="" />
@@ -199,7 +341,7 @@ const Home = () => {
                   <h5 className="app-50">Ghuri Super App</h5>
                   <div className="app">
                     <img src={playstore} alt="" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -209,33 +351,118 @@ const Home = () => {
         <section className="ghuriHighlights">
           <div className="container">
             <h1>Ghuri Highlights</h1>
+            <OwlCarousel
+            navigation={false}
+            loop
+            margin={10}
+            autoplay
+            dots={false}
+            {...option2}
+            className=" d-flex  align-items-center owl-theme large_div_news"
+          >
             <div className="row allnews">
               <div className="col-sm-3">
-                <div className="news">
+                <div className="news"  onClick={() => setActive(1)}>
                   <img src={news1} alt="" />
                 </div>
               </div>
               <div className="col-sm-3">
                 {" "}
-                <div className="news">
+                <div className="news"  onClick={() => setActive(2)}>
                   <img src={news2} alt="" />
                 </div>
               </div>
               <div className="col-sm-3">
                 {" "}
-                <div className="news">
+                <div className="news"  onClick={() => setActive(3)}>
                   <img src={news3} alt="" />
                 </div>
               </div>
               <div className="col-sm-3">
                 {" "}
-                <div className="news">
+                <div className="news"  onClick={() => setActive(4)}>
                   <img src={news4} alt="" />
                 </div>
               </div>
             </div>
+            </OwlCarousel>
+
+            {Txt()}
           </div>
+        
         </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section className="ghuriHighlights2 mt-5 pt-4">
+          <div className="container">
+            <h1>Ghuri Highlights</h1>
+            <OwlCarousel
+            navigation={false}
+            loop
+            margin={10}
+            autoplay
+            dots={false}
+            {...option4}
+            className="owl-theme"
+          >
+         
+                <div className="news"  >
+                  <img src={news1} alt="" />
+                </div>
+           
+          
+                {" "}
+                <div className="news"  >
+                  <img src={news2} alt="" />
+           
+              </div>
+             
+                {" "}
+                <div className="news" >
+                  <img src={news3} alt="" />
+                </div>
+        
+            
+                {" "}
+                <div className="news">
+                  <img src={news4} alt="" />
+                </div>
+       
+        
+            </OwlCarousel>
+
+      
+          </div>
+        
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <section className="ghuriBlog">
           <div className="container">
@@ -251,28 +478,28 @@ const Home = () => {
             </div>
 
             <div className="row allblog">
-              <div className="col-sm-3">
+              <div className="col-sm-6 col-md-3">
                 <div className="blog">
                   <img src={blog1} alt="" />
                   <h6>Lorem ipsum dolor sit amet consectetur.</h6>
                   <p>December 1, 2021</p>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-sm-6 col-md-3">
                 <div className="blog">
                   <img src={blog2} alt="" />
                   <h6>Lorem ipsum dolor sit amet consectetur.</h6>
                   <p>December 1, 2021</p>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-sm-6 col-md-3">
                 <div className="blog">
                   <img src={blog3} alt="" />
                   <h6>Lorem ipsum dolor sit amet consectetur.</h6>
                   <p>December 1, 2021</p>
                 </div>
               </div>
-              <div className="col-sm-3">
+              <div className="col-sm-6 col-md-3">
                 <div className="blog">
                   <img src={blog4} alt="" />
                   <h6>Lorem ipsum dolor sit amet consectetur.</h6>

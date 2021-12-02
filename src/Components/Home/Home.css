@@ -1,17 +1,23 @@
 .homepageLanding {
   background-image: url(../../images/hero.png);
   background-repeat: no-repeat;
-  max-height:691px;
-  height: 691px;
-  background-size: 100%;
+
+  background-size:100% 100%;
   width: 100%;
+height: 690px;
   z-index: 2;
  
+}
+.Nav_home{
+    margin-top: 110px;
 }
 
 .mt-127{
     padding-top:60px;
    
+}
+#ins{
+    display: inline !important;
 }
 
 .homepageLanding h1{
@@ -29,7 +35,7 @@
 
 .btnGhuri-primary{
     background-color: #ffcc00;
-    padding:19px 42px;
+    padding:19px 25px;
     font-size: 16px;
     font-family: inter_m;
     border-radius: 45px;
@@ -39,7 +45,7 @@
 
 .btnGhuri-download{
     background-color: #ffffff;
-    padding:19px 42px;
+    padding:18px 42px;
     font-size: 16px;
     font-family: inter_m;
     border-radius: 45px;
@@ -51,7 +57,9 @@
 
 
 
-
+.ghuriHighlights2{
+    display: none;
+}
 
 .ml-17{
     margin-left: 17px;
@@ -98,13 +106,14 @@
 }
 .platformBazar h2 img{
     height: 90px;
-    width: 90px;
+    width: 90px !important;
 
 }
 
 .platformBazar h2 {
   font-family: inter_r;
   font-size: 55px;
+  display: inline !important;
 }
 .aboutGhuri{
     margin-top: 180px;
@@ -152,6 +161,7 @@
 
 .ghuriHighlights{
   margin-top: 90px;
+  height: 450px;
   padding-bottom: 90px;
 }
 .ghuriHighlights img{
@@ -212,6 +222,88 @@
     padding-top: 90px;
     padding-bottom: 90px;
 }
+.news{
+    cursor: pointer;
+}
+
+
+
+
+
+.boxHome {
+    width:100%;
+    height: auto;
+    background-color:#F2F3F7;
+    color: black;
+    padding: 58px 39px 43px 39px;
+    position: relative;
+    border-radius: 4px;
+    float: left;
+  }
+
+  .boxHome.arrow-top-third{
+    margin-top: 40px;
+  }
+  .boxHome.arrow-top {
+    margin-top: 40px;
+  }
+  
+  .boxHome.arrow-top:after {
+    content: " ";
+    position: absolute;
+    right:8%;
+    top: -25px;
+    border-top: none;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 25px solid #F2F3F7;
+  }
+
+  .boxHome.arrow-top-third:after {
+    content: " ";
+    position: absolute;
+    left:8%;
+    top: -25px;
+    border-top: none;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 25px solid #F2F3F7;
+  }
+
+  .boxHome.arrow-top_plus::after{
+    content: " ";
+    position: absolute;
+    right:33%;
+    top: -25px;
+    border-top: none;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 25px solid #F2F3F7;
+  }
+  .boxHome.arrow-top_plus {
+    margin-top: 40px;
+  }
+  
+  
+  .boxHome.arrow-top_lite::after{
+    content: " ";
+    position: absolute;
+    left:35%;
+    top: -25px;
+    border-top: none;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 25px solid #F2F3F7;
+  }
+  .boxHome.arrow-top_lite {
+    margin-top: 40px;
+  }
+
+.marginL{
+    margin-left: 12px;
+}
+
+
 
 /* Responsive */
 /* 
@@ -240,23 +332,6 @@
         margin-bottom: 30px;
     }
 
-    .btnGhuri-primary {
-     
-        padding: 16px 42px;
-        font-size: 15px;
-  
-    }
-    .btnGhuri-download {
-        background-color: #ffffff;
-        padding: 15px 38px;
-        font-size: 15px;
-        font-family: inter_m;
-        border-radius: 45px;
-        display: flex;
-        align-items: center;
-        border: 1px solid #ffcc00;
-        margin-top: 22px;
-    }
     .ghuriMobile img {
         width:100%;
         height:auto;
@@ -290,29 +365,15 @@
         line-height: 37px;
         font-family: interSemi;
     }
-    .btnGhuri-primary {
-        padding: 12px 15px;
-        font-size: 14px;
-    }
-    .btnGhuri-download {
-        background-color: #ffffff;
-        padding: 10px 15px;
-        font-size: 15px;
-        font-family: inter_m;
-        border-radius: 45px;
-        display: flex;
-        align-items: center;
-        border: 1px solid #ffcc00;
-        margin-top: 22px;
-    }
-    .homepageLanding {
+   
+    /* .homepageLanding {
        
         max-height: 691px;
         height: 365px;
         background-size: 100%;
         width: 100%;
         z-index: 2;
-    }
+    } */
     .platformMobile img {
         width:100%;
         height:auto;
@@ -322,11 +383,155 @@
         width:100%;
         height:auto;
     }
+    .homepageLanding {
+      
+        background-size:100%;
+        width: 100%;
+        z-index: 2;
+    }
+    .homepageLanding {
+        height: 555px;
+    }
+
 }
 
-@media (max-width: 991.98px) {}
+@media (max-width: 1200px){
+.homepageLanding {
+    height: 440px;
+}}
 
-@media (max-width: 767.98px) {}
 
-@media (max-width: 575.98px) {}
+@media (max-width: 991.98px) {
+    .homepageLanding {
+      
+        background-size:100%;
+        width: 100%;
+        z-index: 2;
+    }
+    .homepageLanding {
+        height:500px;
+        width: 100%;
+        background-size:cover;
+        background-position: center; 
+    }
+    .app img {
+        width: 70%;
+        height:50px;
+    }
+    .app {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .marginL{
+        margin-left:0px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .homepageLanding {
+        height:500px;
+        width: 100%;
+        background-size:cover;
+        background-position: center; 
+    }
+    .platformMobile img {
+      
+        margin-bottom: 45px;
+    }
+    .mt-smd-6{
+        margin-top: 40px;
+    }
+    /* .ghuriHighlights{
+display: none !important;
+    } */
+
+    .download {
+        margin-top: 100px;
+    }
+    .blogTitle h1 {
+        font-family: inter_m;
+        font-size: 30px;
+    }
+    .btnGhuri-download {
+        background-color: #ffffff;
+        padding: 14px 42px;
+        font-size: 16px;
+        font-family: inter_m;
+        border-radius: 45px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ffcc00;
+        margin-top:15px;
+    }
+    .ghuriHighlights{
+        display: none !important;
+    }
+    .ghuriHighlights2{
+        display: block !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .app img {
+        width: 60%;
+        height:70px;
+    }
+    .mt-sm-6{
+        margin-top: 0px;
+    }
+    .app {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    .app-50 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .downloadTxt{
+        margin-top: 40px;
+    }
+    .ghuriBlog {
+        background-color: #F2F3F7;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .platFormText h1 {
+        text-align: center;
+        font-family: inter_m;
+        font-size: 30px;
+    }
+    .platformBazar h2 {
+        font-family: inter_r;
+        font-size: 32px;
+        display: inline !important;
+    }
+    .platformBazar h2 img {
+        height: 60px;
+        width: 60px !important;
+    }
+    .mar-70 {
+        margin-top: 40px;
+    }
+    .aboutGhuriTxt h1 {
+        font-family: inter_m;
+        font-size: 30px;
+    }
+    .aboutGhuri {
+        margin-top: 61px;
+    }
+    .downloadTxt h2 {
+        font-family: inter_m;
+        font-size: 30px;
+    }
+    .blog h6 {
+        font-family: inter_m;
+        font-size: 18px;
+        line-height: 32px;
+        margin-top: 16px;
+    }
+}
 
